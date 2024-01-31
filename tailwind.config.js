@@ -1,4 +1,5 @@
 import {nextui} from '@nextui-org/theme'
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,7 +11,30 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      primary: colors.orange,
+      'white':'white',
+      'highgray':'#363636',
+      'midgray':'#6b6b6b',
+      'lowgray':'#b3b3b3',
+      'lowgreen':'#a4d5a6',
+      'mustard':'#f9a53e',
+      'black': colors.black,
+      'livered': '#ff1100',
+      'white': colors.white,
+      'green': colors.green,
+      'orange': colors.orange,
+      'gray': colors.gray,
+      'emerald': colors.emerald,
+      'indigo': colors.indigo,
+      'yellow': colors.yellow,
+      'teal': colors.teal,
+      'cyan': colors.cyan,
+    },
+    
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui({addCommonColors: true,
+  
+  })],
 }

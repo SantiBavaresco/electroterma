@@ -8,17 +8,18 @@ import { GithubIcon } from "@/components/icons";
 
 export default function Home() {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
+		<section className="flex flex-col items-center justify-center gap-4 py-4 md:py-10">
+			<div className=" text-center justify-center ">
+				<h1 className={title()}>ELECTROTERMA &nbsp;</h1>
 				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
 				<br />
 				<h1 className={title()}>
-					websites regardless of your design experience.
+				    	netus et malesuada fames ac turpis egestas.
 				</h1>
 				<h2 className={subtitle({ class: "mt-4" })}>
 					Beautiful, fast and modern React UI library.
 				</h2>
+				<p className={subtitle({ class: "mt-4" })}>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 			</div>
 
 			<div className="flex gap-3">
@@ -47,5 +48,6 @@ export default function Home() {
 				</Snippet>
 			</div>
 		</section>
+		
 	);
 }
