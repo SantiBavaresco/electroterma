@@ -21,17 +21,14 @@
         /* background-color: mid; */
         box-shadow: none;
     }
-    /* .card {
-        background-color: #fff;
-        &:hover {
-            background-color: #000;
-        }
+    .mainLayout {
+        overflow: hidden;
     }
 
-    .card-footer {
+    /* .card-footer {
         background-color: #fff;
         transition: background-color 0.2s ease-in-out;
-    } */
+    }  */
 
     
 }

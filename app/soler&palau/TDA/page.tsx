@@ -24,12 +24,12 @@ import Caracteristics from "./tabs";
 
 export default function TDAPage() {
     return (
-        <main className="flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
-            <div className="relative -top-12 lg:w-screen md:w-1/2 py-3 ">
+        <main  className=" flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
+            <section className="relative -top-12 lg:w-screen md:w-1/2 py-3 ">
                 <SimpleSlider />
 
-            </div>
-            <div className=" flex flex-row-reverse w-2/3 ">
+            </section>
+            <section className=" flex flex-row-reverse w-2/3 ">
                 <div className="  ">
                     <div className="flex flex-col justify-items-end items-end font-bold ">
                         <span className="text-2xl text-midgray">
@@ -49,7 +49,7 @@ export default function TDAPage() {
                         </p>
                     </div>
                 </div>
-                <div className=" absolute left-[12%] z-10">
+                <div className="relative max-w-screen -left-[10%] z-10">
                     <Image
                         // className="-top-16 left-1/2"
                         className="inline-block -top-16 left-10"
@@ -58,22 +58,24 @@ export default function TDAPage() {
                     />
 {/* --- ONDA 1 --------------- */}
                     <Ondas01SVG css=" absolute -top-12 left-[260px] z-10 " />
-                    <div className="w-[1500px]">
+                    <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
                         <LottieWave />
                     </div>
                 </div>
-            </div>
-            <div className="w-1/2 mt-48 flex justify-items-start">
+            </section>
+
+            <section className="w-1/2  flex justify-items-start">
                 <Button
-                    className="relative  top- z-10 bg-livered text-white"
+                    className="relative -top-10 z-10 bg-livered text-white"
                     radius="full"
                     size="lg"
                 >
                     Asesoramiento
                 </Button>
-            </div>
-            <section className="flex flex-row-reverse pt-4">
-                <div className="relative ">
+            </section>
+
+            <section className="flex flex-row-reverse pt-2">
+                <div className=" ">
                     <h4 className="text-start text-xs font-bold">
                         <p>
                             El ventilador{" "}
@@ -146,27 +148,40 @@ export default function TDAPage() {
                     </div>
                 </div>
 
-                <div key="video" className="relative  overflow-hidden">
+                <div key="video" className="  overflow-hidden">
                     {/* <VideoPlayer /> */}
                     <VideoAutoPlayer />
                 </div>
             </section>
 {/* --- ONDA 1 --------------- */}
 
-            <div className="bg-local w-[1500px] absolute transform -scale-x-100 -z-10 -left-32 top-[500px] overflow-y-scroll no-scrollbar">
-                <LottieWave1 />{" "}
-            </div>
+{/* <div className="relative max-w-screen -left-[10%] z-10">
+                    <Image
+                        // className="-top-16 left-1/2"
+                        className="inline-block -top-16 left-10"
+                        src="../img/solerpalau/tda/SolerPalauTda1.png"
+                        width={400}
+                    />
+{/* --- ONDA 1 --------------- 
+                    <Ondas01SVG css=" absolute -top-12 left-[260px] z-10 " />
+                    <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
+                        <LottieWave />
+                    </div>
+                </div> */}
 
-            <section className="relative   ">
+            <section className="relative max-w-full">
                 <Caracteristics />
                 <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-44 overflow-y-scroll no-scrollbar" />
+                <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
+                <LottieWave1 />
+            </div>
             </section>
 
             <section className="">
                 <div className="flex flex-col justify-center items-center  w-screen m-auto ">
                     <div className="flex justify-center items-center w-3/4">
                         <div className="w-1/2 float-left">
-                            <h1 className=" text-2xl font-bold text-livered">
+                            <h1 className=" text-2xl font-bold text-livered ">
                                 INSTALACIONES EN OBRA
                             </h1>
                         </div>
