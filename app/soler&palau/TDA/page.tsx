@@ -1,10 +1,7 @@
 import { title } from "@/components/primitives";
-
-// import ImageCarousel from "../../../components/imgslider/imagecarousel"
-// import ImageSlider from "../../../components/imgslider/imageslider"
 import SimpleSlider from "../../../components/imgslider/slickSlider";
-
-// import EmblaCaousel from "../../../components/imgslider/EmblaCaousel"
+import SimpleSliderDisplay from "../../../components/imgslider/slickSliderDisplay";
+import { LottieWave, LottieWave1 } from "../../../components/lottieWave";
 
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
@@ -27,50 +24,55 @@ import Caracteristics from "./tabs";
 
 export default function TDAPage() {
     return (
-        <section className="flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10">
-			{/* <div className="inline-block max-w-lg text-center justify-center"> */}
-            <div className="relative -top-10 -left-3/4 w-1/2 py-3 ">
-                {/* <SimpleSlider /> */}
-                <h1>hola</h1>
-                <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/11.jpg" height={200} width={500} isZoomed radius="none" loading="lazy"/>
+        <main className="flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
+            <div className="relative -top-12 lg:w-screen md:w-1/2 py-3 ">
+                <SimpleSlider />
 
             </div>
-            <div className=" relative ">
-                <Image
-                    className="absolute -top-16 left-0"
-                    src="../img/solerpalau/tda/SolerPalauTda1.png"
-                    width={400}
-                />
-                <Image
-                    className="absolute -top-16 left-0"
-                    src="../img/solerpalau/tda/SolerPalauTda1.png"
-                    width={400}
-                />
-                <div className="  overflow-hidden">
-                <Ondas01SVG css=" w-screen relative z-10 -top-14 left-1/2 overflow-hidden" />
+            <div className=" flex flex-row-reverse w-2/3 ">
+                <div className="  ">
+                    <div className="flex flex-col justify-items-end items-end font-bold ">
+                        <span className="text-2xl text-midgray">
+                            VENTILADOR
+                        </span>
+                        <h1 className="text-5xl text-livered">CENTRIFUGO</h1>
+                        <h1 className="text-5xl text-livered">
+                            MULTIPALA - TDA
+                        </h1>
+                        <p className="text-lg">
+                            Equipos para{" "}
+                            <span className="text-livered">mejorar</span> la{" "}
+                        </p>
+                        <p className="text-lg">
+                            <span className="text-livered">cirulación</span> del
+                            aire
+                        </p>
+                    </div>
                 </div>
-                <div className="flex flex-col justify-end items-end font-bold ">
-                    <span className="text-2xl text-midgray">VENTILADOR</span>
-                    <h1 className="text-5xl text-livered">CENTRIFUGO</h1>
-                    <h1 className="text-5xl text-livered">MULTIPALA - TDA</h1>
-                    <p className="text-lg">
-                        Equipos para{" "}
-                        <span className="text-livered">mejorar</span> la{" "}
-                    </p>
-                    <p className="text-lg">
-                        <span className="text-livered">cirulación</span> del
-                        aire
-                    </p>
+                <div className=" absolute left-[12%] z-10">
+                    <Image
+                        // className="-top-16 left-1/2"
+                        className="inline-block -top-16 left-10"
+                        src="../img/solerpalau/tda/SolerPalauTda1.png"
+                        width={400}
+                    />
+{/* --- ONDA 1 --------------- */}
+                    <Ondas01SVG css=" absolute -top-12 left-[260px] z-10 " />
+                    <div className="w-[1500px]">
+                        <LottieWave />
+                    </div>
                 </div>
+            </div>
+            <div className="w-1/2 mt-48 flex justify-items-start">
                 <Button
-                    className="relative top-60 z-10 bg-livered text-white"
+                    className="relative  top- z-10 bg-livered text-white"
                     radius="full"
                     size="lg"
                 >
                     Asesoramiento
                 </Button>
             </div>
-            <section className="mt-80">
+            <section className="flex flex-row-reverse pt-4">
                 <div className="relative ">
                     <h4 className="text-start text-xs font-bold">
                         <p>
@@ -144,48 +146,65 @@ export default function TDAPage() {
                     </div>
                 </div>
 
-                <div
-                    key="video"
-                    className="relative z-10 -top-60 -left-64 overflow-hidden"
-                >
+                <div key="video" className="relative  overflow-hidden">
                     {/* <VideoPlayer /> */}
                     <VideoAutoPlayer />
                 </div>
             </section>
-            <section className="relative -top-52 -left-32 ">
+{/* --- ONDA 1 --------------- */}
+
+            <div className="bg-local w-[1500px] absolute transform -scale-x-100 -z-10 -left-32 top-[500px] overflow-y-scroll no-scrollbar">
+                <LottieWave1 />{" "}
+            </div>
+
+            <section className="relative   ">
                 <Caracteristics />
-                <Ondas02SVG css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" />
+                <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-44 overflow-y-scroll no-scrollbar" />
             </section>
 
-            
-            <section className="relative -top-44 -left-28 flex justify-start items-start">
-                
-                <div>
-                <Image
-                    className="absolute ml-80 -top-6 left-60 "
-                    src="../img/electrotermalogoletras.png"
-                    width={250}
-                />
-                    <h1 className="text-2xl font-bold text-livered">INSTALACIONES EN OBRA</h1>
-                    <Image
-                    className="relative top-48 -left-10 "
-                    src="../img/otamlogo.png"
-                    width={250}
-                    
-                />
-                
-                
+            <section className="">
+                <div className="flex flex-col justify-center items-center  w-screen m-auto ">
+                    <div className="flex justify-center items-center w-3/4">
+                        <div className="w-1/2 float-left">
+                            <h1 className=" text-2xl font-bold text-livered">
+                                INSTALACIONES EN OBRA
+                            </h1>
+                        </div>
+                        <div className="w-1/2 float-right flex justify-end items-end ">
+                            <Image
+                                className=""
+                                src="../img/electrotermalogoletras.png"
+                                width={250}
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex">
+                            <SimpleSliderDisplay />
+                        </div>
+                    </div>
+                    {/* <ElectrotermaLogo css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" /> */}
+                    {/* <OtamLogo css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" /> */}
+                    <div className="flex justify-center items-center w-3/4">
+                        <div className="w-1/2 float-left">
+                            <Image
+                                className=" w-1/2 float-right "
+                                src="../img/otamlogo.png"
+                                width={250}
+                            />
+                        </div>
+                        <div className="w-1/2 float-right flex justify-end items-end pr-10">
+                            <Button
+                                className="  z-10 bg-livered text-white"
+                                radius="full"
+                                size="lg"
+                            >
+                                Asesoramiento
+                            </Button>
+                        </div>
+                    </div>
                 </div>
-                {/* <ElectrotermaLogo css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" /> */}
-                {/* <OtamLogo css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" /> */}
-                <Button
-                    className="relative top-72 left-80 z-10 bg-livered text-white"
-                    radius="full"
-                    size="lg"
-                >
-                    Asesoramiento
-                </Button>
             </section>
-        </section>
+        </main>
     );
 }

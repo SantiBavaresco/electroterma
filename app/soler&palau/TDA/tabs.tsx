@@ -11,7 +11,7 @@ export default function Caracteristics() {
     const [selected, setSelected] = React.useState("photos");
 
     return (
-        <div className="flex w-[800px] flex-col ">
+        <div className="flex  flex-col  w-[800px]">
             <Tabs
                 aria-label="Options"
                 selectedKey={selected}

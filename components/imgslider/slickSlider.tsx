@@ -30,7 +30,7 @@ export default class SimpleSlider extends Component {
             centerPadding: "60px",
 
             variableWidth: true,
-            width: 600,
+            width: 1200,
          
             // adaptiveHeight: true,
             // lazyLoad: true,
@@ -72,37 +72,35 @@ export default class SimpleSlider extends Component {
 
         return (
             <div className="overflow-hidden ">
-
-            <Slider {...settings} >
-                <div style={{ width: wii }}>
-                    {/* <img src="../../public/img/solerpalau/tda/imgbanner/1.jpg" alt="Imagen" > */}
-                    {/* <h1 style={{width:"1280px", height: "200px", objectFit: "cover", objectPosition: "center"}}>1</h1> */}
-
-                    <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/11.jpg" isZoomed radius="none" loading="lazy"/>
-                </div>
-                <div style={{ width: wii }}>
-                    <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/22.jpg" isZoomed radius="none" loading="lazy"/>
-                </div>
-                <div style={{ width: wii }}>
-                    <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/33.jpg" isZoomed radius="none" loading="lazy"/>
-                </div>
-
-                <div style={{ width: wii }}>
-                    <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/11.jpg" isZoomed radius="none" loading="lazy"/>
-                </div>
-                <div style={{ width: wii }}>
-                    <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/22.jpg" isZoomed radius="none" loading="lazy"/>
-                </div>
-                <div style={{ width: wii }}>
-                    <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/33.jpg" isZoomed radius="none" loading="lazy"/>
-                </div>
-            </Slider>
-                    <div className="relative w-[250px] -top-16 left-1/3 rounded-md flex justify-start items-center bg-white p-1 ">
+                <div className="absolute top-20 z-10 w-[250px]  left-1/4 rounded-md flex justify-start items-center bg-white p-1 ">
 			        <h1 className="pl-2  font-bold">
                         Es ideal para la <span className="text-orange-500">Agricultura</span>
                     </h1>
+                </div>
+                <Slider {...settings} >
+                    <div style={{ width: wii }}>
+                        {/* <img src="../../public/img/solerpalau/tda/imgbanner/1.jpg" alt="Imagen" > */}
+                        {/* <h1 style={{width:"1280px", height: "200px", objectFit: "cover", objectPosition: "center"}}>1</h1> */}
+
+                        <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/11.jpg" isZoomed radius="none" loading="lazy"/>
                     </div>
-                
+                    <div style={{ width: wii }}>
+                        <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/22.jpg" isZoomed radius="none" loading="lazy"/>
+                    </div>
+                    <div style={{ width: wii }}>
+                        <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/33.jpg" isZoomed radius="none" loading="lazy"/>
+                    </div>
+
+                    <div style={{ width: wii }}>
+                        <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/11.jpg" isZoomed radius="none" loading="lazy"/>
+                    </div>
+                    <div style={{ width: wii }}>
+                        <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/22.jpg" isZoomed radius="none" loading="lazy"/>
+                    </div>
+                    <div style={{ width: wii }}>
+                        <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/33.jpg" isZoomed radius="none" loading="lazy"/>
+                    </div>
+                </Slider>
             </div>
         );
     }

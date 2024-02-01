@@ -9,6 +9,7 @@ const VideoAutoPlayer: React.FC = () => {
       muted
       // type='video/mp4'
       src="../img/solerpalau/tda/SolerPalauVideo1.mkv"
+      width={600}
     />
   );
 };
