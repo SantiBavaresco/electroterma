@@ -13,13 +13,15 @@ import { Download } from "@/public/svg/download";
 // import { ElectrotermaLogo } from "@/public/svg/electrotermalogo";
 // import { OtamLogo } from "@/public/svg/otamlogo";
 
-import { ConstruccionDuradera } from "@/public/svg/ConstruccionDuradera";
-import { EficienciaEnergetica } from "@/public/svg/EficienciaEnergetica";
-import { FacilInstalacion } from "@/public/svg/FacilInstalacion";
-import { VersatilidadAplicacion } from "@/public/svg/VersatilidadAplicacion";
+import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
+import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
+import { FacilInstalacion } from "@/public/svg/facilInstalacion";
+import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
-import VideoPlayer from "@/components/videoplayer/videoplayer";
+// import VideoPlayer from "@/components/videoplayer/videoplayer";
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
+import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
+
 import Caracteristics from "./tabs";
 
 export default function TDAPage() {
@@ -57,7 +59,7 @@ export default function TDAPage() {
                         width={400}
                     />
 {/* --- ONDA 1 --------------- */}
-                    <Ondas01SVG css=" absolute -top-12 left-[260px] z-10 " />
+                    <Ondas01SVG css="absolute -top-12 left-[260px] z-10 "/>
                     <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
                         <LottieWave />
                     </div>
@@ -148,6 +150,7 @@ export default function TDAPage() {
                     </div>
                 </div>
 
+                
                 <div key="video" className="  overflow-hidden">
                     {/* <VideoPlayer /> */}
                     <VideoAutoPlayer />
@@ -168,7 +171,9 @@ export default function TDAPage() {
                         <LottieWave />
                     </div>
                 </div> */}
-
+            {/* <section className={' '}>
+                <VideoScrollPlayer/>
+            </section> */}
             <section className="relative max-w-full">
                 <Caracteristics />
                 <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-44 overflow-y-scroll no-scrollbar" />
@@ -220,6 +225,7 @@ export default function TDAPage() {
                     </div>
                 </div>
             </section>
+
         </main>
     );
 }

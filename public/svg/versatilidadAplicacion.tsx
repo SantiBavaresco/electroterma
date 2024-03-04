@@ -1,11 +1,11 @@
 import React from "react";
-export const VersatilidadAplicacion = ({
-    css,
-    size,
-    height,
-    width,
-    ...props
-}) => {
+interface Props {
+    css?: string; 
+    size?: number;
+    height?: number; 
+    width?: number; 
+}
+export const VersatilidadAplicacion: React.FC<Props> = ({ css, size, height, width, ...props }) => {
     return (
         <svg
             className={css}

@@ -1,5 +1,11 @@
 import React from "react";
-export const ConstruccionDuradera = ({ css, size, height, width, ...props }) => {
+interface Props {
+    css?: string; 
+    size?: number;
+    height?: number; 
+    width?: number; 
+}
+export const ConstruccionDuradera: React.FC<Props> = ({ css, size, height, width, ...props }) => {
     return (
         <svg
             className={css}

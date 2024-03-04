@@ -1,19 +1,42 @@
-/* .App {
+.App {
     font-family: sans-serif;
     text-align: center;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
   }
-   */
+  
   .wrapper {
     height: 500vh;
   }
   
-  #v0 {
-    /* position: fixed;
+  /* #v0 {
+    position: static;
     top: 0;
     left: 0;
-    width: 100%; */
+    width: 100%;
+    object-fit: cover;
   }
   #scrollSection {
-    /* display: block; */
+    display: block;
+    overflow-y: scroll;
+  }
+   */
+   .video-container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden; /* Prevent scrollbars outside the container */
+    margin: 0 auto; /* Center the container horizontally */
   }
   
+  .scroll-section {
+    height: 100%; /* Fill the entire container height */
+    overflow-y: scroll; /* Enable vertical scrolling within the container */
+  }
+  
+  #v0 {
+    /* Removed positioning rules as they're no longer needed */
+    width: 30%;
+    height: 30%;
+    object-fit: cover; /* Ensure the video fills the entire scroll section */
+  }

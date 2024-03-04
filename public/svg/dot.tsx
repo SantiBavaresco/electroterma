@@ -1,5 +1,12 @@
 import React from "react";
-export const DotSVG = ({ css, size, height, width, color, ...props }) => {
+interface Props {
+    css?: string; 
+    size?: number;
+    height?: number; 
+    width?: number; 
+    color?: string;
+}
+export const DotSVG: React.FC<Props> = ({ css, size, height, width, color, ...props }) => {
     return (
         <svg
             width={size || width || 16}
