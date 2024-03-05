@@ -8,10 +8,19 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './public/typographie/lexend/*.tff',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        lexend: "lexend",
+        "lexend-thin": "lexend-thin",
+        "lexend-bold": "lexend-bold",
+        burtons: "burtons",
+        poppins: ["Poppins", "sans-serif"],
+      },
+    },
     colors: {
       primary: colors.orange,
       'white':'white',

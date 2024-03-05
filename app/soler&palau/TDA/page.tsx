@@ -33,7 +33,7 @@ export default function TDAPage() {
             </section>
             <section className=" flex flex-row-reverse w-2/3 ">
                 <div className="  ">
-                    <div className="flex flex-col justify-items-end items-end font-bold ">
+                    <div className="flex flex-col justify-items-end items-end font-lexend-bold ">
                         <span className="text-2xl text-midgray">
                             VENTILADOR
                         </span>
