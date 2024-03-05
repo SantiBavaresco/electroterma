@@ -85,8 +85,8 @@ export default function Home() {
 					</div>
 					<hr/>
 					<div>
-						<p className="font-lexeng">Texto en lexeng, LEXENG REGULAR</p>
-						<p className="font-lexeng-bold">Texto en lexeng-bold, LEXENG BOLD</p>
+						<p className="font-lexend">Texto en lexend, LEXEND REGULAR</p>
+						<p className="font-lexend-bold">Texto en lexend-bold, LEXEND BOLD</p>
 					</div>
 				</div>
 
