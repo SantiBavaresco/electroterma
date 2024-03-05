@@ -16,7 +16,10 @@ module.exports = {
       fontFamily:{
         lexend: "lexend",
         "lexend-thin": "lexend-thin",
-        "lexend-bold": "lexend-bold",
+        "lexend-bold": "lexend-bolder",
+        nunito: "nunito",
+        "nunito-thin": "nunito-thin",
+        "nunito-bold": "nunito-bold",
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
       },

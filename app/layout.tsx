@@ -54,8 +54,8 @@ export default function RootLayout({
                             {children}
                         </main>
                         <footer className="w-full flex flex-col items-center justify-center py-3 bg-lowgray">
-                            <span className="font-bold">Calle 5 entre 6 y 8</span>
-                            <span className="font-semibold">Parque Industrail Mar del Plata - Batan</span>
+                            <span className="font-lexeng-bolder">Calle 5 entre 6 y 8</span>
+                            <span className="font-lexeng-bold">Parque Industrail Mar del Plata - Batan</span>
                             <div className="my-2">
                                 <span className="flex flex-row items-center justify-center ">
 									223-4649999

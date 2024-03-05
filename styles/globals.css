@@ -29,6 +29,29 @@
     font-weight: bolder;
     src: url("../public/typographie/lexend/Lexend-ExtraBold.ttf") format('truetype');
   }
+/* // ----------------------------------------------------------------------------------------- */
+  @font-face {
+    font-family: "nunito";
+    src: url("../public/typographie/nunito/NunitoSans-Regular.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: "nunito-thin";
+    font-weight: lighter;
+    src: url("../public/typographie/nunito/NunitoSans-Light.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: "nunito-bold";
+    font-weight: bold;
+    src: url("../public/typographie/nunito/NunitoSans-Bold.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: "nunito-bolder";
+    font-weight: bolder;
+    src: url("../public/typographie/nunito/NunitoSans-ExtraBold.ttf") format('truetype');
+  }
 
 @layer components {
     .force-row ul {

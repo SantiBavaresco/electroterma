@@ -78,6 +78,18 @@ export default function Home() {
                         </Snippet>
                     </div>
                 </div>
+				<div className="text-xl gap-4">
+					<div>
+						<p className="font-nunito">Texto en nunito, NUNITO REGULAR</p>
+						<p className="font-nunito-bold">Texto en nunito-bold, NUNUTITO BOLD</p>
+					</div>
+					<hr/>
+					<div>
+						<p className="font-lexeng">Texto en lexeng, LEXENG REGULAR</p>
+						<p className="font-lexeng-bold">Texto en lexeng-bold, LEXENG BOLD</p>
+					</div>
+				</div>
+
             </section>
         </section>
         // 	<div className={'h-[5000px]'}>

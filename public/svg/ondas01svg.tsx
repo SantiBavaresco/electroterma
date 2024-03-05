@@ -10,7 +10,7 @@ export const Ondas01SVG: React.FC<Props> = ({ css, size, height, width, ...props
         <svg
             className={css}
             width={size || width || 850}
-            height={size || height ||605}
+            height={size || height || 450}
             viewBox="0 0 1503 605"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

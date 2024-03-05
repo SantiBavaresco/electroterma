@@ -4,7 +4,7 @@ import React from 'react';
 const VideoAutoPlayer: React.FC = () => {
   return (
     <video
-      autoPlay
+      // autoPlay
       loop
       muted
       // type='video/mp4'

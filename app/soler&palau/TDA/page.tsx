@@ -33,42 +33,46 @@ export default function TDAPage() {
             </section>
             <section className=" flex flex-row-reverse w-2/3 ">
                 <div className="  ">
-                    <div className="flex flex-col justify-items-end items-end font-lexend-bold ">
-                        <span className="text-2xl text-midgray">
+                    <div className="flex flex-col justify-items-end items-end font-lexend-bold tracking-widest ">
+                        <span className="text-2xl text-midgray font-nunito  ">
                             VENTILADOR
                         </span>
-                        <h1 className="text-5xl text-livered">CENTRIFUGO</h1>
-                        <h1 className="text-5xl text-livered">
+                        <h1 className="text-5xl font-nunito-bold text-livered">CENTRIFUGO</h1>
+                        <h1 className="text-5xl font-nunito-bold text-livered">
                             MULTIPALA - TDA
                         </h1>
-                        <p className="text-lg">
-                            Equipos para{" "}
-                            <span className="text-livered">mejorar</span> la{" "}
-                        </p>
-                        <p className="text-lg">
-                            <span className="text-livered">cirulación</span> del
-                            aire
-                        </p>
+                        <span className="text-3xl mt-4 text-midgray font-nunito">
+                            DE DOBLE ASPIRACIóN
+                        </span>
+                        <div className="mt-2">
+                            <p className="text-2xl">
+                                Inyección de{" "}
+                                <span className="text-livered">aire limpio</span>{" "}
+                            </p>
+                            <p className="text-2xl">
+                                <span className="text-livered"></span>dentro de equipos HVAC
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="relative max-w-screen -left-[10%] z-10">
                     <Image
                         // className="-top-16 left-1/2"
-                        className="inline-block -top-16 left-10"
+                        className="inline-block top-20 left-10"
                         src="../img/solerpalau/tda/SolerPalauTda1.png"
-                        width={400}
+                        width={300}
                     />
 {/* --- ONDA 1 --------------- */}
-                    <Ondas01SVG css="absolute -top-12 left-[260px] z-10 "/>
-                    <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
+                    <Ondas01SVG css="absolute top-32 left-[188px] z-10 "/>
+                    {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
                         <LottieWave />
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
             <section className="w-1/2  flex justify-items-start">
                 <Button
-                    className="relative -top-10 z-10 bg-livered text-white"
+                    className="relative top-16 -left-8 z-10 bg-livered text-white"
                     radius="full"
                     size="lg"
                 >
@@ -76,7 +80,7 @@ export default function TDAPage() {
                 </Button>
             </section>
 
-            <section className="flex flex-row-reverse pt-2">
+            <section className="flex flex-row-reverse mt-24 pt-2 border-2 border-green-500 border-dashed">
                 <div className=" ">
                     <h4 className="text-start text-xs font-bold">
                         <p>
@@ -140,13 +144,7 @@ export default function TDAPage() {
                             {" "}
                             Eficiencia Energética
                         </Chip>
-                        <Button
-                            className="relative top-12 -left-36 z-10 bg-livered text-white"
-                            radius="full"
-                            size="lg"
-                        >
-                            Manual <Download />
-                        </Button>
+                        
                     </div>
                 </div>
 
@@ -155,6 +153,15 @@ export default function TDAPage() {
                     {/* <VideoPlayer /> */}
                     <VideoAutoPlayer />
                 </div>
+            </section>
+            <section className="w-9/12 flex flex-row justify-end items-end">
+                <Button
+                            className="z-10 bg-livered text-white"
+                            radius="full"
+                            size="lg"
+                        >
+                            Manual <Download />
+                        </Button>
             </section>
 {/* --- ONDA 1 --------------- */}
 
@@ -174,11 +181,11 @@ export default function TDAPage() {
             {/* <section className={' '}>
                 <VideoScrollPlayer/>
             </section> */}
-            <section className="relative max-w-full">
+            <section className="relative text-xl max-w-full">
                 <Caracteristics />
                 <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-44 overflow-y-scroll no-scrollbar" />
                 <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
-                <LottieWave1 />
+                {/* <LottieWave1 /> */}
             </div>
             </section>
 

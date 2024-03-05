@@ -50,7 +50,7 @@ const tabs = [
         content: 
             <p>
                 La línea de{" "}
-                <a className="text-orange-500 font-bold">
+                <a className="text-orange-500 font-lexeng-bolder">
                     VENTILADORES CENTRIFUGOS MULTIPALA S&P
                 </a>
                 (motor acople directo) ha sido desarrollada para dar
@@ -58,7 +58,7 @@ const tabs = [
                 y donde se requieren niveles medios de contrapresión.
                 <br /> <br />
                 Son equipos de alto rendimiento energético, de&nbsp;
-                <a className="text-orange-500 font-semibold">
+                <a className="text-orange-500 font-lexeng-bolder">
                     excelente calidad constructiva
                 </a>{" "}
                 y balanceados estática y dinámicamente. Fabricados
@@ -73,10 +73,10 @@ const tabs = [
         content: 
             <div className="flex flex-row">
                 <div>
-                    <span className="text-orange-500 font-bold">
+                    <span className="text-orange-500 font-lexeng-bolder">
                         <span className="bg-orange-500 text-white px-2">
                             1
-                        </span>
+                        </span>{" "}
                         ENVOLVENTE
                     </span>
                     <p className="pl-8">
@@ -85,7 +85,7 @@ const tabs = [
                         posee máxima resistencia a la corrosión.
                     </p>
                     <br />
-                    <span className="text-orange-500 font-bold">
+                    <span className="text-orange-500 font-lexeng-bolder">
                         <span className="bg-orange-500 text-white px-2">
                             2
                         </span>{" "}
@@ -97,10 +97,10 @@ const tabs = [
                         balanceada estática y dinámicamente.
                     </p>
                     <br />
-                    <span className="text-orange-500 font-bold">
+                    <span className="text-orange-500 font-lexeng-bolder">
                         <span className="bg-orange-500 text-white px-2">
                             3
-                        </span>
+                        </span>{" "}
                         ENCAUSE
                     </span>
                     <p className="pl-8">
@@ -109,7 +109,7 @@ const tabs = [
                         rendimiento y para el funcionamiento.
                     </p>
                     <br />
-                    <span className="text-orange-500 font-bold">
+                    <span className="text-orange-500 font-lexeng-bolder">
                         <span className="bg-orange-500 text-white px-2">
                             4
                         </span>{" "}
@@ -143,14 +143,14 @@ const tabs = [
             <div>
                 <p>
                     Los{" "}
-                    <a className="text-orange-500 font-bold">
+                    <a className="text-orange-500 font-lexeng-bolder">
                         VENTILADORES CENTRIFUGOS MULTIPALA S&P
                     </a>{" "}
                     son utilizados como sistemas de inyección y extracción
                     de aire limpio para:
                 </p>
 
-                <ul className="pl-4 pt-2 font-bold">
+                <ul className="pl-4 pt-2 font-lexeng-bolder">
                     <ol className="flex items-center pl-2">
                         <DotSVG color="#f97316" />
                         <p className="pl-2">
