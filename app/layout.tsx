@@ -10,6 +10,8 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
+import { Image } from "@nextui-org/image";
+
 
 import clsx from "clsx";
 
@@ -54,8 +56,9 @@ export default function RootLayout({
                             {children}
                         </main>
                         <footer className="w-full flex flex-col items-center justify-center py-3 bg-lowgray">
-                            <span className="font-lexeng-bolder">Calle 5 entre 6 y 8</span>
-                            <span className="font-lexeng-bold">Parque Industrail Mar del Plata - Batan</span>
+                            <div className="flex flex-col justify-center items-center">
+                            <span className="font-lexeng-bolder font-bold">Calle 5 entre 6 y 8</span>
+                            <span className="font-lexeng-bold">Parque Industrial Mar del Plata - Batán</span>
                             <div className="my-2">
                                 <span className="flex flex-row items-center justify-center ">
 									223-4649999
@@ -72,17 +75,29 @@ export default function RootLayout({
                             </div>
                             <Link
                                 isExternal
-                                className="flex items-center gap-1 text-current"
+                                className="flex items-center gap-1 text-current pt-2"
                                 href="https://santiagobavaresco.ar"
                                 title="Bavaresco Santiago Portfolio"
                             >
-                                <span className="text-default-600">
-                                    Desarrollado por
-                                </span>
                                 <p className="text-primary">
                                     Bavaresco Santiago
                                 </p>
+                                 <span className="text-default-600">
+                                    © 2024 
+                                </span>
+                                
+                               
+                                
                             </Link>
+                            </div>
+                            <div className="absolute right-24 ">
+                                <Image
+                                src="../electroterma-logo.png"
+                                // height={50}
+                                width={90}
+                                alt="hola"
+                                />
+                            </div>
                         </footer>
                     </div>
                 </Providers>

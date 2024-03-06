@@ -27,18 +27,30 @@ import Caracteristics from "./tabs";
 export default function TDAPage() {
     return (
         <main  className=" flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
-            <section className="relative -top-12 lg:w-screen md:w-1/2 py-3 ">
-                <SimpleSlider />
-
+            <section className="relative -top-12 w-auto md:w-1/2 lg:w-full py-3 ">
+                <div className="w-[450px] md:w-full">
+                    <SimpleSlider />
+                </div>
+                <div className="bg-[#E61E25] md:w-98% py-2 lg:mx-[13%] flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
+                    <div className="ml-12">
+                        <h2 className="text-white"> ¿Cuál es tu necesidad? </h2>
+                    </div>
+                    <div className="mr-12">
+                        <Button radius="full">Consúltanos</Button>
+                    </div>
+                </div>
             </section>
+            {/* <section className="">
+                
+            </section> */}
             <section className=" flex flex-row-reverse w-2/3 ">
                 <div className="  ">
                     <div className="flex flex-col justify-items-end items-end font-lexend-bold tracking-widest ">
                         <span className="text-2xl text-midgray font-nunito  ">
                             VENTILADOR
                         </span>
-                        <h1 className="text-5xl font-nunito-bold text-livered">CENTRIFUGO</h1>
-                        <h1 className="text-5xl font-nunito-bold text-livered">
+                        <h1 className="text-5xl font-nunito-bold text-livered-title">CENTRIFUGO</h1>
+                        <h1 className="text-5xl font-nunito-bold text-livered-title">
                             MULTIPALA - TDA
                         </h1>
                         <span className="text-3xl mt-4 text-midgray font-nunito">
@@ -183,10 +195,17 @@ export default function TDAPage() {
             </section> */}
             <section className="relative text-xl max-w-full">
                 <Caracteristics />
-                <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-44 overflow-y-scroll no-scrollbar" />
+                <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-56 overflow-y-scroll no-scrollbar" />
                 <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
                 {/* <LottieWave1 /> */}
             </div>
+                <div className="flex justify-end opacity-30">
+                    <Image
+                                        className=""
+                                        src="../img/otamlogo.png"
+                                        width={250}
+                                    />
+                </div>
             </section>
 
             <section className="">

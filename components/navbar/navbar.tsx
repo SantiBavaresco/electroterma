@@ -109,12 +109,12 @@ export const Navbar = () => {
                         href="/"
                     >
                         <Image
-                            src="../electroterma-logo.png"
-                            height={32}
-                            width={32}
+                            src="../img/electrotermalogoletrasNoPadding.png"
+                            // height={50}
+                            width={145}
                             alt="hola"
                         />
-                        <p className="font-bold text-inherit">Electroterma</p>
+                        {/* <p className="font-bold text-inherit">Electroterma</p> */}
                     </NextLink>
                 </NavbarBrand>
                 <ul className="hidden md:flex gap-4 justify-around pl-10 ml-1">

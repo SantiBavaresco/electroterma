@@ -34,6 +34,7 @@ module.exports = {
       'mustard':'#f9a53e',
       'black': colors.black,
       'livered': '#ff1100',
+      'livered-title': '#E80303',
       'white': colors.white,
       'green': colors.green,
       'orange': colors.orange,

@@ -50,14 +50,15 @@ export default class SimpleSlider extends Component {
                         slidesToScroll: 3,
                         infinite: true,
                         dots: true,
+                        row:1,
                     },
                 },
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        initialSlide: 2,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        initialSlide: 1,
                     },
                 },
                 {
@@ -65,6 +66,7 @@ export default class SimpleSlider extends Component {
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
+                        row:1,
                     },
                 },
             ],
@@ -72,10 +74,15 @@ export default class SimpleSlider extends Component {
 
         return (
             <div className="overflow-hidden ">
-                <div className="absolute top-20 z-10 w-[250px]  left-1/4 rounded-md flex justify-start items-center bg-white p-1 ">
-			        <h1 className="pl-2  font-bold">
-                        Es ideal para la <span className="text-orange-500">Agricultura</span>
+                <div className="absolute top-14 z-10 px-4 right-2 md:right-[13%] rounded-tl-2xl rounded-br-2xl flex flex-col justify-start items-center bg-white p-1 ">
+                    <div className="flex flex-col justify-start items-start text-livered-title">
+			        <h1 className=" font-bold">
+                        Componente de 
                     </h1>
+                    <h1 className="font-bold">
+                        equipo tempomatic 
+                    </h1>
+                    </div>
                 </div>
                 <Slider {...settings} >
                     <div style={{ width: wii }}>
