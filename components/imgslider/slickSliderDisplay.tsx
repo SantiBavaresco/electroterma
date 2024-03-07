@@ -19,10 +19,10 @@ export default class SimpleSliderDisplay extends Component {
             dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       variableWidth: true,
-            width: 800,
+            width: 600,
             centerMode: true,
 
 
@@ -59,8 +59,8 @@ export default class SimpleSliderDisplay extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
           }
@@ -68,9 +68,9 @@ export default class SimpleSliderDisplay extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1
           }
         },
         {
@@ -84,29 +84,29 @@ export default class SimpleSliderDisplay extends Component {
     };
 
         return (
-            <div className="">
+            <div className="w-[75%]">
                 
                 <Slider {...settings} >
-                    <div style={{ width: wii }}>
+                    <div style={{ width: wii }} className="px-[2px]">
                         {/* <img src="../../public/img/solerpalau/tda/imgbanner/1.jpg" alt="Imagen" > */}
                         {/* <h1 style={{width:"1280px", height: "200px", objectFit: "cover", objectPosition: "center"}}>1</h1> */}
 
                         <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/1.jpg"  radius="none" loading="lazy"/>
                     </div>
-                    <div style={{ width: wii }}>
+                    <div style={{ width: wii }} className="px-[2px]">
                         <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/2.jpg"  radius="none" loading="lazy"/>
                     </div>
-                    <div style={{ width: wii }}>
+                    <div style={{ width: wii }} className="px-[2px]">
                         <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/3.jpg"  radius="none" loading="lazy"/>
                     </div>
 
-                    <div style={{ width: wii }}>
+                    <div style={{ width: wii }} className="px-[2px]">
                         <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/1.jpg"  radius="none" loading="lazy"/>
                     </div>
-                    <div style={{ width: wii }}>
+                    <div style={{ width: wii }} className="px-[2px]">
                         <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/2.jpg"  radius="none" loading="lazy"/>
                     </div>
-                    <div style={{ width: wii }}>
+                    <div style={{ width: wii }} className="px-[2px]">
                         <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/3.jpg"  radius="none" loading="lazy"/>
                     </div>
                 </Slider>

@@ -109,6 +109,7 @@ export const Navbar = () => {
                         href="/"
                     >
                         <Image
+                            // className="sm:w-[180px]"
                             src="../img/electrotermalogoletrasNoPadding.png"
                             // height={50}
                             width={145}

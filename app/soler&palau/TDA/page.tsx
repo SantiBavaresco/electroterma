@@ -23,13 +23,16 @@ import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 
 import Caracteristics from "./tabs";
+import SimpleSliderExample from "@/components/imgslider/simpleSliderExample";
 
 export default function TDAPage() {
+    const urlImageBanner = "../img/solerpalau/imgbanner/";
+    const bannerImageNames = ["11","22","33","11","22","33"];
     return (
         <main  className=" flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
-            <section className="relative -top-12 w-auto md:w-1/2 lg:w-full py-3 ">
-                <div className="w-[450px] md:w-full">
-                    <SimpleSlider />
+            <section className="relative -top-12 w-auto md:w-3/4 lg:w-full py-3 ">
+                <div className="w-[450px] md:w-full lg:w-full">
+                    <SimpleSlider url={urlImageBanner} fileName={bannerImageNames}/>
                 </div>
                 <div className="bg-[#E61E25] md:w-98% py-2 lg:mx-[13%] flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
                     <div className="ml-12">
@@ -224,10 +227,9 @@ export default function TDAPage() {
                             />
                         </div>
                     </div>
+
                     <div>
-                        <div className="flex">
-                            <SimpleSliderDisplay />
-                        </div>
+                        <SimpleSliderExample/>
                     </div>
                     {/* <ElectrotermaLogo css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" /> */}
                     {/* <OtamLogo css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" /> */}
