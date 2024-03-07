@@ -12,7 +12,7 @@ import {
 export default function InfoTecnica() {
 
     return (
-        <div className="flex flex-col gap-3 max-w-[400px] overflow-x-auto lg:max-w-full">
+        <div className="flex flex-col gap-3 max-w-[320px] overflow-x-auto md:max-w-full">
             <Table
                 color="warning"
                 selectionMode="single"

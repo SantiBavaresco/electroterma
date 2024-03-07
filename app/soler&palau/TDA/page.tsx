@@ -49,7 +49,7 @@ export default function TDAPage() {
             {/* <section className="">
                 
             </section> */}
-            <section className="flex flex-col  md:flex md:flex-row-reverse w-2/3 ">
+            <section className="flex flex-col  md:flex md:flex-row-reverse w-3/4 ">
                 <div className="  ">
                     <div className="flex flex-col -mt-10 justify-items-end items-end font-lexend-bold tracking-widest ">
                         <span className="text-lg lg:text-2xl text-midgray font-nunito  ">
@@ -99,7 +99,7 @@ export default function TDAPage() {
                 </Button>
             </section>
 
-            <section className="flex flex-row-reverse mt-24 pt-2 border-2 border-green-500 border-dashed">
+            <section className="flex flex-row-reverse mt-24 pt-2 border-2 max-w-3/4 border-green-500 border-dashed">
                 <div className=" ">
                     <h4 className="text-start text-xs font-bold">
                         <p>

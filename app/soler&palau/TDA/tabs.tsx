@@ -13,7 +13,7 @@ export default function Caracteristics() {
 
 
     return (
-        <div className="flex flex-col md:w-full lg:w-[900px]   mt-10">
+        <div className="flex flex-col  md:w-full lg:w-[900px]   mt-10">
             
         <Tabs aria-label="tabs" items={tabs}
             variant="solid"
@@ -23,7 +23,7 @@ export default function Caracteristics() {
             classNames={{
                 // tabList: "gap-6 w-full rounded-none p-0 border-b border-divider",
                 cursor: "w-full bg-orange-500",
-                tab: "text-sm md:text-md lg:text-xl md:px-6  h-12 font-bold",
+                tab: "text-xs p-1 md:text-md lg:text-xl md:px-6  h-12 font-bold",
                 tabContent: "group-data-[selected=true]:text-white ",
             }}
         >
@@ -71,7 +71,7 @@ const tabs = [
         id: "componentes",
         label: "Componentes",
         content: 
-            <div className="flex lg:flex-row flex-col items-center">
+            <div className="flex md:flex-row flex-col items-center">
                 <div>
                     <span className="text-orange-500 font-lexeng-bolder">
                         <span className="bg-orange-500 text-white px-2">

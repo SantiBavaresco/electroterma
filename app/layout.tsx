@@ -90,7 +90,7 @@ export default function RootLayout({
                                 
                             </Link>
                             </div>
-                            <div className="absolute right-24 ">
+                            <div className="invisible md:visible absolute right-24 ">
                                 <Image
                                 src="../electroterma-logo.png"
                                 // height={50}
