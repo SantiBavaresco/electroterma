@@ -23,11 +23,14 @@ import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 
 import Caracteristics from "./tabs";
-import SimpleSliderExample from "@/components/imgslider/simpleSliderExample";
+import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 
 export default function TDAPage() {
     const urlImageBanner = "../img/solerpalau/imgbanner/";
     const bannerImageNames = ["11","22","33","11","22","33"];
+    
+    const urlTdaImageDemo = "../img/solerpalau/tda/imgbanner/";
+    const demoImageNames = ["1","2","3","1","2","3"];
     return (
         <main  className=" flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
             <section className="relative -top-12 w-auto md:w-3/4 lg:w-full py-3 ">
@@ -46,31 +49,31 @@ export default function TDAPage() {
             {/* <section className="">
                 
             </section> */}
-            <section className=" flex flex-row-reverse w-2/3 ">
+            <section className="flex flex-col  md:flex md:flex-row-reverse w-2/3 ">
                 <div className="  ">
-                    <div className="flex flex-col justify-items-end items-end font-lexend-bold tracking-widest ">
-                        <span className="text-2xl text-midgray font-nunito  ">
+                    <div className="flex flex-col -mt-10 justify-items-end items-end font-lexend-bold tracking-widest ">
+                        <span className="text-lg lg:text-2xl text-midgray font-nunito  ">
                             VENTILADOR
                         </span>
-                        <h1 className="text-5xl font-nunito-bold text-livered-title">CENTRIFUGO</h1>
-                        <h1 className="text-5xl font-nunito-bold text-livered-title">
+                        <h1 className="text-3xl lg:text-5xl font-nunito-bold text-livered-title">CENTRIFUGO</h1>
+                        <h1 className="text-3xl lg:text-5xl font-nunito-bold text-livered-title">
                             MULTIPALA - TDA
                         </h1>
-                        <span className="text-3xl mt-4 text-midgray font-nunito">
+                        <span className="text-lg lg:text-3xl lg:mt-4 text-midgray font-nunito">
                             DE DOBLE ASPIRACIóN
                         </span>
                         <div className="mt-2">
-                            <p className="text-2xl">
+                            <p className="text-lg lg:text-2xl">
                                 Inyección de{" "}
                                 <span className="text-livered">aire limpio</span>{" "}
                             </p>
-                            <p className="text-2xl">
+                            <p className="text-lg lg:text-2xl">
                                 <span className="text-livered"></span>dentro de equipos HVAC
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen -left-[10%] z-10">
+                <div className="relative max-w-screen -left-[10%] -mt-10 z-10">
                     <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
@@ -78,7 +81,7 @@ export default function TDAPage() {
                         src="../img/solerpalau/tda/SolerPalauTda1.png"
                         width={300}
                     />
-{/* --- ONDA 1 --------------- */}
+                    {/* --- ONDA 1 --------------- */}
                     <Ondas01SVG css="absolute top-32 left-[188px] z-10 "/>
                     {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
                         <LottieWave />
@@ -88,7 +91,7 @@ export default function TDAPage() {
 
             <section className="w-1/2  flex justify-items-start">
                 <Button
-                    className="relative top-16 -left-8 z-10 bg-livered text-white"
+                    className="relative top-16 left-2 lg:-left-8 z-10 bg-livered text-white"
                     radius="full"
                     size="lg"
                 >
@@ -197,8 +200,10 @@ export default function TDAPage() {
             {/* <section className={' '}>
                 <VideoScrollPlayer/>
             </section> */}
-            <section className="relative text-xl max-w-full">
-                <Caracteristics />
+            <section className="relative text-xl max-w-full ">
+                <div className="flex justify-center items-center w-3/4 mx-auto">
+                    <Caracteristics />
+                </div>
                 <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-56 overflow-y-scroll no-scrollbar" />
                 <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
                 {/* <LottieWave1 /> */}
@@ -216,8 +221,8 @@ export default function TDAPage() {
             <section className="">
                 <div className="flex flex-col justify-center items-center  w-screen m-auto ">
                     <div className="flex justify-center items-center w-3/4">
-                        <div className="w-1/2 float-left">
-                            <h1 className=" text-2xl font-bold text-livered ">
+                        <div className="w-3/4 float-left">
+                            <h1 className="text-sm lg:text-2xl font-bold text-livered ">
                                 INSTALACIONES EN OBRA
                             </h1>
                         </div>
@@ -232,7 +237,7 @@ export default function TDAPage() {
                     </div>
 
                     <div>
-                        <SimpleSliderExample/>
+                        <SimpleSliderDemoImages url={urlTdaImageDemo} fileName={demoImageNames}/>
                     </div>
                     {/* <ElectrotermaLogo css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" /> */}
                     {/* <OtamLogo css="absolute  -z-10 -left-1/2 -top-44 overflow-y-scroll no-scrollbar" /> */}

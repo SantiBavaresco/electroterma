@@ -5,7 +5,13 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick-theme.css";
 import { Image } from "@nextui-org/image";
 
-function SimpleSliderExample() {
+interface Props {
+    url?: string;
+    fileName?: Array<string>;
+    width?: string;
+}
+
+const SimpleSliderDemoImages: React.FC<Props> = ({ url, width, fileName }) => {
     const wii = "450px";
     const hii = "300px";
 
@@ -62,12 +68,23 @@ function SimpleSliderExample() {
                 }}
             >
                 <Slider {...settings}>
-                    <div
+                    {fileName?.map((item, index) => (
+                        <div style={{ width: wii, height: hii }} key={index} className="max-w-[400px]  md:max-w-[400px] lg:max-w-[500px] px-[2px]">
+                            <Image
+                                alt={`Imagen ${index}`}
+                                src={`${url}${item}.jpg`}
+                                isZoomed
+                                radius="none"
+                                loading="lazy"
+                                key={index}
+                            />
+                        </div>
+                    ))}
+                    {/* <div
                         style={{ width: wii, height: hii }}
                         className="px-[2px]"
                     >
-                        {/* <img src="../../public/img/solerpalau/tda/imgbanner/1.jpg" alt="Imagen" > */}
-                        {/* <h1 style={{width:"1280px", height: "200px", objectFit: "cover", objectPosition: "center"}}>1</h1> */}
+                       
 
                         <Image
                             alt="Imagen 1"
@@ -137,11 +154,11 @@ function SimpleSliderExample() {
                             radius="none"
                             loading="lazy"
                         />
-                    </div>
+                    </div> */}
                 </Slider>
             </div>
         </div>
     );
 }
 
-export default SimpleSliderExample;
+export default SimpleSliderDemoImages;

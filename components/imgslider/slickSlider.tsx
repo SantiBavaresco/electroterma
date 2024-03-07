@@ -13,7 +13,6 @@ interface Props {
 }
 
 // const ModalPdf: React.FC<Props> = ({ url, title, layer, color, primaryColor, reflectionColor, borderColor}) => {
-
 // import image1 from "../../public/img/solerpalau/tda/imgbanner/11.jpg";
 // import image2 from "../../public/img/solerpalau/tda/imgbanner/22.jpg";
 // import image3 from "../../public/img/solerpalau/tda/imgbanner/33.jpg";
@@ -91,62 +90,6 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
                         />
                     </div>
                 ))}
-                {/* <div style={{ width: wii }} className="px-[2px]">
-                   
-                    <Image
-                        alt="Imagen 1"
-                        src="../img/solerpalau/imgbanner/11.jpg"
-                        isZoomed
-                        radius="none"
-                        loading="lazy"
-                    />
-                </div>
-                <div style={{ width: wii }} className="px-[2px]">
-                    <Image
-                        alt="Imagen 2"
-                        src="../img/solerpalau/imgbanner/22.jpg"
-                        isZoomed
-                        radius="none"
-                        loading="lazy"
-                    />
-                </div>
-                <div style={{ width: wii }} className="px-[2px]">
-                    <Image
-                        alt="Imagen 3"
-                        src="../img/solerpalau/imgbanner/33.jpg"
-                        isZoomed
-                        radius="none"
-                        loading="lazy"
-                    />
-                </div>
-
-                <div style={{ width: wii }} className="px-[2px]">
-                    <Image
-                        alt="Imagen 1"
-                        src="../img/solerpalau/imgbanner/11.jpg"
-                        isZoomed
-                        radius="none"
-                        loading="lazy"
-                    />
-                </div>
-                <div style={{ width: wii }} className="px-[2px]">
-                    <Image
-                        alt="Imagen 2"
-                        src="../img/solerpalau/imgbanner/22.jpg"
-                        isZoomed
-                        radius="none"
-                        loading="lazy"
-                    />
-                </div>
-                <div style={{ width: wii }} className="px-[2px]">
-                    <Image
-                        alt="Imagen 3"
-                        src="../img/solerpalau/tda/imgbanner/33.jpg"
-                        isZoomed
-                        radius="none"
-                        loading="lazy"
-                    />
-                </div> */}
             </Slider>
         </div>
     );
