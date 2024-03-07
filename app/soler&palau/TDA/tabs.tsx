@@ -119,6 +119,7 @@ const tabs = [
                 </div>
                 <div>
                     <Image
+                        alt="Soler Palau Tda 2"
                         className=""
                         src="../img/solerpalau/tda/SolerPalauTda2.png"
                         width={400}

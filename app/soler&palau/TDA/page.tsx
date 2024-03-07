@@ -73,6 +73,7 @@ export default function TDAPage() {
                 <div className="relative max-w-screen -left-[10%] z-10">
                     <Image
                         // className="-top-16 left-1/2"
+                        alt="Ventilador"
                         className="inline-block top-20 left-10"
                         src="../img/solerpalau/tda/SolerPalauTda1.png"
                         width={300}
@@ -204,6 +205,7 @@ export default function TDAPage() {
             </div>
                 <div className="flex justify-end opacity-30">
                     <Image
+                        alt="Otam Logo"
                                         className=""
                                         src="../img/otamlogo.png"
                                         width={250}
@@ -221,6 +223,7 @@ export default function TDAPage() {
                         </div>
                         <div className="w-1/2 float-right flex justify-end items-end ">
                             <Image
+                                alt="Electroterma Logo"
                                 className=""
                                 src="../img/electrotermalogoletras.png"
                                 width={250}
@@ -236,6 +239,7 @@ export default function TDAPage() {
                     <div className="flex justify-center items-center w-3/4">
                         <div className="w-1/2 float-left">
                             <Image
+                                alt="Otam Logo"
                                 className=" w-1/2 float-right "
                                 src="../img/otamlogo.png"
                                 width={250}

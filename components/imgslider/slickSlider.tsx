@@ -80,13 +80,14 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
             </div>
             <Slider {...settings}>
                 {fileName?.map((item, index) => (
-                    <div  className="max-w-[330px]  md:max-w-[400px] lg:max-w-[500px] px-[2px]">
+                    <div key={index} className="max-w-[330px]  md:max-w-[400px] lg:max-w-[500px] px-[2px]">
                         <Image
                             alt={`Imagen ${index}`}
                             src={`${url}${item}.jpg`}
                             isZoomed
                             radius="none"
                             loading="lazy"
+                            key={index}
                         />
                     </div>
                 ))}
