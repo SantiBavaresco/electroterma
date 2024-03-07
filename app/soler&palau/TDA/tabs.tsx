@@ -71,7 +71,7 @@ const tabs = [
         id: "componentes",
         label: "Componentes",
         content: 
-            <div className="flex flex-row">
+            <div className="flex lg:flex-row flex-col items-center">
                 <div>
                     <span className="text-orange-500 font-lexeng-bolder">
                         <span className="bg-orange-500 text-white px-2">
@@ -133,7 +133,7 @@ const tabs = [
         id: "infotecnica",
         label: "Info Tecnica",
         content:
-            <div>
+            <div className="">
                 <InfoTecnica/>
             </div>,
     },
