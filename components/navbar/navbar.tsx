@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import {
     Navbar as NextUINavbar,
     NavbarContent,
@@ -15,6 +16,8 @@ import {
     DropdownSection,
     DropdownItem,
 } from "@nextui-org/dropdown";
+
+import icono from "../electroterma-logo.png"
 
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
@@ -99,10 +102,15 @@ export const Navbar = () => {
             type="search"
         />
     );
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
         <NextUINavbar maxWidth="xl" position="sticky">
             <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
+                {/* <NavbarMenuToggle
+                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                    className="sm:hidden"
+                /> */}
                 <NavbarBrand as="li" className="gap-3 max-w-fit">
                     <NextLink
                         className="flex justify-start items-center gap-1"
@@ -224,12 +232,19 @@ export const Navbar = () => {
 					<GithubIcon className="text-default-500" />
 				</Link>
 				<ThemeSwitch /> */}
-                <NavbarMenuToggle />
+                
+                <NavbarMenuToggle 
+                 aria-label={isMenuOpen ? "C" : "O"}
+                 icon={isMenuOpen ? "C" : "+"}
+                 className="md:hidden "
+                />
             </NavbarContent>
 
             <NavbarMenu>
-                {searchInput}
-                <div className="mx-4 mt-2 flex flex-col gap-2">
+                {/* {searchInput} */}
+                
+                <div className="mx-4 mt-2 flex flex-col gap-2 ">
+                    
                     {siteConfig.navMenuItems.map((item, index) => (
                         <NavbarMenuItem key={`${item}-${index}`}>
                             <Link

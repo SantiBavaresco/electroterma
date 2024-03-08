@@ -29,7 +29,7 @@ export default function TDAPage() {
     const urlImageBanner = "../img/solerpalau/imgbanner/";
     const bannerImageNames = ["11","22","33","11","22","33"];
     
-    const urlTdaImageDemo = "../img/solerpalau/tda/imgbanner/";
+    const urlTdaImageDemo = "../img/solerpalau/tda/imgDemo/";
     const demoImageNames = ["1","2","3","1","2","3"];
     return (
         <main  className=" flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
@@ -50,17 +50,17 @@ export default function TDAPage() {
                 
             </section> */}
             <section className="flex flex-col  md:flex md:flex-row-reverse w-3/4 ">
-                <div className="  ">
+                <div className="md:mr-10 ">
                     <div className="flex flex-col -mt-10 justify-items-end items-end font-lexend-bold tracking-widest ">
                         <span className="text-lg lg:text-2xl text-midgray font-nunito  ">
                             VENTILADOR
                         </span>
-                        <h1 className="text-3xl lg:text-5xl font-nunito-bold text-livered-title">CENTRIFUGO</h1>
+                        <h1 className="text-3xl lg:text-5xl font-nunito-bold text-livered-title">CENTRÍFUGO</h1>
                         <h1 className="text-3xl lg:text-5xl font-nunito-bold text-livered-title">
                             MULTIPALA - TDA
                         </h1>
                         <span className="text-lg lg:text-3xl lg:mt-4 text-midgray font-nunito">
-                            DE DOBLE ASPIRACIóN
+                            DE DOBLE ASPIRACIÓN
                         </span>
                         <div className="mt-2">
                             <p className="text-lg lg:text-2xl">

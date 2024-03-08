@@ -91,23 +91,23 @@ export default class SimpleSliderDisplay extends Component {
                         {/* <img src="../../public/img/solerpalau/tda/imgbanner/1.jpg" alt="Imagen" > */}
                         {/* <h1 style={{width:"1280px", height: "200px", objectFit: "cover", objectPosition: "center"}}>1</h1> */}
 
-                        <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/1.jpg"  radius="none" loading="lazy"/>
+                        <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/1.jpg"  radius="none" loading="eager"/>
                     </div>
                     <div style={{ width: wii }} className="px-[2px]">
-                        <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/2.jpg"  radius="none" loading="lazy"/>
+                        <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/2.jpg"  radius="none" loading="eager"/>
                     </div>
                     <div style={{ width: wii }} className="px-[2px]">
-                        <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/3.jpg"  radius="none" loading="lazy"/>
+                        <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/3.jpg"  radius="none" loading="eager"/>
                     </div>
 
                     <div style={{ width: wii }} className="px-[2px]">
-                        <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/1.jpg"  radius="none" loading="lazy"/>
+                        <Image alt="Imagen 1" src="../img/solerpalau/tda/imgbanner/1.jpg"  radius="none" loading="eager"/>
                     </div>
                     <div style={{ width: wii }} className="px-[2px]">
-                        <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/2.jpg"  radius="none" loading="lazy"/>
+                        <Image alt="Imagen 2" src="../img/solerpalau/tda/imgbanner/2.jpg"  radius="none" loading="eager"/>
                     </div>
                     <div style={{ width: wii }} className="px-[2px]">
-                        <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/3.jpg"  radius="none" loading="lazy"/>
+                        <Image alt="Imagen 3" src="../img/solerpalau/tda/imgbanner/3.jpg"  radius="none" loading="eager"/>
                     </div>
                 </Slider>
             </div>

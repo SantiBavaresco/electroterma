@@ -85,7 +85,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
                             src={`${url}${item}.jpg`}
                             isZoomed
                             radius="none"
-                            loading="lazy"
+                            loading="eager"
                             key={index}
                         />
                     </div>
