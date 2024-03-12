@@ -1,4 +1,4 @@
-export default function NosotrosLayout({
+export default function TDALayout({
 	children,
 }: {
 	children: React.ReactNode;
