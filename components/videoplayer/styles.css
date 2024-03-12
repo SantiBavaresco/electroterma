@@ -1,4 +1,22 @@
 .App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  height: 500vh;
+}
+
+#v0 {
+  position: fixed;
+  top: 10;
+  left: 0;
+  width: 60%;
+}
+#scrollSection {
+  display: block;
+}
+/* .App {
     font-family: sans-serif;
     text-align: center;
     overflow: hidden;
@@ -22,21 +40,21 @@
     overflow-y: scroll;
   }
    */
-   .video-container {
+   /* .video-container {
     width: 400px;
     height: 400px;
     overflow: hidden; /* Prevent scrollbars outside the container */
-    margin: 0 auto; /* Center the container horizontally */
-  }
+    /* margin: 0 auto; Center the container horizontally */
+  /* }
   
   .scroll-section {
-    height: 100%; /* Fill the entire container height */
-    overflow-y: scroll; /* Enable vertical scrolling within the container */
-  }
+    /* height: 100%; Fill the entire container height */
+    /* overflow-y: scroll; Enable vertical scrolling within the container */
+  /* }
   
   #v0 {
     /* Removed positioning rules as they're no longer needed */
-    width: 30%;
+    /* width: 30%;
     height: 30%;
     object-fit: cover; /* Ensure the video fills the entire scroll section */
-  }
+  /* } */ 
