@@ -4,6 +4,7 @@ import Image from "next/image";
 import "./styles.css";
 // import "./scrubbing.js"
 import { Chip } from "@nextui-org/chip";
+import { Reveal } from "@/components/revealFramemotion";
 
 import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
 import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
@@ -98,21 +99,39 @@ export default function VideoScrubber() {
                     ></video>
                 </div>
 
-                <div class="story">
+                <div class="story text-5xl">
                     <div>
+                        <Reveal>
                         <h3 className="mr-6">Caracteristica 1</h3>
+                        </Reveal>
                     </div>
                     <div>
+                    <Reveal>
+
                         <h3>Esta es la caracteristica 2</h3>
+                        </Reveal>
+
                     </div>
                     <div>
+                    <Reveal>
+
                         <h3>Aqui va la caracteristica 3</h3>
+                        </Reveal>
+
                     </div>
                     <div>
+                    <Reveal>
+
                         <h3 className="mr-6">Aca va la 4</h3>
+                        </Reveal>
+
                     </div>
                     <div>
+                    <Reveal>
+
                         <h3 className="mr-6">Y esta es la ultima que va.</h3>
+                        </Reveal>
+
                     </div>
                     <div>
                         {/* <h3>Whispering secrets of a world outside.</h3> */}

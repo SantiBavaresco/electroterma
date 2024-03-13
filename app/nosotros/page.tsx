@@ -12,6 +12,7 @@ import { Ondas02SVG } from "@/public/svg/ondas02svg";
 import { Download } from "@/public/svg/download";
 import SimpleSlider from "@/components/imgslider/slickSlider";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
+import { Reveal } from "@/components/revealFramemotion";
 
 
 
@@ -46,10 +47,14 @@ export default function NosotrosPage() {
                         <span className="text-lg lg:text-5xl text-midgray font-nunito ">
                             VENTILADOR
                         </span>
+						<Reveal>
                         <h1 className="mt-4 text-3xl lg:text-[78px] leading-none font-nunito-bolder text-livered-title">CENTRÍFUGO</h1>
+						</Reveal>
+						<Reveal>
                         <h1 className="text-3xl lg:text-[78px] leading-none  font-nunito-bolder text-livered-title">
                             MULTIPALA - TDA
                         </h1>
+						</Reveal>
                         <span className="text-lg lg:text-[43px] lg:mt-6 text-midgray font-nunito ">
                             DE DOBLE ASPIRACIÓN
                         </span>
