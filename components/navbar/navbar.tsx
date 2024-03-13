@@ -111,7 +111,7 @@ export const Navbar = () => {
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="sm:hidden"
                 /> */}
-                <NavbarBrand as="li" className="gap-3 max-w-fit">
+                <NavbarBrand as="li" className="gap-1 w-[160px] max-h-[25px]">
                     <NextLink
                         className="flex justify-start items-center gap-1"
                         href="/"
@@ -120,13 +120,13 @@ export const Navbar = () => {
                             // className="sm:w-[180px]"
                             src="../img/electrotermalogoletrasNoPadding.png"
                             // height={50}
-                            width={145}
+                            width={200}
                             alt="hola"
                         />
                         {/* <p className="font-bold text-inherit">Electroterma</p> */}
                     </NextLink>
                 </NavbarBrand>
-                <ul className="hidden md:flex gap-4 justify-around pl-10 ml-1">
+                <ul className="hidden md:flex gap-4 justify-around pl-1 ml-1">
                     {siteConfig.navItems.map((item) => (
                         <NavbarItem key={item.href}>
                             {item.dropdown ? (

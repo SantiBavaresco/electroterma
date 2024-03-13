@@ -71,15 +71,15 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
 
     return (
         <div className="overflow-hidden ">
-            <div className="absolute bottom-[74px] z-10 px-4 right-2 md:right-[13%] rounded-tl-2xl rounded-br-2xl flex flex-col justify-start items-center bg-white p-1 ">
-                <div className="flex flex-col justify-start items-start text-livered-title">
+            <div className="absolute top-[58vh] z-10 px-4 right-12  rounded-tl-2xl rounded-br-2xl flex flex-col justify-start items-center bg-white p-1 ">
+                <div className="flex flex-col justify-start items-start text-3xl text-livered-title py-6">
                     <h1 className=" font-bold">Componente de</h1>
                     <h1 className="font-bold">equipo tempomatic</h1>
                 </div>
             </div>
             <Slider {...settings}>
                 {fileName?.map((item, index) => (
-                    <div key={index} className="max-w-[330px]  md:max-w-[400px] lg:max-w-[500px] px-[2px]">
+                    <div key={index} className="max-w-[330px]  md:max-w-[400px] lg:max-w-[115vh] px-[2px]">
                         <Image
                             alt={`Imagen ${index}`}
                             src={`${url}${item}.jpg`}

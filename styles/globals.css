@@ -32,25 +32,25 @@
 /* // ----------------------------------------------------------------------------------------- */
   @font-face {
     font-family: "nunito";
-    src: url("../public/typographie/nunito/NunitoSans-Regular.ttf") format('truetype');
+    src: url("../public/typographie/nunito/Nunito-Medium.ttf") format('truetype');
   }
 
   @font-face {
     font-family: "nunito-thin";
     font-weight: lighter;
-    src: url("../public/typographie/nunito/NunitoSans-Light.ttf") format('truetype');
+    src: url("../public/typographie/nunito/Nunito-Light.ttf") format('truetype');
   }
 
   @font-face {
     font-family: "nunito-bold";
     font-weight: bold;
-    src: url("../public/typographie/nunito/NunitoSans-Bold.ttf") format('truetype');
+    src: url("../public/typographie/nunito/Nunito-Bold.ttf") format('truetype');
   }
 
   @font-face {
     font-family: "nunito-bolder";
     font-weight: bolder;
-    src: url("../public/typographie/nunito/NunitoSans-ExtraBold.ttf") format('truetype');
+    src: url("../public/typographie/nunito/Nunito-ExtraBold.ttf") format('truetype');
   }
 
 @layer components {

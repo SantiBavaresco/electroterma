@@ -1,22 +1,27 @@
 "use client";
+import { useEffect } from "react";
 import Image from "next/image";
 import "./styles.css";
 // import "./scrubbing.js"
-import {useEffect} from "react";
+import { Chip } from "@nextui-org/chip";
+
+import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
+import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
+import { FacilInstalacion } from "@/public/svg/facilInstalacion";
+import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
 export default function VideoScrubber() {
-
     useEffect(() => {
         // Cargar el archivo JS después del renderizado
         // myScript();
         require("./scrubbing");
-    
+
         // Devolver una función de limpieza
         return () => {
-          // Cualquier limpieza que se necesite al desmontar el componente
+            // Cualquier limpieza que se necesite al desmontar el componente
         };
-      }, []);
-    
+    }, []);
+
     return (
         <div>
             {/* <header>
@@ -35,8 +40,29 @@ export default function VideoScrubber() {
                 </nav>
             </header> */}
             {/* <script src="./scrubbing.js" async ></script> */}
+            
+            {/* <section class="intro">
+                <div>
+                <p>
+                            El ventilador{" "}
+                            <span className="text-livered">
+                                Sirocco Multipala TDA{" "}
+                            </span>
+                            está diseñado para <br />
+                            proporcionar un flujo de aire potente y constante.
+                            <br />
+                            <br />
+                            Su función principal{" "}
+                            <span className="text-livered">
+                                es mejorar la circulación del aire,
+                            </span>{" "}
+                            reduciendo la <br /> sensación de calor y
+                            promoviendo un ambiente más confortable.
+                        </p>
+                </div>
+            </section> */}
 
-            <section class="hero">
+            {/* <section class="hero">
                 <h2>Lets face it, theres nothing quite like it.</h2>
             </section>
 
@@ -56,7 +82,7 @@ export default function VideoScrubber() {
                         </a>
                     </p>
                 </div>
-            </section>
+            </section> */}
 
             <section class="vid" id="video-ventilador">
                 <div class="holder">
@@ -72,36 +98,93 @@ export default function VideoScrubber() {
                     ></video>
                 </div>
 
-                {/* <div class="story">
-        <div>
-          <h3>In the heart of Wildrise&hellip;</h3>
-        </div>
-        <div>
-          <h3>&hellip;where the breezes play.</h3>
-        </div>
-        <div>
-          <h3>We embrace the call of the wild each day.</h3>
-        </div>
-        <div>
-          <h3>Untamed places stretch,</h3>
-        </div>
-        <div>
-          <h3>vast and wide.</h3>
-        </div>
-        <div>
-          <h3>Whispering secrets of a world outside.</h3>
-        </div>
-      </div> */}
+                <div class="story">
+                    <div>
+                        <h3 className="mr-6">Caracteristica 1</h3>
+                    </div>
+                    <div>
+                        <h3>Esta es la caracteristica 2</h3>
+                    </div>
+                    <div>
+                        <h3>Aqui va la caracteristica 3</h3>
+                    </div>
+                    <div>
+                        <h3 className="mr-6">Aca va la 4</h3>
+                    </div>
+                    <div>
+                        <h3 className="mr-6">Y esta es la ultima que va.</h3>
+                    </div>
+                    <div>
+                        {/* <h3>Whispering secrets of a world outside.</h3> */}
+                        <span className="flex gap-1 flex-col items-center align-center justify-center mr-2">
+                            <div className="flex gap-2 mt-6 max-h-10">
+                                <Chip
+                                    className="p-4 px-2 text-xs max-h-10"
+                                    startContent={
+                                        <ConstruccionDuradera size={28} />
+                                    }
+                                    variant="faded"
+                                    radius="full"
+                                    size="lg"
+                                >
+                                    {" "}
+                                    Construción Duradera
+                                </Chip>
+                                <Chip
+                                    className="p-4 px-2 text-xs max-h-10"
+                                    startContent={
+                                        <FacilInstalacion size={28} />
+                                    }
+                                    variant="faded"
+                                    radius="full"
+                                    size="lg"
+                                >
+                                    {" "}
+                                    Facil Instalacion
+                                </Chip>
+                            </div>
+
+                            <div className="flex gap-1 mt-2 max-h-10">
+                                <Chip
+                                    className="p-4 px-2 text-xs max-h-10"
+                                    startContent={
+                                        <VersatilidadAplicacion size={28} />
+                                    }
+                                    variant="faded"
+                                    radius="full"
+                                    size="lg"
+                                >
+                                    {" "}
+                                    Versatilidad de Aplicación
+                                </Chip>
+                                <Chip
+                                    className="p-4 px-2 text-xs max-h-10"
+                                    startContent={
+                                        <EficienciaEnergetica size={28} />
+                                    }
+                                    variant="faded"
+                                    radius="full"
+                                    size="lg"
+                                >
+                                    {" "}
+                                    Eficiencia Energética
+                                </Chip>
+                            </div>
+                        </span>
+                    </div>
+                </div>
             </section>
 
-            <section class="savvy">
+            {/* <section class="savvy">
                 <h3>Think of us as your adventure-savvy older sibling.</h3>
 
                 <div>
                     <p>
                         <Image
-                            src="ice.jpg"
+                            src="/ice.jpg"
                             alt="Photo of camping equipment on a snowy ground"
+                            width={300}
+                            height={300}
                         />
                     </p>
 
@@ -124,8 +207,13 @@ export default function VideoScrubber() {
             </section>
 
             <footer>
-                <Image src="footer.svg" alt="Wildrise footer" />
-            </footer>
+                <Image
+                    src="/footer.svg"
+                    alt="Wildrise footer"
+                    width={300}
+                    height={300}
+                />
+            </footer> */}
             {/* <script src="scrubbing.js"></script> */}
         </div>
     );

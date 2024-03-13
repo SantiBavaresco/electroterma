@@ -25,7 +25,7 @@ const SimpleSliderDemoImages: React.FC<Props> = ({ url, width, fileName }) => {
         // pauseOnHover: true,
 
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         adaptiveHeight: true,
         variableWidth: true,
         height: 800,

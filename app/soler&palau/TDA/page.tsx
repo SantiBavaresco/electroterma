@@ -24,22 +24,26 @@ import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 
 import Caracteristics from "./tabs";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
+import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 
 export default function TDAPage() {
     const urlImageBanner = "../img/solerpalau/imgbanner/";
-    const bannerImageNames = ["11","22","33","11","22","33"];
+    const bannerImageNames = ["1","2","3","1","2","3"];
     
     const urlTdaImageDemo = "../img/solerpalau/tda/imgDemo/";
     const demoImageNames = ["1","2","3","1","2","3"];
     return (
-        <main  className=" flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
-            <section className="relative -top-12 w-auto md:w-3/4 lg:w-full py-3 ">
+        <main  
+            // className=" flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden"
+            className="flex flex-col items-center justify-center w-screen m-auto"
+            >
+            <section className="relative top-0 w-auto md:w-3/4 lg:w-full py-3 min-h-screen ">
                 <div className="w-[450px] md:w-full lg:w-full">
                     <SimpleSlider url={urlImageBanner} fileName={bannerImageNames}/>
                 </div>
-                <div className="bg-[#E61E25] md:w-98% py-2 lg:mx-[13%] flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
+                <div className="bg-[#E61E25] md:w-10% py-2 lg: flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
                     <div className="ml-12">
-                        <h2 className="text-white"> ¿Cuál es tu necesidad? </h2>
+                        <h2 className="text-white text-lg"> ¿Cuál es tu necesidad? </h2>
                     </div>
                     <div className="mr-12">
                         <Button radius="full">Consúltanos</Button>
@@ -91,14 +95,14 @@ export default function TDAPage() {
 
             <section className="w-1/2  flex justify-items-start">
                 <Button
-                    className="relative top-16 left-2 lg:-left-8 z-10 bg-livered text-white"
+                    className="relative top-4 -10 lg:-left-8 z-10 bg-livered text-white"
                     radius="full"
                     size="lg"
                 >
                     Asesoramiento
                 </Button>
             </section>
-
+{/* 
             <section className="flex flex-row-reverse mt-24 pt-2 border-2 max-w-3/4 border-green-500 border-dashed">
                 <div className=" ">
                     <h4 className="text-start text-xs font-bold">
@@ -169,10 +173,12 @@ export default function TDAPage() {
 
                 
                 <div key="video" className="  overflow-hidden">
-                    {/* <VideoPlayer /> */}
+
                     <VideoAutoPlayer />
                 </div>
-            </section>
+            </section> */}
+            <VideoScrubber/>
+            
             <section className="w-9/12 flex flex-row justify-end items-end">
                 <Button
                             className="z-10 bg-livered text-white"
@@ -205,9 +211,9 @@ export default function TDAPage() {
                     <Caracteristics />
                 </div>
                 <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-56 overflow-y-scroll no-scrollbar" />
-                <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
-                {/* <LottieWave1 /> */}
-            </div>
+                {/* <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
+                
+                </div> */}
                 <div className="flex justify-end opacity-30">
                     <Image
                         alt="Otam Logo"

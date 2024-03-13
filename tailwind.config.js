@@ -10,6 +10,8 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
     './public/typographie/lexend/*.tff',
+    './public/typographie/nunito/*.tff',
+
   ],
   theme: {
     extend: {
@@ -20,6 +22,7 @@ module.exports = {
         nunito: "nunito",
         "nunito-thin": "nunito-thin",
         "nunito-bold": "nunito-bold",
+        "nunito-bolder": "nunito-bolder",
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
       },
