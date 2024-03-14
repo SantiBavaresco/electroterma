@@ -29,7 +29,7 @@ export const Reveal: React.FC<Props> = ({ children, width = "fit-content" }) => 
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{duration: 1.5, delay:1.25}}
+                transition={{duration: 1.5, delay:1.0}}
             >
                 {children}
             </motion.div>

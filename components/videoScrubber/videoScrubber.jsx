@@ -98,9 +98,9 @@ export default function VideoScrubber() {
                         preload="auto"
                         id="video"
                     >
-                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'   /> */}
-                    <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/ogg; codecs="theora, vorbis"'/>
-                    <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/webm; codecs="vp8.0, vorbis"'    />
+                    <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'   />
+                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/ogg; codecs="theora, vorbis"'/>
+                    <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/webm; codecs="vp8.0, vorbis"'/> */}
                     
 
                     </video>
