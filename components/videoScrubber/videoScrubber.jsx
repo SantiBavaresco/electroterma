@@ -6,6 +6,8 @@ import "./styles.css";
 import { Chip } from "@nextui-org/chip";
 import { Reveal } from "@/components/revealFramemotion";
 
+import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx';
+
 import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
 import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
 import { FacilInstalacion } from "@/public/svg/facilInstalacion";
@@ -87,20 +89,23 @@ export default function VideoScrubber() {
 
             <section class="vid" id="video-ventilador">
                 <div class="holder">
+                {/* <ScrollyVideo src="../img/solerpalau/tda/SolerPalauVideo1.mkv" /> */}
                     <video
                         // type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
                         playsinline
-                        autobuffer
-                        autoplay
                         muted
                         loop
+                        autoplay="autoplay"
+                        autobuffer
+
+                       
                         // controls
                         preload="auto"
                         id="video"
                     >
-                    <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'   />
-                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/ogg; codecs="theora, vorbis"'/>
-                    <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/webm; codecs="vp8.0, vorbis"'/> */}
+                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'   /> */}
+                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/ogg; codecs="theora, vorbis"'/> */}
+                    <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/webm'/>
                     
 
                     </video>
