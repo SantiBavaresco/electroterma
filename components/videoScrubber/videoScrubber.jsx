@@ -95,51 +95,57 @@ export default function VideoScrubber() {
                         loop
                         playsinline
                         // controls
-                        preload="preload"
+                        preload="auto"
                     >
-                    <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type="video/mp4"    />
-                    <source src="../img/solerpalau/tda/SolerPalauVideo11.webm" type="video/webm"    />
+                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type="video/mp4"    /> */}
+                    <source src="../img/solerpalau/tda/vid.mp4" type="video/mp4"    />
 
                     </video>
                 </div>
 
                 <div class="story text-5xl">
-                    <div>
-                        <Reveal>
-                        <h3 className="mr-6">Caracteristica 1</h3>
-                        </Reveal>
-                    </div>
-                    <div>
-                    <Reveal>
+                    <div >
+                            <div className="max-h-4 mr-16">
+                        <Reveal width="100%">
 
-                        <h3>Esta es la caracteristica 2</h3>
+                        <h3 className="h-fit "> Caracteristica 1</h3>
                         </Reveal>
 
+                        </div>
                     </div>
-                    <div>
+                    <div className="m-auto">
                     <Reveal>
 
-                        <h3>Aqui va la caracteristica 3</h3>
+                        <h3 className="mr-16"> la caracteristica 2</h3>
                         </Reveal>
 
                     </div>
                     <div>
                     <Reveal>
 
-                        <h3 className="mr-6">Aca va la 4</h3>
+                        <h3 className="mr-16"> Caracteristica 3</h3>
                         </Reveal>
 
                     </div>
                     <div>
                     <Reveal>
 
-                        <h3 className="mr-6">Y esta es la ultima que va.</h3>
+                        <h3 className="mr-16">Aca va la 4</h3>
                         </Reveal>
 
                     </div>
                     <div>
+                    <Reveal>
+
+                        <h3 className="mr-16">La ultima que va.</h3>
+                        </Reveal>
+
+                    </div>
+                    <div>
+                    <Reveal>
+
                         {/* <h3>Whispering secrets of a world outside.</h3> */}
-                        <span className="flex gap-1 flex-col items-center align-center justify-center mr-2">
+                        <span className="flex gap-1 flex-col items-center align-center justify-center mr-16">
                             <div className="flex gap-2 mt-6 max-h-10">
                                 <Chip
                                     className="p-4 px-2 text-xs max-h-10"
@@ -194,7 +200,9 @@ export default function VideoScrubber() {
                                 </Chip>
                             </div>
                         </span>
+                        </Reveal>
                     </div>
+                    
                 </div>
             </section>
 

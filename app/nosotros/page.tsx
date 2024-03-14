@@ -71,7 +71,7 @@ export default function NosotrosPage() {
                         </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen -left-[10%] top-16 -mt-10 z-10">
+                <div className="relative max-w-screen -left-[10%] top-16 -mt-10 z-10 overflow-y-hidde">
                     <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
@@ -98,7 +98,7 @@ export default function NosotrosPage() {
             </section>
            <VideoScrubber/>
 		   
-		   <section className="h-[100vh]">
+		   <section className="h-[100vh] overflow-y-hidde">
                 <div className="flex flex-col justify-center items-center  w-full m-auto ">
                     <div className="flex justify-center items-center w-3/4">
                         <div className="w-3/4 float-left">

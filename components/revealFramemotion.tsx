@@ -24,12 +24,12 @@ export const Reveal: React.FC<Props> = ({ children, width = "fit-content" }) => 
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
             <motion.div
                 variants={{
-                    hidden: {opacity:0, y:75},
-                    visible: {opacity:1, y:0},
+                    hidden: {opacity:0.5, y:-275, z:100, scale: 0},
+                    visible: {opacity:1, y:0, z:0, scale: 1},
                 }}
                 initial="hidden"
-                animate="visible"
-                transition={{duration: 0.5, delay:0.25}}
+                animate={mainControls}
+                transition={{duration: 1.5, delay:1.25}}
             >
                 {children}
             </motion.div>
