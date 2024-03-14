@@ -89,16 +89,19 @@ export default function VideoScrubber() {
                 <div class="holder">
                     <video
                         // type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-                        
+                        playsinline
+                        autobuffer
                         autoplay
                         muted
                         loop
-                        playsinline
                         // controls
                         preload="auto"
+                        id="video"
                     >
-                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type="video/mp4"    /> */}
-                    <source src="../img/solerpalau/tda/vid.mp4" type="video/mp4"    />
+                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'   /> */}
+
+                    <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/webm; codecs="vp8.0, vorbis"'    />
+                    
 
                     </video>
                 </div>

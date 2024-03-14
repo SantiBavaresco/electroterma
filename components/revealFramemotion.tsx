@@ -8,7 +8,7 @@ interface Props{
 
 export const Reveal: React.FC<Props> = ({ children, width = "fit-content" }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, {once:true});
+    const isInView = useInView(ref, {once:true,} );
 
     const mainControls = useAnimation();
     const slideControls = useAnimation();
