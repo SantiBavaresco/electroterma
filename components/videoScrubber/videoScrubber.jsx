@@ -88,15 +88,19 @@ export default function VideoScrubber() {
             <section class="vid" id="video-ventilador">
                 <div class="holder">
                     <video
-                        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-                        src="../img/solerpalau/tda/SolerPalauVideo1.mkv"
+                        // type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+                        
                         autoplay
                         muted
                         loop
                         playsinline
                         // controls
                         preload="preload"
-                    ></video>
+                    >
+                    <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type="video/mp4"    />
+                    <source src="../img/solerpalau/tda/SolerPalauVideo11.webm" type="video/webm"    />
+
+                    </video>
                 </div>
 
                 <div class="story text-5xl">

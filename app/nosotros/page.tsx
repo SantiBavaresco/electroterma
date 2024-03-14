@@ -16,6 +16,7 @@ import { Reveal } from "@/components/revealFramemotion";
 
 
 
+
 export default function NosotrosPage() {
 	const urlImageBanner = "../img/solerpalau/imgbanner/";
     const bannerImageNames = ["1","2","3","1","2","3"];
