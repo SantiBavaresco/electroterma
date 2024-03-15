@@ -12,6 +12,9 @@ import { CiLinkedin } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
 import { Image } from "@nextui-org/image";
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
+
 
 import clsx from "clsx";
 
@@ -49,6 +52,7 @@ export default function RootLayout({
                 <Providers
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
                 >
+                    <SpeedInsights/> <Analytics/>
                     <Navbar />
 
                     <div className="relative flex flex-col h-screen">
