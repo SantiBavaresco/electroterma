@@ -165,16 +165,52 @@ section.vid {
     object-fit: cover;
 } */
 
-section.vid div.holder {
+/* section.vid div.holder {
     position: sticky;
-    top: 0;
-}
+    top: 5;
+} */
 
+/* PC */
+@media (min-width: 720px) {
 section.vid video {
     width: 75%;
     height: 75%;
     object-fit: cover;
 }
+section.vid div.holder {
+    position: sticky;
+    top: 0;
+}
+}
+/* PC pantalla celu */
+@media (max-width: 720px) {
+    section.vid video {
+        margin-top: 20%;
+        width: 500px;
+        height: 550px;
+        object-fit: cover;
+        
+    }
+    section div.holder{
+        position: sticky;
+        top: 5%;
+    }
+}
+
+/* CELULAR */
+/* @media (max-device-width: 720px) {
+    section.vid video {
+        margin-top: 20%;
+        width: 500px;
+        height: 550px;
+        object-fit: cover;
+        
+    }
+    section div.holder{
+        position: sticky;
+        top: 0;
+    }
+} */
 
 section.vid div.story {
     position: absolute;
@@ -186,13 +222,17 @@ section.vid div.story {
 
 section.vid div.story div {
     height: 100vh;
-
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: end;
     text-align: center;
     
 }
+
+
 
 footer {
     padding: 2rem;

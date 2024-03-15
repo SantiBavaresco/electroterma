@@ -6,7 +6,7 @@ import "./styles.css";
 import { Chip } from "@nextui-org/chip";
 import { Reveal } from "@/components/revealFramemotion";
 
-import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx';
+import ScrollyVideo from "scrolly-video/dist/ScrollyVideo.cjs.jsx";
 
 import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
 import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
@@ -43,7 +43,7 @@ export default function VideoScrubber() {
                 </nav>
             </header> */}
             {/* <script src="./scrubbing.js" async ></script> */}
-            
+
             {/* <section class="intro">
                 <div>
                 <p>
@@ -87,9 +87,9 @@ export default function VideoScrubber() {
                 </div>
             </section> */}
 
-            <section class="vid" id="video-ventilador">
+            <section class="vid" id="video-ventilador" className="">
                 <div class="holder">
-                {/* <ScrollyVideo src="../img/solerpalau/tda/SolerPalauVideo1.mkv" /> */}
+                    {/* <ScrollyVideo src="../img/solerpalau/tda/SolerPalauVideo1.mkv" /> */}
                     <video
                         // type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
                         playsinline
@@ -97,120 +97,116 @@ export default function VideoScrubber() {
                         loop
                         autoplay="autoplay"
                         autobuffer
-
-                       
                         // controls
                         preload="auto"
                         id="video"
                     >
-                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo1.mkv" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'   /> */}
-                    {/* <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/ogg; codecs="theora, vorbis"'/> */}
-                    <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/webm'/>
-                    
+                        <source type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' src="../img/solerpalau/tda/SolerPalauVideo1.mkv" />
+                        {/* <source
+                            type='video/mp4'
+                            src="../img/solerpalau/tda/SolerPalauVideoMP4.mp4"
+                        /> */}
 
+                        {/* <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/ogg; codecs="theora, vorbis"'/> */}
+                        {/* <source  type='video/mp4' src="../img/solerpalau/tda/SolerPalauVideoWeb.webm"/> */}
                     </video>
                 </div>
 
                 <div class="story text-5xl">
-                    <div >
-                            <div className="max-h-4 mr-16">
-                        <Reveal width="100%">
-
-                        <h3 className="h-fit "> Caracteristica 1</h3>
-                        </Reveal>
-
+                    <div>
+                        <div className="">
+                            <Reveal width="100%">
+                                {/* <div className=""> */}
+                                
+                                    <span className="text-end mr-16">Envolvente <br/>Galvanizada </span>
+                                {/* </div> */}
+                           
+                            </Reveal>
                         </div>
                     </div>
                     <div className="m-auto">
-                    <Reveal>
+                        <Reveal>
+                            <span className="text-end mr-16"> Motor trifásico <br/> y de acople directo</span>
 
-                        <h3 className="mr-16"> la caracteristica 2</h3>
+
                         </Reveal>
-
                     </div>
                     <div>
-                    <Reveal>
+                        <Reveal>
+                        <span className="text-end mr-16"> Rotor palas inclinadas <br/> hacia adelante</span>
 
-                        <h3 className="mr-16"> Caracteristica 3</h3>
                         </Reveal>
-
                     </div>
                     <div>
-                    <Reveal>
-
-                        <h3 className="mr-16">Aca va la 4</h3>
+                        <Reveal>
+                            <h3 className="mr-16">Aca va la 4</h3>
                         </Reveal>
-
                     </div>
                     <div>
-                    <Reveal>
-
-                        <h3 className="mr-16">La ultima que va.</h3>
+                        <Reveal>
+                            <h3 className="mr-16">La ultima que va.</h3>
                         </Reveal>
-
                     </div>
                     <div>
-                    <Reveal>
+                        <Reveal>
+                            {/* <h3>Whispering secrets of a world outside.</h3> */}
+                            <span className="flex gap-1 flex-col items-center align-center justify-center mr-16">
+                                <div className="flex gap-2 mt-6 max-h-10">
+                                    <Chip
+                                        className="p-4 px-2 text-xs max-h-10"
+                                        startContent={
+                                            <ConstruccionDuradera size={28} />
+                                        }
+                                        variant="faded"
+                                        radius="full"
+                                        size="lg"
+                                    >
+                                        {" "}
+                                        Construción Duradera
+                                    </Chip>
+                                    <Chip
+                                        className="p-4 px-2 text-xs max-h-10"
+                                        startContent={
+                                            <FacilInstalacion size={28} />
+                                        }
+                                        variant="faded"
+                                        radius="full"
+                                        size="lg"
+                                    >
+                                        {" "}
+                                        Facil Instalacion
+                                    </Chip>
+                                </div>
 
-                        {/* <h3>Whispering secrets of a world outside.</h3> */}
-                        <span className="flex gap-1 flex-col items-center align-center justify-center mr-16">
-                            <div className="flex gap-2 mt-6 max-h-10">
-                                <Chip
-                                    className="p-4 px-2 text-xs max-h-10"
-                                    startContent={
-                                        <ConstruccionDuradera size={28} />
-                                    }
-                                    variant="faded"
-                                    radius="full"
-                                    size="lg"
-                                >
-                                    {" "}
-                                    Construción Duradera
-                                </Chip>
-                                <Chip
-                                    className="p-4 px-2 text-xs max-h-10"
-                                    startContent={
-                                        <FacilInstalacion size={28} />
-                                    }
-                                    variant="faded"
-                                    radius="full"
-                                    size="lg"
-                                >
-                                    {" "}
-                                    Facil Instalacion
-                                </Chip>
-                            </div>
-
-                            <div className="flex gap-1 mt-2 max-h-10">
-                                <Chip
-                                    className="p-4 px-2 text-xs max-h-10"
-                                    startContent={
-                                        <VersatilidadAplicacion size={28} />
-                                    }
-                                    variant="faded"
-                                    radius="full"
-                                    size="lg"
-                                >
-                                    {" "}
-                                    Versatilidad de Aplicación
-                                </Chip>
-                                <Chip
-                                    className="p-4 px-2 text-xs max-h-10"
-                                    startContent={
-                                        <EficienciaEnergetica size={28} />
-                                    }
-                                    variant="faded"
-                                    radius="full"
-                                    size="lg"
-                                >
-                                    {" "}
-                                    Eficiencia Energética
-                                </Chip>
-                            </div>
-                        </span>
+                                <div className="flex gap-1 mt-2 max-h-10">
+                                    <Chip
+                                        className="p-4 px-2 text-xs max-h-10"
+                                        startContent={
+                                            <VersatilidadAplicacion size={28} />
+                                        }
+                                        variant="faded"
+                                        radius="full"
+                                        size="lg"
+                                    >
+                                        {" "}
+                                        Versatilidad de Aplicación
+                                    </Chip>
+                                    <Chip
+                                        className="p-4 px-2 text-xs max-h-10"
+                                        startContent={
+                                            <EficienciaEnergetica size={28} />
+                                        }
+                                        variant="faded"
+                                        radius="full"
+                                        size="lg"
+                                    >
+                                        {" "}
+                                        Eficiencia Energética
+                                    </Chip>
+                                </div>
+                            </span>
                         </Reveal>
                     </div>
-                    
                 </div>
             </section>
 

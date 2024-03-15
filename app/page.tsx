@@ -12,6 +12,7 @@ import { GithubIcon } from "@/components/icons";
 // import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
 import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 
+
 export default function Home() {
     return (
         <section className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10">
@@ -89,7 +90,6 @@ export default function Home() {
 						<p className="font-lexend-bold">Texto en lexend-bold, LEXEND BOLD</p>
 					</div>
 				</div>
-
             </section>
         </section>
         // 	<div className={'h-[5000px]'}>
