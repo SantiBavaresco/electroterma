@@ -1,6 +1,6 @@
 "use client";
 import { title } from "@/components/primitives";
-import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
+// import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 
 import { Image } from "@nextui-org/image";
