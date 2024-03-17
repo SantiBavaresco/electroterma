@@ -39,9 +39,11 @@ export default function NosotrosPage() {
                     </div>
                 </div>
             </section>
+
             {/* <section className="">
                 
             </section> */}
+            
             <section className="flex flex-col  md:flex md:flex-row-reverse w-full h-[110vh] overflow-hidden ">
                 <div className="md:mr-16 z-20">
                     <div className="flex flex-col mt-16 justify-items-end items-end font-lexend-bold tracking-widest ">
