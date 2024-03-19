@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import "./styles.css";
 // import "./scrubbing.js"
@@ -8,12 +8,51 @@ import { Reveal } from "@/components/revealFramemotion";
 
 import ScrollyVideo from "scrolly-video/dist/ScrollyVideo.cjs.jsx";
 
+import Lottie from "lottie-react";
+import animationData from "../../public/lottie/ventilador.json";
+import { useLottie, useLottieInteractivity } from "lottie-react";
+import { useScroll } from 'framer-motion';
+
 import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
 import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
 import { FacilInstalacion } from "@/public/svg/facilInstalacion";
 import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
+// const style = {
+
+//     top: "5%",
+//     height: 500,
+//     border: 3,
+//     borderStyle: "solid",
+//     borderRadius: 7,
+//   };
+  
+//   const options = {
+//     animationData: animationData,
+//   };
+
+// const LottieAnimated = () => {
+//     const lottieObj = useLottie(options, style);
+//     const Animation = useLottieInteractivity({
+//       lottieObj,
+//       mode: "scroll",
+//       actions: [
+//         {
+//           visibility: [0.4, 0.9],
+//           type: "seek",
+//           frames: [0, 300],
+//         },
+//       ],
+//     });
+  
+//     return Animation;
+//   };
+
+
+
 export default function VideoScrubber() {
+
+ 
     useEffect(() => {
         // Cargar el archivo JS después del renderizado
         // myScript();
@@ -87,6 +126,12 @@ export default function VideoScrubber() {
                 </div>
             </section> */}
 
+            {/* <section className="h-[600vh] relative">
+                <div className="sticky top-0">
+                    <LottieAnimated/>
+                </div>
+            </section> */}
+
             <section class="vid" id="video-ventilador" className="">
                 <div class="holder">
                     {/* <ScrollyVideo src="../img/solerpalau/tda/SolerPalauVideo1.mkv" /> */}
@@ -102,15 +147,18 @@ export default function VideoScrubber() {
                         id="video"
                     >
                         <source type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' src="../img/solerpalau/tda/SolerPalauVideo1.mkv" />
-                        {/* <source
-                            type='video/mp4'
-                            src="../img/solerpalau/tda/SolerPalauVideoMP4.mp4"
-                        /> */}
+                        {/* <source type='video/mp4; codecs="avc1.4D401E, mp4a.40.2' src="../img/solerpalau/tda/SolerPalauVideoMP.mp4" /> */}
 
                         {/* <source src="../img/solerpalau/tda/SolerPalauVideo2.webm" type='video/ogg; codecs="theora, vorbis"'/> */}
                         {/* <source  type='video/mp4' src="../img/solerpalau/tda/SolerPalauVideoWeb.webm"/> */}
                     </video>
+
+
                 </div>
+
+                
+                
+              
 
                 <div class="story text-5xl">
                     <div>

@@ -10,7 +10,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 
 // import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
-import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
+// import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 
 
 export default function Home() {

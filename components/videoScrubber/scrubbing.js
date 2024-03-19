@@ -7,14 +7,12 @@ vid?.pause()
 
 const scroll = () => {
 
-  const distance = (window?.scrollY - section?.offsetTop) || 0;
-  const total = (section?.clientHeight - window?.innerHeight) || 0;
-  //   const distance = section?.offsetTop ? window.scrollY - section.offsetTop : 0; // Handle missing section
-  // const total = section?.clientHeight - window.innerHeight || 0; // Handle missing section
-  // const percentage = Math.min(distance / total, 1)
-  let percentage = (distance / total) ||1;
-  percentage = Math.max(0, percentage);
-  percentage = Math.min(percentage, 1);
+  const distance = window.scrollY - section.offsetTop
+  const total = section.clientHeight - window.innerHeight
+
+  let percentage = distance / total
+  percentage = Math.max(0, percentage)
+  percentage = Math.min(percentage, 1)
 
   if (vid?.duration > 0) {
     vid.currentTime = vid.duration * percentage;
