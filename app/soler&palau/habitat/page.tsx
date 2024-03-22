@@ -20,7 +20,7 @@ import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
 // import VideoPlayer from "@/components/videoplayer/videoplayer";
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
-import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
+// import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 
 import Caracteristics from "./tabs";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";

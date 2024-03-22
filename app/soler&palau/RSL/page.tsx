@@ -19,8 +19,8 @@ import { FacilInstalacion } from "@/public/svg/facilInstalacion";
 import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
 // import VideoPlayer from "@/components/videoplayer/videoplayer";
-import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
-import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
+// import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
+// import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 
 import Caracteristics from "./tabs";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
@@ -179,7 +179,7 @@ export default function RSAPage() {
                 
                 <div key="video" className="  overflow-hidden">
                     {/* <VideoPlayer /> */}
-                    <VideoAutoPlayer />
+                    {/* <VideoAutoPlayer /> */}
                 </div>
             </section>
             <section className="w-9/12 flex flex-row justify-end items-end">
