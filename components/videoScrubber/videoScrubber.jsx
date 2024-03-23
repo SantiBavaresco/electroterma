@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, UIEvent } from "react";
 import Image from "next/image";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 // import "./styles.css";
@@ -20,6 +20,7 @@ import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
 import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
 import { FacilInstalacion } from "@/public/svg/facilInstalacion";
 import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
+
 
 // const style = {
 
@@ -53,39 +54,52 @@ import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
 export default function VideoScrubber() {
 
-    const lenis = useLenis(({ scroll }) => {
-        console.log(scroll);
 
-        const section = document.getElementById("video-ventilador");
-        const vid = section?.querySelector("video");
+    // const HandleScroll = (e) =>{
+    //     console.log("HOLA", e.currentTarget);
+    // }
 
-        vid?.pause();
+    // const lenis = useLenis(({ scroll }) => {
+    //     const section = document.getElementById("video-ventilador");
 
-        const scroll1 = () => {
-            const distance = window.scrollY - section.offsetTop;
-            console.log(distance);
-            const total = section.clientHeight - window.innerHeight;
-            console.log(total);
+    //     const vid = section?.querySelector("video");
+    //     vid?.pause();
+    //     console.log("videoTime:", vid?.currentTime);
 
-            let percentage = distance / total;
-            percentage = Math.max(0, percentage);
-            percentage = Math.min(percentage, 1);
-            console.log(percentage);
-            window.requestAnimationFrame(() => {
-                if (vid?.duration > 0) {
-                    vid.currentTime = vid.duration * percentage;
-                }
-            });
-        };
-        scroll1();
-    });
-    // useEffect(() => {require("./scrubbing"); return () => {};
-    // }, []);
+    //     console.log("scroll", scroll);
+
+    //     const scroll1 = () => {
+    //         const distance = window?.scrollY - section?.offsetTop;
+    //         const total = section?.clientHeight - window?.innerHeight;
+    //         console.log(total, distance);
+
+    //         let percentage = distance / total;
+    //         percentage = Math.max(0, percentage);
+    //         percentage = Math.min(percentage, 1);
+    //         console.log(percentage);
+    //         window.requestAnimationFrame(() => {
+    //             if (vid?.duration > 0) {
+    //                 vid.currentTime = vid.duration * percentage;
+    //                  console.log("videoTime1:", vid?.currentTime);
+
+
+    //             }
+    //         });
+    //     };
+    //     scroll1();
+    //     vid.addEventListener('canplaythrough', () => {
+    //         vid.currentTime = 10; // Set the video to 10 seconds
+    //       });
+    // });
+    useEffect(() => {
+    require("./scrubbing"); 
+    return () => {};
+    }, []);
 
     return (
         <div>
             <ReactLenis root>
-                <section class="vid" id="video-ventilador" className="">
+                <section class="vid" id="video-ventilador" className="" >
                     <div class="holder">
                         <video
                             playsinline
@@ -97,8 +111,10 @@ export default function VideoScrubber() {
                             id="video"
                         >
                             <source
-                                type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'
+                                type='video/mp4'
                                 src="../img/solerpalau/tda/SolerPalauVideo1.mkv"
+                                // src="../img/solerpalau/tda/w1.webm"
+                                // src="../img/solerpalau/tda/SolerPalauVideoMP4-VLC-SD"
                             />
                         </video>
                     </div>

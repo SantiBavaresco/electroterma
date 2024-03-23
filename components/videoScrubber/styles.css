@@ -185,6 +185,7 @@ section.vid div.holder {
 /* PC pantalla celu */
 @media (max-width: 720px) {
     section.vid video {
+        touch-action: pan-x;
         margin-top: 20%;
         width: 500px;
         height: 550px;

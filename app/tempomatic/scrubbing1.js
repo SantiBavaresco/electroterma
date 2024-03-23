@@ -1,37 +1,43 @@
-import ScrollMagic from "scrollmagic"
-const intro = document?.querySelector('.intro')
-const video = intro?.querySelector('video')
-const text = intro?.querySelector("h1")
-//END SECTION
-const section = document?.querySelector("section")
-const end = section?.querySelector("h1")
+const html = document.documentElement;
+const canvas = document.getElementById("hero-lightpass");
+const context = canvas.getContext("2d");
 
-//SCROLL MAGIC
+const frameCount = 148;
+const currentFrame = (index) =>
+    `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
+        .toString()
+        .padStart(4, "0")}.jpg`;
 
-const controller = new ScrollMagic.Controller();
+const preloadImages = () => {
+    for (let i = 1; i < frameCount; i++) {
+        const img = new Image();
+        img.src = currentFrame(i);
+    }
+};
 
-//Scenes
-const scene = new ScrollMagic.Scene({
-    duration: 4000,
-    triggerElement: intro,
-    triggerHook: 0,
-})
-.addIndicators()
-.setPin(intro)
-.addTo(controller)
+const img = new Image();
+img.src = currentFrame(1);
+canvas.width = 1158;
+canvas.height = 770;
+img.onload = function () {
+    context.drawImage(img, 0, 0);
+};
 
-//Video Animation
-let accelamount = 0.1;
-let scrollpos= 0;
-let delay = 0.5;
+const updateImage = (index) => {
+    img.src = currentFrame(index);
+    context.drawImage(img, 0, 0);
+};
 
-scene.on("update", e => {
-    scrollpos = e.scrollPos / 1000;
+window.addEventListener("scroll", () => {
+    const scrollTop = html.scrollTop;
+    const maxScrollTop = html.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / maxScrollTop;
+    const frameIndex = Math.min(
+        frameCount - 1,
+        Math.ceil(scrollFraction * frameCount)
+    );
+
+    requestAnimationFrame(() => updateImage(frameIndex + 1));
 });
 
-setInterval(()=>{
-    delay += (scrollpos - delay) * accelamount;
-    console.log(scrollpos, delay)
-
-    video.currentTime = scrollpos;
-}, 33.3);
+preloadImages();

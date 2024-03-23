@@ -37,18 +37,23 @@ export default function TempomaticPage( ) {
 //     }
 //   }, [videoRef, sectionRef]);
 
-	// useEffect(() => {
-    //     // Cargar el archivo JS después del renderizado
-    //     // myScript();
-    //     //require("./scrubbing1");
+	useEffect(() => {
+        // Cargar el archivo JS después del renderizado
+        // myScript();
+        require("./scrubbing1");
 
-    //     // Devolver una función de limpieza
-    //     return () => {
-    //         // Cualquier limpieza que se necesite al desmontar el componente
-    //     };
-    // }, []);
+        // Devolver una función de limpieza
+        return () => {
+            // Cualquier limpieza que se necesite al desmontar el componente
+        };
+    }, []);
 	return (
-		<div> <h1>Tempomatic</h1></div>
+
+			<section>
+				<canvas id="hero-lightpass" className="mb-16"/>
+			</section>
+
+		// <div> <h1>Tempomatic</h1></div>
 		// <section ref={sectionRef} class="vid" id="video-ventilador" className="">
 		// <div class="holder">
 
@@ -76,9 +81,6 @@ export default function TempomaticPage( ) {
 
 
 
-	// 	<section ref={sectionRef} className=''>
-    //   <video ref={videoRef} src='../img/solerpalau/tda/SolerPalauVideo1.mkv' muted autoPlay playsInline />
-    // s</section>
 		// <div>
 		// 	 <div className="intro">
         //         <h1>The New Dev Ed Pro</h1>

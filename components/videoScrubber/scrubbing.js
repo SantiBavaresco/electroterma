@@ -2,9 +2,12 @@
 // const section = document?.querySelector('section.vid')
 const section = document.getElementById('video-ventilador');
 const vid = section?.querySelector('video')
+// vid.scrollIntoView({ behavior: 'smooth' });
 
 vid?.pause()
+console.log("vid duration:", vid.duration);
 
+// Add passive option for touch events 
 
 const scroll = () => {
 
@@ -14,16 +17,19 @@ const scroll = () => {
   let percentage = distance / total
   percentage = Math.max(0, percentage)
   percentage = Math.min(percentage, 1)
+
+
+  
   window.requestAnimationFrame(() => {
   if (vid?.duration > 0) {
     vid.currentTime = vid.duration * percentage;
   }})
 }
-
+window.addEventListener('scroll', scroll, { passive: true })
+// window.addEventListener('touchmove', scroll, { passive: true }); 
 scroll(); 
 
-window.addEventListener('scroll', scroll)
-// window.addEventListener('touchmove', scroll, { passive: true }); // Add passive option for touch events
+
 
 
 
