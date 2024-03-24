@@ -2,11 +2,12 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 148;
+const frameCount = 599;
 const currentFrame = (index) =>
-    `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
+    // `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
+    `../img/solerpalau/tda/frames/ELECTROTERMA${index
         .toString()
-        .padStart(4, "0")}.jpg`;
+        .padStart(3, "0")}.jpg`;
 
 const preloadImages = () => {
     for (let i = 1; i < frameCount; i++) {
@@ -17,8 +18,8 @@ const preloadImages = () => {
 
 const img = new Image();
 img.src = currentFrame(1);
-canvas.width = 1158;
-canvas.height = 770;
+canvas.width = 1920;
+canvas.height = 1080;
 img.onload = function () {
     context.drawImage(img, 0, 0);
 };

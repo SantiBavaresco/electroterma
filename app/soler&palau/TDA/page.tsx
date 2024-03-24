@@ -179,7 +179,7 @@ export default function TDAPage() {
             </section> */}
             <VideoScrubber/>
             
-            <section className="w-9/12 flex flex-row justify-end items-end">
+            <section className="w-9/12  flex flex-row justify-end items-end">
                 <Button
                             className="z-10 bg-livered text-white"
                             radius="full"

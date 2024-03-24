@@ -25,13 +25,13 @@ export const Reveal: React.FC<Props> = ({ children, width = "fit-content" }) => 
             <motion.div
                 className=""
                 variants={{
-                    hidden: {opacity:0.5, y:275, scale: 0},
-                    visible: {opacity:1, y:0, scale: 1},
+                    hidden: {opacity:0.1,  scale: 0},
+                    visible: {opacity:1,  scale: 1},
                 }}
                 exit="hidden"
                 initial="hidden"
                 animate={mainControls}
-                transition={{duration: 1.0, delay:1.0}}
+                transition={{duration: 1.0, delay:0.5}}
             >
                
                 {children}
@@ -45,14 +45,14 @@ export const Reveal: React.FC<Props> = ({ children, width = "fit-content" }) => 
                 }}
                 initial="hidden"
                 animate={slideControls}
-                transition={{duration: 0.5, ease:"easeIn"}}
+                transition={{duration: 1.0, ease:"easeIn"}}
                 style={{
                     position:"absolute",
                     top:4,
                     bottom:4,
                     left:0,
                     right:0,
-                    background:"blue",
+                    background:"#ff1100",
                     zIndex: 20,
                 }}
             />

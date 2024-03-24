@@ -3,22 +3,46 @@
   } */
   
   section {
-    height: 500vh;
-    background: #000;
-
-
-  }
-
-  canvas {
     
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 70vw;
-    max-height: 70vh;
-    margin-bottom:  160px;
+    height: 500vh;
+    background: #fefefe;
+    top: 0;
+
   }
+
+/* PC */
+@media (min-width: 720px) {
+    canvas {
+    
+        position: fixed;
+        object-fit: cover;
+        left: 50%;
+        top: 50%;
+        transform: translate(-80%, -50%);
+        max-width: 85vw;
+        max-height: 85vh;
+        margin-bottom:  160px;
+      }
+}
+
+  /* PC pantalla celu */
+@media (max-width: 720px) {
+    canvas {
+    
+        position: fixed;
+        object-fit: cover;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+        /* max-width: 70vw; */
+        max-height: 60vh;
+        /* width: 600px;
+        height: 550px; */
+        margin-bottom:  160px;
+      }
+}
+
+ 
 
 /* *{
     margin: 0;

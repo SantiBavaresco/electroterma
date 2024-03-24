@@ -2,6 +2,7 @@
 import { title } from "@/components/primitives";
 // import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 import VideoScrubber from "@/components/videoScrubber/videoScrubber";
+import FrameScrubber from "@/components/frameScrubber/frameScrubber";
 
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
@@ -14,28 +15,33 @@ import SimpleSlider from "@/components/imgslider/slickSlider";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 import { Reveal } from "@/components/revealFramemotion";
 
-
-
-
 export default function NosotrosPage() {
-	const urlImageBanner = "../img/solerpalau/imgbanner/";
-    const bannerImageNames = ["1","2","3","1","2","3"];
-    
+    const urlImageBanner = "../img/solerpalau/imgbanner/";
+    const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
+
     const urlTdaImageDemo = "../img/solerpalau/tda/imgDemo/";
-    const demoImageNames = ["1","2","3","1","2","3"];
+    const demoImageNames = ["1", "2", "3", "1", "2", "3"];
 
     return (
         <div className="h-full flex flex-col items-center justify-center">
-			<section className="relative top-0 w-full py-3 font-size">
+            <section className="relative top-0 w-full py-3 font-size">
                 <div className="w-[450px] md:w-full lg:w-full">
-                    <SimpleSlider url={urlImageBanner} fileName={bannerImageNames}/>
+                    <SimpleSlider
+                        url={urlImageBanner}
+                        fileName={bannerImageNames}
+                    />
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-2  flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
                     <div className="ml-12">
-                        <h2 className="text-white text-2xl"> ¿Cuál es tu necesidad? </h2>
+                        <h2 className="text-white text-2xl">
+                            {" "}
+                            ¿Cuál es tu necesidad?{" "}
+                        </h2>
                     </div>
                     <div className="mr-12 ">
-                        <Button size="lg" radius="full">Consúltanos</Button>
+                        <Button size="lg" radius="full">
+                            Consúltanos
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -50,25 +56,29 @@ export default function NosotrosPage() {
                         <span className="text-lg lg:text-5xl text-midgray font-nunito ">
                             VENTILADOR
                         </span>
-						<Reveal>
-                        <h1 className="mt-4 text-3xl lg:text-[78px] leading-none font-nunito-bolder text-livered-title">CENTRÍFUGO</h1>
-						</Reveal>
-						<Reveal>
+
+                        <h1 className="mt-4 text-3xl lg:text-[78px] leading-none font-nunito-bolder text-livered-title">
+                            CENTRÍFUGO
+                        </h1>
+
                         <h1 className="text-3xl lg:text-[78px] leading-none  font-nunito-bolder text-livered-title">
                             MULTIPALA - TDA
                         </h1>
-						</Reveal>
-                        <span className="text-lg lg:text-[43px] lg:mt-6 text-midgray font-nunito ">
+
+                        <h1 className="text-lg lg:text-[43px] lg:mt-2 text-midgray font-nunito ">
                             DE DOBLE ASPIRACIÓN
-                        </span>
+                        </h1>
+
                         <div className="mt-2 text-lg lg:text-4xl lg:mt-4 tracking-normal text-highgray">
                             <p className="">
                                 Inyección de{" "}
-                                <span className="text-livered">aire limpio</span>{" "}
-							</p>
-							<p>
-                            
-                                <span className="text-livered"></span>dentro de equipos HVAC
+                                <span className="text-livered">
+                                    aire limpio
+                                </span>{" "}
+                            </p>
+                            <p>
+                                <span className="text-livered"></span>dentro de
+                                equipos HVAC
                             </p>
                         </div>
                     </div>
@@ -82,14 +92,13 @@ export default function NosotrosPage() {
                         width={370}
                     />
                     {/* --- ONDA 1 --------------- */}
-                    <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 "/>
+                    <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " />
                     {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
                         <LottieWave />
                     </div> */}
                 </div>
-				
             </section>
-			<section className="w-1/2  flex justify-items-start">
+            <section className="w-1/2  flex justify-items-start">
                 <Button
                     className="relative -top-[130px] -10 lg:-left-[150px] z-10 bg-livered text-white"
                     radius="full"
@@ -98,9 +107,10 @@ export default function NosotrosPage() {
                     Asesoramiento
                 </Button>
             </section>
-           <VideoScrubber/>
-		   
-		   <section className="h-[100vh] overflow-y-hidde">
+            {/* <VideoScrubber/> */}
+            <FrameScrubber />
+
+            <section className="h-[70vh] mt-32 z-10 overflow-y-hidde">
                 <div className="flex flex-col justify-center items-center  w-full m-auto ">
                     <div className="flex justify-center items-center w-3/4">
                         <div className="w-3/4 float-left">
@@ -119,7 +129,10 @@ export default function NosotrosPage() {
                     </div>
 
                     <div>
-                        <SimpleSliderDemoImages url={urlTdaImageDemo} fileName={demoImageNames}/>
+                        <SimpleSliderDemoImages
+                            url={urlTdaImageDemo}
+                            fileName={demoImageNames}
+                        />
                     </div>
                     <div className="flex justify-center items-center w-3/4">
                         <div className="w-1/2 float-left">
@@ -142,7 +155,6 @@ export default function NosotrosPage() {
                     </div>
                 </div>
             </section>
-
         </div>
     );
 }
