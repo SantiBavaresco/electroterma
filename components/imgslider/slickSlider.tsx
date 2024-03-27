@@ -10,6 +10,8 @@ interface Props {
     url?: string;
     fileName?: Array<string>;
     width?: string;
+    line1?: string;
+    line2?: string;
 }
 
 // const ModalPdf: React.FC<Props> = ({ url, title, layer, color, primaryColor, reflectionColor, borderColor}) => {
@@ -70,9 +72,9 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
     };
 
     return (
-        <div className="overflow-hidden ">
-            <div className="absolute top-[58vh] z-10 px-4 right-12  rounded-tl-2xl rounded-br-2xl flex flex-col justify-start items-center bg-white p-1 ">
-                <div className="flex flex-col justify-start items-start text-3xl text-livered-title py-6">
+        <div className="aspect-[11/5] lg:aspect-[21.5/9] overflow-hidden ">
+            <div className="absolute top-32 lg:top-[58vh] z-10 px-4 right-4 lg:right-12  rounded-tl-2xl rounded-br-2xl flex flex-col justify-start items-center bg-white p-1 ">
+                <div className="flex flex-col justify-start items-start text-sm lg:text-3xl text-livered-title py-4 lg:py-6">
                     <h1 className=" font-bold">Componente de</h1>
                     <h1 className="font-bold">equipo tempomatic</h1>
                 </div>

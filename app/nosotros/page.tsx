@@ -1,8 +1,10 @@
 "use client";
 import { title } from "@/components/primitives";
 // import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
-import VideoScrubber from "@/components/videoScrubber/videoScrubber";
-import FrameScrubber from "@/components/frameScrubber/frameScrubber";
+// import VideoScrubber from "@/components/videoScrubber/videoScrubber";
+import FrameScrubber from "../../components/frameScrubber/frameScrubber";
+import Caracteristics from "./tabs";
+
 
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
@@ -109,6 +111,34 @@ export default function NosotrosPage() {
             </section>
             {/* <VideoScrubber/> */}
             <FrameScrubber />
+
+            <section className="w-9/12  flex flex-row justify-end items-end">
+                <Button
+                            className="z-10 bg-livered text-white"
+                            radius="full"
+                            size="lg"
+                        >
+                            Manual <Download />
+                        </Button>
+            </section>
+
+            <section className="relative text-xl max-w-full ">
+                <div className="flex justify-center items-center w-3/4 mx-auto">
+                    <Caracteristics />
+                </div>
+                <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-56 overflow-y-scroll no-scrollbar" />
+                {/* <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
+                
+                </div> */}
+                <div className="flex justify-end opacity-30">
+                    <Image
+                        alt="Otam Logo"
+                                        className=""
+                                        src="../img/otamlogo.png"
+                                        width={250}
+                                    />
+                </div>
+            </section>
 
             <section className="h-[70vh] mt-32 z-10 overflow-y-hidde">
                 <div className="flex flex-col justify-center items-center  w-full m-auto ">

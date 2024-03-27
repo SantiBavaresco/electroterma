@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useState, UIEvent } from "react";
 import Image from "next/image";
-import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
+// import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 // import "./styles.css";
 import "./styles1.css";
 
 // import "./scrubbing.js"
 import { Chip } from "@nextui-org/chip";
-import { Reveal } from "@/components/revealFramemotion";
+// import { Reveal } from "@/components/revealFramemotion";
 
-import ScrollyVideo from "scrolly-video/dist/ScrollyVideo.cjs.jsx";
+// import ScrollyVideo from "scrolly-video/dist/ScrollyVideo.cjs.jsx";
 
 import Lottie from "lottie-react";
 import animationData from "../../public/lottie/ventilador.json";

@@ -27,26 +27,34 @@ import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImage
 
 export default function RSAPage() {
     const urlImageBanner = "../img/solerpalau/imgbanner/";
-    const bannerImageNames = ["11","22","33","11","22","33"];
-    
-    const urlTdaImageDemo = "../img/solerpalau/tda/imgDemo/";
-    const demoImageNames = ["1","2","3","1","2","3"];
+    const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
+
+    const urlTdaImageDemo = "../img/solerpalau/RSL/imgDemo/";
+    const demoImageNames = ["1", "2", "3", "1", "2", "3"];
     return (
-        <main  className=" flex flex-col items-center justify-center max-w-7xl text-center gap-4 py-8 md:py-10 overflow-hidden">
-            <section className="relative -top-12 w-auto md:w-3/4 lg:w-full py-3 ">
+        <main  className="h-full flex flex-col items-center justify-center">
+            <section className="relative top-0 w-full py-3 font-size">
                 <div className="w-[450px] md:w-full lg:w-full">
-                    <SimpleSlider url={urlImageBanner} fileName={bannerImageNames}/>
+                    <SimpleSlider
+                        url={urlImageBanner}
+                        fileName={bannerImageNames}
+                    />
                 </div>
-                <div className="bg-[#E61E25] md:w-98% py-2 lg:mx-[13%] flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
+                <div className="bg-[#E61E25]  md:w-98% py-2  flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
                     <div className="ml-12">
-                        <h2 className="text-white"> ¿Cuál es tu necesidad? </h2>
+                        <h2 className="text-white text-2xl">
+                            {" "}
+                            ¿Cuál es tu necesidad?{" "}
+                        </h2>
                     </div>
-                    <div className="mr-12">
-                        <Button radius="full">Consúltanos</Button>
+                    <div className="mr-12 ">
+                        <Button size="lg" radius="full">
+                            Consúltanos
+                        </Button>
                     </div>
                 </div>
             </section>
-            <section className="flex flex-col items-start w-3/4 md:ml-10 -mt-20 mb-8 justify-start">
+            <section className="flex flex-col items-start w-3/4 md:ml-10 mt-10 mb-8 justify-start">
                 <div className=" ">
                         <Image
                             alt="Otam Logo"
