@@ -4,33 +4,53 @@ import { title } from "@/components/primitives";
 // import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 import FrameScrubber from "@/components/frameScrubber/frameScrubber";
 import Caracteristics from "./tabs";
-import {lazy, Suspense} from "react";
+import { lazy, Suspense } from "react";
 
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
+
+import { Accordion, AccordionItem } from "@nextui-org/react";
+
 import { Chip } from "@nextui-org/chip";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Ondas01SVG } from "@/public/svg/ondas01svg";
 import { Ondas02SVG } from "@/public/svg/ondas02svg";
+
+import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
+import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
+import { FacilInstalacion } from "@/public/svg/facilInstalacion";
+import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
+
 import { Download } from "@/public/svg/download";
 import SimpleSlider from "@/components/imgslider/slickSlider";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 import { Reveal } from "@/components/revealFramemotion";
 
 export default function TDAPage() {
+    const defaultContent =
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
     const urlImageBanner = "../img/solerpalau/imgbanner/";
     const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
 
     const urlTdaImageDemo = "../img/solerpalau/tda/imgDemo/";
     const demoImageNames = ["1", "2", "3", "1", "2", "3"];
-    const FrameFan = lazy(() => import("@/components/frameScrubber/frameScrubber"));
+    const FrameFan = lazy(
+        () => import("@/components/frameScrubber/frameScrubber")
+    );
+
+    const itemClasses = {
+        base: "py-4 bg-red-500 w-full opacity-95",
+        title: "font-normal text-2xl",
+        trigger: "px-2 py-2 data-[hover=true]:bg-default-100 rounded-lg h-14 flex items-center",
+        indicator: "text-medium",
+        content: "text-xl px-2",
+      };
 
     return (
         <div className="h-full flex flex-col items-center justify-center">
             <section className="relative top-0 w-full py-3 font-size">
                 <div className="w-[450px] md:w-full lg:w-full">
                     <SimpleSlider
-                        
                         url={urlImageBanner}
                         fileName={bannerImageNames}
                     />
@@ -114,27 +134,28 @@ export default function TDAPage() {
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}
             <Suspense fallback={<div>Loading</div>}>
-                <FrameFan/>
+                <FrameFan />
             </Suspense>
 
             <section className="w-9/12  flex flex-row justify-end items-end">
                 <Button
-                            className="z-10 bg-livered text-white"
-                            radius="full"
-                            size="lg"
-                        >
-                            Manual <Download />
-                        </Button>
+                    className="z-10 bg-livered text-white"
+                    radius="full"
+                    size="lg"
+                >
+                    Manual <Download />
+                </Button>
             </section>
 
-            <section className="relative text-xl max-w-full ">
+            {/* -------------------------Tabla de especificadiones INICIAL------------------------- */}
+            {/* <section className="relative text-xl max-w-full ">
                 <div className="flex justify-center items-center w-3/4 mx-auto">
                     <Caracteristics />
                 </div>
                 <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-56 overflow-y-scroll no-scrollbar" />
-                {/* <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
+                // <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
                 
-                </div> */}
+                // </div> 
                 <div className="flex justify-end opacity-30">
                     <Image
                         alt="Otam Logo"
@@ -143,24 +164,78 @@ export default function TDAPage() {
                                         width={250}
                                     />
                 </div>
+            </section> */}
+
+            {/* -------------------------Tabla de especificadiones------------------------- */}
+
+           
+
+            <section className="relative text-xl max-w-full ">
+              
+                <Ondas02SVG css="absolute -z-10 right-[50%] translate-x-[50%] -top-10 translate-y-[-5%] overflow-hidden no-scrollbar" />
+
+                
             </section>
 
-            <section className="h-[70vh] mt-32 z-10 overflow-y-hidde">
+            <div className="flex flex-col justify-center items-center w-3/4 mt-20 mx-auto">
+                <h1 className="text-xl lg:text-4xl leading-none  font-nunito-bolder me-auto mb-2 text-livered-title">
+                            CARACTERÍSTICAS TÉCNICAS
+                        </h1>
+                    <Accordion variant="splitted" itemClasses={itemClasses} selectionMode="multiple" >
+                        <AccordionItem
+                            
+                            key="facil"
+                            aria-label="Facil Instalacion"
+                            // indicator={<FacilInstalacion />}
+                            title="Facil Instalacion"
+                        >
+                            {defaultContent}
+                        </AccordionItem>
+                        <AccordionItem
+                            key="eficiencia"
+                            aria-label="Eficiencia Energetica"
+                            indicator={<EficienciaEnergetica />}
+                            title="Eficiencia Energetica"
+                        >
+                            {defaultContent}
+                        </AccordionItem>
+                        <AccordionItem
+                            key="construccion"
+                            aria-label="Construccion duradera"
+                            indicator={<ConstruccionDuradera />}
+                            title="Construccion duradera"
+                        >
+                            {defaultContent}
+                        </AccordionItem>
+                        <AccordionItem
+                            key="versatilidad"
+                            aria-label="Versatilidad Aplicacion"
+                            indicator={<VersatilidadAplicacion size={62}/>}
+                            title="Versatilidad Aplicacion"
+                        >
+                            {defaultContent}
+                        </AccordionItem>
+                    </Accordion>
+                    <div className="ms-auto opacity-30">
+                    <Image
+                        alt="Otam Logo"
+                        className=""
+                        src="../img/otamlogo.png"
+                        width={250}
+                    />
+                </div>
+                </div>
+
+            <section className="h-[70vh] mb-6  z-10 overflow-y-hidde">
                 <div className="flex flex-col justify-center items-center  w-full m-auto ">
-                    <div className="flex justify-center items-center w-3/4">
-                        <div className="w-3/4 float-left">
-                            <h1 className="text-sm lg:text-2xl font-bold text-livered ">
-                                INSTALACIONES EN OBRA
-                            </h1>
-                        </div>
-                        <div className="w-1/2 float-right flex justify-end items-end ">
-                            <Image
+                    <div className="ms-auto items-center">
+                     <Image
                                 alt="Electroterma Logo"
                                 className=""
                                 src="../img/electrotermalogoletras.png"
                                 width={250}
                             />
-                        </div>
+
                     </div>
 
                     <div>
