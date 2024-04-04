@@ -26,6 +26,9 @@ import SimpleSlider from "@/components/imgslider/slickSlider";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 import { Reveal } from "@/components/revealFramemotion";
 
+
+
+
 export default function TDAPage() {
     const defaultContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
@@ -48,7 +51,7 @@ export default function TDAPage() {
 
     return (
         <div className="h-full flex flex-col items-center justify-center">
-            <section className="relative top-0 w-full py-3 font-size">
+            <section className="relative top-0 w-full py-3 font-size overflow-hidden">
                 <div className="w-[450px] md:w-full lg:w-full">
                     <SimpleSlider
                         url={urlImageBanner}
@@ -56,15 +59,15 @@ export default function TDAPage() {
                     />
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-2  flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
-                    <div className="ml-12">
-                        <h2 className="text-white text-2xl">
+                    <div className="ml-4 md:ml-12">
+                        <h2 className="text-white text-md md:text-2xl">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-12 ">
+                    <div className="mr-4 md:mr-12 ">
                         <Button size="lg" radius="full">
-                            Consúltanos
+                            <h2 className="text-md md:text-2xl"> Consúltanos </h2>
                         </Button>
                     </div>
                 </div>
@@ -76,20 +79,20 @@ export default function TDAPage() {
 
             <section className="flex flex-col  md:flex md:flex-row-reverse w-full h-[110vh] overflow-hidden ">
                 <div className="md:mr-16 z-20">
-                    <div className="flex flex-col mt-16 justify-items-end items-end font-lexend-bold tracking-widest ">
+                    <div className="flex flex-col items-center mt-6 lg:mt-16 lg:justify-items-end lg:items-end font-lexend-bold tracking-widest ">
                         <span className="text-lg lg:text-5xl text-midgray font-nunito ">
                             VENTILADOR
                         </span>
 
-                        <h1 className="mt-4 text-3xl lg:text-[78px] leading-none font-nunito-bolder text-livered-title">
+                        <h1 className="mt-4 text-4xl  lg:text-[78px] leading-none font-nunito-bolder text-livered-title">
                             CENTRÍFUGO
                         </h1>
 
-                        <h1 className="text-3xl lg:text-[78px] leading-none  font-nunito-bolder text-livered-title">
+                        <h1 className="text-4xl  lg:text-[78px] leading-none  font-nunito-bolder text-livered-title">
                             MULTIPALA - TDA
                         </h1>
 
-                        <h1 className="text-lg lg:text-[43px] lg:mt-2 text-midgray font-nunito ">
+                        <h1 className="mt-2 text-lg lg:text-[43px] lg:mt-2 text-midgray font-nunito ">
                             DE DOBLE ASPIRACIÓN
                         </h1>
 
@@ -107,7 +110,7 @@ export default function TDAPage() {
                         </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen -left-[10%] top-16 -mt-10 z-10 overflow-y-hidde">
+                <div className="relative max-w-screen -left-[9%] md:-left-[10%] -top-16 md:top-16 -mt-10 z-10 overflow-y-hidde">
                     <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
@@ -118,26 +121,32 @@ export default function TDAPage() {
                     {/* --- ONDA 1 --------------- */}
                     <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " />
                     {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
-                        <LottieWave />
+                        <LottieWave md:bottom-[165px] md:left-[120px]  />
                     </div> */}
-                </div>
-            </section>
-            <section className="w-1/2  flex justify-items-start">
+                    <div className=" z-20  absolute translate-x-[118px] translate-y-[170px]  overflow-hidden">
                 <Button
-                    className="relative -top-[130px] -10 lg:-left-[150px] z-10 bg-livered text-white"
+                    className="z-10 bg-livered text-white"
                     radius="full"
                     size="lg"
                 >
-                    Asesoramiento
+                   Asesoramiento
                 </Button>
+                </div>
+                    
+                </div>
+                
+                
             </section>
+
+
+            
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}
             <Suspense fallback={<div>Loading</div>}>
                 <FrameFan />
             </Suspense>
 
-            <section className="w-9/12  flex flex-row justify-end items-end">
+            <section className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
                 <Button
                     className="z-10 bg-livered text-white"
                     radius="full"
@@ -170,14 +179,14 @@ export default function TDAPage() {
 
            
 
-            <section className="relative text-xl max-w-full ">
+            {/* <section className="relative text-xl max-w-full ">
               
                 <Ondas02SVG css="absolute -z-10 right-[50%] translate-x-[50%] -top-10 translate-y-[-5%] overflow-hidden no-scrollbar" />
 
                 
-            </section>
+            </section> */}
 
-            <div className="flex flex-col justify-center items-center w-3/4 mt-20 mx-auto">
+            <div className="flex flex-col justify-center items-center w-3/4 mt-20 mx-auto overflow-hidden">
                 <h1 className="text-xl lg:text-4xl leading-none  font-nunito-bolder me-auto mb-2 text-livered-title">
                             CARACTERÍSTICAS TÉCNICAS
                         </h1>
@@ -226,9 +235,9 @@ export default function TDAPage() {
                 </div>
                 </div>
 
-            <section className="h-[70vh] mb-6  z-10 overflow-y-hidde">
-                <div className="flex flex-col justify-center items-center  w-full m-auto ">
-                    <div className="ms-auto items-center">
+            <section className="h-[56vh] lg:h-[70vh] mb-6  z-10 overflow-hidden">
+                <div className="flex flex-col justify-center items-center w-full m-auto ">
+                    <div className="ms-auto flex items-center">
                      <Image
                                 alt="Electroterma Logo"
                                 className=""
@@ -244,16 +253,16 @@ export default function TDAPage() {
                             fileName={demoImageNames}
                         />
                     </div>
-                    <div className="flex justify-center items-center w-3/4">
-                        <div className="w-1/2 float-left">
+                    <div className="flex justify-bettween items-center mt-2 w-full">
+                        <div className="me-auto flex justify-start items-start ">
                             <Image
                                 alt="Otam Logo"
-                                className=" w-1/2 float-right "
+                                className="scale-1"
                                 src="../img/otamlogo.png"
-                                width={250}
+                                width={200}
                             />
                         </div>
-                        <div className="w-1/2 float-right flex justify-end items-end pr-10">
+                        <div className="w-1/2 float-right flex justify-end items-end pr-10 md:pr-0">
                             <Button
                                 className="  z-10 bg-livered text-white"
                                 radius="full"

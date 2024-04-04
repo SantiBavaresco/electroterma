@@ -29,12 +29,12 @@ export default function FrameScrubber() {
 
     return (
         <div>
-            <section class="frames flex flex-col">
+            <section class="frames flex flex-col ">
                 <div class="holder">
                     <canvas id="hero-lightpass" className="mb-16" />
                 </div>
 
-                <div class="story text-5xl ">
+                <div class="story text-3xl mr-8 lg:text-5xl ">
                     <div>
                         <div className="">
                             {/* <Reveal width="100%"> */}
