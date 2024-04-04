@@ -67,7 +67,7 @@ export default function TDAPage() {
                     </div>
                     <div className="mr-4 md:mr-12 ">
                         <Button size="lg" radius="full">
-                            <h2 className="text-md md:text-2xl"> Consúltanos </h2>
+                            Consúltanos
                         </Button>
                     </div>
                 </div>
@@ -146,7 +146,8 @@ export default function TDAPage() {
                 <FrameFan />
             </Suspense>
 
-            <section className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
+
+            <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
                 <Button
                     className="z-10 bg-livered text-white"
                     radius="full"
@@ -154,7 +155,7 @@ export default function TDAPage() {
                 >
                     Manual <Download />
                 </Button>
-            </section>
+            </div>
 
             {/* -------------------------Tabla de especificadiones INICIAL------------------------- */}
             {/* <section className="relative text-xl max-w-full ">
@@ -178,13 +179,14 @@ export default function TDAPage() {
             {/* -------------------------Tabla de especificadiones------------------------- */}
 
            
-
-            {/* <section className="relative text-xl max-w-full ">
+            <section className=""> 
+            <div className="relative text-xl max-w-[100%] overflow-hidden">
               
-                <Ondas02SVG css="absolute -z-10 right-[50%] translate-x-[50%] -top-10 translate-y-[-5%] overflow-hidden no-scrollbar" />
+                <Ondas02SVG css="absolute -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] overflow-hidden " />
 
                 
-            </section> */}
+            </div>
+            </section>
 
             <div className="flex flex-col justify-center items-center w-3/4 mt-20 mx-auto overflow-hidden">
                 <h1 className="text-xl lg:text-4xl leading-none  font-nunito-bolder me-auto mb-2 text-livered-title">
@@ -233,9 +235,9 @@ export default function TDAPage() {
                         width={250}
                     />
                 </div>
-                </div>
+            </div>
 
-            <section className="h-[56vh] lg:h-[70vh] mb-6  z-10 overflow-hidden">
+            <section className="h-[56vh] lg:h-[75vh] mb-6  z-10 overflow-hidden">
                 <div className="flex flex-col justify-center items-center w-full m-auto ">
                     <div className="ms-auto flex items-center">
                      <Image

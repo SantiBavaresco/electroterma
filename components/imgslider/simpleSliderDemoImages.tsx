@@ -70,7 +70,7 @@ const SimpleSliderDemoImages: React.FC<Props> = ({ url, width, fileName }) => {
             >
                 <Slider {...settings}>
                     {fileName?.map((item, index) => (
-                        <div style={{ width: wii, height: hii }} key={index} className="max-w-[400px]  md:max-w-[400px] lg:max-w-[500px] px-[2px]">
+                        <div style={{ width: wii, height: hii }} key={index} className="max-w-[420px]  md:max-w-[400px] lg:max-w-[500px] px-[2px]">
                             <Image
                                 alt={`Imagen ${index}`}
                                 src={`${url}${item}.jpg`}
