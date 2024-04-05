@@ -26,9 +26,6 @@ import SimpleSlider from "@/components/imgslider/slickSlider";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 import { Reveal } from "@/components/revealFramemotion";
 
-
-
-
 export default function TDAPage() {
     const defaultContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
@@ -44,10 +41,11 @@ export default function TDAPage() {
     const itemClasses = {
         base: "py-4 bg-red-500 w-full opacity-95",
         title: "font-normal text-2xl",
-        trigger: "px-2 py-2 data-[hover=true]:bg-default-100 rounded-lg h-14 flex items-center",
+        trigger:
+            "px-2 py-2 data-[hover=true]:bg-default-100 rounded-lg h-14 flex items-center",
         indicator: "text-medium",
         content: "text-xl px-2",
-      };
+    };
 
     return (
         <div className="h-full flex flex-col items-center justify-center">
@@ -77,7 +75,7 @@ export default function TDAPage() {
                 
             </section> */}
 
-            <section className="flex flex-col  md:flex md:flex-row-reverse w-full h-[110vh] overflow-hidden ">
+            <section className="flex flex-col min-h-[130vh] md:min-h-full md:flex md:flex-row-reverse w-full h-[110vh] overflow-hidden ">
                 <div className="md:mr-16 z-20">
                     <div className="flex flex-col items-center mt-6 lg:mt-16 lg:justify-items-end lg:items-end font-lexend-bold tracking-widest ">
                         <span className="text-lg lg:text-5xl text-midgray font-nunito ">
@@ -110,7 +108,7 @@ export default function TDAPage() {
                         </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen -left-[9%] md:-left-[10%] -top-16 md:top-16 -mt-10 z-10 overflow-y-hidde">
+                <div className="relative max-w-screen  -left-[9%] md:-left-[10%] -top-16 md:top-16 -mt-10 z-10 overflow-y-hidde">
                     <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
@@ -124,28 +122,22 @@ export default function TDAPage() {
                         <LottieWave md:bottom-[165px] md:left-[120px]  />
                     </div> */}
                     <div className=" z-20  absolute translate-x-[118px] translate-y-[170px]  overflow-hidden">
-                <Button
-                    className="z-10 bg-livered text-white"
-                    radius="full"
-                    size="lg"
-                >
-                   Asesoramiento
-                </Button>
+                        <Button
+                            className="z-10 bg-livered text-white"
+                            radius="full"
+                            size="lg"
+                        >
+                            Asesoramiento
+                        </Button>
+                    </div>
                 </div>
-                    
-                </div>
-                
-                
             </section>
 
-
-            
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}
             <Suspense fallback={<div>Loading</div>}>
                 <FrameFan />
             </Suspense>
-
 
             <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
                 <Button
@@ -175,59 +167,71 @@ export default function TDAPage() {
                                     />
                 </div>
             </section> */}
+{/* 
+            <section className="flex flex-col  md:flex md:flex-row-reverse h-[100vh]  ">
+                
+                <div className="relative max-w-screen ">
+                    
+                    <Ondas02SVG css="absolute " />
+
+
+                </div>
+            </section> */}
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 
            
-            <section className=""> 
-            <div className="relative text-xl max-w-[100%] overflow-hidden">
-              
-                <Ondas02SVG css="absolute -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] overflow-hidden " />
-
-                
-            </div>
-            </section>
-
-            <div className="flex flex-col justify-center items-center w-3/4 mt-20 mx-auto overflow-hidden">
-                <h1 className="text-xl lg:text-4xl leading-none  font-nunito-bolder me-auto mb-2 text-livered-title">
-                            CARACTERÍSTICAS TÉCNICAS
-                        </h1>
-                    <Accordion variant="splitted" itemClasses={itemClasses} selectionMode="multiple" >
-                        <AccordionItem
-                            
-                            key="facil"
-                            aria-label="Facil Instalacion"
-                            // indicator={<FacilInstalacion />}
-                            title="Facil Instalacion"
-                        >
-                            {defaultContent}
-                        </AccordionItem>
-                        <AccordionItem
-                            key="eficiencia"
-                            aria-label="Eficiencia Energetica"
-                            indicator={<EficienciaEnergetica />}
-                            title="Eficiencia Energetica"
-                        >
-                            {defaultContent}
-                        </AccordionItem>
-                        <AccordionItem
-                            key="construccion"
-                            aria-label="Construccion duradera"
-                            indicator={<ConstruccionDuradera />}
-                            title="Construccion duradera"
-                        >
-                            {defaultContent}
-                        </AccordionItem>
-                        <AccordionItem
-                            key="versatilidad"
-                            aria-label="Versatilidad Aplicacion"
-                            indicator={<VersatilidadAplicacion size={62}/>}
-                            title="Versatilidad Aplicacion"
-                        >
-                            {defaultContent}
-                        </AccordionItem>
-                    </Accordion>
-                    <div className="ms-auto opacity-30">
+    <section className="w-full min-h-[100vh] h-[100%] md:h-full bg-[url('/svg/ondas02.svg')] bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit bg-no-repeat overflow-hidden">
+            {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
+            <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
+                <Ondas02SVG/>
+                </div>
+                </div> */}
+            <div className="flex flex-col justify-center items-center md:w-3/4 mt-20 mx-auto overflow-hidden
+            
+            ">
+                <h1 className="text-2xl ml-2 lg:text-4xl leading-none  font-nunito-bolder me-auto my-2 text-livered-title">
+                    CARACTERÍSTICAS TÉCNICAS
+                </h1>
+                <Accordion
+                    variant="splitted"
+                    itemClasses={itemClasses}
+                    selectionMode="multiple"
+                >
+                    <AccordionItem
+                        key="facil"
+                        aria-label="Facil Instalacion"
+                        // indicator={<FacilInstalacion />}
+                        title="Facil Instalacion"
+                    >
+                        {defaultContent}
+                    </AccordionItem>
+                    <AccordionItem
+                        key="eficiencia"
+                        aria-label="Eficiencia Energetica"
+                        indicator={<EficienciaEnergetica />}
+                        title="Eficiencia Energetica"
+                    >
+                        {defaultContent}
+                    </AccordionItem>
+                    <AccordionItem
+                        key="construccion"
+                        aria-label="Construccion duradera"
+                        indicator={<ConstruccionDuradera />}
+                        title="Construccion duradera"
+                    >
+                        {defaultContent}
+                    </AccordionItem>
+                    <AccordionItem
+                        key="versatilidad"
+                        aria-label="Versatilidad Aplicacion"
+                        indicator={<VersatilidadAplicacion size={62} />}
+                        title="Versatilidad Aplicacion"
+                    >
+                        {defaultContent}
+                    </AccordionItem>
+                </Accordion>
+                <div className="ms-auto mt-4 opacity-30">
                     <Image
                         alt="Otam Logo"
                         className=""
@@ -236,20 +240,21 @@ export default function TDAPage() {
                     />
                 </div>
             </div>
+            </section>
 
-            <section className="h-[56vh] lg:h-[75vh] mb-6  z-10 overflow-hidden">
-                <div className="flex flex-col justify-center items-center w-full m-auto ">
+
+            <section className="h-[60%] lg:h-[75vh] mb-6 bg-inherit z-10 bg-none overflow-hidden">
+                <div className="flex flex-col justify-center items-center t w-full md:w-[1200px] m-auto ">
                     <div className="ms-auto flex items-center">
-                     <Image
-                                alt="Electroterma Logo"
-                                className=""
-                                src="../img/electrotermalogoletras.png"
-                                width={250}
-                            />
-
+                        <Image
+                            alt="Electroterma Logo"
+                            className=""
+                            src="../img/electrotermalogoletras.png"
+                            width={250}
+                        />
                     </div>
 
-                    <div>
+                    <div className="">
                         <SimpleSliderDemoImages
                             url={urlTdaImageDemo}
                             fileName={demoImageNames}

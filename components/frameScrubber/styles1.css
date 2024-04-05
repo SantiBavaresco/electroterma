@@ -48,7 +48,7 @@
         /* max-width: 70vw; */
         /* max-width: 90vw;*/
         /* max-height: 90vh;  */
-        width: 400px;
+        width: 100%;
         height: 500px;
 
         transform: translate(0%, 00%);
@@ -61,15 +61,16 @@
       }
 }
 
-section.frames div.story {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: var(--primary-color);
-}
+
 
 @media (min-width: 720px) {
+    section.frames div.story {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120%;
+        color: var(--primary-color);
+    }
 section.frames div.story div {
     height: 155vh;
     position: relative;
@@ -81,8 +82,18 @@ section.frames div.story div {
     text-align: center;
     
 }
+
 }
+
+  /* PC pantalla celu */
 @media (max-width: 720px) {
+    section.frames div.story {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: var(--primary-color);
+    }
     section.frames div.story div {
         height: 155vh;
     position: relative;

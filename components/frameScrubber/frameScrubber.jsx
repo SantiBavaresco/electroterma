@@ -28,13 +28,13 @@ export default function FrameScrubber() {
     }, []);
 
     return (
-        <div>
+        <div className="">
             <section class="frames flex flex-col ">
                 <div class="holder">
                     <canvas id="hero-lightpass" className="mb-16" />
                 </div>
 
-                <div class="story text-3xl mr-8 lg:text-5xl ">
+                <div class="story text-3xl mr-0 lg:text-5xl ">
                     <div>
                         <div className="">
                             {/* <Reveal width="100%"> */}
@@ -74,11 +74,11 @@ export default function FrameScrubber() {
                     <div>
                         {/* <Reveal> */}
                             <span className="flex gap-1 flex-col items-center align-center justify-center  ">
-                                <div className="flex gap-2 mt-6 max-h-10">
+                                <div className="flex flex-col space-y-4 items-center mt-6 max-h-10 ">
                                     <Chip
-                                        className="p-4 px-2 text-xs max-h-10"
+                                        className="p-10 px-2 text-md max-h-14"
                                         startContent={
-                                            <ConstruccionDuradera size={28} />
+                                            <ConstruccionDuradera size={38} />
                                         }
                                         variant="faded"
                                         radius="full"
@@ -88,7 +88,7 @@ export default function FrameScrubber() {
                                         Construción Duradera
                                     </Chip>
                                     <Chip
-                                        className="p-4 px-2 text-xs max-h-10"
+                                        className="p-4 px-2 max-h-10"
                                         startContent={
                                             <FacilInstalacion size={28} />
                                         }
@@ -99,11 +99,9 @@ export default function FrameScrubber() {
                                         {" "}
                                         Facil Instalacion
                                     </Chip>
-                                </div>
 
-                                <div className="flex gap-1 mt-2 max-h-10">
                                     <Chip
-                                        className="p-4 px-2 text-xs max-h-10"
+                                        className="p-4 px-2  max-h-10"
                                         startContent={
                                             <VersatilidadAplicacion size={28} />
                                         }
@@ -115,7 +113,7 @@ export default function FrameScrubber() {
                                         Versatilidad de Aplicación
                                     </Chip>
                                     <Chip
-                                        className="p-4 px-2 text-xs max-h-10"
+                                        className="p-4 px-2  max-h-10"
                                         startContent={
                                             <EficienciaEnergetica size={28} />
                                         }

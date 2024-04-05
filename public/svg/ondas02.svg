@@ -1,16 +1,7 @@
-import React from "react";
-interface Props {
-    css?: string; 
-    size?: number;
-    height?: number; 
-    width?: number; 
-}
-export const Ondas02SVG: React.FC<Props> = ({ css, size, height, width, ...props }) => {
-    return (
         <svg
-            className={css||"bg-transparent"}
-            width={size || width || 1650}
-            height={size || height || 905}
+
+            width="1650"
+            height="905"
             viewBox="0 0 1920 601"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -100,5 +91,4 @@ export const Ondas02SVG: React.FC<Props> = ({ css, size, height, width, ...props
                 </clipPath>
             </defs>
         </svg>
-    );
-};
+
