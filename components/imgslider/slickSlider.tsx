@@ -73,15 +73,19 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
 
     return (
         <div className="aspect-[11/5] lg:aspect-[23.7/9] overflow-hidden ">
-            <div className="absolute top-32 lg:top-[58vh] z-10 px-4 right-4 lg:right-12  rounded-tl-2xl rounded-br-2xl flex flex-col justify-start items-center bg-white p-1 ">
+            {/* <div className="absolute top-32 lg:top-[58vh] z-10 px-4 right-4 lg:right-12  rounded-tl-2xl rounded-br-2xl flex flex-col justify-start items-center bg-white p-1 ">
                 <div className="flex flex-col justify-start items-start text-sm lg:text-3xl text-livered-title py-4 lg:py-6">
                     <h1 className=" font-bold">Componente de</h1>
                     <h1 className="font-bold">equipo tempomatic</h1>
                 </div>
-            </div>
+            </div> */}
             <Slider {...settings}>
                 {fileName?.map((item, index) => (
-                    <div key={index} className="max-w-[330px]  md:max-w-[400px] lg:max-w-[115vh] px-[2px]">
+                    <div
+                        key={index}
+                        className="relative max-w-[330px] md:max-w-[400px] lg:max-w-[115vh] px-[2px]"
+                    >
+                        <div className="z-0">
                         <Image
                             alt={`Imagen ${index}`}
                             src={`${url}${item}.jpg`}
@@ -90,6 +94,19 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
                             loading="eager"
                             key={index}
                         />
+                        </div>
+
+                        <div
+                            className="absolute px-4 z-10
+                            bottom-0 right-10
+                            rounded-tl-[42px]
+                            flex flex-col justify-start items-center bg-white p-1 "
+                        >
+                            <div className="flex flex-col justify-start items-start text-sm lg:text-3xl text-livered-title py-4 lg:py-6">
+                                <h1 className=" font-bold">Componente de</h1>
+                                <h1 className="font-bold">equipo tempomatic</h1>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </Slider>

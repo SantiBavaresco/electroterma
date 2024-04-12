@@ -7,13 +7,67 @@ import {
     TableRow,
     TableCell,
 } from "@nextui-org/table";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+
 
 
 export default function InfoTecnica() {
 
+    const defaultContent =
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
+        
+    const itemClasses = {
+        base: "py-4 bg-red-500 w-full opacity-95",
+        title: "font-normal text-2xl",
+        trigger:
+            "px-2 py-2 data-[hover=true]:bg-default-100 rounded-lg h-14 flex items-center",
+        indicator: "text-medium",
+        content: "text-xl px-2",
+    };
+
     return (
         <div className="flex flex-col gap-3 max-w-[320px] overflow-x-auto md:max-w-full">
-            <Table
+
+
+                <Accordion
+                    variant="splitted"
+                    itemClasses={itemClasses}
+                    selectionMode="multiple"
+                >
+                    <AccordionItem
+                        key="facil"
+                        aria-label=""
+                        startContent={
+
+                            <div className="w-full grid grid-cols-6">
+                                <div className="bg-orange-500 text-white">
+                                    MODELO TSA
+                                </div>
+                                <div className="bg-orange-500 text-white text-xs">
+                                    QMIN[m3/h]
+                                </div>
+                                <div className="bg-orange-500 text-white text-xs">
+                                    Ap[mmca]
+                                </div>
+                                <div className="bg-orange-500 text-white text-xs">
+                                    Q[m3/h]
+                                </div>
+                                <div className="bg-orange-500 text-white text-xs">
+                                    Ap Max[mmca]
+                                </div>
+                                <div className="bg-orange-500 text-white text-xs">
+                                    QMAX[m3/h]
+                                </div>
+                                <div  className="bg-orange-500 text-white text-xs">
+                                    Ap Min[mmca]
+                                </div>
+                            </div>
+                        }
+                        // indicator={<FacilInstalacion />}
+                        title=""
+                    >
+                        <Table
                 color="warning"
                 selectionMode="single"
                 defaultSelectedKeys={["2"]}
@@ -100,6 +154,11 @@ export default function InfoTecnica() {
                     </TableRow>
                 </TableBody>
             </Table>
+                    </AccordionItem>
+                    
+                </Accordion>
+                
+            
         </div>
     );
 }

@@ -10,7 +10,7 @@ const currentFrame = (index) =>
         .padStart(3, "0")}.jpg`;
 
 const preloadImages = () => {
-    for (let i = 1; i < frameCount; i+=2) {
+    for (let i = 1; i < frameCount; i+=3) {
         const img = new Image();
         img.src = currentFrame(i);
     }

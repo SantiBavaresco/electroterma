@@ -126,7 +126,7 @@ export default function NosotrosPage() {
                 <div className="flex justify-center items-center w-3/4 mx-auto">
                     <Caracteristics />
                 </div>
-                <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-56 overflow-y-scroll no-scrollbar" />
+                {/* <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-56 overflow-y-scroll no-scrollbar" /> */}
                 {/* <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
                 
                 </div> */}

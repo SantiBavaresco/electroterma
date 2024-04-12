@@ -76,7 +76,7 @@ export default function FrameScrubber() {
                             <span className="flex gap-1 flex-col items-center align-center justify-center  ">
                                 <div className="flex flex-col space-y-4 items-center mt-6 max-h-10 ">
                                     <Chip
-                                        className="p-10 px-2 text-md max-h-14"
+                                        className="p-4 px-2 max-h-14"
                                         startContent={
                                             <ConstruccionDuradera size={38} />
                                         }

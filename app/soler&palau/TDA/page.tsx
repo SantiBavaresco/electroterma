@@ -32,17 +32,17 @@ export default function TDAPage() {
     const urlImageBanner = "../img/solerpalau/imgbanner/";
     const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
 
-    const urlTdaImageDemo = "../img/solerpalau/tda/imgDemo/";
+    const urltdaImageDemo = "../img/solerpalau/tda/imgDemo/";
     const demoImageNames = ["1", "2", "3", "1", "2", "3"];
     const FrameFan = lazy(
         () => import("@/components/frameScrubber/frameScrubber")
     );
 
     const itemClasses = {
-        base: "py-4 bg-red-500 w-full opacity-95",
+        base: " py-2 md:py-4 md:px-4 bg-red-500 w-[95%] lg:w-[66%] opacity-95",
         title: "font-normal text-2xl",
         trigger:
-            "px-2 py-2 data-[hover=true]:bg-default-100 rounded-lg h-14 flex items-center",
+            "pl-2 py-2  data-[hover=true]:bg-default-100 pr-4 rounded-lg h-14 flex items-center",
         indicator: "text-medium",
         content: "text-xl px-2",
     };
@@ -56,14 +56,14 @@ export default function TDAPage() {
                         fileName={bannerImageNames}
                     />
                 </div>
-                <div className="bg-[#E61E25]  md:w-98% py-2  flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
+                <div className="bg-[#E61E25]  md:w-98% py-2  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-4 md:ml-12">
-                        <h2 className="text-white text-md md:text-2xl">
+                        <h2 className="text-white text-md md:text-2xl font-nunito">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12 ">
+                    <div className="mr-4 md:mr-12  ">
                         <Button size="lg" radius="full">
                             Consúltanos
                         </Button>
@@ -82,11 +82,11 @@ export default function TDAPage() {
                             VENTILADOR
                         </span>
 
-                        <h1 className="mt-4 text-4xl  lg:text-[78px] leading-none font-nunito-bolder text-livered-title">
+                        <h1 className="mt-4 text-4xl  lg:text-[78px] leading-none font-nunito-bold text-livered-title">
                             CENTRÍFUGO
                         </h1>
 
-                        <h1 className="text-4xl  lg:text-[78px] leading-none  font-nunito-bolder text-livered-title">
+                        <h1 className="text-4xl  lg:text-[78px] leading-none  font-nunito-bold text-livered-title">
                             MULTIPALA - TDA
                         </h1>
 
@@ -94,7 +94,7 @@ export default function TDAPage() {
                             DE DOBLE ASPIRACIÓN
                         </h1>
 
-                        <div className="mt-2 text-lg lg:text-4xl lg:mt-4 tracking-normal text-highgray">
+                        <div className="mt-2 text-lg lg:text-4xl lg:mt-4 tracking-normal text-highgray font-lexend-bold">
                             <p className="">
                                 Inyección de{" "}
                                 <span className="text-livered">
@@ -108,20 +108,20 @@ export default function TDAPage() {
                         </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen  -left-[9%] md:-left-[10%] -top-16 md:top-16 -mt-10 z-10 overflow-y-hidde">
+                <div className="relative max-w-screen  lg:-left-[9%] md:-left-[20%] -top-16 md:top-16 -mt-10 z-10 overflow-y-hidde">
                     <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
                         className="inline-block top-36 left-12"
-                        src="../img/solerpalau/tda/SolerPalauTda1.png"
-                        width={370}
+                        src="../img/solerpalau/tda/SolerPalautda1.png"
+                        width={420}
                     />
                     {/* --- ONDA 1 --------------- */}
-                    <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " />
+                    {/* <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " /> */}
                     {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
                         <LottieWave md:bottom-[165px] md:left-[120px]  />
                     </div> */}
-                    <div className=" z-20  absolute translate-x-[118px] translate-y-[170px]  overflow-hidden">
+                    <div className=" z-20  absolute translate-x-[138px] translate-y-[170px]  overflow-hidden">
                         <Button
                             className="z-10 bg-livered text-white"
                             radius="full"
@@ -135,6 +135,7 @@ export default function TDAPage() {
 
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}
+
             <Suspense fallback={<div>Loading</div>}>
                 <FrameFan />
             </Suspense>
@@ -163,11 +164,11 @@ export default function TDAPage() {
                         alt="Otam Logo"
                                         className=""
                                         src="../img/otamlogo.png"
-                                        width={250}
+                                        widdiv={250}
                                     />
                 </div>
             </section> */}
-{/* 
+            {/* 
             <section className="flex flex-col  md:flex md:flex-row-reverse h-[100vh]  ">
                 
                 <div className="relative max-w-screen ">
@@ -180,83 +181,181 @@ export default function TDAPage() {
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 
-           
-    <section className="w-full min-h-[100vh] h-[100%] md:h-full bg-[url('/svg/ondas02.svg')] bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit bg-no-repeat overflow-hidden">
-            {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
+            <section className="w-full min-h-[130vh] h-[100%] -mt-10 md:h-[100%] bg-[url('/svg/ondas02.svg')] bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit bg-no-repeat overflow-hidden">
+                {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
                 <Ondas02SVG/>
                 </div>
                 </div> */}
-            <div className="flex flex-col justify-center items-center md:w-3/4 mt-20 mx-auto overflow-hidden
-            
-            ">
-                <h1 className="text-2xl ml-2 lg:text-4xl leading-none  font-nunito-bolder me-auto my-2 text-livered-title">
-                    CARACTERÍSTICAS TÉCNICAS
-                </h1>
-                <Accordion
-                    variant="splitted"
-                    itemClasses={itemClasses}
-                    selectionMode="multiple"
+                 <div className="relative w-screen ms-auto">
+                    <div
+                            className=" mt-20 lg:absolute px-4 z-10
+                            top-72 right-16
+                            rounded-[42px]
+                            lg:w-[400px]
+                            flex flex-col justify-start items-center bg-white p-1 "
+                        >
+                            <div className=" flex flex-col justify-center items-center lg:text-3xl text-livered-title py-4 lg:py-16">
+                                <h1 className="font-lexend-bold text-xl ">Caudales de inyeccion desde</h1>
+                                <h1 className="font-lexend-bold text-xl ">xxxxxx a xxxxxx m3/h</h1>
+                                <h1 className="font-lexend-bold text-xl ">y contrapresiones desde</h1>
+                                <h1 className="font-lexend-bold text-xl ">xxxx a xxxxx mmCA </h1>
+
+                            </div>
+                        </div>
+                    </div>
+
+                <div
+                    className=" w-[104%] flex flex-col justify-center items-center  lg:w-3/4 mt-20 mx-auto overflow-hidden
+                    "
                 >
-                    <AccordionItem
-                        key="facil"
-                        aria-label="Facil Instalacion"
-                        // indicator={<FacilInstalacion />}
-                        title="Facil Instalacion"
+                    <h1 className="text-2xl ml-2 lg:text-4xl  leading-none  font-nunito-bolder me-auto my-2 text-livered-title">
+                        CARACTERÍSTICAS TÉCNICAS
+                    </h1>
+
+                   
+                
+                    <Accordion
+                        className="h-[70vh] md:h-[55vh] lg:min-h-[75vh]"
+                        variant="splitted"
+                        itemClasses={itemClasses}
+                        selectionMode="multiple"
                     >
-                        {defaultContent}
-                    </AccordionItem>
-                    <AccordionItem
-                        key="eficiencia"
-                        aria-label="Eficiencia Energetica"
-                        indicator={<EficienciaEnergetica />}
-                        title="Eficiencia Energetica"
-                    >
-                        {defaultContent}
-                    </AccordionItem>
-                    <AccordionItem
-                        key="construccion"
-                        aria-label="Construccion duradera"
-                        indicator={<ConstruccionDuradera />}
-                        title="Construccion duradera"
-                    >
-                        {defaultContent}
-                    </AccordionItem>
-                    <AccordionItem
-                        key="versatilidad"
-                        aria-label="Versatilidad Aplicacion"
-                        indicator={<VersatilidadAplicacion size={62} />}
-                        title="Versatilidad Aplicacion"
-                    >
-                        {defaultContent}
-                    </AccordionItem>
-                </Accordion>
-                <div className="ms-auto mt-4 opacity-30">
-                    <Image
-                        alt="Otam Logo"
-                        className=""
-                        src="../img/otamlogo.png"
-                        width={250}
-                    />
+                        <AccordionItem
+                            key="facil"
+                            aria-label=""
+                            startContent={
+                                <div className="w-[80vw]  -ml-2 md:-ml-2 md:w-[88vw] lg:w-[43vw]  grid grid-cols-4  p-3 lg:p-4 lg:pr-2  bg-orange-500 rounded-xl text-xs md:text-base">
+                                    <div className="bg-orange-500 text-white ">
+                                        MODELO TSA
+                                    </div>
+                                    <div className="bg-orange-500 text-white  ">
+                                        QMIN[m3/h]
+                                    </div>
+                                    <div className="bg-orange-500 text-white ">
+                                        Ap[mmca]
+                                    </div>
+                                    <div className="bg-orange-500 text-white ">
+                                        Q[m3/h]
+                                    </div>
+                                </div>
+                            }
+                            title=""
+                        >
+                            <div className="w-[96%]  md:w-[96%] -ml-2 mb-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-300">
+                                <div className=" flex md:items-center justify-center  "> TSA 9/4 - 4P </div>
+                                <div className=" flex items-center justify-center"> 700 </div>
+                                <div className=" flex items-center justify-center"> 38 </div>
+                                <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6 "> 1150 </div>
+                            </div>
+
+                            <div className="w-[96%] md:w-[96%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-400">
+                                <div className=" flex md:items-center justify-center "> TSA 10/5 - 4P </div>
+                                <div className="flex items-center justify-center"> 800 </div>
+                                <div className=" flex items-center justify-center"> 48 </div>
+                                <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 1500 </div>
+                            </div>
+
+                            <div className="w-[96%] md:w-[96%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-300">
+                                <div className=" flex items-center justify-center "> TSA 12/6 - 4P </div>
+                                <div className="flex items-center justify-center"> 1350 </div>
+                                <div className="flex items-center justify-center"> 68 </div>
+                                <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 2600 </div>
+                            </div>
+                            <div className="w-[96%] md:w-[96%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-400">
+                                <div className="flex items-center justify-center "> TSA 15/7 - 6P </div>
+                                <div className="flex items-center justify-center"> 1400 </div>
+                                <div className=" flex items-center justify-center"> 40 </div>
+                                <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 3000 </div>
+                            </div>
+                            <div className="w-[96%] md:w-[96%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-300">
+                                <div className=" flex items-center justify-center "> TSA 15/7 - 4P </div>
+                                <div className=" flex items-center justify-center"> 2200 </div>
+                                <div className=" flex items-center justify-center"> 95 </div>
+                                <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5000 </div>
+                            </div>
+                            <div className="w-[96%] md:w-[96%] -ml-2 mt-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-400">
+                                <div className=" flex items-center justify-center "> TSA 18/9 - 6P </div>
+                                <div className="flex items-center justify-center"> 2300 </div>
+                                <div className="flex items-center justify-center"> 58 </div>
+                                <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5500 </div>
+                            </div>
+
+                            {/* </div> */}
+
+                            {/* <div className="w-[96%] grid grid-cols-4 items-center gap-y-1">
+                                    <div className="bg-gray-300 p-4 flex items-center justify-center">Fila 1</div>
+                                    <div className="bg-gray-300 p-4 flex items-center justify-center">Fila 2</div>
+                                    <div className="bg-gray-300 p-4 flex items-center justify-center">Fila 3</div>
+                                    <div className="bg-gray-300 p-4 flex items-center justify-center">Fila 4</div>
+
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 1</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 2</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 3</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 4</div>
+
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 1</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 2</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 3</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 4</div>
+
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 1</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 2</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 3</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 4</div>
+
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 1</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 2</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 3</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 4</div>
+
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 1</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 2</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 3</div>
+                                    <div className="bg-gray-400 p-4 flex items-center justify-center">Fila 4</div>
+                                </div> */}
+
+                            {/* {defaultContent} */}
+                        </AccordionItem>
+                    </Accordion>
+
+                    
+
+                    <div className="ms-auto mt-4">
+                        <div className="ms-auto mt-2 -mr-24 opacity-30">
+                            <Image
+                                alt="Otam Logo"
+                                className=""
+                                src="../img/otamlogo.png"
+                                width={350}
+                            />
+                        </div>
+                        <div className="ms-auto lg:-mr-8">
+                            <Image
+                                alt="Electroterma Logo"
+                                className=""
+                                src="../img/electrotermalogoletras.png"
+                                width={390}
+                            />
+                        </div>
+                    </div>
                 </div>
-            </div>
             </section>
 
-
-            <section className="h-[60%] lg:h-[75vh] mb-6 bg-inherit z-10 bg-none overflow-hidden">
+            <section className="h-[60%] lg:h-[78vh] mb-6 bg-inherit z-10 bg-none overflow-hidden">
                 <div className="flex flex-col justify-center items-center t w-full md:w-[1200px] m-auto ">
-                    <div className="ms-auto flex items-center">
+                    {/* <div className="ms-auto flex items-center">
                         <Image
                             alt="Electroterma Logo"
                             className=""
                             src="../img/electrotermalogoletras.png"
-                            width={250}
+                            widdiv={250}
                         />
-                    </div>
+                    </div> */}
 
                     <div className="">
                         <SimpleSliderDemoImages
-                            url={urlTdaImageDemo}
+                            url={urltdaImageDemo}
                             fileName={demoImageNames}
                         />
                     </div>
