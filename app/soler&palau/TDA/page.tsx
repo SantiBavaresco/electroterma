@@ -109,11 +109,11 @@ export default function TDAPage() {
                     </div>
                 </div>
                 <div className="relative max-w-screen  lg:-left-[9%] md:-left-[20%] -top-16 md:top-16 -mt-10 z-10 overflow-y-hidde">
-                    <Image
+                <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
                         className="inline-block top-36 left-12"
-                        src="../img/solerpalau/tda/SolerPalautda1.png"
+                        src="../img/solerpalau/tda/SolerPalauTda1.png"
                         width={420}
                     />
                     {/* --- ONDA 1 --------------- */}
