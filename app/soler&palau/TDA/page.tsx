@@ -26,7 +26,11 @@ import SimpleSlider from "@/components/imgslider/slickSlider";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 import { Reveal } from "@/components/revealFramemotion";
 
+
+
 export default function TDAPage() {
+
+
     const defaultContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
     const urlImageBanner = "../img/solerpalau/imgbanner/";
@@ -112,9 +116,9 @@ export default function TDAPage() {
                 <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
-                        className="inline-block top-36 left-12"
+                        className="inline-block w-[310px] lg:w-[420px] top-36 left-12"
                         src="../img/solerpalau/tda/SolerPalauTda1.png"
-                        width={420}
+                        width={"100%"}
                     />
                     {/* --- ONDA 1 --------------- */}
                     {/* <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " /> */}
