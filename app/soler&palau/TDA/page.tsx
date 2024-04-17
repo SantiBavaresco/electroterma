@@ -54,7 +54,7 @@ export default function TDAPage() {
     return (
         <div className="h-full flex flex-col items-center justify-center">
             <section className="relative top-0 w-full py-3 font-size overflow-hidden">
-                <div className="w-[450px] md:w-full lg:w-full">
+                <div className="w-[450px] md:w-screen lg:w-full max-h-[76.5vh] ">
                     <SimpleSlider
                         url={urlImageBanner}
                         fileName={bannerImageNames}

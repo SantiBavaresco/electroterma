@@ -28,7 +28,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
         centerMode: true,
         display: "flex",
         flexDirection: "row",
-        // height:200,
+        // height: "100%",
         infinite: true,
         // centerPadding: "60px",
         variableWidth: true,
@@ -41,6 +41,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
         speed: 10000,
         autoplaySpeed: 0,
         cssEase: "linear",
+
         // responsive: [
         //     {
         //         breakpoint: 1024,
@@ -83,7 +84,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
                 {fileName?.map((item, index) => (
                     <div
                         key={index}
-                        className="relative max-w-[330px] md:max-w-[400px] lg:max-w-[115vh] px-[2px]"
+                        className="relative max-w-[330px] md:max-w-[400px] lg:max-w-[115vh] px-[2px] min-h-screen"
                     >
                         <div className="z-0">
                         <Image
@@ -98,12 +99,18 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
 
                         <div
                             className="absolute px-4 z-10
-                            bottom-0 right-10
+                            bottom-[74vh]
+                            md:bottom-[48vh]
+                            lg:bottom-[28vh] xl:bottom-[38.5vh]
+
+                            right-10
                             rounded-tl-[42px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
                             <div className="flex flex-col justify-start items-start text-sm lg:text-3xl text-livered-title py-4 lg:py-6">
+                                {/* <h1 className=" font-bold">Componente de</h1> */}
                                 <h1 className=" font-bold">Componente de</h1>
+
                                 <h1 className="font-bold">equipo tempomatic</h1>
                             </div>
                         </div>
