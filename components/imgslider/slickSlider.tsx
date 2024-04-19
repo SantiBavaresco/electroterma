@@ -21,17 +21,18 @@ interface Props {
 // import image4 from "../../public/img/solerpalau/tda/imgbanner/4.jpg";
 
 const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
-    const wii = "500px";
+    // const wii = "500px";
     const settings = {
         // dots: true,
-        className: "center variable-width",
-        centerMode: true,
-        display: "flex",
-        flexDirection: "row",
-        // height: "100%",
+        className: "center variable-width  aspect[16/9] object-cover w-[100%] h-[90%] flex flex-nowrap overflow-hidden ",
+        // centerMode: true,
+        // display: "flex",
+        // flexDirection: "row",
+        // flexGrow: 1,
+        // height: "80%",
         infinite: true,
         // centerPadding: "60px",
-        variableWidth: true,
+        // variableWidth: true,
         // width: 1200,
         // adaptiveHeight: true,
         // lazyLoad: true,
@@ -73,7 +74,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
     };
 
     return (
-        <div className="aspect-[11/5] lg:aspect-[23.7/9] overflow-hidden ">
+        <div className="overflow-hidden flex flex-grow min-h-full">
             {/* <div className="absolute top-32 lg:top-[58vh] z-10 px-4 right-4 lg:right-12  rounded-tl-2xl rounded-br-2xl flex flex-col justify-start items-center bg-white p-1 ">
                 <div className="flex flex-col justify-start items-start text-sm lg:text-3xl text-livered-title py-4 lg:py-6">
                     <h1 className=" font-bold">Componente de</h1>
@@ -84,33 +85,41 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
                 {fileName?.map((item, index) => (
                     <div
                         key={index}
-                        className="relative max-w-[330px] md:max-w-[400px] lg:max-w-[115vh] px-[2px] min-h-screen"
+                        className="relative
+                         
+                        max-h-[80%]
+                        "
                     >
                         <div className="z-0">
-                        <Image
+                            <img className=" w-[100%] h-auto max-h-[42vh] md:max-h-[82vh] block m-auto object-fill "
+                                alt={`Imagen ${index}`}
+                                src={`${url}${item}.jpg`}
+                                key={index}
+                            ></img>
+                        {/* <Image
+                            className=" w-[100%] h-auto max-h-[80%] block m-auto"
                             alt={`Imagen ${index}`}
                             src={`${url}${item}.jpg`}
                             isZoomed
                             radius="none"
                             loading="eager"
                             key={index}
-                        />
+                            // width={1000}
+                            // height={"30%"}
+                        /> */}
                         </div>
 
                         <div
                             className="absolute px-4 z-10
-                            bottom-[74vh]
-                            md:bottom-[48vh]
-                            lg:bottom-[28vh] xl:bottom-[38.5vh]
+                            
+                            bottom-[0%]
 
                             right-10
                             rounded-tl-[42px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
                             <div className="flex flex-col justify-start items-start text-sm lg:text-3xl text-livered-title py-4 lg:py-6">
-                                {/* <h1 className=" font-bold">Componente de</h1> */}
                                 <h1 className=" font-bold">Componente de</h1>
-
                                 <h1 className="font-bold">equipo tempomatic</h1>
                             </div>
                         </div>
