@@ -5,7 +5,8 @@
   section.frames {
     /* height: 4000px; */
     z-index: 0;
-    height: 580vh;
+    height: 400vh;
+    /* height: 580vh; */
     position: relative;
     background: #fefefe;
     top: 0;
@@ -72,7 +73,9 @@
         color: var(--primary-color);
     }
 section.frames div.story div {
-    height: 155vh;
+    height: 105vh;
+    /* height: 155vh; anterior */
+
     position: relative;
     top: 0;
     left: 0;

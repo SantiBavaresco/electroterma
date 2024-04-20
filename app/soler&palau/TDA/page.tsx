@@ -35,11 +35,71 @@ export default function TDAPage() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
     const urlImageBanner = "../img/solerpalau/imgbanner/";
     const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
+
+    const bannerImageInfo = [
+        {
+            imgName:"1",
+            imgLable:[
+                {   
+                    textLable:"Componente de",
+                    textColor:""
+                },
+                {   
+                    textLable:"equipo tempomatic",
+                    textColor:""
+                },
+            ],
+        },
+        {
+            imgName:"2",
+            imgLable:[
+                {   
+                    textLable:"Es ideal para",
+                    textColor:"stone-300"
+                },
+                {   
+                    textLable:"Extracción localizada",
+                    textColor:""
+                },
+                {   
+                    textLable:"en procesos de",
+                    textColor:""
+                },
+                {   
+                    textLable:"industria",
+                    textColor:""
+                },
+            ],
+        },
+        {
+            imgName:"3",
+            imgLable:[
+                {   
+                    textLable:"Es ideal para",
+                    textColor:"stone-300"
+                },
+                {   
+                    textLable:"Áreas de proceso",
+                    textColor:""
+                },
+                {   
+                    textLable:"donde se requiera",
+                    textColor:""
+                },
+                {   
+                    textLable:"renovaión de aire",
+                    textColor:""
+                },
+            ],
+        }
+        
+    ];
     // const bannerImageNames = ["11a", "22a", "33a", "11a", "22a", "33a"];
 
 
     const urltdaImageDemo = "../img/solerpalau/tda/imgDemo/";
     const demoImageNames = ["1", "2", "3", "1", "2", "3"];
+
     const FrameFan = lazy(
         () => import("@/components/frameScrubber/frameScrubber")
     );
@@ -54,13 +114,13 @@ export default function TDAPage() {
     };
 
     return (
-        <div className="h-full flex flex-col items-center justify-center">
+        <div className="h-full flex flex-col items-center justify-center ">
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93vh] lg:max-h-[93vh] py-3 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
                     <SimpleSlider
                         url={urlImageBanner}
-                        fileName={bannerImageNames}
+                        imgInfo={bannerImageInfo}
                     />
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-2  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
@@ -130,7 +190,7 @@ export default function TDAPage() {
                     </div> */}
                     <div className=" z-20  absolute translate-x-[138px] translate-y-[170px] 2xl:translate-x-[220px] overflow-hidden">
                         <Button
-                            className="z-10 bg-livered text-white"
+                            className="z-10 bg-livered text-white 2xl:text-2xl"
                             radius="full"
                             size="lg"
                         >
@@ -149,7 +209,7 @@ export default function TDAPage() {
 
             <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
                 <Button
-                    className="z-10 bg-livered text-white"
+                    className="z-10 bg-livered text-white 2xl:text-2xl"
                     radius="full"
                     size="lg"
                 >
@@ -187,8 +247,8 @@ export default function TDAPage() {
             </section> */}
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
-
-            <section className="w-full min-h-[130vh] h-[100%] -mt-10 md:h-[100%] bg-[url('/svg/ondas02.svg')] bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit bg-no-repeat overflow-hidden">
+<section className="overflow-hidden">
+            <section className="w-full 2xl:w-screen min-h-[130vh] h-[100%] -mt-10 md:h-[100%] bg-[url('/svg/ondas02.svg')] bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
                 <Ondas02SVG/>
@@ -223,7 +283,7 @@ export default function TDAPage() {
                    
                 
                     <Accordion
-                        className="h-[70vh] md:h-[55vh] lg:min-h-[75vh]"
+                        className="h-[70vh] md:h-[55vh] lg:min-h-[75vh] "
                         variant="splitted"
                         itemClasses={itemClasses}
                         selectionMode="multiple"
@@ -249,39 +309,39 @@ export default function TDAPage() {
                             }
                             title=""
                         >
-                            <div className="w-[96%]  md:w-[96%] -ml-2 mb-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-300">
+                            <div className="w-[96%]  md:w-[96%] xl:w-[94.5%] 2xl:w-[92.5%] -ml-2 mb-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base bg-gray-300">
                                 <div className=" flex md:items-center justify-center  "> TSA 9/4 - 4P </div>
                                 <div className=" flex items-center justify-center"> 700 </div>
                                 <div className=" flex items-center justify-center"> 38 </div>
                                 <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6 "> 1150 </div>
                             </div>
 
-                            <div className="w-[96%] md:w-[96%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-400">
+                            <div className="w-[96%] md:w-[96%] xl:w-[94.5%] 2xl:w-[92.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base bg-gray-400">
                                 <div className=" flex md:items-center justify-center "> TSA 10/5 - 4P </div>
                                 <div className="flex items-center justify-center"> 800 </div>
                                 <div className=" flex items-center justify-center"> 48 </div>
                                 <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 1500 </div>
                             </div>
 
-                            <div className="w-[96%] md:w-[96%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-300">
+                            <div className="w-[96%] md:w-[96%] xl:w-[94.5%] 2xl:w-[92.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base bg-gray-300">
                                 <div className=" flex items-center justify-center "> TSA 12/6 - 4P </div>
                                 <div className="flex items-center justify-center"> 1350 </div>
                                 <div className="flex items-center justify-center"> 68 </div>
                                 <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 2600 </div>
                             </div>
-                            <div className="w-[96%] md:w-[96%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-400">
+                            <div className="w-[96%] md:w-[96%] xl:w-[94.5%] 2xl:w-[92.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base bg-gray-400">
                                 <div className="flex items-center justify-center "> TSA 15/7 - 6P </div>
                                 <div className="flex items-center justify-center"> 1400 </div>
                                 <div className=" flex items-center justify-center"> 40 </div>
                                 <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 3000 </div>
                             </div>
-                            <div className="w-[96%] md:w-[96%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-300">
+                            <div className="w-[96%] md:w-[96%] xl:w-[94.5%] 2xl:w-[92.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base bg-gray-300">
                                 <div className=" flex items-center justify-center "> TSA 15/7 - 4P </div>
                                 <div className=" flex items-center justify-center"> 2200 </div>
                                 <div className=" flex items-center justify-center"> 95 </div>
                                 <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5000 </div>
                             </div>
-                            <div className="w-[96%] md:w-[96%] -ml-2 mt-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-white  rounded-xl text-xs md:text-base bg-gray-400">
+                            <div className="w-[96%] md:w-[96%] xl:w-[94.5%] 2xl:w-[92.5%] -ml-2 mt-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base bg-gray-400">
                                 <div className=" flex items-center justify-center "> TSA 18/9 - 6P </div>
                                 <div className="flex items-center justify-center"> 2300 </div>
                                 <div className="flex items-center justify-center"> 58 </div>
@@ -348,7 +408,7 @@ export default function TDAPage() {
                     </div>
                 </div>
             </section>
-
+</section>
             <section className="h-[60%] lg:h-[70%] mb-6 bg-inherit z-10 bg-none overflow-hidden">
                 <div className="flex flex-col justify-center items-center t w-full md:w-[1200px] m-auto ">
                     {/* <div className="ms-auto flex items-center">

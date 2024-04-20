@@ -6,9 +6,19 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { Image } from "@nextui-org/image";
 
+interface ImgLable{
+    textLable?: string;
+    textColor?: string;
+}
+
+interface ImgData{
+    imgName?: string;
+    imgLable?: ImgLable[];
+}
+
 interface Props {
     url?: string;
-    fileName?: Array<string>;
+    imgInfo?: ImgData[];
     width?: string;
     line1?: string;
     line2?: string;
@@ -20,7 +30,7 @@ interface Props {
 // import image3 from "../../public/img/solerpalau/tda/imgbanner/33.jpg";
 // import image4 from "../../public/img/solerpalau/tda/imgbanner/4.jpg";
 
-const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
+const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
     // const wii = "500px";
     const settings = {
         // dots: true,
@@ -82,7 +92,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
                 </div>
             </div> */}
             <Slider {...settings}>
-                {fileName?.map((item, index) => (
+                {imgInfo?.map((item, index) => (
                     <div
                         key={index}
                         className="relative
@@ -93,7 +103,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
                         <div className="z-0">
                             <img className=" w-[100%] h-auto max-h-[42vh] md:max-h-[82vh] block m-auto object-fill "
                                 alt={`Imagen ${index}`}
-                                src={`${url}${item}.jpg`}
+                                src={`${url}${item.imgName}.jpg`}
                                 key={index}
                             ></img>
                         {/* <Image
@@ -118,9 +128,12 @@ const SimpleSlider: React.FC<Props> = ({ url, width, fileName }) => {
                             rounded-tl-[42px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
-                            <div className="flex flex-col justify-start items-start text-sm lg:text-3xl text-livered-title py-4 lg:py-6">
-                                <h1 className=" font-bold">Componente de</h1>
-                                <h1 className="font-bold">equipo tempomatic</h1>
+                            <div className="flex flex-col justify-start items-start text-sm lg:text-3xl  py-4 lg:py-6">
+                                {item.imgLable?.map((item, index) => (
+                                     <h1 className={`text-${item.textColor||"livered-title"} font-bold font-lexend`} key={`${index}-${item}`}>{item.textLable}</h1>
+                                ))}
+                                {/* <h1 className=" font-bold">Componente de</h1>
+                                <h1 className="font-bold">equipo tempomatic</h1> */}
                             </div>
                         </div>
                     </div>
