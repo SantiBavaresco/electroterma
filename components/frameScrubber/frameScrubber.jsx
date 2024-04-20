@@ -20,6 +20,10 @@ import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
 import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
 import { FacilInstalacion } from "@/public/svg/facilInstalacion";
 import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
+import { DiferencialMaterialGalvanizado } from "../diferenciales/diferencialMaterialGalvanizado";
+import { DiferencialMultiposicion } from "../diferenciales/diferencialMultiposicion";
+import { DiferencialVolumenBajo } from "../diferenciales/diferencialVolumenBajo";
+import { DiferencialStockPermanente } from "../diferenciales/diferencialStockPermanente";
 
 export default function FrameScrubber() {
     useEffect(() => {
@@ -75,7 +79,7 @@ export default function FrameScrubber() {
                         {/* <Reveal> */}
                             <span className="flex gap-1 flex-col items-center align-center justify-center  ">
                                 <div className="flex flex-col space-y-4 items-center mt-6 max-h-10 ">
-                                    <Chip
+                                    {/* <Chip
                                         className="p-4 px-2 max-h-14"
                                         startContent={
                                             <ConstruccionDuradera size={38} />
@@ -123,7 +127,11 @@ export default function FrameScrubber() {
                                     >
                                         {" "}
                                         Eficiencia Energética
-                                    </Chip>
+                                    </Chip> */}
+                                    <DiferencialMaterialGalvanizado/>
+                                    <DiferencialMultiposicion/>
+                                    <DiferencialVolumenBajo/>
+                                    <DiferencialStockPermanente/>
                                 </div>
                             </span>
                         {/* </Reveal> */}
