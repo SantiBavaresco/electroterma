@@ -76,7 +76,7 @@ export default function TDAPage() {
             imgLable:[
                 {   
                     textLable:"Es ideal para",
-                    textColor:"stone-300"
+                    textColor:"stone-100"
                 },
                 {   
                     textLable:"Áreas de proceso",

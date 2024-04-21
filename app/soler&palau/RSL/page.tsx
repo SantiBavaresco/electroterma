@@ -27,7 +27,64 @@ import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImage
 
 export default function RSAPage() {
     const urlImageBanner = "../img/solerpalau/imgbanner/";
-    const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
+    const bannerImageInfo = [
+        {
+            imgName:"1",
+            imgLable:[
+                {   
+                    textLable:"Componente de",
+                    textColor:""
+                },
+                {   
+                    textLable:"equipo tempomatic",
+                    textColor:""
+                },
+            ],
+        },
+        {
+            imgName:"2",
+            imgLable:[
+                {   
+                    textLable:"Es ideal para",
+                    textColor:"stone-300"
+                },
+                {   
+                    textLable:"Extracción localizada",
+                    textColor:""
+                },
+                {   
+                    textLable:"en procesos de",
+                    textColor:""
+                },
+                {   
+                    textLable:"industria",
+                    textColor:""
+                },
+            ],
+        },
+        {
+            imgName:"3",
+            imgLable:[
+                {   
+                    textLable:"Es ideal para",
+                    textColor:"stone-100"
+                },
+                {   
+                    textLable:"Áreas de proceso",
+                    textColor:""
+                },
+                {   
+                    textLable:"donde se requiera",
+                    textColor:""
+                },
+                {   
+                    textLable:"renovaión de aire",
+                    textColor:""
+                },
+            ],
+        }
+        
+    ];
 
     const urlTdaImageDemo = "../img/solerpalau/RSL/imgDemo/";
     const demoImageNames = ["1", "2", "3", "1", "2", "3"];
@@ -37,7 +94,7 @@ export default function RSAPage() {
                 <div className="w-[450px] md:w-full lg:w-full">
                     <SimpleSlider
                         url={urlImageBanner}
-                        fileName={bannerImageNames}
+                        imgInfo={bannerImageInfo}
                     />
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-2  flex justify-between items-center rounded-tr-2xl rounded-bl-2xl">
