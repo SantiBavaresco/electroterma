@@ -248,7 +248,7 @@ export default function TDAPage() {
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100%] 2xl:w-full min-h-[130vh] h-[100%] -mt-10 md:h-[100%] bg-[url('/svg/ondas02.svg')] bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-cover bg-no-repeat overflow-hidden">
+            <section className="max-w-[100%] 2xl:w-full min-h-[130vh] h-[100%] -mt-10 2xl:mt-20 md:h-[100%] bg-[url('/svg/ondas02.svg')] bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
                 <Ondas02SVG/>
@@ -257,26 +257,27 @@ export default function TDAPage() {
                  <div className="relative w-screen ms-auto">
                     <div
                             className=" mt-20 lg:absolute px-4 z-10
-                            top-72 right-16
+                            top-72 2xl:top-[40vh] 
+                            right-16
                             rounded-[42px]
-                            lg:w-[400px]
+                            lg:w-[400px] 2xl:w-[550px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
-                            <div className=" flex flex-col justify-center items-center lg:text-3xl text-livered-title py-4 lg:py-16">
-                                <h1 className="font-lexend-bold text-xl ">Caudales de inyeccion desde</h1>
-                                <h1 className="font-lexend-bold text-xl ">xxxxxx a xxxxxx m3/h</h1>
-                                <h1 className="font-lexend-bold text-xl ">y contrapresiones desde</h1>
-                                <h1 className="font-lexend-bold text-xl ">xxxx a xxxxx mmCA </h1>
+                            <div className=" flex flex-col justify-center items-center lg:text-3xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
+                                <h1 className="font-lexend-bold  ">Caudales de inyeccion desde</h1>
+                                <h1 className="font-lexend-bold  ">xxxxxx a xxxxxx m3/h</h1>
+                                <h1 className="font-lexend-bold  ">y contrapresiones desde</h1>
+                                <h1 className="font-lexend-bold  ">xxxx a xxxxx mmCA </h1>
 
                             </div>
                         </div>
                     </div>
 
                 <div
-                    className=" w-[104%] flex flex-col justify-center items-center  lg:w-3/4 mt-20 mx-auto overflow-hidden
+                    className=" w-[104%] flex flex-col justify-center items-center  lg:w-3/4 mt-20 2xl:mt-[20vh] mx-auto overflow-hidden
                     "
                 >
-                    <h1 className="text-2xl ml-2 lg:text-4xl  leading-none  font-nunito-bolder me-auto my-2 text-livered-title">
+                    <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
                         CARACTERÍSTICAS TÉCNICAS
                     </h1>
 
