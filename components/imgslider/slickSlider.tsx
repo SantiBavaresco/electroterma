@@ -120,7 +120,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
                         </div>
 
                         <div
-                            className="absolute px-4 z-10
+                            className="absolute px-6 z-10
                             
                             bottom-[0%]
 
@@ -128,7 +128,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
                             rounded-tl-[42px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
-                            <div className="flex flex-col justify-start items-start text-sm lg:text-3xl  py-4 lg:py-6">
+                            <div className="flex flex-col justify-start items-start text-sm lg:text-3xl  py-4 lg:py-6 2xl:py-10">
                                 {item.imgLable?.map((item, index) => (
                                      <h1 className={`text-${item.textColor||"livered-title"} font-bold font-lexend`} key={`${index}-${item}`}>{item.textLable}</h1>
                                 ))}
