@@ -94,8 +94,6 @@ export default function TDAPage() {
         }
         
     ];
-    // const bannerImageNames = ["11a", "22a", "33a", "11a", "22a", "33a"];
-
 
     const urltdaImageDemo = "../img/solerpalau/tda/imgDemo/";
     const demoImageNames = ["1", "2", "3", "1", "2", "3"];
@@ -125,7 +123,7 @@ export default function TDAPage() {
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-4 md:ml-12">
-                        <h2 className="text-white text-md md:text-2xl 2xl:text-3xl font-nunito">
+                        <h2 className="text-white text-lg md:text-2xl 2xl:text-3xl font-nunito">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
@@ -145,42 +143,42 @@ export default function TDAPage() {
             <section className="flex flex-col min-h-[130vh] md:min-h-full md:flex md:flex-row-reverse w-full h-[110vh] overflow-hidden ">
                 <div className="md:mr-16 z-20">
                     <div className="flex flex-col items-center mt-6 lg:mt-16 lg:justify-items-end lg:items-end font-lexend-bold tracking-widest ">
-                        <span className="text-lg lg:text-5xl text-midgray font-nunito ">
+                        <span className="text-lg lg:text-5xl 2xl:text-[58.5px] text-[#9D9D9C] font-nunito ">
                             VENTILADOR
                         </span>
 
-                        <h1 className="mt-4 text-4xl  lg:text-[78px] 2xl:text-[100px] leading-none font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 lg:mt-6  2xl:mt-8 text-4xl  lg:text-[78px] 2xl:text-[100px] leading-none font-nunito-bold text-livered-title">
                             CENTRÍFUGO
                         </h1>
 
-                        <h1 className="text-4xl  lg:text-[78px] 2xl:text-[100px] leading-none  font-nunito-bold text-livered-title">
+                        <h1 className=" mt-2 lg:mt-3  2xl:mt-4 text-4xl lg:text-[78px] 2xl:text-[100px] leading-none  font-nunito-bold text-livered-title">
                             MULTIPALA - TDA
                         </h1>
 
-                        <h1 className="mt-2 text-lg lg:text-[43px] 2xl:text-[60px] lg:mt-2 text-midgray font-nunito ">
+                        <h1 className="mt-2 lg:mt-6 2xl:mt-10 text-lg lg:text-[43px] 2xl:text-[60px]  text-[#9D9D9C] font-nunito ">
                             DE DOBLE ASPIRACIÓN
                         </h1>
 
-                        <div className="mt-2 text-lg lg:text-4xl 2xl:text-5xl lg:mt-4 tracking-normal text-highgray font-lexend-bold">
-                            <p className="">
+                        <div className="mt-2  2xl:mt-10  text-lg lg:text-4xl 2xl:text-5xl tracking-normal text-[#4C4B4B] font-lexend-bold">
+                            <p className="lg:mt-3 2xl:mt-4">
                                 Inyección de{" "}
                                 <span className="text-livered">
                                     aire limpio
                                 </span>{" "}
                             </p>
-                            <p>
-                                <span className="text-livered"></span>dentro de
+                            <p className="lg:mt-2 2xlmt-4">
+                                <span className="text-livered "></span>dentro de
                                 equipos HVAC
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen  2xl:-left-[16%] lg:-left-[9%] md:-left-[20%] -top-16 md:top-16 -mt-10 z-10 overflow-y-hidde">
+                <div className="relative max-w-screen  2xl:-left-[16%] lg:-left-[10%] md:-left-[20%] -top-16 md:top-16 lg:top-8 -mt-10 z-10 overflow-y-hidde">
                 <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
-                        className="inline-block w-[310px] lg:w-[420px] 2xl:w-[600px] top-36 left-12"
-                        src="../img/solerpalau/tda/SolerPalauTda1.png"
+                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[640px] top-36 lg:top-[65px] 2xl:top-[70px]  left-12"
+                        src="../img/solerpalau/tda/SolerPalauTda0.png"
                         width={"100%"}
                     />
                     {/* --- ONDA 1 --------------- */}
@@ -188,7 +186,10 @@ export default function TDAPage() {
                     {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
                         <LottieWave md:bottom-[165px] md:left-[120px]  />
                     </div> */}
-                    <div className=" z-20  absolute translate-x-[138px] translate-y-[170px] 2xl:translate-x-[220px] overflow-hidden">
+                    <div className=" z-20  absolute translate-x-[70%] translate-y-[160px]
+                        lg:translate-y-[60px] lg:translate-x-[190px] 
+                        2xl:translate-y-[90px] 2xl:translate-x-[220px] 
+                        overflow-hidden">
                         <Button
                             className="z-10 bg-livered text-white 2xl:text-2xl"
                             radius="full"
