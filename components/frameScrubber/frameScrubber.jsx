@@ -79,55 +79,7 @@ export default function FrameScrubber() {
                         {/* <Reveal> */}
                             <span className="flex gap-1 flex-col items-center align-center justify-center  ">
                                 <div className="flex flex-col space-y-4 items-center mt-6 max-h-10 ">
-                                    {/* <Chip
-                                        className="p-4 px-2 max-h-14"
-                                        startContent={
-                                            <ConstruccionDuradera size={38} />
-                                        }
-                                        variant="faded"
-                                        radius="full"
-                                        size="lg"
-                                    >
-                                        {" "}
-                                        Construción Duradera
-                                    </Chip>
-                                    <Chip
-                                        className="p-4 px-2 max-h-10"
-                                        startContent={
-                                            <FacilInstalacion size={28} />
-                                        }
-                                        variant="faded"
-                                        radius="full"
-                                        size="lg"
-                                    >
-                                        {" "}
-                                        Facil Instalacion
-                                    </Chip>
 
-                                    <Chip
-                                        className="p-4 px-2  max-h-10"
-                                        startContent={
-                                            <VersatilidadAplicacion size={28} />
-                                        }
-                                        variant="faded"
-                                        radius="full"
-                                        size="lg"
-                                    >
-                                        {" "}
-                                        Versatilidad de Aplicación
-                                    </Chip>
-                                    <Chip
-                                        className="p-4 px-2  max-h-10"
-                                        startContent={
-                                            <EficienciaEnergetica size={28} />
-                                        }
-                                        variant="faded"
-                                        radius="full"
-                                        size="lg"
-                                    >
-                                        {" "}
-                                        Eficiencia Energética
-                                    </Chip> */}
                                     <DiferencialMaterialGalvanizado/>
                                     <DiferencialMultiposicion/>
                                     <DiferencialVolumenBajo/>

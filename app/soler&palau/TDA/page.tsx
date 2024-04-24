@@ -21,10 +21,16 @@ import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
 import { FacilInstalacion } from "@/public/svg/facilInstalacion";
 import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
+
+
 import { Download } from "@/public/svg/download";
 import SimpleSlider from "@/components/imgslider/slickSlider";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 import { Reveal } from "@/components/revealFramemotion";
+import { DiferencialMaterialGalvanizado } from "@/components/diferenciales/diferencialMaterialGalvanizado";
+import { DiferencialMultiposicion } from "@/components/diferenciales/diferencialMultiposicion";
+import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVolumenBajo";
+import { DiferencialStockPermanente } from "@/components/diferenciales/diferencialStockPermanente";
 
 
 
@@ -139,10 +145,22 @@ export default function TDAPage() {
             {/* <section className="">
                 
             </section> */}
+              {/* <section className="flex flex-col items-start w-3/4 md:ml-10 mt-10 mb-8 justify-start">
+                <div className=" ">
+                        <Image
+                            alt="Otam Logo"
+                            className=""
+                            src="../img/otamlogo.png"
+                            width={200}
+                        />
+                        <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
+                </div>
+                
+            </section> */}
 
-            <section className="flex flex-col min-h-[130vh] md:min-h-full md:flex md:flex-row-reverse w-full h-[110vh] overflow-hidden ">
-                <div className="md:mr-16 z-20">
-                    <div className="flex flex-col items-center mt-6 lg:mt-16 lg:justify-items-end lg:items-end font-lexend-bold tracking-widest ">
+            <section className="flex flex-col  min-h-[110vh] md:min-h-full md:flex md:flex-row-reverse justify-end items-start w-full h-[90vh] overflow-hidden  ">
+                <div className="md:m-0 z-20 2xl:ml-10 2xl:mt-10 2xl:w-[60%]">
+                    <div className="flex flex-col items-center mt-6 lg:mt-16 lg:justify-items-end lg:items-start font-lexend-bold tracking-widest ">
                         <span className="text-lg lg:text-5xl 2xl:text-[58.5px] text-[#9D9D9C] font-nunito ">
                             VENTILADOR
                         </span>
@@ -155,11 +173,11 @@ export default function TDAPage() {
                             MULTIPALA - TDA
                         </h1>
 
-                        <h1 className="mt-2 lg:mt-6 2xl:mt-10 text-lg lg:text-[43px] 2xl:text-[60px]  text-[#9D9D9C] font-nunito ">
+                        <h1 className="mt-2 lg:mt-6 2xl:mt-6 text-lg lg:text-[43px] 2xl:text-[60px]  text-[#9D9D9C] font-nunito ">
                             DE DOBLE ASPIRACIÓN
                         </h1>
 
-                        <div className="mt-2  2xl:mt-10  text-lg lg:text-4xl 2xl:text-5xl tracking-normal text-[#4C4B4B] font-lexend-bold">
+                        <div className="mt-2  2xl:mt-6  text-lg lg:text-4xl 2xl:text-5xl tracking-normal text-[#4C4B4B] font-lexend-bold">
                             <p className="lg:mt-3 2xl:mt-4">
                                 Inyección de{" "}
                                 <span className="text-livered">
@@ -171,33 +189,46 @@ export default function TDAPage() {
                                 equipos HVAC
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div className="relative max-w-screen  2xl:-left-[16%] lg:-left-[10%] md:-left-[20%] -top-16 md:top-16 lg:top-8 -mt-10 z-10 overflow-y-hidde">
-                <Image
-                        // className="-top-16 left-1/2"
-                        alt="Ventilador"
-                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[640px] top-36 lg:top-[65px] 2xl:top-[70px]  left-12"
-                        src="../img/solerpalau/tda/SolerPalauTda0.png"
-                        width={"100%"}
-                    />
-                    {/* --- ONDA 1 --------------- */}
-                    {/* <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " /> */}
-                    {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
-                        <LottieWave md:bottom-[165px] md:left-[120px]  />
-                    </div> */}
-                    <div className=" z-20  absolute translate-x-[70%] translate-y-[160px]
+                        {/* z-20  absolute translate-x-[70%] translate-y-[160px]
                         lg:translate-y-[60px] lg:translate-x-[190px] 
-                        2xl:translate-y-[90px] 2xl:translate-x-[220px] 
+                        2xl:translate-y-[90px] 2xl:translate-x-[220px]  */}
+                        <div className="2xl:mt-10  w-full flex justify-end
+                        
                         overflow-hidden">
                         <Button
-                            className="z-10 bg-livered text-white 2xl:text-2xl"
+                            className="z-10 bg-livered font-nunito text-white 2xl:text-2xl 2xl:mr-3"
                             radius="full"
                             size="lg"
                         >
                             Asesoramiento
                         </Button>
                     </div>
+                    </div>
+                </div>
+                <div className="relative max-w-screen  2xl:-left-[0%] lg:-left-[10%] md:-left-[20%] -top-16 md:top-16 lg:top-8 -mt-10 z-10 overflow-y-hidde">
+                <Image
+                        // className="-top-16 left-1/2"
+                        alt="Ventilador"
+                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[680px] top-36 lg:top-[65px] 2xl:top-[70px]  left-12"
+                        src="../img/solerpalau/tda/SolerPalauTda0.png"
+                        width={"100%"}
+                    />
+                <div className="absolute 2xl:top-0 2xl:left-16">
+                        <Image
+
+                            alt="Otam Logo"
+                            
+                            src="../img/otamlogo.png"
+                            width={200}
+                        />
+                        <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
+                </div>
+                    {/* --- ONDA 1 --------------- */}
+                    {/* <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " /> */}
+                    {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
+                        <LottieWave md:bottom-[165px] md:left-[120px]  />
+                    </div> */}
+                    
                 </div>
             </section>
 
@@ -208,9 +239,18 @@ export default function TDAPage() {
                 <FrameFan />
             </Suspense>
 
+            {/* <section className="mt-32 mb-10 mx-auto lg:w-[80%] flex justify-end lg:items-end items-center">
+                <div className="flex flex-col gap-4">
+                    <DiferencialMaterialGalvanizado/>
+                    <DiferencialMultiposicion/>
+                    <DiferencialVolumenBajo/>
+                    <DiferencialStockPermanente/>
+                </div>
+            </section> */}
+
             <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
                 <Button
-                    className="z-10 bg-livered text-white 2xl:text-2xl"
+                    className="z-10 bg-livered text-white 2xl:text-2xl md:mr-3"
                     radius="full"
                     size="lg"
                 >
@@ -249,7 +289,8 @@ export default function TDAPage() {
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100%] 2xl:w-full min-h-[130vh] h-[100%] -mt-10 2xl:mt-20 md:h-[100%] bg-[url('/svg/ondas02.svg')] bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-cover bg-no-repeat overflow-hidden">
+            <section className="max-w-[100vw] 2xl:w-full min-h-[110vh] h-[100%] -mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
                 <Ondas02SVG/>
@@ -285,7 +326,7 @@ export default function TDAPage() {
                    
                 
                     <Accordion
-                        className="h-[70vh] md:h-[55vh] lg:min-h-[75vh] "
+                        className="h-[70vh] md:h-[55vh] lg:min-h-[75vh] 2xl:min-h-[10vh] "
                         variant="splitted"
                         itemClasses={itemClasses}
                         selectionMode="multiple"

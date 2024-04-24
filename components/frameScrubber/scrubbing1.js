@@ -2,7 +2,9 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 599;
+// const frameCount = 599;
+const frameCount = 800;
+
 const currentFrame = (index) =>
     // `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
     `../img/solerpalau/tda/frames/ELECTROTERMA${index
@@ -30,7 +32,7 @@ img.onload = function () {
 const updateImage = (index) => {
     img.src = currentFrame(index);
     context.drawImage(img, 0, 0);
-    // console.log("img n°: ",index);
+    console.log("img n°: ",index);
 };
 
 window.addEventListener("scroll", () => {
