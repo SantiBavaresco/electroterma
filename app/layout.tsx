@@ -72,10 +72,16 @@ export default function RootLayout({
                             </div>
                             <div className="flex flex-row gap-4 items-center justify-center text-orange-600 text-2xl">
 
-                                <CiLinkedin className="hover:text-blue-700"/> 
-								<IoLogoInstagram className="hover:text-pink-600"/>
-                                <FiFacebook className="hover:text-blue-500"/> 
-								<AiOutlineYoutube className="hover:text-livered"/>
+                                <Link  isExternal  href="https://www.linkedin.com/company/electroterma/" title="Linkedin de Electroterma">
+                                    <CiLinkedin className="text-orange-600 hover:text-blue-700 text-2xl" href=""/> 
+                                </Link>
+                                <Link  isExternal  href="https://www.instagram.com/electroterma/" title="Instragram de Electroterma">
+                                    <IoLogoInstagram className="text-orange-600 hover:text-pink-600 text-2xl" />
+                                </Link>
+                                <Link  isExternal  href="https://www.facebook.com/Electroterma/" title="Facebook de Electroterma">
+                                    <FiFacebook className="text-orange-600 hover:text-blue-500 text-2xl" /> </Link>
+                                <Link  isExternal  href="https://www.youtube.com/@electroterma849" title="Youtube de Electroterma">
+                                    <AiOutlineYoutube className="text-orange-600 hover:text-livered text-2xl"/></Link>
                             </div>
                             <Link
                                 isExternal
@@ -95,12 +101,15 @@ export default function RootLayout({
                             </Link>
                             </div>
                             <div className="invisible md:visible absolute right-24 ">
-                                <Image
-                                src="../electroterma-logo.png"
-                                // height={50}
-                                width={90}
-                                alt="hola"
-                                />
+                                <Link href="/">
+                                    <Image
+                                    src="../electroterma-logo.png"
+                                    // height={50}
+                                    
+                                    width={90}
+                                    alt="hola"
+                                    />
+                                </Link>
                             </div>
                         </footer>
                     </div>
