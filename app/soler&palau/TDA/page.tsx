@@ -158,8 +158,8 @@ export default function TDAPage() {
                 
             </section> */}
 
-            <section className="flex flex-col  min-h-[110vh] md:min-h-full md:flex md:flex-row-reverse justify-end items-start w-full h-[90vh] overflow-hidden  ">
-                <div className="md:m-0 z-20 2xl:ml-10 2xl:mt-10 2xl:w-[60%]">
+            <section className="flex flex-col  min-h-[110vh] md:min-h-full md:flex md:flex-row-reverse xl:justify-start 2xl:justify-end items-start xl:w-[100%] xl:m-auto 2xl:w-[90%] h-[90vh] overflow-hidden  ">
+                <div className="md:m-0 z-20 xl:mr-12 2xl:ml-10 2xl:mt-10 2xl:w-[60%]">
                     <div className="flex flex-col items-center mt-6 lg:mt-16 lg:justify-items-end lg:items-start font-lexend-bold tracking-widest ">
                         <span className="text-lg lg:text-5xl 2xl:text-[55px] text-[#9D9D9C] font-nunito ">
                             VENTILADOR
@@ -205,7 +205,7 @@ export default function TDAPage() {
                     </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen  2xl:-left-[0%] lg:-left-[10%] md:-left-[20%] -top-16 md:top-16 lg:top-8 -mt-10 z-10 overflow-y-hidde">
+                <div className="relative max-w-screen  2xl:left-[0%] lg:-left-[10%] md:-left-[20%] -top-16 md:top-16 lg:top-8 -mt-10 z-10 overflow-y-hidde">
                 <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
@@ -213,7 +213,7 @@ export default function TDAPage() {
                         src="../img/solerpalau/tda/SolerPalauTda0.png"
                         width={"100%"}
                     />
-                <div className="absolute 2xl:top-2 2xl:left-16">
+                <div className="absolute xl:top-2 2xl:top-2 xl:left-16 2xl:left-16">
                         <Image
                             alt="Otam Logo"
                             src="../img/otamlogo.png"
