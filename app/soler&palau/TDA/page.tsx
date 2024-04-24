@@ -157,12 +157,47 @@ export default function TDAPage() {
                 </div>
                 
             </section> */}
+            <section className="w-[90%] ml-10 mt-10 overflow-hidden">
+                
+            <div className=" xl:top-2 2xl:top-2 2xl:mb-10 xl:left-16 2xl:-left-10">
+                            <Image
+                                alt="Otam Logo"
+                                src="../img/otamlogo.png"
+                                width={200}
+                            />
+                            <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
+                    </div>
+            </section>
 
-            <section className="flex flex-col  min-h-[110vh] md:min-h-full md:flex md:flex-row-reverse xl:justify-start 2xl:justify-end items-start xl:w-[100%] xl:m-auto 2xl:w-[90%] h-[90vh] overflow-hidden  ">
-                <div className="md:m-0 z-20 xl:mr-12 2xl:ml-10 2xl:mt-10 2xl:w-[60%]">
-                    <div className="flex flex-col items-center mt-6 lg:mt-16 lg:justify-items-end lg:items-start font-lexend-bold tracking-widest ">
-                        <span className="text-lg lg:text-5xl 2xl:text-[55px] text-[#9D9D9C] font-nunito ">
+            <section className="flex flex-col min-h-[110vh] md:min-h-full md:flex md:flex-row-reverse xl:justify-start 2xl:justify-start 
+                items-start xl:w-[100%] xl:ml-auto 2xl:w-[90vw] h-[90vh] 2xl:-mt-32 overflow-hidden  ">
+                <div className="md:m-0 z-20 xl:mr-12 2xl:ml-20 2xl:mt-28 2xl:w-[60%]">
+                    <div className="flex flex-col items-center mt-6 lg:mt-16 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
+
+                        {/* <div className=" xl:top-2 2xl:top-2 2xl:mb-10 xl:left-16 2xl:-left-10">
+                            <Image
+                                alt="Otam Logo"
+                                src="../img/otamlogo.png"
+                                width={200}
+                            />
+                            <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
+                    </div> */}
+                        <span className="relative text-lg lg:text-5xl 2xl:text-[55px] text-[#9D9D9C] font-nunito ">
+                            <div className="absolute top-0 -left-8">
+                            <svg width="20" height="54" viewBox="0 0 20 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_1216)">
+                                <path d="M0 40.8931L7.0073 32.591C8.9781 30.292 8.9781 26.5667 7.0073 24.2676L0 16.072V0L16.8978 19.7121C18.7591 21.8834 19.854 24.7785 19.9818 27.8652C19.9818 28.2484 19.9818 28.6528 19.9818 29.036C19.854 32.1227 18.7591 34.9965 16.8978 37.1891L0 56.9012V40.8931Z" fill="#E80303"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_1216">
+                                <rect width="20" height="56.9012" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            </div>
                             VENTILADOR
+                            
+
                         </span>
 
                         <h1 className="mt-2 lg:mt-6  2xl:mt-8 text-4xl  lg:text-[78px] 2xl:text-[90px] leading-none font-nunito-bold text-livered-title">
@@ -205,7 +240,7 @@ export default function TDAPage() {
                     </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen  2xl:left-[0%] lg:-left-[10%] md:-left-[20%] -top-16 md:top-16 lg:top-8 -mt-10 z-10 overflow-y-hidde">
+                <div className="relative max-w-screen 2xl:left-[0%] lg:-left-[10%] md:-left-[20%] -top-16 md:top-16 lg:top-8 2xl:top-0 -mt-10 z-10 overflow-y-hidde">
                 <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
@@ -213,14 +248,14 @@ export default function TDAPage() {
                         src="../img/solerpalau/tda/SolerPalauTda0.png"
                         width={"100%"}
                     />
-                <div className="absolute xl:top-2 2xl:top-2 xl:left-16 2xl:left-16">
+                {/* <div className="absolute xl:top-2 2xl:top-2 xl:left-16 2xl:-left-10">
                         <Image
                             alt="Otam Logo"
                             src="../img/otamlogo.png"
                             width={200}
                         />
                         <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
-                </div>
+                </div> */}
                     {/* --- ONDA 1 --------------- */}
                     {/* <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " /> */}
                     {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">

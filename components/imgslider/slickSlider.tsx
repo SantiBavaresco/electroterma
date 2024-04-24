@@ -124,7 +124,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
                             
                             bottom-[0%]
 
-                            right-10
+                            // right-0
                             rounded-tl-[42px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >

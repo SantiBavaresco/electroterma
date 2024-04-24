@@ -187,8 +187,8 @@ export const Navbar = () => {
                     <DropdownTrigger className="bg-red-500">
                         <div className="w-[263px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
                             <svg
-                                width="35"
-                                height="33"
+                                width="30"
+                                height="28"
                                 viewBox="0 0 40 37"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -218,14 +218,14 @@ export const Navbar = () => {
                             <DropdownItem
                                 key={item.label}
                                 isReadOnly
-                                className="h-[38px] gap-2 flex justify-center text-center  "
+                                className="h-[38px] gap-2 flex justify-start text-start  "
                             >
                                 {item.dropdown ? (
                                     <Dropdown
                                         key={item.label}
                                         placement="left"
                                         className="rounded-[34px] !important shadow-lg border-1 border-[#F5F4F4] 
-                                                        bg-[#e1e1e1] translate-x-[-1.5%]"
+                                                        bg-[#e1e1e1] translate-x-[-5%]"
                                          
                                     >
                                         <DropdownTrigger>
