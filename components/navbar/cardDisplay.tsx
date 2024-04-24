@@ -32,13 +32,14 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data }) => {
                     alt={data.key}
                     className="p-1 w-[240px] object-contain h-[140px] gap-3 shadow-lg"
                     src={data.img}
+                    key={data.key}
                 />
             <div className={`min-h-10 h-16 text-center flex flex-col  justify-center text-white font-nunito bg-livered-title group-hover:bg-[#B2B2B2]
                 ${data.key==="first" ? "rounded-bl-[28px]" : ""} 
                 ${data.key==="last" ? "rounded-br-[28px]" : ""} 
             `}>
                 {data?.label?.map((description:string)=>(
-                    <p className="   gap-3">{description}</p>
+                    <p key={description} className="gap-3">{description}</p>
          
                 ))}
 

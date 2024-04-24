@@ -43,7 +43,7 @@ import {
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
-import ImgDisplay from "./imgdisplay";
+import ImgDisplay from "./imgdisplay(deprecated)";
 import { Children } from "react";
 
 export const Navbar = () => {
