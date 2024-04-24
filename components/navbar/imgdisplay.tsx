@@ -21,6 +21,8 @@ export default function ImgDisplay({
             onPress={() => console.log("item pressed")}
             className={clsx(
                 "ml-1 data-[active=true]:text-primary data-[active=true]:font-medium hover:bg-orange-400 hover:text-black "
+
+                
             )}
         >
             <CardBody className="flex items-center w-500px overflow-auto p-0 ">

@@ -120,7 +120,7 @@ export default function TDAPage() {
     return (
         <div className="h-full flex flex-col items-center justify-center ">
 
-            <section className="relative top-0 w-full max-h-[50%] md:max-h-[93vh] lg:max-h-[93vh] py-3 font-size overflow-hidden">
+            <section className="relative top-0 w-full max-h-[50%] md:max-h-[93vh] lg:max-h-[93vh] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
                     <SimpleSlider
                         url={urlImageBanner}

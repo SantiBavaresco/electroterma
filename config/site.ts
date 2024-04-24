@@ -3,32 +3,10 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
     name: "Electroterma - Soluciones en HVAC",
     description: "Soluciones en HVAC",
-    // navItems: [
-    // 	{
-    // 		label: "Home",
-    // 		href: "/",
-    // 	},
-    // {
-    //   label: "Docs",
-    //   href: "/docs",
-    // },
-    // {
-    //   label: "Pricing",
-    //   href: "/pricing",
-    // },
-    // {
-    //   label: "Blog",
-    //   href: "/blog",
-    // },
-    // {
-    //   label: "About",
-    //   href: "/about",
-    // }
-    // ],
     navItems: [
         {
-            label: "Nosotros",
-            href: "/nosotros",
+            label: "Soluciones en HVAC",
+            href: "/soluciones",
 			dropdown: false,
         },
         {
@@ -43,12 +21,7 @@ export const siteConfig = {
 			dropdown: true,
 
         },
-        {
-            label: "DTI",
-            href: "/dti",
-			dropdown: true,
 
-        },
         {
             label: "Zila",
             href: "/zila",
@@ -56,8 +29,8 @@ export const siteConfig = {
 
         },
         {
-            label: "Asesoramiento",
-            href: "/asesoramiento",
+            label: "Nosotros",
+            href: "/nosotros",
 			dropdown: false,
 
         },
@@ -67,6 +40,7 @@ export const siteConfig = {
 			dropdown: false,
 
         },
+
     ],
     navMenuItems: [
         {

@@ -17,6 +17,10 @@ import {
     DropdownItem,
 } from "@nextui-org/dropdown";
 
+import { useState } from "react";
+
+import {Avatar, AvatarGroup, AvatarIcon} from "@nextui-org/avatar";
+
 import icono from "../electroterma-logo.png"
 
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
@@ -45,37 +49,53 @@ import {
 import { Logo } from "@/components/icons";
 import ImgDisplay from "./imgdisplay";
 import { Children } from "react";
+import CardDisplay from "./cardDisplay";
+
+
+interface ItemsNavbar{
+    key: string;
+    label: string[];
+    labelShort: string;
+    img: string;
+    href: string;
+}
+
+
 
 export const Navbar = () => {
-    const items = [
+    const [firstDropdownOpen, setFirstDropdownOpen] = useState(false);
+    const [secondDropdownOpen, setSecondDropdownOpen] = useState(false);
+  
+    const handleSecondDropdownClick = () => {
+      setFirstDropdownOpen(false);
+      setSecondDropdownOpen(false);
+    };
+
+    const items:ItemsNavbar[] = [
         {
-            key: "new",
-            label1: "Ventilador Centrifigo",
-            label2: "Autolimitantes - RSL",
+            key: "first",
+            label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
             labelShort: "RSL",
             img: "../img/navbar/NavBarRSLSolerPalau.png",
             href: "/soler&palau/RSL",
         },
         {
             key: "copy",
-            label1: "Ventilador Centrifigo",
-            label2: "Miltipala - TSA",
+            label: ["Ventilador Centrifigo", "Multipala - TSA"],
             labelShort: "TSA",
             img: "../img/navbar/NavBarTSA1SolerPalau.png",
             href: "/soler&palau/TSA",
         },
         {
             key: "edit",
-            label1: "Ventilador Centrifigo - TDA",
-            label2: "TDA",
+            label: ["Ventilador Centrifigo - TDA", "TDA"],
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
         },
         {
-            key: "delete",
-            label1: "Habitat",
-            label2: "Habitat",
+            key: "last",
+            label: ["Habitat"],
             labelShort: "Habitat",
             img: "../img/navbar/NavBarHabitat1SolerPalau.png",
             href: "/soler&palau/habitat",
@@ -105,166 +125,141 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <NextUINavbar maxWidth="xl" position="sticky">
-            <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
-                {/* <NavbarMenuToggle
-                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden"
-                /> */}
-                <NavbarBrand as="li" className="gap-1 w-[160px] max-h-[25px]">
-                    <NextLink
-                        className="flex justify-start items-center gap-1"
-                        href="/"
-                    >
-                        <Image
-                            // className="sm:w-[180px]"
+        <NextUINavbar maxWidth="full" className="px-10 flex justify-center items-center" position="sticky">
+            <NavbarBrand>
+                <NextLink
+                    className="flex justify-center items-center gap-1"
+                    href="/"
+                >
+                    <Image
+                        // className="sm:w-[180px]"
+                        src="../img/electrotermalogoletrasNoPadding.png"
+                        // height={50}
+                        width={200}
+                        alt="hola"
+                    />
+                    {/* <p className="font-bold text-inherit">Electroterma</p> */}
+                </NextLink>
+            </NavbarBrand>
+
+            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+                {/* <NavbarItem>
+                    <Link color="foreground" href="#">
+                        Features
+                    </Link>
+                </NavbarItem>
+                <NavbarItem isActive>
+                    <Link href="#" aria-current="page" color="secondary">
+                        Customers
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link color="foreground" href="#">
+                        Integrations
+                    </Link>
+                </NavbarItem> */}
+            </NavbarContent>
+
+            <NavbarContent as="div" justify="end">
+                <Dropdown placement="bottom" className="bg-[#EF771C] !important translate-y-[-1.7%] rounded-none rounded-bl-[64px]" 
+                    // isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
+                >
+                    <DropdownTrigger className="bg-red-500">
+                        
+                    {/* <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z" fill="white"/>
+                    <path d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z" fill="white"/>
+                    <path d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z" fill="white"/>
+                    </svg> */}
+
+            <div className="w-[263px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
+                <svg width="35" height="33" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z" fill="white"/>
+                    <path d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z" fill="white"/>
+                    <path d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z" fill="white"/>
+                </svg>
+            </div>
+
+                        {/* <Avatar
+                            isBordered
+                            as="button"
+                            className="transition-transform"
+                            color="secondary"
+                            name="Jason Hughes"
+                            size="sm"
                             src="../img/electrotermalogoletrasNoPadding.png"
-                            // height={50}
-                            width={200}
-                            alt="hola"
-                        />
-                        {/* <p className="font-bold text-inherit">Electroterma</p> */}
-                    </NextLink>
-                </NavbarBrand>
-                <ul className="hidden md:flex gap-4 justify-around pl-1 ml-1">
-                    {siteConfig.navItems.map((item) => (
-                        <NavbarItem key={item.href}>
-                            {item.dropdown ? (
-                                <Dropdown backdrop="opaque">
-                                    <DropdownTrigger>
-                                        <a
-                                            className="hover:bg-orange-600 hover:text-white p-2"
-                                            // className={clsx(
-                                            //     linkStyles({
-                                            //         color: "foreground",
-                                            //     }),
-                                            //     "data-[active=true]:text-primary data-[active=true]:font-medium hover:bg-orange-600 hover:text-white p-2"
-                                            // )}
-                                            color="foreground"
-                                            // href={item.href}
-                                        >
-                                            {/* <Button color="warning" variant="ghost" >Soler & palau</Button> */}
-                                            {item.label}
-                                        </a>
-                                    </DropdownTrigger>
-                                    <DropdownMenu
-                                        className="force-row"
-                                        aria-label="Dynamic Actions"
-                                        items={items}
-                                    >
-                                        {(item) => (
-                                            <DropdownItem
-                                                key={item.key}
-                                                // color= "success"
-                                                className="rounded-none"
-                                            >
-                                                <NextLink
-                                                    className=""
-                                                    color="foreground"
-                                                    href={item.href}
-                                                >
-                                                    <ImgDisplay item={item}/>
-                                                    {/* <Button color="warning" variant="ghost" >Soler & palau</Button> */}
-                                                    {/* <div className="">
-                                                        <p className="">
-                                                            {item.label1}
-                                                        </p>
-                                                        <p className=" ">
-                                                            {item.label2}
-                                                        </p>
-                                                    </div> */}
-                                                </NextLink>
-                                            </DropdownItem>
-                                        )}
-                                    </DropdownMenu>
-                                </Dropdown>
-                            ) : (
-                                <NextLink
-                                    className={clsx(
-                                        linkStyles({ color: "foreground" }),
-                                        "data-[active=true]:text-primary data-[active=true]:font-medium hover:bg-orange-600 hover:text-white p-2"
-                                    )}
-                                    color="foreground"
-                                    href={item.href}
-                                >
-                                    {/* <Button color="warning" variant="ghost" >Soler & palau</Button> */}
-                                    {item.label}
-                                </NextLink>
-                            )}
-                        </NavbarItem>
-                    ))}
-                </ul>
-            </NavbarContent>
-
-            {/* <NavbarContent
-				className="hidden sm:flex basis-1/5 sm:basis-full"
-				justify="end"
-			>
-				<NavbarItem className="hidden sm:flex gap-2">
-					<Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-						<TwitterIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-						<DiscordIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href={siteConfig.links.github} aria-label="Github">
-						<GithubIcon className="text-default-500" />
-					</Link>
-					<ThemeSwitch />
-				</NavbarItem>
-				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-				<NavbarItem className="hidden md:flex">
-					<Button
-            isExternal
-						as={Link}
-						className="text-sm font-normal text-default-600 bg-default-100"
-						href={siteConfig.links.sponsor}
-						startContent={<HeartFilledIcon className="text-danger" />}
-						variant="flat"
-					>
-						Sponsor
-					</Button>
-				</NavbarItem>
-			</NavbarContent> */}
-
-            <NavbarContent className="md:hidden basis-1 pl-4" justify="end">
-                {/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
-				</Link>
-				<ThemeSwitch /> */}
-                
-                <NavbarMenuToggle 
-                 aria-label={isMenuOpen ? "C" : "O"}
-                 icon={isMenuOpen ? "C" : "+"}
-                 className="md:hidden "
-                />
-            </NavbarContent>
-
-            <NavbarMenu>
-                {/* {searchInput} */}
-                
-                <div className="mx-4 mt-2 flex flex-col gap-2 ">
+                        /> */}
+                    </DropdownTrigger>
+                    <DropdownMenu aria-label="Profile Actions" variant="flat" className="bg-[#EF771C] !important mb-10">
+                        {/* <ul className="hidden md:flex gap-4 justify-around pl-1 ml-1"> */}
+                            {siteConfig.navItems.map((item) => (
+                                
+                                        <DropdownItem key={item.label} isReadOnly className="h-[38px] gap-2 flex justify-center text-center  ">
+                                            
+                                            {item.dropdown ? (
+                                                <Dropdown key={item.label} placement="left" className="rounded-[34px] !important shadow-lg border-1 border-[#F5F4F4] 
+                                                        bg-[#e1e1e1] translate-x-[-1.5%]"
+                                                        // isOpen={secondDropdownOpen} onOpenChange={handleSecondDropdownClick}
+                                                        >
+                                                    <DropdownTrigger>
+                                                        <p className="font-nunito text-white text-2xl ">{item.label}</p>
+                                                    </DropdownTrigger>
+                                                    <DropdownMenu aria-label="Profile Actions" variant="flat" items={items} 
+                                                        className="force-row ">
+                                                    
+                                                    {(item) => (
+                                                        <DropdownItem
+                                                            key={item.key}
+                                                            className={`rounded-none `}
+                                                            // color={item.key === "delete" ? "danger" : "default"}
+                                                            // className={item.key === "delete" ? "text-danger" : ""}
+                                                        >
+                                                            <NextLink
+                                                                className=""
+                                                                color="foreground"
+                                                                href={item.href}
+                                                            >
+                                                                {/* <ImgDisplay item={item}/>
+                                                                    <p>{item.label1}</p> */}
+                                                                <CardDisplay data={item}/>
+                                                                
+                                                            </NextLink>
+                                                        </DropdownItem>
+                                                    )}
+                                                        {/* {items.map((element)=>{
+                                                            <DropdownItem key={element.key} >
+                                                                <p>TEXTOOO</p>
+                                                            </DropdownItem>
+                                                        })} */}
+                                                       
+                                                        
+                                                    </DropdownMenu>
+                                                 </Dropdown>
                     
-                    {siteConfig.navMenuItems.map((item, index) => (
-                        <NavbarMenuItem key={`${item}-${index}`}>
-                            <Link
-                                color={
-                                    index === 3
-                                        ? "primary"
-                                        : index ===
-                                          siteConfig.navMenuItems.length - 1
-                                        ? "danger"
-                                        : "foreground"
-                                }
-                                href="#"
-                                size="lg"
-                            >
-                                {item.label}
-                            </Link>
-                        </NavbarMenuItem>
-                    ))}
-                </div>
-            </NavbarMenu>
+                                            ): (
+                                                <p className={`font-nunito text-white text-2xl`}>{item.label}</p>
+                                            )}
+                                        </DropdownItem>
+                            ))}
+                        {/* </ul> */}
+                        {/* <DropdownItem key="settings">My Settings</DropdownItem>
+                        <DropdownItem key="team_settings">
+                            Team Settings
+                        </DropdownItem>
+                        <DropdownItem key="analytics">Analytics</DropdownItem>
+                        <DropdownItem key="system">System</DropdownItem>
+                        <DropdownItem key="configurations">
+                            Configurations
+                        </DropdownItem>
+                        <DropdownItem key="help_and_feedback">
+                            Help & Feedback
+                        </DropdownItem>
+                        <DropdownItem key="logout" color="danger">
+                            Log Out
+                        </DropdownItem> */}
+                    </DropdownMenu>
+                </Dropdown>
+            </NavbarContent>
         </NextUINavbar>
     );
 };
