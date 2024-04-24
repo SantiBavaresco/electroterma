@@ -1,9 +1,9 @@
 import { title } from "@/components/primitives";
 
-export default function RSLPage() {
+export default function HabitatPage() {
 	return (
 		<div>
-			<h1 className={title()}>RSL</h1>
+			<h1 className={title()}>Habitat</h1>
 		</div>
 	);
 }
