@@ -6,7 +6,7 @@ export const siteConfig = {
     navItems: [
         {
             label: "Soluciones en HVAC",
-            href: "/soluciones",
+            href: "/solucionesHVAC",
 			dropdown: false,
         },
         {
