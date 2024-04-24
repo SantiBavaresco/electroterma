@@ -161,23 +161,23 @@ export default function TDAPage() {
             <section className="flex flex-col  min-h-[110vh] md:min-h-full md:flex md:flex-row-reverse justify-end items-start w-full h-[90vh] overflow-hidden  ">
                 <div className="md:m-0 z-20 2xl:ml-10 2xl:mt-10 2xl:w-[60%]">
                     <div className="flex flex-col items-center mt-6 lg:mt-16 lg:justify-items-end lg:items-start font-lexend-bold tracking-widest ">
-                        <span className="text-lg lg:text-5xl 2xl:text-[58.5px] text-[#9D9D9C] font-nunito ">
+                        <span className="text-lg lg:text-5xl 2xl:text-[55px] text-[#9D9D9C] font-nunito ">
                             VENTILADOR
                         </span>
 
-                        <h1 className="mt-2 lg:mt-6  2xl:mt-8 text-4xl  lg:text-[78px] 2xl:text-[100px] leading-none font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 lg:mt-6  2xl:mt-8 text-4xl  lg:text-[78px] 2xl:text-[90px] leading-none font-nunito-bold text-livered-title">
                             CENTRÍFUGO
                         </h1>
 
-                        <h1 className=" mt-2 lg:mt-3  2xl:mt-4 text-4xl lg:text-[78px] 2xl:text-[100px] leading-none  font-nunito-bold text-livered-title">
+                        <h1 className=" mt-2 lg:mt-3  2xl:mt-4 text-4xl lg:text-[78px] 2xl:text-[90px] leading-none  font-nunito-bold text-livered-title">
                             MULTIPALA - TDA
                         </h1>
 
-                        <h1 className="mt-2 lg:mt-6 2xl:mt-6 text-lg lg:text-[43px] 2xl:text-[60px]  text-[#9D9D9C] font-nunito ">
+                        <h1 className="mt-2 lg:mt-6 2xl:mt-6 text-lg lg:text-[43px] 2xl:text-[55px]  text-[#9D9D9C] font-nunito ">
                             DE DOBLE ASPIRACIÓN
                         </h1>
 
-                        <div className="mt-2  2xl:mt-6  text-lg lg:text-4xl 2xl:text-5xl tracking-normal text-[#4C4B4B] font-lexend-bold">
+                        <div className="mt-2  2xl:mt-6  text-lg lg:text-4xl 2xl:text-4xl tracking-normal text-[#4C4B4B] font-lexend-bold">
                             <p className="lg:mt-3 2xl:mt-4">
                                 Inyección de{" "}
                                 <span className="text-livered">
@@ -209,15 +209,13 @@ export default function TDAPage() {
                 <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
-                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[680px] top-36 lg:top-[65px] 2xl:top-[70px]  left-12"
+                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-12"
                         src="../img/solerpalau/tda/SolerPalauTda0.png"
                         width={"100%"}
                     />
-                <div className="absolute 2xl:top-0 2xl:left-16">
+                <div className="absolute 2xl:top-2 2xl:left-16">
                         <Image
-
                             alt="Otam Logo"
-                            
                             src="../img/otamlogo.png"
                             width={200}
                         />

@@ -19,9 +19,9 @@ import {
 
 import { useState } from "react";
 
-import {Avatar, AvatarGroup, AvatarIcon} from "@nextui-org/avatar";
+import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 
-import icono from "../electroterma-logo.png"
+import icono from "../electroterma-logo.png";
 
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
@@ -51,8 +51,7 @@ import ImgDisplay from "./imgdisplay(deprecated)";
 import { Children } from "react";
 import CardDisplay from "./cardDisplay";
 
-
-interface ItemsNavbar{
+interface ItemsNavbar {
     key: string;
     label: string[];
     labelShort: string;
@@ -60,18 +59,33 @@ interface ItemsNavbar{
     href: string;
 }
 
-
-
 export const Navbar = () => {
     const [firstDropdownOpen, setFirstDropdownOpen] = useState(false);
     const [secondDropdownOpen, setSecondDropdownOpen] = useState(false);
-  
-    const handleSecondDropdownClick = () => {
-      setFirstDropdownOpen(false);
-      setSecondDropdownOpen(false);
+
+    const setFirstFalse = () => {
+        setFirstDropdownOpen(false);
+    };
+    const setSecondTrue = () => {
+        setSecondDropdownOpen(true);
     };
 
-    const items:ItemsNavbar[] = [
+    const handleFirstDropdownOpen = () => {
+        setFirstDropdownOpen(true);
+        setSecondDropdownOpen(false);
+    };
+
+    const handleSecondDropdownOpen = () => {
+        // setFirstDropdownOpen(true);
+        setSecondDropdownOpen(true);
+    };
+
+    const handleSecondDropdownItemClick = () => {
+        setFirstDropdownOpen(false);
+        setSecondDropdownOpen(false);
+    };
+
+    const items: ItemsNavbar[] = [
         {
             key: "first",
             label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
@@ -125,7 +139,11 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <NextUINavbar maxWidth="full" className="px-10 flex justify-center items-center" position="sticky">
+        <NextUINavbar
+            maxWidth="full"
+            className="px-10 flex justify-center items-center"
+            position="sticky"
+        >
             <NavbarBrand>
                 <NextLink
                     className="flex justify-center items-center gap-1"
@@ -161,86 +179,110 @@ export const Navbar = () => {
             </NavbarContent>
 
             <NavbarContent as="div" justify="end">
-                <Dropdown placement="bottom" className="bg-[#EF771C] !important translate-y-[-1.7%] rounded-none rounded-bl-[64px]" 
-                    // isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
+                <Dropdown
+                    placement="bottom"
+                    className="bg-[#EF771C] !important translate-y-[-1.7%] rounded-none rounded-bl-[64px]"
+                    isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
                 >
                     <DropdownTrigger className="bg-red-500">
-                        
-                    {/* <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z" fill="white"/>
-                    <path d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z" fill="white"/>
-                    <path d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z" fill="white"/>
-                    </svg> */}
-
-            <div className="w-[263px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
-                <svg width="35" height="33" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z" fill="white"/>
-                    <path d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z" fill="white"/>
-                    <path d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z" fill="white"/>
-                </svg>
-            </div>
-
-                        {/* <Avatar
-                            isBordered
-                            as="button"
-                            className="transition-transform"
-                            color="secondary"
-                            name="Jason Hughes"
-                            size="sm"
-                            src="../img/electrotermalogoletrasNoPadding.png"
-                        /> */}
+                        <div className="w-[263px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
+                            <svg
+                                width="35"
+                                height="33"
+                                viewBox="0 0 40 37"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
                     </DropdownTrigger>
-                    <DropdownMenu aria-label="Profile Actions" variant="flat" className="bg-[#EF771C] !important mb-10">
+                    <DropdownMenu
+                        aria-label="Profile Actions"
+                        variant="flat"
+                        className="bg-[#EF771C] !important mb-10"
+                    >
                         {/* <ul className="hidden md:flex gap-4 justify-around pl-1 ml-1"> */}
-                            {siteConfig.navItems.map((item) => (
-                                
-                                        <DropdownItem key={item.label} isReadOnly className="h-[38px] gap-2 flex justify-center text-center  ">
-                                            
-                                            {item.dropdown ? (
-                                                <Dropdown key={item.label} placement="left" className="rounded-[34px] !important shadow-lg border-1 border-[#F5F4F4] 
+                        {siteConfig.navItems.map((item) => (
+                            <DropdownItem
+                                key={item.label}
+                                isReadOnly
+                                className="h-[38px] gap-2 flex justify-center text-center  "
+                            >
+                                {item.dropdown ? (
+                                    <Dropdown
+                                        key={item.label}
+                                        placement="left"
+                                        className="rounded-[34px] !important shadow-lg border-1 border-[#F5F4F4] 
                                                         bg-[#e1e1e1] translate-x-[-1.5%]"
-                                                        // isOpen={secondDropdownOpen} onOpenChange={handleSecondDropdownClick}
-                                                        >
-                                                    <DropdownTrigger>
-                                                        <p className="font-nunito text-white text-2xl ">{item.label}</p>
-                                                    </DropdownTrigger>
-                                                    <DropdownMenu aria-label="Profile Actions" variant="flat" items={items} 
-                                                        className="force-row ">
-                                                    
-                                                    {(item) => (
-                                                        <DropdownItem
-                                                            key={item.key}
-                                                            className={`rounded-none `}
-                                                            // color={item.key === "delete" ? "danger" : "default"}
-                                                            // className={item.key === "delete" ? "text-danger" : ""}
-                                                        >
-                                                            <NextLink
-                                                                className=""
-                                                                color="foreground"
-                                                                href={item.href}
-                                                            >
-                                                                {/* <ImgDisplay item={item}/>
+                                         
+                                    >
+                                        <DropdownTrigger>
+                                            <p className="font-nunito text-white text-2xl ">
+                                                {item.label}
+                                            </p>
+                                        </DropdownTrigger>
+                                        <DropdownMenu
+                                            aria-label="Profile Actions"
+                                            variant="flat"
+                                            items={items}
+                                            className="force-row "
+                                        >
+                                            {(item) => (
+                                                <DropdownItem
+                                                    key={item.key}
+                                                    className={`rounded-none `}
+                                                    // color={item.key === "delete" ? "danger" : "default"}
+                                                    // className={item.key === "delete" ? "text-danger" : ""}
+                                                >
+                                                    <NextLink
+                                                        className=""
+                                                        color="foreground"
+                                                        href={item.href}
+                                                        onClick={setFirstFalse}
+                                                    >
+                                                        {/* <ImgDisplay item={item}/>
                                                                     <p>{item.label1}</p> */}
-                                                                <CardDisplay data={item}/>
-                                                                
-                                                            </NextLink>
-                                                        </DropdownItem>
-                                                    )}
-                                                        {/* {items.map((element)=>{
+                                                        <CardDisplay
+                                                            data={item}
+                                                        />
+                                                    </NextLink>
+                                                </DropdownItem>
+                                            )}
+                                            {/* {items.map((element)=>{
                                                             <DropdownItem key={element.key} >
                                                                 <p>TEXTOOO</p>
                                                             </DropdownItem>
                                                         })} */}
-                                                       
-                                                        
-                                                    </DropdownMenu>
-                                                 </Dropdown>
-                    
-                                            ): (
-                                                <p className={`font-nunito text-white text-2xl`}>{item.label}</p>
-                                            )}
-                                        </DropdownItem>
-                            ))}
+                                        </DropdownMenu>
+                                    </Dropdown>
+                                ) : (
+                                    <NextLink
+                                        className=""
+                                        color="foreground"
+                                        href={item.href}
+                                        onClick={setFirstFalse}
+                                    >
+                                        <p
+                                            className={`font-nunito text-white text-2xl`}
+                                        >
+                                            {item.label}
+                                        </p>
+                                    </NextLink>
+                                )}
+                            </DropdownItem>
+                        ))}
                         {/* </ul> */}
                         {/* <DropdownItem key="settings">My Settings</DropdownItem>
                         <DropdownItem key="team_settings">
