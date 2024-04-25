@@ -48,32 +48,41 @@ export const siteConfig = {
             href: "/",
         },
         {
-            label: "Nosotros",
-            href: "/nosotros",
+            label: "Soluciones en HVAC",
+            href: "/solucionesHVAC",
+			dropdown: false,
         },
         {
             label: "Tempomatic",
             href: "/tempomatic",
+			dropdown: true,
+
         },
         {
             label: "Soler&Palau",
             href: "/soler&palau",
+            imgHref: "",
+			dropdown: true,
+
         },
-        {
-            label: "DTI",
-            href: "/dti",
-        },
+
         {
             label: "Zila",
             href: "/zila",
+			dropdown: true,
+
         },
         {
-            label: "Asesoramiento",
-            href: "/asesoramiento",
+            label: "Nosotros",
+            href: "/nosotros",
+			dropdown: false,
+
         },
         {
             label: "Tienda Online",
             href: "/tiendaonline",
+			dropdown: false,
+
         },
     ],
     links: {

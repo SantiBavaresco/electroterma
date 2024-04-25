@@ -18,6 +18,7 @@ import {
 } from "@nextui-org/dropdown";
 
 import { useState } from "react";
+import {Accordion, AccordionItem} from "@nextui-org/react";
 
 import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 
@@ -44,6 +45,7 @@ import {
     DiscordIcon,
     HeartFilledIcon,
     SearchIcon,
+    Menu,
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
@@ -102,7 +104,7 @@ export const Navbar = () => {
         },
         {
             key: "edit",
-            label: ["Ventilador Centrifigo - TDA", "TDA"],
+            label: ["Ventilador Centrifigo - TDA", ],
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
@@ -177,8 +179,7 @@ export const Navbar = () => {
                     </Link>
                 </NavbarItem> */}
             </NavbarContent>
-
-            <NavbarContent as="div" justify="end">
+            <NavbarContent className="hidden md:flex" as="div" justify="end">
                 <Dropdown
                     placement="bottom"
                     className="bg-[#EF771C] !important translate-y-[-1.7%] rounded-none rounded-bl-[64px]"
@@ -224,8 +225,8 @@ export const Navbar = () => {
                                     <Dropdown
                                         key={item.label}
                                         placement="left"
-                                        className="rounded-[34px] !important shadow-lg border-1 border-[#F5F4F4] 
-                                                        bg-[#e1e1e1] translate-x-[-5%]"
+                                        className="rounded-[34px] !important border-1 border-[#F5F4F4] 
+                                                        bg-[#e1e1e1] translate-x-[-1.5%] 2xl:translate-x-[-5%]"
                                          
                                     >
                                         <DropdownTrigger>
@@ -302,6 +303,117 @@ export const Navbar = () => {
                     </DropdownMenu>
                 </Dropdown>
             </NavbarContent>
+
+
+{/* ------------------------------------ MENU MOBILE ------------------------------------ */}
+
+            <NavbarContent className="md:hidden basis-1 w-screen pl-4" justify="end">
+                {/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
+					<GithubIcon className="text-default-500" />
+				</Link>
+				<ThemeSwitch /> */}
+                
+                <NavbarMenuToggle 
+                 
+                 aria-label={isMenuOpen ? "C" : "O"}
+                 icon={isMenuOpen ? "C" : 
+                 
+                 <div className="w-[200px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
+                            <svg
+                                width="30"
+                                height="28"
+                                viewBox="0 0 40 37"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                    // <Menu className="text-base" />
+                 
+                }
+                 className="w-20 md:hidden "
+                />
+            </NavbarContent>
+
+            <NavbarMenu>
+                {/* {searchInput} */}
+                
+                <div className="mx-4 mt-2 flex flex-col gap-2 ">
+                    
+                    {siteConfig.navMenuItems.map((item, index) => (
+                        <NavbarMenuItem key={`${item}-${index}`}>
+                            {/* <Link
+                                color={
+                                    index === 3
+                                        ? "primary"
+                                        : index ===
+                                          siteConfig.navMenuItems.length - 1
+                                        ? "danger"
+                                        : "foreground"
+                                }
+                                href={item.href}
+                                size="lg"
+                            > */}
+                                {item.dropdown ? 
+                                    <div className="">
+                                        <Accordion variant="light">
+                                            <AccordionItem key={item.label} aria-label={item.label} title={item.label}
+                                            className=""
+                                            startContent={
+                                                <Avatar
+                                                  isBordered
+                                                  color="primary"
+                                                  radius="lg"
+                                                  src="../img/navbar/NavBarHabitat1SolerPalau.png"
+                                                />
+                                              }>
+                                                <div className="grid grid-cols-2 gap-2 w-[100%]">
+                                                {items?.map((item) => (
+                                                    // <p key={item.key}>{item.label}</p>
+                                                    <NextLink
+                                                        className="max-w-[40vw] "
+                                                        color="foreground"
+                                                        href={item.href}
+                                                        key={item.key}
+                                                        
+                                                    >
+                                                        
+                                                        <CardDisplay data={item}/>
+                                                    </NextLink>
+                                                ))}
+                                                </div>
+                                            </AccordionItem>
+                                            
+                                        </Accordion>
+
+                                    </div>
+                                : 
+                                <NextLink
+                                    className=""
+                                    color="foreground"
+                                    href={item.href}
+                                >
+                                    <h1>{item.label}</h1> 
+                                </NextLink>
+                                }
+                                {/* {item.label} */}
+                            {/* </Link> */}
+                        </NavbarMenuItem>
+                    ))}
+                </div>
+            </NavbarMenu>
         </NextUINavbar>
     );
 };

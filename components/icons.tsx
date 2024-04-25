@@ -7,6 +7,7 @@ export const Logo: React.FC<IconSvgProps> = ({
 	height,
 	...props
 }) => (
+	<div className="w-[63px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
 	<svg
 		fill="none"
 		height={size || height}
@@ -20,6 +21,38 @@ export const Logo: React.FC<IconSvgProps> = ({
 			fill="currentColor"
 			fillRule="evenodd"
 		/>
+	</svg>
+	</div>
+);
+
+export const Menu: React.FC<IconSvgProps> = ({
+	size = 36,
+	width,
+	height,
+	...props
+}) => (
+	<svg
+		fill="none"
+		height={size || height}
+		viewBox="0 0 32 32"
+		width={size || width}
+		{...props}
+	>
+
+		<path
+			d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
+			fill="white"
+		/>
+		<path
+			d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
+			fill="white"
+		/>
+		<path
+			d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
+			fill="white"
+		/>
+	
+
 	</svg>
 );
 

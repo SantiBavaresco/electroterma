@@ -21,8 +21,9 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data }) => {
             data-[selectable=true]:focus:bg-blue-500 !important 
             data-[hover=true]:bg-orange-500 !important
             group group-hover:bg-gray-5 gap-3
-            ${data.key==="first" ? "rounded-tl-[28px] rounded-bl-[28px] hover:bg-none !important" : "" } 
-            ${data.key==="last" ? "rounded-tr-[28px] rounded-br-[28px] hover:bg-none !important" : "" } 
+            ${(data.key==="first") ? "md:rounded-tl-[28px] md:rounded-bl-[28px] hover:bg-none !important" : "" } 
+            ${(data.key==="last") ? "md:rounded-tr-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
+            shadow-xl
         `}>
             <div className={``}>
              <Image
@@ -35,8 +36,8 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data }) => {
                     key={data.key}
                 />
             <div className={`min-h-10 h-16 text-center flex flex-col  justify-center text-white font-nunito bg-livered-title group-hover:bg-[#B2B2B2]
-                ${data.key==="first" ? "rounded-bl-[28px]" : ""} 
-                ${data.key==="last" ? "rounded-br-[28px]" : ""} 
+                ${(data.key==="first") ? "md:rounded-bl-[28px]" : ""} 
+                ${(data.key==="last") ? "md:rounded-br-[28px]" : ""} 
             `}>
                 {data?.label?.map((description:string)=>(
                     <p key={description} className="gap-3">{description}</p>

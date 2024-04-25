@@ -8,6 +8,8 @@ import { lazy, Suspense } from "react";
 
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
+import NextLink from "next/link";
+
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
@@ -31,11 +33,50 @@ import { DiferencialMaterialGalvanizado } from "@/components/diferenciales/difer
 import { DiferencialMultiposicion } from "@/components/diferenciales/diferencialMultiposicion";
 import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVolumenBajo";
 import { DiferencialStockPermanente } from "@/components/diferenciales/diferencialStockPermanente";
+import CardDisplay from "@/components/navbar/cardDisplay";
+import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 
 
+interface ItemsNavbar {
+    key: string;
+    label: string[];
+    labelShort: string;
+    img: string;
+    href: string;
+}
 
 export default function TDAPage() {
 
+    const itemsNav: ItemsNavbar[] = [
+        {
+            key: "first",
+            label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
+            labelShort: "RSL",
+            img: "../img/navbar/NavBarRSLSolerPalau.png",
+            href: "/soler&palau/RSL",
+        },
+        {
+            key: "copy",
+            label: ["Ventilador Centrifigo", "Multipala - TSA"],
+            labelShort: "TSA",
+            img: "../img/navbar/NavBarTSA1SolerPalau.png",
+            href: "/soler&palau/TSA",
+        },
+        {
+            key: "edit",
+            label: ["Ventilador Centrifigo - TDA",],
+            labelShort: "TDA",
+            img: "../img/navbar/NavBarTDA1SolerPalau.png",
+            href: "/soler&palau/TDA",
+        },
+        {
+            key: "last",
+            label: ["Habitat"],
+            labelShort: "Habitat",
+            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
+            href: "/soler&palau/habitat",
+        },
+    ];
 
     const defaultContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
@@ -157,9 +198,9 @@ export default function TDAPage() {
                 </div>
                 
             </section> */}
-            <section className="w-[90%] ml-10 mt-10 overflow-hidden">
+            <section className="md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
-            <div className=" xl:top-2 2xl:top-2 2xl:mb-10 xl:left-16 2xl:-left-10">
+            <div className=" xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
                             <Image
                                 alt="Otam Logo"
                                 src="../img/otamlogo.png"
@@ -169,50 +210,38 @@ export default function TDAPage() {
                     </div>
             </section>
 
-            <section className="flex flex-col min-h-[110vh] md:min-h-full md:flex md:flex-row-reverse xl:justify-start 2xl:justify-start 
-                items-start xl:w-[100%] xl:ml-auto 2xl:w-[90vw] h-[90vh] 2xl:-mt-32 overflow-hidden  ">
-                <div className="md:m-0 z-20 xl:mr-12 2xl:ml-20 2xl:mt-28 2xl:w-[60%]">
-                    <div className="flex flex-col items-center mt-6 lg:mt-16 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
+                  
+            <section className="flex flex-col items-start min-h-[110vh] overflow-hidden
+                md:min-h-full md:flex md:flex-row-reverse 
+                lg:w-[50%] 
+                xl:justify-start xl:w-[100%] xl:ml-auto 
+                2xl:justify-start 2xl:w-[90vw] h-[90vh] 2xl:-mt-32   ">
+                <div className="md:m-0 z-20 xl:mr-12 2xl:ml-20 2xl:mt-28 lg:w-[50%] 2xl:w-[60%]">
+                    <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
 
-                        {/* <div className=" xl:top-2 2xl:top-2 2xl:mb-10 xl:left-16 2xl:-left-10">
-                            <Image
-                                alt="Otam Logo"
-                                src="../img/otamlogo.png"
-                                width={200}
-                            />
-                            <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
-                    </div> */}
                         <span className="relative text-lg lg:text-5xl 2xl:text-[55px] text-[#9D9D9C] font-nunito ">
-                            <div className="absolute top-0 -left-8">
-                            <svg width="20" height="54" viewBox="0 0 20 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_1_1216)">
-                                <path d="M0 40.8931L7.0073 32.591C8.9781 30.292 8.9781 26.5667 7.0073 24.2676L0 16.072V0L16.8978 19.7121C18.7591 21.8834 19.854 24.7785 19.9818 27.8652C19.9818 28.2484 19.9818 28.6528 19.9818 29.036C19.854 32.1227 18.7591 34.9965 16.8978 37.1891L0 56.9012V40.8931Z" fill="#E80303"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_1_1216">
-                                <rect width="20" height="56.9012" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
+                            <div className="absolute top-0 -left-8 h-[50px] md:h-full">
+                                <VinietaRojaSVG />
+                                
                             </div>
                             VENTILADOR
                             
 
                         </span>
 
-                        <h1 className="mt-2 lg:mt-6  2xl:mt-8 text-4xl  lg:text-[78px] 2xl:text-[90px] leading-none font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 text-4xl lg:mt-6 lg:text-[78px] 2xl:text-[90px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
                             CENTRÍFUGO
                         </h1>
 
-                        <h1 className=" mt-2 lg:mt-3  2xl:mt-4 text-4xl lg:text-[78px] 2xl:text-[90px] leading-none  font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 text-4xl lg:mt-3 lg:text-[78px] 2xl:text-[90px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
                             MULTIPALA - TDA
                         </h1>
 
-                        <h1 className="mt-2 lg:mt-6 2xl:mt-6 text-lg lg:text-[43px] 2xl:text-[55px]  text-[#9D9D9C] font-nunito ">
+                        <h1 className="mt-2 text-lg lg:mt-6  lg:text-[43px] 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
                             DE DOBLE ASPIRACIÓN
                         </h1>
 
-                        <div className="mt-2  2xl:mt-6  text-lg lg:text-4xl 2xl:text-4xl tracking-normal text-[#4C4B4B] font-lexend-bold">
+                        <div className="mt-2 text-lg lg:text-4xl 2xl:text-4xl 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
                             <p className="lg:mt-3 2xl:mt-4">
                                 Inyección de{" "}
                                 <span className="text-livered">
@@ -227,7 +256,7 @@ export default function TDAPage() {
                         {/* z-20  absolute translate-x-[70%] translate-y-[160px]
                         lg:translate-y-[60px] lg:translate-x-[190px] 
                         2xl:translate-y-[90px] 2xl:translate-x-[220px]  */}
-                        <div className="2xl:mt-10  w-full flex justify-end
+                        <div className="mt-10 2xl:mt-10  w-full flex justify-center md:justify-end
                         
                         overflow-hidden">
                         <Button
@@ -240,11 +269,14 @@ export default function TDAPage() {
                     </div>
                     </div>
                 </div>
-                <div className="relative max-w-screen 2xl:left-[0%] lg:-left-[10%] md:-left-[20%] -top-16 md:top-16 lg:top-8 2xl:top-0 -mt-10 z-10 overflow-y-hidde">
+                <div className="relative max-w-screen -top-16 -mt-10 z-10 overflow-y-hidde
+                    md:-left-[20%] md:top-16
+                    lg:-left-[6%] lg:-top-16
+                    2xl:left-[0%] 2xl:top-0 ">
                 <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
-                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-12"
+                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
                         src="../img/solerpalau/tda/SolerPalauTda0.png"
                         width={"100%"}
                     />
@@ -291,38 +323,11 @@ export default function TDAPage() {
                 </Button>
             </div>
 
-            {/* -------------------------Tabla de especificadiones INICIAL------------------------- */}
-            {/* <section className="relative text-xl max-w-full ">
-                <div className="flex justify-center items-center w-3/4 mx-auto">
-                    <Caracteristics />
-                </div>
-                <Ondas02SVG css="absolute  -z-10 -left-1/3 -top-56 overflow-y-scroll no-scrollbar" />
-                // <div className="w-[1500px] absolute -top-[700px]  transform -scale-x-100 -rotate-[25deg] -z-20 ">
-                
-                // </div> 
-                <div className="flex justify-end opacity-30">
-                    <Image
-                        alt="Otam Logo"
-                                        className=""
-                                        src="../img/otamlogo.png"
-                                        widdiv={250}
-                                    />
-                </div>
-            </section> */}
-            {/* 
-            <section className="flex flex-col  md:flex md:flex-row-reverse h-[100vh]  ">
-                
-                <div className="relative max-w-screen ">
-                    
-                    <Ondas02SVG css="absolute " />
-
-
-                </div>
-            </section> */}
+           
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100vw] 2xl:w-full min-h-[110vh] h-[100%] -mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            <section className="max-w-[100%] 2xl:w-full min-h-[110vh] h-[100%] -mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
@@ -487,14 +492,7 @@ export default function TDAPage() {
 {/* </section> */}
             <section className="h-[60%] lg:h-[70%] 2xl:h-[90%] 2xl:w-[74%] mb-6 bg-inherit z-10 bg-none overflow-hidden">
                 <div className="flex flex-col justify-center items-center t w-full md:w-[1200px] 2xl:w-full m-auto ">
-                    {/* <div className="ms-auto flex items-center">
-                        <Image
-                            alt="Electroterma Logo"
-                            className=""
-                            src="../img/electrotermalogoletras.png"
-                            widdiv={250}
-                        />
-                    </div> */}
+
 
                     <div className="">
                         <SimpleSliderDemoImages
@@ -522,6 +520,28 @@ export default function TDAPage() {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section className="max-w-[80%] w-full h-[100%] z-10 my-10">
+
+            <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl text-center leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
+                        Otros productos de Soler & Palau
+                    </h1>
+                <div className="flex justify-center gap-2 ">
+                    
+                    
+                {itemsNav?.map((item) => (
+                    // <p key={item.key}>{item.label}</p>
+                    <NextLink
+                                                        className=""
+                                                        color="foreground"
+                                                        href={item.href}
+                                                        key={item.key}
+                                                    >
+                    <CardDisplay data={item}/>
+                    </NextLink>
+                    ))}           
+                </div>
+
             </section>
         </div>
     );
