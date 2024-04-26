@@ -537,7 +537,7 @@ export default function TDAPage() {
                                                         href={item.href}
                                                         key={item.key}
                                                     >
-                    <CardDisplay data={item}/>
+                        <CardDisplay data={item}/>
                     </NextLink>
                     ))}           
                 </div>

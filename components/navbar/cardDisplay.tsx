@@ -13,7 +13,7 @@ interface ItemsNavbar {
     href: string;
     }
 }
-const CardDisplay: React.FC<ItemsNavbar> = ({ data }) => {
+const CardDisplay: React.FC<ItemsNavbar> = ({ data, ...props }) => {
     // const modifiedArrays = data.lable
     return (
         
@@ -21,9 +21,9 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data }) => {
             data-[selectable=true]:focus:bg-blue-500 !important 
             data-[hover=true]:bg-orange-500 !important
             group group-hover:bg-gray-5 gap-3
-            ${(data.key==="first") ? "md:rounded-tl-[28px] md:rounded-bl-[28px] hover:bg-none !important" : "" } 
-            ${(data.key==="last") ? "md:rounded-tr-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
-            shadow-xl
+            ${(data.key==="first") ? " md:rounded-tl-[28px] md:rounded-bl-[28px] hover:bg-none !important" : "" } 
+            ${(data.key==="last") ? " md:rounded-tr-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
+            shadow-xl rounded-xl
         `}>
             <div className={``}>
              <Image
@@ -31,22 +31,22 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data }) => {
                     radius="lg"
                     width="100%"
                     alt={data.key}
-                    className="p-1 w-[240px] object-contain h-[140px] gap-3 shadow-lg"
+                    className="p-1 w-[140px] h-[70px]  md:w-[240px] md:h-[140px] object-contain  gap-3 shadow-lg"
                     src={data.img}
                     key={data.key}
                 />
-            <div className={`min-h-10 h-16 text-center flex flex-col  justify-center text-white font-nunito bg-livered-title group-hover:bg-[#B2B2B2]
-                ${(data.key==="first") ? "md:rounded-bl-[28px]" : ""} 
-                ${(data.key==="last") ? "md:rounded-br-[28px]" : ""} 
-            `}>
-                {data?.label?.map((description:string)=>(
-                    <p key={description} className="gap-3">{description}</p>
-         
-                ))}
+                <div className={`min-h-10 h-16 text-center flex flex-col  justify-center text-white font-nunito bg-livered-title group-hover:bg-[#B2B2B2]
+                    ${(data.key==="first") ? " md:rounded-bl-[28px]" : "rounded-xl md:rounded-none"} 
+                    ${(data.key==="last") ? " md:rounded-br-[28px]" : "rounded-xl md:rounded-none"} 
+                `}>
+                    {data?.label?.map((description:string)=>(
+                        <p key={description} className="gap-3 text-xs md:text-xl">{description}</p>
+            
+                    ))}
 
-            </div>
-                {/* <p className="bg-livered-title group-hover:bg-midgray gap-3 min-h-10 h-10">{typeof(data.label)}</p> */}
                 </div>
+                {/* <p className="bg-livered-title group-hover:bg-midgray gap-3 min-h-10 h-10">{typeof(data.label)}</p> */}
+            </div>
         </main>
         // <Card
         //     shadow="sm"
