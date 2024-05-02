@@ -220,8 +220,8 @@ export default function TDAPage() {
                     <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
 
                         <span className="relative text-lg lg:text-5xl 2xl:text-[55px] text-[#9D9D9C] font-nunito ">
-                            <div className="absolute top-0 -left-8 h-[50px] md:h-full">
-                                <VinietaRojaSVG />
+                            <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
+                                <VinietaRojaSVG css=" h-[20px] w-[20px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
                                 
                             </div>
                             VENTILADOR
@@ -327,7 +327,7 @@ export default function TDAPage() {
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100%] 2xl:w-full min-h-[110vh] h-[100%] -mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            <section className="max-w-[100%] 2xl:w-full min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
@@ -336,7 +336,7 @@ export default function TDAPage() {
                 </div> */}
                  <div className="relative w-screen ms-auto">
                     <div
-                            className=" mt-20 lg:absolute px-4 z-10
+                            className="my-10 md:mt-20 lg:absolute px-4 z-10
                             top-72 2xl:top-[40vh] 
                             right-16
                             rounded-[42px]
@@ -354,7 +354,7 @@ export default function TDAPage() {
                     </div>
 
                 <div
-                    className=" w-[104%] flex flex-col justify-center items-center  lg:w-3/4 mt-20 2xl:mt-[20vh] mx-auto overflow-hidden
+                    className=" w-[104%] flex flex-col justify-center items-center  lg:w-3/4 md:mt-20 2xl:mt-[20vh] mx-auto overflow-hidden
                     "
                 >
                     <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">

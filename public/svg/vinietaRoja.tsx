@@ -16,12 +16,13 @@ export const VinietaRojaSVG: React.FC<Props> = ({
 }) => {
     return (
         <svg
+            className={css}
             width={size || width || 10}
             height={size || height || 25}
             viewBox="0 0 20 57"
             xmlns="http://www.w3.org/2000/svg"
-            fill={color || "#000000"}
-            stroke={color || "#000000"}
+            // fill={color || "#000000"}
+            // stroke={color || "#000000"}
         >
             <g clip-path="url(#clip0_1_1216)">
                 <path

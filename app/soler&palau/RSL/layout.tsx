@@ -1,4 +1,4 @@
-export default function TSALayout({
+export default function RSLayout({
 	children,
 }: {
 	children: React.ReactNode;
@@ -9,7 +9,6 @@ export default function TSALayout({
 			{/* <div className="inline-block max-w-lg text-center justify-center"> */}
 			<div>
 				{children}
-				HOLA
 			</div>
 		</section>
 	);
