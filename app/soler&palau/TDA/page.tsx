@@ -3,7 +3,7 @@ import { title } from "@/components/primitives";
 // import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 // import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 import FrameScrubber from "@/components/frameScrubber/frameScrubber";
-import Caracteristics from "./tabs";
+
 import { lazy, Suspense } from "react";
 
 import { Image } from "@nextui-org/image";

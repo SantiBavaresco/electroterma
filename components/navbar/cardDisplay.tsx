@@ -40,7 +40,7 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, ...props }) => {
                     ${(data.key==="last") ? " md:rounded-br-[28px]" : "rounded-xl md:rounded-none"} 
                 `}>
                     {data?.label?.map((description:string)=>(
-                        <p key={description} className="gap-3 text-xs md:text-xl">{description}</p>
+                        <p key={description} className="gap-3 px-2 text-xs md:text-xl">{description}</p>
             
                     ))}
 

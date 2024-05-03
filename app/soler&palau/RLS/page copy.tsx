@@ -26,7 +26,7 @@ import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 // import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 // import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 
-import Caracteristics from "./tabs";
+
 import SimpleSlider from "@/components/imgslider/slickSlider";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 

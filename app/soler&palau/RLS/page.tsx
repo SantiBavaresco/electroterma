@@ -3,7 +3,7 @@ import { title } from "@/components/primitives";
 // import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 // import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 import FrameScrubber from "@/components/frameScrubber/frameScrubber";
-import Caracteristics from "./tabs";
+
 import { lazy, Suspense } from "react";
 
 import { Image } from "@nextui-org/image";
@@ -36,7 +36,7 @@ import { DiferencialMultiposicion } from "@/components/diferenciales/diferencial
 import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVolumenBajo";
 import { DiferencialStockPermanente } from "@/components/diferenciales/diferencialStockPermanente";
 import CardDisplay from "@/components/navbar/cardDisplay";
-import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
+import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
 
 
 interface ItemsNavbar {
@@ -47,15 +47,15 @@ interface ItemsNavbar {
     href: string;
 }
 
-export default function RSLPage() {
+export default function RLSPage() {
 
     const itemsNav: ItemsNavbar[] = [
         {
             key: "first",
-            label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
-            labelShort: "RSL",
-            img: "../img/navbar/NavBarRSLSolerPalau.png",
-            href: "/soler&palau/RSL",
+            label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
+            labelShort: "RLS",
+            img: "../img/navbar/NavBarRLSSolerPalau.png",
+            href: "/soler&palau/RLS",
         },
         {
             key: "copy",
@@ -66,7 +66,7 @@ export default function RSLPage() {
         },
         {
             key: "edit",
-            label: ["Ventilador Centrifigo - TDA",],
+            label: ["Ventilador Centrifigo","TDA"],
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
@@ -224,7 +224,7 @@ export default function RSLPage() {
                 
             </section> */}
 
-            <section className="flex flex-col md:mt-4 md:flex md:flex-row justify-between w-full ">
+            {/* <section className="flex flex-col md:mt-4 md:flex md:flex-row justify-between w-full ">
                 <div className="ml-10">
                     <div className="flex flex-col px-10  -mt-10 gap-1 text-start justify-items-end items-start font-lexend-bold tracking-widest ">
                         <span className="text-lg lg:text-3xl text-midgray font-nunito  ">
@@ -240,7 +240,7 @@ export default function RSLPage() {
                         <div className="mt-2 ">
                             <p className="text-lg lg:text-2xl">
                                 Extraccioón de aire con
-                                {/* <span className="text-livered">aire limpio</span>{" "} */}
+                                
                             </p>
                             <p className="text-lg lg:text-2xl">
                                 <span className="text-livered">niveles de suciedad</span>
@@ -250,18 +250,95 @@ export default function RSLPage() {
                 </div>
                 <div className="relative max-w-screen  lg:right-10 lg:bottom-20 -mt-10 z-10">
                     <Image
-                        // className="-top-16 left-1/2"
+                        
                         alt="Ventilador"
                         className="inline-block top-20 left-10"
                         src="../img/solerpalau/rsl/SolerPalauRsl1.png"
                         width={300}
                     />
-                    {/* --- ONDA 1 --------------- */}
-                    {/* <Ondas03SVG width={1050} height={444} css="absolute top-0 right-[174px] lg:-right-[134px] lg:top-10 z-10 w-screen overflow-x-scroll no-scrollbar"/> */}
+                   
+                    <Ondas03SVG width={1050} height={444} css="absolute top-0 right-[174px] lg:-right-[134px] lg:top-10 z-10 w-screen overflow-x-scroll no-scrollbar"/>
 
+                </div>
+            </section> */}
+
+            <section className="flex flex-col items-start min-h-[90vh] overflow-hidden
+                md:min-h-full md:flex md:flex-row 
+                h-[50vh]
+                lg:w-[50%]  lg:pl-10
+                xl:justify-start xl:w-[95.5vw] xl:ml-auto 
+                2xl:justify-start 2xl:w-[97.5vw] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
+                <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[65%]  2xl:w-[58%]">
+                    <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
+
+                        <span className="relative text-lg lg:text-5xl 2xl:text-[61px] text-[#9D9D9C] font-nunito ">
+                            <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
+                                <VinietaNaranjaSVG css=" h-[20px] w-[20px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
+                            </div>
+                            VENTILADOR
+                        </span>
+
+                        <h1 className="mt-2 text-4xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
+                            CENTRÍFUGO
+                        </h1>
+
+                        <h1 className="mt-2 text-4xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
+                            AUTOLIMITANTE RLS
+                        </h1>
+
+                        <h1 className="mt-2 text-lg lg:mt-6  lg:text-[43px] 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
+                        DE SIMPLE ASPIRACIÓN
+                        </h1>
+
+                        <div className="mt-2 text-lg lg:text-4xl 2xl:text-[43px] 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
+                            <p className="lg:mt-3 2xl:mt-4">
+                                Extraccioón de aire con
+                                
+                            </p>
+                            <p className="lg:mt-2 2xl:mt-4">
+                                <span className="text-livered ">
+                                niveles de suciedad
+                                </span>
+                            </p>
+                        </div>
+                        {/* z-20  absolute translate-x-[70%] translate-y-[160px]
+                        lg:translate-y-[60px] lg:translate-x-[190px] 
+                        2xl:translate-y-[90px] 2xl:translate-x-[220px]  */}
+                        
+                    </div>
+                </div>
+                <div className="relative max-w-screen -top-16 -mt-10 z-10 overflow-y-hidde
+                    md:-left-[20%] md:top-16
+                    lg:-left-[6%] lg:-top-2
+                    2xl:left-[0%] 2xl:top-0 ">
+                <Image
+                        // className="-top-16 left-1/2"
+                        alt="Ventilador"
+                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
+                        src="../img/solerpalau/rls/SolerPalauRls1.png"
+                        width={"100%"}
+                    />
+                    <div className="mt-32 ml-auto md:mt-10 w-full 2xl:mt-10 flex justify-end md:justify-center
+                        
+                        overflow-hidden">
+                        <Button
+                            className="z-10 bg-livered font-nunito text-white ml-auto mr-[40px] xl:mr-20 xl:ml-auto 2xl:text-2xl 2xl:mr-32 2xl:ml-auto "
+                            radius="full"
+                            size="lg"
+                        >
+                            Asesoramiento
+                        </Button>
+                    </div>
+                    
                 </div>
             </section>
 
+            <section className="flex flex-col justify-start items-start mx-auto xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
+                <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
+                <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
+                <p> funcionamiento</p>
+
+            </section>
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}
 
@@ -308,11 +385,11 @@ export default function RSLPage() {
                             lg:w-[400px] 2xl:w-[550px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
-                            <div className=" flex flex-col justify-center items-center lg:text-3xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
-                                <h1 className="font-lexend-bold  ">Caudales de inyeccion desde</h1>
-                                <h1 className="font-lexend-bold  ">xxxxxx a xxxxxx m3/h</h1>
-                                <h1 className="font-lexend-bold  ">y contrapresiones desde</h1>
-                                <h1 className="font-lexend-bold  ">xxxx a xxxxx mmCA </h1>
+                            <div className=" flex flex-col justify-center items-center lg:text-2xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
+                                <h1 className="font-lexend ">Caudales de inyeccion </h1>
+                                <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
+                                <h1 className="font-lexend ">y contrapresiones desde</h1>
+                                <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
 
                             </div>
                         </div>

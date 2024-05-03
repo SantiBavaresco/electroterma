@@ -90,10 +90,10 @@ export const Navbar = () => {
     const items: ItemsNavbar[] = [
         {
             key: "first",
-            label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
-            labelShort: "RSL",
-            img: "../img/navbar/NavBarRSLSolerPalau.png",
-            href: "/soler&palau/RSL",
+            label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
+            labelShort: "RLS",
+            img: "../img/navbar/NavBarRLSSolerPalau.png",
+            href: "/soler&palau/RLS",
         },
         {
             key: "copy",
