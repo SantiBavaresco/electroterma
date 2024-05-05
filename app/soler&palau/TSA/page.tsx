@@ -17,6 +17,8 @@ import { Chip } from "@nextui-org/chip";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Ondas01SVG } from "@/public/svg/ondas01svg";
 import { Ondas02SVG } from "@/public/svg/ondas02svg";
+import { Ondas03SVG } from "@/public/svg/ondas03svg";
+
 
 import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
 import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
@@ -50,10 +52,10 @@ export default function TSAPage() {
     const itemsNav: ItemsNavbar[] = [
         {
             key: "first",
-            label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
-            labelShort: "RSL",
-            img: "../img/navbar/NavBarRSLSolerPalau.png",
-            href: "/soler&palau/RSL",
+            label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
+            labelShort: "RLS",
+            img: "../img/navbar/NavBarRLSSolerPalau.png",
+            href: "/soler&palau/RLS",
         },
         {
             key: "copy",
@@ -64,7 +66,7 @@ export default function TSAPage() {
         },
         {
             key: "edit",
-            label: ["Ventilador Centrifigo - TDA",],
+            label: ["Ventilador Centrifigo","TDA"],
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
@@ -198,112 +200,160 @@ export default function TSAPage() {
                 </div>
                 
             </section> */}
-            <section className="md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
+             <section className="md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
-            <div className=" xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
-                            <Image
-                                alt="Otam Logo"
-                                src="../img/otamlogo.png"
-                                width={200}
-                            />
-                            <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
-                    </div>
-            </section>
+                <div className=" xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
+                                <Image
+                                    alt="Otam Logo"
+                                    src="../img/otamlogo.png"
+                                    width={200}
+                                />
+                                <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
+                        </div>
+                </section>
+            {/* <section className="flex flex-col items-start w-3/4 md:ml-10 mt-10 mb-8 justify-start">
+                <div className=" ">
+                        <Image
+                            alt="Otam Logo"
+                            className=""
+                            src="../img/otamlogo.png"
+                            width={200}
+                        />
+                        <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
+                </div>
+                
+            </section> */}
 
-                  
-            <section className="flex flex-col items-start min-h-[110vh] overflow-hidden
-                md:min-h-full md:flex md:flex-row-reverse 
-                lg:w-[50%] 
-                xl:justify-start xl:w-[100%] xl:ml-auto 
-                2xl:justify-start 2xl:w-[90vw] h-[90vh] 2xl:-mt-32   ">
-                <div className="md:m-0 z-20 xl:mr-12 2xl:ml-20 2xl:mt-28 lg:w-[50%] 2xl:w-[60%]">
+            {/* <section className="flex flex-col md:mt-4 md:flex md:flex-row justify-between w-full ">
+                <div className="ml-10">
+                    <div className="flex flex-col px-10  -mt-10 gap-1 text-start justify-items-end items-start font-lexend-bold tracking-widest ">
+                        <span className="text-lg lg:text-3xl text-midgray font-nunito  ">
+                            VENTILADOR
+                        </span>
+                        <h1 className="text-3xl lg:text-5xl  font-nunito-bold text-livered-title">CENTRÍFUGO</h1>
+                        <h1 className="text-3xl  lg:text-5xl  font-nunito-bold text-livered-title">
+                            AUTOLIMITANTE RSL
+                        </h1>
+                        <span className="text-lg lg:text-3xl lg:mt-4 text-midgray font-nunito">
+                            DE SIMPLE ASPIRACIÓN
+                        </span>
+                        <div className="mt-2 ">
+                            <p className="text-lg lg:text-2xl">
+                                Extraccioón de aire con
+                                
+                            </p>
+                            <p className="text-lg lg:text-2xl">
+                                <span className="text-livered">niveles de suciedad</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="relative max-w-screen  lg:right-10 lg:bottom-20 -mt-10 z-10">
+                    <Image
+                        
+                        alt="Ventilador"
+                        className="inline-block top-20 left-10"
+                        src="../img/solerpalau/rsl/SolerPalauRsl1.png"
+                        width={300}
+                    />
+                   
+                    <Ondas03SVG width={1050} height={444} css="absolute top-0 right-[174px] lg:-right-[134px] lg:top-10 z-10 w-screen overflow-x-scroll no-scrollbar"/>
+
+                </div>
+            </section> */}
+
+            <section className="flex flex-col items-start min-h-[90vh] overflow-hidden
+                md:min-h-full md:flex md:flex-row 
+                h-[52%]
+                lg:w-[50%]  lg:pl-10
+                xl:justify-start xl:w-[95.5vw] xl:ml-auto 
+                2xl:justify-start 2xl:w-[97.5vw] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
+                <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[65%]  2xl:w-[58%]">
                     <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
 
-                        <span className="relative text-lg lg:text-5xl 2xl:text-[55px] text-[#9D9D9C] font-nunito ">
+                        <span className="relative text-lg lg:text-5xl 2xl:text-[61px] text-[#9D9D9C] font-nunito ">
                             <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
                                 <VinietaRojaSVG css=" h-[20px] w-[20px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
-                                
                             </div>
                             VENTILADOR
-                            
-
                         </span>
 
-                        <h1 className="mt-2 text-4xl lg:mt-6 lg:text-[78px] 2xl:text-[90px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
                             CENTRÍFUGO
                         </h1>
 
-                        <h1 className="mt-2 text-4xl lg:mt-3 lg:text-[78px] 2xl:text-[90px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
-                            MULTIPALA - TDA
+                        <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
+                            MULTIPALA - TSA
                         </h1>
 
                         <h1 className="mt-2 text-lg lg:mt-6  lg:text-[43px] 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
-                            DE DOBLE ASPIRACIÓN
+                        DE SIMPLE ASPIRACIÓN
                         </h1>
 
-                        <div className="mt-2 text-lg lg:text-4xl 2xl:text-4xl 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
+                        <div className="mt-2 text-lg lg:text-4xl 2xl:text-[43px] 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
                             <p className="lg:mt-3 2xl:mt-4">
-                                Inyección de{" "}
-                                <span className="text-livered">
-                                    aire limpio
-                                </span>{" "}
+                                Sistema de
                             </p>
-                            <p className="lg:mt-2 2xlmt-4">
-                                <span className="text-livered "></span>dentro de
-                                equipos HVAC
+                            <p className="lg:mt-2 2xl:mt-4">
+                                <span className="text-livered ">inyección</span>
+                                {" "}y{" "}
+                                <span className="text-livered ">extracción</span>
+
+                            </p>
+                            <p className="lg:mt-2 2xl:mt-4">
+                                de{" "}
+                                <span className="text-livered ">aire limpio.</span>
+
                             </p>
                         </div>
                         {/* z-20  absolute translate-x-[70%] translate-y-[160px]
                         lg:translate-y-[60px] lg:translate-x-[190px] 
                         2xl:translate-y-[90px] 2xl:translate-x-[220px]  */}
-                        <div className="mt-10 2xl:mt-10  w-full flex justify-center md:justify-end
+                        
+                    </div>
+                </div>
+                <div className="relative max-w-screen -top-16 -left-6 -mt-10 z-10 overflow-y-hidde
+                    md:-left-[20%] md:top-16
+                    lg:-left-[6%] lg:-top-2
+                    2xl:left-[0%] 2xl:top-0 ">
+                <Image
+                        // className="-top-16 left-1/2"
+                        alt="Ventilador"
+                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
+                        src="../img/solerpalau/tsa/SolerPalauTsa1.png"
+                        width={"100%"}
+                    />
+                    <div className="mt-32 ml-auto md:mt-10 w-full 2xl:mt-10 flex justify-end md:justify-center
                         
                         overflow-hidden">
                         <Button
-                            className="z-10 bg-livered font-nunito text-white 2xl:text-2xl 2xl:mr-3"
+                            className="z-10 bg-livered font-nunito text-white ml-auto mr-[40px] xl:mr-20 xl:ml-auto 2xl:text-2xl 2xl:mr-32 2xl:ml-auto "
                             radius="full"
                             size="lg"
                         >
                             Asesoramiento
                         </Button>
                     </div>
-                    </div>
-                </div>
-                <div className="relative max-w-screen -top-16 -mt-10 z-10 overflow-y-hidde
-                    md:-left-[20%] md:top-16
-                    lg:-left-[6%] lg:-top-16
-                    2xl:left-[0%] 2xl:top-0 ">
-                <Image
-                        // className="-top-16 left-1/2"
-                        alt="Ventilador"
-                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
-                        src="../img/solerpalau/tda/SolerPalauTda0.png"
-                        width={"100%"}
-                    />
-                {/* <div className="absolute xl:top-2 2xl:top-2 xl:left-16 2xl:-left-10">
-                        <Image
-                            alt="Otam Logo"
-                            src="../img/otamlogo.png"
-                            width={200}
-                        />
-                        <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
-                </div> */}
-                    {/* --- ONDA 1 --------------- */}
-                    {/* <Ondas01SVG css="absolute top-[270px] left-[195px] z-10 " /> */}
-                    {/* <div className="w-[1500px] absolute rotate-12 -top-[460px] left-[245px] z-20 ">
-                        <LottieWave md:bottom-[165px] md:left-[120px]  />
-                    </div> */}
                     
                 </div>
             </section>
 
+            {/* <section className="flex flex-col px-4 -mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
+                <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
+                <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
+                <p> funcionamiento</p>
+
+            </section> */}
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}
 
-            <Suspense fallback={<div>Loading</div>}>
+            {/* <Suspense fallback={<div>Loading</div>}>
                 <FrameFan />
-            </Suspense>
+            </Suspense> */}
+            <section>
+                ACA VA LA IMG
 
+            </section>
             {/* <section className="mt-32 mb-10 mx-auto lg:w-[80%] flex justify-end lg:items-end items-center">
                 <div className="flex flex-col gap-4">
                     <DiferencialMaterialGalvanizado/>
@@ -343,11 +393,11 @@ export default function TSAPage() {
                             lg:w-[400px] 2xl:w-[550px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
-                            <div className=" flex flex-col justify-center items-center lg:text-3xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
-                                <h1 className="font-lexend-bold  ">Caudales de inyeccion desde</h1>
-                                <h1 className="font-lexend-bold  ">xxxxxx a xxxxxx m3/h</h1>
-                                <h1 className="font-lexend-bold  ">y contrapresiones desde</h1>
-                                <h1 className="font-lexend-bold  ">xxxx a xxxxx mmCA </h1>
+                            <div className=" flex flex-col justify-center items-center lg:text-2xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
+                                <h1 className="font-lexend ">Caudales de inyeccion </h1>
+                                <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
+                                <h1 className="font-lexend ">y contrapresiones desde</h1>
+                                <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
 
                             </div>
                         </div>
@@ -500,7 +550,7 @@ export default function TSAPage() {
                             fileName={demoImageNames}
                         />
                     </div>
-                    <div className="flex justify-bettween items-center mt-2 w-full">
+                    <div className="flex justify-bettween items-center mt-10 md:mt-2 w-full">
                         <div className="me-auto flex justify-start items-start ">
                             <Image
                                 alt="Otam Logo"

@@ -500,7 +500,7 @@ export default function TDAPage() {
                             fileName={demoImageNames}
                         />
                     </div>
-                    <div className="flex justify-bettween items-center mt-2 w-full">
+                    <div className="flex justify-bettween items-center mt-10 md:mt-2 w-full">
                         <div className="me-auto flex justify-start items-start ">
                             <Image
                                 alt="Otam Logo"

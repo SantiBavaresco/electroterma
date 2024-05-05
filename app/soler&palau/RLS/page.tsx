@@ -264,7 +264,7 @@ export default function RLSPage() {
 
             <section className="flex flex-col items-start min-h-[90vh] overflow-hidden
                 md:min-h-full md:flex md:flex-row 
-                h-[50vh]
+                h-[52%]
                 lg:w-[50%]  lg:pl-10
                 xl:justify-start xl:w-[95.5vw] xl:ml-auto 
                 2xl:justify-start 2xl:w-[97.5vw] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
@@ -278,11 +278,11 @@ export default function RLSPage() {
                             VENTILADOR
                         </span>
 
-                        <h1 className="mt-2 text-4xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
                             CENTRÍFUGO
                         </h1>
 
-                        <h1 className="mt-2 text-4xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
                             AUTOLIMITANTE RLS
                         </h1>
 
@@ -292,13 +292,10 @@ export default function RLSPage() {
 
                         <div className="mt-2 text-lg lg:text-4xl 2xl:text-[43px] 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
                             <p className="lg:mt-3 2xl:mt-4">
-                                Extraccioón de aire con
-                                
+                                Extracción de aire con
                             </p>
                             <p className="lg:mt-2 2xl:mt-4">
-                                <span className="text-livered ">
-                                niveles de suciedad
-                                </span>
+                                <span className="text-livered ">niveles de suiciedad.</span>
                             </p>
                         </div>
                         {/* z-20  absolute translate-x-[70%] translate-y-[160px]
@@ -307,7 +304,7 @@ export default function RLSPage() {
                         
                     </div>
                 </div>
-                <div className="relative max-w-screen -top-16 -mt-10 z-10 overflow-y-hidde
+                <div className="relative max-w-screen -top-16 -left-6 -mt-10 z-10 overflow-y-hidde
                     md:-left-[20%] md:top-16
                     lg:-left-[6%] lg:-top-2
                     2xl:left-[0%] 2xl:top-0 ">
@@ -333,7 +330,7 @@ export default function RLSPage() {
                 </div>
             </section>
 
-            <section className="flex flex-col justify-start items-start mx-auto xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
+            <section className="flex flex-col px-4 -mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
                 <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
                 <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
                 <p> funcionamiento</p>
@@ -542,7 +539,7 @@ export default function RLSPage() {
                             fileName={demoImageNames}
                         />
                     </div>
-                    <div className="flex justify-bettween items-center mt-2 w-full">
+                    <div className="flex justify-bettween items-center mt-10 md:mt-2 w-full">
                         <div className="me-auto flex justify-start items-start ">
                             <Image
                                 alt="Otam Logo"
