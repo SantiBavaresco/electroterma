@@ -202,9 +202,9 @@ export default function TSAPage() {
             
 
 
-             <section className="md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
+             <section className="mr-auto ml-6  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
-                <div className=" xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
+                <div className="left-0 xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
                                 <Image
                                     alt="Otam Logo"
                                     src="../img/otamlogo.png"
