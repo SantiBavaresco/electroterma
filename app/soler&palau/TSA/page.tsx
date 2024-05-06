@@ -270,7 +270,7 @@ export default function TSAPage() {
                 md:min-h-full md:flex md:flex-row 
                 h-[52%]
                 lg:w-[50%]  lg:pl-10
-                xl:justify-start xl:w-[95.5vw] xl:ml-auto 
+                xl:justify-start xl:w-[95.5vw] xl:ml-auto xl:h-[75vh]
                 2xl:justify-start 2xl:w-[97.5vw] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
                 <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[65%]  2xl:w-[58%]">
                     <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
@@ -342,9 +342,9 @@ export default function TSAPage() {
                 </div>
             </section>
 
-            <section className="h-screen w-[100vw] lg:h-[85vh] px-10 overflow-hidden ">
-                <div className="flex flex-col-1">
-                    <div className="relative w-1/2 ">
+            <section className="h-[115vh] w-[99vw] lg:h-[85vh] px-10 overflow-hidden ">
+                <div className="flex flex-col-1 ">
+                    <div className="relative md:w-1/2 ">
                         <Image
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
@@ -355,15 +355,30 @@ export default function TSAPage() {
                             width={"100%"}
                         />
 
-                        <TsaAuraSVG css="absolute top-[100px] left-[110px] 
+                        <TsaAuraSVG css="absolute 
+                            max-w-[300px] lg:max-h-[300px]
+                            -top-[120px] left-[70px] 
+
+                            lg:top-[100px] lg:left-[110px] 
                             lg:max-w-[440px] lg:max-h-[440px]
+                            xl:top-[80px] xl:left-[100px] 
+                            xl:max-w-[500px] xl:max-h-[500px]
+                            2xl:top-[120px] 2xl:left-[150px] 
+                            2xl:max-w-[650px] 2xl:max-h-[650px]
                             "/>
-                        <Ondas04SVG css="absolute top-[175px] left-[130px] 2xl:top-[185px]
+                        <Ondas04SVG css="absolute 
+                            max-w-[700px] lg:max-h-[170px]
+                            -top-[10px] left-[170px] 
+                            lg:top-[175px] lg:left-[130px] 
                             lg:max-w-[1300px] lg:max-h-[300px]
+                            xl:top-[185px] xl:left-[165px] 
+                            xl:max-w-[1300px] xl:max-h-[300px
+                            2xl:top-[250px] 2xl:left-[370px]
+                            2xl:max-w-[1650px] 2xl:max-h-[650px]
                             "/>
                     </div>
-                    <div className="w-1/2">
-                        <span className="flex gap-1 flex-col items-center align-center justify-center -mt-10 ">
+                    <div className="w-full md:w-1/2">
+                        <span className="flex gap-1 flex-col items-center align-center justify-center lg:-mt-10 2xl:mt-0">
                             <div className=" flex flex-col justify-center items-center lg:text-2xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
                                 <h1 className="font-lexend ">Caudales de inyeccion </h1>
                                 <h1 >desde <span className="font-lexend-bold  ">700 a 9000 m3/h</span></h1>
@@ -413,8 +428,9 @@ export default function TSAPage() {
                 <Ondas02SVG/>
                 </div>
                 </div> */}
+
                  <div className="relative w-screen ms-auto">
-                    <div
+                    {/* <div
                             className="my-10 md:mt-20 lg:absolute px-4 z-10
                             top-72 2xl:top-[40vh] 
                             right-16
@@ -429,7 +445,7 @@ export default function TSAPage() {
                                 <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
 
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                 <div

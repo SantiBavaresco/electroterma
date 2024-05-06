@@ -276,7 +276,12 @@ export default function TDAPage() {
                 <Image
                         // className="-top-16 left-1/2"
                         alt="Ventilador"
-                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
+                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] 
+                            top-36 left-4 
+                            md:left-12
+                            lg:left-2
+                            lg:top-[65px]
+                            2xl:top-[70px]   "
                         src="../img/solerpalau/tda/SolerPalauTda0.png"
                         width={"100%"}
                     />

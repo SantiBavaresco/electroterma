@@ -17,7 +17,7 @@ export const DiferencialVolumenBajo = () => {
 					<VolumenBajo size={70}/>
 				{/* <svg size={size || 70}/> */}
 				</span>
-				<p className="z-0 -translate-x-8 border-2 border-livered-title rounded-tr-3xl text-start text-2xl h-2/3 pl-10 pr-6 py-1 lg:w-[400px]">
+				<p className="z-0 -translate-x-8 bg-white bg-opacity-50 border-2 border-livered-title rounded-tr-3xl text-start text-xl lg:text-2xl h-2/3 pl-10 pr-6 py-1 lg:w-[400px]">
 					<h1>Niveles Bajos de volumen</h1>
 				</p>
 				
