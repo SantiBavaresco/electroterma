@@ -9,7 +9,6 @@ export default function TSALayout({
 			{/* <div className="inline-block max-w-lg text-center justify-center"> */}
 			<div>
 				{children}
-				HOLA
 			</div>
 		</section>
 	);
