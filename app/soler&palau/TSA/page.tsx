@@ -204,13 +204,13 @@ export default function TSAPage() {
 
              <section className="mr-auto ml-6  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
-                <div className="left-0 xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
+                <div className="left-0 w-[120px] md:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
                                 <Image
                                     alt="Otam Logo"
                                     src="../img/otamlogo.png"
-                                    width={200}
+                                    width="100%"
                                 />
-                                <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
+                                <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
                         </div>
                 </section>
                 
