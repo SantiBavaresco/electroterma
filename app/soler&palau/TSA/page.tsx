@@ -37,6 +37,10 @@ import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVo
 import { DiferencialStockPermanente } from "@/components/diferenciales/diferencialStockPermanente";
 import CardDisplay from "@/components/navbar/cardDisplay";
 import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
+import { TsaAuraSVG } from "@/public/svg/tsaAuraSvg";
+import { Ondas04SVG } from "@/public/svg/ondas04svg";
+
+
 
 
 interface ItemsNavbar {
@@ -338,21 +342,46 @@ export default function TSAPage() {
                 </div>
             </section>
 
-            {/* <section className="flex flex-col px-4 -mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
-                <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
-                <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
-                <p> funcionamiento</p>
+            <section className="h-screen w-[100vw] lg:h-[85vh] px-10 overflow-hidden ">
+                <div className="flex flex-col-1">
+                    <div className="relative w-1/2 ">
+                        <Image
+                            // className="-top-16 left-1/2"
+                            alt="Ventilador"
+                            className="inline-block 
+                                
+                                "
+                            src="../img/solerpalau/tsa/SolerPalauTsa2.png"
+                            width={"100%"}
+                        />
 
-            </section> */}
-            {/* <VideoScrubber/> */}
-            {/* <FrameScrubber /> */}
+                        <TsaAuraSVG css="absolute top-[100px] left-[110px] 
+                            lg:max-w-[440px] lg:max-h-[440px]
+                            "/>
+                        <Ondas04SVG css="absolute top-[175px] left-[130px] 2xl:top-[185px]
+                            lg:max-w-[1300px] lg:max-h-[300px]
+                            "/>
+                    </div>
+                    <div className="w-1/2">
+                        <span className="flex gap-1 flex-col items-center align-center justify-center -mt-10 ">
+                            <div className=" flex flex-col justify-center items-center lg:text-2xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
+                                <h1 className="font-lexend ">Caudales de inyeccion </h1>
+                                <h1 >desde <span className="font-lexend-bold  ">700 a 9000 m3/h</span></h1>
+                                <h1 className="font-lexend ">y contrapresiones </h1>
+                                <h1 className="font-lexend-bold  ">de 20 a 100 mmCA </h1>
 
-            {/* <Suspense fallback={<div>Loading</div>}>
-                <FrameFan />
-            </Suspense> */}
-            <section>
-                ACA VA LA IMG
-
+                            </div>
+                            <div className="flex flex-col space-y-4 items-center mt-0 max-h-10 ">
+                                <DiferencialMaterialGalvanizado/>
+                                <DiferencialMultiposicion/>
+                                <DiferencialVolumenBajo/>
+                                <DiferencialStockPermanente/>
+                            </div>
+                        </span>
+                    </div>
+                
+               
+                </div>
             </section>
             {/* <section className="mt-32 mb-10 mx-auto lg:w-[80%] flex justify-end lg:items-end items-center">
                 <div className="flex flex-col gap-4">
