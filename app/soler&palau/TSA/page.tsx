@@ -217,12 +217,12 @@ export default function TSAPage() {
         {BigScreen ? 
     // ----------------------- DESKTOP -----------------------
             <>
-                <section className="flex flex-col items-start min-h-[90vh] overflow-hidden
-                    md:min-h-full md:flex md:flex-row 
-                    h-[52%]
-                    lg:w-[50%]  lg:pl-10
-                    xl:justify-start xl:w-[95.5vw] xl:ml-auto xl:h-[75vh]
-                    2xl:justify-start 2xl:w-[97.5vw] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
+                <section className="flex flex-col items-start min-h-[85vh] overflow-hidden
+                     md:flex md:flex-row md:h-[80vh]
+
+                    lg:w-[50%] lg:min-h-[80vh] lg:pl-10 
+                    xl:justify-start xl:w-[95.5vw] xl:ml-auto xl:h-[65vh]
+                    2xl:justify-start 2xl:w-[97.5vw]   2xl:-mt-32   ">
                     <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[65%]  2xl:w-[58%]">
                         <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
 
@@ -293,7 +293,7 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="h-[115vh] w-[99vw] lg:h-[85vh] px-10 overflow-hidden ">
+                <section className="h-[90vh] w-[99vw] lg:min-h-[90vh] xl:h-[80vh] 2xl:h-[80vh] px-10 overflow-hidden ">
                     <div className="flex flex-col-1 ">
                         <div className="relative md:w-1/2 ">
                             <Image
@@ -370,69 +370,55 @@ export default function TSAPage() {
                         VENTILADOR
                     </span>
 
-                    <h1 className="relative mt-2 text-[44px] leading-none font-nunito-bold text-livered-title">
+                    <h1 className="relative mt-2 text-[38px] leading-none font-nunito-bold text-livered-title">
                         <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
                             <VinietaRojaSVG css=" h-[35px] w-[35px] " />
                         </div>
                         CENTRÍFUGO
                     </h1>
 
-                    <h1 className="mt-2 text-[44px] leading-none  font-nunito-bold text-livered-title">
+                    <h1 className="mt-2 text-[38px] leading-none  font-nunito-bold text-livered-title">
                         MULTIPALA - TSA
                     </h1>
 
-                    <h1 className=" text-lg  text-[#9D9D9C] font-nunito ">
+                    <h1 className=" text-[22px]  text-[#9D9D9C] font-nunito ">
                         DE SIMPLE ASPIRACIÓN
                     </h1>
                 </section>
 
-                <section className="flex flex-col items-start min-h-[90vh] overflow-hidden
-                    
-                    h-[52%]
-                ">
-                    <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[65%]  2xl:w-[58%]">
-                        <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
-
-                           
-
-                            <div className="mt-2 text-lg lg:text-4xl 2xl:text-[43px] 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
-                                <p className="lg:mt-3 2xl:mt-4">
+                <section className="w-[80vw] mx-6 flex items-start min-h-[100%] overflow-hidden h-[100%] ">
+                    <div className="z-20 ">
+                        <div className="flex flex-col items-center mt-6 lfont-lexend-bold tracking-widest ">
+                            <div className="mt-10 text-base tracking-normal text-[#4C4B4B] font-lexend-bold">
+                                <p className="">
                                     Sistema de
                                 </p>
-                                <p className="lg:mt-2 2xl:mt-4">
+                                <p className="">
                                     <span className="text-livered ">inyección</span>
                                     {" "}y{" "}
                                     <span className="text-livered ">extracción</span>
 
                                 </p>
-                                <p className="lg:mt-2 2xl:mt-4">
+                                <p className="">
                                     de{" "}
                                     <span className="text-livered ">aire limpio.</span>
 
                                 </p>
                             </div>
-                            {/* z-20  absolute translate-x-[70%] translate-y-[160px]
-                            lg:translate-y-[60px] lg:translate-x-[190px] 
-                            2xl:translate-y-[90px] 2xl:translate-x-[220px]  */}
                             
                         </div>
                     </div>
-                    <div className="relative max-w-screen -top-16 -left-6 -mt-10 z-10 overflow-y-hidde
-                        md:-left-[20%] md:top-16
-                        lg:-left-[6%] lg:-top-2
-                        2xl:left-[0%] 2xl:top-0 ">
-                    <Image
+                    <div className="relative max-w-screen z-10 overflow-y-hidde">
+                        <Image
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
-                            className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
+                            className="inline-block w-[310px] top-0  left-4 "
                             src="../img/solerpalau/tsa/SolerPalauTsa1.png"
                             width={"100%"}
                         />
-                        <div className="mt-32 ml-auto md:mt-10 w-full 2xl:mt-10 flex justify-end md:justify-center
-                            
-                            overflow-hidden">
+                        <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">
                             <Button
-                                className="z-10 bg-livered font-nunito text-white ml-auto mr-[40px] xl:mr-20 xl:ml-auto 2xl:text-2xl 2xl:mr-32 2xl:ml-auto "
+                                className="z-10 bg-livered font-nunito text-white ml-auto  "
                                 radius="full"
                                 size="lg"
                             >
@@ -443,58 +429,62 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="h-[115vh] w-screen lg:h-[85vh] px-10 overflow-hidden ">
+                <section className="w-[90vw] mt-10 mr-0 h-[220px] overflow-hidden ">
                     <div className="flex flex-col-1 ">
-                        <div className="relative md:w-1/2 ">
+                        <div className="relative max-w-screen w-1/2 pr-2 z-10 overflow-y-hidde">
                             <Image
                                 // className="-top-16 left-1/2"
                                 alt="Ventilador"
-                                className="inline-block 
-                                    
-                                    "
-                                src="../img/solerpalau/tsa/SolerPalauTsa2.png"
+                                className="inline-block w-[320px] top-0  "
+                                src="../img/solerpalau/tsa/SolerPalauTsa3.png"
                                 width={"100%"}
                             />
+                            
+                            
                         </div>
-                        <div className="w-full md:w-1/2">
-                            <span className="flex gap-1 flex-col items-center align-center justify-center lg:-mt-10 2xl:mt-0">
-                                <div className=" flex flex-col justify-center items-center lg:text-2xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
+                        
+                        <div className="w-1/2">
+                            <span className="flex gap-1 flex-col items-center align-center justify-center ">
+                                
+                                <div className="flex flex-col space-y-4 items-center mt-0 max-h-10 ">
+                                    <DiferencialMaterialGalvanizado size={40}/>
+                                    <DiferencialMultiposicion size={40} />
+                                    <DiferencialVolumenBajo size={40} text="Bajo nivel sonoro"/>
+                                    <DiferencialStockPermanente size={40} />
+                                </div>
+                            </span>
+                            <>
+                            </>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section className="mt-0 mb-10 w-[80vw] flex justify-end overflow-hidden">
+                    <div className="mt-0 ml- w-full overflow-hidden">
+                        <div className=" flex flex-col justify-start items-start  text-livered-title text-[10px] ">
                                     <h1 className="font-lexend ">Caudales de inyeccion </h1>
                                     <h1 >desde <span className="font-lexend-bold  ">700 a 9000 m3/h</span></h1>
                                     <h1 className="font-lexend ">y contrapresiones </h1>
                                     <h1 className="font-lexend-bold  ">de 20 a 100 mmCA </h1>
 
-                                </div>
-                                <div className="flex flex-col space-y-4 items-center mt-0 max-h-10 ">
-                                    <DiferencialMaterialGalvanizado/>
-                                    <DiferencialMultiposicion/>
-                                    <DiferencialVolumenBajo/>
-                                    <DiferencialStockPermanente/>
-                                </div>
-                            </span>
                         </div>
-                    
-                
                     </div>
-                </section>
-
-
-                <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
                     <Button
-                        className="z-10 bg-livered text-white 2xl:text-2xl md:mr-3"
+                        className="z-10 w-2/3 bg-livered text-white "
                         radius="full"
                         size="lg"
                     >
                         Manual <Download />
                     </Button>
-                </div>
+                </section>
             </>
         }
     {/* ----------------------- FIN MOBILE ----------------------- */}
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100%] 2xl:w-full min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            <section className="max-w-[100%] 2xl:w-full min-h-[100vh] h-[100%] -mt-20 md:-mt-10  2xl:-mt-20 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
@@ -522,17 +512,17 @@ export default function TSAPage() {
                     </div>
 
                 <div
-                    className=" w-[104%] flex flex-col justify-center items-center  lg:w-3/4 md:mt-20 2xl:mt-[20vh] mx-auto overflow-hidden
+                    className=" w-[104%] flex flex-col justify-center items-center mt-32  lg:w-3/4 md:mt-20 2xl:mt-[20vh] mx-auto overflow-hidden
                     "
                 >
-                    <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
+                    <h1 className="text-2xl ml-4 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
                         CARACTERÍSTICAS TÉCNICAS
                     </h1>
 
                    
                 
                     <Accordion
-                        className="h-[70vh] md:h-[55vh] lg:min-h-[75vh] 2xl:min-h-[10vh] "
+                        className="h-[60vh] md:h-[55vh] lg:min-h-[55vh] 2xl:min-h-[10vh] "
                         variant="splitted"
                         itemClasses={itemClasses}
                         selectionMode="multiple"
@@ -604,12 +594,12 @@ export default function TSAPage() {
                     
 
                     <div className="ms-auto mt-0">
-                        <div className="ms-auto mt-2 -mr-24 opacity-30">
+                        <div className="ms-auto mt-2 w-[250px] mr-10 md:w-[350px] md:mr-0 opacity-30">
                             <Image
                                 alt="Otam Logo"
                                 className=""
                                 src="../img/otamlogo.png"
-                                width={350}
+                                width="100%"
                             />
                         </div>
                         <div className="ms-auto lg:-mr-8">

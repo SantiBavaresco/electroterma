@@ -2,23 +2,25 @@
 import React from "react";
 import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
-// interface Props {
-//     svg?: string;
-//     text?: string;
-// 	size?: number;
+interface Props {
+    svg?: string;
+    text?: string;
+	size?: number;
 
-// }
+}
 
-export const DiferencialMultiposicion = () => {
+export const DiferencialMultiposicion : React.FC<Props> =  ({size, text}) => {
 	return (
 		<>
-			<main className="relative flex flex-grow justify-start items-center  ">
+			<main className="relative pl-4  flex flex-grow justify-start items-center  ">
 				<span className="z-10 ">
-					<VersatilidadAplicacion size={70}/>
+					<VersatilidadAplicacion size={size || 70}/>
 				{/* <svg size={size || 70}/> */}
 				</span>
-				<p className="z-0 -translate-x-8 bg-white bg-opacity-50 border-2 border-livered-title text-start rounded-tr-3xl text-xl lg:text-2xl h-2/3 px-10 py-1 lg:w-[400px]">
-					<h1>Multiposición</h1>
+				<p className="z-0 w-[190px] -translate-x-8 bg-white bg-opacity-50 border-2 border-livered-title rounded-tr-2xl md:rounded-tr-3xl  
+					text-start text-sm lg:text-2xl h-2/3 pl-8 pr-2 md:px-10 py-1 lg:w-[400px] ">
+
+					<span>{text ||"Multiposición"}</span>
 				</p>
 				
 			</main>
