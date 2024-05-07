@@ -429,7 +429,7 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="w-[90vw] mt-10 mr-0 h-[220px] overflow-hidden ">
+                <section className="w-[90vw] mt-10 mr-0 h-[225px] overflow-hidden ">
                     <div className="flex flex-col-1 ">
                         <div className="relative max-w-screen w-1/2 pr-2 z-10 overflow-y-hidde">
                             <Image
@@ -444,7 +444,7 @@ export default function TSAPage() {
                         </div>
                         
                         <div className="w-1/2">
-                            <span className="flex gap-1 flex-col items-center align-center justify-center ">
+                            <span className="flex gap-1 mt-4 flex-col items-center align-center justify-center ">
                                 
                                 <div className="flex flex-col space-y-4 items-center mt-0 max-h-10 ">
                                     <DiferencialMaterialGalvanizado size={40}/>
@@ -460,9 +460,9 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="mt-0 mb-10 w-[80vw] flex justify-end overflow-hidden">
-                    <div className="mt-0 ml- w-full overflow-hidden">
-                        <div className=" flex flex-col justify-start items-start  text-livered-title text-[10px] ">
+                <section className="mt-6 mb-10 w-[80vw] flex justify-end overflow-hidden">
+                    <div className="mt- ml- w-full overflow-hidden">
+                        <div className=" flex flex-col justify-start items-start pl-1 text-livered-title text-[14px] leading-[16px] ">
                                     <h1 className="font-lexend ">Caudales de inyeccion </h1>
                                     <h1 >desde <span className="font-lexend-bold  ">700 a 9000 m3/h</span></h1>
                                     <h1 className="font-lexend ">y contrapresiones </h1>
