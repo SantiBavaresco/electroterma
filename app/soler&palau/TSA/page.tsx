@@ -388,8 +388,8 @@ export default function TSAPage() {
 
                 <section className="w-[80vw] mx-6 flex items-start min-h-[100%] overflow-hidden h-[100%] ">
                     <div className="z-20 ">
-                        <div className="flex flex-col items-center mt-6 lfont-lexend-bold tracking-widest ">
-                            <div className="mt-10 text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
+                        <div className="min-w-1/2 flex flex-col items-center xm:mt-6 font-lexend-bold tracking-widest ">
+                            <div className="mt-10 text-[12px] xm:text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
                                 <p className="">
                                     Sistema de
                                 </p>
@@ -429,7 +429,7 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="w-[95vw] mt-10 mb-4 mr-0 xm:h-[225px] overflow-hidden ">
+                <section className="w-[95vw] mt-6 xm:mt-10 mb-4 mr-0 xm:h-[225px] overflow-hidden ">
                     <div className="flex flex-col-1 ">
                         <div className="relative max-w-full w-[225px] mt-4 pr-2 z-10 overflow-y-hidde">
                             <Image
@@ -462,7 +462,8 @@ export default function TSAPage() {
 
                 <section className="mt-0 mb-10 w-[80vw] flex justify-end overflow-hidden">
                     <div className="mt- ml- w-full overflow-hidden">
-                        <div className=" flex flex-col justify-start items-start pl-1 text-livered-title text-[10px] leading-[11px] ">
+                        <div className=" flex flex-col justify-start items-start pl-1 text-livered-title 
+                            text-[10px] leading-[12px] xm:text-[11px] xm:leading-[16px]  ">
                                     <h1 className="font-lexend ">Caudales de inyeccion </h1>
                                     <h1 >desde <span className="font-lexend-bold  ">700 a 9000 m3/h</span></h1>
                                     <h1 className="font-lexend ">y contrapresiones </h1>
