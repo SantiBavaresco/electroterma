@@ -172,7 +172,7 @@ export default function TSAPage() {
 
 
     return (
-        <div className="h-full flex flex-col items-center justify-center ">
+        <div className="h-full flex flex-col items-center justify-center overflow-hidden xm:overflow-none">
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93vh] lg:max-h-[93vh] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
@@ -189,7 +189,7 @@ export default function TSAPage() {
                         </h2>
                     </div>
                     <div className="mr-4 md:mr-12  ">
-                        <Button size="lg" radius="full" className="2xl:text-2xl px-8">
+                        <Button size={BigScreen ? "lg" : "sm"}radius="full" className="2xl:text-2xl px-4 md:px-8">
                             Consúltanos
                         </Button>
                     </div>
@@ -351,9 +351,9 @@ export default function TSAPage() {
                 </section>
 
 
-                <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
+                <div className="w-[90vw]  flex flex-row justify-end items-end overflow-hidden">
                     <Button
-                        className="z-10 bg-livered text-white 2xl:text-2xl md:mr-3"
+                        className="z-10 bg-livered text-white  2xl:text-2xl md:mr-3"
                         radius="full"
                         size="lg"
                     >
@@ -420,7 +420,7 @@ export default function TSAPage() {
                             <Button
                                 className="z-10 bg-livered font-nunito text-white ml-auto  "
                                 radius="full"
-                                size="lg"
+                                size="md"
                             >
                                 Asesoramiento
                             </Button>
@@ -472,9 +472,9 @@ export default function TSAPage() {
                         </div>
                     </div>
                     <Button
-                        className="z-10 w-2/3 bg-livered text-white "
+                        className="z-10 w-2/3   bg-livered text-white "
                         radius="full"
-                        size="lg"
+                        size="md"
                     >
                         Manual <Download />
                     </Button>
@@ -626,20 +626,20 @@ export default function TSAPage() {
                             fileName={demoImageNames}
                         />
                     </div>
-                    <div className="flex justify-bettween items-center mt-10 md:mt-2 w-full">
-                        <div className="me-auto flex justify-start items-start ">
+                    <div className="flex justify-bettween items-center mt-10 xm:mx-auto md:mt-2 w-full">
+                        <div className="mx-auto xm:ml-10 flex w-[100px] xm:w-[200px] justify-start items-start ">
                             <Image
                                 alt="Otam Logo"
                                 className="scale-1"
                                 src="../img/otamlogo.png"
-                                width={200}
+                                width="100%"
                             />
                         </div>
-                        <div className="w-1/2 float-right flex justify-end items-end pr-10 md:pr-0">
+                        <div className="w-auto xm:w-1/2 float-right flex justify-end items-end pr-16 xm:pr-12 md:pr-0">
                             <Button
                                 className="  z-10 bg-livered text-white 2xl:text-2xl"
                                 radius="full"
-                                size="lg"
+                                size={BigScreen ? "lg" : "sm"}
                             >
                                 Asesoramiento
                             </Button>
