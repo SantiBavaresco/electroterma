@@ -16,8 +16,12 @@ export const DiferencialVolumenBajo : React.FC<Props> =  ({size, text}) => {
 					<VolumenBajo size={size || 70}/>
 				{/* <svg size={size || 70}/> */}
 				</span>
-				<p className="z-0 w-[190px] -translate-x-8 bg-white bg-opacity-50 border-2 border-livered-title rounded-tr-2xl md:rounded-tr-3xl  
-					text-start text-sm lg:text-2xl h-2/3 pl-8 pr-2 md:px-10 py-1 lg:w-[400px] ">
+				<p className="z-0  h-2/3 pl-8 pr-2 md:px-10 py-1 -translate-x-8 
+					bg-white bg-opacity-50 border-2 border-livered-title rounded-tr-2xl md:rounded-tr-3xl  
+					text-start xs:text-[10px] xm:text-sm lg:text-2xl  
+					xs:w-[155px]
+					xm:w-[190px]
+					lg:w-[400px] ">
 
 					<span>{text || "Niveles Bajos de volumen"}</span>
 				</p>

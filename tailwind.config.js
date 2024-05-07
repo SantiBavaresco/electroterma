@@ -14,6 +14,11 @@ module.exports = {
 
   ],
   theme: {
+    screens:{
+      'xs': '320px',
+      'xm': '375px',
+      
+    },
     extend: {
       fontFamily:{
         lexend: "lexend",

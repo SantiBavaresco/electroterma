@@ -429,9 +429,9 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="w-[90vw] mt-10 mr-0 h-[225px] overflow-hidden ">
+                <section className="w-[95vw] mt-10 mb-4 mr-0 xm:h-[225px] overflow-hidden ">
                     <div className="flex flex-col-1 ">
-                        <div className="relative max-w-screen w-1/2 mt-4 pr-2 z-10 overflow-y-hidde">
+                        <div className="relative max-w-full w-[225px] mt-4 pr-2 z-10 overflow-y-hidde">
                             <Image
                                 // className="-top-16 left-1/2"
                                 alt="Ventilador"
@@ -446,7 +446,7 @@ export default function TSAPage() {
                         <div className="w-1/2">
                             <span className="flex gap-1 mt-1 flex-col items-center align-center justify-center ">
                                 
-                                <div className="flex flex-col space-y-4 items-center mt-0 max-h-10 ">
+                                <div className="flex flex-col xm:space-y-4 items-center mt-0 max-h-10 ">
                                     <DiferencialMaterialGalvanizado size={40}/>
                                     <DiferencialMultiposicion size={40} />
                                     <DiferencialVolumenBajo size={40} text="Bajo nivel sonoro"/>
@@ -460,7 +460,7 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="mt-6 mb-10 w-[80vw] flex justify-end overflow-hidden">
+                <section className="mt-0 mb-10 w-[80vw] flex justify-end overflow-hidden">
                     <div className="mt- ml- w-full overflow-hidden">
                         <div className=" flex flex-col justify-start items-start pl-1 text-livered-title text-[10px] leading-[11px] ">
                                     <h1 className="font-lexend ">Caudales de inyeccion </h1>
