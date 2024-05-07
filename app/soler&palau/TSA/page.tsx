@@ -183,7 +183,7 @@ export default function TSAPage() {
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-4 md:ml-12">
-                        <h2 className="text-white text-lg md:text-2xl 2xl:text-3xl font-nunito">
+                        <h2 className="text-white text-[15px] md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
@@ -365,23 +365,23 @@ export default function TSAPage() {
     // ----------------------- MOBILE -----------------------
             <>
                 <section className="w-[80vw] mx-6">
-                    <span className=" text-2xl text-[#9D9D9C] font-nunito ">
+                    <span className=" text-[20px] text-[#9D9D9C] font-nunito ">
                         
                         VENTILADOR
                     </span>
 
-                    <h1 className="relative mt-2 text-[38px] leading-none font-nunito-bold text-livered-title">
+                    <h1 className="relative mt-2 text-[35px] leading-none font-nunito-bolder text-livered-title">
                         <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
                             <VinietaRojaSVG css=" h-[35px] w-[35px] " />
                         </div>
                         CENTRÍFUGO
                     </h1>
 
-                    <h1 className="mt-2 text-[38px] leading-none  font-nunito-bold text-livered-title">
+                    <h1 className="mt-2 text-[35px] leading-none  font-nunito-bolder text-livered-title">
                         MULTIPALA - TSA
                     </h1>
 
-                    <h1 className=" text-[22px]  text-[#9D9D9C] font-nunito ">
+                    <h1 className=" text-[18px]  text-[#9D9D9C] font-nunito ">
                         DE SIMPLE ASPIRACIÓN
                     </h1>
                 </section>
@@ -389,7 +389,7 @@ export default function TSAPage() {
                 <section className="w-[80vw] mx-6 flex items-start min-h-[100%] overflow-hidden h-[100%] ">
                     <div className="z-20 ">
                         <div className="flex flex-col items-center mt-6 lfont-lexend-bold tracking-widest ">
-                            <div className="mt-10 text-base tracking-normal text-[#4C4B4B] font-lexend-bold">
+                            <div className="mt-10 text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
                                 <p className="">
                                     Sistema de
                                 </p>
