@@ -431,7 +431,7 @@ export default function TSAPage() {
 
                 <section className="w-[90vw] mt-10 mr-0 h-[225px] overflow-hidden ">
                     <div className="flex flex-col-1 ">
-                        <div className="relative max-w-screen w-1/2 pr-2 z-10 overflow-y-hidde">
+                        <div className="relative max-w-screen w-1/2 mt-4 pr-2 z-10 overflow-y-hidde">
                             <Image
                                 // className="-top-16 left-1/2"
                                 alt="Ventilador"
