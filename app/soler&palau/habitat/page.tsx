@@ -224,7 +224,7 @@ export default function HabitatPage() {
                                 <VinietaRojaSVG css=" h-[20px] w-[20px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
                                 
                             </div>
-                            VENTILADOR
+                            VENTILADORaaaa
                             
 
                         </span>
