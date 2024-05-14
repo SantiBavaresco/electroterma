@@ -471,13 +471,22 @@ export default function TSAPage() {
 
                         </div>
                     </div>
-                    <Button
+                    <div className="mb-auto ml-auto w-full flex justify-end items-start overflow-hidden">
+                            <Button
+                                className="z-10 bg-livered font-nunito text-white ml-auto  "
+                                radius="full"
+                                size="sm"
+                            >
+                                Manual <Download size={30}/>
+                            </Button>
+                    </div>
+                    {/* <Button
                         className="z-10 w-2/3   bg-livered text-white "
                         radius="full"
                         size="sm"
                     >
-                        Manual <Download size={30}/>
-                    </Button>
+                        
+                    </Button> */}
                 </section>
             </>
         }
