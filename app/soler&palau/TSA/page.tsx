@@ -429,7 +429,7 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="w-[95vw] mt-6 xm:mt-10 mb-4 mr-0 xm:h-[225px] overflow-hidden ">
+                <section className="w-[95vw] mt-6 xm:mt-10 mb-4 mr-0 xs:h-[180px] xm:h-[225px] overflow-hidden ">
                     <div className="flex flex-col-1 ">
                         <div className="relative max-w-full w-[225px] mt-4 pr-2 z-10 overflow-y-hidde">
                             <Image
@@ -444,9 +444,9 @@ export default function TSAPage() {
                         </div>
                         
                         <div className="w-1/2">
-                            <span className="flex gap-1 mt-1 flex-col items-center align-center justify-center ">
+                            <span className="flex gap-1 mt-1 mr-2 flex-col items-center align-center justify-center ">
                                 
-                                <div className="flex flex-col xm:space-y-4 items-center mt-0 max-h-10 ">
+                                <div className="flex flex-col  xs:space-y-1 xm:space-y-4 items-center mt-0 max-h-10 ">
                                     <DiferencialMaterialGalvanizado size={40}/>
                                     <DiferencialMultiposicion size={40} />
                                     <DiferencialVolumenBajo size={40} text="Bajo nivel sonoro"/>

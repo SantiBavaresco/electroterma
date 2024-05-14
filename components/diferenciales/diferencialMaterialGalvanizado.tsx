@@ -18,9 +18,9 @@ export const DiferencialMaterialGalvanizado : React.FC<Props> =  ({size, text}) 
 				</span>
 				<p className="z-0  h-2/3 pl-8 pr-2 md:px-10 py-1 -translate-x-8 
 					bg-white bg-opacity-50 border-2 border-livered-title rounded-tr-2xl md:rounded-tr-3xl  
-					text-start xs:text-[10px] xm:text-sm lg:text-2xl  
-					xs:w-[155px]
-					xm:w-[190px]
+					text-start xs:text-[9px] xm:text-[12px] lg:text-2xl  
+					xs:w-[140px]
+					xm:w-[170px]
 					lg:w-[400px] ">
 					<span>{text || "Material Galvanizado"}</span>
 				</p>
