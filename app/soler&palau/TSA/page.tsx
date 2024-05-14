@@ -420,7 +420,7 @@ export default function TSAPage() {
                             <Button
                                 className="z-10 bg-livered font-nunito text-white ml-auto  "
                                 radius="full"
-                                size="md"
+                                size="sm"
                             >
                                 Asesoramiento
                             </Button>
@@ -474,9 +474,9 @@ export default function TSAPage() {
                     <Button
                         className="z-10 w-2/3   bg-livered text-white "
                         radius="full"
-                        size="md"
+                        size="sm"
                     >
-                        Manual <Download />
+                        Manual <Download size={30}/>
                     </Button>
                 </section>
             </>
