@@ -490,7 +490,7 @@ export default function TSAPage() {
                 </section>
             </>
         }
-    {/* ----------------------- FIN MOBILE ----------------------- */}
+    {/* --------------------------- FIN MOBILE --------------------------- */}
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
