@@ -286,7 +286,7 @@ export default function RLSPage() {
                     lg:w-[50%]  lg:pl-10
                     xl:justify-start xl:w-[95.5vw] xl:ml-auto 
                     2xl:justify-start 2xl:w-[97.5vw] 2xl:h-[75vh] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
-                    <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[65%]  2xl:w-[58%]">
+                    <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[68%]  2xl:w-[58%]">
                         <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
 
                             <span className="relative text-lg lg:text-5xl 2xl:text-[61px] text-[#9D9D9C] font-nunito ">
@@ -296,15 +296,15 @@ export default function RLSPage() {
                                 VENTILADOR
                             </span>
 
-                            <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
+                            <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title">
                                 CENTRÍFUGO
                             </h1>
 
-                            <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
+                            <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title">
                                 AUTOLIMITANTE RLS
                             </h1>
 
-                            <h1 className="mt-2 text-lg lg:mt-6  lg:text-[43px] 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
+                            <h1 className="mt-2 text-lg lg:mt-6  lg:text-5xl 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
                             DE SIMPLE ASPIRACIÓN
                             </h1>
 
