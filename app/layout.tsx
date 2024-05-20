@@ -64,8 +64,8 @@ export default function RootLayout({
                             <span className="font-lexeng-bolder font-bold">Calle 5 entre 6 y 8</span>
                             <span className="font-lexeng-bold">Parque Industrial Mar del Plata - Batán</span>
                             <div className="my-2">
+                                <span className="flex items-center justify-center font-lexeng-bolder font-bold text-center">223-4649999</span>
                                 <span className="flex flex-row items-center justify-center ">
-									223-4649999
 									<IoMailOutline className="mx-2 text-orange-600 text-xl" /> 
 									info@electroterma.com.ar
 								</span>
@@ -89,10 +89,10 @@ export default function RootLayout({
                                 href="https://santiagobavaresco.ar"
                                 title="Bavaresco Santiago Portfolio"
                             >
-                                <p className="text-primary">
+                                <p className="text-primary text-sm">
                                     Bavaresco Santiago
                                 </p>
-                                 <span className="text-default-600">
+                                 <span className="text-default-600 text-sm">
                                     © 2024 
                                 </span>
                                 
@@ -100,13 +100,13 @@ export default function RootLayout({
                                 
                             </Link>
                             </div>
-                            <div className="invisible md:visible absolute right-24 ">
+                            <div className=" -mt-20 absolute right-0 md:right-24 w-[60px] md:w-[90px]">
                                 <Link href="/">
                                     <Image
                                     src="../electroterma-logo.png"
                                     // height={50}
                                     
-                                    width={90}
+                                    width="100%"
                                     alt="hola"
                                     />
                                 </Link>

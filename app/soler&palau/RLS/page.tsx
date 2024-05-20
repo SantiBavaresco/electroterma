@@ -66,7 +66,7 @@ export default function RLSPage() {
         },
         {
             key: "edit",
-            label: ["Ventilador Centrifigo","TDA"],
+            label: ["Ventilador ","Centrifigo TDA"],
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
@@ -185,14 +185,14 @@ export default function RLSPage() {
                     />
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-4 md:ml-12">
-                        <h2 className="text-white text-lg md:text-2xl 2xl:text-3xl font-nunito">
+                    <div className="ml-[35px] md:ml-12">
+                        <h2 className="text-white text-md md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
                     <div className="mr-4 md:mr-12  ">
-                        <Button size="lg" radius="full" className="2xl:text-2xl px-8">
+                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0">
                             Consúltanos
                         </Button>
                     </div>
@@ -215,7 +215,7 @@ export default function RLSPage() {
                 
             </section> */}
             
-            <section className="mr-auto ml-6  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
+            <section className="mr-auto ml-[45px]  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
                 <div className="left-0 w-[120px] md:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
                                 <Image
@@ -385,8 +385,9 @@ export default function RLSPage() {
                         <div className="min-w-1/2 flex flex-col items-center xm:mt-6 font-lexend-bold tracking-widest ">
                             <div className="mt-10 text-[12px] xm:text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
                                 <p className="">
-                                    Extracción de aire con
+                                    Extracción 
                                 </p>
+                                <p>de aire con</p>
                                 
                                 <p className="">
                                     <span className="text-livered ">niveles de suiciedad.</span>
@@ -447,7 +448,7 @@ export default function RLSPage() {
                 <Button
                     className="z-10 bg-livered text-white 2xl:text-2xl md:mr-3"
                     radius="full"
-                    size="lg"
+                    size={BigScreen ? "lg" : "sm"}
                 >
                     Manual <Download />
                 </Button>
@@ -457,7 +458,7 @@ export default function RLSPage() {
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100%] 2xl:w-full min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            <section className="max-w-[100%] 2xl:w-full min-h-[90vh] lg:min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
@@ -487,14 +488,14 @@ export default function RLSPage() {
                     className=" w-[104%] flex flex-col justify-center items-center  lg:w-3/4 md:mt-20 2xl:mt-[20vh] mx-auto overflow-hidden
                     "
                 >
-                    <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
+                    <h1 className="text-2xl ml-6 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
                         CARACTERÍSTICAS TÉCNICAS
                     </h1>
 
                    
                 
                     <Accordion
-                        className="h-[70vh] md:h-[55vh] lg:min-h-[75vh] 2xl:min-h-[10vh] "
+                        className="z-10 h-[25vh] md:h-[55vh] lg:min-h-[75vh] 2xl:min-h-[10vh] "
                         variant="splitted"
                         itemClasses={itemClasses}
                         selectionMode="multiple"
@@ -599,24 +600,25 @@ export default function RLSPage() {
 
                     
 
-                    <div className="ms-auto mt-0">
-                        <div className="ms-auto mt-2 -mr-24 opacity-30">
+                    <div className="z-0 mx-auto mt-0">
+                        <div className="mt-2  opacity-30">
                             <Image
                                 alt="Otam Logo"
                                 className=""
                                 src="../img/otamlogo.png"
-                                width={350}
+                                width={300}
                             />
                         </div>
-                        <div className="ms-auto lg:-mr-8">
+                        
+                    </div>
+                    <div className="mx-auto  lg:-mr-8">
                             <Image
                                 alt="Electroterma Logo"
                                 className=""
                                 src="../img/electrotermalogoletras.png"
-                                width={390}
+                                width={340}
                             />
                         </div>
-                    </div>
                 </div>
             </section>
 {/* </section> */}
@@ -631,19 +633,19 @@ export default function RLSPage() {
                         />
                     </div>
                     <div className="flex justify-bettween items-center mt-10 md:mt-2 w-full">
-                        <div className="me-auto flex justify-start items-start ">
+                        <div className="ml-[45px] me-auto flex justify-start items-start ">
                             <Image
                                 alt="Otam Logo"
                                 className="scale-1"
                                 src="../img/otamlogo.png"
-                                width={200}
+                                width={150}
                             />
                         </div>
                         <div className="w-1/2 float-right flex justify-end items-end pr-10 md:pr-0">
                             <Button
                                 className="  z-10 bg-livered text-white 2xl:text-2xl"
                                 radius="full"
-                                size="lg"
+                                size={BigScreen ? "lg" : "sm"}
                             >
                                 Asesoramiento
                             </Button>
@@ -654,22 +656,25 @@ export default function RLSPage() {
             <section className="max-w-[80%] w-full h-[100%] z-10 my-10">
 
             <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl text-center leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
-                        Otros productos de Soler & Palau
+                        Otros productos de Soler&Palau
                     </h1>
                 <div className="flex justify-center gap-2 ">
                     
-                    
+                <div className="grid grid-cols-2 gap-4   "> 
                 {itemsNav?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
-                    <NextLink
-                                                        className=""
-                                                        color="foreground"
-                                                        href={item.href}
-                                                        key={item.key}
-                                                    >
-                        <CardDisplay data={item}/>
-                    </NextLink>
-                    ))}           
+                    
+                        <NextLink
+                                                            className="border-1 border-gray-50 rounded-[13px]"
+                                                            color="foreground"
+                                                            href={item.href}
+                                                            key={item.key}
+                                                        >
+                            <CardDisplay data={item}/>
+                        </NextLink>
+                    ))}  
+                    </div>
+                         
                 </div>
 
             </section>

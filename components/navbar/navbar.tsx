@@ -92,7 +92,7 @@ export const Navbar = () => {
             key: "first",
             label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
             labelShort: "RLS",
-            img: "../img/navbar/NavBarRLSSolerPalau.png",
+            img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
         },
         {
@@ -143,7 +143,7 @@ export const Navbar = () => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className="px-10 flex justify-center items-center"
+            className="lg:px-10 flex justify-center items-center"
             position="sticky"
         >
             <NavbarBrand>
@@ -155,7 +155,7 @@ export const Navbar = () => {
                         // className="sm:w-[180px]"
                         src="../img/electrotermalogoletrasNoPadding.png"
                         // height={50}
-                        width={200}
+                        width={250}
                         alt="hola"
                     />
                     {/* <p className="font-bold text-inherit">Electroterma</p> */}

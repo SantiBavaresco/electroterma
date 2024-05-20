@@ -35,7 +35,7 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, ...props }) => {
                     src={data.img}
                     key={data.key}
                 />
-                <div className={`min-h-10 h-16 text-center flex flex-col  justify-center text-white font-nunito bg-livered-title group-hover:bg-[#B2B2B2]
+                <div className={` h-[45px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito bg-livered-title group-hover:bg-[#B2B2B2]
                     ${(data.key==="first") ? " md:rounded-bl-[28px]" : "rounded-xl md:rounded-none"} 
                     ${(data.key==="last") ? " md:rounded-br-[28px]" : "rounded-xl md:rounded-none"} 
                 `}>
