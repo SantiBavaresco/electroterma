@@ -4,7 +4,7 @@ import { title } from "@/components/primitives";
 // import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 import FrameScrubber from "@/components/frameScrubber/frameScrubber";
 
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
@@ -52,7 +52,7 @@ export default function TDAPage() {
             key: "first",
             label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
             labelShort: "RSL",
-            img: "../img/navbar/NavBarRSLSolerPalau.png",
+            img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RSL",
         },
         {
@@ -77,6 +77,20 @@ export default function TDAPage() {
             href: "/soler&palau/habitat",
         },
     ];
+
+    const [BigScreen, setBigScreen] = useState(false);
+
+    useEffect(() => {
+        const handler = (e:any) => setBigScreen(e.matches);
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        mediaQuery.addEventListener('change', handler);
+        setBigScreen(mediaQuery.matches);
+
+        return () => {
+        mediaQuery.removeEventListener('change', handler);
+        };
+    }, []);
 
     const defaultContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
@@ -198,20 +212,23 @@ export default function TDAPage() {
                 </div>
                 
             </section> */}
-            <section className="md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
+            
+            <section className="mr-auto ml-6  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
-            <div className=" xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
-                            <Image
-                                alt="Otam Logo"
-                                src="../img/otamlogo.png"
-                                width={200}
-                            />
-                            <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
-                    </div>
-            </section>
+                <div className="left-0 w-[120px] md:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
+                                <Image
+                                    alt="Otam Logo"
+                                    src="../img/otamlogo.png"
+                                    width="100%"
+                                />
+                                <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
+                        </div>
+                </section>
 
-                  
-            <section className="flex flex-col items-start min-h-[110vh] overflow-hidden
+            {BigScreen ? 
+            // ----------------------- DESKTOP -----------------------
+            <> 
+             <section className="flex flex-col items-start min-h-[110vh] overflow-hidden
                 md:min-h-full md:flex md:flex-row-reverse 
                 lg:w-[50%] 
                 xl:justify-start xl:w-[100%] xl:ml-auto 
@@ -301,6 +318,77 @@ export default function TDAPage() {
                     
                 </div>
             </section>
+            </> 
+            :// ----------------------- MOBILE -----------------------
+            <>
+                <section className="w-[80vw] mx-6">
+                    <span className=" text-[20px] text-[#9D9D9C] font-nunito ">
+                        
+                        VENTILADOR
+                    </span>
+
+                    <h1 className="relative mt-2 text-[35px] leading-none font-nunito-bolder text-livered-title">
+                        <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
+                            <VinietaRojaSVG css=" h-[35px] w-[35px] " />
+                        </div>
+                        CENTRÍFUGO
+                    </h1>
+
+                    <h1 className="mt-2 text-[35px] leading-none  font-nunito-bolder text-livered-title">
+                        MULTIPALA - TDA
+                    </h1>
+
+                    <h1 className=" text-[18px]  text-[#9D9D9C] font-nunito ">
+                        DE DOBLE ASPIRACIÓN
+                    </h1>
+                </section>
+
+                <section className="w-[80vw] mx-6 flex items-start min-h-[100%] overflow-hidden h-[100%] ">
+                    <div className="z-20 ">
+                        <div className="min-w-1/2 flex flex-col items-center xm:mt-6 font-lexend-bold tracking-widest ">
+                            <div className="mt-10 text-[12px] xm:text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
+                                <p className="">
+                                Inyección de
+                                </p>
+                                <p className="">
+                                    <span className="text-livered ">aire limpio</span>
+
+                                </p>
+                                <p className="">
+                                    dentro de equipos HVAC{" "}
+                                    {/* <span className="text-livered ">aire limpio.</span> */}
+
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div className="relative max-w-screen z-10 overflow-y-hidde">
+                        <Image
+                            // className="-top-16 left-1/2"
+                            alt="Ventilador"
+                            className="inline-block w-[310px] top-0  left-4 "
+                            src="../img/solerpalau/tda/SolerPalauTda0.png"
+                            width={"100%"}
+                        />
+                        <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">
+                            <Button
+                                className="z-10 bg-livered font-nunito text-white ml-auto  "
+                                radius="full"
+                                size="sm"
+                            >
+                                Asesoramiento
+                            </Button>
+                        </div>
+                        
+                    </div>
+                </section>
+
+              
+            </>}
+    {/* --------------------------- FIN MOBILE --------------------------- */}
+
+           
 
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}

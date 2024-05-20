@@ -4,7 +4,7 @@ import { title } from "@/components/primitives";
 // import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 import FrameScrubber from "@/components/frameScrubber/frameScrubber";
 
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
@@ -54,7 +54,7 @@ export default function RLSPage() {
             key: "first",
             label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
             labelShort: "RLS",
-            img: "../img/navbar/NavBarRLSSolerPalau.png",
+            img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
         },
         {
@@ -79,6 +79,20 @@ export default function RLSPage() {
             href: "/soler&palau/habitat",
         },
     ];
+
+    const [BigScreen, setBigScreen] = useState(false);
+
+    useEffect(() => {
+        const handler = (e:any) => setBigScreen(e.matches);
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        mediaQuery.addEventListener('change', handler);
+        setBigScreen(mediaQuery.matches);
+
+        return () => {
+        mediaQuery.removeEventListener('change', handler);
+        };
+    }, []);
 
     const defaultContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
@@ -200,15 +214,16 @@ export default function RLSPage() {
                 </div>
                 
             </section> */}
-             <section className="md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
+            
+            <section className="mr-auto ml-6  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
-                <div className=" xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
+                <div className="left-0 w-[120px] md:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
                                 <Image
                                     alt="Otam Logo"
                                     src="../img/otamlogo.png"
-                                    width={200}
+                                    width="100%"
                                 />
-                                <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
+                                <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
                         </div>
                 </section>
             {/* <section className="flex flex-col items-start w-3/4 md:ml-10 mt-10 mb-8 justify-start">
@@ -262,80 +277,156 @@ export default function RLSPage() {
                 </div>
             </section> */}
 
-            <section className="flex flex-col items-start min-h-[90vh] overflow-hidden
-                md:min-h-full md:flex md:flex-row 
-                h-[52%]
-                lg:w-[50%]  lg:pl-10
-                xl:justify-start xl:w-[95.5vw] xl:ml-auto 
-                2xl:justify-start 2xl:w-[97.5vw] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
-                <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[65%]  2xl:w-[58%]">
-                    <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
+        {BigScreen ? 
+            // ----------------------- DESKTOP -----------------------
+            <>
+                <section className="flex flex-col items-start min-h-[90vh] overflow-hidden
+                    md:min-h-full md:flex md:flex-row 
+                    h-[52%]
+                    lg:w-[50%]  lg:pl-10
+                    xl:justify-start xl:w-[95.5vw] xl:ml-auto 
+                    2xl:justify-start 2xl:w-[97.5vw] 2xl:h-[75vh] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
+                    <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[65%]  2xl:w-[58%]">
+                        <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
 
-                        <span className="relative text-lg lg:text-5xl 2xl:text-[61px] text-[#9D9D9C] font-nunito ">
-                            <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
-                                <VinietaNaranjaSVG css=" h-[20px] w-[20px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
+                            <span className="relative text-lg lg:text-5xl 2xl:text-[61px] text-[#9D9D9C] font-nunito ">
+                                <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
+                                    <VinietaNaranjaSVG css=" h-[20px] w-[20px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
+                                </div>
+                                VENTILADOR
+                            </span>
+
+                            <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
+                                CENTRÍFUGO
+                            </h1>
+
+                            <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
+                                AUTOLIMITANTE RLS
+                            </h1>
+
+                            <h1 className="mt-2 text-lg lg:mt-6  lg:text-[43px] 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
+                            DE SIMPLE ASPIRACIÓN
+                            </h1>
+
+                            <div className="mt-2 text-lg lg:text-4xl 2xl:text-[43px] 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
+                                <p className="lg:mt-3 2xl:mt-4">
+                                    Extracción de aire con
+                                </p>
+                                <p className="lg:mt-2 2xl:mt-4">
+                                    <span className="text-livered ">niveles de suiciedad.</span>
+                                </p>
                             </div>
-                            VENTILADOR
-                        </span>
-
-                        <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
-                            CENTRÍFUGO
-                        </h1>
-
-                        <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
-                            AUTOLIMITANTE RLS
-                        </h1>
-
-                        <h1 className="mt-2 text-lg lg:mt-6  lg:text-[43px] 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
-                        DE SIMPLE ASPIRACIÓN
-                        </h1>
-
-                        <div className="mt-2 text-lg lg:text-4xl 2xl:text-[43px] 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
-                            <p className="lg:mt-3 2xl:mt-4">
-                                Extracción de aire con
-                            </p>
-                            <p className="lg:mt-2 2xl:mt-4">
-                                <span className="text-livered ">niveles de suiciedad.</span>
-                            </p>
+                            {/* z-20  absolute translate-x-[70%] translate-y-[160px]
+                            lg:translate-y-[60px] lg:translate-x-[190px] 
+                            2xl:translate-y-[90px] 2xl:translate-x-[220px]  */}
+                            
                         </div>
-                        {/* z-20  absolute translate-x-[70%] translate-y-[160px]
-                        lg:translate-y-[60px] lg:translate-x-[190px] 
-                        2xl:translate-y-[90px] 2xl:translate-x-[220px]  */}
+                    </div>
+                    <div className="relative max-w-screen -top-16 -left-6 -mt-10 z-10 overflow-y-hidde
+                        md:-left-[20%] md:top-16
+                        lg:-left-[6%] lg:-top-2
+                        2xl:left-[0%] 2xl:top-0 ">
+                    <Image
+                            // className="-top-16 left-1/2"
+                            alt="Ventilador"
+                            className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
+                            src="../img/solerpalau/rls/SolerPalauRls1.png"
+                            width={"100%"}
+                        />
+                        <div className="mt-32 ml-auto md:mt-10 w-full 2xl:mt-10 flex justify-end md:justify-center
+                            
+                            overflow-hidden">
+                            <Button
+                                className="z-10 bg-livered font-nunito text-white ml-auto mr-[40px] xl:mr-20 xl:ml-auto 2xl:text-2xl 2xl:mr-32 2xl:ml-auto "
+                                radius="full"
+                                size="lg"
+                            >
+                                Asesoramiento
+                            </Button>
+                        </div>
                         
                     </div>
-                </div>
-                <div className="relative max-w-screen -top-16 -left-6 -mt-10 z-10 overflow-y-hidde
-                    md:-left-[20%] md:top-16
-                    lg:-left-[6%] lg:-top-2
-                    2xl:left-[0%] 2xl:top-0 ">
-                <Image
-                        // className="-top-16 left-1/2"
-                        alt="Ventilador"
-                        className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
-                        src="../img/solerpalau/rls/SolerPalauRls1.png"
-                        width={"100%"}
-                    />
-                    <div className="mt-32 ml-auto md:mt-10 w-full 2xl:mt-10 flex justify-end md:justify-center
+                    </section>
+
+                    <section className="flex flex-col px-4 mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
+                        <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
+                        <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
+                        <p> funcionamiento</p>
+
+                    </section>
+                </>
+            :
+            // ----------------------- MOBILE -----------------------
+            <>
+                <section className="w-[80vw] mx-6">
+                    <span className=" text-[20px] text-[#9D9D9C] font-nunito ">
                         
-                        overflow-hidden">
-                        <Button
-                            className="z-10 bg-livered font-nunito text-white ml-auto mr-[40px] xl:mr-20 xl:ml-auto 2xl:text-2xl 2xl:mr-32 2xl:ml-auto "
-                            radius="full"
-                            size="lg"
-                        >
-                            Asesoramiento
-                        </Button>
+                        VENTILADOR
+                    </span>
+
+                    <h1 className="relative mt-2 text-[35px] leading-none font-nunito-bolder text-livered-title">
+                        <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
+                            <VinietaNaranjaSVG css=" h-[35px] w-[35px] " />
+                        </div>
+                        CENTRÍFUGO
+                    </h1>
+
+                    <h1 className="mt-2 text-[35px] leading-none  font-nunito-bolder text-livered-title">
+                        MULTIPALA - RLS
+                    </h1>
+
+                    <h1 className=" text-[18px]  text-[#9D9D9C] font-nunito ">
+                        DE SIMPLE ASPIRACIÓN
+                    </h1>
+                </section>
+
+                <section className="w-[80vw] mx-6 flex items-start min-h-[100%] overflow-hidden h-[100%] ">
+                    <div className="z-20 ">
+                        <div className="min-w-1/2 flex flex-col items-center xm:mt-6 font-lexend-bold tracking-widest ">
+                            <div className="mt-10 text-[12px] xm:text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
+                                <p className="">
+                                    Extracción de aire con
+                                </p>
+                                
+                                <p className="">
+                                    <span className="text-livered ">niveles de suiciedad.</span>
+
+                                </p>
+                            </div>
+                            
+                        </div>
                     </div>
-                    
-                </div>
-            </section>
+                    <div className="relative max-w-screen z-10 overflow-y-hidde">
+                        <Image
+                            // className="-top-16 left-1/2"
+                            alt="Ventilador"
+                            className="inline-block w-[310px] top-0  left-4 "
+                            src="../img/solerpalau/tsa/SolerPalauTsa1.png"
+                            width={"100%"}
+                        />
+                        <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">
+                            <Button
+                                className="z-10 bg-livered font-nunito text-white ml-auto  "
+                                radius="full"
+                                size="sm"
+                            >
+                                Asesoramiento
+                            </Button>
+                        </div>
+                        
+                    </div>
+                </section>
 
-            <section className="flex flex-col px-4 -mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
-                <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
-                <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
-                <p> funcionamiento</p>
+                <section className=" h-1/4 mt-20">
+                    <div className="flex flex-col px-4 -mt-16 md:mt-0 justify-center items-center mx-auto text-center text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
+                        <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía {" "}</span>
+                         <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de funcionamiento</p>
 
-            </section>
+                    </div>
+                </section>
+
+               
+            </>}
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}
 

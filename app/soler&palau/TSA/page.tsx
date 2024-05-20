@@ -50,7 +50,7 @@ export default function TSAPage() {
             key: "first",
             label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
             labelShort: "RLS",
-            img: "../img/navbar/NavBarRLSSolerPalau.png",
+            img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
         },
         {
