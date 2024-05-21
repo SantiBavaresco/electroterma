@@ -435,14 +435,25 @@ export default function RLSPage() {
                 <FrameFan />
             </Suspense>
 
-            {/* <section className="mt-32 mb-10 mx-auto lg:w-[80%] flex justify-end lg:items-end items-center">
-                <div className="flex flex-col gap-4">
-                    <DiferencialMaterialGalvanizado/>
-                    <DiferencialMultiposicion/>
-                    <DiferencialVolumenBajo/>
-                    <DiferencialStockPermanente/>
+            
+            {/* <div className="flex flex-col space-y-2 h-[50vh] items-center mt-6 max-h-10 md:hidden">
+
+                <DiferencialMaterialGalvanizado/>
+                <DiferencialMultiposicion/>
+                <DiferencialVolumenBajo/>
+                <DiferencialStockPermanente/>
+            </div> */}
+           
+
+            <section className="md:hidden mt-0 mb-10 ml-auto w-full flex justify-center align-start items-center">
+                <div className="flex flex-col gap-4 items-center ">
+                
+                    <DiferencialMaterialGalvanizado size={60} customWith={250} textSize={14}/>
+                    <DiferencialMultiposicion size={60} customWith={250} textSize={14}/>
+                    <DiferencialVolumenBajo size={60} customWith={250} textSize={14}/>
+                    <DiferencialStockPermanente size={60} customWith={250} textSize={14}/>
                 </div>
-            </section> */}
+            </section>
 
             <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
                 <Button
@@ -458,7 +469,7 @@ export default function RLSPage() {
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100%] 2xl:w-full min-h-[90vh] lg:min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            <section className="max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
             <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
@@ -660,12 +671,12 @@ export default function RLSPage() {
                     </h1>
                 <div className="flex justify-center gap-2 ">
                     
-                <div className="grid grid-cols-2 gap-4   "> 
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
                 {itemsNav?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
                     
                         <NextLink
-                                                            className="border-1 border-gray-50 rounded-[13px]"
+                                                            className=""
                                                             color="foreground"
                                                             href={item.href}
                                                             key={item.key}

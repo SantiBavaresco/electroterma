@@ -143,8 +143,9 @@ export const Navbar = () => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className="lg:px-10 flex justify-center items-center"
+            className="h-[32px] md:h-[64px] lg:px-10 flex justify-center items-center"
             position="sticky"
+            height="100%"
         >
             <NavbarBrand>
                 <NextLink
@@ -186,10 +187,10 @@ export const Navbar = () => {
                     isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
                 >
                     <DropdownTrigger className="bg-red-500">
-                        <div className="w-[263px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
+                        <div className="w-[63px] md:w-[263px] h-[100%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
                             <svg
-                                width="30"
-                                height="28"
+                                width="15"
+                                height="15"
                                 viewBox="0 0 40 37"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"

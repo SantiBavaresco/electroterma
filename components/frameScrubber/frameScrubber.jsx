@@ -65,6 +65,15 @@ export default function FrameScrubber() {
                             </span>
                         {/* </Reveal> */}
                     </div>
+
+                    {/* <div className="visible md:hidden">
+
+                            <span className="text-end  ">
+                                {" "}
+                                Niveles bajos <br /> de volumen
+                            </span>
+
+                    </div> */}
                     {/* <div>
 
                             <h3 className=" ">Aca va la 4</h3>
@@ -77,7 +86,7 @@ export default function FrameScrubber() {
                     </div> */}
                     <div>
                         {/* <Reveal> */}
-                            <span className="flex gap-1 flex-col items-center align-center justify-center  ">
+                            <span className="hidden md:visible md:flex gap-1 flex-col items-center align-center justify-center  ">
                                 <div className="flex flex-col space-y-4 items-center mt-6 max-h-10 ">
 
                                     <DiferencialMaterialGalvanizado/>

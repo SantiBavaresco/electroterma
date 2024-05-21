@@ -59,7 +59,7 @@ export default function RootLayout({
                         <main className="container mx-auto max-w-full">
                             {children}
                         </main>
-                        <footer className="w-full flex flex-col text-xs md:text-base items-center justify-center py-3 bg-lowgray">
+                        <footer className="w-full flex flex-col text-xs md:text-base items-center justify-center py-3 bg-[#D9D9D9]">
                             <div className="flex flex-col justify-center items-center ">
                             <span className="font-lexeng-bolder font-bold">Calle 5 entre 6 y 8</span>
                             <span className="font-lexeng-bold">Parque Industrial Mar del Plata - Batán</span>

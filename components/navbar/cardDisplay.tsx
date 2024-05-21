@@ -20,10 +20,12 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, ...props }) => {
         <main className={`bg-white 
             data-[selectable=true]:focus:bg-blue-500 !important 
             data-[hover=true]:bg-orange-500 !important
+            
             group group-hover:bg-gray-5 gap-3
+            z-10
             ${(data.key==="first") ? " md:rounded-tl-[28px] md:rounded-bl-[28px] hover:bg-none !important" : "" } 
             ${(data.key==="last") ? " md:rounded-tr-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
-            shadow-xl rounded-xl
+            shadow-xl border-1 border-gray-100  rounded-[18px] md:rounded-none
         `}>
             <div className={``}>
              <Image
@@ -36,8 +38,8 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, ...props }) => {
                     key={data.key}
                 />
                 <div className={` h-[45px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito bg-livered-title group-hover:bg-[#B2B2B2]
-                    ${(data.key==="first") ? " md:rounded-bl-[28px]" : "rounded-xl md:rounded-none"} 
-                    ${(data.key==="last") ? " md:rounded-br-[28px]" : "rounded-xl md:rounded-none"} 
+                    ${(data.key==="first") ? " md:rounded-bl-[28px]" : "rounded-b-[18px] md::rounded-none"} 
+                    ${(data.key==="last") ? " md:rounded-bl-[0px]" : "rounded-b-[18px] md:rounded-none"} 
                 `}>
                     {data?.label?.map((description:string)=>(
                         <p key={description} className="gap-3 px-2 text-[10px] xm:text-xs md:text-xl">{description}</p>
