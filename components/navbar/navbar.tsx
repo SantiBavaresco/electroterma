@@ -143,7 +143,7 @@ export const Navbar = () => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className="h-[32px] md:h-[64px] lg:px-10 flex justify-center items-center"
+            className="h-[42px] md:h-[64px] lg:px-10 flex justify-center items-center"
             position="sticky"
             height="100%"
         >
