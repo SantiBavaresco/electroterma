@@ -435,15 +435,7 @@ export default function RLSPage() {
                 <FrameFan />
             </Suspense>
 
-            
-            {/* <div className="flex flex-col space-y-2 h-[50vh] items-center mt-6 max-h-10 md:hidden">
 
-                <DiferencialMaterialGalvanizado/>
-                <DiferencialMultiposicion/>
-                <DiferencialVolumenBajo/>
-                <DiferencialStockPermanente/>
-            </div> */}
-           
 
             <section className="md:hidden mt-0 mb-10 ml-auto w-full flex justify-center align-start items-center">
                 <div className="flex flex-col gap-4 items-center ">
