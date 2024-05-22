@@ -1,13 +1,24 @@
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
+const ventElement = document.getElementById("vent");
+let keyAttribute = "ventElement.accessKey";
+
+console.log(ventElement);
+  if (ventElement) {
+    
+    keyAttribute = ventElement.accessKey;
+    
+  }
+
+
 
 // const frameCount = 599;
 const frameCount = 800;
 
 const currentFrame = (index) =>
     // `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
-    `../img/solerpalau/rls/frames/e-${index
+    `../img/solerpalau/${keyAttribute}/frames/e-${index
         .toString()
         .padStart(3, "0")}.png`;
 
@@ -22,6 +33,8 @@ const img = new Image();
 img.src = currentFrame(1);
 canvas.width = 853;
 canvas.height = 480;
+// canvas.width = 666;
+// canvas.height = 375;
 // canvas.width = 1920;
 // canvas.height = 1080;
 

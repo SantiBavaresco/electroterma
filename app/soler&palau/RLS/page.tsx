@@ -175,7 +175,7 @@ export default function RLSPage() {
     };
 
     return (
-        <div id="contenedor-div" className="h-full flex flex-col items-center justify-center ">
+        <div id="vent" key="rls" accessKey="rls" className="h-full flex flex-col items-center justify-center ">
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93vh] lg:max-h-[93vh] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
@@ -284,7 +284,7 @@ export default function RLSPage() {
                     md:min-h-full md:flex md:flex-row 
                     h-[52%]
                     lg:w-[50%]  lg:pl-10
-                    xl:justify-start xl:w-[95.5vw] xl:ml-auto 
+                    xl:justify-start xl:w-[95.5vw] xl:ml-auto xl:h-[44%]
                     2xl:justify-start 2xl:w-[97.5vw] 2xl:h-[75vh] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
                     <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[68%]  2xl:w-[58%]">
                         <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
@@ -348,7 +348,7 @@ export default function RLSPage() {
                     </div>
                     </section>
 
-                    <section className="flex flex-col px-4 mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
+                    <section className="flex flex-col px-4 mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:mt-4 xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
                         <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
                         <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
                         <p> funcionamiento</p>
@@ -469,7 +469,7 @@ export default function RLSPage() {
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-10 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            <section  className="z-10 max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[110vh] h-[100%] mt-0 md:-mt-10 xl:mt-20 2xl:mt-20 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 <div className="relative w-screen ms-auto">
                     <div
