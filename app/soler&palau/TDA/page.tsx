@@ -184,7 +184,7 @@ export default function TDAPage() {
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-4 md:ml-12">
-                        <h2 className="text-white text-lg md:text-2xl 2xl:text-3xl font-nunito">
+                        <h2 className="text-white text-lg md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
@@ -246,11 +246,11 @@ export default function TDAPage() {
 
                         </span>
 
-                        <h1 className="mt-2 text-4xl lg:mt-6 lg:text-[78px] 2xl:text-[90px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 text-4xl lg:mt-6 lg:text-[78px] 2xl:text-[90px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title">
                             CENTRÍFUGO
                         </h1>
 
-                        <h1 className="mt-2 text-4xl lg:mt-3 lg:text-[78px] 2xl:text-[90px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
+                        <h1 className="mt-2 text-4xl lg:mt-3 lg:text-[78px] 2xl:text-[90px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title">
                             MULTIPALA - TDA
                         </h1>
 

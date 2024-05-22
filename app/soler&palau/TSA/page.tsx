@@ -233,11 +233,11 @@ export default function TSAPage() {
                                 VENTILADOR
                             </span>
 
-                            <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bold text-livered-title">
+                            <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title">
                                 CENTRÍFUGO
                             </h1>
 
-                            <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bold text-livered-title">
+                            <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title">
                                 MULTIPALA - TSA
                             </h1>
 
