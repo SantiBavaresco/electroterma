@@ -187,10 +187,10 @@ export const Navbar = () => {
                     isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
                 >
                     <DropdownTrigger className="bg-red-500">
-                        <div className="w-[63px] md:w-[263px] h-[100%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
+                        <div className="md:w-[260px] h-[100%] md:min-w-64 md:flex items-center justify-center bg-[#EF771C]">
                             <svg
-                                width="15"
-                                height="15"
+                                width="30"
+                                height="30"
                                 viewBox="0 0 40 37"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -319,10 +319,11 @@ export const Navbar = () => {
                  aria-label={isMenuOpen ? "C" : "O"}
                  icon={isMenuOpen ? "C" : 
                  
-                 <div className="w-[200px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
+                 <div className="w-[63px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
+
                             <svg
-                                width="30"
-                                height="28"
+                                width="15"
+                                height="15"
                                 viewBox="0 0 40 37"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"

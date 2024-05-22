@@ -364,14 +364,14 @@ export default function RLSPage() {
                         VENTILADOR
                     </span>
 
-                    <h1 className="relative mt-2 text-[35px] leading-none font-nunito-bolder text-livered-title">
+                    <h1 className="relative mt-2 text-[29px] xm:text-[35px] leading-none font-nunito-bolder text-livered-title">
                         <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
                             <VinietaNaranjaSVG css=" h-[35px] w-[35px] " />
                         </div>
                         CENTRÍFUGO
                     </h1>
 
-                    <h1 className="mt-2 text-[35px] leading-none  font-nunito-bolder text-livered-title">
+                    <h1 className="mt-2 text-[29px] xm:text-[35px] leading-none  font-nunito-bolder text-livered-title">
                         MULTIPALA - RLS
                     </h1>
 
@@ -471,12 +471,7 @@ export default function RLSPage() {
 {/* <section className="overflow-hidden"> */}
             <section className="max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
-                {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
-            <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
-                <Ondas02SVG/>
-                </div>
-                </div> */}
-                 <div className="relative w-screen ms-auto">
+                <div className="relative w-screen ms-auto">
                     <div
                             className="my-10 md:mt-20 lg:absolute px-4 z-10
                             top-72 2xl:top-[40vh] 

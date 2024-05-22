@@ -50,10 +50,10 @@ export default function TDAPage() {
     const itemsNav: ItemsNavbar[] = [
         {
             key: "first",
-            label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
-            labelShort: "RSL",
+            label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
+            labelShort: "RLS",
             img: "../img/navbar/NavBarRLS1SolerPalau.png",
-            href: "/soler&palau/RSL",
+            href: "/soler&palau/RLs",
         },
         {
             key: "copy",
@@ -406,28 +406,34 @@ export default function TDAPage() {
                 </div>
             </section> */}
 
+            <section className="md:hidden mt-0 mb-10 ml-auto w-full flex justify-center align-start items-center">
+                <div className="flex flex-col gap-4 items-center ">
+                
+                    <DiferencialMaterialGalvanizado size={60} customWith={250} textSize={14}/>
+                    <DiferencialMultiposicion size={60} customWith={350} textSize={14}/>
+                    <DiferencialVolumenBajo size={60} customWith={250} textSize={14}/>
+                    <DiferencialStockPermanente size={60} customWith={250} textSize={14}/>
+                </div>
+            </section>
+
             <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
                 <Button
                     className="z-10 bg-livered text-white 2xl:text-2xl md:mr-3"
                     radius="full"
-                    size="lg"
+                    size={BigScreen ? "lg" : "sm"}
                 >
                     Manual <Download />
                 </Button>
             </div>
 
-           
+
+            
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section className="max-w-[100%] 2xl:w-full min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+<section className="max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[110vh] h-[100%] mt-0 md:-mt-10  2xl:mt-0 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
-                {/* <div className=" text-xl max-w-[100%]  bg-cover bg-no-repeat overflow-hidden">
-            <div className="relative -z-10 right-[50%] translate-x-[48.5%] -top-10 translate-y-[-5%] ">
-                <Ondas02SVG/>
-                </div>
-                </div> */}
-                 <div className="relative w-screen ms-auto">
+                <div className="relative w-screen ms-auto">
                     <div
                             className="my-10 md:mt-20 lg:absolute px-4 z-10
                             top-72 2xl:top-[40vh] 
@@ -436,11 +442,11 @@ export default function TDAPage() {
                             lg:w-[400px] 2xl:w-[550px]
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
-                            <div className=" flex flex-col justify-center items-center lg:text-3xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
-                                <h1 className="font-lexend-bold  ">Caudales de inyeccion desde</h1>
-                                <h1 className="font-lexend-bold  ">xxxxxx a xxxxxx m3/h</h1>
-                                <h1 className="font-lexend-bold  ">y contrapresiones desde</h1>
-                                <h1 className="font-lexend-bold  ">xxxx a xxxxx mmCA </h1>
+                            <div className=" flex flex-col justify-center items-center lg:text-2xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
+                                <h1 className="font-lexend ">Caudales de inyeccion </h1>
+                                <h1 >desde <span className="font-lexend-bold  ">XXX a XXXX m3/h</span></h1>
+                                <h1 className="font-lexend ">y contrapresiones </h1>
+                                <h1 className="font-lexend-bold  ">de XX a XXXX mmCA </h1>
 
                             </div>
                         </div>
@@ -450,14 +456,14 @@ export default function TDAPage() {
                     className=" w-[104%] flex flex-col justify-center items-center  lg:w-3/4 md:mt-20 2xl:mt-[20vh] mx-auto overflow-hidden
                     "
                 >
-                    <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
+                    <h1 className="text-2xl ml-6 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
                         CARACTERÍSTICAS TÉCNICAS
                     </h1>
 
                    
                 
                     <Accordion
-                        className="h-[70vh] md:h-[55vh] lg:min-h-[75vh] 2xl:min-h-[10vh] "
+                        className="z-10 h-[25vh] md:h-[55vh] lg:min-h-[75vh] 2xl:min-h-[10vh] "
                         variant="splitted"
                         itemClasses={itemClasses}
                         selectionMode="multiple"
@@ -562,24 +568,25 @@ export default function TDAPage() {
 
                     
 
-                    <div className="ms-auto mt-0">
-                        <div className="ms-auto mt-2 -mr-24 opacity-30">
+                    <div className="z-0 mx-auto mt-0">
+                        <div className="mt-2  opacity-30">
                             <Image
                                 alt="Otam Logo"
                                 className=""
                                 src="../img/otamlogo.png"
-                                width={350}
+                                width={300}
                             />
                         </div>
-                        <div className="ms-auto lg:-mr-8">
+                        
+                    </div>
+                    <div className="mx-auto  lg:-mr-8">
                             <Image
                                 alt="Electroterma Logo"
                                 className=""
                                 src="../img/electrotermalogoletras.png"
-                                width={390}
+                                width={340}
                             />
                         </div>
-                    </div>
                 </div>
             </section>
 {/* </section> */}
@@ -594,19 +601,19 @@ export default function TDAPage() {
                         />
                     </div>
                     <div className="flex justify-bettween items-center mt-10 md:mt-2 w-full">
-                        <div className="me-auto flex justify-start items-start ">
+                        <div className="ml-[45px] me-auto flex justify-start items-start ">
                             <Image
                                 alt="Otam Logo"
                                 className="scale-1"
                                 src="../img/otamlogo.png"
-                                width={200}
+                                width={150}
                             />
                         </div>
                         <div className="w-1/2 float-right flex justify-end items-end pr-10 md:pr-0">
                             <Button
                                 className="  z-10 bg-livered text-white 2xl:text-2xl"
                                 radius="full"
-                                size="lg"
+                                size={BigScreen ? "lg" : "sm"}
                             >
                                 Asesoramiento
                             </Button>
@@ -617,22 +624,25 @@ export default function TDAPage() {
             <section className="max-w-[80%] w-full h-[100%] z-10 my-10">
 
             <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl text-center leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
-                        Otros productos de Soler & Palau
+                        Otros productos de Soler&Palau
                     </h1>
                 <div className="flex justify-center gap-2 ">
                     
-                    
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
                 {itemsNav?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
-                    <NextLink
-                                                        className=""
-                                                        color="foreground"
-                                                        href={item.href}
-                                                        key={item.key}
-                                                    >
-                        <CardDisplay data={item}/>
-                    </NextLink>
-                    ))}           
+                    
+                        <NextLink
+                                                            className=""
+                                                            color="foreground"
+                                                            href={item.href}
+                                                            key={item.key}
+                                                        >
+                            <CardDisplay data={item}/>
+                        </NextLink>
+                    ))}  
+                    </div>
+                         
                 </div>
 
             </section>
