@@ -11,8 +11,8 @@
         object-fit: cover;
         left: 50%;
         top: 50%;
-        transform: translate(-25%, 14%);
-        /* transform: translate(-50%, 6%); */
+        /* transform: translate(-25%, 14%); */
+        transform: translate(0%, 15%);
 
         max-width: 90vw;
         max-height: 90vh;
@@ -22,7 +22,7 @@
       section.frames {
         /* height: 4000px; */
         z-index: 0;
-        height: 375vh;
+        height: 755vh;
         /* height: 580vh; */
         position: relative;
         background: #fefefe;
@@ -90,7 +90,7 @@
         color: var(--primary-color);
     }
 section.frames div.story div {
-    height: 105vh;
+    height: 650vh;
     /* height: 155vh; anterior */
 
     position: relative;
