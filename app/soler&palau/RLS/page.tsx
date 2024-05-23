@@ -609,7 +609,7 @@ export default function RLSPage() {
                         </div>
                         
                     </div>
-                    <div className="mx-auto  lg:-mr-8">
+                    <div className="mx-auto 2xl:-mt-[100px] lg:-mr-8">
                             <Image
                                 alt="Electroterma Logo"
                                 className=""

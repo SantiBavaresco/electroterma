@@ -300,7 +300,7 @@ export default function TSAPage() {
                                 // className="-top-16 left-1/2"
                                 alt="Ventilador"
                                 className="inline-block 
-                                    
+                                    w-[47vw]
                                     "
                                 src="../img/solerpalau/tsa/SolerPalauTsa2.png"
                                 width={"100%"}
@@ -325,7 +325,7 @@ export default function TSAPage() {
                                 xl:top-[185px] xl:left-[165px] 
                                 xl:max-w-[1300px] xl:max-h-[300px
                                 2xl:top-[250px] 2xl:left-[370px]
-                                2xl:max-w-[1650px] 2xl:max-h-[650px]
+                                2xl:max-w-[1850px] 2xl:max-h-[650px]
                                 "/>
                         </div>
                         <div className="w-full md:w-1/2">

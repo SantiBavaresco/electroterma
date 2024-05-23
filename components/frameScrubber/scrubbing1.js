@@ -1,17 +1,15 @@
+
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 const ventElement = document.getElementById("vent");
 let keyAttribute = "ventElement.accessKey";
 
-console.log(ventElement);
-  if (ventElement) {
-    
-    keyAttribute = ventElement.accessKey;
-    
+// console.log(ventElement);
+
+  if (ventElement) {    
+    keyAttribute = ventElement.accessKey;    
   }
-
-
 
 // const frameCount = 599;
 const frameCount = 800;
