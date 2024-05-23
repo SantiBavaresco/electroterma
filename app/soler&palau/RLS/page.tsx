@@ -461,7 +461,7 @@ export default function RLSPage() {
 
             {/* -------------------------Tabla de especificadiones------------------------- */}
 {/* <section className="overflow-hidden"> */}
-            <section  className="z-10 max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[110vh] h-[100%] mt-0 md:-mt-10 xl:mt-20 2xl:mt-20 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            <section  className="z-10 max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[120vh] h-[100%] mt-0 md:-mt-10 xl:mt-20 2xl:mt-[200px] 2xl:-mb-32 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 <div className="relative w-screen ms-auto">
                     <div
