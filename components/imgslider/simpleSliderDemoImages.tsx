@@ -12,7 +12,7 @@ interface Props {
 }
 
 const SimpleSliderDemoImages: React.FC<Props> = ({ url, width, fileName }) => {
-    const wii = "450px";
+    const wii = "300px";
     const hii = "300px";
 
     const settings = {
@@ -62,7 +62,7 @@ const SimpleSliderDemoImages: React.FC<Props> = ({ url, width, fileName }) => {
     return (
         <div className="slider-container w-[100%]">
             <div
-                className="w-[400px] md:w-[98vw] 2xl:w-[1480px]"
+                className="w-[300px] md:w-[98vw] 2xl:w-[1480px]"
                 // style={{
                 //     width: 400 + "px",
                 //     height: 350 + "px",
