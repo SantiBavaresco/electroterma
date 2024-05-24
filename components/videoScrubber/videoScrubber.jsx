@@ -97,9 +97,9 @@ export default function VideoScrubber() {
     }, []);
 
     return (
-        <div>
-            <ReactLenis root>
-                <section class="vid" id="video-ventilador" className="" >
+        <div className="">
+            {/* <ReactLenis root> */}
+                <section class="vid" id="video-ventilador"  >
                     <div class="holder">
                         <video
                             playsinline
@@ -111,16 +111,18 @@ export default function VideoScrubber() {
                             id="video"
                         >
                             <source
-                                type='video/mp4'
-                                src="../img/solerpalau/tda/SolerPalauVideo1.mkv"
-                                // src="../img/solerpalau/tda/w1.webm"
+                                // type='video/mp4'
+                                // src="../img/solerpalau/tda/SolerPalauVideo1.mkv"
+                                // src="../img/solerpalau/rls/video/RLS.mp4"
+                                src="../img/solerpalau/rls/video/RLS.mkv"
+
                                 // src="../img/solerpalau/tda/SolerPalauVideoMP4-VLC-SD"
                             />
                         </video>
                     </div>
 
                     <div class="story text-5xl">
-                        <div>
+                        {/* <div>
                             <div className="">
                                 <Reveal width="100%">
                                     <span className="text-end mr-16">
@@ -220,10 +222,10 @@ export default function VideoScrubber() {
                                     </div>
                                 </span>
                             </Reveal>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
-            </ReactLenis>
+            {/* </ReactLenis> */}
         </div>
     );
 }

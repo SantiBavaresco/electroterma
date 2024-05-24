@@ -1,7 +1,7 @@
 "use client";
 import { title } from "@/components/primitives";
-// import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
-// import VideoScrubber from "@/components/videoScrubber/videoScrubber";
+import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
+import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 import FrameScrubber from "@/components/frameScrubber/frameScrubber";
 
 import { lazy, Suspense, useState, useEffect } from "react";
@@ -37,6 +37,7 @@ import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVo
 import { DiferencialStockPermanente } from "@/components/diferenciales/diferencialStockPermanente";
 import CardDisplay from "@/components/navbar/cardDisplay";
 import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
+import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
 
 
 interface ItemsNavbar {
@@ -175,7 +176,7 @@ export default function RLSPage() {
     };
 
     return (
-        <div className="h-full flex flex-col items-center justify-center ">
+        <div className="h-full flex flex-col items-center justify-center  ">
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
@@ -215,7 +216,7 @@ export default function RLSPage() {
                 
             </section> */}
             
-            <section className="mr-auto ml-[45px]  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
+            <section className="z-0 mr-auto ml-[45px]  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
                 <div className="left-0 w-[120px] md:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
                                 <Image
@@ -230,39 +231,63 @@ export default function RLSPage() {
             {BigScreen ? 
             // ----------------------- DESKTOP -----------------------
             <>
-                <section className="flex flex-col items-start min-h-[100%] overflow-hidden
-                    md:min-h-full md:flex md:flex-row 
-                    h-[52%]
-                    lg:w-[100%]  lg:pl-10
-                    xl:justify-start xl:w-[95.5vw] xl:ml-auto xl:h-[44%]
-                    2xl:justify-start 2xl:w-[97.5%] 2xl:h-[75%] md:h-[70%] lg:h-[85%] 2xl:-mt-32   ">
-                    <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[68%]  2xl:w-[58%]">
-                        <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
+                <section className="z-10 flex flex-row justify-start items-start min-h-[100%] overflow-hidden
+                    
+                    pl-10
+                    h-[95%]
+                    w-[100%]
+                    pb-10
+                    
+                    ml-auto
+                    
+                      ">
+                    <div className="z-20 ml-[3%] w-[100%]  ">
+                        <div className="flex flex-col justify-items-end w-full items-start mt-10
+                             font-lexend-bold tracking-widest gap-[0.2vw] ">
 
-                            <span className="relative text-lg lg:text-5xl 2xl:text-[61px] text-[#9D9D9C] font-nunito ">
-                                <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
-                                    <VinietaNaranjaSVG css=" h-[20px] w-[20px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
+                            <span className=" relative flex  justify-center items-center h-full
+                                "
+                                // text-xl lg:text-2xl xl:text-5xl 2xl:text-[51px] 3xl:text-[61px] text-[#9D9D9C] font-nunito 
+                            >
+                                <div className="relative -left-10  ">
+                                    <VinietaNaranjaSVG css=" h-[10px] w-[10px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
                                 </div>
-                                VENTILADOR
+                                <h1 className="absolute left-0 text-[#9D9D9C] font-nunito
+                                    text-[3.2vw]
+                                "> 
+                                    VENTILADOR 
+                                </h1>
                             </span>
 
-                            <h1 className="mt-2 text-3xl lg:mt-6 lg:text-[78px] 2xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title">
+                            <span><h1 
+                                className="mt-2 lg:mt-3 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title text-[5.0vw] xl:text-[5.35vw]"
+
+                            // className="mt-2 lg:mt-6 text-3xl lg:text-5xl  xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title"
+                            >
                                 CENTRÍFUGO
                             </h1>
 
-                            <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title">
+                            <h1 
+                                className="mt-2  leading-none  font-nunito-bolder text-livered-title text-[5.0vw] xl:text-[5.35vw]"
+                            // className="mt-2 w-full lg:mt-3 text-3xl lg:text-[44px] xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title"
+                            >
                                 AUTOLIMITANTE - RLS
                             </h1>
+                            </span>
 
-                            <h1 className="mt-2 text-lg lg:mt-6  lg:text-5xl 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
+                            <h1 className="text-[#9D9D9C] font-nunito
+                                    text-[3.2vw] ">
                             DE SIMPLE ASPIRACIÓN
                             </h1>
 
-                            <div className="mt-2 text-lg lg:text-4xl 2xl:text-[43px] 2xl:mt-6 tracking-normal text-[#4C4B4B] font-lexend-bold">
-                                <p className="lg:mt-3 2xl:mt-4">
+                            {/* text-xl lg:text-4xl 2xl:text-[43px] */}
+                            <div className="mt-2   tracking-normal text-[#4C4B4B] font-lexend-bold
+                                text-[2.5vw]
+                            ">
+                                <p className="">
                                     Extracción de aire con
                                 </p>
-                                <p className="lg:mt-2 2xl:mt-4">
+                                <p className="">
                                     <span className="text-livered ">niveles de suciedad.</span>
                                 </p>
                             </div>
@@ -272,36 +297,48 @@ export default function RLSPage() {
                             
                         </div>
                     </div>
-                    <div className="relative max-w-screen -top-16 -left-6 -mt-10 z-10 overflow-y-hidde
-                        md:-left-[20%] md:top-16
+                    <div className="relative mr-[0vw] max-w-screen w-[50%] -mt-10 z-10 overflow-y-hidde
+                          
+                        -left-[10%] -top-2
+                        md:top-6
                         lg:-left-[6%] lg:-top-2
-                        2xl:left-[0%] 2xl:top-0 ">
+                        2xl:-left-[6%] 2xl:top-0 "
+                        
+                        >
+{/* -top-16 -left-6 */}
                     <Image
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
-                            className="inline-block w-[310px] lg:w-[520px] 2xl:w-[650px] top-36 lg:top-[65px] 2xl:top-[70px]  left-4 md:left-12"
+                            className=" w-[520px] md:w-[100%]  top-[75px] lg:top-[65px] 2xl:top-[70px] left-4 md:left-12"
                             src="../img/solerpalau/rls/SolerPalauRls1.png"
                             width={"100%"}
                         />
-                        <div className="mt-32 ml-auto md:mt-10 w-full 2xl:mt-10 flex justify-end md:justify-center
-                            
-                            overflow-hidden">
-                            <Button
-                                className="z-10 bg-livered font-nunito text-white ml-auto mr-[40px] xl:mr-20 xl:ml-auto 2xl:text-2xl 2xl:mr-32 2xl:ml-auto "
-                                radius="full"
-                                size="lg"
-                            >
-                               W Asesoramiento
-                            </Button>
-                        </div>
+                        
                         
                     </div>
                     </section>
 
-                    <section className="flex flex-col px-4 mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:mt-4  xl:text-2xl  2xl:text-3xl">
-                        <p> <span className="text-livered-title">Es autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
-                        <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
-                        <p> funcionamiento</p>
+                    <section className="w-full px-[5%] flex justify-between 
+                    ">
+                        {/* text-[13px] xl:text-2xl  2xl:text-3xl */}
+
+                        <div className="w-[100%] flex flex-col px-4 justify-start items-start 
+                        text-[2vw]">
+                            <p> <span className="text-livered-title">Es autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
+                            <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
+                            <p> funcionamiento</p>
+                        </div>
+                        <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
+                            
+                            overflow-hidden">
+                            <Button
+                                className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                radius="full"
+                                size={BigScreen ? "lg" : "sm"}
+                            >
+                               W Asesoramiento
+                            </Button>
+                        </div>
 
                     </section>
                 </>
@@ -381,8 +418,11 @@ export default function RLSPage() {
     {/* --------------------------- FIN MOBILE --------------------------- */}
 
            
+            {/* <ScrollVideoPlayer/> */}
 
             {/* <VideoScrubber/> */}
+
+            {/* <VideoScrollPlayer/> */}
             {/* <FrameScrubber /> */}
 
             {/* <Suspense fallback={<div>Loading</div>}>
@@ -408,9 +448,9 @@ export default function RLSPage() {
                 </div>
             </section>
 
-            <div className="w-9/12  flex flex-row justify-end items-end overflow-hidden">
+            <div className=" ml-auto mr-[5%]  flex flex-row justify-end items-end overflow-hidden">
                 <Button
-                    className="z-10 bg-livered text-white 2xl:text-2xl md:mr-3"
+                    className="z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
                     radius="full"
                     size={BigScreen ? "lg" : "sm"}
                 >
@@ -423,7 +463,7 @@ export default function RLSPage() {
 
              {/* -------------------------Tabla de especificadiones------------------------- */}
 
-             <section  className="z-10 max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[120vh] h-[100%] mt-0 md:-mt-10 xl:mt-20 2xl:mt-[200px] 2xl:-mb-32 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            <section  className="z-10 max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[120vh] h-[100%] mt-0 md:-mt-10 xl:mt-20 2xl:mt-[200px] 2xl:-mb-32 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 <div className="relative w-screen ms-auto">
                     <div
@@ -582,8 +622,9 @@ export default function RLSPage() {
                 </div>
             </section>
 {/* </section> */}
+
             <section className="h-[60%] lg:h-[70%] 2xl:h-[90%] 2xl:w-[74%] mb-6 bg-inherit z-10 bg-none overflow-hidden">
-                <div className="flex flex-col justify-center items-center t w-full md:w-[1200px] 2xl:w-full m-auto ">
+                <div className="flex flex-col justify-center items-center t w-full md:w-[100%] 2xl:w-full m-auto ">
 
 
                     <div className="">
@@ -613,6 +654,7 @@ export default function RLSPage() {
                     </div>
                 </div>
             </section>
+
             <section className="max-w-[80%] w-full h-[100%] z-10 my-10">
 
             <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl text-center leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
