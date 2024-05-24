@@ -50,10 +50,10 @@ export default function HabitatPage() {
     const itemsNav: ItemsNavbar[] = [
         {
             key: "first",
-            label: ["Ventilador Centrifigo", "Autolimitantes - RSL"],
-            labelShort: "RSL",
-            img: "../img/navbar/NavBarRSLSolerPalau.png",
-            href: "/soler&palau/RSL",
+            label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
+            labelShort: "RLS",
+            img: "../img/navbar/NavBarRSL1SolerPalau.png",
+            href: "/soler&palau/RLS",
         },
         {
             key: "copy",

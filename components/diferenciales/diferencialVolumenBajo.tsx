@@ -13,19 +13,20 @@ interface Props {
 export const DiferencialVolumenBajo : React.FC<Props> =  ({size, text, textSize, customWith}) => {
 	return (
 		<>
-			<main className="relative pl-4 flex justify-start items-center m-auto max-w-full">
+			<main className="relative pl-4 flex justify-start items-center  w-full">
 				<span className=" z-10">
 					<VolumenBajo size={size || 70}/>
 				{/* <svg size={size || 70}/> */}
 				</span>
-				<p className={`z-0  h-2/3 pl-8 pr-2 md:px-10 py-1 -translate-x-8 
+				<p className={`z-0   h-2/3 pl-8 pr-2 md:px-10 py-1 -translate-x-8 
 					bg-white bg-opacity-50 border-2 border-livered-title rounded-tr-2xl md:rounded-tr-3xl  
-					text-start 
-					${textSize ?  `text-[${textSize}px]` : "xs:text-[10px] xm:text-[12px] lg:text-2xl " }
-					${customWith ?  `w-[${customWith}px]` : "xs:w-[150px] xm:w-[170px] lg:w-[400px] " }
+					text-center
+					${textSize ?  `text-[${textSize}px]` : "xs:text-[14px] xm:text-[14px] lg:text-2xl " }
+					w-[110%]
+					
 					`}>
 
-					<span>{text || "Niveles Bajos de volumen"}</span>
+					<span className="w-full px-2 py-1 flex justify-start items-center">{text || "Niveles bajos de volumen"}</span>
 				</p>
 				
 			</main>

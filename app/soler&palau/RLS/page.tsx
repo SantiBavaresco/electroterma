@@ -52,21 +52,21 @@ export default function RLSPage() {
     const itemsNav: ItemsNavbar[] = [
         {
             key: "first",
-            label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
+            label: ["Ventilador Centrífugo", "Autolimitantes - RLS"],
             labelShort: "RLS",
             img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
         },
         {
             key: "copy",
-            label: ["Ventilador Centrifigo", "Multipala - TSA"],
+            label: ["Ventilador Centrífugo", "Multipala - TSA"],
             labelShort: "TSA",
             img: "../img/navbar/NavBarTSA1SolerPalau.png",
             href: "/soler&palau/TSA",
         },
         {
             key: "edit",
-            label: ["Ventilador ","Centrifigo TDA"],
+            label: ["Ventilador ","Centrífugo TDA"],
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
@@ -175,9 +175,9 @@ export default function RLSPage() {
     };
 
     return (
-        <div id="vent" key="rls" accessKey="rls" className="h-full flex flex-col items-center justify-center ">
+        <div className="h-full flex flex-col items-center justify-center ">
 
-            <section className="relative top-0 w-full max-h-[50%] md:max-h-[93vh] lg:max-h-[93vh] py-0 font-size overflow-hidden">
+            <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
                     <SimpleSlider
                         url={urlImageBanner}
@@ -193,7 +193,7 @@ export default function RLSPage() {
                     </div>
                     <div className="mr-4 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0">
-                            Consúltanos
+                            Consultanos
                         </Button>
                     </div>
                 </div>
@@ -225,67 +225,17 @@ export default function RLSPage() {
                                 />
                                 <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
                         </div>
-                </section>
-            {/* <section className="flex flex-col items-start w-3/4 md:ml-10 mt-10 mb-8 justify-start">
-                <div className=" ">
-                        <Image
-                            alt="Otam Logo"
-                            className=""
-                            src="../img/otamlogo.png"
-                            width={200}
-                        />
-                        <span className="ml-0 relative -top-4 text-xs">Distribuidor en Argentina</span>
-                </div>
-                
-            </section> */}
+            </section>
 
-            {/* <section className="flex flex-col md:mt-4 md:flex md:flex-row justify-between w-full ">
-                <div className="ml-10">
-                    <div className="flex flex-col px-10  -mt-10 gap-1 text-start justify-items-end items-start font-lexend-bold tracking-widest ">
-                        <span className="text-lg lg:text-3xl text-midgray font-nunito  ">
-                            VENTILADOR
-                        </span>
-                        <h1 className="text-3xl lg:text-5xl  font-nunito-bold text-livered-title">CENTRÍFUGO</h1>
-                        <h1 className="text-3xl  lg:text-5xl  font-nunito-bold text-livered-title">
-                            AUTOLIMITANTE RSL
-                        </h1>
-                        <span className="text-lg lg:text-3xl lg:mt-4 text-midgray font-nunito">
-                            DE SIMPLE ASPIRACIÓN
-                        </span>
-                        <div className="mt-2 ">
-                            <p className="text-lg lg:text-2xl">
-                                Extraccioón de aire con
-                                
-                            </p>
-                            <p className="text-lg lg:text-2xl">
-                                <span className="text-livered">niveles de suciedad</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative max-w-screen  lg:right-10 lg:bottom-20 -mt-10 z-10">
-                    <Image
-                        
-                        alt="Ventilador"
-                        className="inline-block top-20 left-10"
-                        src="../img/solerpalau/rsl/SolerPalauRsl1.png"
-                        width={300}
-                    />
-                   
-                    <Ondas03SVG width={1050} height={444} css="absolute top-0 right-[174px] lg:-right-[134px] lg:top-10 z-10 w-screen overflow-x-scroll no-scrollbar"/>
-
-                </div>
-            </section> */}
-
-        {BigScreen ? 
+            {BigScreen ? 
             // ----------------------- DESKTOP -----------------------
             <>
-                <section className="flex flex-col items-start min-h-[90vh] overflow-hidden
+                <section className="flex flex-col items-start min-h-[100%] overflow-hidden
                     md:min-h-full md:flex md:flex-row 
                     h-[52%]
-                    lg:w-[50%]  lg:pl-10
+                    lg:w-[100%]  lg:pl-10
                     xl:justify-start xl:w-[95.5vw] xl:ml-auto xl:h-[44%]
-                    2xl:justify-start 2xl:w-[97.5vw] 2xl:h-[75vh] md:h-[70vh] lg:h-[85vh] 2xl:-mt-32   ">
+                    2xl:justify-start 2xl:w-[97.5%] 2xl:h-[75%] md:h-[70%] lg:h-[85%] 2xl:-mt-32   ">
                     <div className="md:m-0 z-20 xl:mr- 2xl:ml-20 2xl:mt-28 lg:w-[68%]  2xl:w-[58%]">
                         <div className="flex flex-col items-center mt-6 lg:mt-10 2xl:mt-0 lg:justify-items-end  lg:items-start font-lexend-bold tracking-widest ">
 
@@ -301,7 +251,7 @@ export default function RLSPage() {
                             </h1>
 
                             <h1 className="mt-2 text-3xl lg:mt-3 lg:text-[78px] 2xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title">
-                                AUTOLIMITANTE RLS
+                                AUTOLIMITANTE - RLS
                             </h1>
 
                             <h1 className="mt-2 text-lg lg:mt-6  lg:text-5xl 2xl:text-[55px]  2xl:mt-6  text-[#9D9D9C] font-nunito ">
@@ -313,7 +263,7 @@ export default function RLSPage() {
                                     Extracción de aire con
                                 </p>
                                 <p className="lg:mt-2 2xl:mt-4">
-                                    <span className="text-livered ">niveles de suiciedad.</span>
+                                    <span className="text-livered ">niveles de suciedad.</span>
                                 </p>
                             </div>
                             {/* z-20  absolute translate-x-[70%] translate-y-[160px]
@@ -341,15 +291,15 @@ export default function RLSPage() {
                                 radius="full"
                                 size="lg"
                             >
-                                Asesoramiento
+                               W Asesoramiento
                             </Button>
                         </div>
                         
                     </div>
                     </section>
 
-                    <section className="flex flex-col px-4 mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:mt-4 xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
-                        <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
+                    <section className="flex flex-col px-4 mt-16 md:mt-0 justify-start items-start mx-auto text-[13px] xl:mt-4  xl:text-2xl  2xl:text-3xl">
+                        <p> <span className="text-livered-title">Es autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía</span></p>
                         <p> <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de</p>
                         <p> funcionamiento</p>
 
@@ -402,7 +352,7 @@ export default function RLSPage() {
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
                             className="inline-block w-[310px] top-0  left-4 "
-                            src="../img/solerpalau/tsa/SolerPalauTsa1.png"
+                            src="../img/solerpalau/rls/SolerPalauRls1.png"
                             width={"100%"}
                         />
                         <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">
@@ -411,7 +361,7 @@ export default function RLSPage() {
                                 radius="full"
                                 size="sm"
                             >
-                                Asesoramiento
+                                W Asesoramiento
                             </Button>
                         </div>
                         
@@ -428,22 +378,33 @@ export default function RLSPage() {
 
                
             </>}
+    {/* --------------------------- FIN MOBILE --------------------------- */}
+
+           
+
             {/* <VideoScrubber/> */}
             {/* <FrameScrubber /> */}
 
-            <Suspense fallback={<div>Loading</div>}>
+            {/* <Suspense fallback={<div>Loading</div>}>
                 <FrameFan />
-            </Suspense>
+            </Suspense> */}
 
+            {/* <section className="mt-32 mb-10 mx-auto lg:w-[80%] flex justify-end lg:items-end items-center">
+                <div className="flex flex-col gap-4">
+                    <DiferencialMaterialGalvanizado/>
+                    <DiferencialMultiposicion/>
+                    <DiferencialVolumenBajo/>
+                    <DiferencialStockPermanente/>
+                </div>
+            </section> */}
 
-
-            <section className="md:hidden mt-0 mb-10 ml-auto w-full flex justify-center align-start items-center">
-                <div className="flex flex-col gap-4 items-center ">
+            <section className="md:hidden mt-0 mb-10  flex r">
+                <div className="flex flex-col gap-4 w-full justify-center items-start align-center ">
                 
-                    <DiferencialMaterialGalvanizado size={60} customWith={250} textSize={14}/>
-                    <DiferencialMultiposicion size={60} customWith={250} textSize={14}/>
-                    <DiferencialVolumenBajo size={60} customWith={250} textSize={14}/>
-                    <DiferencialStockPermanente size={60} customWith={250} textSize={14}/>
+                    <DiferencialMaterialGalvanizado size={60} customWith={10} />
+                    <DiferencialMultiposicion size={60} customWith={250} />
+                    <DiferencialVolumenBajo size={60} customWith={150} />
+                    <DiferencialStockPermanente size={60} customWith={250} />
                 </div>
             </section>
 
@@ -457,11 +418,12 @@ export default function RLSPage() {
                 </Button>
             </div>
 
-           
 
-            {/* -------------------------Tabla de especificadiones------------------------- */}
-{/* <section className="overflow-hidden"> */}
-            <section  className="z-10 max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[120vh] h-[100%] mt-0 md:-mt-10 xl:mt-20 2xl:mt-[200px] 2xl:-mb-32 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
+            
+
+             {/* -------------------------Tabla de especificadiones------------------------- */}
+
+             <section  className="z-10 max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[120vh] h-[100%] mt-0 md:-mt-10 xl:mt-20 2xl:mt-[200px] 2xl:-mb-32 md:h-[100%] bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 <div className="relative w-screen ms-auto">
                     <div
@@ -473,7 +435,7 @@ export default function RLSPage() {
                             flex flex-col justify-start items-center bg-white p-1 "
                         >
                             <div className=" flex flex-col justify-center items-center lg:text-2xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
-                                <h1 className="font-lexend ">Caudales de inyeccion </h1>
+                                <h1 className="font-lexend ">Caudales de inyección </h1>
                                 <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
                                 <h1 className="font-lexend ">y contrapresiones desde</h1>
                                 <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
@@ -645,7 +607,7 @@ export default function RLSPage() {
                                 radius="full"
                                 size={BigScreen ? "lg" : "sm"}
                             >
-                                Asesoramiento
+                                W Asesoramiento
                             </Button>
                         </div>
                     </div>
@@ -676,6 +638,7 @@ export default function RLSPage() {
                 </div>
 
             </section>
+            
         </div>
     );
 }
