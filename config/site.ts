@@ -84,6 +84,12 @@ export const siteConfig = {
 			dropdown: false,
 
         },
+        {
+            label: "Salir",
+            href: "",
+			dropdown: false,
+
+        },
     ],
     links: {
         github: "https://github.com/nextui-org/nextui",

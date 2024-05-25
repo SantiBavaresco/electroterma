@@ -439,7 +439,7 @@ export default function RLSPage() {
                 </div>
             </section> */}
 
-            <section className="md:hidden mt-0 mb-10  flex r">
+            <section className="md:hidden mt-[70%] mb-10  flex r">
                 <div className="flex flex-col gap-4 w-full justify-center items-start align-center ">
                 
                     <DiferencialMaterialGalvanizado size={60} customWith={10} />
@@ -449,7 +449,8 @@ export default function RLSPage() {
                 </div>
             </section>
 
-            <div className=" ml-auto mr-[5%]  flex flex-row justify-end items-end overflow-hidden">
+                                
+            <div className=" ml-auto mr-[5%] -mb-20 flex flex-row justify-end items-end overflow-hidden">
                 <Button
                     className="z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
                     radius="full"
@@ -460,23 +461,43 @@ export default function RLSPage() {
             </div>
 
 
-            
+            {/* ----------------- Specs Web ----------------- */}
+            <div className="relative w-full ms-auto overflow ">
+                    <div
+                            className=" my-10 mx-auto md:mt-32 hidden lg:hidden   px-4 z-10
+                           
+                            
+                            rounded-[42px]
+                            w-[370px]
+                            md:flex flex-col justify-start items-center bg-white p-1 "
+                        >
+                            <div className=" flex flex-col justify-center items-center  text-livered-title py-4 lg:pt-6 xl:py-16 
+                            text-2xl lg:text-2xl 2xl:text-3xl">
+                                <h1 className="font-lexend ">Caudales de inyección </h1>
+                                <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
+                                <h1 className="font-lexend ">y contrapresiones desde</h1>
+                                <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
+
+                            </div>
+                    </div>
+                </div>
+                {/* ----------------- FIN Specs Web ----------------- */}
 
              {/* -------------------------Tabla de especificadiones------------------------- */}
 
-            <section  className="z-10 max-w-[100%] 2xl:w-full min-h-[80vh] lg:min-h-[100vh] h-[100%] mt-0 md:mt-10 xl:mt-0 2xl:mt-[200px] 2xl:-mb-32 md:h-[100%] 
+            <section  className=" w-screen z-10 max-w-[100%]  2xl:w-full min-h-[80vh] lg:min-h-[80vh] h-[100%]  md:mt-10 2xl:mt-20  2xl:mb-10 md:h-[100%] 
             bg-[url('/svg/ondas02.svg')] 
             bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
                 {/* ----------------- Specs Web ----------------- */}
                 <div className="relative w-screen ms-auto ">
                     <div
-                            className="my-10 md:-mt-4 hidden  lg:absolute px-4 z-10
-                            top-72 2xl:top-[40vh] 
+                            className="my-10 md:-mt-4 hidden  lg:inline lg:absolute px-4 z-10
+                            top-[35vh] 2xl:top-[40vh] 
                             right-4
                             xl:right-16
                             rounded-[42px]
-                            lg:w-[370px] xl:w-[400px] 2xl:w-[550px]
-                            md:flex flex-col justify-start items-center bg-white p-1 "
+                            lg:w-[370px] xl:w-[400px] 2xl:w-[500px]
+                             bg-white p-1 "
                         >
                             <div className=" flex flex-col justify-center items-center  text-livered-title py-4 lg:pt-6 xl:py-16 
                             text-xl lg:text-2xl 2xl:text-3xl">
@@ -491,9 +512,10 @@ export default function RLSPage() {
                 {/* ----------------- FIN Specs Web ----------------- */}
 
 
-                <div className=" w-[104%] flex flex-col justify-center items-center  md:mx-[3%] md:mt-20 2xl:mt-[20vh] mx-auto overflow-hidden ">
+                <div className=" w-[104%] flex flex-col justify-center items-center  md:mx-[3%] md:mt-00 lg:md:mt-0 ] mx-auto overflow-hidden ">
                     {/* ----------------- Titulo Caracteristicas ----------------- */}
-                    <h1 className="xs:text-lg xm:text-2xl ml-6 lg:text-4xl 2xl:text-5xl  leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
+                    <h1 className="xs:text-lg xm:text-2xl mt-[0px] ml-6 lg:mt-20  lg:text-4xl 2xl:text-5xl  
+                        leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
                         CARACTERÍSTICAS TÉCNICAS
                     </h1>
                     {/* ----------------- FIN Titulo Caracteristicas ----------------- */}
@@ -518,7 +540,7 @@ export default function RLSPage() {
 
                     {/* ----------------- TABLA ----------------- */}
                     <Accordion
-                        className="hidden md:inline z-10 h-[25vh] md:h-[35vh] lg:min-h-[55vh] 2xl:min-h-[10vh] "
+                        className="hidden md:inline z-10 h-[25vh] md:h-[35vh] lg:min-h-[45vh] xl:min-h-[50vh] 2xl:min-h-[55vh] "
                         variant="splitted"
                         itemClasses={
                             {
