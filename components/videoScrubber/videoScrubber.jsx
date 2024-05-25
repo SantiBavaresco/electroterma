@@ -114,7 +114,7 @@ export default function VideoScrubber() {
                                 // type='video/mp4'
                                 // src="../img/solerpalau/tda/SolerPalauVideo1.mkv"
                                 // src="../img/solerpalau/rls/video/RLS.mp4"
-                                src="../img/solerpalau/rls/video/RLS.mkv"
+                                src="../img/solerpalau/rls/video/rls.mkv"
 
                                 // src="../img/solerpalau/tda/SolerPalauVideoMP4-VLC-SD"
                             />

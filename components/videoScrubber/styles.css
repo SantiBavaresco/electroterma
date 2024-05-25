@@ -141,7 +141,7 @@ section.hero {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 
-    aspect-ratio: 16 / 9;
+    /* aspect-ratio: 16 / 9; */
 
     align-items: end;
 }
@@ -172,21 +172,45 @@ section.vid {
 } */
 
 /* PC */
-@media (min-width: 720px) {
+@media (min-width: 768px) {
 section.vid video {
-    width: 75%;
-    height: 75%;
+    width: 100vw;
+    height: 90vh;
     object-fit: cover;
+    /* scale: 1.2; */
+    transform: translate(0%, 6%);
+
     /* overflow: hidden; */
 }
 section.vid div.holder {
     position: sticky;
     top: 0;
     
+}}
+
+@media (min-width: 1000) {
+    section.vid video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        /* scale: 1.2; */
+        transform: translate(0%, 10%);
+    
+        /* overflow: hidden; */
+    }
+
 }
+@media (min-height: 1000px) {
+    section.vid video {
+    /* scale: 1.2; */
+    height: 80vh;
+
+        transform: translate(0%, 5rem);
+    }
 }
+
 /* PC pantalla celu */
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
     section.vid video {
         touch-action: pan-x;
         margin-top: 20%;
@@ -199,7 +223,7 @@ section.vid div.holder {
         position: sticky;
         top: 5%;
     }
-}
+} */
 
 /* CELULAR */
 /* @media (max-device-width: 720px) {

@@ -12,6 +12,7 @@ console.log("vid duration:", vid.duration);
 const scroll = () => {
 
   const distance = window.scrollY - section.offsetTop
+  console.log(distance);
   const total = section.clientHeight - window.innerHeight
 
   let percentage = distance / total
@@ -21,7 +22,10 @@ const scroll = () => {
 
   
   window.requestAnimationFrame(() => {
-  if (vid?.duration > 0) {
+    console.log( vid.currentTime );
+    if ((vid.currentTime >= 17.0) && (distance > 3000)) {vid.currentTime = 17; console.log("DONE");}
+  else if (vid?.duration > 0) {
+    
     vid.currentTime = vid.duration * percentage;
   }})
 }

@@ -11,9 +11,11 @@ interface ItemsNavbar {
     labelShort: string;
     img: string;
     href: string;
-    }
+    },
+    actual?: string;
+
 }
-const CardDisplay: React.FC<ItemsNavbar> = ({ data, ...props }) => {
+const CardDisplay: React.FC<ItemsNavbar> = ({ data, actual,...props }) => {
     // const modifiedArrays = data.lable
     return (
         
@@ -25,7 +27,7 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, ...props }) => {
             z-10
             ${(data.key==="first") ? " md:rounded-tl-[28px] md:rounded-bl-[28px] hover:bg-none !important" : "" } 
             ${(data.key==="last") ? " md:rounded-tr-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
-            shadow-xl border-1 border-gray-100  rounded-[18px] md:rounded-none
+            shadow-xl border-1 ${data.labelShort===actual ? "border-warning" : "border-gray-100 " }  rounded-[18px] md:rounded-none
         `}>
             <div className={``}>
              <Image
@@ -37,7 +39,10 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, ...props }) => {
                     src={data.img}
                     key={data.key}
                 />
-                <div className={` h-[45px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito bg-livered-title group-hover:bg-[#B2B2B2]
+                <div className={` h-[45px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito 
+                    ${data.labelShort===actual ? "bg-[#EF7916]" : "bg-livered-title group-hover:bg-[#B2B2B2]" }
+                    
+                    
                     ${(data.key==="first") ? " md:rounded-bl-[28px]" : "rounded-b-[18px] md::rounded-none"} 
                     ${(data.key==="last") ? " md:rounded-bl-[0px]" : "rounded-b-[18px] md:rounded-none"} 
                 `}>

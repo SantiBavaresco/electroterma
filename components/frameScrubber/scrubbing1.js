@@ -16,7 +16,7 @@ const frameCount = 800;
 
 const currentFrame = (index) =>
     // `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
-    `../img/solerpalau/${keyAttribute}/frames/e-${index
+    `../img/solerpalau/${keyAttribute && "rls"}/frames/e-${index
         .toString()
         .padStart(3, "0")}.png`;
 
@@ -29,8 +29,8 @@ const preloadImages = () => {
 
 const img = new Image();
 img.src = currentFrame(1);
-canvas.width = 853;
-canvas.height = 480;
+canvas.width = 531;
+canvas.height = 300;
 // canvas.width = 666;
 // canvas.height = 375;
 // canvas.width = 1920;
@@ -50,7 +50,7 @@ window.addEventListener("scroll", () => {
 
     console.log(html.scrollTop);
     if(html.scrollTop >=1000) {
-    const scrollTop = html.scrollTop - 1600;
+    const scrollTop = html.scrollTop - 600;
     console.log(scrollTop);
 
 
