@@ -416,6 +416,7 @@ export default function RLSPage() {
             {/* <FrameScrubber /> */}
             
     {/* --------------------------- VIDEO SCROLL --------------------------- */}
+        <>
             {BigScreen ? 
                 <>   {/* ----- Web ----- */}
                     <VideoScrubber/>
@@ -427,8 +428,248 @@ export default function RLSPage() {
                     </Suspense>
                 </>
             }
+            <section className=" mt-[30vh] md:mt-10 w-full"> 
+                <div className=" mx-[3%] flex justify-end items-end overflow-hidden">
+                    <Button
+                        className="z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
+                        radius="full"
+                        size={BigScreen ? "lg" : "sm"}
+                    >
+                        Manual <Download />
+                    </Button>
+                </div>
+            </section>
+            
+
+        </>
     {/* --------------------------- FIN VIDEO SCROLL --------------------------- */}
 
+
+            {BigScreen ?
+                <>  {/* ----------------- Caractecristicas Web ----------------- */}
+                    <section className="z-10  flex flex-col  overflow-hidden
+                        h-[100%] w-[100%] min-h-[50vh] max-w-[100%]  ml-auto
+
+                        
+                        bg-[url('/svg/ondas02.svg')] bg-fill
+                        bg-[center_1rem] bg-no-repeat
+                    
+                      ">
+                        <div className="ml-[3%] h-full  flex flex-col justify-center items-center lg:flex-row lg:grow">
+
+                            <div className="min-h-[55vh] lg:min-h-[45vh] ">
+                                <h1 className="flex py-4 md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
+                                ">
+                                    CARACTERÍSTICAS TÉCNICAS
+                                </h1>
+                                <Accordion
+                                className="z-10 h-[25vh] md:h-[35vh] lg:min-h-[45vh] xl:min-h-[50vh] 2xl:min-h-[55vh] "
+                                variant="splitted"
+                                itemClasses={
+                                    {
+                                        base: " py-2 md:py-4 md:px-4 bg-red-500 w-[98%] lg:w-[58.5vw] xl:w-[57vw] opacity-95",
+                                        title: "font-normal text-2xl",
+                                        trigger:
+                                            "pl-2 py-2  data-[hover=true]:bg-default-100 pr-4 rounded-lg h-14 flex items-center",
+                                        indicator: "text-medium",
+                                        content: "text-xl px-2",
+                                }}
+                                selectionMode="multiple"
+                                >
+                                    <AccordionItem
+                                        key="facil"
+                                        aria-label=""
+                                        startContent={
+                                            <div className="w-[80vw]  -ml-2 md:-ml-2 md:w-[76.5vw] lg:w-[52.5vw] xl:w-[51.5vw] 2xl:w-[52.5vw] grid grid-cols-4  p-3 lg:p-4 lg:pr-2  bg-orange-500 rounded-xl 
+                                                text-xs md:text-base 2xl:text-xl">
+                                                <div className="bg-orange-500 text-white ">
+                                                    MODELO TSA
+                                                </div>
+                                                <div className="bg-orange-500 text-white  ">
+                                                    QMIN[m3/h]
+                                                </div>
+                                                <div className="bg-orange-500 text-white ">
+                                                    Ap[mmca]
+                                                </div>
+                                                <div className="bg-orange-500 text-white ">
+                                                    Q[m3/h]
+                                                </div>
+                                            </div>
+                                        }
+                                        title=""
+                                    >
+                                        <div className="w-[96%]  md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mb-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
+                                            <div className=" flex md:items-center justify-center  "> TSA 9/4 - 4P </div>
+                                            <div className=" flex items-center justify-center"> 700 </div>
+                                            <div className=" flex items-center justify-center"> 38 </div>
+                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6 "> 1150 </div>
+                                        </div>
+
+                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
+                                            <div className=" flex md:items-center justify-center "> TSA 10/5 - 4P </div>
+                                            <div className="flex items-center justify-center"> 800 </div>
+                                            <div className=" flex items-center justify-center"> 48 </div>
+                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 1500 </div>
+                                        </div>
+
+                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
+                                            <div className=" flex items-center justify-center "> TSA 12/6 - 4P </div>
+                                            <div className="flex items-center justify-center"> 1350 </div>
+                                            <div className="flex items-center justify-center"> 68 </div>
+                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 2600 </div>
+                                        </div>
+                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
+                                            <div className="flex items-center justify-center "> TSA 15/7 - 6P </div>
+                                            <div className="flex items-center justify-center"> 1400 </div>
+                                            <div className=" flex items-center justify-center"> 40 </div>
+                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 3000 </div>
+                                        </div>
+                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
+                                            <div className=" flex items-center justify-center "> TSA 15/7 - 4P </div>
+                                            <div className=" flex items-center justify-center"> 2200 </div>
+                                            <div className=" flex items-center justify-center"> 95 </div>
+                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5000 </div>
+                                        </div>
+                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mt-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
+                                            <div className=" flex items-center justify-center "> TSA 18/9 - 6P </div>
+                                            <div className="flex items-center justify-center"> 2300 </div>
+                                            <div className="flex items-center justify-center"> 58 </div>
+                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5500 </div>
+                                        </div>
+
+                                    </AccordionItem>
+                                </Accordion>
+                            </div>
+                            <div className=" w-full flex justify-center items-center">
+                            {/* ----------------- Specs Web ----------------- */}
+                                <div className=" w-full ms-auto overflow ">
+                                        <div
+                                                className=" my-10 mx-auto  px-4 z-10
+                                            
+                                                
+                                                rounded-[42px]
+                                                w-[370px] xl:w-[400px] 2xl:w-[500px]
+                                                flex flex-col justify-start items-center bg-white p-1 "
+                                            >
+                                                <div className=" flex flex-col justify-center items-center  text-livered-title py-4 lg:pt-6 xl:py-16 
+                                                text-2xl lg:text-2xl 2xl:text-3xl">
+                                                    <h1 className="font-lexend ">Caudales de inyección </h1>
+                                                    <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
+                                                    <h1 className="font-lexend ">y contrapresiones desde</h1>
+                                                    <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                            {/* ----------------- FIN Specs Web ----------------- */}
+                            </div>
+                            
+                        </div>
+                        <div className="mx-[3%]">
+                                <div className="z-0 w-full mx-auto mt-0">
+                                    <div className="mt-2 flex items-center justify-center opacity-30">
+                                        <Image
+                                            alt="Otam Logo"
+                                            className=""
+                                            src="../img/otamlogo.png"
+                                            width={300}
+                                        />
+                                    </div>
+                                    
+                                </div>
+                                <div className="  w-full ml-auto lg:-mr-0">
+                                    <div className="mt-0  flex items-end justify-end">
+                                        <Image
+                                            alt="Electroterma Logo"
+                                            className=""
+                                            src="../img/electrotermalogoletras.png"
+                                            width={340}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                      </section>
+
+                    {/* ----------------- Caractecristicas Web MOBILE ----------------- */}
+                </> 
+                : <>
+                    <section className="md:hidden my-4 flex">
+                        <div className="flex flex-col gap-4 w-full justify-center items-start align-center ">
+                        
+                            <DiferencialMaterialGalvanizado size={60} customWith={10} />
+                            <DiferencialMultiposicion size={60} customWith={250} />
+                            <DiferencialVolumenBajo size={60} customWith={150} />
+                            <DiferencialStockPermanente size={60} customWith={250} />
+                        </div>
+                    </section>
+                    <section className="z-10  flex flex-col  overflow-hidden
+                        h-[100%] w-[100%] min-h-[100%] max-w-[100%]  ml-auto
+
+                        
+                        bg-[url('/svg/ondas022.svg')] bg-fill
+                        bg-[center_1rem] bg-no-repeat
+                    
+                    ">
+                        <div className="ml-[%] h-full  flex flex-col justify-center items-center ">
+                            <h1 className="  mx-auto pt-10 py-4 xs:text-lg xm:text-2xl md:text-3xl  leading-none font-nunito-bolder me-auto  text-livered-title  
+                                ">
+                                    CARACTERÍSTICAS TÉCNICAS
+                                </h1>
+
+                            <div className="min-h-[vh] ">
+                                
+                            
+                            {/* ----------------- Specs Web ----------------- */}
+                                <div className=" w-full ms-auto overflow ">
+                                        <div
+                                                className=" my-10 mx-auto  px-4 z-10
+                                            
+                                                
+                                                rounded-[42px]
+                                                w-[370px] xl:w-[400px] 2xl:w-[500px]
+                                                flex flex-col justify-start items-center bg-white p-1 "
+                                            >
+                                                <div className=" flex flex-col justify-center items-center  text-livered-title py-4 
+                                                text-xl ">
+                                                    <h1 className="font-lexend ">Caudales de inyección </h1>
+                                                    <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
+                                                    <h1 className="font-lexend ">y contrapresiones desde</h1>
+                                                    <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                            {/* ----------------- FIN Specs Web ----------------- */}
+                            </div>
+                            
+                        </div>
+                        <div className="mx-[3%]">
+                                
+                            
+                                <div className="  w-full ml-auto ">
+                                    <div className="mt-0  flex items-end justify-end  opacity-30">
+                                    <Image
+                                            alt="Otam Logo"
+                                            className=""
+                                            src="../img/otamlogo.png"
+                                            width={150}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="  w-full ml-auto ">
+                                    <div className="mt-0  flex items-end justify-end">
+                                        <Image
+                                            alt="Electroterma Logo"
+                                            className=""
+                                            src="../img/electrotermalogoletras.png"
+                                            width={140}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                      </section>
+                </>
+            }
 
             {/* <section className="mt-32 mb-10 mx-auto lg:w-[80%] flex justify-end lg:items-end items-center">
                 <div className="flex flex-col gap-4">
@@ -439,208 +680,16 @@ export default function RLSPage() {
                 </div>
             </section> */}
 
-            <section className="md:hidden mt-[70%] mb-10  flex r">
-                <div className="flex flex-col gap-4 w-full justify-center items-start align-center ">
-                
-                    <DiferencialMaterialGalvanizado size={60} customWith={10} />
-                    <DiferencialMultiposicion size={60} customWith={250} />
-                    <DiferencialVolumenBajo size={60} customWith={150} />
-                    <DiferencialStockPermanente size={60} customWith={250} />
-                </div>
-            </section>
-
+            
                                 
-            <div className=" ml-auto mr-[5%] -mb-20 flex flex-row justify-end items-end overflow-hidden">
-                <Button
-                    className="z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
-                    radius="full"
-                    size={BigScreen ? "lg" : "sm"}
-                >
-                    Manual <Download />
-                </Button>
-            </div>
+           
 
 
-            {/* ----------------- Specs Web ----------------- */}
-            <div className="relative w-full ms-auto overflow ">
-                    <div
-                            className=" my-10 mx-auto md:mt-32 hidden lg:hidden   px-4 z-10
-                           
-                            
-                            rounded-[42px]
-                            w-[370px]
-                            md:flex flex-col justify-start items-center bg-white p-1 "
-                        >
-                            <div className=" flex flex-col justify-center items-center  text-livered-title py-4 lg:pt-6 xl:py-16 
-                            text-2xl lg:text-2xl 2xl:text-3xl">
-                                <h1 className="font-lexend ">Caudales de inyección </h1>
-                                <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
-                                <h1 className="font-lexend ">y contrapresiones desde</h1>
-                                <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
-
-                            </div>
-                    </div>
-                </div>
-                {/* ----------------- FIN Specs Web ----------------- */}
+            
 
              {/* -------------------------Tabla de especificadiones------------------------- */}
 
-            <section  className=" w-screen z-10 max-w-[100%]  2xl:w-full min-h-[80vh] lg:min-h-[80vh] h-[100%]  md:mt-10 2xl:mt-20  2xl:mb-10 md:h-[100%] 
-            bg-[url('/svg/ondas02.svg')] 
-            bg-[center_top_1rem] bg-fit md:bg-top md:bg-fit 2xl:bg-[center_1rem] 2xl:bg-cover bg-no-repeat overflow-hidden">
-                {/* ----------------- Specs Web ----------------- */}
-                <div className="relative w-screen ms-auto ">
-                    <div
-                            className="my-10 md:-mt-4 hidden  lg:inline lg:absolute px-4 z-10
-                            top-[35vh] 2xl:top-[40vh] 
-                            right-4
-                            xl:right-16
-                            rounded-[42px]
-                            lg:w-[370px] xl:w-[400px] 2xl:w-[500px]
-                             bg-white p-1 "
-                        >
-                            <div className=" flex flex-col justify-center items-center  text-livered-title py-4 lg:pt-6 xl:py-16 
-                            text-xl lg:text-2xl 2xl:text-3xl">
-                                <h1 className="font-lexend ">Caudales de inyección </h1>
-                                <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
-                                <h1 className="font-lexend ">y contrapresiones desde</h1>
-                                <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
-
-                            </div>
-                    </div>
-                </div>
-                {/* ----------------- FIN Specs Web ----------------- */}
-
-
-                <div className=" w-[104%] flex flex-col justify-center items-center  md:mx-[3%] md:mt-00 lg:md:mt-0 ] mx-auto overflow-hidden ">
-                    {/* ----------------- Titulo Caracteristicas ----------------- */}
-                    <h1 className="xs:text-lg xm:text-2xl mt-[0px] ml-6 lg:mt-20  lg:text-4xl 2xl:text-5xl  
-                        leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
-                        CARACTERÍSTICAS TÉCNICAS
-                    </h1>
-                    {/* ----------------- FIN Titulo Caracteristicas ----------------- */}
-
-                    {/* ----------------- Specs mobile ----------------- */}
-                    <div
-                            className="my-0:mt-20  md:hidden  px-4 z-10
-                            rounded-[42px]
-                            lg:w-[370px] xl:w-[400px] 2xl:w-[550px]
-                            flex flex-col justify-start items-center bg-white p-1 "
-                        >
-                            <div className=" flex flex-col justify-center items-center  text-livered-title py-4 lg:pt-6 xl:py-16 
-                            text-xl lg:text-2xl 2xl:text-3xl">
-                                <h1 className="font-lexend ">Caudales de inyección </h1>
-                                <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
-                                <h1 className="font-lexend ">y contrapresiones desde</h1>
-                                <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
-
-                            </div>
-                    </div>
-                    {/* ----------------- FIN Specs mobile ----------------- */}
-
-                    {/* ----------------- TABLA ----------------- */}
-                    <Accordion
-                        className="hidden md:inline z-10 h-[25vh] md:h-[35vh] lg:min-h-[45vh] xl:min-h-[50vh] 2xl:min-h-[55vh] "
-                        variant="splitted"
-                        itemClasses={
-                            {
-                                base: " py-2 md:py-4 md:px-4 bg-red-500 w-[91%] lg:w-[58.5vw] xl:w-[57vw] opacity-95",
-                                title: "font-normal text-2xl",
-                                trigger:
-                                    "pl-2 py-2  data-[hover=true]:bg-default-100 pr-4 rounded-lg h-14 flex items-center",
-                                indicator: "text-medium",
-                                content: "text-xl px-2",
-                        }}
-                        selectionMode="multiple"
-                    >
-                        <AccordionItem
-                            key="facil"
-                            aria-label=""
-                            startContent={
-                                <div className="w-[80vw]  -ml-2 md:-ml-2 md:w-[82.5vw] lg:w-[52.5vw] xl:w-[51.5vw] 2xl:w-[52.5vw] grid grid-cols-4  p-3 lg:p-4 lg:pr-2  bg-orange-500 rounded-xl 
-                                    text-xs md:text-base 2xl:text-xl">
-                                    <div className="bg-orange-500 text-white ">
-                                        MODELO TSA
-                                    </div>
-                                    <div className="bg-orange-500 text-white  ">
-                                        QMIN[m3/h]
-                                    </div>
-                                    <div className="bg-orange-500 text-white ">
-                                        Ap[mmca]
-                                    </div>
-                                    <div className="bg-orange-500 text-white ">
-                                        Q[m3/h]
-                                    </div>
-                                </div>
-                            }
-                            title=""
-                        >
-                            <div className="w-[96%]  md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mb-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                <div className=" flex md:items-center justify-center  "> TSA 9/4 - 4P </div>
-                                <div className=" flex items-center justify-center"> 700 </div>
-                                <div className=" flex items-center justify-center"> 38 </div>
-                                <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6 "> 1150 </div>
-                            </div>
-
-                            <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                <div className=" flex md:items-center justify-center "> TSA 10/5 - 4P </div>
-                                <div className="flex items-center justify-center"> 800 </div>
-                                <div className=" flex items-center justify-center"> 48 </div>
-                                <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 1500 </div>
-                            </div>
-
-                            <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                <div className=" flex items-center justify-center "> TSA 12/6 - 4P </div>
-                                <div className="flex items-center justify-center"> 1350 </div>
-                                <div className="flex items-center justify-center"> 68 </div>
-                                <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 2600 </div>
-                            </div>
-                            <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                <div className="flex items-center justify-center "> TSA 15/7 - 6P </div>
-                                <div className="flex items-center justify-center"> 1400 </div>
-                                <div className=" flex items-center justify-center"> 40 </div>
-                                <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 3000 </div>
-                            </div>
-                            <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                <div className=" flex items-center justify-center "> TSA 15/7 - 4P </div>
-                                <div className=" flex items-center justify-center"> 2200 </div>
-                                <div className=" flex items-center justify-center"> 95 </div>
-                                <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5000 </div>
-                            </div>
-                            <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mt-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                <div className=" flex items-center justify-center "> TSA 18/9 - 6P </div>
-                                <div className="flex items-center justify-center"> 2300 </div>
-                                <div className="flex items-center justify-center"> 58 </div>
-                                <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5500 </div>
-                            </div>
-
-                        </AccordionItem>
-                    </Accordion>
-                    {/* ----------------- FIN TABLA ----------------- */}
-
-                    <div className="z-0 w-full mx-auto mt-0">
-                        <div className="mt-2 flex items-center justify-center opacity-30">
-                            <Image
-                                alt="Otam Logo"
-                                className=""
-                                src="../img/otamlogo.png"
-                                width={300}
-                            />
-                        </div>
-                        
-                    </div>
-                    <div className="  w-full 2xl:-mt-10 ml-auto lg:-mr-0">
-                        <div className="mt-2  mx-[10%] flex items-end justify-end">
-                            <Image
-                                alt="Electroterma Logo"
-                                className=""
-                                src="../img/electrotermalogoletras.png"
-                                width={340}
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
 
             {/* ----------------- Imagenes DEMO + logos ----------------- */}
             <section className="h-[60%] lg:h-[70%] 2xl:h-[90%] 2xl:w-[100%] mb-6  bg-inherit z-10 bg-none overflow-hidden">

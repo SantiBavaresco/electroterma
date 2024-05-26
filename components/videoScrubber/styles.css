@@ -176,6 +176,7 @@ section.vid {
 section.vid video {
     width: 100vw;
     height: 90vh;
+    /* margin-bottom: 10rem; */
     object-fit: cover;
     /* scale: 1.2; */
     transform: translate(0%, 6%);

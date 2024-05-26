@@ -39,7 +39,7 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, actual,...props }) => {
                     src={data.img}
                     key={data.key}
                 />
-                <div className={` h-[45px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito 
+                <div className={` mx-auto h-[65px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito 
                     ${data.labelShort===actual ? "bg-[#EF7916]" : "bg-livered-title group-hover:bg-[#B2B2B2]" }
                     
                     
@@ -47,7 +47,7 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, actual,...props }) => {
                     ${(data.key==="last") ? " md:rounded-bl-[0px]" : "rounded-b-[18px] md:rounded-none"} 
                 `}>
                     {data?.label?.map((description:string)=>(
-                        <p key={description} className="gap-3 px-2 text-[10px] xm:text-xs md:text-xl">{description}</p>
+                        <p key={description} className="gap-3 px-2 text-[10px] xm:text-xs md:text-base lg:text-lg xl:text-xl">{description}</p>
             
                     ))}
 

@@ -65,11 +65,13 @@ export const Navbar = () => {
     const [firstDropdownOpen, setFirstDropdownOpen] = useState(false);
     const [secondDropdownOpen, setSecondDropdownOpen] = useState(false);
 
+    const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+
     const setFirstFalse = () => {
         setFirstDropdownOpen(false);
     };
-    const setSecondTrue = () => {
-        setSecondDropdownOpen(true);
+    const setMobileFalse = () => {
+        setMobileDropdownOpen(true);
     };
 
     const handleFirstDropdownOpen = () => {
@@ -92,7 +94,7 @@ export const Navbar = () => {
             key: "first",
             label: ["Ventilador Centrifigo", "Autolimitantes - RLS"],
             labelShort: "RLS",
-            img: "../img/navbar/NavBarRLSSolerPalau.png",
+            img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
         },
         {
@@ -146,6 +148,9 @@ export const Navbar = () => {
             className="h-[42px] md:h-[64px] lg:px-10  flex justify-center items-center"
             position="sticky"
             height="42px"
+            isMenuOpen={mobileDropdownOpen}
+            onMenuOpenChange={setMobileDropdownOpen}
+            
         >
             <NavbarBrand>
                 <NextLink
@@ -309,13 +314,10 @@ export const Navbar = () => {
 {/* ------------------------------------ MENU MOBILE ------------------------------------ */}
 
             <NavbarContent className="md:hidden basis-1 w-screen pl-4" justify="end">
-                {/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
-				</Link>
-				<ThemeSwitch /> */}
+                
                 
                 <NavbarMenuToggle 
-                 
+                
                  aria-label={isMenuOpen ? "C" : "O"}
                  icon={isMenuOpen ? "C" : 
                  
@@ -345,28 +347,22 @@ export const Navbar = () => {
                  
                 }
                  className="w-20 md:hidden "
+                 
                 />
             </NavbarContent>
 
-            <NavbarMenu>
+            <NavbarMenu
+            
+            >
                 {/* {searchInput} */}
                 
                 <div className="mx-4 mt-2 flex flex-col gap-2 ">
                     
                     {siteConfig.navMenuItems.map((item, index) => (
-                        <NavbarMenuItem key={`${item}-${index}`}>
-                            {/* <Link
-                                color={
-                                    index === 3
-                                        ? "primary"
-                                        : index ===
-                                          siteConfig.navMenuItems.length - 1
-                                        ? "danger"
-                                        : "foreground"
-                                }
-                                href={item.href}
-                                size="lg"
-                            > */}
+                        <NavbarMenuItem key={`${item}-${index}`}
+                        onClick={() => setMobileDropdownOpen(false)} 
+                        >
+                            
                                 {item.dropdown ? 
                                     <div className="">
                                         <Accordion variant="light">
@@ -405,7 +401,8 @@ export const Navbar = () => {
                                     className=""
                                     color="foreground"
                                     href={item.href}
-                                                
+                                    
+                                              
                                 >
                                     <h1>{item.label}</h1> 
                                 </NextLink>
