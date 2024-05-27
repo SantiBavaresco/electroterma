@@ -53,7 +53,7 @@ export default function RLSPage() {
     const itemsNav: ItemsNavbar[] = [
         {
             key: "first",
-            label: ["Ventilador Centrífugo", "Autolimitantes - RLS"],
+            label: ["Ventilador Centrífugo", "Autolimitante - RLS"],
             labelShort: "RLS",
             img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
@@ -447,7 +447,7 @@ export default function RLSPage() {
 
             {BigScreen ?
                 <>  {/* ----------------- Caractecristicas Web ----------------- */}
-                    <section className="z-10  flex flex-col  overflow-hidden
+                    <section className="z-0  flex flex-col  overflow-hidden
                         h-[100%] w-[100%] min-h-[50vh] max-w-[100%]  ml-auto
 
                         
@@ -565,8 +565,8 @@ export default function RLSPage() {
                             </div>
                             
                         </div>
-                        <div className="mx-[3%]">
-                                <div className="z-0 w-full mx-auto mt-0">
+                        <div className="-z-10 mx-[3%]">
+                                <div className=" w-full mx-auto mt-0">
                                     <div className="mt-2 flex items-center justify-center opacity-30">
                                         <Image
                                             alt="Otam Logo"
@@ -577,7 +577,7 @@ export default function RLSPage() {
                                     </div>
                                     
                                 </div>
-                                <div className="  w-full ml-auto lg:-mr-0">
+                                <div className=" w-full ml-auto lg:-mr-0">
                                     <div className="mt-0  flex items-end justify-end">
                                         <Image
                                             alt="Electroterma Logo"
