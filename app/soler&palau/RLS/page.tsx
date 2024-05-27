@@ -25,7 +25,8 @@ import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
 import { FacilInstalacion } from "@/public/svg/facilInstalacion";
 import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
 
-
+import { IoLogoInstagram } from "react-icons/io";
+import { BsWhatsapp } from "react-icons/bs";
 
 import { Download } from "@/public/svg/download";
 import SimpleSlider from "@/components/imgslider/slickSlider";
@@ -328,8 +329,16 @@ export default function RLSPage() {
                                 radius="full"
                                 size={BigScreen ? "lg" : "sm"}
                             >
-                               W Asesoramiento
+                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
+                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
                             </Button>
+                            
+
                         </div>
 
                     </section>
@@ -390,7 +399,13 @@ export default function RLSPage() {
                                 radius="full"
                                 size="sm"
                             >
-                                W Asesoramiento
+                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
+                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
                             </Button>
                         </div>
                         
@@ -711,13 +726,19 @@ export default function RLSPage() {
                                 width={150}
                             />
                         </div>
-                        <div className="w-1/2 float-right flex justify-end items-end pr-10 2xl:mr-[5%] md:pr-0">
+                        <div className="w-full float-right flex justify-end items-end pr-10 2xl:mr-[5%] md:pr-0">
                             <Button
                                 className="  z-10 bg-livered text-white 2xl:text-2xl"
                                 radius="full"
                                 size={BigScreen ? "lg" : "sm"}
                             >
-                                W Asesoramiento
+                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
+                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
                             </Button>
                         </div>
                     </div>

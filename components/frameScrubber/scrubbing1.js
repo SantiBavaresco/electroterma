@@ -12,7 +12,7 @@ let keyAttribute = "ventElement.accessKey";
   }
 
 // const frameCount = 599;
-const frameCount = 509;
+const frameCount = 461;
 
 let imgArray = [];
 
@@ -65,7 +65,7 @@ window.addEventListener("scroll", () => {
         frameCount - 1,
         Math.ceil(scrollFraction * frameCount)
     );
-
+    console.log(frameIndex);
     requestAnimationFrame(() => updateImage(frameIndex + 1));
 
     }
