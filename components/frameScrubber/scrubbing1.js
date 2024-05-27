@@ -12,7 +12,9 @@ let keyAttribute = "ventElement.accessKey";
   }
 
 // const frameCount = 599;
-const frameCount = 800;
+const frameCount = 509;
+
+let imgArray = [];
 
 const currentFrame = (index) =>
     // `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
@@ -21,29 +23,31 @@ const currentFrame = (index) =>
         .padStart(3, "0")}.png`;
 
 const preloadImages = () => {
-    for (let i = 1; i < frameCount; i+=4) {
+    for (let i = 1; i < frameCount; i+=1) {
         const img = new Image();
         img.src = currentFrame(i);
+        imgArray.push(img);
     }
 };
 
 const img = new Image();
-img.src = currentFrame(1);
+// img.src = currentFrame(1);
+img.src = imgArray[0];
 canvas.width = 531;
 canvas.height = 300;
-// canvas.width = 666;
-// canvas.height = 375;
-// canvas.width = 1920;
-// canvas.height = 1080;
 
 img.onload = function () {
     context.drawImage(img, 0, 0);
 };
 
 const updateImage = (index) => {
-    img.src = currentFrame(index);
-    context.drawImage(img, 0, 0);
+    // img.src = currentFrame(index);
+    // img.src = imgArray[index];
     console.log("img n°: ",index);
+
+    console.log("img n°: ",imgArray[index]);
+
+    context.drawImage(imgArray[index], 0, 0);
 };
 
 window.addEventListener("scroll", () => {

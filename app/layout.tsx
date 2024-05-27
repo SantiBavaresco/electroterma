@@ -63,7 +63,7 @@ export default function RootLayout({
                         <footer className="w-full flex flex-col text-xs md:text-base items-center justify-center py-3 bg-[#D9D9D9]">
                             <div className="flex flex-col justify-center items-center ">
                             <span className="font-lexeng-bolder font-bold">Calle 5 entre 6 y 8</span>
-                            <span className="font-lexeng-bold">Parque Industrial Mar del Plata - Batán</span>
+                            <span className="font-lexeng-bold text-[10px] xm:text-xs">Parque Industrial Mar del Plata - Batán</span>
                             <div className="my-2">
                                 <span className="flex items-center justify-center font-lexeng-bolder font-bold text-center">223-4649999</span>
                                 <span className="flex flex-row items-center justify-center ">
