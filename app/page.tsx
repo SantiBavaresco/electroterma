@@ -18,6 +18,8 @@ export default function Home() {
         <section className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10">
 
             hola
+
+            
             {/* <section className="flex flex-col items-center justify-center gap-4 py-2 md:py-4">
                 <div className="inline-block max-w-2xl text-center justify-center ">
                     <h1 className={title()}>Lo Sentimos &nbsp;</h1>
