@@ -365,26 +365,14 @@ export default function RLSPage() {
             // ----------------------- MOBILE -----------------------
             <>
                 <section className="w-[80vw] mx-6">
-                    <span className=" relative flex  justify-center items-center h-full
-                                "
-                                // text-xl lg:text-2xl xl:text-5xl 2xl:text-[51px] 3xl:text-[61px] text-[#9D9D9C] font-nunito 
-                            >
-                                <div className="relative -left-10 top-0  ">
-                                    <VinietaNaranjaSVG css=" h-[10px] w-[10px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
-                                </div>
-                                <h1 className="absolute left-0 text-[#9D9D9C] font-nunito 
-                                    text-[3.2vw]
-                                "> 
-                                    VENTILADOR 
-                                </h1>
-                            </span>
-                    {/* <span className=" text-[20px] text-[#9D9D9C] font-nunito ">
-                        <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
+                    
+                    <span className="relative text-[20px] text-[#9D9D9C] font-nunito ">
+                        <div className="absolute top-0 -left-6 mt-1 md:mt-2 ">
                             <VinietaNaranjaSVG css=" h-[20px] w-[20px] " />
                         </div>
                         VENTILADOR
                         
-                    </span> */}
+                    </span>
 
                     <h1 className="relative mt-2 text-[29px] xm:text-[35px] leading-none font-nunito-bolder text-livered-title">
                         
