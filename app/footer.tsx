@@ -42,7 +42,12 @@ export default function Footer() {
 				<IoLogoInstagram className="text-orange-600 hover:text-pink-600 text-2xl" />
 			</Link>
 			<Link  isExternal  href="https://www.facebook.com/Electroterma/" title="Facebook de Electroterma">
-				<FiFacebook className="text-orange-600 hover:text-blue-500 text-2xl" /> </Link>
+				{/* <svg width="12" height="20" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M16.375 1.66675H12.25C10.4266 1.66675 8.67789 2.36912 7.38869 3.61937C6.09932 4.86961 5.375 6.56531 5.375 8.33341V12.3334H1.25V17.6667H5.375V28.3334H10.875V17.6667H15L16.375 12.3334H10.875V8.33341C10.875 7.97979 11.0199 7.64065 11.2777 7.3906C11.5356 7.14056 11.8854 7.00008 12.25 7.00008H16.375V1.66675Z" stroke="#EF771C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg> */}
+
+				<FiFacebook className="text-orange-600 hover:text-blue-500 text-xl" /> 
+				</Link>
 			<Link  isExternal  href="https://www.youtube.com/@electroterma849" title="Youtube de Electroterma">
 				<AiOutlineYoutube className="text-orange-600 hover:text-livered text-2xl"/></Link>
 		</div>
