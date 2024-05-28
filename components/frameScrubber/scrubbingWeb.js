@@ -1,6 +1,10 @@
 
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
+
+
+
+
 const context = canvas.getContext("2d");
 const ventElement = document.getElementById("vent");
 let keyAttribute = "ventElement.accessKey";
@@ -31,13 +35,19 @@ const preloadImages = () => {
     }
 };
 
+
+
 const img = new Image();
 // img.src = currentFrame(1);
 img.src = imgArray[0];
-// canvas.width = 531;
-// canvas.height = 399;
+// canvas.width = 1080;
+// canvas.height = 608;
+console.log( window.innerWidth);
+console.log( innerHeight);
+
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
 
 img.onload = function () {
     context.drawImage(img, 0, 0);
@@ -48,24 +58,31 @@ const updateImage = (index) => {
     // img.src = imgArray[index];
     console.log("img n°: ",index);
 
-    // console.log("img n°: ",imgArray[index]);
+    console.log("img n°: ",imgArray[index]);
 
-    // context.drawImage(imgArray[index], 0, 0);
-    context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, (Math.min(img.width, canvas.width)*1.77), ( Math.min(img.height, canvas.height) * 1.77));
-
+    context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
 };
 
+
+
 window.addEventListener("scroll", () => {
+    
+    
 
     console.log(html.scrollTop);
-    if(html.scrollTop >=1000) {
-        const scrollTop = html.scrollTop - 600;
-    
+    if(html.scrollTop >=990) {
+        const frameHeigh = document.getElementById("frame");
+    const frameHeigh1 = frameHeigh.scrollHeight;
+    console.log(frameHeigh1);
+
+    const scrollTop = html.scrollTop - 1280;
     console.log(scrollTop);
 
-
-    const maxScrollTop = html.scrollHeight - window.innerHeight;
-    const scrollFraction = scrollTop / maxScrollTop;
+        console.log(html.scrollHeight);
+    
+    
+    const maxScrollTop = 5748 - window.innerHeight;
+    const scrollFraction = (scrollTop) / maxScrollTop;
     const frameIndex = Math.min(
         frameCount - 1,
         Math.ceil(scrollFraction * frameCount)

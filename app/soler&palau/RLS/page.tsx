@@ -434,10 +434,14 @@ export default function RLSPage() {
         <>
             {BigScreen ? 
                 <>   {/* ----- Web ----- */}
-                    <VideoScrubber/>
+                    {/* <VideoScrubber/> */}
+                    <Suspense fallback={<div>Loading</div>}>
+                        <FrameFan />
+                    </Suspense>
                 </> 
                 
                 : <> {/* ----- Mobile ----- */}
+
                     <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
                     </Suspense>
@@ -726,7 +730,7 @@ export default function RLSPage() {
                                 width={150}
                             />
                         </div>
-                        <div className="w-full float-right flex justify-end items-end pr-10 2xl:mr-[5%] md:pr-0">
+                        <div className="w-full float-right flex justify-end items-end lg:pr-10 2xl:mr-[5%] md:pr-0">
                             <Button
                                 className="  z-10 bg-livered text-white 2xl:text-2xl"
                                 radius="full"

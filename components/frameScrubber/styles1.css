@@ -4,21 +4,21 @@
   
  
 
-/* PC */
-/* @media (min-width: 720px) {
+/* PC  */
+@media (min-width: 720px) {
     canvas {
 
-        margin-top: 5%;
+        /* margin-top: 7%; */
         z-index: 0;
         object-fit: cover;
-        left: 50%;
-        top: 50%;
+        /* left: 50%;
+        top: 50%; */
 
-        transform: translate(0%, 25%);
+        /* transform: translate(0%, 25%); */
 
-        max-width: 90vw;
-        max-height: 90vh;
-        scale: 2;
+        max-width: 99vw;
+        max-height: 99vh;
+        scale: 1;
         
         margin-bottom:  160px;
         
@@ -26,7 +26,10 @@
       section.frames {
 
         z-index: 0;
-        height: 725vh;
+        /* height: 725vh;
+         */
+        height: 600vh;
+
 
         position: relative;
         background: #fefefe;
@@ -38,7 +41,7 @@
         top: 0;
     }
       
-} */
+}
 
 
   /* PC pantalla celu VIDEO*/
@@ -46,17 +49,19 @@
     canvas {
     
         /* position: fixed; */
-        object-fit: cover;
-        left: 0%;
+        /* object-fit: cover; */
+        /* left: 0%; */
         /* top: 50%; */
         /* transform: translate(-50%, -70%); */
         /* max-width: 70vw; */
         /* max-width: 90vw;*/
         /* max-height: 90vh;  */
-        width: 100%;
-        height: 150%;
+        /* width: 100%;
+        height: 80%; */
+        max-width: 100%;
+        max-height: 30vh;
 
-        transform: translate(0%, 30%);
+        /* transform: translate(0%, 130%); */
 
         /* width: 600px;
         height: 550px; */
@@ -67,7 +72,7 @@
       section.frames {
         /* height: 4000px; */
         z-index: 0;
-        height: 15000px;
+        height: 600vh;
         /* height: 580vh; */
         position: relative;
         background: #fefefe;

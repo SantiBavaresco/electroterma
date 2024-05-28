@@ -29,6 +29,20 @@ export default function FrameScrubber() {
 
     const frameRef = useRef(null);
 
+    const [BigScreen, setBigScreen] = useState(false);
+
+    useEffect(() => {
+        const handler = (e) => setBigScreen(e.matches);
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        mediaQuery.addEventListener('change', handler);
+        setBigScreen(mediaQuery.matches);
+
+        return () => {
+        mediaQuery.removeEventListener('change', handler);
+        };
+    }, []);
+
     // useEffect(() => {
     //     const observer = new IntersectionObserver((entries) => {
     //       const entry = entries[0];
@@ -49,7 +63,7 @@ export default function FrameScrubber() {
     //   }, []);
 
     useEffect(() => {
-        require("./scrubbing1");
+        {BigScreen ? require("./scrubbing1") : require("./scrubbingWeb")}
         return () => {};
     }, []);
 
