@@ -12,15 +12,23 @@ let keyAttribute = "ventElement.accessKey";
   }
 
 // const frameCount = 599;
-const frameCount = 509;
+const frameCount = 530;
 
 let imgArray = [];
 
-const currentFrame = (index) =>
+const currentFrame = (index) => {
     
+    if(window.innerWidth < 720){
     `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index
         .toString()
         .padStart(3, "0")}.png`;
+    }
+    else{
+        `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index
+            .toString()
+            .padStart(3, "0")}.png`;
+    }
+}
 
 const preloadImages = () => {
     let j = 0;
@@ -51,7 +59,7 @@ const updateImage = (index) => {
     // console.log("img n°: ",imgArray[index]);
 
     // context.drawImage(imgArray[index], 0, 0);
-    context.drawImage(imgArray[index], 0, 0, 531, 299, 500, 0, (Math.min(img.width, canvas.width)*1.77), ( Math.min(img.height, canvas.height) * 1.77));
+    context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, (Math.min(img.width, canvas.width)*1.77), ( Math.min(img.height, canvas.height) * 1.77));
 
 };
 

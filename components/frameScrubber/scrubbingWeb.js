@@ -17,14 +17,35 @@ let keyAttribute = "ventElement.accessKey";
 
 // const frameCount = 599;
 const frameCount = 509;
+// const frameCount = 460;
+
 
 let imgArray = [];
 
-const currentFrame = (index) =>
+// const currentFrame = (index) => {
+
+// console.log(window.innerWidth);
+let currentFrame
     
-    `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index
+    if(window.innerWidth <= 720){
+     currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index
         .toString()
         .padStart(3, "0")}.png`;
+    }
+    else{
+         currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index
+            .toString()
+            .padStart(3, "0")}.jpg`;
+    }
+
+
+
+
+// const currentFrame = (index) =>
+    
+//     `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index
+//         .toString()
+//         .padStart(3, "0")}.png`;
 
 const preloadImages = () => {
     let j = 0;
@@ -51,7 +72,7 @@ canvas.height = window.innerHeight;
 
 img.onload = function () {
     context.drawImage(img, 0, 0);
-};
+}; 
 
 const updateImage = (index) => {
     // img.src = currentFrame(index);
@@ -60,7 +81,12 @@ const updateImage = (index) => {
 
     console.log("img n°: ",imgArray[index]);
 
-    context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
+    // context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
+    (window.innerWidth <= 768 ) ?
+        context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
+        : context.drawImage(imgArray[index], 0, 0, 1080, 608, 0, 0, canvas.width, canvas.height)
+
+    
 };
 
 
@@ -70,12 +96,15 @@ window.addEventListener("scroll", () => {
     
 
     console.log(html.scrollTop);
-    if(html.scrollTop >=990) {
+    
+    if(html.scrollTop >= 300) {
         const frameHeigh = document.getElementById("frame");
     const frameHeigh1 = frameHeigh.scrollHeight;
     console.log(frameHeigh1);
 
-    const scrollTop = html.scrollTop - 1280;
+    // const scrollTop = html.scrollTop - 1280;
+    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : 1200);
+
     console.log(scrollTop);
 
         console.log(html.scrollHeight);

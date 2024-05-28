@@ -38,8 +38,12 @@ export default function FrameScrubber() {
         mediaQuery.addEventListener('change', handler);
         setBigScreen(mediaQuery.matches);
 
+        {BigScreen ? require("./scrubbing1") : require("./scrubbingWeb")}
+
         return () => {
         mediaQuery.removeEventListener('change', handler);
+
+        
         };
     }, []);
 
@@ -62,10 +66,10 @@ export default function FrameScrubber() {
     //     };
     //   }, []);
 
-    useEffect(() => {
-        {BigScreen ? require("./scrubbing1") : require("./scrubbingWeb")}
-        return () => {};
-    }, []);
+    // useEffect(() => {
+    //     {BigScreen ? require("./scrubbing1") : require("./scrubbingWeb")}
+    //     return () => {};
+    // }, [BigScreen]);
 
     return (
         <div className="" id="frame" ref={frameRef}>
@@ -103,17 +107,20 @@ export default function FrameScrubber() {
  
                     </div> 
 
-                    <div className="visible md:hidden">
-
-                            <span className="text-end  ">
-                                {" "}
-                                {/* Niveles bajos <br /> de volumen */}
-                            </span>
-
-                    </div> 
+                    
                    
                     <div>
-                            <span className="hidden lg:visible md:flex gap-1 flex-col items-center align-center justify-center  ">
+                        {/* <div className=" mx-[3%] w-screen flex flex-col justify-end items-end overflow-hidden">
+                            <section className="hidden my-4 md:flex">
+                                <div className="flex flex-col gap-4 w-full justify-center items-start align-center ">
+                                    <DiferencialMaterialGalvanizado size={70} customWith={10} />
+                                    <DiferencialMultiposicion size={70} customWith={250} />
+                                    <DiferencialVolumenBajo size={70} customWith={150} />
+                                    <DiferencialStockPermanente size={70} customWith={250} />
+                                </div>
+                            </section>
+                        </div> */}
+                            {/* <span className="hidden lg:visible md:flex gap-1 flex-col items- align- justify-center  ">
                                 <div className="flex flex-col space-y-4 items-center mt-6 max-h-10 ">
 
                                     <DiferencialMaterialGalvanizado/>
@@ -121,7 +128,7 @@ export default function FrameScrubber() {
                                     <DiferencialVolumenBajo/>
                                     <DiferencialStockPermanente/>
                                 </div>
-                            </span>
+                            </span> */}
                     </div>
                 </div>
             </section>

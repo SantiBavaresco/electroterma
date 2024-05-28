@@ -256,7 +256,7 @@ export default function RLSPage() {
                                 "
                                 // text-xl lg:text-2xl xl:text-5xl 2xl:text-[51px] 3xl:text-[61px] text-[#9D9D9C] font-nunito 
                             >
-                                <div className="relative -left-10  ">
+                                <div className="relative -left-10 top-0  ">
                                     <VinietaNaranjaSVG css=" h-[10px] w-[10px] md:h-[50px] md:h-[30px] lg:h-[40px] lg:w-[30px]" />
                                 </div>
                                 <h1 className="absolute left-0 text-[#9D9D9C] font-nunito
@@ -434,7 +434,7 @@ export default function RLSPage() {
                     </div>
                 </section>
 
-                <section className=" h-1/4 mt-20">
+                <section className=" z-10 h-1/4 mt-20">
                     <div className="flex flex-col px-4 -mt-16 md:mt-0 justify-center items-center mx-auto text-center text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
                         <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía {" "}</span>
                          <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de funcionamiento</p>
@@ -469,10 +469,18 @@ export default function RLSPage() {
                     </Suspense>
                 </>
             }
-            <section className=" mt-[30vh] md:mt-10 w-full"> 
-                <div className=" mx-[3%] flex justify-end items-end overflow-hidden">
+            <section className=" -mt-[40vh] lg:-mt-[80vh] w-full"> 
+                <div className=" mx-[3%] flex flex-col justify-end items-end overflow-hidden">
+                    <section className="hidden pb-[30vh] my-4 md:flex">
+                        <div className="flex flex-col gap-4 w-full justify-center items-start align-center ">
+                            <DiferencialMaterialGalvanizado size={70} customWith={10} />
+                            <DiferencialMultiposicion size={70} customWith={250} />
+                            <DiferencialVolumenBajo size={70} customWith={150} />
+                            <DiferencialStockPermanente size={70} customWith={250} />
+                        </div>
+                    </section>
                     <Button
-                        className="z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
+                        className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
                         radius="full"
                         size={BigScreen ? "lg" : "sm"}
                     >
