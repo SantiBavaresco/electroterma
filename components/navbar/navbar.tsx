@@ -147,7 +147,9 @@ export const Navbar = () => {
             maxWidth="full"
             className="h-[42px] md:h-[64px]  lg:px-10  flex justify-center items-center"
             position="sticky"
-            height={"100%"}
+            height={"42px"}
+
+            // height={"100%"}
             isMenuOpen={mobileDropdownOpen}
             onMenuOpenChange={setMobileDropdownOpen}
             

@@ -372,7 +372,7 @@ export default function RLSPage() {
 
                     <h1 className="relative mt-2 text-[29px] xm:text-[35px] leading-none font-nunito-bolder text-livered-title">
                         <div className="absolute top-0 -left-8 mt-1 md:mt-2 ">
-                            <VinietaNaranjaSVG css=" h-[35px] w-[35px] " />
+                            <VinietaNaranjaSVG css=" h-[10px] w-[10px] " />
                         </div>
                         CENTRÍFUGO
                     </h1>

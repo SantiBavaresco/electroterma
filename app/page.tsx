@@ -16,7 +16,7 @@ import { GithubIcon } from "@/components/icons";
 export default function Home() {
     return (
         <section className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10">
-            <section className="flex flex-col items-center justify-center gap-4 py-2 md:py-4">
+            {/* <section className="flex flex-col items-center justify-center gap-4 py-2 md:py-4">
                 <div className="inline-block max-w-2xl text-center justify-center ">
                     <h1 className={title()}>Lo Sentimos &nbsp;</h1>
                     <br />
@@ -90,7 +90,7 @@ export default function Home() {
 						<p className="font-lexend-bold">Texto en lexend-bold, LEXEND BOLD</p>
 					</div>
 				</div>
-            </section>
+            </section> */}
         </section>
         // 	<div className={'h-[5000px]'}>
         // 		<VideoScrollPlayer/>
