@@ -75,12 +75,13 @@ export default function FrameScrubber() {
                 </div>
 
                 <div class="story text-3xl mr-0 lg:text-5xl ">
-                    {/* <div>
+                    <div>
                         <div className="">
 
                                 <span className="text-end  ">
-                                    Envolvente <br />
-                                    Galvanizada{" "}
+                                    {/* Envolvente <br />
+                                    Galvanizada */}
+                                    {" "}
                                 </span>
 
                         </div>
@@ -89,7 +90,7 @@ export default function FrameScrubber() {
 
                             <span className="text-end  ">
                                 {" "}
-                                Motor trifásico <br /> y de acople directo
+                                {/* Motor trifásico <br /> y de acople directo */}
                             </span>
 
                     </div>
@@ -97,31 +98,22 @@ export default function FrameScrubber() {
 
                             <span className="text-end  ">
                                 {" "}
-                                Rotor palas inclinadas <br /> hacia adelante
+                                {/* Rotor palas inclinadas <br /> hacia adelante */}
                             </span>
  
-                    </div> */}
+                    </div> 
 
-                    {/* <div className="visible md:hidden">
+                    <div className="visible md:hidden">
 
                             <span className="text-end  ">
                                 {" "}
-                                Niveles bajos <br /> de volumen
+                                {/* Niveles bajos <br /> de volumen */}
                             </span>
 
-                    </div> */}
-                    {/* <div>
-
-                            <h3 className=" ">Aca va la 4</h3>
-
-                    </div>
+                    </div> 
+                   
                     <div>
-
-                            <h3 className=" ">La ultima que va.</h3>
-
-                    </div> */}
-                    {/* <div>
-                            <span className="hidden md:visible md:flex gap-1 flex-col items-center align-center justify-center  ">
+                            <span className="hidden lg:visible md:flex gap-1 flex-col items-center align-center justify-center  ">
                                 <div className="flex flex-col space-y-4 items-center mt-6 max-h-10 ">
 
                                     <DiferencialMaterialGalvanizado/>
@@ -130,7 +122,7 @@ export default function FrameScrubber() {
                                     <DiferencialStockPermanente/>
                                 </div>
                             </span>
-                    </div> */}
+                    </div>
                 </div>
             </section>
         </div>

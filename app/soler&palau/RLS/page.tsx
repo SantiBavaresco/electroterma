@@ -64,6 +64,7 @@ export default function RLSPage() {
             label: ["Ventilador Centrífugo", "Multipala - TSA"],
             labelShort: "TSA",
             img: "../img/navbar/NavBarTSA1SolerPalau.png",
+            
             href: "/soler&palau/TSA",
         },
         {
@@ -75,12 +76,25 @@ export default function RLSPage() {
         },
         {
             key: "last",
-            label: ["Habitat"],
-            labelShort: "Habitat",
+            label: ["Hábitat"],
+            labelShort: "Hábitat",
             img: "../img/navbar/NavBarHabitat1SolerPalau.png",
             href: "/soler&palau/habitat",
         },
     ];
+
+    const handleEmailClick = () => {
+        const email = 'info@electroterma.com.ar';
+        const subject = 'Consulta sobre equipamiento';
+        const body = 'Hola! Me gustaria hacer una consulta sobre equipamiento de Electroterma';
+    
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+    
+        // window.location.href = mailtoLink;
+        window.open(mailtoLink, '_blank');
+    };
 
     const [BigScreen, setBigScreen] = useState(false);
 
@@ -186,7 +200,7 @@ export default function RLSPage() {
                         </h2>
                     </div>
                     <div className="mr-4 md:mr-12  ">
-                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0">
+                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
                             Consultanos
                         </Button>
                     </div>
@@ -324,10 +338,13 @@ export default function RLSPage() {
                         <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
                             
                             overflow-hidden">
+                             <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                                target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
                                 size={BigScreen ? "lg" : "sm"}
+                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
@@ -337,6 +354,7 @@ export default function RLSPage() {
                                     <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
                                 <span className="ml-6 lg:ml-10">Asesoramiento</span>
                             </Button>
+                            </a>
                             
 
                         </div>
@@ -394,10 +412,13 @@ export default function RLSPage() {
                             width={"100%"}
                         />
                         <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">
+                        <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                                target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="z-10 bg-livered font-nunito text-white ml-auto  "
                                 radius="full"
                                 size="sm"
+                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
@@ -407,6 +428,7 @@ export default function RLSPage() {
                                     <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
                                 <span className="ml-6 lg:ml-10">Asesoramiento</span>
                             </Button>
+                            </a>
                         </div>
                         
                     </div>
@@ -731,10 +753,14 @@ export default function RLSPage() {
                             />
                         </div>
                         <div className="w-full float-right flex justify-end items-end lg:pr-10 2xl:mr-[5%] md:pr-0">
+
+                            <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                                target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="  z-10 bg-livered text-white 2xl:text-2xl"
                                 radius="full"
                                 size={BigScreen ? "lg" : "sm"}
+                                
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
@@ -744,6 +770,7 @@ export default function RLSPage() {
                                     <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
                                 <span className="ml-6 lg:ml-10">Asesoramiento</span>
                             </Button>
+                            </a>
                         </div>
                     </div>
                 </div>

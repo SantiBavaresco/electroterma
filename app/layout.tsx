@@ -17,6 +17,9 @@ import { Analytics } from "@vercel/analytics/react"
 
 
 import clsx from "clsx";
+import Footer from "./footer";
+
+
 
 export const metadata: Metadata = {
     title: {
@@ -60,59 +63,7 @@ export default function RootLayout({
                             {children}
                         </main>
                         
-                        <footer className="w-full flex flex-col text-xs md:text-base items-center justify-center py-3 bg-[#D9D9D9]">
-                            <div className="flex flex-col justify-center items-center ">
-                            <span className="font-lexeng-bolder font-bold">Calle 5 entre 6 y 8</span>
-                            <span className="font-lexeng-bold text-[10px] xm:text-xs">Parque Industrial Mar del Plata - Batán</span>
-                            <div className="my-2">
-                                <span className="flex items-center justify-center font-lexeng-bolder font-bold text-center">223-4649999</span>
-                                <span className="flex flex-row items-center justify-center ">
-									<IoMailOutline className="mx-2 text-orange-600 text-xl" /> 
-									info@electroterma.com.ar
-								</span>
-                            </div>
-                            <div className="flex flex-row gap-4 items-center justify-center text-orange-600 text-2xl">
-
-                                <Link  isExternal  href="https://www.linkedin.com/company/electroterma/" title="Linkedin de Electroterma">
-                                    <CiLinkedin className="text-orange-600 hover:text-blue-700 text-2xl" href=""/> 
-                                </Link>
-                                <Link  isExternal  href="https://www.instagram.com/electroterma/" title="Instragram de Electroterma">
-                                    <IoLogoInstagram className="text-orange-600 hover:text-pink-600 text-2xl" />
-                                </Link>
-                                <Link  isExternal  href="https://www.facebook.com/Electroterma/" title="Facebook de Electroterma">
-                                    <FiFacebook className="text-orange-600 hover:text-blue-500 text-2xl" /> </Link>
-                                <Link  isExternal  href="https://www.youtube.com/@electroterma849" title="Youtube de Electroterma">
-                                    <AiOutlineYoutube className="text-orange-600 hover:text-livered text-2xl"/></Link>
-                            </div>
-                            <Link
-                                isExternal
-                                className="flex items-center gap-1 text-current pt-2"
-                                href="https://santiagobavaresco.ar"
-                                title="Bavaresco Santiago Portfolio"
-                            >
-                                <p className="text-primary text-sm">
-                                    Bavaresco Santiago
-                                </p>
-                                 <span className="text-default-600 text-sm">
-                                    © 2024 
-                                </span>
-                                
-                               
-                                
-                            </Link>
-                            </div>
-                            <div className=" -mt-20 absolute right-0 md:right-24 w-[60px] md:w-[90px]">
-                                <Link href="/">
-                                    <Image
-                                    src="../electroterma-logo.png"
-                                    // height={50}
-                                    
-                                    width="100%"
-                                    alt="hola"
-                                    />
-                                </Link>
-                            </div>
-                        </footer>
+                       <Footer/>
                     </div>
                 </Providers>
             </body>

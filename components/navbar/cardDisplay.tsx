@@ -22,14 +22,14 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, actual,...props }) => {
         <main className={`bg-white 
             data-[selectable=true]:focus:bg-blue-500 !important 
             data-[hover=true]:bg-orange-500 !important
-            
+            w-full
             group group-hover:bg-gray-5 gap-3
             z-10
             ${(data.key==="first") ? " md:rounded-tl-[28px] md:rounded-bl-[28px] hover:bg-none !important" : "" } 
             ${(data.key==="last") ? " md:rounded-tr-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
-            shadow-xl border-1 ${data.labelShort===actual ? "border-warning" : "border-gray-100 " }  rounded-[18px] md:rounded-none
+            shadow-xl border-1 ${data.labelShort===actual ? "border-warning" : "border-gray-100 " }  rounded-[28px] md:rounded-none
         `}>
-            <div className={``}>
+            <div className={`flex flex-col justify-center items-center`}>
              <Image
                     // shadow="sm"
                     radius="lg"
@@ -39,15 +39,15 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, actual,...props }) => {
                     src={data.img}
                     key={data.key}
                 />
-                <div className={` mx-auto h-[65px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito 
+                <div className={`w-full mx-auto h-[45px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito 
                     ${data.labelShort===actual ? "bg-[#EF7916]" : "bg-livered-title group-hover:bg-[#B2B2B2]" }
                     
                     
-                    ${(data.key==="first") ? " md:rounded-bl-[28px]" : "rounded-b-[18px] lg::rounded-none"} 
-                    ${(data.key==="last") ? " md:rounded-bl-[0px]" : "rounded-b-[18px] lg:rounded-none"} 
+                    ${(data.key==="first") ? " md:rounded-bl-[28px]" : "rounded-b-[18px] md::rounded-none"} 
+                    ${(data.key==="last") ? " md:rounded-bl-[0px]" : "rounded-b-[18px] md:rounded-none"} 
                 `}>
                     {data?.label?.map((description:string)=>(
-                        <p key={description} className="gap-3 px-2 text-[10px] xm:text-xs md:text-base lg:text-lg xl:text-xl">{description}</p>
+                        <p key={description} className="gap-3 xm:px-2 text-[10px] xm:text-xs md:text-base lg:text-base xl:text-xl">{description}</p>
             
                     ))}
 

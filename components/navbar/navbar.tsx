@@ -145,9 +145,9 @@ export const Navbar = () => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className="h-[42px] md:h-[64px] lg:px-10  flex justify-center items-center"
+            className="h-[42px] md:h-[64px]  lg:px-10  flex justify-center items-center"
             position="sticky"
-            height="42px"
+            height={"100%"}
             isMenuOpen={mobileDropdownOpen}
             onMenuOpenChange={setMobileDropdownOpen}
             
@@ -185,13 +185,13 @@ export const Navbar = () => {
                     </Link>
                 </NavbarItem> */}
             </NavbarContent>
-            <NavbarContent className="hidden md:flex" as="div" justify="end">
+            <NavbarContent className="hidden md:flex  " as="div" justify="end">
                 <Dropdown
                     placement="bottom"
                     className="bg-[#EF771C] !important translate-y-[-1.7%] rounded-none rounded-bl-[64px]"
                     isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
                 >
-                    <DropdownTrigger className="bg-red-500">
+                    <DropdownTrigger className="bg-red-500 h-full">
                         <div className="w-[263px] h-[100%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
                             <svg
                                 width="30"

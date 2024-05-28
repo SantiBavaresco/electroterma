@@ -21,8 +21,8 @@ const frameCount = 509;
 let imgArray = [];
 
 const currentFrame = (index) =>
-    // `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
-    `../img/solerpalau/${keyAttribute && "rls"}/frames/e-${index
+    
+    `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index
         .toString()
         .padStart(3, "0")}.png`;
 
