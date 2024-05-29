@@ -809,14 +809,14 @@ export default function RLSPage() {
                 {itemsNav?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
                     
-                        <NextLink
+                        <a
                                                             className=""
                                                             color="foreground"
-                                                            href={ item.labelShort === "RLS" ? "javascript:void(0)" : item.href}
+                                                            href={ item.labelShort === "RLS" ? "javascript:void(0)" :  item.href}
                                                             key={item.key}
                                                         >
                             <CardDisplay data={item}  actual={"RLS"} />
-                        </NextLink>
+                        </a>
                     ))}  
                     </div>
                          
