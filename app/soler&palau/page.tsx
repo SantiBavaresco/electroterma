@@ -18,7 +18,13 @@ import { BsWhatsapp } from "react-icons/bs";
 
 // import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
 // import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
-
+interface ItemsNavbar {
+    key: string;
+    label: string[];
+    labelShort: string;
+    img: string;
+    href: string;
+}
 
 export default function SolerPalauPage() {
     const handleEmailClick = () => {
@@ -33,6 +39,7 @@ export default function SolerPalauPage() {
         // window.location.href = mailtoLink;
         window.open(mailtoLink, '_blank');
     };
+
 
     const itemsNav: ItemsNavbar[] = [
         {
