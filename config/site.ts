@@ -36,7 +36,7 @@ export const siteConfig = {
         },
         {
             label: "Tienda Online",
-            href: "/tiendaonline",
+            href: "https://www.tiendaelectroterma.com.ar/",
 			dropdown: false,
 
         },

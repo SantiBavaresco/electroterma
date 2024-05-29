@@ -67,7 +67,7 @@ export default function FrameScrubber() {
     //   }, []);
 
     useEffect(() => {
-        require("./scrubbing");
+        require("./scrubbingWeb");
         return () => {};
     }, []);
 

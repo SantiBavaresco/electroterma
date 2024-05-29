@@ -282,6 +282,7 @@ export const Navbar = () => {
                                         className=""
                                         color="foreground"
                                         href={item.href}
+                                        target={item.label === "Tienda Online" ?  "_blank" : undefined }
                                         onClick={setFirstFalse}
                                     >
                                         <p
@@ -404,7 +405,7 @@ export const Navbar = () => {
                                     className=""
                                     color="foreground"
                                     href={item.href}
-                                    
+                                    target={item.label === "Tienda Online" ? undefined : "_blank"}
                                               
                                 >
                                     <h1>{item.label}</h1> 
