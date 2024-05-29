@@ -49,7 +49,7 @@ export default function VideoScrollPlayer() {
           <source
             type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
             // src="../img/solerpalau/tda/SolerPalauVideo1.mkv"
-            src="../img/solerpalau/rls/video/rls1.mkv"
+            src="../img/solerpalau/rls/video/rls.mkv"
           ></source>
         </video>
         <div ref={scrollSectionRef} id="scrollSection"></div>

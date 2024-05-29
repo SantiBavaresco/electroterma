@@ -3,6 +3,8 @@ import { title } from "@/components/primitives";
 import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
 import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 import FrameScrubber from "@/components/frameScrubber/frameScrubber";
+// import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx';
+
 
 import { lazy, Suspense, useState, useEffect } from "react";
 
@@ -458,10 +460,13 @@ export default function RLSPage() {
         <>
             {BigScreen ? 
                 <>   {/* ----- Web ----- */}
-                    {/* <VideoScrubber/> */}
-                    <Suspense fallback={<div>Loading</div>}>
+                    <VideoScrubber/>
+                    {/* <ScrollyVideo src="../img/solerpalau/rls/video/original.mkv" transitionSpeed={1} /> */}
+                    {/* <ScrollVideoPlayer/> */}
+                    {/* <VideoScrollPlayer/> */}
+                    {/* <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
-                    </Suspense>
+                    </Suspense> */}
                 </> 
                 
                 : <> {/* ----- Mobile ----- */}

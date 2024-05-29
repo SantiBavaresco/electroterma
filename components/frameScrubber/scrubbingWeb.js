@@ -22,7 +22,7 @@ const frameCount = 509;
 
 let imgArray = [];
 
-// const currentFrame = (index) => {
+const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index.toString().padStart(3, "0")}.png`;
 
 // console.log(window.innerWidth);
 
@@ -36,19 +36,12 @@ let imgArray = [];
 
 const preloadImages = () => {
     let j = 0;
-    if(window.innerWidth <= 720)
+
         for (let i = 1; i < frameCount; i+=1) {
             const img = new Image();
-            img.src = `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${i.toString().padStart(3, "0")}.png`;
+            img.src = currentFrame(i);
             imgArray.push(img);
         }
-    else{
-        for (let i = 1; i < frameCount; i+=1) {
-            const img = new Image();
-            img.src = `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${i.toString().padStart(3, "0")}.jpg`;
-            imgArray.push(img);
-        }
-    }
 
 };
 
