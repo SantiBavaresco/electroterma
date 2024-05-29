@@ -11,7 +11,8 @@ import { IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
 import { Image } from "@nextui-org/image";
-
+ 
+import { useRouter } from "next/router";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 
@@ -38,11 +39,14 @@ export const metadata: Metadata = {
     },
 };
 
+
+
 export default function RootLayout({
-    children,
+    children, 
 }: {
     children: React.ReactNode;
 }) {
+
     return (
         <html lang="en" suppressHydrationWarning>
             <head />
@@ -57,6 +61,10 @@ export default function RootLayout({
                 >
                     <SpeedInsights/> <Analytics/>
                     
+                    {/* {<section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
+                        <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
+                    </section>} */}
+
                     <Navbar />
 
                     <div className="relative flex flex-col h-screen">

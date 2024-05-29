@@ -33,7 +33,7 @@ export default function Home() {
 
     return (
         <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden">
-            <section className="h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
+           <section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
                     </section>
             <section >
@@ -73,7 +73,7 @@ export default function Home() {
             <section className="mx-auto ">
                 <Image  
                     className="mt-10"
-                    alt="Otam Logo"
+                    alt="Diapositiva img-logo"
                     src="../img/home1.png"
                     width={"90%"}
                 />
@@ -81,8 +81,8 @@ export default function Home() {
             <section className="w-full ml-[10vw] flex flex-col ">
                 <h1 className="font-nunito-bolder text-[50px] text-[#EF771C]">Estamos presentes</h1>
                 <Image  
-                    className="ml-[10vw] mt-10"
-                    alt="Otam Logo"
+                    className="ml-[30vw] mt-10"
+                    alt="Mapa Sur America"
                     src="../img/home2.png"
                     width="80%"
                 />
