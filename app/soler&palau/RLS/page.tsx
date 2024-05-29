@@ -460,13 +460,14 @@ export default function RLSPage() {
         <>
             {BigScreen ? 
                 <>   {/* ----- Web ----- */}
-                    <VideoScrubber/>
+                    {/* <VideoScrubber/> */}
+                    
                     {/* <ScrollyVideo src="../img/solerpalau/rls/video/original.mkv" transitionSpeed={1} /> */}
                     {/* <ScrollVideoPlayer/> */}
                     {/* <VideoScrollPlayer/> */}
-                    {/* <Suspense fallback={<div>Loading</div>}>
+                    <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
-                    </Suspense> */}
+                    </Suspense>
                 </> 
                 
                 : <> {/* ----- Mobile ----- */}

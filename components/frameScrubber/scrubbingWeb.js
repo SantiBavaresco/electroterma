@@ -22,7 +22,13 @@ const frameCount = 509;
 
 let imgArray = [];
 
-const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index.toString().padStart(3, "0")}.png`;
+// const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index.toString().padStart(3, "0")}.png`;
+// const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index.toString().padStart(3, "0")}.jpg`;
+
+const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/video/${index.toString()}.webp`;
+
+console.log(currentFrame);
+
 
 // console.log(window.innerWidth);
 
@@ -73,7 +79,7 @@ const updateImage = (index) => {
     // context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
     (window.innerWidth <= 768 ) ?
         context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
-        : context.drawImage(imgArray[index], 0, 0, 1080, 608, 0, 0, canvas.width, canvas.height)
+        : context.drawImage(imgArray[index], 0, 0, 1000, 563, 0, 0, canvas.width, canvas.height)
 
     
 };
