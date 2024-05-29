@@ -32,8 +32,10 @@ export default function Home() {
     };
 
     return (
-        <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10">
-            
+        <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden">
+            <section className="h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
+                        <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
+                    </section>
             <section >
                 <Image  
                     className="mt-10"

@@ -56,6 +56,7 @@ export default function RootLayout({
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
                 >
                     <SpeedInsights/> <Analytics/>
+                    
                     <Navbar />
 
                     <div className="relative flex flex-col h-screen">
