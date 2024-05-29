@@ -509,7 +509,7 @@ export default function RLSPage() {
                     </div>
                 </section>
 
-                <section className="h-[90vh] w-[99vw] lg:min-h-[90vh] xl:h-[80vh] 2xl:h-[80vh] px-10 overflow-hidden ">
+                <section className="h-[90vh] w-[99vw] overflow-hidden ">
                     <div className="flex flex-col-1 ">
                         <div className="relative w-1/2 ">
                             <Image
@@ -523,30 +523,22 @@ export default function RLSPage() {
                             />
 
                             <TsaAuraSVG css="absolute 
-                                max-w-[300px] lg:max-h-[300px]
-                                -top-[120px] left-[70px] 
+                                w-[47vw]
+                                max-w-[300px] 
+                                -top-[120px] left-[0px] 
 
-                                lg:top-[100px] lg:left-[110px] 
-                                lg:max-w-[440px] lg:max-h-[440px]
-                                xl:top-[80px] xl:left-[100px] 
-                                xl:max-w-[500px] xl:max-h-[500px]
-                                2xl:top-[120px] 2xl:left-[150px] 
-                                2xl:max-w-[650px] 2xl:max-h-[650px]
+                               
                                 "/>
                             <Ondas04SVG css="absolute 
-                                max-w-[700px] lg:max-h-[170px]
-                                -top-[10px] left-[170px] 
-                                lg:top-[175px] lg:left-[130px] 
-                                lg:max-w-[1300px] lg:max-h-[300px]
-                                xl:top-[185px] xl:left-[165px] 
-                                xl:max-w-[1300px] xl:max-h-[300px
-                                2xl:top-[250px] 2xl:left-[370px]
-                                2xl:max-w-[1850px] 2xl:max-h-[650px]
+                                max-w-[700px] 
+                                -top-[10px] left-[0px] 
+                               
                                 "/>
                         </div>
+
                         <div className="w-1/2">
-                            <span className="flex gap-1 flex-col items-center align-center justify-center lg:-mt-10 2xl:mt-0">
-                                <div className=" flex flex-col justify-center items-center lg:text-2xl text-livered-title py-4 lg:py-16 text-xl 2xl:text-3xl">
+                            <span className="flex gap-1 flex-col items-center align-center justify-center ">
+                                <div className=" flex flex-col justify-center items-center text-sm text-livered-title py-4 ">
                                     <h1 className="font-lexend ">Caudales de inyeccion </h1>
                                     <h1 >desde <span className="font-lexend-bold  ">700 a 9000 m3/h</span></h1>
                                     <h1 className="font-lexend ">y contrapresiones </h1>
