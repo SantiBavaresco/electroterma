@@ -43,8 +43,8 @@ export default function Home() {
                 />
                 <div className="z-10 absolute -translate-y-[31vh] flex justify-center items-center w-full my-4 gap-x-6">
                     
-                    <Button className="w-[19vw] h-[26vh] bg-transparent   text-gray-700 font-bold py-2 px-4 rounded" as={Link} href="/soler&palau"></Button>
-                    <Button className="w-[13vw] h-[26vh] bg-transparent  invisible text-gray-700 font-bold py-2 px-4 rounded">b</Button>
+                    <Button className="w-[19vw] h-[26vh] bg-transparent  invisible text-gray-700 font-bold py-2 px-4 rounded" ></Button>
+                    <Button className="w-[13vw] h-[26vh] bg-transparent   text-gray-700 font-bold py-2 px-4 rounded" as={Link} href="/soler&palau"></Button>
                     <Button className="w-[13vw] h-[26vh] bg-transparent invisible text-gray-700 font-bold py-2 px-4 rounded">c</Button>
                     <Button className="w-[19vw] h-[26vh] bg-transparent invisible text-gray-700 font-bold py-2 px-4 rounded">d</Button>
                     

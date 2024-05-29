@@ -16,7 +16,7 @@ let frameCount = 600;
     keyAttribute = ventElement.accessKey;    
     console.log(keyAttribute);
     if(keyAttribute === "tsa") frameCount = 600
-    if(keyAttribute === "tda") frameCount = 700
+    if(keyAttribute === "tda") frameCount = 600
 
   }
 
