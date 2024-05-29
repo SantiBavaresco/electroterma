@@ -405,7 +405,7 @@ export default function RLSPage() {
                                 <p>de aire con</p>
                                 
                                 <p className="">
-                                    <span className="text-livered ">niveles de suiciedad.</span>
+                                    <span className="text-livered ">niveles de suciedad.</span>
 
                                 </p>
                             </div>
@@ -445,7 +445,7 @@ export default function RLSPage() {
 
                 <section className=" z-10 h-1/4 mt-20">
                     <div className="flex flex-col px-4 -mt-16 md:mt-0 justify-center items-center mx-auto text-center text-[13px] xl:w-[50vw] xl:text-2xl 2xl:w-[50vw] 2xl:text-3xl">
-                        <p> <span className="text-livered-title">Es Autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía {" "}</span>
+                        <p> <span className="text-livered-title">Es autolimitante</span> ya que presenta un <span className="text-livered-title">consumo de energía {" "}</span>
                          <span className="text-livered-title">prácticamente constante</span> para una misma velocidad de funcionamiento</p>
 
                     </div>
