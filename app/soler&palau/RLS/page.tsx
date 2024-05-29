@@ -189,7 +189,7 @@ export default function RLSPage() {
 
 
     return (
-        <div className="h-full flex flex-col items-center justify-center  ">
+        <div id="vent" accessKey="rls" className="h-full flex flex-col items-center justify-center  ">
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">

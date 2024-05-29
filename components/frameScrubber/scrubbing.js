@@ -11,7 +11,8 @@ let keyAttribute = "ventElement.accessKey";
 // console.log(ventElement);
 
   if (ventElement) {    
-    keyAttribute = ventElement.accessKey;    
+    keyAttribute = ventElement.accessKey; 
+    console.log(keyAttribute);   
   }
 
 // const frameCount = 599;

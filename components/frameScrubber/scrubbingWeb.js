@@ -9,14 +9,17 @@ const context = canvas.getContext("2d");
 const ventElement = document.getElementById("vent");
 let keyAttribute = "ventElement.accessKey";
 
-// console.log(ventElement);
+console.log(ventElement);
 
+let frameCount = 530;
   if (ventElement) {    
     keyAttribute = ventElement.accessKey;    
+    console.log(keyAttribute);
+    if(keyAttribute === "tsa") frameCount = 600
   }
 
 // const frameCount = 599;
-const frameCount = 509;
+
 // const frameCount = 460;
 
 
@@ -25,7 +28,7 @@ let imgArray = [];
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index.toString().padStart(3, "0")}.png`;
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index.toString().padStart(3, "0")}.jpg`;
 
-const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/${index.toString()}.webp`;
+const currentFrame = (index) => `../img/solerpalau/${keyAttribute}/frames/web/${index.toString()}.webp`;
 
 
 
@@ -92,13 +95,13 @@ window.addEventListener("scroll", () => {
 
     console.log(html.scrollTop);
     
-    if(html.scrollTop >= 300) {
+    if((html.scrollTop >= 300 && keyAttribute==="rls") || (html.scrollTop >= 1000 && keyAttribute==="tsa" )) {
         const frameHeigh = document.getElementById("frame");
     const frameHeigh1 = frameHeigh.scrollHeight;
     console.log(frameHeigh1);
 
     // const scrollTop = html.scrollTop - 1280;
-    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : 1200);
+    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : keyAttribute==="tsa" ? 2200 : 1200);
 
     console.log(scrollTop);
 

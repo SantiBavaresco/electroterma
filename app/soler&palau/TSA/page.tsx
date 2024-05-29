@@ -179,8 +179,8 @@ export default function RLSPage() {
         
     ];
 
-    const urltdaImageDemo = "../img/solerpalau/tda/imgDemo/";
-    const demoImageNames = ["1", "2", "3", "1", "2", "3"];
+    const urltdaImageDemo = "../img/solerpalau/tsa/imgDemo/";
+    const demoImageNames = ["1", "2", "3", "4", "5"];
 
     const FrameFan = lazy(
         () => import("@/components/frameScrubber/frameScrubber")
@@ -192,7 +192,7 @@ export default function RLSPage() {
 
 
     return (
-        <div className="h-full flex flex-col items-center justify-center  ">
+        <div id="vent" accessKey="tsa" className="h-full flex flex-col items-center justify-center  ">
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
@@ -287,7 +287,7 @@ export default function RLSPage() {
                                 className="mt-2  leading-none  font-nunito-bolder text-livered-title text-[5.0vw] xl:text-[5.35vw]"
                             // className="mt-2 w-full lg:mt-3 text-3xl lg:text-[44px] xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title"
                             >
-                                Multipala - TSA
+                                MULTIPALA - TSA
                             </h1>
                             </span>
 
@@ -333,7 +333,7 @@ export default function RLSPage() {
                     <Image
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
-                            className=" w-[520px] md:w-[100%]  top-[75px] lg:top-[65px] 2xl:top-[70px] left-4 md:left-12"
+                            className="z-0 w-[520px] md:w-[100%]  top-[75px] lg:top-[65px] 2xl:top-[70px] left-4 md:left-12"
                             src="../img/solerpalau/tsa/SolerPalauTsa1.png"
                             width={"100%"}
                         />
@@ -353,7 +353,7 @@ export default function RLSPage() {
                              <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
-                                className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                className="z-10 xl:translate-x-32 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
                                 size={BigScreen ? "lg" : "sm"}
                                 href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
@@ -372,7 +372,7 @@ export default function RLSPage() {
                         </div>
 
                     </section>
-                    <section className="h-[90vh] w-[99vw] lg:min-h-[90vh] xl:h-[80vh] 2xl:h-[80vh] px-10 overflow-hidden ">
+                    <section className="h-[90vh] w-[99vw] mt-10 lg:min-h-[90vh] xl:h-[80vh] 2xl:h-[80vh] px-10 overflow-hidden ">
                     <div className="flex flex-col-1 ">
                         <div className="relative md:w-1/2 ">
                             <Image
@@ -509,54 +509,70 @@ export default function RLSPage() {
                     </div>
                 </section>
 
-                <section className="h-[90vh] w-[99vw] overflow-hidden ">
-                    <div className="flex flex-col-1 ">
-                        <div className="relative w-1/2 ">
+                <section className="xs:h-[220px] xm:h-[255px] w-[99vw]  pt-10 overflow-hidden ">
+                    <div className="flex flex-col-2 ">
+                        <div className="relative w-full">
                             <Image
                                 // className="-top-16 left-1/2"
                                 alt="Ventilador"
-                                className="inline-block 
-                                    w-[47vw]
+                                className="inline-block relative
+                                    w-[100%]
+                                    top-[0px] left-[0px] 
                                     "
-                                src="../img/solerpalau/tsa/SolerPalauTsa2.png"
-                                width={"100%"}
+                                src="../img/solerpalau/tsa/SolerPalauTsa3.png"
+                                width="100%"
                             />
 
-                            <TsaAuraSVG css="absolute 
-                                w-[47vw]
-                                max-w-[300px] 
-                                -top-[120px] left-[0px] 
-
-                               
-                                "/>
-                            <Ondas04SVG css="absolute 
-                                max-w-[700px] 
-                                -top-[10px] left-[0px] 
-                               
-                                "/>
+                            
                         </div>
 
-                        <div className="w-1/2">
-                            <span className="flex gap-1 flex-col items-center align-center justify-center ">
-                                <div className=" flex flex-col justify-center items-center text-sm text-livered-title py-4 ">
+                        <div className="relative w-full">
+                            <Image
+                                // className="-top-16 left-1/2"
+                                alt="Ventilador"
+                                className="inline-block relative
+                                    w-[100%]
+                                    top-[0px] left-[0px] 
+                                    "
+                                src="../img/solerpalau/tsa/SolerPalauTsa4.png"
+                                width="100%"
+                            />
+
+                        </div>
+
+                    </div>  
+
+
+                </section>
+                <section className="mt-0  w-[80vw] flex justify-end overflow-hidden">
+                    <div className="mt- ml- w-full overflow-hidden">
+                        <div className=" flex flex-col justify-start items-start pl-1 text-livered-title 
+                            text-[10px] leading-[12px] xm:text-[11px] xm:leading-[16px]  ">
                                     <h1 className="font-lexend ">Caudales de inyeccion </h1>
                                     <h1 >desde <span className="font-lexend-bold  ">700 a 9000 m3/h</span></h1>
                                     <h1 className="font-lexend ">y contrapresiones </h1>
                                     <h1 className="font-lexend-bold  ">de 20 a 100 mmCA </h1>
 
-                                </div>
-                                <div className="flex flex-col space-y-4 items-center mt-0 max-h-10 ">
-                                    <DiferencialMaterialGalvanizado size={70} customWith={10} />
-                                    <DiferencialMultiposicion size={70} customWith={250} />
-                                    <DiferencialVolumenBajo size={70} customWith={150} />
-                                    <DiferencialStockPermanente size={50} customWith={250} />
-                                </div>
-                            </span>
                         </div>
-                    
-                
                     </div>
+                    <div className="mb-auto ml-auto w-full flex justify-end items-start overflow-hidden">
+                            <Button
+                                className="z-10 bg-livered font-nunito text-white ml-auto  "
+                                radius="full"
+                                size="sm"
+                            >
+                                Manual <Download size={30}/>
+                            </Button>
+                    </div>
+                    {/* <Button
+                        className="z-10 w-2/3   bg-livered text-white "
+                        radius="full"
+                        size="sm"
+                    >
+                        
+                    </Button> */}
                 </section>
+
 
                
             </>}
@@ -590,15 +606,18 @@ export default function RLSPage() {
                 </>
             }
             <section className=" -mt-[40vh] lg:-mt-[80vh] w-full"> 
-                <div className=" mx-[3%] flex flex-col justify-end items-end overflow-hidden">
+                <div className=" mx-[5%] flex flex-col justify-start items-start overflow-hidden">
                     <section className="hidden pb-[30vh] my-4 md:flex">
-                        <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:mr-[10vw] ">
+                        <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:ml-[10vw] ">
                             <DiferencialMaterialGalvanizado size={70} customWith={10} />
                             <DiferencialMultiposicion size={70} customWith={250} />
                             <DiferencialVolumenBajo size={70} customWith={150} />
                             <DiferencialStockPermanente size={70} customWith={250} />
                         </div>
                     </section>
+                    
+                </div>
+                <div className="mx-[6%] flex flex-col justify-end items-end overflow-hidden">
                     <Button
                         className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
                         radius="full"
@@ -711,7 +730,7 @@ export default function RLSPage() {
                             </div>
                             <div className=" w-full flex justify-center items-center">
                             {/* ----------------- Specs Web ----------------- */}
-                                <div className=" w-full ms-auto overflow ">
+                                {/* <div className=" w-full ms-auto overflow ">
                                         <div
                                                 className=" my-10 mx-auto  px-4 z-10
                                             
@@ -729,7 +748,7 @@ export default function RLSPage() {
 
                                                 </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                             {/* ----------------- FIN Specs Web ----------------- */}
                             </div>
                             
@@ -801,9 +820,9 @@ export default function RLSPage() {
                                                 <div className=" flex flex-col justify-center items-center  text-livered-title py-4 
                                                 text-xl ">
                                                     <h1 className="font-lexend ">Caudales de inyección </h1>
-                                                    <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
+                                                    <h1 >desde <span className="font-lexend-bold  ">700 a 9000 m3/h</span></h1>
                                                     <h1 className="font-lexend ">y contrapresiones desde</h1>
-                                                    <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
+                                                    <h1 className="font-lexend-bold  ">20 a 100 mmCA </h1>
 
                                                 </div>
                                         </div>
@@ -880,7 +899,7 @@ export default function RLSPage() {
                                 width={150}
                             />
                         </div>
-                        <div className="w-full float-right flex justify-end items-end lg:pr-10 2xl:mr-[5%] md:pr-0">
+                        <div className="w-full float-right flex justify-end items-end lg:pr-0 2xl:mr-[5%] md:pr-0">
 
                             <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
