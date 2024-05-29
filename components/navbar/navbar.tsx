@@ -260,6 +260,7 @@ export const Navbar = () => {
                                                         className=""
                                                         color="foreground"
                                                         href={item.href}
+                                                        target="_blank"
                                                         onClick={setFirstFalse}
                                                     >
                                                         {/* <ImgDisplay item={item}/>
@@ -387,6 +388,7 @@ export const Navbar = () => {
                                                         className="max-w-[40vw] "
                                                         color="foreground"
                                                         href={item.href}
+                                                        target="_blank"
                                                         key={item.key}
                                                         
                                                     >

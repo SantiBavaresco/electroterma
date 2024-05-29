@@ -813,6 +813,7 @@ export default function TDAPage() {
                                                             className=""
                                                             color="foreground"
                                                             href={ item.labelShort === "TDA" ? "javascript:void(0)" : item.href}
+                                                            target="_blank"
                                                             key={item.key}
                                                         >
                             <CardDisplay data={item}  actual={"TDA"} />

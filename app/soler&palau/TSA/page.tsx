@@ -940,6 +940,7 @@ export default function TSAPage() {
                                                             className=""
                                                             color="foreground"
                                                             href={ item.labelShort === "TSA" ? "javascript:void(0)" : item.href}
+                                                            target="_blank"
                                                             key={item.key}
                                                         >
                             <CardDisplay data={item}  actual={"TSA"} />
