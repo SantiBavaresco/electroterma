@@ -54,7 +54,7 @@ interface ItemsNavbar {
     href: string;
 }
 
-export default function RLSPage() {
+export default function TSAPage() {
 
     const itemsNav: ItemsNavbar[] = [
         {

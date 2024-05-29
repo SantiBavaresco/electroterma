@@ -195,7 +195,7 @@ export const Navbar = () => {
                     isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
                 >
                     <DropdownTrigger className="bg-red-500 h-full">
-                        <div className="w-[263px] h-[100%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
+                        <div className="w-[263px] h-[150%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
                             <svg
                                 width="30"
                                 height="28"

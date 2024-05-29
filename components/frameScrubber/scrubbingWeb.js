@@ -16,6 +16,7 @@ let frameCount = 530;
     keyAttribute = ventElement.accessKey;    
     console.log(keyAttribute);
     if(keyAttribute === "tsa") frameCount = 600
+    if(keyAttribute === "tda") frameCount = 700
   }
 
 // const frameCount = 599;
@@ -95,13 +96,13 @@ window.addEventListener("scroll", () => {
 
     console.log(html.scrollTop);
     
-    if((html.scrollTop >= 300 && keyAttribute==="rls") || (html.scrollTop >= 1000 && keyAttribute==="tsa" )) {
+    if((html.scrollTop >= 300 && (keyAttribute==="rls" || keyAttribute==="tda")) || (html.scrollTop >= 1000 && keyAttribute==="tsa" )) {
         const frameHeigh = document.getElementById("frame");
     const frameHeigh1 = frameHeigh.scrollHeight;
     console.log(frameHeigh1);
 
     // const scrollTop = html.scrollTop - 1280;
-    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : keyAttribute==="tsa" ? 2200 : 1200);
+    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : keyAttribute==="tsa" ? 2200 : 1300);
 
     console.log(scrollTop);
 
