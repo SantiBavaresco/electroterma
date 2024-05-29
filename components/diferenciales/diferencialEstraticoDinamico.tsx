@@ -14,7 +14,7 @@ interface Props {
 export const DiferencialEstaticoDinamico : React.FC<Props> =  ({size, text, textSize, customWith}) => {
 	return (
 		<>
-			<main className="relative pl-4 mb-20 flex justify-start items-center  w-full">
+			<main className="relative pl-4 mb-14 lg:mb-20 flex justify-start items-center  w-full">
 				<span className="z-10 ">
 					
 					<EstaticoDinamico size={size || 70}/>
@@ -31,7 +31,7 @@ export const DiferencialEstaticoDinamico : React.FC<Props> =  ({size, text, text
 					w-full
 					`}>
 					<span className="w-full px-2 py-1   flex justify-start items-center text-white ">{text || "Equilibrio estático y dinámico"}</span>
-					<span className="absolute indent-20 xs:text-[13px] xm:text-[14px] lg:text-lg top-16 left-0.5 bg-white w-full h-[180%]">
+					<span className="absolute indent-10 lg:indent-20 xs:text-[10px] xm:text-[10px] lg:text-lg top-16 left-0.5 bg-white w-full h-[180%]">
 
 						<h5>Niveles de velocidad de vibración en</h5>
 						<h5>funcionamiento inferiores a 6 mm/s; -</h5>
