@@ -25,7 +25,7 @@ let imgArray = [];
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index.toString().padStart(3, "0")}.png`;
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index.toString().padStart(3, "0")}.jpg`;
 
-const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/video/${index.toString()}.webp`;
+const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/${index.toString()}.webp`;
 
 
 
