@@ -41,6 +41,7 @@ import { DiferencialStockPermanente } from "@/components/diferenciales/diferenci
 import CardDisplay from "@/components/navbar/cardDisplay";
 import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
 import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
+import { DiferencialEstaticoDinamico } from "@/components/diferenciales/diferencialEstraticoDinamico";
 
 
 interface ItemsNavbar {
@@ -485,9 +486,8 @@ export default function RLSPage() {
                 <div className=" mx-[3%] flex flex-col justify-end items-end overflow-hidden">
                     <section className="hidden pb-[30vh] my-4 md:flex">
                         <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:mr-[10vw] ">
-                            <DiferencialMaterialGalvanizado size={70} customWith={10} />
-                            <DiferencialMultiposicion size={70} customWith={250} />
                             <DiferencialVolumenBajo size={70} customWith={150} />
+                            <DiferencialEstaticoDinamico size={70} customWith={150}/>
                             <DiferencialStockPermanente size={70} customWith={250} />
                         </div>
                     </section>
@@ -657,9 +657,9 @@ export default function RLSPage() {
                     <section className="md:hidden my-4 flex">
                         <div className="flex flex-col gap-4 w-full justify-center items-start align-center ">
                         
-                            <DiferencialMaterialGalvanizado size={60} customWith={10} />
-                            <DiferencialMultiposicion size={60} customWith={250} />
+                            
                             <DiferencialVolumenBajo size={60} customWith={150} />
+                            <DiferencialEstaticoDinamico size={60} customWith={150}/>
                             <DiferencialStockPermanente size={60} customWith={250} />
                         </div>
                     </section>

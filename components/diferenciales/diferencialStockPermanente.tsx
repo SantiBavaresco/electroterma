@@ -25,7 +25,7 @@ export const DiferencialStockPermanente : React.FC<Props> =  ({size, text, textS
 					w-full
 					`}>
 
-					<span className="w-full px-2 py-1 flex justify-start items-center">{text || "Stock permanente"}</span>
+					<span className="w-full px-2 py-0 flex justify-start items-center">{text || "Stock permanente"}</span>
 				</p>
 				
 			</main>
