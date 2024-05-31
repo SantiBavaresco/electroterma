@@ -246,12 +246,14 @@ export const Navbar = () => {
                                             
                                         >
                                             {(item) => (
+                                                
                                                 <DropdownItem
                                                     key={item.key}
                                                     className={`rounded-none `}
                                                     // color={item.key === "delete" ? "danger" : "default"}
                                                     // className={item.key === "delete" ? "text-danger" : ""}
                                                 >
+                                                    
                                                     <NextLink
                                                         className=""
                                                         color="foreground"
@@ -266,6 +268,7 @@ export const Navbar = () => {
                                                         />
                                                     </NextLink>
                                                 </DropdownItem>
+                                                
                                             )}
                                             {/* {items.map((element)=>{
                                                             <DropdownItem key={element.key} >
