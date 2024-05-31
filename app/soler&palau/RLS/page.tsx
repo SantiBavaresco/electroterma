@@ -5,6 +5,8 @@ import VideoScrubber from "@/components/videoScrubber/videoScrubber";
 import FrameScrubber from "@/components/frameScrubber/frameScrubber";
 // import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx';
 
+import { rlsData } from "@/public/data/soler&palau/rlsData";
+import { itemsNavSolerPalau } from "@/public/data/navbarData";
 
 import { lazy, Suspense, useState, useEffect } from "react";
 
@@ -42,49 +44,12 @@ import CardDisplay from "@/components/navbar/cardDisplay";
 import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
 import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
 import { DiferencialEstaticoDinamico } from "@/components/diferenciales/diferencialEstraticoDinamico";
+import TableSolerPalau from "@/components/table/tableSoler&palau";
+import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
+import { IoMailOutline } from "react-icons/io5";
 
-
-interface ItemsNavbar {
-    key: string;
-    label: string[];
-    labelShort: string;
-    img: string;
-    href: string;
-}
 
 export default function RLSPage() {
-
-    const itemsNav: ItemsNavbar[] = [
-        {
-            key: "first",
-            label: ["Ventilador Centrífugo", "Autolimitante - RLS"],
-            labelShort: "RLS",
-            img: "../img/navbar/NavBarRLS1SolerPalau.png",
-            href: "/soler&palau/RLS",
-        },
-        {
-            key: "copy",
-            label: ["Ventilador Centrífugo", "Multipala - TSA"],
-            labelShort: "TSA",
-            img: "../img/navbar/NavBarTSA1SolerPalau.png",
-            
-            href: "/soler&palau/TSA",
-        },
-        {
-            key: "edit",
-            label: ["Ventilador ","Centrífugo TDA"],
-            labelShort: "TDA",
-            img: "../img/navbar/NavBarTDA1SolerPalau.png",
-            href: "/soler&palau/TDA",
-        },
-        {
-            key: "last",
-            label: ["Hábitat"],
-            labelShort: "Hábitat",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
-            href: "/soler&palau/habitat",
-        },
-    ];
 
     const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
@@ -113,73 +78,7 @@ export default function RLSPage() {
         };
     }, []);
 
-    const defaultContent =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const urlImageBanner = "../img/solerpalau/imgbanner/";
-    const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
-
-    const bannerImageInfo = [
-        {
-            imgName:"1",
-            imgLable:[
-                {   
-                    textLable:"Componente de",
-                    textColor:""
-                },
-                {   
-                    textLable:"equipo tempomatic",
-                    textColor:""
-                },
-            ],
-        },
-        {
-            imgName:"2",
-            imgLable:[
-                {   
-                    textLable:"Es ideal para",
-                    textColor:"stone-300"
-                },
-                {   
-                    textLable:"Extracción localizada",
-                    textColor:""
-                },
-                {   
-                    textLable:"en procesos de",
-                    textColor:""
-                },
-                {   
-                    textLable:"industria",
-                    textColor:""
-                },
-            ],
-        },
-        {
-            imgName:"3",
-            imgLable:[
-                {   
-                    textLable:"Es ideal para",
-                    textColor:"stone-100"
-                },
-                {   
-                    textLable:"Áreas de proceso",
-                    textColor:""
-                },
-                {   
-                    textLable:"donde se requiera",
-                    textColor:""
-                },
-                {   
-                    textLable:"renovaión de aire",
-                    textColor:""
-                },
-            ],
-        }
-        
-    ];
-
-    const urltdaImageDemo = "../img/solerpalau/tda/imgDemo/";
-    const demoImageNames = ["1", "2", "3", "1", "2", "3"];
-
+ 
     const FrameFan = lazy(
         () => import("@/components/frameScrubber/frameScrubber")
     );
@@ -195,8 +94,8 @@ export default function RLSPage() {
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
                     <SimpleSlider
-                        url={urlImageBanner}
-                        imgInfo={bannerImageInfo}
+                        url={rlsData.urlImageBanner}
+                        imgInfo={rlsData.bannerImageInfo}
                     />
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
@@ -207,8 +106,16 @@ export default function RLSPage() {
                         </h2>
                     </div>
                     <div className="mr-4 md:mr-12  ">
+                        
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
-                            Consultanos
+                            <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
+                                    </div>
+                                <span className="ml-6 lg:ml-10">Escribinos</span>
                         </Button>
                     </div>
                 </div>
@@ -233,19 +140,21 @@ export default function RLSPage() {
             <section className="z-0 mr-auto ml-[45px]  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
                 <div className="left-0 w-[120px] md:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
-                                <Image
-                                    alt="Otam Logo"
-                                    src="../img/otamlogo.png"
-                                    width="100%"
-                                />
-                                <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
-                        </div>
+                    <a href="/soler&palau">
+                        <Image
+                            alt="Otam Logo"
+                            src="../img/otamlogo.png"
+                            width="100%"
+                        />
+                        </a>
+                    <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
+                </div>
             </section>
 
             {BigScreen ? 
             // ----------------------- DESKTOP -----------------------
             <>
-                <section className="z-10 flex flex-row justify-start items-start min-h-[100%] overflow-hidden
+                <section className="z-10 flex flex-row justify-start items-start min-h-[100%]  overflow-hidden
                     
                     pl-10
                     h-[95%]
@@ -269,7 +178,8 @@ export default function RLSPage() {
                                 <h1 className="absolute left-0 text-[#9D9D9C] font-nunito
                                     text-[3.2vw]
                                 "> 
-                                    VENTILADOR 
+                                    {/* VENTILADOR */}
+                                    {rlsData.pageData.preTitle} 
                                 </h1>
                             </span>
 
@@ -278,20 +188,23 @@ export default function RLSPage() {
 
                             // className="mt-2 lg:mt-6 text-3xl lg:text-5xl  xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title"
                             >
-                                CENTRÍFUGO
+                                {/* CENTRÍFUGO */}
+                                {rlsData.pageData.title1} 
                             </h1>
 
                             <h1 
                                 className="mt-2  leading-none  font-nunito-bolder text-livered-title text-[5.0vw] xl:text-[5.35vw]"
                             // className="mt-2 w-full lg:mt-3 text-3xl lg:text-[44px] xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title"
                             >
-                                AUTOLIMITANTE - RLS
+                                {/* AUTOLIMITANTE - RLS */}
+                                {rlsData.pageData.title2} 
                             </h1>
                             </span>
 
                             <h1 className="text-[#9D9D9C] font-nunito
                                     text-[3.2vw] ">
-                            DE SIMPLE ASPIRACIÓN
+                                {/* DE SIMPLE ASPIRACIÓN */}
+                                {rlsData.pageData.subTitle} 
                             </h1>
 
                             {/* text-xl lg:text-4xl 2xl:text-[43px] */}
@@ -332,7 +245,7 @@ export default function RLSPage() {
                     </div>
                     </section>
 
-                    <section className="w-full px-[5%] flex justify-between 
+                    <section className="w-full px-[5%] flex mb-[10px] justify-between 
                     ">
                         {/* text-[13px] xl:text-2xl  2xl:text-3xl */}
 
@@ -377,21 +290,28 @@ export default function RLSPage() {
                         <div className="absolute top-0 -left-6 mt-1 md:mt-2 ">
                             <VinietaNaranjaSVG css=" h-[20px] w-[20px] " />
                         </div>
-                        VENTILADOR
+                        {/* VENTILADOR */}
+                        {rlsData.pageData.preTitle} 
+
                         
                     </span>
 
                     <h1 className="relative mt-2 text-[29px] xm:text-[35px] leading-none font-nunito-bolder text-livered-title">
                         
-                        CENTRÍFUGO
+                        {/* CENTRÍFUGO */}
+                        {rlsData.pageData.title1} 
+
                     </h1>
 
                     <h1 className="mt-2 text-[29px] xm:text-[35px] leading-none  font-nunito-bolder text-livered-title">
-                        MULTIPALA - RLS
+                        {/* MULTIPALA - RLS */}
+                        {rlsData.pageData.title2} 
+
                     </h1>
 
                     <h1 className=" text-[18px]  text-[#9D9D9C] font-nunito ">
-                        DE SIMPLE ASPIRACIÓN
+                        {/* DE SIMPLE ASPIRACIÓN */}
+                        {rlsData.pageData.subTitle} 
                     </h1>
                 </section>
 
@@ -484,20 +404,22 @@ export default function RLSPage() {
             }
             <section className=" -mt-[40vh] lg:-mt-[80vh] w-full"> 
                 <div className=" mx-[3%] flex flex-col justify-end items-end overflow-hidden">
-                    <section className="hidden pb-[30vh] my-4 md:flex">
+                    <section className="hidden pb-[20vh] my-4 md:flex">
                         <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:mr-[10vw] ">
                             <DiferencialVolumenBajo size={70} customWith={150} />
                             <DiferencialEstaticoDinamico size={70} customWith={150}/>
                             <DiferencialStockPermanente size={70} customWith={250} />
                         </div>
                     </section>
-                    <Button
-                        className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
-                        radius="full"
-                        size={BigScreen ? "lg" : "sm"}
-                    >
-                        Manual <Download />
-                    </Button>
+                    <section className=" pb-[10vh]">
+                        <Button
+                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3 xl:mr-[12vw]"
+                            radius="full"
+                            size={BigScreen ? "lg" : "sm"}
+                        >
+                            Manual <Download />
+                        </Button>
+                    </section>
                 </div>
             </section>
             
@@ -516,14 +438,15 @@ export default function RLSPage() {
                         bg-[center_1rem] bg-no-repeat
                     
                       ">
-                        <div className="ml-[3%] h-full  flex flex-col justify-center items-center lg:flex-row lg:grow">
+                        <div className="ml-[3%] h-full w-full flex flex-col justify-center items-center lg:flex-row lg:grow">
 
-                            <div className="min-h-[55vh] lg:min-h-[45vh] ">
-                                <h1 className="flex py-4 md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
+                            <div className="min-h-[55vh] w-full lg:min-h-[45vh] ">
+                                <h1 className="flex items-center justify-start py-4  md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
                                 ">
-                                    CARACTERÍSTICAS TÉCNICAS
+                                   <VinietaRojaSVG size={40} /> CARACTERÍSTICAS TÉCNICAS
                                 </h1>
-                                <Accordion
+                                <TableSolerPalau/>
+                                {/* <Accordion
                                 className="z-10 h-[25vh] md:h-[35vh] lg:min-h-[45vh] xl:min-h-[50vh] 2xl:min-h-[55vh] "
                                 variant="splitted"
                                 itemClasses={
@@ -541,7 +464,8 @@ export default function RLSPage() {
                                         key="facil"
                                         aria-label=""
                                         startContent={
-                                            <div className="w-[80vw]  -ml-2 md:-ml-2 md:w-[76.5vw] lg:w-[52.5vw] xl:w-[51.5vw] 2xl:w-[52.5vw] grid grid-cols-4  p-3 lg:p-4 lg:pr-2  bg-orange-500 rounded-xl 
+                                            <div className="w-[80vw]  -ml-2 md:-ml-2 md:w-[76.5vw] lg:w-[52.5vw] xl:w-[51.5vw] 2xl:w-[52.5vw] 
+                                                grid grid-cols-4  p-3 lg:p-4 lg:pr-2  bg-orange-500 rounded-xl 
                                                 text-xs md:text-base 2xl:text-xl">
                                                 <div className="bg-orange-500 text-white ">
                                                     MODELO TSA
@@ -599,13 +523,13 @@ export default function RLSPage() {
                                         </div>
 
                                     </AccordionItem>
-                                </Accordion>
+                                </Accordion> */}
                             </div>
-                            <div className=" w-full flex justify-center items-center">
+                            <div className=" w-full my-auto flex justify-center items-center">
                             {/* ----------------- Specs Web ----------------- */}
-                                <div className=" w-full ms-auto overflow ">
+                                <div className=" w-full  ms-auto overflow ">
                                         <div
-                                                className=" my-10 mx-auto  px-4 z-10
+                                                className=" my-10 mx-auto  px-4 z-10 
                                             
                                                 
                                                 rounded-[42px]
@@ -674,7 +598,7 @@ export default function RLSPage() {
                         <div className="ml-[%] h-full  flex flex-col justify-center items-center ">
                             <h1 className="  mx-auto pt-10 py-4 xs:text-lg xm:text-2xl md:text-3xl  leading-none font-nunito-bolder me-auto  text-livered-title  
                                 ">
-                                    CARACTERÍSTICAS TÉCNICAS
+                                     CARACTERÍSTICAS TÉCNICAS
                                 </h1>
 
                             <div className="min-h-[vh] ">
@@ -759,18 +683,22 @@ export default function RLSPage() {
 
                     <div className="">
                         <SimpleSliderDemoImages
-                            url={urltdaImageDemo}
-                            fileName={demoImageNames}
+                            url={rlsData.urltdaImageDemo}
+                            fileName={rlsData.demoImageNames}
                         />
                     </div>
                     <div className="flex justify-bettween items-center mt-10 md:mt-2  w-full">
+                       
                         <div className="2xl:ml-[6%] me-auto flex justify-start items-start ">
+                        <a href="/soler&palau">
                             <Image
                                 alt="Otam Logo"
                                 className="scale-1"
                                 src="../img/otamlogo.png"
                                 width={150}
                             />
+                        </a>
+
                         </div>
                         <div className="w-full float-right flex justify-end items-end lg:pr-10 2xl:mr-[5%] md:pr-0">
 
@@ -806,16 +734,16 @@ export default function RLSPage() {
                 <div className="flex justify-center gap-2 ">
                     
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
-                {itemsNav?.map((item) => (
+                {itemsNavSolerPalau?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
                     
                         <a
-                                                            className=""
-                                                            color="foreground"
-                                                            href={ item.labelShort === "RLS" ? "javascript:void(0)" :  item.href}
-                                                            target={(item.labelShort === "TSA" ) ? "" : "_blank"}
-                                                            key={item.key}
-                                                        >
+                            className=""
+                            color="foreground"
+                            href={ item.labelShort === "RLS" ? "javascript:void(0)" :  item.href}
+                            target={(item.labelShort === "TSA" ) ? "" : "_blank"}
+                            key={item.key}
+                        >
                             <CardDisplay data={item}  actual={"RLS"} />
                         </a>
                     ))}  

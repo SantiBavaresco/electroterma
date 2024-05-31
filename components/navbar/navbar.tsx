@@ -22,6 +22,10 @@ import {Accordion, AccordionItem} from "@nextui-org/react";
 
 import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 
+
+import { BsArrowBarLeft } from "react-icons/bs";
+import { BsArrowBarRight } from "react-icons/bs";
+
 import icono from "../electroterma-logo.png";
 
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
@@ -52,6 +56,7 @@ import { Logo } from "@/components/icons";
 import ImgDisplay from "./imgdisplay(deprecated)";
 import { Children } from "react";
 import CardDisplay from "./cardDisplay";
+import { itemsNavSolerPalau } from "@/public/data/navbarData";
 
 interface ItemsNavbar {
     key: string;
@@ -70,24 +75,7 @@ export const Navbar = () => {
     const setFirstFalse = () => {
         setFirstDropdownOpen(false);
     };
-    const setMobileFalse = () => {
-        setMobileDropdownOpen(true);
-    };
 
-    const handleFirstDropdownOpen = () => {
-        setFirstDropdownOpen(true);
-        setSecondDropdownOpen(false);
-    };
-
-    const handleSecondDropdownOpen = () => {
-        // setFirstDropdownOpen(true);
-        setSecondDropdownOpen(true);
-    };
-
-    const handleSecondDropdownItemClick = () => {
-        setFirstDropdownOpen(false);
-        setSecondDropdownOpen(false);
-    };
 
     const items: ItemsNavbar[] = [
         {
@@ -141,6 +129,7 @@ export const Navbar = () => {
             type="search"
         />
     );
+
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
@@ -195,6 +184,7 @@ export const Navbar = () => {
                     isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
                 >
                     <DropdownTrigger className="bg-red-500 h-full">
+                        {/* --------------- Burger --------------- */}
                         <div className="w-[263px] h-[150%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
                             <svg
                                 width="30"
@@ -217,6 +207,8 @@ export const Navbar = () => {
                                 />
                             </svg>
                         </div>
+                        {/* --------------- Burger --------------- */}
+
                     </DropdownTrigger>
                     <DropdownMenu
                         aria-label="Profile Actions"
@@ -236,18 +228,22 @@ export const Navbar = () => {
                                         placement="left"
                                         className="rounded-[34px] !important border-1 border-[#F5F4F4] 
                                                         bg-[#e1e1e1] translate-x-[-1.5%] 2xl:translate-x-[-5%]"
-                                         
                                     >
                                         <DropdownTrigger>
-                                            <p className="font-nunito text-white text-2xl ">
-                                                {item.label}
-                                            </p>
+                                            <div>
+                                                
+                                                <p className="flex items-center justify-centerfont-nunito text-white text-2xl ">
+                                                <BsArrowBarLeft className="text-3xl"/>
+                                                    {item.label}
+                                                </p>
+                                            </div>
                                         </DropdownTrigger>
                                         <DropdownMenu
                                             aria-label="Profile Actions"
                                             variant="flat"
-                                            items={items}
+                                            items={item.dwData}
                                             className="force-row "
+                                            
                                         >
                                             {(item) => (
                                                 <DropdownItem

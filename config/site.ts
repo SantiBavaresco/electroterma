@@ -1,9 +1,15 @@
 export type SiteConfig = typeof siteConfig;
+import { itemsNavSolerPalau, itemsNavTempomatic } from "@/public/data/navbarData";
 
 export const siteConfig = {
     name: "Electroterma - Soluciones en HVAC",
     description: "Soluciones en HVAC",
     navItems: [
+        {
+            label: "Inicio",
+            href: "/",
+			dropdown: false,
+        },
         {
             label: "Soluciones en HVAC",
             href: "/solucionesHVAC",
@@ -13,20 +19,20 @@ export const siteConfig = {
             label: "Tempomatic",
             href: "/tempomatic",
 			dropdown: true,
-
+            dwData: itemsNavTempomatic,
         },
         {
             label: "Soler&Palau",
             href: "/soler&palau",
 			dropdown: true,
-
+            dwData: itemsNavSolerPalau,
         },
 
         {
             label: "Zila",
             href: "/zila",
 			dropdown: true,
-
+            dwData: itemsNavTempomatic,
         },
         {
             label: "Nosotros",
