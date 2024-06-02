@@ -11,7 +11,7 @@ import { lazy, Suspense, useState, useEffect } from "react";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
 import NextLink from "next/link";
-
+ import { itemsNavSolerPalau } from "@/public/data/navbarData";
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
@@ -933,7 +933,7 @@ export default function TSAPage() {
                 <div className="flex justify-center gap-2 ">
                     
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
-                {itemsNav?.map((item) => (
+                {itemsNavSolerPalau?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
                     
                         <NextLink

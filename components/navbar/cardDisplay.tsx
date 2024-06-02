@@ -1,21 +1,16 @@
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
+import { ItemsNavbar } from "@/types/itemsNavbar";
 import clsx from "clsx";
 
 import { Button } from "@nextui-org/button";
 
-interface ItemsNavbar {
-    data:{
-    key: string;
-    label: string[];
-    labelShort: string;
-    img: string;
-    href: string;
-    },
+interface dataProps {
+    data: ItemsNavbar,
     actual?: string;
 
 }
-const CardDisplay: React.FC<ItemsNavbar> = ({ data, actual,...props }) => {
+const CardDisplay: React.FC<dataProps> = ({ data, actual, ...props }) => {
     // const modifiedArrays = data.lable
     return (
         
@@ -27,6 +22,13 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, actual,...props }) => {
             z-10
             ${(data.key==="first") ? " md:rounded-tl-[28px] md:rounded-bl-[28px] hover:bg-none !important" : "" } 
             ${(data.key==="last") ? " md:rounded-tr-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
+            ${(data.key==="11") ? " md:rounded-tl-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
+            ${(data.key==="13") ? " md:rounded-tr-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
+            ${(data.key==="21") ? " md:rounded-bl-[28px] md:rounded-br-[28px] hover:bg-none !important" : "" } 
+            ${(data.key==="23") ? " md:rounded-br-[28px]  hover:bg-none !important" : "" } 
+            
+
+
             shadow-xl border-1 ${data.labelShort===actual ? "border-warning" : "border-gray-100 " }  rounded-[28px] md:rounded-none
         `}>
             <div className={`flex flex-col justify-center items-center`}>
@@ -40,11 +42,13 @@ const CardDisplay: React.FC<ItemsNavbar> = ({ data, actual,...props }) => {
                     key={data.key}
                 />
                 <div className={`w-full mx-auto h-[45px] lg:min-h-10 lg:h-16 text-center flex flex-col  justify-center text-white font-nunito 
-                    ${data.labelShort===actual ? "bg-[#EF7916]" : "bg-livered-title group-hover:bg-[#B2B2B2]" }
+                    ${data.labelShort===actual ? "bg-[#EF7916]" : `${data.color} group-hover:bg-[#B2B2B2]` } 
                     
                     
                     ${(data.key==="first") ? " md:rounded-bl-[28px]" : "rounded-b-[18px] md::rounded-none"} 
                     ${(data.key==="last") ? " md:rounded-bl-[0px]" : "rounded-b-[18px] md:rounded-none"} 
+                    ${(data.key==="21") ? " md:rounded-bl-[28px]  hover:bg-none !important" : "" } 
+                    ${(data.key==="23") ? " md:rounded-br-[28px]  hover:bg-none !important" : "" }  
                 `}>
                     {data?.label?.map((description:string)=>(
                         <p key={description} className="gap-3 xm:px-2 text-[10px] xm:text-xs md:text-base lg:text-base xl:text-xl">{description}</p>

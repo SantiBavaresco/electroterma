@@ -54,6 +54,24 @@
   }
 
 @layer components {
+    .force-col-4 ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+      /* gap: 2px; Space between columns */
+      border-radius: 10px;
+      gap: 0.75rem;
+    }
+    .force-col-4 li {
+        
+      border-radius: 10px;
+      padding: 0px;
+      border: 5px;
+      /* background-color: black; */
+
+      
+      /* background-color: red; */
+    }
+
     .force-row ul {
         display: flex;
         flex-direction: row;

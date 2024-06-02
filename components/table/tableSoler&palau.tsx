@@ -1,8 +1,18 @@
 import React from "react";
 import { rlsData } from "@/public/data/soler&palau/rlsData";
+import { ventDataType } from "@/types/ventData";
 import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyValue} from "@nextui-org/react";
 
-
+interface RlsDataType {
+  // Define the structure of rlsData here
+  tableData: {
+    columns: { key: string; label: string }[];
+    rows: { [key: string]: string }[]; // Replace with actual structure
+  };
+}
+interface TableSolerPalauProps {
+  rlsData: RlsDataType; // Type for the expected rlsData prop
+}
 
 export default function TableSolerPalau() {
   return (

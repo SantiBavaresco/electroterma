@@ -1,7 +1,6 @@
+import { ventDataType } from "@/types/ventData";
 
-export type rlsData = typeof rlsData;
-
-export const rlsData = {
+export const rlsData: ventDataType  = {
     email: "",
     whatsapp: "",
     whatsappMessage: "",
@@ -101,7 +100,7 @@ export const rlsData = {
         
     },
 
-    urltdaImageDemo: "../img/solerpalau/tda/imgDemo/",
+    urltdaImageDemo: "../img/solerpalau/rls/imgDemo/",
     demoImageNames: ["1", "2", "3", "1", "2", "3"],
 
     urlImageBanner: "../img/solerpalau/imgbanner/",

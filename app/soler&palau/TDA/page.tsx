@@ -11,7 +11,10 @@ import { lazy, Suspense, useState, useEffect } from "react";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
 import NextLink from "next/link";
+// import { itemsNavSolerPalau } from "@/public/data/navbarData";
 
+import { tdaData } from "@/public/data/soler&palau/tdaData";
+import { itemsNavSolerPalau } from "@/public/data/navbarData";
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
@@ -39,51 +42,17 @@ import { DiferencialMultiposicion } from "@/components/diferenciales/diferencial
 import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVolumenBajo";
 import { DiferencialStockPermanente } from "@/components/diferenciales/diferencialStockPermanente";
 import CardDisplay from "@/components/navbar/cardDisplay";
-import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
+import { DiferencialEstaticoDinamico } from "@/components/diferenciales/diferencialEstraticoDinamico";
+import TableSolerPalau from "@/components/table/tableSoler&palau";
+import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
+import { IoMailOutline } from "react-icons/io5";
 
 
-interface ItemsNavbar {
-    key: string;
-    label: string[];
-    labelShort: string;
-    img: string;
-    href: string;
-}
 
 export default function TDAPage() {
 
-    const itemsNav: ItemsNavbar[] = [
-        {
-            key: "first",
-            label: ["Ventilador Centrífugo", "Autolimitante - RLS"],
-            labelShort: "RLS",
-            img: "../img/navbar/NavBarRLS1SolerPalau.png",
-            href: "/soler&palau/RLS",
-        },
-        {
-            key: "copy",
-            label: ["Ventilador Centrífugo", "Multipala - TSA"],
-            labelShort: "TSA",
-            img: "../img/navbar/NavBarTSA1SolerPalau.png",
-            
-            href: "/soler&palau/TSA",
-        },
-        {
-            key: "edit",
-            label: ["Ventilador ","Centrífugo TDA"],
-            labelShort: "TDA",
-            img: "../img/navbar/NavBarTDA1SolerPalau.png",
-            href: "/soler&palau/TDA",
-        },
-        {
-            key: "last",
-            label: ["Hábitat"],
-            labelShort: "Hábitat",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
-            href: "/soler&palau/habitat",
-        },
-    ];
+    
 
     const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
@@ -194,8 +163,8 @@ export default function TDAPage() {
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
                     <SimpleSlider
-                        url={urlImageBanner}
-                        imgInfo={bannerImageInfo}
+                        url={tdaData.urlImageBanner}
+                        imgInfo={tdaData.bannerImageInfo}
                     />
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
@@ -207,7 +176,14 @@ export default function TDAPage() {
                     </div>
                     <div className="mr-4 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
-                            Consultanos
+                            <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
+                                    </div>
+                                <span className="ml-6 lg:ml-10">Escribinos</span>
                         </Button>
                     </div>
                 </div>
@@ -232,13 +208,15 @@ export default function TDAPage() {
             <section className="z-0 mr-auto ml-[45px]  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
                 
                 <div className="left-0 w-[120px] md:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
-                                <Image
-                                    alt="Otam Logo"
-                                    src="../img/otamlogo.png"
-                                    width="100%"
-                                />
-                                <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
-                        </div>
+                    <a href="/soler&palau">
+                        <Image
+                            alt="Otam Logo"
+                            src="../img/otamlogo.png"
+                            width="100%"
+                        />
+                    </a>
+                    <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
+                </div>
             </section>
 
             {BigScreen ? 
@@ -268,7 +246,8 @@ export default function TDAPage() {
                                 <h1 className="absolute left-0 text-[#9D9D9C] font-nunito
                                     text-[3.2vw]
                                 "> 
-                                    VENTILADOR 
+                                    {/* VENTILADOR  */}
+                                    {tdaData.pageData.preTitle} 
                                 </h1>
                             </span>
 
@@ -277,20 +256,23 @@ export default function TDAPage() {
 
                             // className="mt-2 lg:mt-6 text-3xl lg:text-5xl  xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title"
                             >
-                                CENTRÍFUGO
+                                {/* CENTRÍFUGO */}
+                                {tdaData.pageData.title1} 
                             </h1>
 
                             <h1 
                                 className="mt-2  leading-none  font-nunito-bolder text-livered-title text-[5.0vw] xl:text-[5.35vw]"
                             // className="mt-2 w-full lg:mt-3 text-3xl lg:text-[44px] xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title"
                             >
-                                MULTIPALA - TDA
+                                {/* MULTIPALA - TDA */}
+                                {tdaData.pageData.title2} 
                             </h1>
                             </span>
 
                             <h1 className="text-[#9D9D9C] font-nunito
                                     text-[3.2vw] ">
-                            DE DOBLE ASPIRACIÓN
+                                {/* DE DOBLE ASPIRACIÓN */}
+                                {tdaData.pageData.subTitle} 
                             </h1>
 
                             {/* text-xl lg:text-4xl 2xl:text-[43px] */}
@@ -378,21 +360,25 @@ export default function TDAPage() {
                         <div className="absolute top-0 -left-6 mt-1 md:mt-2 ">
                             <VinietaRojaSVG css=" h-[20px] w-[20px] " />
                         </div>
-                        VENTILADOR
+                        {/* VENTILADOR */}
+                        {tdaData.pageData.preTitle} 
                         
                     </span>
 
                     <h1 className="relative mt-2 text-[29px] xm:text-[35px] leading-none font-nunito-bolder text-livered-title">
                         
-                        CENTRÍFUGO
+                        {/* CENTRÍFUGO */}
+                        {tdaData.pageData.title1} 
                     </h1>
 
                     <h1 className="mt-2 text-[29px] xm:text-[35px] leading-none  font-nunito-bolder text-livered-title">
-                        MULTIPALA - TDA
+                        {/* MULTIPALA - TDA */}
+                        {tdaData.pageData.title2} 
                     </h1>
 
                     <h1 className=" text-[18px]  text-[#9D9D9C] font-nunito ">
-                        DE DOBLE ASPIRACIÓN
+                        {/* DE DOBLE ASPIRACIÓN */}
+                        {tdaData.pageData.description} 
                     </h1>
                 </section>
 
@@ -488,16 +474,15 @@ export default function TDAPage() {
                             <DiferencialStockPermanente size={70} customWith={250} />
                         </div>
                     </section>
-                   
-                </div>
-                <div className="mx-[6%] flex flex-col justify-end items-end overflow-hidden">
-                    <Button
-                        className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
-                        radius="full"
-                        size={BigScreen ? "lg" : "sm"}
-                    >
-                        Manual <Download />
-                    </Button>
+                    <section className=" pb-[10vh]">
+                        <Button
+                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3 xl:mr-[12vw]"
+                            radius="full"
+                            size={BigScreen ? "lg" : "sm"}
+                        >
+                            Manual <Download />
+                        </Button>
+                    </section>
                 </div>
             </section>
             
@@ -518,88 +503,13 @@ export default function TDAPage() {
                       ">
                         <div className="ml-[3%] h-full  flex flex-col justify-center items-center lg:flex-row lg:grow">
 
-                            <div className="min-h-[55vh] lg:min-h-[45vh] ">
-                                <h1 className="flex py-4 md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
+                             <div className="min-h-[55vh] w-full lg:min-h-[45vh] ">
+                                <h1 className="flex items-center justify-start py-4  md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
                                 ">
-                                    CARACTERÍSTICAS TÉCNICAS
+                                   <VinietaRojaSVG size={40} /> CARACTERÍSTICAS TÉCNICAS
                                 </h1>
-                                <Accordion
-                                className="z-10 h-[25vh] md:h-[35vh] lg:min-h-[45vh] xl:min-h-[50vh] 2xl:min-h-[55vh] "
-                                variant="splitted"
-                                itemClasses={
-                                    {
-                                        base: " py-2 md:py-4 md:px-4 bg-red-500 w-[98%] lg:w-[58.5vw] xl:w-[57vw] opacity-95",
-                                        title: "font-normal text-2xl",
-                                        trigger:
-                                            "pl-2 py-2  data-[hover=true]:bg-default-100 pr-4 rounded-lg h-14 flex items-center",
-                                        indicator: "text-medium",
-                                        content: "text-xl px-2",
-                                }}
-                                selectionMode="multiple"
-                                >
-                                    <AccordionItem
-                                        key="facil"
-                                        aria-label=""
-                                        startContent={
-                                            <div className="w-[80vw]  -ml-2 md:-ml-2 md:w-[76.5vw] lg:w-[52.5vw] xl:w-[51.5vw] 2xl:w-[52.5vw] grid grid-cols-4  p-3 lg:p-4 lg:pr-2  bg-orange-500 rounded-xl 
-                                                text-xs md:text-base 2xl:text-xl">
-                                                <div className="bg-orange-500 text-white ">
-                                                    MODELO TSA
-                                                </div>
-                                                <div className="bg-orange-500 text-white  ">
-                                                    QMIN[m3/h]
-                                                </div>
-                                                <div className="bg-orange-500 text-white ">
-                                                    Ap[mmca]
-                                                </div>
-                                                <div className="bg-orange-500 text-white ">
-                                                    Q[m3/h]
-                                                </div>
-                                            </div>
-                                        }
-                                        title=""
-                                    >
-                                        <div className="w-[96%]  md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mb-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex md:items-center justify-center  "> TSA 9/4 - 4P </div>
-                                            <div className=" flex items-center justify-center"> 700 </div>
-                                            <div className=" flex items-center justify-center"> 38 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6 "> 1150 </div>
-                                        </div>
-
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className=" flex md:items-center justify-center "> TSA 10/5 - 4P </div>
-                                            <div className="flex items-center justify-center"> 800 </div>
-                                            <div className=" flex items-center justify-center"> 48 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 1500 </div>
-                                        </div>
-
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex items-center justify-center "> TSA 12/6 - 4P </div>
-                                            <div className="flex items-center justify-center"> 1350 </div>
-                                            <div className="flex items-center justify-center"> 68 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 2600 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className="flex items-center justify-center "> TSA 15/7 - 6P </div>
-                                            <div className="flex items-center justify-center"> 1400 </div>
-                                            <div className=" flex items-center justify-center"> 40 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 3000 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex items-center justify-center "> TSA 15/7 - 4P </div>
-                                            <div className=" flex items-center justify-center"> 2200 </div>
-                                            <div className=" flex items-center justify-center"> 95 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5000 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mt-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className=" flex items-center justify-center "> TSA 18/9 - 6P </div>
-                                            <div className="flex items-center justify-center"> 2300 </div>
-                                            <div className="flex items-center justify-center"> 58 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5500 </div>
-                                        </div>
-
-                                    </AccordionItem>
-                                </Accordion>
+                                <TableSolerPalau/>
+                               
                             </div>
                             <div className=" w-full flex justify-center items-center">
                             {/* ----------------- Specs Web ----------------- */}
@@ -704,26 +614,25 @@ export default function TDAPage() {
                             </div>
                             
                         </div>
-                        <div className="mx-[3%]">
-                                
-                            
-                                <div className="  w-full ml-auto ">
-                                    <div className="mt-0  flex items-end justify-end  opacity-30">
-                                    <Image
+                        <div className="-z-10 mx-[3%]">
+                                <div className=" w-full mx-auto mt-0">
+                                    <div className="mt-2 flex items-center justify-center opacity-30">
+                                        <Image
                                             alt="Otam Logo"
                                             className=""
                                             src="../img/otamlogo.png"
-                                            width={150}
+                                            width={300}
                                         />
                                     </div>
+                                    
                                 </div>
-                                <div className="  w-full ml-auto ">
+                                <div className=" w-full ml-auto lg:-mr-0">
                                     <div className="mt-0  flex items-end justify-end">
                                         <Image
                                             alt="Electroterma Logo"
                                             className=""
                                             src="../img/electrotermalogoletras.png"
-                                            width={140}
+                                            width={340}
                                         />
                                     </div>
                                 </div>
@@ -759,18 +668,20 @@ export default function TDAPage() {
 
                     <div className="">
                         <SimpleSliderDemoImages
-                            url={urltdaImageDemo}
-                            fileName={demoImageNames}
+                            url={tdaData.urltdaImageDemo}
+                            fileName={tdaData.demoImageNames}
                         />
                     </div>
                     <div className="flex justify-bettween items-center mt-10 md:mt-2  w-full">
                         <div className="2xl:ml-[6%] me-auto flex justify-start items-start ">
-                            <Image
-                                alt="Otam Logo"
-                                className="scale-1"
-                                src="../img/otamlogo.png"
-                                width={150}
-                            />
+                            <a href="/soler&palau">
+                                <Image
+                                    alt="Otam Logo"
+                                    className="scale-1"
+                                    src="../img/otamlogo.png"
+                                    width={150}
+                                />
+                            </a>
                         </div>
                         <div className="w-full float-right flex justify-end items-end lg:pr-0 2xl:mr-[5%] md:pr-0">
 
@@ -806,18 +717,18 @@ export default function TDAPage() {
                 <div className="flex justify-center gap-2 ">
                     
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
-                {itemsNav?.map((item) => (
+                {itemsNavSolerPalau?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
                     
-                        <NextLink
-                                                            className=""
-                                                            color="foreground"
-                                                            href={ item.labelShort === "TDA" ? "javascript:void(0)" : item.href}
-                                                            target={(item.labelShort === "TSA" ) ? "" : "_blank"}
-                                                            key={item.key}
-                                                        >
+                        <a
+                            className=""
+                            color="foreground"
+                            href={ item.labelShort === "TDA" ? "javascript:void(0)" :  item.href}
+                            target={(item.labelShort === "TDA" ) ? "" : "_blank"}
+                            key={item.key}
+                        >
                             <CardDisplay data={item}  actual={"TDA"} />
-                        </NextLink>
+                        </a>
                     ))}  
                     </div>
                          

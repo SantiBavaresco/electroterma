@@ -56,15 +56,10 @@ import { Logo } from "@/components/icons";
 import ImgDisplay from "./imgdisplay(deprecated)";
 import { Children } from "react";
 import CardDisplay from "./cardDisplay";
+import { ItemsNavbar } from "@/types/itemsNavbar";
 import { itemsNavSolerPalau } from "@/public/data/navbarData";
 
-interface ItemsNavbar {
-    key: string;
-    label: string[];
-    labelShort: string;
-    img: string;
-    href: string;
-}
+
 
 export const Navbar = () => {
     const [firstDropdownOpen, setFirstDropdownOpen] = useState(false);
@@ -76,36 +71,47 @@ export const Navbar = () => {
         setFirstDropdownOpen(false);
     };
 
-
+//  items acordion para mobile, hay que cambiarlo
     const items: ItemsNavbar[] = [
         {
             key: "first",
+            category: "soler&palau",
             label: ["Ventilador Centrífugo", "Autolimitante - RLS"],
             labelShort: "RLS",
             img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
+            color: "livered-title",
         },
         {
             key: "copy",
+            category: "soler&palau",
             label: ["Ventilador Centrífugo", "Multipala - TSA"],
             labelShort: "TSA",
             img: "../img/navbar/NavBarTSA1SolerPalau.png",
-            
             href: "/soler&palau/TSA",
+            color: "livered-title",
+
+
         },
         {
             key: "edit",
-            label: ["Ventilador ","Centrífugo TDA"],
+            category: "soler&palau",
+            label: ["Ventilador ","Centrífugo - TDA"],
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
+            color: "livered-title",
+
         },
         {
             key: "last",
+            category: "soler&palau",
             label: ["Hábitat"],
             labelShort: "Hábitat",
             img: "../img/navbar/NavBarHabitat1SolerPalau.png",
             href: "/soler&palau/habitat",
+            color: "livered-title",
+
         },
     ];
 
@@ -216,33 +222,32 @@ export const Navbar = () => {
                         className="bg-[#EF771C] !important mb-10"
                     >
                         {/* <ul className="hidden md:flex gap-4 justify-around pl-1 ml-1"> */}
-                        {siteConfig.navItems.map((item) => (
+                        {siteConfig.navItems.map((dropDown) => (
                             <DropdownItem
-                                key={item.label}
+                                key={dropDown.label}
                                 isReadOnly
                                 className="h-[38px] gap-2 flex justify-start text-start  "
                             >
-                                {item.dropdown ? (
+                                {dropDown.dropdown ? (
                                     <Dropdown
-                                        key={item.label}
+                                        key={dropDown.label}
                                         placement="left"
                                         className="rounded-[34px] !important border-1 border-[#F5F4F4] 
                                                         bg-[#e1e1e1] translate-x-[-1.5%] 2xl:translate-x-[-5%]"
                                     >
                                         <DropdownTrigger>
                                             <div>
-                                                
                                                 <p className="flex items-center justify-centerfont-nunito text-white text-2xl ">
                                                 <BsArrowBarLeft className="text-3xl"/>
-                                                    {item.label}
+                                                    {dropDown.label}
                                                 </p>
                                             </div>
                                         </DropdownTrigger>
                                         <DropdownMenu
                                             aria-label="Profile Actions"
                                             variant="flat"
-                                            items={item.dwData}
-                                            className="force-row "
+                                            items={dropDown.dwData}
+                                            className={dropDown.label === "Tempomatic" ? "force-col-4 " : "force-row"}
                                             
                                         >
                                             {(item) => (
@@ -250,8 +255,7 @@ export const Navbar = () => {
                                                 <DropdownItem
                                                     key={item.key}
                                                     className={`rounded-none `}
-                                                    // color={item.key === "delete" ? "danger" : "default"}
-                                                    // className={item.key === "delete" ? "text-danger" : ""}
+                                                    
                                                 >
                                                     
                                                     <NextLink
@@ -261,34 +265,30 @@ export const Navbar = () => {
                                                         target="_blank"
                                                         onClick={setFirstFalse}
                                                     >
-                                                        {/* <ImgDisplay item={item}/>
-                                                                    <p>{item.label1}</p> */}
+
                                                         <CardDisplay
                                                             data={item}
+                                                            
                                                         />
                                                     </NextLink>
                                                 </DropdownItem>
                                                 
                                             )}
-                                            {/* {items.map((element)=>{
-                                                            <DropdownItem key={element.key} >
-                                                                <p>TEXTOOO</p>
-                                                            </DropdownItem>
-                                                        })} */}
+                                            
                                         </DropdownMenu>
                                     </Dropdown>
                                 ) : (
                                     <NextLink
                                         className=""
                                         color="foreground"
-                                        href={item.href}
-                                        target={item.label === "Tienda Online" ?  "_blank" : undefined }
+                                        href={dropDown.href}
+                                        target={dropDown.label === "Tienda Online" ?  "_blank" : undefined }
                                         onClick={setFirstFalse}
                                     >
                                         <p
                                             className={`font-nunito text-white text-2xl`}
                                         >
-                                            {item.label}
+                                            {dropDown.label}
                                         </p>
                                     </NextLink>
                                 )}

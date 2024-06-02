@@ -446,84 +446,7 @@ export default function RLSPage() {
                                    <VinietaRojaSVG size={40} /> CARACTERÍSTICAS TÉCNICAS
                                 </h1>
                                 <TableSolerPalau/>
-                                {/* <Accordion
-                                className="z-10 h-[25vh] md:h-[35vh] lg:min-h-[45vh] xl:min-h-[50vh] 2xl:min-h-[55vh] "
-                                variant="splitted"
-                                itemClasses={
-                                    {
-                                        base: " py-2 md:py-4 md:px-4 bg-red-500 w-[98%] lg:w-[58.5vw] xl:w-[57vw] opacity-95",
-                                        title: "font-normal text-2xl",
-                                        trigger:
-                                            "pl-2 py-2  data-[hover=true]:bg-default-100 pr-4 rounded-lg h-14 flex items-center",
-                                        indicator: "text-medium",
-                                        content: "text-xl px-2",
-                                }}
-                                selectionMode="multiple"
-                                >
-                                    <AccordionItem
-                                        key="facil"
-                                        aria-label=""
-                                        startContent={
-                                            <div className="w-[80vw]  -ml-2 md:-ml-2 md:w-[76.5vw] lg:w-[52.5vw] xl:w-[51.5vw] 2xl:w-[52.5vw] 
-                                                grid grid-cols-4  p-3 lg:p-4 lg:pr-2  bg-orange-500 rounded-xl 
-                                                text-xs md:text-base 2xl:text-xl">
-                                                <div className="bg-orange-500 text-white ">
-                                                    MODELO TSA
-                                                </div>
-                                                <div className="bg-orange-500 text-white  ">
-                                                    QMIN[m3/h]
-                                                </div>
-                                                <div className="bg-orange-500 text-white ">
-                                                    Ap[mmca]
-                                                </div>
-                                                <div className="bg-orange-500 text-white ">
-                                                    Q[m3/h]
-                                                </div>
-                                            </div>
-                                        }
-                                        title=""
-                                    >
-                                        <div className="w-[96%]  md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mb-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex md:items-center justify-center  "> TSA 9/4 - 4P </div>
-                                            <div className=" flex items-center justify-center"> 700 </div>
-                                            <div className=" flex items-center justify-center"> 38 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6 "> 1150 </div>
-                                        </div>
-
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className=" flex md:items-center justify-center "> TSA 10/5 - 4P </div>
-                                            <div className="flex items-center justify-center"> 800 </div>
-                                            <div className=" flex items-center justify-center"> 48 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 1500 </div>
-                                        </div>
-
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex items-center justify-center "> TSA 12/6 - 4P </div>
-                                            <div className="flex items-center justify-center"> 1350 </div>
-                                            <div className="flex items-center justify-center"> 68 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 2600 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className="flex items-center justify-center "> TSA 15/7 - 6P </div>
-                                            <div className="flex items-center justify-center"> 1400 </div>
-                                            <div className=" flex items-center justify-center"> 40 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 3000 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex items-center justify-center "> TSA 15/7 - 4P </div>
-                                            <div className=" flex items-center justify-center"> 2200 </div>
-                                            <div className=" flex items-center justify-center"> 95 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5000 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mt-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className=" flex items-center justify-center "> TSA 18/9 - 6P </div>
-                                            <div className="flex items-center justify-center"> 2300 </div>
-                                            <div className="flex items-center justify-center"> 58 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5500 </div>
-                                        </div>
-
-                                    </AccordionItem>
-                                </Accordion> */}
+                               
                             </div>
                             <div className=" w-full my-auto flex justify-center items-center">
                             {/* ----------------- Specs Web ----------------- */}
@@ -741,7 +664,7 @@ export default function RLSPage() {
                             className=""
                             color="foreground"
                             href={ item.labelShort === "RLS" ? "javascript:void(0)" :  item.href}
-                            target={(item.labelShort === "TSA" ) ? "" : "_blank"}
+                            target={(item.labelShort === "RLS" ) ? "" : "_blank"}
                             key={item.key}
                         >
                             <CardDisplay data={item}  actual={"RLS"} />

@@ -38,7 +38,7 @@ module.exports = {
       },
     },
     colors: {
-      primary: colors.orange,
+      "primary": colors.orange,
       'white':'white',
       'highgray':'#363636',
       'midgray':'#6b6b6b',
@@ -50,6 +50,8 @@ module.exports = {
       'livered-title': '#E80303',
       'white': colors.white,
       'green': colors.green,
+      'blue': colors.blue,
+      'sky': colors.sky,
       'orange': colors.orange,
       'gray': colors.gray,
       'emerald': colors.emerald,
