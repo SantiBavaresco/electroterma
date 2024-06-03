@@ -44,7 +44,7 @@ import CardDisplay from "@/components/navbar/cardDisplay";
 import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
 import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
 import { DiferencialEstaticoDinamico } from "@/components/diferenciales/diferencialEstraticoDinamico";
-import TableSolerPalau from "@/components/table/tableSoler&palau";
+import {TableSolerPalau} from "@/components/table/tableSoler&palau";
 import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 import { IoMailOutline } from "react-icons/io5";
 
@@ -445,7 +445,7 @@ export default function RLSPage() {
                                 ">
                                    <VinietaRojaSVG size={40} /> CARACTERÍSTICAS TÉCNICAS
                                 </h1>
-                                <TableSolerPalau/>
+                                <TableSolerPalau tableData={rlsData.tableData}/>
                                
                             </div>
                             <div className=" w-full my-auto flex justify-center items-center">

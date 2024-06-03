@@ -3,18 +3,29 @@ import { rlsData } from "@/public/data/soler&palau/rlsData";
 import { ventDataType } from "@/types/ventData";
 import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyValue} from "@nextui-org/react";
 
-interface RlsDataType {
+interface DataType {
   // Define the structure of rlsData here
   tableData: {
-    columns: { key: string; label: string }[];
-    rows: { [key: string]: string }[]; // Replace with actual structure
+    rows: {
+      key: string;
+      modelo: string;
+      qimn?: number; // Assuming numerical values for these properties
+      ap?: number;
+      omax?: number;
+      apmin?: number;
+      qm3?: number,
+      apmax?: number,
+      qmax?: number,
+    }[];
+    columns: {
+      key: string;
+      label: string;
+    }[];
   };
 }
-interface TableSolerPalauProps {
-  rlsData: RlsDataType; // Type for the expected rlsData prop
-}
 
-export default function TableSolerPalau() {
+export const TableSolerPalau: React.FC<DataType> = ({ tableData, ...props }) => {
+// export default function TableSolerPalau() {
   return (
     <Table aria-label="Tabla de caracteristicas"
         classNames={{
@@ -25,10 +36,10 @@ export default function TableSolerPalau() {
             tr: "even:bg-gray-200 bg-gray-100 ",
         }}
         >
-      <TableHeader columns={rlsData.tableData.columns}>
+      <TableHeader columns={tableData.columns}>
         {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
       </TableHeader>
-      <TableBody items={rlsData.tableData.rows}>
+      <TableBody items={tableData.rows}>
         {(item) => (
           <TableRow key={item.key}>
             {(columnKey) => <TableCell>{getKeyValue(item, columnKey)}</TableCell>}

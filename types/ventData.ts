@@ -13,10 +13,13 @@ export interface ventDataType {
       rows: {
         key: string;
         modelo: string;
-        qimn: number; // Assuming numerical values for these properties
-        ap: number;
-        omax: number;
-        apmin: number;
+        qimn?: number; // Assuming numerical values for these properties
+        ap?: number;
+        omax?: number;
+        apmin?: number;
+        qm3?: number,
+        apmax?: number,
+        qmax?: number,
       }[];
       columns: {
         key: string;

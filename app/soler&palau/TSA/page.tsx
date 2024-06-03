@@ -12,6 +12,7 @@ import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
 import NextLink from "next/link";
  import { itemsNavSolerPalau } from "@/public/data/navbarData";
+import { tsaData } from "@/public/data/soler&palau/tsaData";
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
@@ -40,10 +41,13 @@ import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVo
 import { DiferencialStockPermanente } from "@/components/diferenciales/diferencialStockPermanente";
 import CardDisplay from "@/components/navbar/cardDisplay";
 import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
+import { IoMailOutline } from "react-icons/io5";
 import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
 
 import { TsaAuraSVG } from "@/public/svg/tsaAuraSvg";
 import { Ondas04SVG } from "@/public/svg/ondas04svg";
+import { TableSolerPalau } from "@/components/table/tableSoler&palau";
+import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 
 
 interface ItemsNavbar {
@@ -197,8 +201,8 @@ export default function TSAPage() {
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
                     <SimpleSlider
-                        url={urlImageBanner}
-                        imgInfo={bannerImageInfo}
+                        url={tsaData.urlImageBanner}
+                        imgInfo={tsaData.bannerImageInfo}
                     />
                 </div>
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
@@ -209,8 +213,15 @@ export default function TSAPage() {
                         </h2>
                     </div>
                     <div className="mr-4 md:mr-12  ">
-                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
-                            Consultanos
+                    <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
+                            <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
+                                    </div>
+                                <span className="ml-6 lg:ml-10">Escribinos</span>
                         </Button>
                     </div>
                 </div>
@@ -233,15 +244,16 @@ export default function TSAPage() {
             </section> */}
             
             <section className="z-0 mr-auto ml-[45px]  md:mr-0 md:w-[90%] md:ml-10 md:mt-10 overflow-hidden">
-                
                 <div className="left-0 w-[120px] md:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
-                                <Image
-                                    alt="Otam Logo"
-                                    src="../img/otamlogo.png"
-                                    width="100%"
-                                />
-                                <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
-                        </div>
+                    <a href="/soler&palau">
+                        <Image
+                            alt="Otam Logo"
+                            src="../img/otamlogo.png"
+                            width="100%"
+                        />
+                    </a>
+                    <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
+                </div>
             </section>
 
             {BigScreen ? 
@@ -271,7 +283,8 @@ export default function TSAPage() {
                                 <h1 className="absolute left-0 text-[#9D9D9C] font-nunito
                                     text-[3.2vw]
                                 "> 
-                                    VENTILADOR 
+                                    {/* VENTILADOR  */}
+                                    {tsaData.pageData.preTitle} 
                                 </h1>
                             </span>
 
@@ -280,20 +293,23 @@ export default function TSAPage() {
 
                             // className="mt-2 lg:mt-6 text-3xl lg:text-5xl  xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title"
                             >
-                                CENTRÍFUGO
+                                {/* CENTRÍFUGO */}
+                                {tsaData.pageData.title1} 
                             </h1>
 
                             <h1 
                                 className="mt-2  leading-none  font-nunito-bolder text-livered-title text-[5.0vw] xl:text-[5.35vw]"
                             // className="mt-2 w-full lg:mt-3 text-3xl lg:text-[44px] xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title"
                             >
-                                MULTIPALA - TSA
+                                {/* MULTIPALA - TSA */}
+                                {tsaData.pageData.title2} 
                             </h1>
                             </span>
 
                             <h1 className="text-[#9D9D9C] font-nunito
                                     text-[3.2vw] ">
-                            DE SIMPLE ASPIRACIÓN
+                                {/* DE SIMPLE ASPIRACIÓN */}
+                                {tsaData.pageData.description} 
                             </h1>
 
                             {/* text-xl lg:text-4xl 2xl:text-[43px] */}
@@ -372,11 +388,11 @@ export default function TSAPage() {
                         </div>
 
                     </section>
-                    <section className="h-[90vh] w-[99vw] mt-10 lg:min-h-[90vh] xl:h-[80vh] 2xl:h-[80vh] px-10 overflow-hidden ">
+                    {/* <section className="h-[90vh] w-[99vw] mt-10 lg:min-h-[90vh] xl:h-[80vh] 2xl:h-[80vh] px-10 overflow-hidden ">
                     <div className="flex flex-col-1 ">
                         <div className="relative md:w-1/2 ">
                             <Image
-                                // className="-top-16 left-1/2"
+                                
                                 alt="Ventilador"
                                 className="inline-block 
                                     w-[47vw]
@@ -427,7 +443,7 @@ export default function TSAPage() {
                     
                 
                     </div>
-                </section>
+                </section> */}
                 </>
             :
             // ----------------------- MOBILE -----------------------
@@ -438,21 +454,24 @@ export default function TSAPage() {
                         <div className="absolute top-0 -left-6 mt-1 md:mt-2 ">
                             <VinietaNaranjaSVG css=" h-[20px] w-[20px] " />
                         </div>
-                        VENTILADOR
+                            {/* VENTILADOR */}
+                            {tsaData.pageData.preTitle} 
                         
                     </span>
 
                     <h1 className="relative mt-2 text-[29px] xm:text-[35px] leading-none font-nunito-bolder text-livered-title">
-                        
-                        CENTRÍFUGO
+                        {/* CENTRÍFUGO */}
+                        {tsaData.pageData.title1} 
                     </h1>
 
                     <h1 className="mt-2 text-[29px] xm:text-[35px] leading-none  font-nunito-bolder text-livered-title">
-                        MULTIPALA - TSA
+                        {/* MULTIPALA - TSA */}
+                        {tsaData.pageData.title2} 
                     </h1>
 
                     <h1 className=" text-[18px]  text-[#9D9D9C] font-nunito ">
-                        DE SIMPLE ASPIRACIÓN
+                        {/* DE SIMPLE ASPIRACIÓN */}
+                        {tsaData.pageData.description} 
                     </h1>
                 </section>
 
@@ -509,7 +528,7 @@ export default function TSAPage() {
                     </div>
                 </section>
 
-                <section className="xs:h-[220px] xm:h-[255px] w-[99vw]  pt-10 overflow-hidden ">
+                {/* <section className="xs:h-[220px] xm:h-[255px] w-[99vw]  pt-10 overflow-hidden ">
                     <div className="flex flex-col-2 ">
                         <div className="relative w-full">
                             <Image
@@ -564,14 +583,8 @@ export default function TSAPage() {
                                 Manual <Download size={30}/>
                             </Button>
                     </div>
-                    {/* <Button
-                        className="z-10 w-2/3   bg-livered text-white "
-                        radius="full"
-                        size="sm"
-                    >
-                        
-                    </Button> */}
-                </section>
+
+                </section> */}
 
 
                
@@ -606,7 +619,7 @@ export default function TSAPage() {
                 </>
             }
             <section className=" -mt-[40vh] lg:-mt-[80vh] w-full"> 
-                <div className=" mx-[5%] flex flex-col justify-start items-start overflow-hidden">
+                <div className=" mx-[3%] flex flex-col justify-start items-start overflow-hidden">
                     <section className="hidden pb-[30vh] my-4 md:flex">
                         <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:ml-[10vw] ">
                             <DiferencialMaterialGalvanizado size={70} customWith={10} />
@@ -616,16 +629,17 @@ export default function TSAPage() {
                         </div>
                     </section>
                     
+                <section className=" pb-[10vh]">
+                        <Button
+                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw]"
+                            radius="full"
+                            size={BigScreen ? "lg" : "sm"}
+                        >
+                            Manual <Download />
+                        </Button>
+                    </section>
                 </div>
-                <div className="mx-[6%] flex flex-col justify-end items-end overflow-hidden">
-                    <Button
-                        className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3"
-                        radius="full"
-                        size={BigScreen ? "lg" : "sm"}
-                    >
-                        Manual <Download />
-                    </Button>
-                </div>
+
             </section>
             
 
@@ -645,91 +659,36 @@ export default function TSAPage() {
                       ">
                         <div className="ml-[3%] h-full  flex flex-col justify-center items-center lg:flex-row lg:grow">
 
-                            <div className="min-h-[55vh] lg:min-h-[45vh] ">
-                                <h1 className="flex py-4 md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
+                        <div className="min-h-[55vh] w-full lg:min-h-[45vh] ">
+                                <h1 className="flex items-center justify-start py-4  md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
                                 ">
-                                    CARACTERÍSTICAS TÉCNICAS
+                                   <VinietaRojaSVG size={40} /> CARACTERÍSTICAS TÉCNICAS
                                 </h1>
-                                <Accordion
-                                className="z-10 h-[25vh] md:h-[35vh] lg:min-h-[45vh] xl:min-h-[50vh] 2xl:min-h-[55vh] "
-                                variant="splitted"
-                                itemClasses={
-                                    {
-                                        base: " py-2 md:py-4 md:px-4 bg-red-500 w-[98%] lg:w-[58.5vw] xl:w-[57vw] opacity-95",
-                                        title: "font-normal text-2xl",
-                                        trigger:
-                                            "pl-2 py-2  data-[hover=true]:bg-default-100 pr-4 rounded-lg h-14 flex items-center",
-                                        indicator: "text-medium",
-                                        content: "text-xl px-2",
-                                }}
-                                selectionMode="multiple"
-                                >
-                                    <AccordionItem
-                                        key="facil"
-                                        aria-label=""
-                                        startContent={
-                                            <div className="w-[80vw]  -ml-2 md:-ml-2 md:w-[76.5vw] lg:w-[52.5vw] xl:w-[51.5vw] 2xl:w-[52.5vw] grid grid-cols-4  p-3 lg:p-4 lg:pr-2  bg-orange-500 rounded-xl 
-                                                text-xs md:text-base 2xl:text-xl">
-                                                <div className="bg-orange-500 text-white ">
-                                                    MODELO TSA
-                                                </div>
-                                                <div className="bg-orange-500 text-white  ">
-                                                    QMIN[m3/h]
-                                                </div>
-                                                <div className="bg-orange-500 text-white ">
-                                                    Ap[mmca]
-                                                </div>
-                                                <div className="bg-orange-500 text-white ">
-                                                    Q[m3/h]
-                                                </div>
-                                            </div>
-                                        }
-                                        title=""
-                                    >
-                                        <div className="w-[96%]  md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mb-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex md:items-center justify-center  "> TSA 9/4 - 4P </div>
-                                            <div className=" flex items-center justify-center"> 700 </div>
-                                            <div className=" flex items-center justify-center"> 38 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6 "> 1150 </div>
-                                        </div>
-
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className=" flex md:items-center justify-center "> TSA 10/5 - 4P </div>
-                                            <div className="flex items-center justify-center"> 800 </div>
-                                            <div className=" flex items-center justify-center"> 48 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 1500 </div>
-                                        </div>
-
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex items-center justify-center "> TSA 12/6 - 4P </div>
-                                            <div className="flex items-center justify-center"> 1350 </div>
-                                            <div className="flex items-center justify-center"> 68 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 2600 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className="flex items-center justify-center "> TSA 15/7 - 6P </div>
-                                            <div className="flex items-center justify-center"> 1400 </div>
-                                            <div className=" flex items-center justify-center"> 40 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 3000 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 my-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-600  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-300">
-                                            <div className=" flex items-center justify-center "> TSA 15/7 - 4P </div>
-                                            <div className=" flex items-center justify-center"> 2200 </div>
-                                            <div className=" flex items-center justify-center"> 95 </div>
-                                            <div className="flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5000 </div>
-                                        </div>
-                                        <div className="w-[96%] md:w-[97%] xl:w-[95.5%] 2xl:w-[95.5%] -ml-2 mt-1 mx-auto grid grid-cols-4 items-center justify-center gap-y-1 py-4 text-gray-200  rounded-xl text-xs md:text-base 2xl:text-xl bg-gray-400">
-                                            <div className=" flex items-center justify-center "> TSA 18/9 - 6P </div>
-                                            <div className="flex items-center justify-center"> 2300 </div>
-                                            <div className="flex items-center justify-center"> 58 </div>
-                                            <div className=" flex items-center justify-center pr-8 md:pr-6 lg:pr-6"> 5500 </div>
-                                        </div>
-
-                                    </AccordionItem>
-                                </Accordion>
+                                <TableSolerPalau tableData={tsaData.tableData}/>
+                                
+                               
                             </div>
-                            <div className=" w-full flex justify-center items-center">
+                            <div className=" w-full my-auto flex justify-center items-center">
                             {/* ----------------- Specs Web ----------------- */}
+                                <div className=" w-full  ms-auto overflow ">
+                                        <div
+                                                className=" my-10 mx-auto  px-4 z-10 
+                                            
+                                                
+                                                rounded-[42px]
+                                                w-[370px] xl:w-[400px] 2xl:w-[500px]
+                                                flex flex-col justify-start items-center bg-white p-1 "
+                                            >
+                                                <div className=" flex flex-col justify-center items-center  text-livered-title py-4 lg:pt-6 xl:py-16 
+                                                text-2xl lg:text-2xl 2xl:text-3xl">
+                                                    <h1 className="font-lexend ">Caudales de inyección </h1>
+                                                    <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
+                                                    <h1 className="font-lexend ">y contrapresiones desde</h1>
+                                                    <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
+
+                                                </div>
+                                        </div>
+                                    </div>
                                 {/* <div className=" w-full ms-auto overflow ">
                                         <div
                                                 className=" my-10 mx-auto  px-4 z-10
@@ -886,18 +845,20 @@ export default function TSAPage() {
 
                     <div className="">
                         <SimpleSliderDemoImages
-                            url={urltdaImageDemo}
-                            fileName={demoImageNames}
+                            url={tsaData.urltdaImageDemo}
+                            fileName={tsaData.demoImageNames}
                         />
                     </div>
                     <div className="flex justify-bettween items-center mt-10 md:mt-2  w-full">
                         <div className="2xl:ml-[6%] me-auto flex justify-start items-start ">
-                            <Image
-                                alt="Otam Logo"
-                                className="scale-1"
-                                src="../img/otamlogo.png"
-                                width={150}
-                            />
+                            <a href="/soler&palau">
+                                <Image
+                                    alt="Otam Logo"
+                                    className="scale-1"
+                                    src="../img/otamlogo.png"
+                                    width={150}
+                                />
+                            </a>
                         </div>
                         <div className="w-full float-right flex justify-end items-end lg:pr-0 2xl:mr-[5%] md:pr-0">
 

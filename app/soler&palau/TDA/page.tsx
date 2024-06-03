@@ -44,7 +44,7 @@ import { DiferencialStockPermanente } from "@/components/diferenciales/diferenci
 import CardDisplay from "@/components/navbar/cardDisplay";
 import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
 import { DiferencialEstaticoDinamico } from "@/components/diferenciales/diferencialEstraticoDinamico";
-import TableSolerPalau from "@/components/table/tableSoler&palau";
+import {TableSolerPalau} from "@/components/table/tableSoler&palau";
 import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 import { IoMailOutline } from "react-icons/io5";
 
@@ -476,7 +476,7 @@ export default function TDAPage() {
                     </section>
                     <section className=" pb-[10vh]">
                         <Button
-                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3 xl:mr-[12vw]"
+                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw]"
                             radius="full"
                             size={BigScreen ? "lg" : "sm"}
                         >
@@ -508,7 +508,7 @@ export default function TDAPage() {
                                 ">
                                    <VinietaRojaSVG size={40} /> CARACTERÍSTICAS TÉCNICAS
                                 </h1>
-                                <TableSolerPalau/>
+                                <TableSolerPalau tableData={tdaData.tableData}/>
                                
                             </div>
                             <div className=" w-full flex justify-center items-center">
