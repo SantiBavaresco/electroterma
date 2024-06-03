@@ -47,6 +47,7 @@ import { DiferencialEstaticoDinamico } from "@/components/diferenciales/diferenc
 import {TableSolerPalau} from "@/components/table/tableSoler&palau";
 import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 import { IoMailOutline } from "react-icons/io5";
+import { MailSvg } from "@/public/svg/mailSvg";
 
 
 
@@ -81,72 +82,6 @@ export default function TDAPage() {
         };
     }, []);
 
-    const defaultContent =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const urlImageBanner = "../img/solerpalau/imgbanner/";
-    const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
-
-    const bannerImageInfo = [
-        {
-            imgName:"1",
-            imgLable:[
-                {   
-                    textLable:"Componente de",
-                    textColor:""
-                },
-                {   
-                    textLable:"equipo tempomatic",
-                    textColor:""
-                },
-            ],
-        },
-        {
-            imgName:"2",
-            imgLable:[
-                {   
-                    textLable:"Es ideal para",
-                    textColor:"stone-300"
-                },
-                {   
-                    textLable:"Extracción localizada",
-                    textColor:""
-                },
-                {   
-                    textLable:"en procesos de",
-                    textColor:""
-                },
-                {   
-                    textLable:"industria",
-                    textColor:""
-                },
-            ],
-        },
-        {
-            imgName:"3",
-            imgLable:[
-                {   
-                    textLable:"Es ideal para",
-                    textColor:"stone-100"
-                },
-                {   
-                    textLable:"Áreas de proceso",
-                    textColor:""
-                },
-                {   
-                    textLable:"donde se requiera",
-                    textColor:""
-                },
-                {   
-                    textLable:"renovaión de aire",
-                    textColor:""
-                },
-            ],
-        }
-        
-    ];
-
-    const urltdaImageDemo = "../img/solerpalau/tda/imgDemo/";
-    const demoImageNames = ["1", "2", "3", "1", "2", "3"];
 
     const FrameFan = lazy(
         () => import("@/components/frameScrubber/frameScrubber")
@@ -181,7 +116,8 @@ export default function TDAPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
+                                    <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/>
+                                    {/* <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/> */}
                                     </div>
                                 <span className="ml-6 lg:ml-10">Escribinos</span>
                         </Button>

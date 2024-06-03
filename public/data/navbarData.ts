@@ -58,7 +58,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             category: "tempomatic",
             label: ["Caja Ventiladora",],
             labelShort: "CV",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
+            img: "../img/navbar/Tempomatic1.png",
             href: "/tempomatic/CajaVentiladora",
             color : "bg-[#EF7916]",
         },
@@ -67,7 +67,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             category: "tempomatic",
             label: ["UTA"],
             labelShort: "UTA",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
+            img: "../img/navbar/Tempomatic2.png",
             href: "/tempomatic/TSA",
             color : "bg-[#EF7916]",
 
@@ -77,7 +77,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             category: "tempomatic",
             label: ["Calefactor eléctrico"],
             labelShort: "CE",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
+            img: "../img/navbar/Tempomatic3.png",
             href: "/tempomativ/CalefactorElectrico",
             color : "bg-[#EF7916]",
 
@@ -87,7 +87,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             category: "tempomatic",
             label: ["Unidad manejadora de aire"],
             labelShort: "UMDA",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
+            img: "../img/navbar/Tempomatic4.png",
             href: "/tempomatic/UnidadManejadoraAire",
             color : "bg-[#EF7916]",
 
@@ -97,7 +97,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             category: "tempomatic",
             label: ["Generador de aire caliente"],
             labelShort: "GDAC",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
+            img: "../img/navbar/Tempomatic5.png",
             href: "/tempomatic/GeneradorAireCaliente",
             color : "bg-[#EF7916]",
 
@@ -107,7 +107,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             category: "tempomatic",
             label: ["Caldera para calefacción"],
             labelShort: "CC",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
+            img: "../img/navbar/Tempomatic6.png",
             href: "/tempomatic/CalderaParaCalefaccion",
             color : "bg-[#EF7916]",
 

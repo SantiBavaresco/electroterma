@@ -48,51 +48,12 @@ import { TsaAuraSVG } from "@/public/svg/tsaAuraSvg";
 import { Ondas04SVG } from "@/public/svg/ondas04svg";
 import { TableSolerPalau } from "@/components/table/tableSoler&palau";
 import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
+import { MailSvg } from "@/public/svg/mailSvg";
 
-
-interface ItemsNavbar {
-    key: string;
-    label: string[];
-    labelShort: string;
-    img: string;
-    href: string;
-}
 
 export default function TSAPage() {
 
-    const itemsNav: ItemsNavbar[] = [
-        {
-            key: "first",
-            label: ["Ventilador Centrífugo", "Autolimitante - RLS"],
-            labelShort: "RLS",
-            img: "../img/navbar/NavBarRLS1SolerPalau.png",
-            href: "/soler&palau/RLS",
-        },
-        {
-            key: "copy",
-            label: ["Ventilador Centrífugo", "Multipala - TSA"],
-            labelShort: "TSA",
-            img: "../img/navbar/NavBarTSA1SolerPalau.png",
-            
-            href: "/soler&palau/TSA",
-        },
-        {
-            key: "edit",
-            label: ["Ventilador ","Centrífugo TDA"],
-            labelShort: "TDA",
-            img: "../img/navbar/NavBarTDA1SolerPalau.png",
-            href: "/soler&palau/TDA",
-        },
-        {
-            key: "last",
-            label: ["Hábitat"],
-            labelShort: "Hábitat",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
-            href: "/soler&palau/habitat",
-        },
-    ];
-
-    const handleEmailClick = () => {
+        const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
         const subject = 'Consulta sobre equipamiento';
         const body = 'Hola! Me gustaria hacer una consulta sobre equipamiento de Electroterma';
@@ -119,72 +80,6 @@ export default function TSAPage() {
         };
     }, []);
 
-    const defaultContent =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const urlImageBanner = "../img/solerpalau/imgbanner/";
-    const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
-
-    const bannerImageInfo = [
-        {
-            imgName:"1",
-            imgLable:[
-                {   
-                    textLable:"Componente de",
-                    textColor:""
-                },
-                {   
-                    textLable:"equipo tempomatic",
-                    textColor:""
-                },
-            ],
-        },
-        {
-            imgName:"2",
-            imgLable:[
-                {   
-                    textLable:"Es ideal para",
-                    textColor:"stone-300"
-                },
-                {   
-                    textLable:"Extracción localizada",
-                    textColor:""
-                },
-                {   
-                    textLable:"en procesos de",
-                    textColor:""
-                },
-                {   
-                    textLable:"industria",
-                    textColor:""
-                },
-            ],
-        },
-        {
-            imgName:"3",
-            imgLable:[
-                {   
-                    textLable:"Es ideal para",
-                    textColor:"stone-100"
-                },
-                {   
-                    textLable:"Áreas de proceso",
-                    textColor:""
-                },
-                {   
-                    textLable:"donde se requiera",
-                    textColor:""
-                },
-                {   
-                    textLable:"renovaión de aire",
-                    textColor:""
-                },
-            ],
-        }
-        
-    ];
-
-    const urltdaImageDemo = "../img/solerpalau/tsa/imgDemo/";
-    const demoImageNames = ["1", "2", "3", "4", "5"];
 
     const FrameFan = lazy(
         () => import("@/components/frameScrubber/frameScrubber")
@@ -219,7 +114,8 @@ export default function TSAPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
+                                    <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/>
+                                    {/* <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/> */}
                                     </div>
                                 <span className="ml-6 lg:ml-10">Escribinos</span>
                         </Button>
@@ -618,6 +514,7 @@ export default function TSAPage() {
                     </Suspense>
                 </>
             }
+            
             <section className=" -mt-[40vh] lg:-mt-[80vh] w-full"> 
                 <div className=" mx-[3%] flex flex-col justify-start items-start overflow-hidden">
                     <section className="hidden pb-[30vh] my-4 md:flex">
