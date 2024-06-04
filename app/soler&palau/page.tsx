@@ -13,9 +13,8 @@ import { Button } from "@nextui-org/button";
 import CardDisplay from "@/components/navbar/cardDisplay";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 import { BsWhatsapp } from "react-icons/bs";
-
-
 import { itemsNavSolerPalau } from "@/public/data/navbarData";
+
 
 
 // import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
@@ -102,7 +101,7 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                 <div className="flex justify-center contain w-max mx-auto mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
                     
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
-                    {itemsNavSolerPalau?.map((item) => (
+                    {itemsNav?.map((item) => (
                         // <p key={item.key}>{item.label}</p>
                         
                             <a
@@ -111,7 +110,7 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                                                                 href={item.href}
                                                                 key={item.key}
                                                             >
-                                <CardDisplay data={item}  actual={""} />
+                                <CardDisplay data={itemsNavSolerPalau}  actual={""} />
 
                             </a>
                         ))}  

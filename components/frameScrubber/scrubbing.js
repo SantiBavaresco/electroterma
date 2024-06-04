@@ -22,7 +22,7 @@ const frameCount = 1000;
 
 let imgArray = [];
 
-const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/${index.toString()}.webp`;
+const currentFrame = (index) => `../img/solerpalau/${keyAttribute}/frames/mobile/${index.toString()}.webp`;
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index.toString().padStart(3, "0")}.jpg`;
 
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/video/${index.toString()}.webp`;

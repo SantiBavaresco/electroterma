@@ -114,8 +114,8 @@ export default function TSAPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/>
-                                    {/* <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/> */}
+                                    {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
+                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
                                     </div>
                                 <span className="ml-6 lg:ml-10">Escribinos</span>
                         </Button>
