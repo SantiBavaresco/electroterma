@@ -101,7 +101,7 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                 <div className="flex justify-center contain w-max mx-auto mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
                     
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
-                    {itemsNav?.map((item) => (
+                    {itemsNavSolerPalau?.map((item) => (
                         // <p key={item.key}>{item.label}</p>
                         
                             <a
@@ -110,7 +110,7 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                                                                 href={item.href}
                                                                 key={item.key}
                                                             >
-                                <CardDisplay data={itemsNavSolerPalau}  actual={""} />
+                                <CardDisplay data={item}  actual={""} />
 
                             </a>
                         ))}  
