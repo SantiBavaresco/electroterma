@@ -516,7 +516,7 @@ export default function TSAPage() {
             }
             
             <section className=" -mt-[40vh] lg:-mt-[80vh] w-full"> 
-                <div className=" mx-[3%] flex flex-col justify-start items-start overflow-hidden">
+                <div className=" mx-[3%] flex flex-col justify-end items-end md:justify-start md:items-start overflow-hidden">
                     <section className="hidden pb-[30vh] my-4 md:flex">
                         <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:ml-[10vw] ">
                             <DiferencialMaterialGalvanizado size={70} customWith={10} />
