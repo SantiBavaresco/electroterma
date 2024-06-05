@@ -1,85 +1,25 @@
 "use client";
-import { title } from "@/components/primitives";
-import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
-import VideoScrubber from "@/components/videoScrubber/videoScrubber";
-import FrameScrubber from "@/components/frameScrubber/frameScrubber";
-
-import { lazy, Suspense, useState, useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import { Link } from "@nextui-org/link";
+import Lottie from "lottie-react";
+// import animationData from "../public/lottie/bulding-page.json";
+import { Snippet } from "@nextui-org/snippet";
+import { Code } from "@nextui-org/code";
+import { button as buttonStyles } from "@nextui-org/theme";
+import { siteConfig } from "@/config/site";
+import { title, subtitle } from "@/components/primitives";
+import { GithubIcon } from "@/components/icons";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
-import NextLink from "next/link";
-
-
-import { Accordion, AccordionItem } from "@nextui-org/react";
-
-import { Chip } from "@nextui-org/chip";
-import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
-import { Ondas01SVG } from "@/public/svg/ondas01svg";
-import { Ondas02SVG } from "@/public/svg/ondas02svg";
-import { Ondas03SVG } from "@/public/svg/ondas03svg";
-
-
-import { ConstruccionDuradera } from "@/public/svg/construccionDuradera";
-import { EficienciaEnergetica } from "@/public/svg/eficienciaEnergetica";
-import { FacilInstalacion } from "@/public/svg/facilInstalacion";
-import { VersatilidadAplicacion } from "@/public/svg/versatilidadAplicacion";
-
-
-
-import { Download } from "@/public/svg/download";
-import SimpleSlider from "@/components/imgslider/slickSlider";
-import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
-import { Reveal } from "@/components/revealFramemotion";
-import { DiferencialMaterialGalvanizado } from "@/components/diferenciales/diferencialMaterialGalvanizado";
-import { DiferencialMultiposicion } from "@/components/diferenciales/diferencialMultiposicion";
+import { BsWhatsapp } from "react-icons/bs";
+import { IoMailOutline } from "react-icons/io5";
+import { DiferencialGranConfort } from "@/components/diferenciales/diferencialGranConfort";
+import { DiferencialCompuertaAntiretorno } from "@/components/diferenciales/diferencialCompuertaAntiretorno";
 import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVolumenBajo";
-import { DiferencialStockPermanente } from "@/components/diferenciales/diferencialStockPermanente";
-import CardDisplay from "@/components/navbar/cardDisplay";
-import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
-import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
+import { ShoppingCart } from "@/public/svg/shoppingCart";
 
 
-interface ItemsNavbar {
-    key: string;
-    label: string[];
-    labelShort: string;
-    img: string;
-    href: string;
-}
-
-export default function RLSPage() {
-
-    const itemsNav: ItemsNavbar[] = [
-        {
-            key: "first",
-            label: ["Ventilador Centrífugo", "Autolimitantes - RLS"],
-            labelShort: "RLS",
-            img: "../img/navbar/NavBarRLS1SolerPalau.png",
-            href: "/soler&palau/RLS",
-        },
-        {
-            key: "copy",
-            label: ["Ventilador Centrífugo", "Multipala - TSA"],
-            labelShort: "TSA",
-            img: "../img/navbar/NavBarTSA1SolerPalau.png",
-            href: "/soler&palau/TSA",
-        },
-        {
-            key: "edit",
-            label: ["Ventilador ","Centrífugo TDA"],
-            labelShort: "TDA",
-            img: "../img/navbar/NavBarTDA1SolerPalau.png",
-            href: "/soler&palau/TDA",
-        },
-        {
-            key: "last",
-            label: ["Habitat"],
-            labelShort: "Habitat",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
-            href: "/soler&palau/habitat",
-        },
-    ];
+export default function HabitatPage() {
 
     const [BigScreen, setBigScreen] = useState(false);
 
@@ -95,89 +35,297 @@ export default function RLSPage() {
         };
     }, []);
 
-    const defaultContent =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-    const urlImageBanner = "../img/solerpalau/imgbanner/";
-    const bannerImageNames = ["1", "2", "3", "1", "2", "3"];
-
-    const bannerImageInfo = [
-        {
-            imgName:"1",
-            imgLable:[
-                {   
-                    textLable:"Componente de",
-                    textColor:""
-                },
-                {   
-                    textLable:"equipo tempomatic",
-                    textColor:""
-                },
-            ],
-        },
-        {
-            imgName:"2",
-            imgLable:[
-                {   
-                    textLable:"Es ideal para",
-                    textColor:"stone-300"
-                },
-                {   
-                    textLable:"Extracción localizada",
-                    textColor:""
-                },
-                {   
-                    textLable:"en procesos de",
-                    textColor:""
-                },
-                {   
-                    textLable:"industria",
-                    textColor:""
-                },
-            ],
-        },
-        {
-            imgName:"3",
-            imgLable:[
-                {   
-                    textLable:"Es ideal para",
-                    textColor:"stone-100"
-                },
-                {   
-                    textLable:"Áreas de proceso",
-                    textColor:""
-                },
-                {   
-                    textLable:"donde se requiera",
-                    textColor:""
-                },
-                {   
-                    textLable:"renovaión de aire",
-                    textColor:""
-                },
-            ],
-        }
-        
-    ];
-
-    const urltdaImageDemo = "../img/solerpalau/tda/imgDemo/";
-    const demoImageNames = ["1", "2", "3", "1", "2", "3"];
-
-    const FrameFan = lazy(
-        () => import("@/components/frameScrubber/frameScrubber")
-    );
-
-    const itemClasses = {
-        base: " py-2 md:py-4 md:px-4 bg-red-500 w-[95%] lg:w-[66%] opacity-95",
-        title: "font-normal text-2xl",
-        trigger:
-            "pl-2 py-2  data-[hover=true]:bg-default-100 pr-4 rounded-lg h-14 flex items-center",
-        indicator: "text-medium",
-        content: "text-xl px-2",
+    const handleEmailClick = () => {
+        const email = 'info@electroterma.com.ar';
+        const subject = 'Consulta sobre equipamiento';
+        const body = 'Hola! Me gustaria hacer una consulta sobre equipamiento de Electroterma';
+    
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+    
+        // window.location.href = mailtoLink;
+        window.open(mailtoLink, '_blank');
     };
 
     return (
-        <div className="h-full flex flex-col items-center justify-center  ">
-            HABITAT 
-        </div>
+        <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden ">
+            {/* ------------- VIDEO INTRO ------------- */}
+
+            <section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
+                <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
+            </section>
+
+            {/* ------------- Consultanos ------------- */}
+            <section className="w-full max-h-[50%] py-0 font-size overflow-hidden">
+                <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="ml-[35px] md:ml-12">
+                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                            {" "}
+                            ¿Cuál es tu necesidad?{" "}
+                        </h2>
+                    </div>
+                    <div className="mr-4 md:mr-12  ">
+                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
+                            <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
+                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
+                                    </div>
+                                <span className="ml-6 lg:ml-10">Escribinos</span>
+                        </Button>
+                    </div>
+                </div>
+            </section>
+
+            <section className="flex flex-col px-[3%] w-full">
+
+                {/* ------------- Logos Electo-S&P ------------- */}
+                <section className="flex flex-row justify-between  items-center  h-full">
+                    <div className="w-[240px] md:w-[340] lg:w-[550px] ">
+                        <Image
+                            alt="Electroterma Logo"
+                            className=""
+                            src="../img/electrotermalogoletras.png"
+                            width="100%"
+                        />
+                    </div>
+                    <div className="left-0 w-[120px] md:w-[200px] lg:w-[350px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
+                        <a href="/soler&palau">
+                            <Image
+                                alt="Otam Logo"
+                                src="../img/otamlogo.png"
+                                width="100%"
+                            />
+                        </a>
+                        <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-xl">Distribuidor en Argentina</span>
+                    </div>
+                </section>
+
+                {/* ------------- Parrafo Habitat ------------- */}
+                <article className=" flex  items-center justify-center font-nunito-thin text-[#9D9D9C] ">
+                    <div className="w-1/2  max-w-[700px]">
+                        <h1 className=" text-[100px]">Hábitat</h1>
+                        <div className="text-[24px]">
+                            <p>
+                                Integramos los espacios considerando cada detalle de calidad y confort para ofrecer bienestar y seguridad.
+                                <br/><br/>
+                                Nuestra amplia gama de productos de ventilación y extractores de baño helicocentrífugos Soler & Palau, proporciona soluciones adecuadas para todo tipo de necesidades, ya sea en entornos domésticos o industriales.
+                                <br/><br/>
+                                No solo facilitamos a nuestros usuarios la elección del modelo ideal, sino también el diseño preciso para realizar instalaciones de manera cómoda, segura y con garantías.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                
+                {/* ------------- Titulo post parrafo ------------- */}
+                <section className="flex items-center justify-center my-10">
+                    <div>
+                        <h1 className="font-nunito-thin text-[3.5vw] text-[#9D9D9C] py-4">Nos importa que disfrutes de tus momentos</h1>
+                    </div>
+                </section>
+
+                
+                {/* ------------- 2 Vent Habitat ------------- */}
+                <section className="flex flex-row justify-between  items-center gap-x-32 h-full my-10">
+                
+                    {/* ------------- Vent INLINE ------------- */}
+                    <div className=" w-1/2 flex ">
+                        <div className="w-2/3 pr-6">
+                            <Image
+                                alt="Electroterma Logo"
+                                className=""
+                                src="../img/solerpalau/habitat/SolerPalauHabitat1.png"
+                                width="100%"
+                            />
+                        </div>
+                        <div className="flex flex-col justify-end  w-[30%]">
+                            
+                            <Image
+                                alt="Electroterma Logo"
+                                className="w"
+                                src="../img/solerpalau/habitat/SolerPalauHabitatInline1.png"
+                                width="100%"
+                            />
+                            <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
+                            <Button className="font-nunito text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                                radius="none"
+                                size="lg"
+                                
+                            >
+                                más Info </Button>
+                        </div>
+                    </div>
+
+                    {/* ------------- Vent EXTRACTOR ------------- */}
+                    <div className=" w-1/2 flex ">
+                        <div className="w-2/3 pr-6">
+                            <Image
+                                alt="Electroterma Logo"
+                                className=""
+                                src="../img/solerpalau/habitat/SolerPalauHabitat2.png"
+                                width="100%"
+                            />
+                        </div>
+                        <div className="flex flex-col justify-end  w-[30%]">
+                            
+                            <Image
+                                alt="Electroterma Logo"
+                                className="w"
+                                src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.png"
+                                width="100%"
+                            />
+                            <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
+                            <Button className="font-nunito text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                                radius="none"
+                                size="lg"
+                                
+                            >
+                                más Info </Button>
+                        </div>
+                    </div>
+                
+                </section>
+
+                {/* ------------- Diferenciales ------------- */}
+                <section className="flex-grow  my-10  bg-red-00 ">
+                    <div className="flex justify-around w-full">
+                        <div className="">
+                            <DiferencialCompuertaAntiretorno/>
+                        </div>
+                        <div>
+                            <DiferencialVolumenBajo text="Bajo nivel sonoro"/>
+                        </div>
+                        <div>
+                            <DiferencialGranConfort />
+                        </div>
+                    </div>
+                </section>
+
+                {/* ------------- Img Youtube ------------- */}
+                <section className="flex-grow   bg-green-00 ">
+                    <div className="flex gap-x-10">
+                        <div className=" h-full pr-0">
+                            <Image
+                                alt="Electroterma Logo"
+                                className=""
+                                src="../img/solerpalau/habitat/SolerPalauHabitatV1.png"
+                                width="100%"
+                            />
+                        </div>
+                        <div className=" h-full pr-0">
+                            <Image
+                                alt="Electroterma Logo"
+                                className=""
+                                src="../img/solerpalau/habitat/SolerPalauHabitatV2.png"
+                                width="100%"
+                            />
+                        </div>
+                    </div>
+                    
+                </section>
+
+                {/* ------------- DISFRUTA ------------- */}
+                <section className="flex items-center justify-center text-livered-title  my-10 pt-4">
+                    <div className="text-center">
+                        <h1 className="font-nunito-thin text-[3.5vw]  ">Disfruta del confort en tu hogar</h1>
+                        <h1 className="font-nunito-bold text-[3.5vw] ">¡tus ventiladores y extractores ideales estan aquí!</h1>
+                    </div>
+                </section>
+
+                {/* ------------- PAYMENT ------------- */}
+                <section className="flex-grow   bg-red-00 h-w-full">
+                            <Image
+                                alt="Electroterma Logo"
+                                className=""
+                                src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
+                                width="100%"
+                            />
+                </section>
+
+
+                <section className="flex flex-row justify-between  items-center  h-full">
+                    <div className="w-[240px] md:w-[340] lg:w-[250px] ">
+                        <Image
+                            alt="Electroterma Logo"
+                            className=""
+                            src="../img/electrotermalogoletras.png"
+                            width="100%"
+                        />
+                    </div>
+                    <div className="space-x-6">
+                        <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                                target="_blank" rel="noopener noreferrer">
+                            <Button
+                                className="z-10 mt-4 bg-livered-title font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                radius="full"
+                                size="lg" 
+                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
+                            >
+                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> 
+                                    </div>
+                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
+                            </Button>
+                        </a>
+                        <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                                target="_blank" rel="noopener noreferrer">
+                            <Button
+                                className="z-10 mt-4 bg-[#EF771CE5] font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                radius="full"
+                                size="lg" 
+                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
+                            >
+                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#E80303] to-[#EF771CE5]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    {/* <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" />  */}
+                                    <ShoppingCart size={30}/>
+                                    </div>
+                                <span className="ml-6 lg:ml-10">Tienda Online</span>
+                            </Button>
+                        </a>
+                    </div>
+                    <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
+                        <a href="/soler&palau">
+                            <Image
+                                alt="Otam Logo"
+                                src="../img/otamlogo.png"
+                                width="100%"
+                            />
+                        </a>
+                        <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-sm">Distribuidor en Argentina</span>
+                    </div>
+                </section>
+
+                {/* <section className="flex-grow   bg-red-500 h-screen">
+                    <div><h1>HOLA111AA</h1>
+                    </div>
+                </section> */}
+
+
+            </section>
+
+            
+            <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
+                            
+                            overflow-hidden">
+                             
+                            
+
+                        </div>
+        </main>
+        // 	<div className={'h-[5000px]'}>
+        // 		<VideoScrollPlayer/>
+        // </div>
     );
 }
