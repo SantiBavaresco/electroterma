@@ -17,15 +17,15 @@ export const CompuertaAntiretorno: React.FC<Props> = ({
             className={css}
             width={size || width || 100}
             height={size || height || 100}
-            viewBox="0 0 100 100"
+            viewBox="0 0 99 100"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <ellipse
                 cx="49.5"
-                cy="50.8272"
+                cy="49.5"
                 rx="49.5"
-                ry="50.8272"
+                ry="49.5"
                 fill="#E90303"
             />
             <g clip-path="url(#clip0_0_1)">

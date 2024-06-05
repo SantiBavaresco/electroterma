@@ -23,9 +23,9 @@ export const GranConfort: React.FC<Props> = ({
         >
             <ellipse
                 cx="49.5"
-                cy="50.8272"
+                cy="49.5"
                 rx="49.5"
-                ry="50.8272"
+                ry="49.5"
                 fill="#E90303"
             />
             <g clip-path="url(#clip0_0_1)">

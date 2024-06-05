@@ -192,7 +192,7 @@ export default function HabitatPage() {
 
                 {/* ------------- Diferenciales ------------- */}
                 <section className="flex-grow  my-10  bg-red-00 ">
-                    <div className="flex justify-around w-full">
+                    <div className="flex justify-around w-full py-1">
                         <div className="">
                             <DiferencialCompuertaAntiretorno/>
                         </div>
