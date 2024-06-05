@@ -122,7 +122,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             labelShort: "RLS",
             img: "../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
-            color: "bg-blue-500",
+            color: "bg-[#EF7916]",
         },
         {
             key: "copy",
@@ -131,7 +131,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             labelShort: "TSA",
             img: "../img/navbar/NavBarTSA1SolerPalau.png",
             href: "/soler&palau/TSA",
-            color: "bg-blue-500",
+            color: "bg-[#EF7916]",
 
 
         },
@@ -142,7 +142,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
-            color: "bg-blue-500",
+            color: "bg-[#EF7916]",
 
         },
         {
@@ -152,7 +152,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             labelShort: "Hábitat",
             img: "../img/navbar/NavBarHabitat1SolerPalau.png",
             href: "/soler&palau/habitat",
-            color: "bg-blue-500",
+            color: "bg-[#EF7916]",
 
         },
     ];

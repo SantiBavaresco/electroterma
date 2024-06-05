@@ -56,37 +56,76 @@ export default function Home() {
             </section>
             <section className="w-full max-h-[50%] py-0 font-size overflow-hidden">
                 
-                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-12">
-                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-4xl font-nunito-bold">
+                        <h2 className="text-white text-center text-xs xm:text-base md:text-2xl 2xl:text-4xl font-nunito-bold">
                             {" "}
-                            Conocé nuestras soluciones{" "}
+                            Conocé nuestras {" "}
+                            <Button size="lg" radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 text-midgray" onClick={handleEmailClick}>
+                            Soluciones
+                        </Button>
                         </h2>
                     </div>
                     <div className="mr-4 md:mr-12  ">
-                        <Button size="lg" radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
-                            Soluciones
-                        </Button>
+                        
                     </div>
                 </div>
             </section>
-            <section className="mx-auto ">
+            <section className="mx-0 w-full ">
                 <Image  
-                    className="mt-10"
+                    classNames={{ wrapper: "min-w-full h-full"}}
                     alt="Diapositiva img-logo"
                     src="../img/home1.png"
-                    width={"90%"}
+                    width={"100%"}
                 />
             </section>
-            <section className="w-full ml-[10vw] flex flex-col ">
-                <h1 className="font-nunito-bolder text-[50px] text-[#EF771C]">Estamos presentes</h1>
+            <section className="w-full h-full container mx-auto">
+            
+                <div className="flex flex-row">
+                    <div className="w-full md:w-3/4 bg-white p-4 flex flex-col justify-center items-center">
+                        <div>
+                        {/* <h2 className="text-center text-xl font-bold mb-4">Título</h2> */}
+                            <h1 className="font-nunito-bolder text-[60px] text-[#EF771C]">Proyectos y</h1>
+                            <h1 className="font-nunito-bolder text-[60px] text-[#EF771C]">Alianzas estratégicas</h1>
+                        </div>
+                        
+                        <div>
+                            <Image  
+                                className="object-cover w-[70%] ms-auto "
+                                alt="Mapa Sur America"
+                                src="../img/home3.png"
+                                width="80%"
+                            />
+                        </div>
+                    </div>
+                    <div className="w-full">
+                        <Image  
+                        className="w-full h-full"
+                        alt="Mapa Sur America"
+                        src="../img/home2.png"
+                        width="100%"
+                        />
+                        {/* <img src="image.jpg" alt="Image" className="object-cover w-full h-full" /> */}
+                    </div>
+                </div>
+               
+             
+
+                {/* <h1 className="font-nunito-bolder text-[50px] text-[#EF771C]">Estamos presentes</h1>
+                </div>
+                <div>
+
                 <Image  
-                    className="ml-[30vw] mt-10"
+                    className="ml-[0vw] mt-10"
                     alt="Mapa Sur America"
                     src="../img/home2.png"
                     width="80%"
                 />
-                <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
+                </div> */}
+
+               
+            </section>
+            <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
                             
                             overflow-hidden">
                              <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
@@ -109,8 +148,6 @@ export default function Home() {
                             
 
                         </div>
-            </section>
-            
         </main>
         // 	<div className={'h-[5000px]'}>
         // 		<VideoScrollPlayer/>
