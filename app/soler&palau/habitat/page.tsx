@@ -9,8 +9,9 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import {extendVariants, Button} from "@nextui-org/react";
 import { Image } from "@nextui-org/image";
-import { Button } from "@nextui-org/button";
+
 import { BsWhatsapp } from "react-icons/bs";
 import { IoMailOutline } from "react-icons/io5";
 import { DiferencialGranConfort } from "@/components/diferenciales/diferencialGranConfort";
@@ -22,6 +23,19 @@ import YouTubePlayer from "@/components/youtubePlayer";
 import { habitatData } from "@/public/data/soler&palau/habitatData";
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 
+
+export const MyButton = extendVariants(Button, {  
+    variants: {    
+      size: {      
+        xs: "px-2 min-w-12 h-6 text-tiny gap-1 rounded-small",      
+        md: "px-4 min-w-20 h-10 text-small gap-2 rounded-small",      
+        xl: "px-8 min-w-28 h-14 text-large gap-4 rounded-full", // <- new size variant
+      },  
+    },  
+    defaultVariants: { 
+      size: "xl",  // <- set new size variant as default
+    },
+  });
 
 export default function HabitatPage() {
 
@@ -62,9 +76,9 @@ export default function HabitatPage() {
             </section>
 
             {/* ------------- Consultanos ------------- */}
-            <section className="w-full px-[5%] max-h-[50%] py-0 font-size overflow-hidden">
+            <section className="w-full px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-[35px] md:ml-12">
+                    <div className="ml-[35px] md:ml-24">
                         <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
@@ -106,15 +120,15 @@ export default function HabitatPage() {
                                 width="100%"
                             />
                         </a>
-                        <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-lg">Distribuidor en Argentina</span>
+                        <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-sm xl:text-lg">Distribuidor en Argentina</span>
                     </div>
                 </section>
 
                 {/* ------------- Parrafo Habitat ------------- */}
                 <article className=" flex  items-center justify-center font-nunito-thin text-[#9D9D9C] ">
                     <div className="w-3/4  max-w-[700px]">
-                        <h1 className=" text-[5vw]">{habitatData.pageData.title1}</h1>
-                        <div className="text-[1.5vw]">
+                        <h1 className=" text-[4vw]">{habitatData.pageData.title1}</h1>
+                        <div className="text-[2.5vw] md:text-[2vw] xl:text-[1.1vw]">
                             <p>
                                 {habitatData.pageData.p1}
                                 <br/><br/>
@@ -137,7 +151,7 @@ export default function HabitatPage() {
 
                 
                 {/* ------------- 2 Vent Habitat ------------- */}
-                <section className="flex flex-row justify-between  items-center gap-x-32 h-full my-10">
+                <section className="flex flex-row justify-between  items-center gap-x-32 h-full my-10 mx-32">
                 
                     {/* ------------- Vent INLINE ------------- */}
                     <div className=" w-1/2 flex ">
@@ -158,7 +172,7 @@ export default function HabitatPage() {
                                 width="100%"
                             />
                             <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
-                            <Button className="font-nunito text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                            <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                 radius="none"
                                 size="lg"
                                 
@@ -186,7 +200,7 @@ export default function HabitatPage() {
                                 width="100%"
                             />
                             <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
-                            <Button className="font-nunito text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                            <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                 radius="none"
                                 size="lg"
                                 
@@ -198,7 +212,7 @@ export default function HabitatPage() {
                 </section>
 
                 {/* ------------- Diferenciales ------------- */}
-                <section className="flex-grow  my-10  bg-red-00 ">
+                <section className="flex-grow  my-16  bg-red-00 ">
                     <div className="flex justify-around w-full py-1">
                         <div className="">
                             <DiferencialCompuertaAntiretorno/>
@@ -213,7 +227,7 @@ export default function HabitatPage() {
                 </section>
 
                 {/* ------------- Img Youtube ------------- */}
-                <section className="flex   items-start  space-x-4">
+                <section className="flex   items-start my-10 mx-[5%] space-x-4">
                     <div className="w-full  ">
                         <YouTubePlayer
                             // url={item.presentationVideoId}
@@ -260,14 +274,14 @@ export default function HabitatPage() {
                 </section> */}
 
                 {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
-                <section className="flex flex-row justify-center  items-center  h-full my-6">
+                <section className="flex flex-row justify-center  items-center  h-full my-16">
                     <div className="space-x-6">
                         <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
-                            <Button
+                            <MyButton
                                 className="z-10 mt-4 bg-livered-title font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
-                                size="lg" 
+                                size="xl" 
                                 href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
@@ -275,17 +289,17 @@ export default function HabitatPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> 
+                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-3xl" /> 
                                     </div>
-                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
-                            </Button>
+                                <span className="ml-6 lg:ml-10 lg:text-3xl">Asesoramiento</span>
+                            </MyButton>
                         </a>
                         <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
-                            <Button
+                            <MyButton
                                 className="z-10 mt-4 bg-[#EF771CE5] font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
-                                size="lg" 
+                                size="xl" 
                                 href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
@@ -296,22 +310,22 @@ export default function HabitatPage() {
                                     {/* <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" />  */}
                                     <ShoppingCart size={30}/>
                                     </div>
-                                <span className="ml-6 lg:ml-10">Tienda Online</span>
-                            </Button>
+                                <span className="ml-10 lg:ml-10 lg:text-3xl">Tienda Online</span>
+                            </MyButton>
                         </a>
                     </div>
                 </section>
 
                 {/* ------------- DISFRUTA ------------- */}
-                <section className="flex items-center justify-center text-livered-title  mb-10 pt-4">
+                <section className="flex items-center justify-center text-livered-title  my -10 pt-4">
                     <div className="text-center">
-                        <h1 className="font-nunito-thin text-[3.5vw]  ">Disfruta del confort en tu hogar</h1>
-                        <h1 className="font-nunito-bold text-[3.5vw] ">¡tus ventiladores y extractores ideales estan aquí!</h1>
+                        <h1 className="font-nunito-thin text-[3.0vw]  ">Disfruta del confort en tu hogar</h1>
+                        <h1 className="font-nunito-bold text-[3.0vw] ">¡tus ventiladores y extractores ideales estan aquí!</h1>
                     </div>
                 </section>
 
                 {/* ------------- PAYMENT ------------- */}
-                <section className="flex-grow   bg-red-00 h-w-full">
+                <section className="flex items-center justify-center mx-[7%] bg-red-00 h-full">
                             <Image
                                 alt="Electroterma Logo"
                                 className=""

@@ -45,7 +45,7 @@ export const habitatData: habitatDataType  = {
     videoYoutubeId2: "ea8KWDyYWcA",
 
     urltdaImageDemo: "../img/solerpalau/habitat/imgDemo/",
-    demoImageNames: ["1", "2", "3", "4", "5"],
+    demoImageNames: ["1", "2", "3",],
 
     urlImageBanner: "../img/solerpalau/imgbanner/",
     bannerImageInfo: [
