@@ -56,13 +56,13 @@ export default function HabitatPage() {
         <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden ">
             {/* ------------- VIDEO INTRO ------------- */}
 
-            <section className="h-full w-full flex items-center justify-center overflow-hidden bg-lowgray">
+            <section className="h-[100%] w-full px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
                 <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4"/>
                 
             </section>
 
             {/* ------------- Consultanos ------------- */}
-            <section className="w-full px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
+            <section className="w-full px-[5%] max-h-[50%] py-0 font-size overflow-hidden">
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-12">
                         <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
@@ -98,7 +98,7 @@ export default function HabitatPage() {
                             width="100%"
                         />
                     </div>
-                    <div className="left-0 w-[120px] md:w-[200px] lg:w-[250px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
+                    <div className="left-0 w-[120px] md:w-[200px] lg:w-[250px] mr-10 xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
                         <a href="/soler&palau">
                             <Image
                                 alt="Otam Logo"
@@ -112,8 +112,8 @@ export default function HabitatPage() {
 
                 {/* ------------- Parrafo Habitat ------------- */}
                 <article className=" flex  items-center justify-center font-nunito-thin text-[#9D9D9C] ">
-                    <div className="w-1/2  max-w-[700px]">
-                        <h1 className=" text-[6vw]">{habitatData.pageData.title1}</h1>
+                    <div className="w-3/4  max-w-[700px]">
+                        <h1 className=" text-[5vw]">{habitatData.pageData.title1}</h1>
                         <div className="text-[1.5vw]">
                             <p>
                                 {habitatData.pageData.p1}

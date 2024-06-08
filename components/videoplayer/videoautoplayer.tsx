@@ -11,13 +11,12 @@ interface Props {
 const VideoAutoPlayer: React.FC<Props> = ({ url, height, width, autoplay }) => {
 
 
-
-
   return (
     <video
       loop muted autoPlay 
       src={url}
       width="100%"
+      // height="100%"
     />
   );
 };
