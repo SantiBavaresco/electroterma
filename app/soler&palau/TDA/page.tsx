@@ -119,7 +119,7 @@ export default function TDAPage() {
                                     {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
                                     <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
                                     </div>
-                                <span className="ml-6 lg:ml-10">Escribinos</span>
+                                <span className="ml-[30px] lg:ml-10">Escribinos</span>
                         </Button>
                     </div>
                 </div>
@@ -393,16 +393,16 @@ export default function TDAPage() {
                     </Suspense>
                 </> 
                 
-                : <> {/* ----- Mobile ----- */}
+                : <div className="-mt-32"> {/* ----- Mobile ----- */}
 
                     <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
                     </Suspense>
-                </>
+                </div>
             }
-            <section className=" -mt-[40vh] lg:-mt-[80vh] w-full"> 
+            <section className=" -mt-[30vh] lg:-mt-[70vh] w-full"> 
                 <div className=" mx-[3%] flex flex-col justify-end items-end md:justify-start md:items-start overflow-hidden">
-                    <section className="hidden pb-[30vh] my-4 md:flex">
+                    <section className="hidden pb-[25vh] my-4 md:flex">
                         <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:ml-[10vw] ">
                             <DiferencialMaterialGalvanizado size={70} customWith={10} />
                             <DiferencialMultiposicion size={70} customWith={250} />
@@ -410,7 +410,7 @@ export default function TDAPage() {
                             <DiferencialStockPermanente size={70} customWith={250} />
                         </div>
                     </section>
-                    <section className=" pb-[10vh]">
+                    <section className=" lg:pb-[10vh]">
                         <Button
                             className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw]"
                             radius="full"

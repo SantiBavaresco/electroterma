@@ -117,7 +117,7 @@ export default function RLSPage() {
                                     {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
                                     <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
                                     </div>
-                                <span className="ml-6 lg:ml-10">Escribinos</span>
+                                <span className="ml-[30px] lg:ml-10">{" "}Escribinos</span>
                         </Button>
                     </div>
                 </div>

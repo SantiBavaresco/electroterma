@@ -107,16 +107,18 @@ window.addEventListener("scroll", () => {
 
     console.log(html.scrollTop);
     
-    if((html.scrollTop >= 300 && (keyAttribute==="rls" || keyAttribute==="tda")) || (html.scrollTop >= 1000 && keyAttribute==="tsa" )) {
+    // if((html.scrollTop >= 300 && (keyAttribute==="rls" || keyAttribute==="tda")) || (html.scrollTop >= 1000 && keyAttribute==="tsa" )) {
+    if(html.scrollTop >= 300 ) {
+
         const frameHeigh = document.getElementById("frame");
     const frameHeigh1 = frameHeigh.scrollHeight;
     console.log(frameHeigh1);
 
     // const scrollTop = html.scrollTop - 1280;
-    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : keyAttribute==="tsa" ? 1700 : 800);
+    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : keyAttribute==="tsa" ? 1200 : 1600);
     // const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : keyAttribute==="tsa" ? 2200 : 1300);
 
-
+    console.log(html.scrollTop);
     console.log(scrollTop);
 
         console.log(html.scrollHeight);

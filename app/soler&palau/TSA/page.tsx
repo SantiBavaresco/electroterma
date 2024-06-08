@@ -117,7 +117,7 @@ export default function TSAPage() {
                                     {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
                                     <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
                                     </div>
-                                <span className="ml-6 lg:ml-10">Escribinos</span>
+                                <span className="ml-[30px] lg:ml-10">Escribinos</span>
                         </Button>
                     </div>
                 </div>
@@ -372,9 +372,9 @@ export default function TSAPage() {
                 </section>
 
                 <section className="w-[80vw] mx-6 flex items-start min-h-[100%] overflow-hidden h-[100%] ">
-                    <div className="z-20 ">
+                    <div className="z-20 h-full my-auto ">
                         <div className="min-w-1/2 flex flex-col items-center xm:mt-6 font-lexend-bold tracking-widest ">
-                            <div className="mt-10 text-[12px] xm:text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
+                            <div className="-mt-4 text-[12px] xm:text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
                                 <p className="">
                                     Sistema de
                                 </p>
@@ -507,12 +507,12 @@ export default function TSAPage() {
                     </Suspense>
                 </> 
                 
-                : <> {/* ----- Mobile ----- */}
+                : <div className="-mt-32"> {/* ----- Mobile ----- */}
 
                     <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
                     </Suspense>
-                </>
+                </div>
             }
             
             <section className=" -mt-[40vh] lg:-mt-[80vh] w-full"> 

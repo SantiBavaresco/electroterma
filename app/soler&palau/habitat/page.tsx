@@ -17,6 +17,10 @@ import { DiferencialGranConfort } from "@/components/diferenciales/diferencialGr
 import { DiferencialCompuertaAntiretorno } from "@/components/diferenciales/diferencialCompuertaAntiretorno";
 import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVolumenBajo";
 import { ShoppingCart } from "@/public/svg/shoppingCart";
+import YouTubePlayer from "@/components/youtubePlayer";
+
+import { habitatData } from "@/public/data/soler&palau/habitatData";
+import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 
 
 export default function HabitatPage() {
@@ -52,12 +56,13 @@ export default function HabitatPage() {
         <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden ">
             {/* ------------- VIDEO INTRO ------------- */}
 
-            <section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
-                <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
+            <section className="h-full w-full flex items-center justify-center overflow-hidden bg-lowgray">
+                <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4"/>
+                
             </section>
 
             {/* ------------- Consultanos ------------- */}
-            <section className="w-full max-h-[50%] py-0 font-size overflow-hidden">
+            <section className="w-full px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-12">
                         <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
@@ -85,7 +90,7 @@ export default function HabitatPage() {
 
                 {/* ------------- Logos Electo-S&P ------------- */}
                 <section className="flex flex-row justify-between  items-center  h-full">
-                    <div className="w-[240px] md:w-[340] lg:w-[550px] ">
+                    <div className="w-[240px] md:w-[340] lg:w-[450px] ">
                         <Image
                             alt="Electroterma Logo"
                             className=""
@@ -93,7 +98,7 @@ export default function HabitatPage() {
                             width="100%"
                         />
                     </div>
-                    <div className="left-0 w-[120px] md:w-[200px] lg:w-[350px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
+                    <div className="left-0 w-[120px] md:w-[200px] lg:w-[250px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
                         <a href="/soler&palau">
                             <Image
                                 alt="Otam Logo"
@@ -101,21 +106,21 @@ export default function HabitatPage() {
                                 width="100%"
                             />
                         </a>
-                        <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-xl">Distribuidor en Argentina</span>
+                        <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-lg">Distribuidor en Argentina</span>
                     </div>
                 </section>
 
                 {/* ------------- Parrafo Habitat ------------- */}
                 <article className=" flex  items-center justify-center font-nunito-thin text-[#9D9D9C] ">
                     <div className="w-1/2  max-w-[700px]">
-                        <h1 className=" text-[100px]">Hábitat</h1>
-                        <div className="text-[24px]">
+                        <h1 className=" text-[6vw]">{habitatData.pageData.title1}</h1>
+                        <div className="text-[1.5vw]">
                             <p>
-                                Integramos los espacios considerando cada detalle de calidad y confort para ofrecer bienestar y seguridad.
+                                {habitatData.pageData.p1}
                                 <br/><br/>
-                                Nuestra amplia gama de productos de ventilación y extractores de baño helicocentrífugos Soler & Palau, proporciona soluciones adecuadas para todo tipo de necesidades, ya sea en entornos domésticos o industriales.
+                                {habitatData.pageData.p2}
                                 <br/><br/>
-                                No solo facilitamos a nuestros usuarios la elección del modelo ideal, sino también el diseño preciso para realizar instalaciones de manera cómoda, segura y con garantías.
+                                {habitatData.pageData.p3}
                             </p>
                         </div>
                     </div>
@@ -124,7 +129,9 @@ export default function HabitatPage() {
                 {/* ------------- Titulo post parrafo ------------- */}
                 <section className="flex items-center justify-center my-10">
                     <div>
-                        <h1 className="font-nunito-thin text-[3.5vw] text-[#9D9D9C] py-4">Nos importa que disfrutes de tus momentos</h1>
+                        <h1 className="font-nunito-thin text-[3.5vw] text-[#9D9D9C] py-4">
+                            {habitatData.pageData.subTitle}
+                        </h1>
                     </div>
                 </section>
 
@@ -206,7 +213,31 @@ export default function HabitatPage() {
                 </section>
 
                 {/* ------------- Img Youtube ------------- */}
-                <section className="flex-grow   bg-green-00 ">
+                <section className="flex   items-start  space-x-4">
+                    <div className="w-full  ">
+                        <YouTubePlayer
+                            // url={item.presentationVideoId}
+                            url={habitatData.videoYoutubeId1}
+                            height={"400px"}
+                            width={"100%"}
+                            autoplay={1}
+                        />
+                    </div>
+                    <div className="w-full h-full  ">
+                        <YouTubePlayer
+                            // url={item.presentationVideoId}
+                            url={habitatData.videoYoutubeId2}
+                            height={"400px"}
+                            width={"100%"}
+                            autoplay={1}
+                        />
+                    </div>
+
+
+                </section>
+
+                {/* ------------- Img Youtube ------------- */}
+                {/* <section className="flex-grow   bg-green-00 ">
                     <div className="flex gap-x-10">
                         <div className=" h-full pr-0">
                             <Image
@@ -226,36 +257,10 @@ export default function HabitatPage() {
                         </div>
                     </div>
                     
-                </section>
+                </section> */}
 
-                {/* ------------- DISFRUTA ------------- */}
-                <section className="flex items-center justify-center text-livered-title  my-10 pt-4">
-                    <div className="text-center">
-                        <h1 className="font-nunito-thin text-[3.5vw]  ">Disfruta del confort en tu hogar</h1>
-                        <h1 className="font-nunito-bold text-[3.5vw] ">¡tus ventiladores y extractores ideales estan aquí!</h1>
-                    </div>
-                </section>
-
-                {/* ------------- PAYMENT ------------- */}
-                <section className="flex-grow   bg-red-00 h-w-full">
-                            <Image
-                                alt="Electroterma Logo"
-                                className=""
-                                src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
-                                width="100%"
-                            />
-                </section>
-
-
-                <section className="flex flex-row justify-between  items-center  h-full">
-                    <div className="w-[240px] md:w-[340] lg:w-[250px] ">
-                        <Image
-                            alt="Electroterma Logo"
-                            className=""
-                            src="../img/electrotermalogoletras.png"
-                            width="100%"
-                        />
-                    </div>
+                {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
+                <section className="flex flex-row justify-center  items-center  h-full my-6">
                     <div className="space-x-6">
                         <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
@@ -295,6 +300,38 @@ export default function HabitatPage() {
                             </Button>
                         </a>
                     </div>
+                </section>
+
+                {/* ------------- DISFRUTA ------------- */}
+                <section className="flex items-center justify-center text-livered-title  mb-10 pt-4">
+                    <div className="text-center">
+                        <h1 className="font-nunito-thin text-[3.5vw]  ">Disfruta del confort en tu hogar</h1>
+                        <h1 className="font-nunito-bold text-[3.5vw] ">¡tus ventiladores y extractores ideales estan aquí!</h1>
+                    </div>
+                </section>
+
+                {/* ------------- PAYMENT ------------- */}
+                <section className="flex-grow   bg-red-00 h-w-full">
+                            <Image
+                                alt="Electroterma Logo"
+                                className=""
+                                src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
+                                width="100%"
+                            />
+                </section>
+
+                {/* ------------- LOGOS Electroterma-Soler ------------- */}
+
+                <section className="flex flex-row justify-between  items-center  h-full">
+                    <div className="w-[240px] md:w-[340] lg:w-[250px] ">
+                        <Image
+                            alt="Electroterma Logo"
+                            className=""
+                            src="../img/electrotermalogoletras.png"
+                            width="100%"
+                        />
+                    </div>
+                   
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
                         <a href="/soler&palau">
                             <Image
@@ -307,22 +344,19 @@ export default function HabitatPage() {
                     </div>
                 </section>
 
-                {/* <section className="flex-grow   bg-red-500 h-screen">
-                    <div><h1>HOLA111AA</h1>
-                    </div>
-                </section> */}
+                
 
 
             </section>
 
-            
+{/*             
             <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
                             
                             overflow-hidden">
                              
                             
 
-                        </div>
+                        </div> */}
         </main>
         // 	<div className={'h-[5000px]'}>
         // 		<VideoScrollPlayer/>
