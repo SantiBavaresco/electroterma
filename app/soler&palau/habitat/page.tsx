@@ -27,13 +27,13 @@ import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 
 
 export default function HabitatPage() {
-    
+
     const MyButton = extendVariants(Button, {  
         variants: {    
           size: {      
             xs: "px-2 min-w-12 h-6 text-tiny gap-1 rounded-small",      
             md: "px-4 min-w-20 h-10 text-small gap-2 rounded-small",      
-            xl: "px-8 min-w-28 h-14 text-large gap-4 rounded-full", // <- new size variant
+            xl: "px-10 min-w-32 h-16 text-xl gap-6 rounded-full", // <- new size variant
           },  
         },  
         defaultVariants: { 
@@ -280,10 +280,10 @@ export default function HabitatPage() {
                     <div className="space-x-6">
                         <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
-                            <MyButton
+                            <Button
                                 className="z-10 mt-4 bg-livered-title font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
-                                size="xl" 
+                                size="lg" 
                                 href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
@@ -294,24 +294,24 @@ export default function HabitatPage() {
                                     <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-3xl" /> 
                                     </div>
                                 <span className="ml-6 lg:ml-10 lg:text-3xl">Asesoramiento</span>
-                            </MyButton>
+                            </Button>
                         </a>
                         <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <MyButton
-                                className="z-10 mt-4 bg-[#EF771CE5] font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                className="z-10 mt-4 bg-[#EB581E] font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
                                 size="xl" 
                                 href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
                             >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#E80303] to-[#EF771CE5]
+                                <div className="absolute rounded-full left-0 z-20 p-3 px-4   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#E80303] to-[#EF771C]
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
                                     {/* <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" />  */}
-                                    <ShoppingCart size={30}/>
-                                    </div>
+                                    <ShoppingCart size={40}/>
+                                </div>
                                 <span className="ml-10 lg:ml-10 lg:text-3xl">Tienda Online</span>
                             </MyButton>
                         </a>
