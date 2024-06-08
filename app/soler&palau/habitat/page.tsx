@@ -72,13 +72,13 @@ export default function HabitatPage() {
         <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden ">
             {/* ------------- VIDEO INTRO ------------- */}
 
-            <section className="h-[100%] w-full px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
+            <section className="h-[100%] w-full xl:px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
                 <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4"/>
                 
             </section>
 
             {/* ------------- Consultanos ------------- */}
-            <section className="w-full px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
+            <section className="w-full xl:px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-24">
                         <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
@@ -96,7 +96,7 @@ export default function HabitatPage() {
                                     {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
                                     <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
                                     </div>
-                                <span className="ml-6 lg:ml-10">Escribinos</span>
+                                <span className="ml-[30px] lg:ml-10">Escribinos</span>
                         </Button>
                     </div>
                 </div>
@@ -153,7 +153,7 @@ export default function HabitatPage() {
 
                 
                 {/* ------------- 2 Vent Habitat ------------- */}
-                <section className="flex flex-row justify-between  items-center gap-x-32 h-full my-10 mx-32">
+                <section className="flex flex-row justify-between  items-center gap-x-16 xl:gap-x-32 h-full my-10 mx-16 xl:mx-32">
                 
                     {/* ------------- Vent INLINE ------------- */}
                     <div className=" w-1/2 flex ">
@@ -215,7 +215,7 @@ export default function HabitatPage() {
 
                 {/* ------------- Diferenciales ------------- */}
                 <section className="flex-grow  my-16  bg-red-00 ">
-                    <div className="flex justify-around w-full py-1">
+                    <div className="flex flex-col justify-center mx-auto gap-4 xl:gap-0 xl:flex-row xl:justify-around w-max xl:w-full py-1">
                         <div className="">
                             <DiferencialCompuertaAntiretorno/>
                         </div>
@@ -229,7 +229,7 @@ export default function HabitatPage() {
                 </section>
 
                 {/* ------------- Img Youtube ------------- */}
-                <section className="flex   items-start my-10 mx-[5%] space-x-4">
+                <section className="flex flex-col xl:flex-row  items-start my-10 mx-[5%] gap-4 ">
                     <div className="w-full  ">
                         <YouTubePlayer
                             // url={item.presentationVideoId}
@@ -276,14 +276,14 @@ export default function HabitatPage() {
                 </section> */}
 
                 {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
-                <section className="flex flex-row justify-center  items-center  h-full my-16">
-                    <div className="space-x-6">
+                <section className="flex  h-full ">
+                    <div className="flex flex-col md:flex-row mx-auto justify-center  items-center gap-x-6 xl:my-16">
                         <a href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="z-10 mt-4 bg-livered-title font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
-                                size="lg" 
+                                size={BigScreen ? "lg" : "md"} 
                                 // href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
@@ -301,7 +301,7 @@ export default function HabitatPage() {
                             <MyButton
                                 className="z-10 mt-4 bg-[#EB581E] font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
-                                size="xl" 
+                                size={BigScreen ? "xl" : "lg"}
                                 // href={`${habitatData.tiendaOnline}`} target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3 px-4   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
@@ -310,7 +310,7 @@ export default function HabitatPage() {
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
                                     {/* <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" />  */}
-                                    <ShoppingCart size={40}/>
+                                    <ShoppingCart size={BigScreen ? 40 : 30}/>
                                 </div>
                                 <span className="ml-10 lg:ml-10 lg:text-3xl">Tienda Online</span>
                             </MyButton>
@@ -319,10 +319,10 @@ export default function HabitatPage() {
                 </section>
 
                 {/* ------------- DISFRUTA ------------- */}
-                <section className="flex items-center justify-center text-livered-title  my -10 pt-4">
+                <section className="flex items-center justify-center text-livered-title  my-10 pt-4">
                     <div className="text-center">
-                        <h1 className="font-nunito-thin text-[3.0vw]  ">Disfruta del confort en tu hogar</h1>
-                        <h1 className="font-nunito-bold text-[3.0vw] ">¡tus ventiladores y extractores ideales estan aquí!</h1>
+                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw]   ">Disfruta del confort en tu hogar</h1>
+                        <h1 className="font-nunito-bold text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">¡tus ventiladores y extractores ideales estan aquí!</h1>
                     </div>
                 </section>
 
