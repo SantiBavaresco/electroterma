@@ -1,6 +1,7 @@
 
 interface habitatDataType {
     email: string;
+    tiendaOnline: string;
     whatsappNumber: string;
     whatsappMessage: string;
     whatsappLink: string;
@@ -29,9 +30,10 @@ interface habitatDataType {
 
 export const habitatData: habitatDataType  = {
     email: "",
+    tiendaOnline: "https://www.tiendaelectroterma.com.ar/",
     whatsappLink: "https://wa.me/",
-    whatsappNumber: "5492236356756",
-    whatsappMessage: "?text=Hola,%20visite%20el%20producto%20Hábitat%20en%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion.",
+    whatsappNumber: "5492234365978",
+    whatsappMessage: "?text=¡Hola!%20Estoy%20en%20la%20tienda%20ELECTROTERMA%20y%20quiero%20pedir%20más%20información.",
     pageData: {
         title1: "Hábitat",
         p1: "Integramos los espacios considerando cada detalle de calidad y confort para ofrecer bienestar y seguridad.",

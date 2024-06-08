@@ -278,13 +278,13 @@ export default function HabitatPage() {
                 {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
                 <section className="flex flex-row justify-center  items-center  h-full my-16">
                     <div className="space-x-6">
-                        <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                        <a href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="z-10 mt-4 bg-livered-title font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
                                 size="lg" 
-                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
+                                // href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
@@ -296,13 +296,13 @@ export default function HabitatPage() {
                                 <span className="ml-6 lg:ml-10 lg:text-3xl">Asesoramiento</span>
                             </Button>
                         </a>
-                        <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                        <a href={`${habitatData.tiendaOnline}`}
                                 target="_blank" rel="noopener noreferrer">
                             <MyButton
                                 className="z-10 mt-4 bg-[#EB581E] font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
                                 size="xl" 
-                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
+                                // href={`${habitatData.tiendaOnline}`} target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3 px-4   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#E80303] to-[#EF771C]
