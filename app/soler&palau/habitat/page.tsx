@@ -24,20 +24,22 @@ import { habitatData } from "@/public/data/soler&palau/habitatData";
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 
 
-export const MyButton = extendVariants(Button, {  
-    variants: {    
-      size: {      
-        xs: "px-2 min-w-12 h-6 text-tiny gap-1 rounded-small",      
-        md: "px-4 min-w-20 h-10 text-small gap-2 rounded-small",      
-        xl: "px-8 min-w-28 h-14 text-large gap-4 rounded-full", // <- new size variant
-      },  
-    },  
-    defaultVariants: { 
-      size: "xl",  // <- set new size variant as default
-    },
-  });
+
 
 export default function HabitatPage() {
+    
+    const MyButton = extendVariants(Button, {  
+        variants: {    
+          size: {      
+            xs: "px-2 min-w-12 h-6 text-tiny gap-1 rounded-small",      
+            md: "px-4 min-w-20 h-10 text-small gap-2 rounded-small",      
+            xl: "px-8 min-w-28 h-14 text-large gap-4 rounded-full", // <- new size variant
+          },  
+        },  
+        defaultVariants: { 
+          size: "xl",  // <- set new size variant as default
+        },
+      });
 
     const [BigScreen, setBigScreen] = useState(false);
 
