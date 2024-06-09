@@ -33,8 +33,10 @@ interface Props {
 
 }
 
-const PdfReader: React.FC<Props> = ({ url }) => {
-  const [file, setFile] = useState<PDFFile>('');
+
+
+export default function PdfReader({url}: Props) {
+  const [file, setFile] = useState<PDFFile>(url);
   const [numPages, setNumPages] = useState<number>();
   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null);
   const [containerWidth, setContainerWidth] = useState<number>();
@@ -54,9 +56,7 @@ const PdfReader: React.FC<Props> = ({ url }) => {
 
     if (files && files[0]) {
       setFile(files[0] || null);
-      console.log("AAAAA: ", files)
     }
-
   }
 
   function onDocumentLoadSuccess({ numPages: nextNumPages }: PDFDocumentProxy): void {
@@ -65,16 +65,16 @@ const PdfReader: React.FC<Props> = ({ url }) => {
 
   return (
     <div className="Example">
-      {/* <header>
+      <header>
         <h1>react-pdf sample page</h1>
-      </header> */}
+      </header>
       <div className="Example__container">
         {/* <div className="Example__container__load">
           <label htmlFor="file">Load from file:</label>{' '}
           <input onChange={onFileChange} type="file" />
         </div> */}
         <div className="Example__container__document" ref={setContainerRef}>
-          <Document file={url} onLoadSuccess={onDocumentLoadSuccess} options={options}>
+          <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
             {Array.from(new Array(numPages), (el, index) => (
               <Page
                 key={`page_${index + 1}`}
@@ -89,4 +89,59 @@ const PdfReader: React.FC<Props> = ({ url }) => {
   );
 }
 
-export default PdfReader;
+// const PdfReader: React.FC<Props> = ({ url }) => {
+//   const [file, setFile] = useState<PDFFile>(url);
+//   const [numPages, setNumPages] = useState<number>();
+//   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null);
+//   const [containerWidth, setContainerWidth] = useState<number>();
+
+//   const onResize = useCallback<ResizeObserverCallback>((entries) => {
+//     const [entry] = entries;
+
+//     if (entry) {
+//       setContainerWidth(entry.contentRect.width);
+//     }
+//   }, []);
+
+//   useResizeObserver(containerRef, resizeObserverOptions, onResize);
+
+//   function onFileChange(event: React.ChangeEvent<HTMLInputElement>): void {
+//     const { files } = event.target;
+
+//     if (files && files[0]) {
+//       setFile(files[0] || null);
+//       console.log("AAAAA: ", files)
+//     }
+
+//   }
+
+//   function onDocumentLoadSuccess({ numPages: nextNumPages }: PDFDocumentProxy): void {
+//     setNumPages(nextNumPages);
+//   }
+
+//   return (
+//     <div className="Example">
+//       {/* <header>
+//         <h1>react-pdf sample page</h1>
+//       </header> */}
+//       <div className="Example__container">
+//         {/* <div className="Example__container__load">
+//           <label htmlFor="file">Load from file:</label>{' '}
+//           <input onChange={onFileChange} type="file" />
+//         </div> */}
+//         <div className="Example__container__document" ref={setContainerRef}>
+//           <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
+//             {Array.from(new Array(numPages), (el, index) => (
+//               <Page
+//                 key={`page_${index + 1}`}
+//                 pageNumber={index + 1}
+//                 width={containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth}
+//               />
+//             ))}
+//           </Document>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+

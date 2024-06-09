@@ -533,9 +533,6 @@ export default function TSAPage() {
                                     url="../pdf/TSA.pdf"
                                     title="Manual"
                                     layer=" z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw] "
-                                    primaryColor={"#4c3500"}
-                                    reflectionColor={"#e5a100"}
-                                    borderColor={"blue-600"}
                                     bigScreen={BigScreen}
                                 />
                         

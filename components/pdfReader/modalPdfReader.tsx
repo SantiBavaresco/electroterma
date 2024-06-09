@@ -21,13 +21,10 @@ interface Props {
     url: string;
     title: string;
     layer: string;
-    primaryColor?: string;
-    reflectionColor?: string;
-    borderColor?: string;
     bigScreen: boolean;
 }
 
-const ModalPdf: React.FC<Props> = ({ url, title, layer, bigScreen, primaryColor, reflectionColor, borderColor}) => {
+const ModalPdf: React.FC<Props> = ({ url, title, layer, bigScreen, }) => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     // const [scrollBehavior, setScrollBehavior] = React.useState("inside");
 
@@ -54,8 +51,8 @@ const ModalPdf: React.FC<Props> = ({ url, title, layer, bigScreen, primaryColor,
                                 {title}
                             </ModalHeader>
                             <ModalBody>
-                                <PdfReader url={url}/>
-                                
+                                {/* <PdfReader url={url}/> */}
+                                HOLA
                             </ModalBody>
                             <ModalFooter>
                                 <Button
