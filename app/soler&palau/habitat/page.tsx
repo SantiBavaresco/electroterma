@@ -280,7 +280,7 @@ export default function HabitatPage() {
                             </div>
                             <div className="flex flex-col justify-end  w-[40%]">
                                 {habitatData.pageData.mobileSpecsInline.map((item) =>(
-                                    <div className="flex items-start">
+                                    <div className="flex items-start" key={item}>
                                         
                                         <MdKeyboardDoubleArrowRight className="min-w-max mt-1 sm:mt-1.5 text-[2vw] text-livered-title"/> <span className=" font-nunito  text-[2vw]  md:text-xs py-0.5">  {item}</span>
                                     </div>
@@ -358,28 +358,6 @@ export default function HabitatPage() {
 
                 </section>
 
-                {/* ------------- Img Youtube ------------- */}
-                {/* <section className="flex-grow   bg-green-00 ">
-                    <div className="flex gap-x-10">
-                        <div className=" h-full pr-0">
-                            <Image
-                                alt="Electroterma Logo"
-                                className=""
-                                src="../img/solerpalau/habitat/SolerPalauHabitatV1.png"
-                                width="100%"
-                            />
-                        </div>
-                        <div className=" h-full pr-0">
-                            <Image
-                                alt="Electroterma Logo"
-                                className=""
-                                src="../img/solerpalau/habitat/SolerPalauHabitatV2.png"
-                                width="100%"
-                            />
-                        </div>
-                    </div>
-                    
-                </section> */}
 
                 {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
                 <section className="flex  h-full ">
@@ -435,6 +413,7 @@ export default function HabitatPage() {
                 {/* ------------- PAYMENT ------------- */}
                 {BigScreen ? 
                     <>
+                        {/* ------------- WEB ------------- */}
                         <section className="flex items-center justify-center mx-[7%] bg-red-00 h-full">
                                     <Image
                                         alt="Electroterma Logo"
@@ -445,6 +424,7 @@ export default function HabitatPage() {
                         </section>
                     </> : 
                     <>
+                        {/* ------------- MOBILE ------------- */}
                         <section className=" h-[50vw] py-auto">
                             <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} autoPlay/>
                         </section>
@@ -478,21 +458,8 @@ export default function HabitatPage() {
                 </section>
 
                 
-
-
             </section>
 
-{/*             
-            <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
-                            
-                            overflow-hidden">
-                             
-                            
-
-                        </div> */}
         </main>
-        // 	<div className={'h-[5000px]'}>
-        // 		<VideoScrollPlayer/>
-        // </div>
     );
 }

@@ -14,6 +14,7 @@ import { Button } from "@nextui-org/button";
 import { FaArrowRightToBracket } from "react-icons/fa6";
 import { pdfjs } from "react-pdf";
 import PdfReader from "./pdfReader";
+import { Download } from "@/public/svg/download";
 // import { useDisclosure } from "@nextui-org/react";
 
 interface Props {
@@ -23,10 +24,10 @@ interface Props {
     primaryColor?: string;
     reflectionColor?: string;
     borderColor?: string;
-    color: boolean;
+    bigScreen: boolean;
 }
 
-const ModalPdf: React.FC<Props> = ({ url, title, layer, color, primaryColor, reflectionColor, borderColor}) => {
+const ModalPdf: React.FC<Props> = ({ url, title, layer, bigScreen, primaryColor, reflectionColor, borderColor}) => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     // const [scrollBehavior, setScrollBehavior] = React.useState("inside");
 
@@ -40,13 +41,10 @@ const ModalPdf: React.FC<Props> = ({ url, title, layer, color, primaryColor, ref
     return (
         <div>
             
-            {color ? <button onClick={onOpen} className={`${layer} inline-flex animate-background-shine items-center justify-center rounded-md border border-high-orange bg-[linear-gradient(110deg,#4c3500,45%,#e5a100,55%,#4c3500)] bg-[length:200%_100%] text-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50`}>
-                {title} <FaArrowRightToBracket className="text-2xl m-auto" />{" "}
-            </button> :
-            <button onClick={onOpen} className={`${layer} inline-flex items-center justify-center rounded-md border border-blue-600 `}>
-                {title} <FaArrowRightToBracket className="text-2xl m-auto" />{" "}
-            </button>
-    }
+
+            <Button  size={bigScreen ? "lg" : "sm"} radius="full" onClick={onOpen} className={`${layer} `}>
+                {title} <Download/> {" "}
+            </Button>
 
             <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="full" scrollBehavior="inside">
                 <ModalContent>

@@ -13,7 +13,7 @@ import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { log } from 'console';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
+  'pdfjs-dist/build/pdf.worker.min.mjs',
   import.meta.url,
 ).toString();
 

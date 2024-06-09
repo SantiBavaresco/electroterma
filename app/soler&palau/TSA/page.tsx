@@ -49,6 +49,7 @@ import { Ondas04SVG } from "@/public/svg/ondas04svg";
 import { TableSolerPalau } from "@/components/table/tableSoler&palau";
 import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 import { MailSvg } from "@/public/svg/mailSvg";
+import ModalPdf from "@/components/pdfReader/modalPdfReader";
 
 
 export default function TSAPage() {
@@ -527,13 +528,17 @@ export default function TSAPage() {
                     </section>
                     
                 <section className=" pb-[10vh]">
-                        <Button
-                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw]"
-                            radius="full"
-                            size={BigScreen ? "lg" : "sm"}
-                        >
-                            Manual <Download />
-                        </Button>
+                         {/* Manual <Download /> */}
+                                <ModalPdf
+                                    url="../pdf/TSA.pdf"
+                                    title="Manual"
+                                    layer=" z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw] "
+                                    primaryColor={"#4c3500"}
+                                    reflectionColor={"#e5a100"}
+                                    borderColor={"blue-600"}
+                                    bigScreen={BigScreen}
+                                />
+                        
                     </section>
                 </div>
 
