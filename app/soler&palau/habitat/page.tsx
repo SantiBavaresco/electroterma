@@ -19,14 +19,34 @@ import { DiferencialCompuertaAntiretorno } from "@/components/diferenciales/dife
 import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVolumenBajo";
 import { ShoppingCart } from "@/public/svg/shoppingCart";
 import YouTubePlayer from "@/components/youtubePlayer";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+
 
 import { habitatData } from "@/public/data/soler&palau/habitatData";
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
+import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 
 
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 
 export default function HabitatPage() {
+    const images = [
+        {
+          original: "../img/solerpalau/habitat/imgDemo/1.jpg",
+        //   thumbnail: "https://picsum.photos/id/1018/250/150/",
+        },
+        {
+          original: "../img/solerpalau/habitat/imgDemo/2.jpg",
+        //   thumbnail: "https://picsum.photos/id/1015/250/150/",
+        },
+        {
+          original: "../img/solerpalau/habitat/imgDemo/3.jpg",
+        //   thumbnail: "https://picsum.photos/id/1019/250/150/",
+        },
+      ];
+
 
     const MyButton = extendVariants(Button, {  
         variants: {    
@@ -153,82 +173,168 @@ export default function HabitatPage() {
 
                 
                 {/* ------------- 2 Vent Habitat ------------- */}
-                <section className="flex flex-row justify-between  items-center gap-x-16 xl:gap-x-32 h-full my-10 mx-16 xl:mx-32">
-                
-                    {/* ------------- Vent INLINE ------------- */}
-                    <div className=" w-1/2 flex ">
-                        <div className="w-2/3 pr-6">
-                            <Image
-                                alt="Electroterma Logo"
-                                className=""
-                                src="../img/solerpalau/habitat/SolerPalauHabitat1.png"
-                                width="100%"
-                            />
-                        </div>
-                        <div className="flex flex-col justify-end  w-[30%]">
-                            
-                            <Image
-                                alt="Electroterma Logo"
-                                className="w"
-                                src="../img/solerpalau/habitat/SolerPalauHabitatInline1.png"
-                                width="100%"
-                            />
-                            <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
-                            <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
-                                radius="none"
-                                size="lg"
+                {BigScreen ? 
+                    <>
+                    {/* ------------- WEB ------------- */}
+                    <section className="flex flex-row justify-between  items-center gap-x-16 xl:gap-x-32 h-full my-10 mx-16 xl:mx-32">
+                        
+                        {/* ------------- Vent INLINE ------------- */}
+                        <div className=" w-1/2 flex ">
+                            <div className="w-2/3 pr-6">
+                                <Image
+                                    alt="Electroterma Logo"
+                                    className=""
+                                    src="../img/solerpalau/habitat/SolerPalauHabitat1.png"
+                                    width="100%"
+                                />
+                            </div>
+                            <div className="flex flex-col justify-end  w-[30%]">
                                 
-                            >
-                                más Info </Button>
+                                <Image
+                                    alt="Electroterma Logo"
+                                    className="w"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatInline1.png"
+                                    width="100%"
+                                />
+                                <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
+                                <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                                    radius="none"
+                                    size="lg"
+                                    
+                                >
+                                    más Info </Button>
+                            </div>
                         </div>
-                    </div>
 
-                    {/* ------------- Vent EXTRACTOR ------------- */}
-                    <div className=" w-1/2 flex ">
-                        <div className="w-2/3 pr-6">
-                            <Image
-                                alt="Electroterma Logo"
-                                className=""
-                                src="../img/solerpalau/habitat/SolerPalauHabitat2.png"
-                                width="100%"
-                            />
-                        </div>
-                        <div className="flex flex-col justify-end  w-[30%]">
-                            
-                            <Image
-                                alt="Electroterma Logo"
-                                className="w"
-                                src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.png"
-                                width="100%"
-                            />
-                            <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
-                            <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
-                                radius="none"
-                                size="lg"
+                        {/* ------------- Vent EXTRACTOR ------------- */}
+                        <div className=" w-1/2 flex ">
+                            <div className="w-2/3 pr-6">
+                                <Image
+                                    alt="Electroterma Logo"
+                                    className=""
+                                    src="../img/solerpalau/habitat/SolerPalauHabitat2.png"
+                                    width="100%"
+                                />
+                            </div>
+                            <div className="flex flex-col justify-end  w-[30%]">
                                 
-                            >
-                                más Info </Button>
+                                <Image
+                                    alt="Electroterma Logo"
+                                    className="w"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.png"
+                                    width="100%"
+                                />
+                                <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
+                                <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                                    radius="none"
+                                    size="lg"
+                                    
+                                >
+                                    más Info </Button>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    </>
+                    : <>
+                    {/* ------------- MOBILE ------------- */}
+                    <section className="flex flex-col justify-between  items-center gap-y-10 h-full  ">
+                        
+                        {/* ------------- Vent INLINE ------------- */}
+                        <div className=" w-full flex ">
+                            <div className="w-[60%] pr-6">
+                                <a href="/soler&palau/habitat/extractor">
+                                <Image
+                                    alt="Electroterma Logo"
+                                    className=""
+                                    radius="none"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatMobile1.png"
+                                    width={"100%"}
+                                />
+                                 </a>
+                            </div>
+                            <div className="flex flex-col justify-end  w-[40%]">
+                                {habitatData.pageData.mobileSpecsExtractor.map((item) =>(
+                                    <>
+                                        
+                                        <span className="flex items-center font-nunito align-middle text-[2vw] md:text-xs py-0.5"> <MdKeyboardDoubleArrowRight className=" text-livered-title"/> {item}</span>
+                                    </>
+                                ))
+
+                                }
+                                
+                            </div>
+                        </div>
+
+                        {/* ------------- Vent EXTRACTOR ------------- */}
+                        <div className=" w-full flex ">
+                            <div className="w-[60%] pr-6">
+                                <a href="/soler&palau/habitat/inline"> 
+                                <Image
+                                    alt="Electroterma Logo"
+                                    className=""
+                                    radius="none"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatMobile2.png"
+                                    width={"100%"}
+                                />
+                                </a>
+                            </div>
+                            <div className="flex flex-col justify-end  w-[40%]">
+                                {habitatData.pageData.mobileSpecsInline.map((item) =>(
+                                    <div className="flex items-start">
+                                        
+                                        <MdKeyboardDoubleArrowRight className="min-w-max mt-1 sm:mt-1.5 text-[2vw] text-livered-title"/> <span className=" font-nunito  text-[2vw]  md:text-xs py-0.5">  {item}</span>
+                                    </div>
+                                ))
+
+                                }
+                                
+                            </div>
+                        </div>
+                    </section>
+                    </>
+                }
                 
-                </section>
 
                 {/* ------------- Diferenciales ------------- */}
-                <section className="flex-grow  my-16  bg-red-00 ">
-                    <div className="flex flex-col justify-center mx-auto gap-4 xl:gap-0 xl:flex-row xl:justify-around w-max xl:w-full py-1">
-                        <div className="">
-                            <DiferencialCompuertaAntiretorno/>
-                        </div>
-                        <div>
-                            <DiferencialVolumenBajo text="Bajo nivel sonoro"/>
-                        </div>
-                        <div>
-                            <DiferencialGranConfort />
-                        </div>
-                    </div>
-                </section>
 
-                {/* ------------- Img Youtube ------------- */}
+                {BigScreen ? 
+                    <>
+                    {/* ------------- WEB ------------- */}
+                    <section className="flex-grow  my-16  bg-red-00 ">
+                        <div className="flex flex-col justify-center mx-auto gap-4 xl:gap-0 xl:flex-row xl:justify-around w-max xl:w-full py-1">
+                            <div className="">
+                                <DiferencialCompuertaAntiretorno/>
+                            </div>
+                            <div>
+                                <DiferencialVolumenBajo text="Bajo nivel sonoro"/>
+                            </div>
+                            <div>
+                                <DiferencialGranConfort />
+                            </div>
+                        </div>
+                    </section>
+                    </> : 
+                    <>
+                    {/* ------------- MOBILE ------------- */}
+                    <section className="flex flex-col mt-10 py-4 gap-6">
+                        <div className="flex flex-row mx-auto">
+                            <div className="w-max  text-center"> 
+                                <DiferencialGranConfort size={40} textSize={10}/> 
+                            </div>
+                            <div className="w-max  text-center">
+                                <DiferencialVolumenBajo size={40} textSize={10} text="Bajo nivel sonoro"/> 
+                            </div>
+                        </div>
+                        <div className="w-max mx-auto text-center">
+                            <DiferencialCompuertaAntiretorno  size={40} textSize={10}/>
+                        </div>
+                    </section>
+                    </>
+
+                }
+               
+
+                {/* ------------- Youtube ------------- */}
                 <section className="flex flex-col xl:flex-row  items-start my-10 mx-[5%] gap-4 ">
                     <div className="w-full  ">
                         <YouTubePlayer
@@ -327,15 +433,26 @@ export default function HabitatPage() {
                 </section>
 
                 {/* ------------- PAYMENT ------------- */}
-                <section className="flex items-center justify-center mx-[7%] bg-red-00 h-full">
-                            <Image
-                                alt="Electroterma Logo"
-                                className=""
-                                src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
-                                width="100%"
-                            />
-                </section>
+                {BigScreen ? 
+                    <>
+                        <section className="flex items-center justify-center mx-[7%] bg-red-00 h-full">
+                                    <Image
+                                        alt="Electroterma Logo"
+                                        className=""
+                                        src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
+                                        width="100%"
+                                    />
+                        </section>
+                    </> : 
+                    <>
+                        <section className=" h-[50vw] py-auto">
+                            <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} autoPlay/>
+                        </section>
+                    </>
+                }
+                
 
+              
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
 
                 <section className="flex flex-row justify-between  items-center  h-full">

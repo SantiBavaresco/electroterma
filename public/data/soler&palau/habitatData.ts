@@ -11,7 +11,9 @@ interface habitatDataType {
       p2: string;
       p3: string;
       subTitle: string;
-      // description: string;
+      mobileSpecsExtractor: string[];
+      mobileSpecsInline: string[];
+
     };
     videoYoutubeId1: string;
     videoYoutubeId2: string;
@@ -40,6 +42,13 @@ export const habitatData: habitatDataType  = {
         p2: "Nuestra amplia gama de productos de ventilación y extractores de baño helicocentrífugos Soler & Palau, proporciona soluciones adecuadas para todo tipo de necesidades, ya sea en entornos domésticos o industriales.",
         p3: "No solo facilitamos a nuestros usuarios la elección del modelo ideal, sino también el diseño preciso para realizar instalaciones de manera cómoda, segura y con garantías.",
         subTitle: "Nos importa que disfrutes de tus momentos",
+        mobileSpecsExtractor: ["Perfil extraplano","Alto poder de aspiración",
+            "Fácil limpieza e instalación","Silencioso",
+            "Seguridad eléctrica total","Funcionamiento en cualquier posición"],
+
+        mobileSpecsInline: ["Fabricación den material plástico","Juntas de goma en impulsión y descarga para absorber las vibraciones",
+            "Fácil limpieza e instalación","Silencioso",
+            "Seguridad eléctrica total"],
 
     },
 
@@ -47,7 +56,7 @@ export const habitatData: habitatDataType  = {
     videoYoutubeId2: "ea8KWDyYWcA",
 
     urltdaImageDemo: "../img/solerpalau/habitat/imgDemo/",
-    demoImageNames: ["1", "2", "3",],
+    demoImageNames: ["1", "2", "3", "1", "2", "3"],
 
     urlImageBanner: "../img/solerpalau/imgbanner/",
     bannerImageInfo: [

@@ -14,7 +14,7 @@ interface Props {
 export const DiferencialGranConfort : React.FC<Props> =  ({size, text, textSize, customWith}) => {
 	return (
 		<>
-			<main className="relative pl-4 flex justify-start items-center  w-full">
+			<main className="relative xm:pl-4 flex justify-start items-center  w-">
 				<span className=" z-10">
 					
 				<GranConfort size={size || 70}/>
