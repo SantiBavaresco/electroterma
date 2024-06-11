@@ -51,8 +51,8 @@ const ModalPdf: React.FC<Props> = ({ url, title, layer, bigScreen, }) => {
                                 {title}
                             </ModalHeader>
                             <ModalBody>
-                                {/* <PdfReader url={url}/> */}
-                                HOLA
+                                <PdfReader url={url}/>
+
                             </ModalBody>
                             <ModalFooter>
                                 <Button

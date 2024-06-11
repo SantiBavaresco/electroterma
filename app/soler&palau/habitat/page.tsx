@@ -163,7 +163,7 @@ export default function HabitatPage() {
                 </article>
                 
                 {/* ------------- Titulo post parrafo ------------- */}
-                <section className="flex items-center justify-center my-10">
+                <section className="flex items-center justify-center my-4 md:my-10">
                     <div>
                         <h1 className="font-nunito-thin text-[3.5vw] text-[#9D9D9C] py-4">
                             {habitatData.pageData.subTitle}
@@ -241,7 +241,7 @@ export default function HabitatPage() {
                         
                         {/* ------------- Vent INLINE ------------- */}
                         <div className=" w-full flex ">
-                            <div className="w-[60%] pr-6">
+                            <div className="w-[60%] pr-2">
                                 <a href="/soler&palau/habitat/extractor">
                                 <Image
                                     alt="Electroterma Logo"
@@ -267,7 +267,7 @@ export default function HabitatPage() {
 
                         {/* ------------- Vent EXTRACTOR ------------- */}
                         <div className=" w-full flex ">
-                            <div className="w-[60%] pr-6">
+                            <div className="w-[60%] pr-2">
                                 <a href="/soler&palau/habitat/inline"> 
                                 <Image
                                     alt="Electroterma Logo"
@@ -394,7 +394,7 @@ export default function HabitatPage() {
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
                                     {/* <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" />  */}
-                                    <ShoppingCart size={BigScreen ? 40 : 30}/>
+                                    <ShoppingCart size={BigScreen ? 40 : 25}/>
                                 </div>
                                 <span className="ml-10 lg:ml-10 lg:text-3xl">Tienda Online</span>
                             </MyButton>
@@ -414,7 +414,7 @@ export default function HabitatPage() {
                 {BigScreen ? 
                     <>
                         {/* ------------- WEB ------------- */}
-                        <section className="flex items-center justify-center mx-[7%] bg-red-00 h-full">
+                        <section className="flex items-center justify-center mx-[7%] bg-red-00  h-full">
                                     <Image
                                         alt="Electroterma Logo"
                                         className=""
@@ -425,7 +425,7 @@ export default function HabitatPage() {
                     </> : 
                     <>
                         {/* ------------- MOBILE ------------- */}
-                        <section className=" h-[50vw] py-auto">
+                        <section className=" h-[55vw] py-auto">
                             <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} autoPlay/>
                         </section>
                     </>

@@ -12,8 +12,10 @@ import './pdfReader.css';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { log } from 'console';
 
+
+// ESTA PARTE NO ESTA FUNCIONANDO; CRASHEA EL NPM RUN BUILD.
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
+  'pdfjs-dist/build/pdf.worker.min.js',
   import.meta.url,
 ).toString();
 
@@ -24,7 +26,7 @@ const options = {
 
 const resizeObserverOptions = {};
 
-const maxWidth = 800;
+const maxWidth = 540;
 
 type PDFFile = string | File | null;
 
@@ -63,16 +65,24 @@ export default function PdfReader({url}: Props) {
     setNumPages(nextNumPages);
   }
 
+  // console.log(containerWidth);
+  // console.log(maxWidth);
+  
+  
+  // console.log(Math.min(containerWidth, maxWidth));
+
+
   return (
     <div className="Example">
-      <header>
+      {/* <header>
         <h1>react-pdf sample page</h1>
-      </header>
+      </header> */}
       <div className="Example__container">
         {/* <div className="Example__container__load">
           <label htmlFor="file">Load from file:</label>{' '}
           <input onChange={onFileChange} type="file" />
         </div> */}
+        
         <div className="Example__container__document" ref={setContainerRef}>
           <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
             {Array.from(new Array(numPages), (el, index) => (
@@ -80,7 +90,9 @@ export default function PdfReader({url}: Props) {
                 key={`page_${index + 1}`}
                 pageNumber={index + 1}
                 width={containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth}
+                // width={540}
               />
+              
             ))}
           </Document>
         </div>

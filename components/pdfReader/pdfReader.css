@@ -28,8 +28,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 10px 0;
-    padding: 10px; */
+    margin: 10px 0;
+    padding: 10px;
   }
   
   .Example__container__load {
@@ -38,7 +38,8 @@ body {
   }
   
   .Example__container__document {
-    width: 100%;
+    width: 200%;
+    height: 200%;
     max-width: calc(100% - 2em);
     /* margin: 1em 0; */
   }
