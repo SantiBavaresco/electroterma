@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import { Link } from "@nextui-org/link";
 import Lottie from "lottie-react";
 // import animationData from "../public/lottie/bulding-page.json";
@@ -8,96 +9,374 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import {extendVariants, Button} from "@nextui-org/react";
+import { Image } from "@nextui-org/image";
 
-// import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
-// import VideoScrollPlayer from "@/components/videoplayer/videoplayer";
+import { BsWhatsapp } from "react-icons/bs";
+import { IoMailOutline } from "react-icons/io5";
+import { DiferencialGranConfort } from "@/components/diferenciales/diferencialGranConfort";
+import { DiferencialCompuertaAntiretorno } from "@/components/diferenciales/diferencialCompuertaAntiretorno";
+import { DiferencialVolumenBajo } from "@/components/diferenciales/diferencialVolumenBajo";
+import { ShoppingCart } from "@/public/svg/shoppingCart";
+import YouTubePlayer from "@/components/youtubePlayer";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+
+
+import { habitatData } from "@/public/data/soler&palau/habitatData";
+import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
+import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
+
+
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import SimpleSlider from "@/components/imgslider/slickSlider";
+import { Download } from "@/public/svg/download";
+import { TableSolerPalau } from "@/components/table/tableSoler&palau";
 
 
 export default function HabitatInlinePage() {
+    const images = [
+        {
+          original: "../../img/solerpalau/habitat/imgDemo/1.jpg",
+        //   thumbnail: "https://picsum.photos/id/1018/250/150/",
+        },
+        {
+          original: "../../img/solerpalau/habitat/imgDemo/2.jpg",
+        //   thumbnail: "https://picsum.photos/id/1015/250/150/",
+        },
+        {
+          original: "../../img/solerpalau/habitat/imgDemo/3.jpg",
+        //   thumbnail: "https://picsum.photos/id/1019/250/150/",
+        },
+      ];
+
+
+    const MyButton = extendVariants(Button, {  
+        variants: {    
+          size: {      
+            xs: "px-2 min-w-12 h-6 text-tiny gap-1 rounded-small",      
+            md: "px-4 min-w-20 h-10 text-small gap-2 rounded-small",      
+            xl: "px-10 min-w-32 h-16 text-xl gap-6 rounded-full", // <- new size variant
+          },  
+        },  
+        defaultVariants: { 
+          size: "xl",  // <- set new size variant as default
+        },
+      });
+
+    const [BigScreen, setBigScreen] = useState(false);
+
+    useEffect(() => {
+        const handler = (e:any) => setBigScreen(e.matches);
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        mediaQuery.addEventListener('change', handler);
+        setBigScreen(mediaQuery.matches);
+
+        return () => {
+        mediaQuery.removeEventListener('change', handler);
+        };
+    }, []);
+
+    const handleEmailClick = () => {
+        const email = 'info@electroterma.com.ar';
+        const subject = 'Consulta sobre equipamiento';
+        const body = 'Hola! Me gustaria hacer una consulta sobre equipamiento de Electroterma';
+    
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+    
+        // window.location.href = mailtoLink;
+        window.open(mailtoLink, '_blank');
+    };
+
+    const mobileImagesCol = [];
+    for (let i = 0; i < 5; i++) {
+        mobileImagesCol.push(
+            <Image
+            key={i}
+            alt="Electroterma Logo"
+            className=""
+            src={`../../img/solerpalau/habitat/inline/SolerPalauHabitatInline${i+1}.png`}
+            width="100%"
+            />
+        );
+    }
+
     return (
-        <section className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10">
+        <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden ">
+            {/* ------------- VIDEO INTRO ------------- */}
 
-            Inline
-
-            
-            {/* <section className="flex flex-col items-center justify-center gap-4 py-2 md:py-4">
-                <div className="inline-block max-w-2xl text-center justify-center ">
-                    <h1 className={title()}>Lo Sentimos &nbsp;</h1>
-                    <br />
-                    <h2 className="w-3/4 mx-auto">
-                        Estamos desarrollando una página web de catálogo online,
-                        intuitiva y atractiva, que permite a los usuarios
-                        explorar productos con facilidad.
-                    </h2>
-                </div>
-                <div className="w-[200px] lg:w-[350px]">
-                    <Lottie
-                        animationData={animationData}
-                        // speed={2}
+            <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
+                <div className="h-[50%] md:h-[92%]">
+                    
+                    <SimpleSlider
+                        url={habitatData.urlImageBanner}
+                        imgInfo={habitatData.bannerImageInfo}
                     />
                 </div>
+            </section>
+            {/* <section className="h-[100%] w-full xl:px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
+                <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4"/>
+                
+            </section> */}
 
-                <div className="flex gap-3">
-                    <Link
-                        isExternal
-                        // href={siteConfig.links.docs}
-                        href={"https://electroterma.com.ar/"}
-                        className={buttonStyles({
-                            color: "warning",
-                            radius: "full",
-                            variant: "shadow",
-                        })}
-                    >
-                        Pagina Electroterma
-                    </Link>
-                    <Link
-                        isExternal
-                        className={buttonStyles({
-                            variant: "bordered",
-                            radius: "full",
-                        })}
-                        // href={siteConfig.links.github}
-                        href={"https://github.com/SantiBavaresco/electroterma"}
-                    >
-                        <GithubIcon size={20} />
-                        GitHub
-                    </Link>
-                </div>
-
-                <div className=" -top-8">
-                    <div className=" flex flex-col lg:flex-row justify-center items-center">
-                        <h1>No dude en contactaser via mail:&nbsp;</h1>
-                        <Snippet
-                            hideSymbol
-                            variant="solid"
-                            color="warning"
-                            tooltipProps={{
-                                color: "foreground",
-                                content: "Copiar Email",
-                                disableAnimation: true,
-                                placement: "right",
-                                closeDelay: 0,
-                            }}
-                        >
-                            info@electroterma.com.ar
-                        </Snippet>
+            {/* ------------- Consultanos ------------- */}
+            <section className="w-full xl:px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
+                <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="ml-[35px] md:ml-24">
+                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                            {" "}
+                            ¿Cuál es tu necesidad?{" "}
+                        </h2>
+                    </div>
+                    <div className="mr-4 md:mr-12  ">
+                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
+                            <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
+                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
+                                    </div>
+                                <span className="ml-[30px] lg:ml-10">Escribinos</span>
+                        </Button>
                     </div>
                 </div>
-				<div className="text-xl gap-4">
-					<div>
-						<p className="font-nunito">Texto en nunito, NUNITO REGULAR</p>
-						<p className="font-nunito-bold">Texto en nunito-bold, NUNUTITO BOLD</p>
-					</div>
-					<hr/>
-					<div>
-						<p className="font-lexend">Texto en lexend, LEXEND REGULAR</p>
-						<p className="font-lexend-bold">Texto en lexend-bold, LEXEND BOLD</p>
-					</div>
-				</div>
-            </section> */}
-        </section>
-        // 	<div className={'h-[5000px]'}>
-        // 		<VideoScrollPlayer/>
-        // </div>
+            </section>
+
+            <section className="flex flex-col px-[3%] w-full">
+
+                {/* ------------- Logos Electo-S&P ------------- */}
+                <section className="flex flex-row justify-between  items-center  h-full">
+                    <div className="w-[240px] md:w-[340] lg:w-[450px] ">
+                        <Image
+                            alt="Electroterma Logo"
+                            className=""
+                            src="../../img/electrotermalogoletras.png"
+                            width="100%"
+                        />
+                    </div>
+                    <div className="left-0 w-[120px] md:w-[200px] lg:w-[250px] mr-10 xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
+                        <a href="/soler&palau">
+                            <Image
+                                alt="Otam Logo"
+                                src="../../img/otamlogo.png"
+                                width="100%"
+                            />
+                        </a>
+                        <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-sm xl:text-lg">Distribuidor en Argentina</span>
+                    </div>
+                </section>
+
+                {/* ------------- Parrafo Habitat ------------- */}
+                <article className=" mx-[8%] flex mb-10 flex-col items-start justify-center font-nunito  ">
+                    <h1 className="text-livered-title text-[2.5vw] md:text-[2vw] xl:text-[5.0vw]"> 
+                        {habitatData.inlineData.title} 
+                    </h1>
+                    <h2 className="text-livered-title text-[2.5vw] md:text-[2vw] xl:text-[3.5vw]"> 
+                        {habitatData.inlineData.subTitle1}
+                        <span className=" underline decoration-[3px] underline-offset-8">{habitatData.inlineData.subTitle2}</span>
+                    </h2>
+                    <p className="text-[#9D9D9C] text-[2.5vw] md:text-[2vw] xl:text-[1.7vw]">
+                        <br/>
+                        <span>{habitatData.inlineData.p1}</span>
+                        <br/>
+                        <span>{habitatData.inlineData.p2}</span>
+                    </p>
+                </article>
+                
+                {/* ------------- Titulo post parrafo ------------- */}
+                {/* <section className="flex items-center justify-center my-4 md:my-10">
+                    <div>
+                        <h1 className="font-nunito-thin text-[3.5vw] text-[#9D9D9C] py-4">
+                            {habitatData.pageData.subTitle}
+                        </h1>
+                    </div>
+                </section> */}
+
+                
+                {/* ------------- 2 Vent Habitat ------------- */}
+                {BigScreen ? 
+                    <>
+                    {/* ------------- WEB ------------- */}
+                    <section className="grid grid-cols-[37%_37%_26%] gap-4 p-3">
+                        {/* ------------- COL 1 ------------- */}
+                        <div className="  w-full h-max overflow-hidden">
+                            <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline1.png"
+                                    width="100%"
+                                />
+                            <Image
+                                    alt="SolerPalauHabitatInline3.png"
+                                    className=""
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline3.png"
+                                    width="100%"
+                                />
+                        </div>
+                        {/* ------------- COL 2 ------------- */}
+                        <div className="  w-full h-max overflow-hidden">
+                            <Image
+                                    alt="SolerPalauHabitatInline2.png"
+                                    className="mb-2"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline2.png"
+                                    width="100%"
+                                />
+                            <Image
+                                    alt="SolerPalauHabitatInline4.png"
+                                    className=""
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline4.png"
+                                    width="100%"
+                                />
+                        </div>
+                        {/* ------------- COL 3 ------------- */}
+                        <div className=" w-full flex flex-col justify-center items-center">
+                            <Image
+                                    alt="SolerPalauHabitatInline5.png"
+                                    className=""
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline5.png"
+                                    width="100%"
+                                    height="100%"
+                                />
+                            <Button
+                                className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl mt-16"
+                                radius="full"
+                                size={BigScreen ? "lg" : "sm"}
+                            >
+                                Manual <Download />
+                            </Button> 
+                        </div>
+                    </section>
+                    </>
+                    : <>
+                    {/* ------------- MOBILE ------------- */}
+                    <section className="flex flex-col justify-center  items-center gap-y-10 h-full  ">
+                        {mobileImagesCol}
+                        <Button
+                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl mt-0"
+                            radius="full"
+                            size={BigScreen ? "lg" : "sm"}
+                            >
+                            Manual <Download />
+                            </Button> 
+                    </section>
+                    </>
+                }
+                
+
+                
+
+                {/* ------------- Tabla ------------- */}
+                <section className={`flex flex-col  items-start my-10 mx-[5%] gap-4 `}>
+                <TableSolerPalau tableData={habitatData.tableData}/>
+                </section>
+
+
+                {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
+                <section className="flex  h-full ">
+                    <div className="flex flex-col md:flex-row mx-auto justify-center  items-center gap-x-6 xl:my-16">
+                        <a href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} 
+                                target="_blank" rel="noopener noreferrer">
+                            <Button
+                                className="z-10 mt-4 bg-livered-title font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                radius="full"
+                                size={BigScreen ? "lg" : "md"} 
+                                // href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} target="_blank"
+                            >
+                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-3xl" /> 
+                                    </div>
+                                <span className="ml-6 lg:ml-10 lg:text-3xl">Asesoramiento</span>
+                            </Button>
+                        </a>
+                        <a href={`${habitatData.tiendaOnline}`}
+                                target="_blank" rel="noopener noreferrer">
+                            <MyButton
+                                className="z-10 mt-4 bg-[#EB581E] font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                radius="full"
+                                size={BigScreen ? "xl" : "lg"}
+                                // href={`${habitatData.tiendaOnline}`} target="_blank"
+                            >
+                                <div className="absolute rounded-full left-0 z-20 p-3 px-4   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#E80303] to-[#EF771C]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    {/* <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" />  */}
+                                    <ShoppingCart size={BigScreen ? 40 : 25}/>
+                                </div>
+                                <span className="ml-10 lg:ml-10 lg:text-3xl">Tienda Online</span>
+                            </MyButton>
+                        </a>
+                    </div>
+                </section>
+
+                {/* ------------- DISFRUTA ------------- */}
+                <section className="flex items-center justify-center text-livered-title  my-10 pt-4">
+                    <div className="text-center">
+                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">Conoce toda la línea de ventiladores</h1>
+                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">helicocentrífugos In-line </h1>
+                    </div>
+                </section>
+
+                {/* ------------- PAYMENT ------------- */}
+                {BigScreen ? 
+                    <>
+                        {/* ------------- WEB ------------- */}
+                        <section className="flex items-center justify-center mx-[7%] bg-red-00  h-full">
+                                    <Image
+                                        alt="Electroterma Logo"
+                                        className=""
+                                        src="../../img/solerpalau/habitat/SolerPalauHabitatPay.png"
+                                        width="100%"
+                                    />
+                        </section>
+                    </> : 
+                    <>
+                        {/* ------------- MOBILE ------------- */}
+                        <section className=" h-[55vw] py-auto">
+                            <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} autoPlay/>
+                        </section>
+                    </>
+                }
+                
+
+              
+                {/* ------------- LOGOS Electroterma-Soler ------------- */}
+
+                <section className="flex flex-row justify-between  items-center  h-full">
+                    <div className="w-[240px] md:w-[340] lg:w-[250px] ">
+                        <Image
+                            alt="Electroterma Logo"
+                            className=""
+                            src="../../img/electrotermalogoletras.png"
+                            width="100%"
+                        />
+                    </div>
+                   
+                    <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
+                        <a href="/soler&palau">
+                            <Image
+                                alt="Otam Logo"
+                                src="../../img/otamlogo.png"
+                                width="100%"
+                            />
+                        </a>
+                        <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-sm">Distribuidor en Argentina</span>
+                    </div>
+                </section>
+
+                
+            </section>
+
+        </main>
     );
 }
