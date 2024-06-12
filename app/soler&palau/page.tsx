@@ -14,6 +14,7 @@ import CardDisplay from "@/components/navbar/cardDisplay";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
 import { BsWhatsapp } from "react-icons/bs";
 import { itemsNavSolerPalau } from "@/public/data/navbarData";
+import { SolerPalauSVG } from "@/public/svg/solerPalauSVG";
 
 
 
@@ -81,12 +82,57 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
 
 
 
-        <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10">
+        <main className="flex flex-col h-full items-center justify-center gap-4 pb-4 md:pb-10 bg-[url('/svg/ondasSolerPalau.svg')] bg-fill
+        bg-[center_top_22rem] bg-no-repeat">
+            <section className="w-full h-[100%] px-[3%] mt-6 grid grid-cols-[37.5%_25%_37.5%] gap-4
             
+            ">
+                <div className="w-full flex flex-col justify-center items-center 
+                    bg-gradient-to-t from-[#ef771c] from-5% via-[#e80303] via-30% to-[#e80303]  rounded-[44px]">
+                    <span className="rounded-[24px]">
+                        <Image
+                            alt="Otam Logo"
+                            className="rounded-[44px]"
+                            src="../img/solerpalau/imgbanner/SolerPalauHome1.jpg"
+                            width="100%"
+                        />
+                    </span>
+                    <article className="flex gap-4 py-2 text-white text-start align-middle font-lexend">
+                        <h1 className="text-[6.0vw] leading-none">+60</h1>
+                        <p className="m-auto">años en el <br/>mercado</p>
+                    </article>
+                </div>
+
+                <div className="w-full flex justify-center items-center 
+                    bg-gradient-to-t from-[#ef771c] to-[#E80303] rounded-[44px]">
+                    <SolerPalauSVG width={240}/>
+                </div>
+
+                <div className="w-full  flex flex-col justify-center items-center 
+                    bg-gradient-to-t from-[#ef771c] from-5% via-[#e80303] via-30% to-[#e80303]  rounded-[44px]">
+                    <span className="rounded-[24px]">
+                        <Image
+                            alt="Otam Logo"
+                            className="rounded-[44px]"
+                            src="../img/solerpalau/imgbanner/SolerPalauHome2.jpg"
+                            width="100%"
+                        />
+                    </span>
+                    <article className="flex gap-4 py-2 text-white text-start align-middle font-lexend">
+                        <h1 className="text-[6.0vw] leading-none">+90</h1>
+                        <p className="m-auto">paises en el mundo cuentan
+                            <br/>
+                            con los servicios, productos y
+                            <br/>
+                            la atención de OTAM | S&P.
+                        </p>
+                    </article>
+                </div>
+
+            </section>
             
-            <section className="z-0  h-[screen] w-[100%]  md:mt-10 overflow-hidden bg-[url('/svg/ondasSolerPalau.svg')] bg-fill
-                        bg-[center_top_14rem] bg-no-repeat">
-                <div className="w-full text-center text-[60px] font-lexend-bold text-[#4C4B4B]">
+            <section className="z-0  h-full w-[100%]  md:mt-10 overflow-hidden ">
+                {/* <div className="w-full text-center text-[60px] font-lexend-bold text-[#4C4B4B]">
                     <h1>Descubrí el <span className="text-livered-title">mundo</span></h1>
                     <h1>de la <span className="text-livered-title">ventilación</span> con</h1>
                 </div>
@@ -97,8 +143,8 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                                     width="100%"
                                 />
                                 <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
-                        </div>
-                <div className="flex justify-center contain w-max mx-auto mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
+                        </div> */}
+                <div className="flex justify-center contain  w-max mx-auto mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
                     
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
                     {itemsNavSolerPalau?.map((item) => (
@@ -117,9 +163,25 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                         </div>
                              
                     </div>
-                    <div className="w-[40%] 3xl:w-[40%] ml-auto flex justify-end md:justify-center
+                    
+                
+            </section>
+
+            <section className="w-[54%] mx-[3%] my-10 mr-auto flex justify-center md:justify-between
                             
                             overflow-hidden">
+                                
+                                <div className="w-[240px] md:w-[340] lg:w-[250px] ml-[6%]">
+                        <a href="/">
+                        <Image
+                            alt="Electroterma Logo"
+                            className=""
+                            src="../../img/electrotermalogoletras.png"
+                            width="100%"
+                        />
+                        </a>
+                    </div>
+
                              <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
@@ -139,8 +201,9 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                             </a>
                             
 
-                        </div>
-                <div className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
+                        </section>
+            
+            <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
                     <Image
                         alt="Otam Logo"
                         src="../img/imgHome/1.png"
@@ -161,10 +224,7 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                         src="../img/imgHome/4.png"
                         width={300}
                     />
-                </div>
-            </section>
-            
-            
+                </section>
         </main>
         // 	<div className={'h-[5000px]'}>
         // 		<VideoScrollPlayer/>
