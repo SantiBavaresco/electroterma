@@ -88,6 +88,7 @@ export default function HabitatPage() {
         window.open(mailtoLink, '_blank');
     };
 
+
     return (
         <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden ">
             {/* ------------- VIDEO INTRO ------------- */}
@@ -127,12 +128,15 @@ export default function HabitatPage() {
                 {/* ------------- Logos Electo-S&P ------------- */}
                 <section className="flex flex-row justify-between  items-center  h-full">
                     <div className="w-[240px] md:w-[340] lg:w-[450px] ">
+                        <a href="/">
                         <Image
                             alt="Electroterma Logo"
                             className=""
                             src="../img/electrotermalogoletras.png"
                             width="100%"
                         />
+                        </a>
+
                     </div>
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[250px] mr-10 xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
                         <a href="/soler&palau">
@@ -179,10 +183,12 @@ export default function HabitatPage() {
                     <section className="flex flex-row justify-between  items-center gap-x-16 xl:gap-x-32 h-full my-10 mx-16 xl:mx-32">
                         
                         {/* ------------- Vent INLINE ------------- */}
-                        <div className=" w-1/2 flex ">
+                        
+                        <div className=" w-1/2 flex " >
+                        
                             <div className="w-2/3 pr-6">
                                 <Image
-                                    alt="Electroterma Logo"
+                                    alt="Habitat 1"
                                     className=""
                                     src="../img/solerpalau/habitat/SolerPalauHabitat1.png"
                                     width="100%"
@@ -191,7 +197,7 @@ export default function HabitatPage() {
                             <div className="flex flex-col justify-end  w-[30%]">
                                 
                                 <Image
-                                    alt="Electroterma Logo"
+                                    alt="Habitat inline 1"
                                     className="w"
                                     src="../img/solerpalau/habitat/SolerPalauHabitatInline1.png"
                                     width="100%"
@@ -200,7 +206,7 @@ export default function HabitatPage() {
                                 <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                     radius="none"
                                     size="lg"
-                                    
+                                    onClick={()=>(window.open("/soler&palau/habitat/inline", '_blank'))}
                                 >
                                     más Info </Button>
                             </div>
@@ -210,7 +216,7 @@ export default function HabitatPage() {
                         <div className=" w-1/2 flex ">
                             <div className="w-2/3 pr-6">
                                 <Image
-                                    alt="Electroterma Logo"
+                                    alt="Habitat 2"
                                     className=""
                                     src="../img/solerpalau/habitat/SolerPalauHabitat2.png"
                                     width="100%"
@@ -219,7 +225,7 @@ export default function HabitatPage() {
                             <div className="flex flex-col justify-end  w-[30%]">
                                 
                                 <Image
-                                    alt="Electroterma Logo"
+                                    alt="Habitat extractor 1"
                                     className="w"
                                     src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.png"
                                     width="100%"
@@ -228,7 +234,7 @@ export default function HabitatPage() {
                                 <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                     radius="none"
                                     size="lg"
-                                    
+                                    onClick={()=>(window.open("/soler&palau/habitat/extractor", '_blank'))}
                                 >
                                     más Info </Button>
                             </div>
@@ -244,7 +250,7 @@ export default function HabitatPage() {
                             <div className="w-[60%] pr-2">
                                 <a href="/soler&palau/habitat/extractor">
                                 <Image
-                                    alt="Electroterma Logo"
+                                    alt="Habitat mobile 1"
                                     className=""
                                     radius="none"
                                     src="../img/solerpalau/habitat/SolerPalauHabitatMobile1.png"
@@ -270,7 +276,7 @@ export default function HabitatPage() {
                             <div className="w-[60%] pr-2">
                                 <a href="/soler&palau/habitat/inline"> 
                                 <Image
-                                    alt="Electroterma Logo"
+                                    alt="Habitat mobile 2"
                                     className=""
                                     radius="none"
                                     src="../img/solerpalau/habitat/SolerPalauHabitatMobile2.png"
@@ -416,7 +422,7 @@ export default function HabitatPage() {
                         {/* ------------- WEB ------------- */}
                         <section className="flex items-center justify-center mx-[7%] bg-red-00  h-full">
                                     <Image
-                                        alt="Electroterma Logo"
+                                        alt="Payment"
                                         className=""
                                         src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
                                         width="100%"
@@ -437,12 +443,14 @@ export default function HabitatPage() {
 
                 <section className="flex flex-row justify-between  items-center  h-full">
                     <div className="w-[240px] md:w-[340] lg:w-[250px] ">
+                        <a href="/">
                         <Image
                             alt="Electroterma Logo"
                             className=""
                             src="../img/electrotermalogoletras.png"
                             width="100%"
                         />
+                        </a>
                     </div>
                    
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">

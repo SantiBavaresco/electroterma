@@ -67,6 +67,13 @@ export default function TSAPage() {
         window.open(mailtoLink, '_blank');
     };
 
+    const handlePdfDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/pdf/tsa.pdf'; // Ruta del archivo PDF en la carpeta public
+        link.download = 'tsa.pdf'; // Nombre con el que se descargará el archivo
+        link.click();
+      };
+
     const [BigScreen, setBigScreen] = useState(false);
 
     useEffect(() => {
@@ -528,13 +535,22 @@ export default function TSAPage() {
                     </section>
                     
                 <section className=" pb-[10vh]">
+
                          {/* Manual <Download /> */}
-                                <ModalPdf
+                         <Button
+                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw]"
+                            radius="full"
+                            size={BigScreen ? "lg" : "sm"}
+                            onClick={handlePdfDownload}
+                        >
+                            Manual <Download />
+                        </Button>
+                                {/* <ModalPdf
                                     url="../pdf/TSA.pdf"
                                     title="Manual"
                                     layer=" z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw] "
                                     bigScreen={BigScreen}
-                                />
+                                /> */}
                         
                     </section>
                 </div>

@@ -78,9 +78,9 @@ export const Navbar = () => {
             category: "soler&palau",
             label: ["Ventilador Centrífugo", "Autolimitante - RLS"],
             labelShort: "RLS",
-            img: "../img/navbar/NavBarRLS1SolerPalau.png",
+            img: "../../img/navbar/NavBarRLS1SolerPalau.png",
             href: "/soler&palau/RLS",
-            color: "livered-title",
+            color: "bg-livered-title",
         },
         {
             key: "copy",
@@ -89,7 +89,7 @@ export const Navbar = () => {
             labelShort: "TSA",
             img: "../img/navbar/NavBarTSA1SolerPalau.png",
             href: "/soler&palau/TSA",
-            color: "livered-title",
+            color: "bg-livered-title",
 
 
         },
@@ -100,7 +100,7 @@ export const Navbar = () => {
             labelShort: "TDA",
             img: "../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
-            color: "livered-title",
+            color: "bg-livered-title",
 
         },
         {
@@ -110,7 +110,7 @@ export const Navbar = () => {
             labelShort: "Hábitat",
             img: "../img/navbar/NavBarHabitat1SolerPalau.png",
             href: "/soler&palau/habitat",
-            color: "livered-title",
+            color: "bg-livered-title",
 
         },
     ];
@@ -157,7 +157,7 @@ export const Navbar = () => {
                 >
                     <Image
                         // className="sm:w-[180px]"
-                        src="../img/electrotermalogoletrasNoPadding.png"
+                        src="../../img/electrotermalogoletrasNoPadding.png"
                         // height={50}
                         width={200}
                         alt="hola"

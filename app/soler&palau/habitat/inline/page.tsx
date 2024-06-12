@@ -105,16 +105,37 @@ export default function HabitatInlinePage() {
     }
 
     return (
-        <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden ">
+        <main className="flex flex-col items-center justify-center gap-1 md:gap-4 pb-4 md:pb-10 overflow-hidden ">
             {/* ------------- VIDEO INTRO ------------- */}
+
+            <section className="w-full flex flex-row">
+                <div className="w-1/2 h-full">
+                        <Image
+                            alt="Banner 1"
+                            className=""
+                            radius="none"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatInlineBanner1.png"
+                            width="100%"
+                        />
+                    </div>
+                <div className="w-1/2 ">
+                        <Image
+                            alt="Banner 2"
+                            className=""
+                            radius="none"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatInlineBanner2.png"
+                            width="100%"
+                        />
+                    </div>    
+            </section>
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
                     
-                    <SimpleSlider
+                    {/* <SimpleSlider
                         url={habitatData.urlImageBanner}
                         imgInfo={habitatData.bannerImageInfo}
-                    />
+                    /> */}
                 </div>
             </section>
             {/* <section className="h-[100%] w-full xl:px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
@@ -152,12 +173,14 @@ export default function HabitatInlinePage() {
                 {/* ------------- Logos Electo-S&P ------------- */}
                 <section className="flex flex-row justify-between  items-center  h-full">
                     <div className="w-[240px] md:w-[340] lg:w-[450px] ">
+                        <a href="/">
                         <Image
                             alt="Electroterma Logo"
                             className=""
                             src="../../img/electrotermalogoletras.png"
                             width="100%"
                         />
+                        </a>
                     </div>
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[250px] mr-10 xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
                         <a href="/soler&palau">
@@ -173,10 +196,10 @@ export default function HabitatInlinePage() {
 
                 {/* ------------- Parrafo Habitat ------------- */}
                 <article className=" mx-[8%] flex mb-10 flex-col items-start justify-center font-nunito  ">
-                    <h1 className="text-livered-title text-[2.5vw] md:text-[2vw] xl:text-[5.0vw]"> 
+                    <h1 className="text-livered-title text-[6.5vw] md:text-[2vw] xl:text-[5.0vw]"> 
                         {habitatData.inlineData.title} 
                     </h1>
-                    <h2 className="text-livered-title text-[2.5vw] md:text-[2vw] xl:text-[3.5vw]"> 
+                    <h2 className="text-livered-title text-[4.5vw] md:text-[2vw] xl:text-[3.5vw]"> 
                         {habitatData.inlineData.subTitle1}
                         <span className=" underline decoration-[3px] underline-offset-8">{habitatData.inlineData.subTitle2}</span>
                     </h2>
@@ -202,7 +225,7 @@ export default function HabitatInlinePage() {
                 {BigScreen ? 
                     <>
                     {/* ------------- WEB ------------- */}
-                    <section className="grid grid-cols-[37%_37%_26%] gap-4 p-3">
+                    <section className="grid grid-cols-[37%_37%_26%] gap-4 p-3 mx-[3%]">
                         {/* ------------- COL 1 ------------- */}
                         <div className="  w-full h-max overflow-hidden">
                             <Image
@@ -254,7 +277,7 @@ export default function HabitatInlinePage() {
                     </>
                     : <>
                     {/* ------------- MOBILE ------------- */}
-                    <section className="flex flex-col justify-center  items-center gap-y-10 h-full  ">
+                    <section className="flex flex-col justify-center  items-center gap-y-10 h-full mx-[3%] ">
                         {mobileImagesCol}
                         <Button
                             className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl mt-0"
@@ -354,12 +377,14 @@ export default function HabitatInlinePage() {
 
                 <section className="flex flex-row justify-between  items-center  h-full">
                     <div className="w-[240px] md:w-[340] lg:w-[250px] ">
+                        <a href="/">
                         <Image
                             alt="Electroterma Logo"
                             className=""
                             src="../../img/electrotermalogoletras.png"
                             width="100%"
                         />
+                        </a>
                     </div>
                    
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">

@@ -15,6 +15,7 @@ import { FaArrowRightToBracket } from "react-icons/fa6";
 import { pdfjs } from "react-pdf";
 import PdfReader from "./pdfReader";
 import { Download } from "@/public/svg/download";
+import DownloadPdfButton from "./donwloadPdfButton";
 // import { useDisclosure } from "@nextui-org/react";
 
 interface Props {
@@ -48,7 +49,8 @@ const ModalPdf: React.FC<Props> = ({ url, title, layer, bigScreen, }) => {
                     {(onClose) => (
                         <>
                             <ModalHeader className="flex flex-col gap-1">
-                                {title}
+                                {/* {title} */}
+                                <DownloadPdfButton/>
                             </ModalHeader>
                             <ModalBody>
                                 <PdfReader url={url}/>
