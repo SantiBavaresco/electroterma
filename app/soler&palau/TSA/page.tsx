@@ -69,7 +69,7 @@ export default function TSAPage() {
 
     const handlePdfDownload = () => {
         const link = document.createElement('a');
-        link.href = '/pdf/tsa.pdf'; // Ruta del archivo PDF en la carpeta public
+        link.href = '../../TSA.pdf'; // Ruta del archivo PDF en la carpeta public
         link.download = 'tsa.pdf'; // Nombre con el que se descargará el archivo
         link.click();
       };
