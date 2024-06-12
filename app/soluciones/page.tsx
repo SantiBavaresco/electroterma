@@ -1,9 +1,43 @@
+"use client"
 import { title } from "@/components/primitives";
+import { solucionesGeneralData } from "@/public/data/soluciones/solucionesGeneralData";
+import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
+import { useEffect, useState } from "react";
+import { IoMailOutline } from "react-icons/io5";
 
 export default function SolucionesHVACPage() {
+
+	const handleEmailClick = () => {
+        const email = 'info@electroterma.com.ar';
+        const subject = 'Consulta sobre equipamiento';
+        const body = 'Hola! Me gustaria hacer una consulta sobre equipamiento de Electroterma';
+    
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+    
+        // window.location.href = mailtoLink;
+        window.open(mailtoLink, '_blank');
+    };
+
+
+	const [BigScreen, setBigScreen] = useState(false);
+
+    useEffect(() => {
+        const handler = (e:any) => setBigScreen(e.matches);
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        mediaQuery.addEventListener('change', handler);
+        setBigScreen(mediaQuery.matches);
+
+        return () => {
+        mediaQuery.removeEventListener('change', handler);
+        };
+    }, []);
+
 	return (
-		<main className="flex flex-col items-center justify-center gap-1 md:gap-4 pb-4 md:pb-10 overflow-hidden ">
+		<main className="flex flex-col mt-4 items-center justify-center gap-1 md:gap-4 pb-4 md:pb-10 overflow-hidden ">
 		{/* ------------- VIDEO INTRO ------------- */}
 
 		<section className="w-full flex flex-row">
@@ -19,18 +53,70 @@ export default function SolucionesHVACPage() {
 			
 		</section>
 
-		<section className="w-full mx-[3%] grid grid-cols-3 grid-rows-2 gap-4 p-3">
-			<div className="bg-gray-200 rounded-lg">Content 1</div>
-			<div className="bg-gray-200 rounded-lg">Content 2</div>
+		<section className="w-full px-[3%] grid grid-cols-3 grid-rows-2 gap-4 p-3">
+			{solucionesGeneralData.pageData.products.map((item, index)=>(
+				<div key={index} className="w-full min-h-full flex flex-col items-center p-4 gap-4 bg-[#F7F6F6] border-1 rounded-[36px]">
+					<div className="w-full bg-lowgray min-h-[300px]  text-white rounded-[20px] shadow-xl">
+						<Image
+							alt="product"
+							key={index}
+							className="rounded-t-[20px] min-w-full h-full"
+							radius="none"
+							src={item.imgUrl}
+							width="100%"
+						/>
+					</div>
+					<div className="w-full min-h-[150px] bg-white text-[#EF771C] shadow-xl">
+						<p className="w-2/3 h-full   m-auto py-2 text-full font-lexend-bold text-center align-middle text-[2.0vw]">
+							{item.lable}
+						</p>
+					</div>
+					<div>
+						<Button
+							className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
+							radius="full"
+							size={BigScreen ? "lg" : "lg"}
+							onClick={()=>(window.open(item.href))}
+						>
+							Saber más
+						</Button>
+					</div>
+
+				</div>
+			))
+
+			}
+			{/* <div className="bg-gray-200 rounded-lg">Content 2</div>
 			<div className="bg-gray-200 rounded-lg">Content 3</div>
 			<div className="bg-gray-200 rounded-lg">Content 4</div>
 			<div className="bg-gray-200 rounded-lg">Content 5</div>
-			<div className="bg-gray-200 rounded-lg">Content 6</div>
+			<div className="bg-gray-200 rounded-lg">Content 6</div> */}
 		</section>
 
-		<section className="">
-			<h1>escribinos</h1>
-		</section>
+            {/* ------------- Consultanos ------------- */}
+            <section className="w-full max-h-[50%] py-0 font-size overflow-hidden">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="ml-[35px] md:ml-24">
+                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                            {" "}
+                            ¿Cuál es tu necesidad?{" "}
+                        </h2>
+                    </div>
+                    <div className="mr-4 md:mr-12  ">
+                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
+                            <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771C] to-[#F4A86F]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
+                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
+                                    </div>
+                                <span className="ml-[30px] lg:ml-10">Escribinos</span>
+                        </Button>
+                    </div>
+                </div>
+            </section>
 
 		</main>
 	);
