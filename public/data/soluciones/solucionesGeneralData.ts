@@ -32,7 +32,7 @@ interface generalDataType {
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones1.png",
             lable: "SOLUCIÓN CLIMATIZACIÓN DE BARCOS",
-            href: "/soler&palau/habitat/extractor",
+            href: "/soluciones/barcos",
           },
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones2.png",
