@@ -42,83 +42,49 @@ export default function SolerPalauPage() {
         window.open(mailtoLink, '_blank');
     };
 
-
-    const itemsNav: ItemsNavbar[] = [
-        {
-            key: "first",
-            label: ["Ventilador Centrífugo", "Autolimitante - RLS"],
-            labelShort: "RLS",
-            img: "../img/navbar/NavBarRLS1SolerPalau.png",
-            href: "/soler&palau/RLS",
-        },
-        {
-            key: "copy",
-            label: ["Ventilador Centrífugo", "Multipala - TSA"],
-            labelShort: "TSA",
-            img: "../img/navbar/NavBarTSA1SolerPalau.png",
-            
-            href: "/soler&palau/TSA",
-        },
-        {
-            key: "edit",
-            label: ["Ventilador ","Centrífugo TDA"],
-            labelShort: "TDA",
-            img: "../img/navbar/NavBarTDA1SolerPalau.png",
-            href: "/soler&palau/TDA",
-        },
-        {
-            key: "last",
-            label: ["Hábitat"],
-            labelShort: "Hábitat",
-            img: "../img/navbar/NavBarHabitat1SolerPalau.png",
-            href: "/soler&palau/habitat",
-        },
-    ];
-
-const demoImageNames = ["1", "2", "3", "1", "2", "3"];
-
-
     return (
-
-
-
         <main className="flex flex-col h-full items-center justify-center gap-4 pb-4 md:pb-10 bg-[url('/svg/ondasSolerPalau.svg')] bg-fill
-        bg-[center_top_22rem] bg-no-repeat">
-            <section className="w-full h-[100%] px-[3%] mt-6 grid grid-cols-[37.5%_25%_37.5%] gap-4
-            
+        bg-[center_top_19vw] bg-no-repeat">
+
+            {/* ------------- 3 columnas diferenciales superiores ------------- */}
+            <section className="w-full h-[100%] px-[3%] mt-6 flex flex-col lg:grid grid-cols-[37.5%_25%_37.5%] gap-4
             ">
-                <div className="w-full flex flex-col justify-center items-center 
+
+                {/* ------------- COL 1 ------------- */}
+                <div className="w-full flex flex-col justify-center items-center self-start
                     bg-gradient-to-t from-[#ef771c] from-5% via-[#e80303] via-30% to-[#e80303]  rounded-[44px]">
                     <span className="rounded-[24px]">
                         <Image
-                            alt="Otam Logo"
+                            alt="Home banner 1"
                             className="rounded-[44px]"
                             src="../img/solerpalau/imgbanner/SolerPalauHome1.jpg"
                             width="100%"
                         />
                     </span>
-                    <article className="flex gap-4 py-2 text-white text-start align-middle font-lexend">
-                        <h1 className="text-[6.0vw] leading-none">+60</h1>
+                    <article className="flex items-center gap-4 py-2 text-white text-start align-middle font-lexend">
+                        <h1 className="text-[6.0vw] leading-none ">+60</h1>
                         <p className="m-auto">años en el <br/>mercado</p>
                     </article>
                 </div>
 
-                <div className="w-full flex justify-center items-center 
+                {/* ------------- COL 2 ------------- */}
+                <div className="w-full p-2 flex justify-center items-center 
                     bg-gradient-to-t from-[#ef771c] to-[#E80303] rounded-[44px]">
                     <SolerPalauSVG width={240}/>
                 </div>
 
-                <div className="w-full  flex flex-col justify-center items-center 
+                {/* ------------- COL 3 ------------- */}
+                <div className="w-full  flex flex-col justify-top items-center  self-start
                     bg-gradient-to-t from-[#ef771c] from-5% via-[#e80303] via-30% to-[#e80303]  rounded-[44px]">
                     <span className="rounded-[24px]">
                         <Image
-                            alt="Otam Logo"
+                            alt="Home banner 2"
                             className="rounded-[44px]"
                             src="../img/solerpalau/imgbanner/SolerPalauHome2.jpg"
                             width="100%"
                         />
                     </span>
-                    <article className="flex gap-4 py-2 text-white text-start align-middle font-lexend">
+                    <article className="flex items-center gap-4 py-2 text-white text-start align-middle font-lexend">
                         <h1 className="text-[6.0vw] leading-none">+90</h1>
                         <p className="m-auto">paises en el mundo cuentan
                             <br/>
@@ -128,50 +94,36 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                         </p>
                     </article>
                 </div>
-
             </section>
-            
-            <section className="z-0  h-full w-[100%]  md:mt-10 overflow-hidden ">
-                {/* <div className="w-full text-center text-[60px] font-lexend-bold text-[#4C4B4B]">
-                    <h1>Descubrí el <span className="text-livered-title">mundo</span></h1>
-                    <h1>de la <span className="text-livered-title">ventilación</span> con</h1>
-                </div>
-                <div className="mx-auto left-0 w-[120px] md:w-[250px] xl:top-2 xl:left-16 2xl:top-2 2xl:mb-10 2xl:-left-10">
-                                <Image
-                                    alt="Otam Logo"
-                                    src="../img/otamlogo.png"
-                                    width="100%"
-                                />
-                                <span className="ml-0 relative -top-4 text-[8px] md:text-xs">Distribuidor en Argentina</span>
-                        </div> */}
+
+            {/* ------------- Barra de navegacion S&P ------------- */}
+            <section className="z-0  h-full w-[100%]  md:mt-20 overflow-hidden ">
+                
                 <div className="flex justify-center contain  w-max mx-auto mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
                     
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4   "> 
                     {itemsNavSolerPalau?.map((item) => (
-                        // <p key={item.key}>{item.label}</p>
-                        
                             <a
-                                                                className=""
-                                                                color="foreground"
-                                                                href={item.href}
-                                                                key={item.key}
-                                                            >
+                                className=""
+                                color="foreground"
+                                href={item.href}
+                                key={item.key}
+                            >
                                 <CardDisplay data={item}  actual={""} />
 
                             </a>
                         ))}  
                         </div>
-                             
                     </div>
                     
                 
             </section>
 
-            <section className="w-[54%] mx-[3%] my-10 mr-auto flex justify-center md:justify-between
-                            
+            {/* ------------- Asesoramiento ------------- */}
+            <section className="w-auto lg:w-[54%] mx-[3%] my-10 lg:mr-auto flex justify-center md:justify-between
                             overflow-hidden">
                                 
-                                <div className="w-[240px] md:w-[340] lg:w-[250px] ml-[6%]">
+                                <div className="w-[200px] md:w-[340] lg:w-[250px] lg:ml-[6%]">
                         <a href="/">
                         <Image
                             alt="Electroterma Logo"
@@ -181,8 +133,7 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                         />
                         </a>
                     </div>
-
-                             <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                            <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
@@ -200,9 +151,9 @@ const demoImageNames = ["1", "2", "3", "1", "2", "3"];
                             </Button>
                             </a>
                             
-
                         </section>
-            
+
+            {/* ------------- Imagenes presentacion ------------- */}
             <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
                     <Image
                         alt="Otam Logo"
