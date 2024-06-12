@@ -44,13 +44,21 @@ export default function SolerPalauPage() {
 
     return (
         <main className="flex flex-col h-full items-center justify-center gap-4 pb-4 md:pb-10 bg-[url('/svg/ondasSolerPalau.svg')] bg-fill
-        bg-[center_top_19vw] bg-no-repeat">
+        bg-[center_top_29vw] bg-no-repeat">
 
             {/* ------------- 3 columnas diferenciales superiores ------------- */}
-            <section className="w-full h-[100%] px-[3%] mt-6 flex flex-col lg:grid grid-cols-[37.5%_25%_37.5%] gap-4
+            <section className="w-full px-[3%] mt-4">
+                <Image
+                    alt="Home banner 1"
+                    className="rounded-[44px]"
+                    src="../img/solerpalau/imgbanner/SolerPalauHome3.jpg"
+                    width="100%"
+                />
+            </section>
+            {/* <section className="w-full h-[100%] px-[3%] mt-6 flex flex-col lg:grid grid-cols-[37.5%_25%_37.5%] gap-4
             ">
 
-                {/* ------------- COL 1 ------------- */}
+                
                 <div className="w-full flex flex-col justify-center items-center self-start
                     bg-gradient-to-t from-[#ef771c] from-5% via-[#e80303] via-30% to-[#e80303]  rounded-[44px]">
                     <span className="rounded-[24px]">
@@ -67,13 +75,13 @@ export default function SolerPalauPage() {
                     </article>
                 </div>
 
-                {/* ------------- COL 2 ------------- */}
+                
                 <div className="w-full p-2 flex justify-center items-center 
                     bg-gradient-to-t from-[#ef771c] to-[#E80303] rounded-[44px]">
                     <SolerPalauSVG width={240}/>
                 </div>
 
-                {/* ------------- COL 3 ------------- */}
+                
                 <div className="w-full  flex flex-col justify-top items-center  self-start
                     bg-gradient-to-t from-[#ef771c] from-5% via-[#e80303] via-30% to-[#e80303]  rounded-[44px]">
                     <span className="rounded-[24px]">
@@ -94,7 +102,7 @@ export default function SolerPalauPage() {
                         </p>
                     </article>
                 </div>
-            </section>
+            </section> */}
 
             {/* ------------- Barra de navegacion S&P ------------- */}
             <section className="z-0  h-full w-[100%]  md:mt-20 overflow-hidden ">
@@ -120,10 +128,9 @@ export default function SolerPalauPage() {
             </section>
 
             {/* ------------- Asesoramiento ------------- */}
-            <section className="w-auto lg:w-[54%] mx-[3%] my-10 lg:mr-auto flex flex-col lg:flex-row justify-center md:justify-between
-                            overflow-hidden">
-                                
-                                <div className="w-[200px] md:w-[340] lg:w-[250px] lg:ml-[6%]">
+            <section className="w-1/2 mx-[3%] mb-10 mt-16  flex flex-col items-center lg:flex-row justify-center md:justify-around
+                overflow-hidden">
+                    <div className="w-[200px] md:w-[340] lg:w-[250px] ">
                         <a href="/">
                         <Image
                             alt="Electroterma Logo"
@@ -136,7 +143,7 @@ export default function SolerPalauPage() {
                             <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
-                                className="z-10 mt-4 bg-livered font-nunito text-white w-full 3xl:ml-32 2xl:text-2xl"
+                                className="z-10 mt-4 bg-livered font-nunito text-white w-full 2xl:text-2xl"
                                 radius="full"
                                 size="lg"
                                 href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
@@ -158,22 +165,22 @@ export default function SolerPalauPage() {
                     <Image
                         alt="Otam Logo"
                         src="../img/imgHome/1.png"
-                        width={300}
+                        width={450}
                     />
                     <Image
                         alt="Otam Logo"
                         src="../img/imgHome/2.png"
-                        width={300}
+                        width={450}
                     />
                     <Image
                         alt="Otam Logo"
                         src="../img/imgHome/3.png"
-                        width={300}
+                        width={450}
                     />
                     <Image
                         alt="Otam Logo"
                         src="../img/imgHome/4.png"
-                        width={300}
+                        width={450}
                     />
                 </section>
         </main>
