@@ -120,7 +120,7 @@ export default function SolerPalauPage() {
             </section>
 
             {/* ------------- Asesoramiento ------------- */}
-            <section className="w-auto lg:w-[54%] mx-[3%] my-10 lg:mr-auto flex justify-center md:justify-between
+            <section className="w-auto lg:w-[54%] mx-[3%] my-10 lg:mr-auto flex flex-col lg:flex-row justify-center md:justify-between
                             overflow-hidden">
                                 
                                 <div className="w-[200px] md:w-[340] lg:w-[250px] lg:ml-[6%]">
@@ -136,7 +136,7 @@ export default function SolerPalauPage() {
                             <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
-                                className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                className="z-10 mt-4 bg-livered font-nunito text-white w-full 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
                                 size="lg"
                                 href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
