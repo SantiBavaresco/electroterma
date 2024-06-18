@@ -11,6 +11,7 @@ import { GithubIcon } from "@/components/icons";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
 import { BsWhatsapp } from "react-icons/bs";
+import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 
 
 // import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
@@ -79,12 +80,12 @@ export default function Home() {
                     width={"100%"}
                 />
             </section>
-            <section className="w-full h-full container mx-auto">
+            {/* <section className="w-full h-full container mx-auto">
             
                 <div className="flex flex-row">
                     <div className="w-full md:w-3/4 bg-white p-4 flex flex-col justify-center items-center">
                         <div>
-                        {/* <h2 className="text-center text-xl font-bold mb-4">Título</h2> */}
+                  
                             <h1 className="font-nunito-bolder text-[60px] text-[#EF771C]">Proyectos y</h1>
                             <h1 className="font-nunito-bolder text-[60px] text-[#EF771C]">Alianzas estratégicas</h1>
                         </div>
@@ -105,26 +106,18 @@ export default function Home() {
                         src="../img/home2.png"
                         width="100%"
                         />
-                        {/* <img src="image.jpg" alt="Image" className="object-cover w-full h-full" /> */}
+
                     </div>
                 </div>
                
-             
+              
+            </section> */}
 
-                {/* <h1 className="font-nunito-bolder text-[50px] text-[#EF771C]">Estamos presentes</h1>
-                </div>
-                <div>
-
-                <Image  
-                    className="ml-[0vw] mt-10"
-                    alt="Mapa Sur America"
-                    src="../img/home2.png"
-                    width="80%"
-                />
-                </div> */}
-
-               
+            <section className="h-[100%] w-full xl:px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
+                <VideoAutoPlayer url="../img/imgHome/mapa.mkv   "/>
+                
             </section>
+
             <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
                             
                             overflow-hidden">
