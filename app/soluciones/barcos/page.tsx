@@ -3,6 +3,7 @@ import { title } from "@/components/primitives";
 import { solucionesGeneralData } from "@/public/data/soluciones/solucionesGeneralData";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
+import { Avatar } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { IoMailOutline } from "react-icons/io5";
 
@@ -54,7 +55,7 @@ export default function SolucionesBarcosPage() {
 		<main className="flex flex-col  mt-4 items-center justify-center gap-1 md:gap-4 pb-4 md:pb-10 overflow-hidden ">
 		{/* ------------- VIDEO INTRO ------------- */}
 
-		<section className="w-full rounded-tl-[43px] ml-[3%] flex flex-row bg-gray-400">
+		<section className="w-full rounded-tl-[43px] ml-[3%] flex flex-row bg-[#F7F6F6]">
 			<div className="w-full  ml-[1vw] mt-[1vw] h-full ">
 					<Image
 						alt="Banner 1"
@@ -68,10 +69,46 @@ export default function SolucionesBarcosPage() {
 		</section>
 
 		<section className="w-full ml-[3%] grid grid-cols-[25%_75%]">
-			<section className="w-full h-full z-0 rounded-tl-[0px] -mt-10 pt-10 bg-gray-400">
-				<div className="  ml-[1vw] mt-6 h- bg-gray-200">
-					<h1 className=" pt-4 pl-10 pb-4 text-white font-lexend-bold text-[2.5vw] bg-[#EF771C]"> AUTOR</h1>
+			<section className="w-full h-[104%] z-0 rounded-tl-[0px] -mt-10 pt-10   bg-[#F7F6F6] ">
+				<div className="  ml-[0.5vw] mt-6  bg-gray-00">
+					<div className=" flex mr-auto ml-4 pl-10 text-white font-lexend-bold text-[2.5vw] bg-white rounded-l-full border-1 border-lowgray shadow-2xl"> 
+					<Avatar  src="../../img/soluciones/barcos/SolucionesBarcosAutor.png" className="-ml-8 w- h-[5.0vw] my-2 text-large"/>
+					<p className="my-auto ml-4 pt-4  pb-4  text-[#EF771C] font-lexend-bold text-[1.2vw]">Por: {" "}
+						<a href="https://electroterma.com.ar/author/victorb/" target="_blank"><span className="underline underline-offset-4">Victor Barbarito</span></a>
+					</p>
+
+					</div>
 				</div>
+
+				<div className="  ml-[0.5vw] mt-6  bg-gray-00">
+					<div className=" flex flex-col items-center justify-center align-middle gap-4 p-10 m-10 mx-4 mt-16  text-white font-lexend-bold text-[2.5vw] 
+						bg-white rounded-[59px] border-1 border-lowgray shadow-2xl"> 
+					
+						<div className=" w-full flex flex-col  bg-[#ef771c65] rounded-t-[30px]">
+							<Image
+							alt="Banner 1"
+							className="p-6"
+							radius="none"
+							src="../../img/soluciones/barcos/SolucionesBarcos1.png"
+							// width="100%"
+							height="100%"
+							/> 
+							
+						</div>
+						<h1 className="w-full text-center text-[1.5vw] font-nunito-bold bg-white text-black">Calefactor Eléctrico</h1>
+
+								<Button
+									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
+									radius="full"
+									size={BigScreen ? "lg" : "lg"}
+									onClick={()=>(window.open("electroterma.com"))}
+								>
+									Saber más
+								</Button>
+						
+					</div>
+				</div>
+
 			</section>
 			<article className="w-full h-full bg-green-00">
 				<div className=" mx-4 mt-6 bg-[#EF771C">
@@ -193,7 +230,7 @@ export default function SolucionesBarcosPage() {
 		</section>
 
 		{/* ------------- Consultanos ------------- */}
-		<section className="w-full max-h-[50%] py-0 font-size overflow-hidden">
+		<section className="w-full max-h-[50%] z-20 py-0 font-size overflow-hidden">
                 <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-24">
                         <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
