@@ -74,7 +74,7 @@ export default function SolucionesBarcosPage() {
 					<div className=" flex mr-auto ml-4 pl-10 text-white font-lexend-bold text-[2.5vw] bg-white rounded-l-full border-1 border-lowgray shadow-2xl"> 
 					<Avatar  src="../../img/soluciones/barcos/SolucionesBarcosAutor.png" className="-ml-8 w- h-[5.0vw] my-2 text-large"/>
 					<p className="my-auto ml-4 pt-4  pb-4  text-[#EF771C] font-lexend-bold text-[1.2vw]">Por: {" "}
-						<a href="https://electroterma.com.ar/author/victorb/" target="_blank"><span className="underline underline-offset-4">Victor Barbarito</span></a>
+						<span className="">Victor Barbarito</span>
 					</p>
 
 					</div>
