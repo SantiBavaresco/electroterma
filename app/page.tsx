@@ -11,6 +11,8 @@ import { GithubIcon } from "@/components/icons";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
 import { BsWhatsapp } from "react-icons/bs";
+import { lazy, Suspense, useState, useEffect } from "react";
+
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 
 
@@ -19,6 +21,30 @@ import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 
 
 export default function Home() {
+
+    const [BigScreen, setBigScreen] = useState(false);
+
+    useEffect(() => {
+        const handler = (e:any) => setBigScreen(e.matches);
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        mediaQuery.addEventListener('change', handler);
+        setBigScreen(mediaQuery.matches);
+
+        return () => {
+        mediaQuery.removeEventListener('change', handler);
+        };
+    }, []);
+
+
+    const FrameFan = lazy(
+        () => import("@/components/frameScrubber/frameScrubber")
+    );
+
+    const FrameFanWeb = lazy(
+        () => import("@/components/frameScrubber/frameScrubberWeb")
+    );
+
     const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
         const subject = 'Consulta sobre equipamiento';
@@ -33,7 +59,7 @@ export default function Home() {
     };
 
     return (
-        <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden">
+        <main id="vent" accessKey="home" className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 ">
            <section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
                     </section>
@@ -113,10 +139,30 @@ export default function Home() {
               
             </section> */}
 
-            <section className="h-[100%] w-full xl:px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
+            {/* <section className="h-[100%] w-full xl:px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
                 <VideoAutoPlayer url="../img/imgHome/mapa.mkv   "/>
                 
-            </section>
+            </section> */}
+
+            {BigScreen ? 
+                <>   {/* ----- Web ----- */}
+                    {/* <VideoScrubber/> */}
+                    
+                    {/* <ScrollyVideo src="../img/solerpalau/rls/video/original.mkv" transitionSpeed={1} /> */}
+                    {/* <ScrollVideoPlayer/> */}
+                    {/* <VideoScrollPlayer/> */}
+                    <Suspense fallback={<div>Loading</div>}>
+                        <FrameFanWeb />
+                    </Suspense>
+                </> 
+                
+                : <div className="-mt-32"> {/* ----- Mobile ----- */}
+
+                    <Suspense fallback={<div>Loading</div>}>
+                        <FrameFan />
+                    </Suspense>
+                </div>
+            }
 
             <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
                             
