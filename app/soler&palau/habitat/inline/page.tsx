@@ -315,9 +315,9 @@ export default function HabitatInlinePage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-3xl" /> 
+                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-3xl" /> 
                                     </div>
-                                <span className="ml-6 lg:ml-10 lg:text-3xl">Asesoramiento</span>
+                                <span className="ml-[35px] lg:ml-10 lg:text-3xl">Asesoramiento</span>
                             </Button>
                         </a>
                         <a href={`${habitatData.tiendaOnline}`}

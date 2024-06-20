@@ -273,8 +273,8 @@ export default function RLSPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
-                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
+                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
+                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a>
                             
@@ -356,8 +356,8 @@ export default function RLSPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
-                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
+                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
+                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a>
                         </div>
@@ -640,8 +640,8 @@ export default function RLSPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
-                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
+                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
+                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a>
                         </div>
@@ -666,7 +666,7 @@ export default function RLSPage() {
                             className=""
                             color="foreground"
                             href={ item.labelShort === "RLS" ? "javascript:void(0)" :  item.href}
-                            target={(item.labelShort === "RLS" ) ? "" : "_blank"}
+                            target={(item.labelShort === "RLS" ) ? "" : "_top"}
                             key={item.key}
                         >
                             <CardDisplay data={item}  actual={"RLS"} />

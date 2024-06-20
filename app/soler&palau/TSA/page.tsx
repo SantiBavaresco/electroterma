@@ -283,8 +283,8 @@ export default function TSAPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
-                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
+                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
+                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a>
                             
@@ -423,8 +423,8 @@ export default function TSAPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
-                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
+                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
+                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a>
                         </div>
@@ -790,8 +790,8 @@ export default function TSAPage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
-                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
+                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
+                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a>
                         </div>
