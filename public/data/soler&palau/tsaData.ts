@@ -85,7 +85,7 @@ export const tsaData: ventDataType  = {
             },
             {
                 key: "qimn",
-                label: "QIMN [m3/h]",
+                label: "QIMN[m3/h]",
             },
             {
                 key: "ap",
@@ -97,7 +97,7 @@ export const tsaData: ventDataType  = {
             },
             {
                 key: "apmax",
-                label: "Ap MAX[mmca]",
+                label: "ApMAX[mmca]",
             },
             {
                 key: "qmax",
@@ -105,7 +105,7 @@ export const tsaData: ventDataType  = {
             },
             {
                 key: "apmin",
-                label: "Ap MIN[mmca]",
+                label: "ApMIN[mmca]",
             },
 
         ],

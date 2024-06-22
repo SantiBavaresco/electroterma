@@ -262,7 +262,7 @@ export const Navbar = () => {
                                                         className=""
                                                         color="foreground"
                                                         href={item.href}
-                                                        target="_blank"
+                                                        target="_top"
                                                         onClick={setFirstFalse}
                                                     >
 
@@ -387,7 +387,7 @@ export const Navbar = () => {
                                                         className="max-w-[40vw] "
                                                         color="foreground"
                                                         href={item.href}
-                                                        target="_blank"
+                                                        target="_top"
                                                         key={item.key}
                                                         
                                                     >

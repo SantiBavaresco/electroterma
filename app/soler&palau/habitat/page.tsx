@@ -203,7 +203,7 @@ export default function HabitatPage() {
                                     width="100%"
                                 />
                                 <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
-                                <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                                <Button className="font-nunito text-xl md:text-2xl xl:text-3xl 2xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                     radius="none"
                                     size="lg"
                                     onClick={()=>(window.open("/soler&palau/habitat/inline", '_blank'))}
@@ -231,7 +231,7 @@ export default function HabitatPage() {
                                     width="100%"
                                 />
                                 <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
-                                <Button className="font-nunito text-xl md:text-2xl xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                                <Button className="font-nunito text-xl md:text-2xl xl:text-3xl 2xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                     radius="none"
                                     size="lg"
                                     onClick={()=>(window.open("/soler&palau/habitat/extractor", '_blank'))}
@@ -383,7 +383,7 @@ export default function HabitatPage() {
                                 "> 
                                     <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-3xl" /> 
                                     </div>
-                                <span className="ml-[35px] lg:ml-10 lg:text-3xl">Asesoramiento</span>
+                                <span className="ml-[35px] lg:ml-14 lg:text-3xl">Asesoramiento</span>
                             </Button>
                         </a>
                         <a href={`${habitatData.tiendaOnline}`}

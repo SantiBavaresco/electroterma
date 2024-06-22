@@ -2,7 +2,7 @@
 import { Link } from "@nextui-org/link";
 import { FiFacebook } from "react-icons/fi";
 import { AiOutlineYoutube } from "react-icons/ai";
-import { IoLogoInstagram } from "react-icons/io";
+import { IoLogoFacebook, IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
 import { Image } from "@nextui-org/image";
@@ -45,8 +45,15 @@ export default function Footer() {
 				{/* <svg width="12" height="20" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M16.375 1.66675H12.25C10.4266 1.66675 8.67789 2.36912 7.38869 3.61937C6.09932 4.86961 5.375 6.56531 5.375 8.33341V12.3334H1.25V17.6667H5.375V28.3334H10.875V17.6667H15L16.375 12.3334H10.875V8.33341C10.875 7.97979 11.0199 7.64065 11.2777 7.3906C11.5356 7.14056 11.8854 7.00008 12.25 7.00008H16.375V1.66675Z" stroke="#EF771C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 				</svg> */}
+				<div  className="text-orange-600 hover:text-blue-500 text-xl" >
+				<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0.5" y="0.5" width="20" height="20" rx="5.5" stroke="#EF771C"/>
+				<path d="M14 4H12.0909C11.247 4 10.4377 4.36875 9.84105 5.02513C9.24431 5.6815 8.90909 6.57174 8.90909 7.5V9.6H7V12.4H8.90909V18H11.4545V12.4H13.3636L14 9.6H11.4545V7.5C11.4545 7.31435 11.5216 7.1363 11.6409 7.00502C11.7603 6.87375 11.9221 6.8 12.0909 6.8H14V4Z" 
+				stroke="#EF771C" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
 
-				<FiFacebook className="text-orange-600 hover:text-blue-500 text-xl" /> 
+				
+				</div>
 				</Link>
 			<Link  isExternal  href="https://www.youtube.com/@electroterma849" title="Youtube de Electroterma">
 				<AiOutlineYoutube className="text-orange-600 hover:text-livered text-2xl"/></Link>

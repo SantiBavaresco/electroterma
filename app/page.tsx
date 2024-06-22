@@ -72,10 +72,10 @@ export default function Home() {
                 />
                 <div className="z-10 absolute -translate-y-[31vh] flex justify-center items-center w-full my-4 gap-x-6">
                     
-                    <Button className="w-[19vw] h-[26vh] bg-transparent  invisible text-gray-700 font-bold py-2 px-4 rounded" ></Button>
-                    <Button className="w-[13vw] h-[26vh] bg-transparent   text-gray-700 font-bold py-2 px-4 rounded" as={Link} href="/soler&palau"></Button>
-                    <Button className="w-[13vw] h-[26vh] bg-transparent invisible text-gray-700 font-bold py-2 px-4 rounded">c</Button>
-                    <Button className="w-[19vw] h-[26vh] bg-transparent invisible text-gray-700 font-bold py-2 px-4 rounded">d</Button>
+                    <Button className="w-[19vw] h-[26vh] bg-transparent  text-gray-700 font-bold py-2 px-4 rounded" as={Link} href="/tempomatic"></Button>
+                    <Button className="w-[13vw] h-[26vh] bg-transparent  text-gray-700 font-bold py-2 px-4 rounded" as={Link} href="/soler&palau"></Button>
+                    <Button className="w-[13vw] h-[26vh] bg-transparent  text-gray-700 font-bold py-2 px-4 rounded" as={Link} href="/DTI"></Button>
+                    <Button className="w-[19vw] h-[26vh] bg-transparent  text-gray-700 font-bold py-2 px-4 rounded" as={Link} href="zila"></Button>
                     
 
                 </div>
@@ -180,8 +180,8 @@ export default function Home() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" /> </div>
-                                <span className="ml-6 lg:ml-10">Asesoramiento</span>
+                                    <BsWhatsapp className=" text-white  group-active:text-livered p- mx-1 lg:mx-2 lg:text-2xl" /> </div>
+                                <span className="ml-[35px] lg:ml-10">Asesoramiento</span>
                             </Button>
                             </a>
                             

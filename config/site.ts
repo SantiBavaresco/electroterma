@@ -11,6 +11,11 @@ export const siteConfig = {
 			dropdown: false,
         },
         {
+            label: "DTI",
+            href: "/DTI",
+			dropdown: false,
+        },
+        {
             label: "Soluciones en HVAC",
             href: "/solucionesHVAC",
 			dropdown: false,

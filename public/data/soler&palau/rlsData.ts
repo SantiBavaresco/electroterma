@@ -81,7 +81,7 @@ export const rlsData: ventDataType  = {
             },
             {
                 key: "qimn",
-                label: "QIMN [m3/h]",
+                label: "QIMN[m3/h]",
             },
             {
                 key: "ap",
@@ -93,7 +93,7 @@ export const rlsData: ventDataType  = {
             },
             {
                 key: "apmin",
-                label: "Ap MIN[mmca]",
+                label: "ApMIN[mmca]",
             },
 
         ],
