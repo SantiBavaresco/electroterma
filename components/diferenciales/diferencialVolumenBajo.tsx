@@ -26,7 +26,7 @@ export const DiferencialVolumenBajo : React.FC<Props> =  ({size, text, textSize,
 					
 					`}>
 
-					<span className="w-full pl-1 py-0 flex justify-start items-center">{text || "Niveles bajos de volumen"}</span>
+					<span className="w-full pl-1 py-0 flex justify-start items-center">{text || "Niveles bajos de ruido"}</span>
 				</p>
 				
 			</main>

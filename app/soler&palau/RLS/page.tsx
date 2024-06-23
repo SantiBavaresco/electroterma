@@ -477,7 +477,7 @@ export default function RLSPage() {
                         </div>
                         <div className="-z-10 mx-[3%]">
                                 <div className=" w-full mx-auto mt-0">
-                                    <div className="mt-2 flex items-center justify-center opacity-30">
+                                    <div className="mt-2 mr-8 flex items-end justify-end opacity-30">
                                         <Image
                                             alt="Otam Logo"
                                             className=""
@@ -489,12 +489,14 @@ export default function RLSPage() {
                                 </div>
                                 <div className=" w-full ml-auto lg:-mr-0">
                                     <div className="mt-0  flex items-end justify-end">
+                                        <a href="/" target="_top">
                                         <Image
                                             alt="Electroterma Logo"
                                             className=""
                                             src="../img/electrotermalogoletras.png"
                                             width={340}
                                         />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -568,12 +570,14 @@ export default function RLSPage() {
                                 </div>
                                 <div className="  w-full ml-auto ">
                                     <div className="mt-0  flex items-end justify-end">
+                                        <a href="/" target="_top">
                                         <Image
                                             alt="Electroterma Logo"
                                             className=""
                                             src="../img/electrotermalogoletras.png"
                                             width={140}
                                         />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

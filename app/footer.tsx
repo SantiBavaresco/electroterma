@@ -76,7 +76,7 @@ export default function Footer() {
 		</Link>
 		</div>
 		<div className=" -mt-20 absolute right-0 md:right-24 w-[60px] md:w-[90px]">
-			<Link href="/">
+			<Link href="/" target="_top">
 				<Image
 				src="../electroterma-logo.png"
 				// height={50}
