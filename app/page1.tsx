@@ -14,6 +14,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { lazy, Suspense, useState, useEffect } from "react";
 
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
+import { Navbar } from "@/components/navbar/navbar";
 
 
 // import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
@@ -63,6 +64,7 @@ export default function Home() {
            <section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
                     </section>
+            <Navbar/>
             <section >
                 <Image  
                     className="mt-10"

@@ -10,15 +10,13 @@ export const siteConfig = {
             href: "/",
 			dropdown: false,
         },
+
+
         {
-            label: "DTI",
-            href: "/DTI",
-			dropdown: false,
-        },
-        {
-            label: "Soluciones en HVAC",
-            href: "/solucionesHVAC",
-			dropdown: false,
+            label: "Tempomatic",
+            href: "/tempomatic",
+			dropdown: true,
+            dwData: itemsNavTempomatic,
         },
         {
             label: "Soler&Palau",
@@ -27,18 +25,21 @@ export const siteConfig = {
             dwData: itemsNavSolerPalau,
         },
         {
-            label: "Tempomatic",
-            href: "/tempomatic",
-			dropdown: true,
-            dwData: itemsNavTempomatic,
+            label: "DTI",
+            href: "/DTI",
+			dropdown: false,
         },
-        
 
         {
             label: "Zila",
             href: "/zila",
 			dropdown: true,
             dwData: itemsNavZila,
+        },
+        {
+            label: "Soluciones en HVAC",
+            href: "/solucionesHVAC",
+			dropdown: false,
         },
         {
             label: "Nosotros",
