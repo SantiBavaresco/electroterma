@@ -216,7 +216,7 @@ export default function Home() {
                         <h2 className="text-white text-center text-xs xm:text-base md:text-2xl 2xl:text-4xl font-nunito-bold">
                             {" "}
                             Conocé nuestras {" "}
-                            <Button size="lg" radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 text-midgray" onClick={handleEmailClick}>
+                            <Button size="lg" radius="full" className="border-4 border-white 2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 text-midgray" onClick={handleEmailClick}>
                             Soluciones
                         </Button>
                         </h2>
