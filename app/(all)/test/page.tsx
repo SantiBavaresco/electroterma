@@ -55,7 +55,7 @@ export default function TestPage() {
 							className="absolute w-[75%] -top-[0vw] left-[13%] -translate-y-[470%]"
 							alt="Tempomatic Logo"
 							radius="none"
-							src="../../img/home/homeBanner/Tempomatic.png"
+							src="../../img/home/homeBanner/tempomatic.png"
 							width="100%"
 						/>
 					</div>
@@ -172,7 +172,7 @@ export default function TestPage() {
 							className="absolute w-[75%] -top-[0vw] left-[13%] -translate-y-[470%]"
 							alt="Tempomatic Logo"
 							radius="none"
-							src="../../img/home/homeBanner/Tempomatic.png"
+							src="../../img/home/homeBanner/tempomatic.png"
 							width="100%"
 						/>
 					</div>
@@ -292,7 +292,7 @@ export default function TestPage() {
 							className="absolute w-[75%] -top-[0vw] left-[13%] -translate-y-[470%]"
 							alt="Tempomatic Logo"
 							radius="none"
-							src="../../img/home/homeBanner/Tempomatic.png"
+							src="../../img/home/homeBanner/tempomatic.png"
 							width="100%"
 						/>
 					</div>
