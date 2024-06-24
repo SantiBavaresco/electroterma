@@ -47,10 +47,10 @@ export default function Footer() {
 				</svg> */}
 				<div  className="text-orange-600 hover:text-blue-500 text-xl" >
 				<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<rect x="0.5" y="0.5" width="20" height="20" rx="5.5" stroke="#EF771C"/>
-				<path d="M14 4H12.0909C11.247 4 10.4377 4.36875 9.84105 5.02513C9.24431 5.6815 8.90909 6.57174 8.90909 7.5V9.6H7V12.4H8.90909V18H11.4545V12.4H13.3636L14 9.6H11.4545V7.5C11.4545 7.31435 11.5216 7.1363 11.6409 7.00502C11.7603 6.87375 11.9221 6.8 12.0909 6.8H14V4Z" 
-				stroke="#EF771C" stroke-linecap="round" stroke-linejoin="round"/>
+				<rect x="0.75" y="0.75" width="19.5" height="19.5" rx="5.25" stroke="#EF771C" stroke-width="1.5"/>
+				<path d="M14 4H12.3636C11.6403 4 10.9466 4.31607 10.4352 4.87868C9.9237 5.44129 9.63636 6.20435 9.63636 7V8.8H8V11.2H9.63636V16H11.8182V11.2H13.4545L14 8.8H11.8182V7C11.8182 6.84087 11.8757 6.68826 11.9779 6.57573C12.0802 6.46322 12.219 6.4 12.3636 6.4H14V4Z" stroke="#EF771C" stroke-linecap="round" stroke-linejoin="round"/>
 				</svg>
+
 
 				
 				</div>
