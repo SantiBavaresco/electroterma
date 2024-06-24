@@ -69,7 +69,7 @@ export default function Home() {
                 <Image  
                     className="mt-10"
                     alt="Otam Logo"
-                    src="../img/homeBanner.png"
+                    src="../img/home/homeBanner.png"
                     width="100%"
                 />
                 <div className="z-10 absolute -translate-y-[31vh] flex justify-center items-center w-full my-4 gap-x-6">
@@ -104,7 +104,7 @@ export default function Home() {
                 <Image  
                     classNames={{ wrapper: "min-w-full h-full"}}
                     alt="Diapositiva img-logo"
-                    src="../img/home1.png"
+                    src="../img/home/home1.png"
                     width={"100%"}
                 />
             </section>

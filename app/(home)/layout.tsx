@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import { Providers } from "../providers";
+import { Providers } from "../(all)/providers";
 import { Navbar } from "@/components/navbar/navbar";
 import { Link } from "@nextui-org/link";
 import { FiFacebook } from "react-icons/fi";
@@ -20,7 +20,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { usePathname } from 'next/navigation'
 
 import clsx from "clsx";
-import Footer from "../footer";
+import Footer from "../(all)/footer";
 
 
 

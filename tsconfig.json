@@ -27,7 +27,7 @@
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts",
-        "app/soler&palau/TDA/page.tsx",
+        "app/(all)/soler&palau/TDA/page.tsx",
         "components/imgslider/imageslider.jsx",
         "public/svg/ondas01svg.tsx",
         "./src/*"

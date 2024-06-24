@@ -1,7 +1,7 @@
 "use client";
 import { Link } from "@nextui-org/link";
 import Lottie from "lottie-react";
-import animationData from "../public/lottie/bulding-page.json";
+import animationData from "../../public/lottie/bulding-page.json";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
