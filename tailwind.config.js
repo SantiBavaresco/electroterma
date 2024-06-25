@@ -24,6 +24,21 @@ module.exports = {
       "2xl":	"1536px",
       "3xl":	"1850px",
     },
+    transitionDuration: {
+      DEFAULT: '4000ms',
+      "75": '75ms',
+      "100": '100ms',
+      "150": '150ms',
+      "200": '200ms',
+      "300": '300ms',
+      "500": '500ms',
+      "700": '700ms',
+      "1000": '1000ms',
+      "2000": '2000ms',
+      "4000": '4000ms',
+
+  },
+
     extend: {
       fontFamily:{
         lexend: "lexend",
@@ -36,6 +51,7 @@ module.exports = {
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
       },
+      
     },
     colors: {
       "primary": colors.orange,

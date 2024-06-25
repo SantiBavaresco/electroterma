@@ -65,7 +65,7 @@ export default function Home() {
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
                     </section>
             <Navbar/>
-            <section className="relative w-full h-[22vw] bg-gray-100 ">
+            <section className="relative w-full h-[22vw] bg-gray-00 ">
 				<div className="absolute w-[35%] top-[10.5vw] -left-[5.0vw]">
 					<Image  
 						className="mt-0"
@@ -89,13 +89,12 @@ export default function Home() {
 				<span className="flex flex-4 items-center justify-center w-[80%] mt-[0vw] h-full gap-[1vw] mx-auto">
 					<div
 						// className="w-[20vw]" 
-						className="w-1/4 relative opacity-70 hover:opacity-100
-						transition-all duration-100 
+						className="w-1/4 relative group
 						" 
 
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
-						<div className="opacity-60 hover:opacity-80
+						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
 						">
 							<Image  
 								className=" mt-0"
@@ -107,7 +106,7 @@ export default function Home() {
 						
 						<div className="">
 							<Image  
-								className="absolute w-[75%] -top-[0vw] left-[13%] -translate-y-[470%] "
+								className="absolute w-[75%] -top-[0vw] left-[13%] -translate-y-[470%] transition ease-in-out  opacity-100 group-hover:opacity-0"
 								alt="Tempomatic Logo"
 								radius="none"
 								src="../../img/home/homeBanner/tempomatic.png"
@@ -118,12 +117,11 @@ export default function Home() {
 					</div>
 					<div
 						// className="w-[13.5vw]" 
-						className="w-1/6 relative opacity-70 hover:opacity-100
-						transition-all duration-100 
-						"  
+						className="w-1/6 relative group"
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
-						<div className="opacity-60 hover:opacity-80">
+						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
+						">
 						<Image  
 							className="mt-0"
 							alt="Background S&P"
@@ -133,7 +131,7 @@ export default function Home() {
 						/>
 						</div>
 						<Image  
-							className="absolute w-[70%] -top-[0vw] left-[16%] -translate-y-[250%] opacity-100"
+							className="absolute w-[70%] -top-[0vw] left-[16%] -translate-y-[250%] transition ease-in-out  opacity-100 group-hover:opacity-0"
 							alt="S&P Logo"
 							radius="none"
 							src="../../img/home/homeBanner/syp.png"
@@ -143,12 +141,12 @@ export default function Home() {
 					</div>
 					<div
 						// className="w-[13.5vw]"
-						className="w-1/6 relative opacity-70 hover:opacity-100
-						transition-all duration-100 
+						className="w-1/6 relative group
 						"    
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
-						<div className="opacity-60 hover:opacity-80">
+						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
+						">
 						<Image  
 							className="mt-0"
 							alt="Background DTI"
@@ -157,7 +155,7 @@ export default function Home() {
 							width="100%"
 						/></div>
 						<Image  
-							className="absolute w-[70%] -top-[0vw] left-[16%] -translate-y-[185%] opacity-100"
+							className="absolute w-[70%] -top-[0vw] left-[16%] -translate-y-[185%] transition ease-in-out  opacity-100 group-hover:opacity-0"
 							alt="S&P Logo"
 							radius="none"
 							src="../../img/home/homeBanner/dti.png"
@@ -166,12 +164,12 @@ export default function Home() {
 					</div>
 					<div
 						// className="w-[20vw]" 
-						className="w-1/4 relative opacity-70 hover:opacity-100
-						transition-all duration-100 
+						className="w-1/4 relative opacity-70 group
 						"   
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
-						<div className="opacity-60 hover:opacity-80">
+						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
+						">
 						<Image  
 							className="mt-0"
 							alt="Background Zila"
@@ -180,7 +178,7 @@ export default function Home() {
 							width="100%"
 						/></div>
 						<Image  
-							className="absolute w-[37%] -top-[0vw] left-[30%] -translate-y-[142%] opacity-100"
+							className="absolute w-[37%] -top-[0vw] left-[30%] -translate-y-[142%] transition ease-in-out  opacity-100 group-hover:opacity-0"
 							alt="S&P Logo"
 							radius="none"
 							src="../../img/home/homeBanner/zila.png"

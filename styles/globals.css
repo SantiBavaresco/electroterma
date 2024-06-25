@@ -104,7 +104,9 @@
     .mainLayout {
         overflow: hidden;
     }
-
+    .force-duration div {
+      transition-duration: 3500ms;
+    }
     /* .card-footer {
         background-color: #fff;
         transition: background-color 0.2s ease-in-out;

@@ -41,13 +41,13 @@ export default function TestPage() {
 				<span className="flex flex-4 items-center justify-center w-[80%] mt-[0vw] h-full gap-[1vw] mx-auto">
 					<div
 						// className="w-[20vw]" 
-						className="w-1/4 relative opacity-70 hover:opacity-100
-						transition-all duration-100 
+						className="group w-1/4 relative 
+						transition-opacity duration-1000 erase-in-out
 						" 
 
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
-						<div className="opacity-60 hover:opacity-80
+						<div className="opacity-60 group-hover:opacity-100  transition duration-500 ease-in-out 
 						">
 							<Image  
 								className=" mt-0"
@@ -57,7 +57,7 @@ export default function TestPage() {
 								width="100%"
 							/>
 						
-						<div className="">
+						<div className="opacity-100 group-hover:opacity-0 transition duration-1000 ease-in-out">
 							<Image  
 								className="absolute w-[75%] -top-[0vw] left-[13%] -translate-y-[470%] "
 								alt="Tempomatic Logo"
@@ -142,6 +142,45 @@ export default function TestPage() {
 				</span>
 				
 
+			</section>
+
+
+
+
+
+			<section>
+				<div
+						// className="w-[20vw]" 
+						className="group w-1/4 relative 
+						duration-1000
+						" 
+						
+
+					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
+					>
+						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
+						">
+							<Image  
+							
+								className=" mt-0 "
+								alt="Background Tempomatic"
+								radius="none"
+								src="../../img/home/homeBanner/bgTempomatic.png"
+								width="100%"
+							/>
+						
+						<div className="" >
+							<Image  
+								
+								className="absolute w-[75%] -top-[0vw] left-[13%] -translate-y-[470%] transition ease-in-out  opacity-100 group-hover:opacity-0"
+								alt="Tempomatic Logo"
+								radius="none"
+								src="../../img/home/homeBanner/tempomatic.png"
+								width="100%"
+							/>
+						</div>
+						</div>
+					</div>
 			</section>
 		</main>
 	);
