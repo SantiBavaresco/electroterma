@@ -58,11 +58,11 @@ export default function SolerPalauPage() {
             </section>
             <section className="w-full px-[3%] text-center font-lexend text-[1.8vw]">
                 <p>
-                    <span className="relative text-[2.8vw] align-bottom text-livered-title ">"</span>
+                    <span className="relative text-[2.8vw] align-bottom text-livered-title ">&quot;</span>
                     <span className="">Gracias a <span className=" text-livered-title">nuestra alianza</span>, garantizamos</span><br/>
                     <span className="">soluciones de ventilación innovadoras y</span><br/>
                     <span className="">eficientes para asegurar una óptima calidad del</span><br/>
-                    <span className="">aire en todos los espacios <span className="text-[2.8vw] align-bottom text-livered-title">"</span></span><br/>
+                    <span className="">aire en todos los espacios <span className="text-[2.8vw] align-bottom text-livered-title">&quot;</span></span><br/>
                     
 
 
