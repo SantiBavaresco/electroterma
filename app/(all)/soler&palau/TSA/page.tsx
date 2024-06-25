@@ -253,7 +253,7 @@ export default function TSAPage() {
                     <Image
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
-                            className="z-0 w-[520px] md:w-[100%]  top-[75px] lg:top-[65px] 2xl:top-[70px] left-4 md:left-12"
+                            className="z-0 w-[520px] md:w-[100%]  mb-10 top-[75px] lg:top-[65px] 2xl:top-[70px] left-4 md:left-12"
                             src="../img/solerpalau/tsa/SolerPalauTsa1.png"
                             width={"100%"}
                         />
@@ -267,7 +267,7 @@ export default function TSAPage() {
                         {/* text-[13px] xl:text-2xl  2xl:text-3xl */}
 
                         
-                        <div className="w-[40%] 3xl:w-[40%] ml-auto flex justify-end md:justify-center
+                        <div className="w-[40%] 3xl:w-[40%] ml-auto mt-6 flex justify-end md:justify-center
                             
                             overflow-hidden">
                              <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 

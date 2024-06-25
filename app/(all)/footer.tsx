@@ -58,22 +58,7 @@ export default function Footer() {
 			<Link  isExternal  href="https://www.youtube.com/@electroterma849" title="Youtube de Electroterma">
 				<AiOutlineYoutube className="text-orange-600 hover:text-livered text-2xl"/></Link>
 		</div>
-		<Link
-			isExternal
-			className="flex items-center gap-1 text-current pt-2"
-			href="https://santiagobavaresco.ar"
-			title="Bavaresco Santiago Portfolio"
-		>
-			<p className="text-primary text-sm">
-				Bavaresco Santiago
-			</p>
-			 <span className="text-default-600 text-sm">
-				© 2024 
-			</span>
-			
-		   
-			
-		</Link>
+		
 		</div>
 		<div className=" -mt-20 absolute right-0 md:right-24 w-[60px] md:w-[90px]">
 			<Link href="/" target="_top">
@@ -85,6 +70,10 @@ export default function Footer() {
 				alt="hola"
 				/>
 			</Link>
+		</div>
+
+		<div>
+			
 		</div>
 	</footer>
 	);
