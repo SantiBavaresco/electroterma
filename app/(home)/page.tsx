@@ -65,7 +65,7 @@ export default function Home() {
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
                     </section>
             <Navbar/>
-            <section className="relative w-full h-[22vw] bg-gray-00 ">
+            <section className="relative w-full h-[22vw] bg-gray-00 overflow-hidden">
 				<div className="absolute w-[35%] top-[10.5vw] -left-[5.0vw]">
 					<Image  
 						className="mt-0"
@@ -87,11 +87,12 @@ export default function Home() {
 
 
 				<span className="flex flex-4 items-center justify-center w-[80%] mt-[0vw] h-full gap-[1vw] mx-auto">
-					<div
+					<a
 						// className="w-[20vw]" 
 						className="w-1/4 relative group
 						" 
-
+                        href="/tempomatic"
+                        target="_top"
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
 						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
@@ -103,7 +104,7 @@ export default function Home() {
 								src="../../img/home/homeBanner/bgTempomatic.png"
 								width="100%"
 							/>
-						
+						</div>
 						<div className="">
 							<Image  
 								className="absolute w-[75%] -top-[0vw] left-[13%] -translate-y-[470%] transition ease-in-out  opacity-100 group-hover:opacity-0"
@@ -113,11 +114,13 @@ export default function Home() {
 								width="100%"
 							/>
 						</div>
-						</div>
-					</div>
-					<div
+						
+					</a>
+					<a
 						// className="w-[13.5vw]" 
 						className="w-1/6 relative group"
+                        href="/soler&palau"
+                        target="_top"
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
 						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
@@ -138,11 +141,13 @@ export default function Home() {
 							width="100%"
 						/>
 
-					</div>
-					<div
+					</a>
+					<a
 						// className="w-[13.5vw]"
 						className="w-1/6 relative group
-						"    
+						"   
+                        href="/dti"
+                        target="_top"
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
 						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
@@ -161,11 +166,13 @@ export default function Home() {
 							src="../../img/home/homeBanner/dti.png"
 							width="100%"
 						/>
-					</div>
-					<div
+					</a>
+					<a
 						// className="w-[20vw]" 
 						className="w-1/4 relative opacity-70 group
 						"   
+                        href="/zila"
+                        target="_top"
 					// className="absolute w-[30%] top-[20%]  -right-[5vw]"
 					>
 						<div className="transition ease-in-out  opacity-60 group-hover:opacity-100
@@ -184,7 +191,7 @@ export default function Home() {
 							src="../../img/home/homeBanner/zila.png"
 							width="100%"
 						/>
-					</div>
+					</a>
 				</span>
 				
 
@@ -307,7 +314,7 @@ export default function Home() {
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
                                     <BsWhatsapp className=" text-white  group-active:text-livered p- mx-1 lg:mx-2 lg:text-2xl" /> </div>
-                                <span className="ml-[35px] lg:ml-10">Asesoramiento</span>
+                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a>
                             

@@ -246,7 +246,7 @@ export default function TDAPage() {
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
                             className=" w-[500px] md:w-[100%]  top-[75px] lg:top-[65px] 2xl:top-[70px] left-4 md:left-12"
-                            src="../img/solerpalau/tda/SolerPalauTda1.png"
+                            src="../img/solerpalau/tda/SolerPalauTda0.png"
                             width={"100%"}
                             
 

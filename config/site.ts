@@ -19,7 +19,7 @@ export const siteConfig = {
             dwData: itemsNavTempomatic,
         },
         {
-            label: "Soler&Palau",
+            label: "Soler & Palau",
             href: "/soler&palau",
 			dropdown: true,
             dwData: itemsNavSolerPalau,
@@ -41,12 +41,12 @@ export const siteConfig = {
             href: "/solucionesHVAC",
 			dropdown: false,
         },
-        {
-            label: "Nosotros",
-            href: "/nosotros",
-			dropdown: false,
+        // {
+        //     label: "Nosotros",
+        //     href: "/nosotros",
+		// 	dropdown: false,
 
-        },
+        // },
         {
             label: "Tienda Online",
             href: "https://www.tiendaelectroterma.com.ar/",

@@ -52,6 +52,50 @@ export const itemsNavSolerPalau: ItemsNavbar[] = [
         },
     ];
 
+    export const itemsNavSolerPalauHome: ItemsNavbar[] = [
+        {
+            key: "first",
+            category: "solor&palau",
+            label: ["Ventilador Centrífugo", "Autolimitante - RLS"],
+            labelShort: "RLS",
+            img: "../../img/navbar/NavBarRLS1SolerPalau.png",
+            href: "/soler&palau/RLS",
+            color: "bg-livered-title",
+        },
+        {
+            key: "copy",
+            category: "solor&palau",
+            label: ["Ventilador Centrífugo Multipala - TSA"],
+            labelShort: "TSA",
+            img: "../../img/navbar/NavBarTSA1SolerPalau.png",
+            href: "/soler&palau/TSA",
+            color: "bg-livered-title",
+
+
+        },
+        {
+            key: "edit",
+            category: "solor&palau",
+            label: ["Ventilador Centrífugo - TDA"],
+            labelShort: "TDA",
+            img: "../../img/navbar/NavBarTDA1SolerPalau.png",
+            href: "/soler&palau/TDA",
+            color: "bg-livered-title",
+
+        },
+        {
+            key: "last",
+            category: "solor&palau",
+            label: ["Hábitat"],
+            labelShort: "Hábitat",
+            img: "../../img/navbar/NavBarHabitat1SolerPalau.png",
+            href: "/soler&palau/habitat",
+            color: "bg-livered-title",
+
+        },
+    ];
+
+
 export const itemsNavTempomatic: ItemsNavbar[] = [
         {
             key: "11",
