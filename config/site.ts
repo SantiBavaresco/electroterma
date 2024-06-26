@@ -26,7 +26,7 @@ export const siteConfig = {
         },
         {
             label: "DTI",
-            href: "/DTI",
+            href: "/dti",
 			dropdown: false,
         },
 
