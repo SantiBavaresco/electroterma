@@ -237,7 +237,7 @@ export const Navbar = () => {
                                     >
                                         <DropdownTrigger>
                                             <div>
-                                                <p className="flex items-center justify-centerfont-nunito text-white text-2xl ">
+                                                <p className="flex items-center justify-centerfont-nunito text-white text-xl ">
                                                 <BsArrowBarLeft className="text-3xl"/>
                                                     {dropDown.label}
                                                 </p>
@@ -286,7 +286,7 @@ export const Navbar = () => {
                                         onClick={setFirstFalse}
                                     >
                                         <p
-                                            className={`font-nunito text-white text-2xl`}
+                                            className={`font-nunito text-white text-xl ml-[30px]`}
                                         >
                                             {dropDown.label}
                                         </p>

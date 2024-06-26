@@ -534,9 +534,9 @@ export default function TSAPage() {
                         </div>
                     </section>
                     
-                <section className=" pb-[10vh]">
+                {/* <section className=" pb-[10vh]">
 
-                         {/* Manual <Download /> */}
+                         Manual <Download />
                          <Button
                             className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw]"
                             radius="full"
@@ -545,13 +545,33 @@ export default function TSAPage() {
                         >
                             Manual <Download />
                         </Button>
-                                {/* <ModalPdf
+                                <ModalPdf
                                     url="../pdf/TSA.pdf"
                                     title="Manual"
                                     layer=" z-10 bg-livered font-nunito text-white 2xl:text-2xl md:ml-3 xl:ml-[11vw] "
                                     bigScreen={BigScreen}
-                                /> */}
+                                />
                         
+                    </section> */}
+                    <section className="pb-[10vh] w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
+                            
+                            overflow-hidden">
+                            
+                            <Button
+                                className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                radius="full"
+                                size={BigScreen ? "lg" : "sm"}
+                                onClick={handlePdfDownload}
+                            >
+                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <Download css=" text-white  group-active:text-livered mx-0 lg:mx-0 lg:text-xl" size={40} /> </div>
+                                <span className="ml-[35px] lg:ml-14 lg:text-xl xl:text-2xl">Manual</span>
+                            </Button>
+                            
                     </section>
                 </div>
 

@@ -22,7 +22,7 @@ const handleEmailClick = () => {
 
 export default function Footer() {
 	return (
-		<footer className="w-full flex flex-col text-xs md:text-base items-center justify-center py-3 bg-[#D9D9D9]">
+		<footer className="w-full flex flex-col text-xs md:text-base items-center justify-center py-3 bg-[#eeeeee]">
 		<div className="flex flex-col justify-center items-center ">
 		<span className="font-lexeng-bolder font-bold">Calle 5 entre 6 y 8</span>
 		<span className="font-lexeng-bold text-[10px] xm:text-xs">Parque Industrial Mar del Plata - Batán</span>
@@ -58,6 +58,7 @@ export default function Footer() {
 			<Link  isExternal  href="https://www.youtube.com/@electroterma849" title="Youtube de Electroterma">
 				<AiOutlineYoutube className="text-orange-600 hover:text-livered text-2xl"/></Link>
 		</div>
+
 		
 		</div>
 		<div className=" -mt-20 absolute right-0 md:right-24 w-[60px] md:w-[90px]">
@@ -71,9 +72,37 @@ export default function Footer() {
 				/>
 			</Link>
 		</div>
-
-		<div>
+		<div className="w-full px-[3%] py-2 mt-2 flex flew-row justify-between bg-[#D9D9D9]">
+			<Link
+				isExternal
+				className="flex items-center gap-1 text-current pt-2"
+				href="https://santiagobavaresco.ar"
+				title="Bavaresco Santiago Portfolio"
+				>
+					<p className="text-primary text-sm">
+						Bavaresco Santiago
+					</p>
+					<span className="text-default-600 text-sm">
+						© 2024 
+					</span>
+			</Link>
+			<Link
+				isExternal
+				className="flex items-center gap-1 text-current pt-2 w-[90px] mr-[3%]"
+				href="https://tandemasesoria.ar/"
+				title="Tandem"
+				
+			>
+				<Image
+					src="../img/tandem.png"
+					// height={50}
+					radius="none"
+					width="100%"
+					alt="hola"
+					/>
+		    
 			
+			</Link>
 		</div>
 	</footer>
 	);

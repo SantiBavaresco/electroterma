@@ -186,7 +186,7 @@ export default function RLSPage() {
                             </span>
 
                             <span><h1 
-                                className="mt-2 lg:mt-3 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title text-[5.0vw] xl:text-[5.35vw]"
+                                className="mt-2 lg:mt-3 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title text-[4.5vw] xl:text-[4.5vw]"
 
                             // className="mt-2 lg:mt-6 text-3xl lg:text-5xl  xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-8 leading-none font-nunito-bolder text-livered-title"
                             >
@@ -195,7 +195,7 @@ export default function RLSPage() {
                             </h1>
 
                             <h1 
-                                className="mt-2  leading-none  font-nunito-bolder text-livered-title text-[5.0vw] xl:text-[5.35vw]"
+                                className="mt-2  leading-none  font-nunito-bolder text-livered-title text-[4.5vw] xl:text-[4.5vw]"
                             // className="mt-2 w-full lg:mt-3 text-3xl lg:text-[44px] xl:text-[63px] 2xl:text-[75px] 3xl:text-[95px] 2xl:mt-4  leading-none  font-nunito-bolder text-livered-title"
                             >
                                 {/* AUTOLIMITANTE - RLS */}
@@ -226,7 +226,7 @@ export default function RLSPage() {
                             
                         </div>
                     </div>
-                    <div className="relative mr-[0vw] max-w-screen w-[50%] -mt-10 z-10 overflow-y-hidde
+                    <div className="relative mr-[0vw] max-w-screen w-[70%] -mt-14 pb-4 z-10 overflow-y-hidde
                           
                         -left-[10%] -top-2
                         md:top-6
@@ -413,7 +413,7 @@ export default function RLSPage() {
                             <DiferencialStockPermanente size={70} customWith={250} />
                         </div>
                     </section>
-                    <section className=" pb-[10vh]">
+                    {/* <section className=" pb-[10vh]">
                         <Button
                             className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl md:mr-3 xl:mr-[12vw]"
                             radius="full"
@@ -421,6 +421,27 @@ export default function RLSPage() {
                         >
                             Manual <Download />
                         </Button>
+                    </section> */}
+                   
+                    <section className="pb-[10vh] w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
+                            
+                            overflow-hidden">
+                            
+                            <Button
+                                className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
+                                radius="full"
+                                size={BigScreen ? "lg" : "sm"}
+                               
+                            >
+                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
+                                "> 
+                                    <Download css=" text-white  group-active:text-livered mx-0 lg:mx-0 lg:text-xl" size={40} /> </div>
+                                <span className="ml-[35px] lg:ml-14 lg:text-xl xl:text-2xl">Manual</span>
+                            </Button>
+                            
                     </section>
                 </div>
             </section>

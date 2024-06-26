@@ -45,7 +45,7 @@ export default function SolerPalauPage() {
 
     return (
         <main className="flex flex-col h-full items-center justify-center gap-4 pb-4 md:pb-10 bg-[url('/svg/ondasSolerPalau.svg')] bg-fill
-        bg-[center_top_38vw] bg-no-repeat">
+        bg-[center_top_37vw] bg-no-repeat overflow-hidden">
 
             {/* ------------- 3 columnas diferenciales superiores ------------- */}
             <section className="w-full px-[3%] mt-4">
@@ -56,13 +56,13 @@ export default function SolerPalauPage() {
                     width="100%"
                 />
             </section>
-            <section className="w-full px-[3%] text-center font-lexend text-[1.8vw]">
+            <section className="w-full px-[3%] mt-10 text-center font-lexend text-[1.6vw] overflow-hidden">
                 <p>
-                    <span className="relative text-[2.8vw] align-bottom text-livered-title ">&quot;</span>
-                    <span className="">Gracias a <span className=" text-livered-title">nuestra alianza</span>, garantizamos</span><br/>
-                    <span className="">soluciones de ventilación innovadoras y</span><br/>
-                    <span className="">eficientes para asegurar una óptima calidad del</span><br/>
-                    <span className="">aire en todos los espacios <span className="text-[2.8vw] align-bottom text-livered-title">&quot;</span></span><br/>
+                    <span className="relative  align-bottom text-livered-title ">&quot;</span>
+                    <span className="">Gracias a <span className=" text-livered-title">nuestra alianza</span>, garantizamos soluciones de </span><br/>
+                    <span className="">ventilación innovadoras y eficientes para asegurar una</span><br/>
+                    <span className=""> óptima calidad del aire en todos los espacios <span className=" align-bottom text-livered-title">&quot;</span></span><br/>
+                    <span className=""></span><br/>
                     
 
 
@@ -119,7 +119,7 @@ export default function SolerPalauPage() {
             </section> */}
 
             {/* ------------- Barra de navegacion S&P ------------- */}
-            <section className="z-0  h-full w-[100%]  md:mt-4 overflow-hidden ">
+            <section className="z-0  h-full w-[100%]  md:mt-2 overflow-hidden ">
                 
                 <div className="flex justify-center contain  w-max mx-auto mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
                     
