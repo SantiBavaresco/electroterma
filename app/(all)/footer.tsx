@@ -88,7 +88,7 @@ export default function Footer() {
 			</Link>
 			<Link
 				isExternal
-				className="flex items-center gap-1 text-current pt-2 w-[90px] mr-[3%]"
+				className="flex items-center gap-1 text-current pt-2 w-[70px] mr-[3.5%]"
 				href="https://tandemasesoria.ar/"
 				title="Tandem"
 				
