@@ -32,7 +32,7 @@ interface generalDataType {
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones1.png",
             lable: "SOLUCIÓN CLIMATIZACIÓN DE BARCOS",
-            href: "/soluciones/barcos",
+            href: "/solucionesHVAC/barcos",
           },
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones2.png",
