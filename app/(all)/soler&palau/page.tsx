@@ -52,7 +52,7 @@ export default function SolerPalauPage() {
                 <Image
                     alt="Home banner 1"
                     className="rounded-[44px]"
-                    src="../img/solerpalau/imgbanner/SolerPalauHome3.jpg"
+                    src="../img/solerpalau/imgbanner/SolerPalauHome4.jpg"
                     width="100%"
                 />
             </section>
@@ -177,13 +177,13 @@ export default function SolerPalauPage() {
                             <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
-                                className="z-10 mt-4 bg-livered font-nunito text-white w-full 2xl:text-2xl"
+                                className="z-10 mt-4 bg-[#EDEDED] font-nunito text-[#4C4B4B] w-full 2xl:text-2xl"
                                 radius="full"
                                 size="lg"
                                 href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
                             >
                                 <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
+                                    bg-gradient-to-r from-[#78E933] to-[#5C9104]
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
@@ -198,22 +198,22 @@ export default function SolerPalauPage() {
             <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
                     <Image
                         alt="Otam Logo"
-                        src="../img/imgHome/1.png"
+                        src="../img/home/imgHome/1.png"
                         width={450}
                     />
                     <Image
                         alt="Otam Logo"
-                        src="../img/imgHome/2.png"
+                        src="../img/home/imgHome/2.png"
                         width={450}
                     />
                     <Image
                         alt="Otam Logo"
-                        src="../img/imgHome/3.png"
+                        src="../img/home/imgHome/3.png"
                         width={450}
                     />
                     <Image
                         alt="Otam Logo"
-                        src="../img/imgHome/4.png"
+                        src="../img/home/imgHome/4.png"
                         width={450}
                     />
                 </section>

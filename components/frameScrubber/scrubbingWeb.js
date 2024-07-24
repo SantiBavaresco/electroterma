@@ -17,7 +17,7 @@ let frameCount = 600;
     console.log(keyAttribute);
     if(keyAttribute === "tsa") frameCount = 600
     if(keyAttribute === "tda") frameCount = 600
-    if(keyAttribute === "home") frameCount = 937
+    if(keyAttribute === "home") frameCount = 850
 
 
   }
@@ -94,6 +94,8 @@ const updateImage = (index) => {
     console.log("img n°: ",imgArray[index]);
 
     // context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
+    if(keyAttribute === "home") context.drawImage(imgArray[index], 250, -40, 1000, 563, 0, 0, canvas.width, canvas.height)
+    else
     (window.innerWidth <= 768 ) ?
         context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
         : context.drawImage(imgArray[index], 0, 0, 1000, 563, 0, 0, canvas.width, canvas.height)

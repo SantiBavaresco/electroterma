@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState, UIEvent, useRef } from "react";
-import Image from "next/image";
+// import Image from "next/image";
+import { Image } from "@nextui-org/image";
 // import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 // import "./styles.css";
 import "./styles1.css";
@@ -66,6 +67,12 @@ export default function FrameScrubber() {
     //     };
     //   }, []);
 
+    const html = document.documentElement;
+    const canvas = document.getElementById("hero-lightpass");
+    // const context = canvas.getContext("2d");
+    const ventElement = document.getElementById("vent");
+    let keyAttribute = ventElement.accessKey;
+
     useEffect(() => {
         require("./scrubbingWeb");
         return () => {};
@@ -77,59 +84,24 @@ export default function FrameScrubber() {
                 <div class="holder">
                     <canvas id="hero-lightpass" className="mb-0" />
                 </div>
-
+                
                 <div class="story text-3xl mr-0 lg:text-5xl ">
-                    <div>
-                        <div className="">
+                  
+                    <div className="relative">
 
-                                <span className="text-end  ">
-                                    {/* Envolvente <br />
-                                    Galvanizada */}
-                                    {" "}
-                                </span>
-
-                        </div>
+                   { (keyAttribute === "home") ? 
+                   <div className="fixed ">
+                        <Image  
+                        classNames={{ wrapper: "z-100 min-w-full h-full -translate-y-[42.60vw] "} }
+                        alt="Diagonal de diferenciales naranjas"
+                        src="../../img/home/homeBanner/hh2.png"
+                        width={"100%"}
+                    /></div>
+                    : <></>
+                    }
                     </div>
-                    <div className="m-auto">
-
-                            <span className="text-end  ">
-                                {" "}
-                                {/* Motor trifásico <br /> y de acople directo */}
-                            </span>
-
-                    </div>
-                    <div>
-
-                            <span className="text-end  ">
-                                {" "}
-                                {/* Rotor palas inclinadas <br /> hacia adelante */}
-                            </span>
- 
-                    </div> 
-
-                    
                    
-                    <div>
-                        {/* <div className=" mx-[3%] w-screen flex flex-col justify-end items-end overflow-hidden">
-                            <section className="hidden my-4 md:flex">
-                                <div className="flex flex-col gap-4 w-full justify-center items-start align-center ">
-                                    <DiferencialMaterialGalvanizado size={70} customWith={10} />
-                                    <DiferencialMultiposicion size={70} customWith={250} />
-                                    <DiferencialVolumenBajo size={70} customWith={150} />
-                                    <DiferencialStockPermanente size={70} customWith={250} />
-                                </div>
-                            </section>
-                        </div> */}
-                            {/* <span className="hidden lg:visible md:flex gap-1 flex-col items- align- justify-center  ">
-                                <div className="flex flex-col space-y-4 items-center mt-6 max-h-10 ">
 
-                                    <DiferencialMaterialGalvanizado/>
-                                    <DiferencialMultiposicion/>
-                                    <DiferencialVolumenBajo/>
-                                    <DiferencialStockPermanente/>
-                                </div>
-                            </span> */}
-                    </div>
                 </div>
             </section>
         </div>

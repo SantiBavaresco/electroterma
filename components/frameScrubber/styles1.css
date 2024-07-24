@@ -141,15 +141,15 @@ section.frames div.story div {
         color: var(--primary-color);
     }
     section.frames div.story div {
-        height: 108vh;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        /* height: 108vh; */
+        /* position: fixed; */
+        /* top: 0;
+        left: 0; */
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
 
-    text-align: center;
+        text-align: center; */
     }
 }
 
@@ -171,14 +171,7 @@ body{
     width: 100%;
     object-fit: cover;
 }
-.intro h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:  translate(-50%, -50%);
-    font-size:  40px;
-    color: red;
-}
+
 
 section{
     height: 100vh;
@@ -189,4 +182,13 @@ section h1{
     padding-top: 300px;
     text-align: center;
     font-size: 80px;
+} */
+/* .story {
+    position: relative; 
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    font-size:  40px;
+    color: red;
 } */
