@@ -141,7 +141,7 @@ export const Navbar = () => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className="h-[42px] md:h-[64px]  lg:px-10  flex justify-center items-center"
+            className="h-[42px] md:h-[64px]  lg:px-10  flex justify-center items-center font-nunito"
             position="sticky"
             height={"42px"}
 
@@ -237,7 +237,7 @@ export const Navbar = () => {
                                     >
                                         <DropdownTrigger>
                                             <div>
-                                                <p className="flex items-center justify-centerfont-nunito text-white text-xl ">
+                                                <p className="flex items-center justify-center1 font-nunito text-white text-xl ">
                                                 <BsArrowBarLeft className="text-3xl"/>
                                                     {dropDown.label}
                                                 </p>
