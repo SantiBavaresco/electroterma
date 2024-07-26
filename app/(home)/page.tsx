@@ -18,6 +18,7 @@ import { lazy, Suspense, useState, useEffect } from "react";
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 import { Navbar } from "@/components/navbar/navbar";
 import { ShoppingCart } from "@/public/svg/shoppingCart";
+import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
 
 
 // import ScrollVideoPlayer from "@/components/videoplayer/scrollVideo";
@@ -426,7 +427,10 @@ export default function Home() {
             <section className="-mt-10 mb-10 w-2/3 ">
                 <div className="mx-[3%] flex flex-row items-center justify-center gap-[2%] ">
                     {/* ------------- TEMPOMATIC ------------- */}
-                    <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                    
+                                {/* size={BigScreen ? "xl" : "lg"}  */}
+                        <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}/>
+                        {/* <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                         className=""
                                 target="_blank" rel="noopener noreferrer">
                             <MyButton
@@ -443,7 +447,7 @@ export default function Home() {
                                     <BsWhatsapp className=" text-white font-nunito  group-active:text-livered p- mx-1 lg:mx-2 lg:text-[2vw]" /> </div>
                                 <span className="ml-[35px] lg:ml-14">Asesoramiento</span>
                             </MyButton>
-                            </a>
+                        </a> */}
 
 
 
