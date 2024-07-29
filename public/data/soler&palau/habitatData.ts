@@ -26,11 +26,12 @@ interface habitatDataType {
     }; 
 
     extractorData: {
-        title1: string;
+        title: string;
+        subTitle1: string;
+        subTitle2: string;
         p1: string;
         p2: string;
-        p3: string;
-        subTitle: string;
+
     }; 
 
 
@@ -91,20 +92,21 @@ export const habitatData: habitatDataType  = {
 
     inlineData: {
         title: "VENTILADORES",
-        subTitle1: "HELICOCENTRÍFUGOS IN-LI",
-        subTitle2: "NE",
-        p1: "Recomendado para entornos laborales donde el confort",
-        p2: "y el bajo nivel sonoro se convierte es esencial.",
+        subTitle1: "HELICOCENTRÍFUGOS EN LÍN",
+        subTitle2: "EA",
+        p1: "La amplitud de la gama convierte a la serie TD-MIXVENT en una solución ",
+        p2: "eficaz para todo tipo de instalaciones de ventilación doméstica y comercial",
         p3: "",
         
     },
 
     extractorData: {
-        title1: "Hábitat",
-        subTitle: "Nos importa que disfrutes de tus momentos",
-        p1: "Integramos los espacios considerando cada detalle de calidad y confort para ofrecer bienestar y seguridad.",
-        p2: "Nuestra amplia gama de productos de ventilación y extractores de baño helicocentrífugos Soler & Palau, proporciona soluciones adecuadas para todo tipo de necesidades, ya sea en entornos domésticos o industriales.",
-        p3: "No solo facilitamos a nuestros usuarios la elección del modelo ideal, sino también el diseño preciso para realizar instalaciones de manera cómoda, segura y con garantías.",
+        title: "VENTILADORES",
+        subTitle1: "EXTRACTORES DE BA",
+        subTitle2: "ÑO",
+        p1: "Diseñados para ofrecer una ventilación eficiente y confortable en cuartos de baño ",
+        p2: "y pequeñas estancias tanto de locales residenciales como comerciales.",
+        // p3: "No solo facilitamos a nuestros usuarios la elección del modelo ideal, sino también el diseño preciso para realizar instalaciones de manera cómoda, segura y con garantías.",
     },
 
     videoYoutubeId1: "uMn8YFVzBkE",
@@ -241,32 +243,42 @@ export const habitatData: habitatDataType  = {
         columns: [
             {
                 key: "modelo",
-                label: "MODELO TSA",
+                label: "TD-MIXVENT",
             },
             {
                 key: "qimn",
-                label: "QIMN [m3/h]",
+                label: "Velocidad (rpm)",
             },
             {
                 key: "ap",
-                label: "Ap[mmca]",
+                label: "Potencia absorbida máxima (W)",
             },
             {
                 key: "qm3",
-                label: "Q[m3/h]",
+                label: "Intensidad absorbida máxima (A)",
             },
             {
                 key: "apmax",
-                label: "Ap MAX[mmca]",
+                label: "Caudal en descarga libre (m3/h)",
             },
             {
                 key: "qmax",
-                label: "QMAX[m3/h]",
+                label: "Temperatura de trabajo (°C)",
             },
             {
                 key: "apmin",
-                label: "Ap MIN[mmca]",
+                label: "Nivel de presión sonora* (dB(A))",
             },
+            {
+                key: "apmin",
+                label: "Ø conducto (mm)",
+            },
+            {
+                key: "apmin",
+                label: "Peso (kg)",
+            },
+
+
 
         ],
         

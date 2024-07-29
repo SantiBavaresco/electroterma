@@ -32,6 +32,8 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import SimpleSlider from "@/components/imgslider/slickSlider";
 import { Download } from "@/public/svg/download";
 import { TableSolerPalau } from "@/components/table/tableSoler&palau";
+import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
+import { TiendaButton } from "@/components/custonButtons/tienda";
 
 
 export default function HabitatInlinePage() {
@@ -144,7 +146,7 @@ export default function HabitatInlinePage() {
             </section> */}
 
             {/* ------------- Consultanos ------------- */}
-            <section className="w-full xl:px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
+            {/* <section className="w-full xl:px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-24">
                         <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
@@ -159,14 +161,14 @@ export default function HabitatInlinePage() {
                                     group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                                 "> 
-                                    {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
+                                    
                                     <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
                                     </div>
                                 <span className="ml-[30px] lg:ml-10">Escribinos</span>
                         </Button>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="flex flex-col px-[3%] w-full">
 
@@ -203,7 +205,7 @@ export default function HabitatInlinePage() {
                         {habitatData.inlineData.subTitle1}
                         <span className=" underline decoration-[3px] underline-offset-8">{habitatData.inlineData.subTitle2}</span>
                     </h2>
-                    <p className="text-[#9D9D9C] text-[2.5vw] md:text-[2vw] xl:text-[1.7vw]">
+                    <p className="text-[#9D9D9C] text-[2.5vw] md:text-[2vw] xl:text-[1.5vw]">
                         <br/>
                         <span>{habitatData.inlineData.p1}</span>
                         <br/>
@@ -225,55 +227,32 @@ export default function HabitatInlinePage() {
                 {BigScreen ? 
                     <>
                     {/* ------------- WEB ------------- */}
-                    <section className="grid grid-cols-[37%_37%_26%] gap-4 p-3 mx-[3%]">
-                        {/* ------------- COL 1 ------------- */}
+                    <section className="p-3 mx-[14%]">
+                        <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline0.png"
+                                    width="100%"
+                                />
+                    </section>
+                    {/* <section className="grid grid-cols-[37%_37%_26%] gap-4 p-3 mx-[3%]">
+                        {/* ------------- COL 1 ------------- *
                         <div className="  w-full h-max overflow-hidden">
                             <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline1.png"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline0.png"
                                     width="100%"
                                 />
-                            <Image
+                            {/* <Image
                                     alt="SolerPalauHabitatInline3.png"
                                     className=""
                                     src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline3.png"
                                     width="100%"
-                                />
+                                /> *
                         </div>
-                        {/* ------------- COL 2 ------------- */}
-                        <div className="  w-full h-max overflow-hidden">
-                            <Image
-                                    alt="SolerPalauHabitatInline2.png"
-                                    className="mb-2"
-                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline2.png"
-                                    width="100%"
-                                />
-                            <Image
-                                    alt="SolerPalauHabitatInline4.png"
-                                    className=""
-                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline4.png"
-                                    width="100%"
-                                />
-                        </div>
-                        {/* ------------- COL 3 ------------- */}
-                        <div className=" w-full flex flex-col justify-center items-center">
-                            <Image
-                                    alt="SolerPalauHabitatInline5.png"
-                                    className=""
-                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline5.png"
-                                    width="100%"
-                                    height="100%"
-                                />
-                            <Button
-                                className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl mt-16"
-                                radius="full"
-                                size={BigScreen ? "lg" : "sm"}
-                            >
-                                Manual <Download />
-                            </Button> 
-                        </div>
-                    </section>
+                        
+                    </section> */}
                     </>
                     : <>
                     {/* ------------- MOBILE ------------- */}
@@ -294,61 +273,57 @@ export default function HabitatInlinePage() {
                 
 
                 {/* ------------- Tabla ------------- */}
-                <section className={`flex flex-col  items-start my-10 mx-[5%] gap-4 `}>
-                <TableSolerPalau tableData={habitatData.tableData}/>
-                </section>
-
-
-                {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
-                <section className="flex  h-full ">
-                    <div className="flex flex-col md:flex-row mx-auto justify-center  items-center gap-x-6 xl:my-16">
-                        <a href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} 
-                                target="_blank" rel="noopener noreferrer">
-                            <Button
-                                className="z-10 mt-4 bg-livered-title font-nunito text-white 3xl:ml-32 2xl:text-2xl"
-                                radius="full"
-                                size={BigScreen ? "lg" : "md"} 
-                                // href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} target="_blank"
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-3xl" /> 
-                                    </div>
-                                <span className="ml-[35px] lg:ml-10 lg:text-3xl">Asesoramiento</span>
-                            </Button>
-                        </a>
-                        <a href={`${habitatData.tiendaOnline}`}
-                                target="_blank" rel="noopener noreferrer">
-                            <MyButton
-                                className="z-10 mt-4 bg-[#EB581E] font-nunito text-white 3xl:ml-32 2xl:text-2xl"
-                                radius="full"
-                                size={BigScreen ? "xl" : "lg"}
-                                // href={`${habitatData.tiendaOnline}`} target="_blank"
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3 px-4   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#E80303] to-[#EF771C]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    {/* <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" />  */}
-                                    <ShoppingCart size={BigScreen ? 40 : 25}/>
-                                </div>
-                                <span className="ml-10 lg:ml-10 lg:text-3xl">Tienda Online</span>
-                            </MyButton>
-                        </a>
-                    </div>
+                <section className={`flex flex-col  items-start my-10 mx-[3%] gap-4 `}>
+                {/* <TableSolerPalau tableData={habitatData.tableData}/> */}
+                    <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInlineTabla.jpg"
+                                    width="100%"
+                                />
                 </section>
 
                 {/* ------------- DISFRUTA ------------- */}
                 <section className="flex items-center justify-center text-livered-title  my-10 pt-4">
                     <div className="text-center">
-                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">Conoce toda la línea de ventiladores</h1>
-                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">helicocentrífugos In-line </h1>
+                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw]   ">Conoce toda la línea de ventiladores</h1>
+                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">helicocentrífugos en línea</h1>
                     </div>
                 </section>
+
+                {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
+                <section className="flex  h-full ">
+                    <div className="flex flex-col mx-auto justify-center  items-center gap-y-6 xl:my-16">
+                        <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
+                        <TiendaButton size={BigScreen ? 70 : 35} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
+                    </div>
+                </section>
+
+                
+
+                {/* ------------- PAYMENT ------------- */}
+                {BigScreen ? 
+                    <>
+                        {/* ------------- WEB ------------- */}
+                        <section className="flex items-center justify-center mx-[7%] bg-red-00  h-full">
+                                    <Image
+                                        alt="Payment"
+                                        className=""
+                                        src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
+                                        width="100%"
+                                    />
+                        </section>
+                    </> : 
+                    <>
+                        {/* ------------- MOBILE ------------- */}
+                        <section className=" h-[55vw] py-auto">
+                            <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} autoPlay/>
+                        </section>
+                    </>
+                }
+                
+
+
 
                 {/* ------------- PAYMENT ------------- */}
                 {BigScreen ? 
@@ -385,6 +360,9 @@ export default function HabitatInlinePage() {
                             width="100%"
                         />
                         </a>
+                    </div>
+                    <div>
+                    <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/>
                     </div>
                    
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">

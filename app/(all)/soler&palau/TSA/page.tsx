@@ -50,6 +50,8 @@ import { TableSolerPalau } from "@/components/table/tableSoler&palau";
 import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 import { MailSvg } from "@/public/svg/mailSvg";
 import ModalPdf from "@/components/pdfReader/modalPdfReader";
+import { ManualButton } from "@/components/custonButtons/manual";
+import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
 
 
 export default function TSAPage() {
@@ -270,7 +272,7 @@ export default function TSAPage() {
                         <div className="w-[40%] 3xl:w-[40%] ml-auto mt-6 flex justify-end md:justify-center
                             
                             overflow-hidden">
-                             <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                            {/* <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="z-10 xl:translate-x-32 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
@@ -286,7 +288,8 @@ export default function TSAPage() {
                                     <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
                                 <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
-                            </a>
+                            </a> */}
+                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} css={"z-10 xl:translate-x-32"}/>
                             
 
                         </div>
@@ -410,7 +413,7 @@ export default function TSAPage() {
                             width={"100%"}
                         />
                         <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">
-                        <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                        {/* <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="z-10 bg-livered font-nunito text-white ml-auto  "
@@ -426,7 +429,8 @@ export default function TSAPage() {
                                     <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
                                 <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
-                            </a>
+                            </a> */}
+                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}/>
                         </div>
                         
                     </div>
@@ -557,7 +561,7 @@ export default function TSAPage() {
                             
                             overflow-hidden">
                             
-                            <Button
+                            {/* <Button
                                 className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
                                 radius="full"
                                 size={BigScreen ? "lg" : "sm"}
@@ -570,7 +574,8 @@ export default function TSAPage() {
                                 "> 
                                     <Download css=" text-white  group-active:text-livered mx-0 lg:mx-0 lg:text-xl" size={40} /> </div>
                                 <span className="ml-[35px] lg:ml-14 lg:text-xl xl:text-2xl">Manual</span>
-                            </Button>
+                            </Button> */}
+                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TSA.pdf"} dwName={"TSA Manual.pdf"}/>
                             
                     </section>
                 </div>
@@ -801,7 +806,7 @@ export default function TSAPage() {
                         </div>
                         <div className="w-full float-right flex justify-end items-end lg:pr-0 2xl:mr-[5%] md:pr-0">
 
-                            <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
+                            {/* <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
                                 target="_blank" rel="noopener noreferrer">
                             <Button
                                 className="  z-10 bg-livered text-white 2xl:text-2xl"
@@ -817,7 +822,8 @@ export default function TSAPage() {
                                     <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
                                 <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
-                            </a>
+                            </a> */}
+                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}/>
                         </div>
                     </div>
                 </div>

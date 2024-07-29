@@ -29,6 +29,11 @@ import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImage
 
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import { TiendaButton } from "@/components/custonButtons/tienda";
+import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
+
+import { DiferencialFacilInstalacion } from "@/components/diferenciales/diferencialFacilInstalacion";
+import { EscribinosButton } from "@/components/custonButtons/escribinos";
 
 
 export default function HabitatPage() {
@@ -99,7 +104,7 @@ export default function HabitatPage() {
             </section>
 
             {/* ------------- Consultanos ------------- */}
-            <section className="w-full xl:px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
+            {/* <section className="w-full xl:px-[3%] max-h-[50%] py-0 font-size overflow-hidden">
                 <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-24">
                         <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
@@ -108,20 +113,11 @@ export default function HabitatPage() {
                         </h2>
                     </div>
                     <div className="mr-4 md:mr-12  ">
-                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
-                            <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
-                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
-                                    </div>
-                                <span className="ml-[30px] lg:ml-10">Escribinos</span>
-                        </Button>
+                        <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} />
+
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="flex flex-col px-[3%] w-full">
 
@@ -308,15 +304,18 @@ export default function HabitatPage() {
                     {/* ------------- WEB ------------- */}
                     <section className="flex-grow  my-16  bg-red-00 ">
                         <div className="flex flex-col justify-center mx-auto gap-4 xl:gap-0 xl:flex-row xl:justify-around w-max xl:w-full py-1">
-                            <div className="">
-                                <DiferencialCompuertaAntiretorno/>
-                            </div>
-                            <div>
-                                <DiferencialVolumenBajo text="Bajo nivel sonoro"/>
-                            </div>
                             <div>
                                 <DiferencialGranConfort />
                             </div>
+                            
+                            <div>
+                                <DiferencialVolumenBajo text="Bajo nivel sonoro"/>
+                            </div>
+
+                            <div className="">
+                                <DiferencialFacilInstalacion />
+                            </div>
+                            
                         </div>
                     </section>
                     </> : 
@@ -367,44 +366,9 @@ export default function HabitatPage() {
 
                 {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
                 <section className="flex  h-full ">
-                    <div className="flex flex-col md:flex-row mx-auto justify-center  items-center gap-x-6 xl:my-16">
-                        {/* <a href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} 
-                                target="_blank" rel="noopener noreferrer">
-                            <Button
-                                className="z-10 mt-4 bg-livered-title font-nunito text-white 3xl:ml-32 2xl:text-2xl"
-                                radius="full"
-                                size={BigScreen ? "lg" : "md"} 
-                                // href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} target="_blank"
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-3xl" /> 
-                                    </div>
-                                <span className="ml-[35px] lg:ml-14 lg:text-3xl">Asesoramiento</span>
-                            </Button>
-                        </a> */}
-                        <a href={`${habitatData.tiendaOnline}`}
-                                target="_blank" rel="noopener noreferrer">
-                            <MyButton
-                                className="z-10 mt-4 bg-[#EB581E] font-nunito text-white 2xl:text-2xl"
-                                radius="full"
-                                size={BigScreen ? "xl" : "lg"}
-                                // href={`${habitatData.tiendaOnline}`} target="_blank"
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3 px-4   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#E80303] to-[#EF771C]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    {/* <BsWhatsapp className=" text-white  group-active:text-livered p- lg:text-2xl" />  */}
-                                    <ShoppingCart size={BigScreen ? 40 : 25}/>
-                                </div>
-                                <span className="ml-10 lg:ml-10 lg:text-3xl">Tienda Online</span>
-                            </MyButton>
-                        </a>
+                    <div className="flex flex-col mx-auto justify-center  items-center gap-y-6 xl:my-16">
+                        <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
+                        <TiendaButton size={BigScreen ? 70 : 35} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
                     </div>
                 </section>
 
@@ -453,24 +417,7 @@ export default function HabitatPage() {
                         </a>
                     </div>
                     <div>
-                        <a href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} 
-                                target="_blank" rel="noopener noreferrer">
-                            <Button
-                                className="z-10 mt-4 bg-livered-title font-nunito text-white 2xl:text-2xl"
-                                radius="full"
-                                size={BigScreen ? "lg" : "md"} 
-                                // href={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`} target="_blank"
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-3xl" /> 
-                                    </div>
-                                <span className="ml-[35px] lg:ml-14 lg:text-3xl">Asesoramiento</span>
-                            </Button>
-                            </a>
+
                     </div>
                    
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
