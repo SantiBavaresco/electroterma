@@ -271,7 +271,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla1.png"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla1.jpg"
                                     width="100%"
                                 />
                 </section>
@@ -316,7 +316,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla2.png"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla2.jpg"
                                     width="100%"
                                 />
                 </section>
