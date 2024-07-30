@@ -206,7 +206,7 @@ export default function HabitatInlinePage() {
                         {habitatData.extractorData.subTitle1}
                         <span className=" underline decoration-[3px] underline-offset-8">{habitatData.extractorData.subTitle2}</span>
                     </h2>
-                    <p className="text-[#9D9D9C] text-[2.5vw] md:text-[2vw] xl:text-[1.5vw]">
+                    <p className="text-[#575756] text-[2.5vw] md:text-[2vw] xl:text-[1.5vw]">
                         <br/>
                         <span>{habitatData.extractorData.p1}</span>
                         <br/>
@@ -271,7 +271,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla1.jpg"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla1.png"
                                     width="100%"
                                 />
                 </section>
@@ -316,7 +316,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla2.jpg"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla2.png"
                                     width="100%"
                                 />
                 </section>
@@ -332,26 +332,6 @@ export default function HabitatInlinePage() {
 
                 
 
-                {/* ------------- PAYMENT ------------- */}
-                {BigScreen ? 
-                    <>
-                        {/* ------------- WEB ------------- */}
-                        <section className="flex items-center justify-center mx-[7%] bg-red-00  h-full">
-                                    <Image
-                                        alt="Payment"
-                                        className=""
-                                        src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
-                                        width="100%"
-                                    />
-                        </section>
-                    </> : 
-                    <>
-                        {/* ------------- MOBILE ------------- */}
-                        <section className=" h-[55vw] py-auto">
-                            <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} autoPlay/>
-                        </section>
-                    </>
-                }
                 
 
 
@@ -376,9 +356,35 @@ export default function HabitatInlinePage() {
                         </section>
                     </>
                 }
-                
 
-              
+                {/* ------------- NAVEGACION ------------- */}
+                <section className={`flex flex-row  items-start my-10 mx-[15%] gap-16 `}>
+                    <a href="/soler&palau" className="hover:opacity-70">
+                        <Image
+                            alt="SolerPalauHabitatInline1.png"
+                            className="mb-2"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav1.png"
+                            width="100%"
+                        />
+                    </a>
+                    <a href="/soler&palau/habitat/inline" className="hover:opacity-70">
+                        <Image
+                            alt="SolerPalauHabitatInline1.png"
+                            className="mb-2"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav2.png"
+                            width="100%"
+                        />
+                    </a>
+                    <a href="/soler&palau/habitat/extractor" className="hover:opacity-70">
+                        <Image
+                            alt="SolerPalauHabitatInline1.png"
+                            className="mb-2"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav3.png"
+                            width="100%"
+                        />
+                    </a>
+                </section>
+
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
 
                 <section className="flex flex-row justify-between  items-center  h-full">

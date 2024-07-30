@@ -147,7 +147,7 @@ export default function HabitatPage() {
                 </section>
 
                 {/* ------------- Parrafo Habitat ------------- */}
-                <article className=" flex  items-center justify-center font-nunito-thin text-[#9D9D9C] ">
+                <article className=" flex  items-center justify-center font-nunito-thin text-[#575756] ">
                     <div className="w-3/4  max-w-[700px]">
                         <h1 className=" text-[4vw]">{habitatData.pageData.title1}</h1>
                         <div className="text-[2.5vw] md:text-[2vw] xl:text-[1.1vw]">
@@ -165,7 +165,7 @@ export default function HabitatPage() {
                 {/* ------------- Titulo post parrafo ------------- */}
                 <section className="flex items-center justify-center my-4 md:my-10">
                     <div>
-                        <h1 className="font-nunito-thin text-[3.5vw] text-[#9D9D9C] py-4">
+                        <h1 className="font-nunito-thin text-[3.5vw] text-[#575756] py-4">
                             {habitatData.pageData.subTitle}
                         </h1>
                     </div>
@@ -204,7 +204,7 @@ export default function HabitatPage() {
                                     size="lg"
                                     onClick={()=>(window.open("/soler&palau/habitat/inline", '_blank'))}
                                 >
-                                    más Info </Button>
+                                    Más info </Button>
                             </div>
                         </div>
 
@@ -232,7 +232,7 @@ export default function HabitatPage() {
                                     size="lg"
                                     onClick={()=>(window.open("/soler&palau/habitat/extractor", '_blank'))}
                                 >
-                                    más Info </Button>
+                                    Más info </Button>
                             </div>
                         </div>
                     </section>
@@ -417,7 +417,9 @@ export default function HabitatPage() {
                         </a>
                     </div>
                     <div>
-
+                    
+                    <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/>
+                    
                     </div>
                    
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">

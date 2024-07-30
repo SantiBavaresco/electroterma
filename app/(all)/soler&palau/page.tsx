@@ -45,18 +45,18 @@ export default function SolerPalauPage() {
 
     return (
         <main className="flex flex-col h-full items-center justify-center gap-4 pb-4 md:pb-10 bg-[url('/svg/ondasSolerPalau.svg')] bg-fill
-        bg-[center_top_37vw] bg-no-repeat overflow-hidden">
+        bg-[center_top_36vw] bg-no-repeat overflow-hidden">
 
             {/* ------------- 3 columnas diferenciales superiores ------------- */}
             <section className="w-full px-[3%] mt-4">
                 <Image
                     alt="Home banner 1"
                     className="rounded-[44px]"
-                    src="../img/solerpalau/imgbanner/SolerPalauHome4.jpg"
+                    src="../img/solerpalau/imgbanner/SolerPalauHome4.png"
                     width="100%"
                 />
             </section>
-            <section className="relative w-full px-[3%] mt-10 text-center font-lexend text-[1.6vw] overflow-hidden">
+            <section className="relative w-full px-[3%] mt-10 mb-10 text-center font-lexend text-[1.6vw] overflow-hidden">
                 <p>
                     {/* <span className="relative  align-bottom text-livered-title ">&quot;</span> */}
                     <div className="absolute top-0 left-[23%] lg:left-[24%] xl:left-[25%] 2xl:left-[26%]">
