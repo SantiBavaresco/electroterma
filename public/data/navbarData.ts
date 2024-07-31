@@ -112,7 +112,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             label: ["UTA"],
             labelShort: "UTA",
             img: "../../img/navbar/Tempomatic2.png",
-            href: "/tempomatic/TSA",
+            href: "/tempomatic/uta",
             color : "bg-[#EF7916]",
 
         },

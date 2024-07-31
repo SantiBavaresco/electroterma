@@ -49,6 +49,10 @@ import { VinietaRojaSVG } from "@/public/svg/vinietaRoja";
 import { IoMailOutline } from "react-icons/io5";
 import { MailSvg } from "@/public/svg/mailSvg";
 
+import { ManualButton } from "@/components/custonButtons/manual";
+import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
+import { EscribinosButton } from "@/components/custonButtons/escribinos";
+
 
 export default function RLSPage() {
 
@@ -106,19 +110,9 @@ export default function RLSPage() {
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12  ">
-                        
-                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0" onClick={handleEmailClick}>
-                            <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
-                                    <IoMailOutline className=" group-active:text-livered text-white lg:text-3xl"/>
-                                    </div>
-                                <span className="ml-[30px] lg:ml-10">{" "}Escribinos</span>
-                        </Button>
+                    <div className="mr-4 md:mr-12  -mt-2 ">
+                    
+                    <EscribinosButton size={BigScreen ? 30 : 25} screen={BigScreen ? "lg" : "lg"} />
                     </div>
                 </div>
             </section>
@@ -260,23 +254,7 @@ export default function RLSPage() {
                         <div className="w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
                             
                             overflow-hidden">
-                             <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
-                                target="_blank" rel="noopener noreferrer">
-                            <Button
-                                className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
-                                radius="full"
-                                size={BigScreen ? "lg" : "sm"}
-                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
-                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
-                            </Button>
-                            </a>
+                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}/>
                             
 
                         </div>
@@ -343,23 +321,7 @@ export default function RLSPage() {
                             width={"100%"}
                         />
                         <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">
-                        <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
-                                target="_blank" rel="noopener noreferrer">
-                            <Button
-                                className="z-10 bg-livered font-nunito text-white ml-auto  "
-                                radius="full"
-                                size="sm"
-                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
-                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
-                            </Button>
-                            </a>
+                        <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} />
                         </div>
                         
                     </div>
@@ -427,21 +389,7 @@ export default function RLSPage() {
                             
                             overflow-hidden">
                             
-                            <Button
-                                className="z-10 mt-4 bg-livered font-nunito text-white 3xl:ml-32 2xl:text-2xl"
-                                radius="full"
-                                size={BigScreen ? "lg" : "sm"}
-                               
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    <Download css=" text-white  group-active:text-livered mx-0 lg:mx-0 lg:text-xl" size={40} /> </div>
-                                <span className="ml-[35px] lg:ml-14 lg:text-xl xl:text-2xl">Manual</span>
-                            </Button>
-                            
+                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TSA.pdf"} dwName={"TSA Manual.pdf"}/>
                     </section>
                 </div>
             </section>
@@ -650,25 +598,9 @@ export default function RLSPage() {
                         </a>
 
                         </div>
-                        <div className="w-full float-right flex justify-end items-end lg:pr-10 2xl:mr-[5%] md:pr-0">
+                        <div className="w-full float-right flex justify-end items-end lg:pr-0 2xl:mr-[5%] md:pr-0">
 
-                            <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
-                                target="_blank" rel="noopener noreferrer">
-                            <Button
-                                className="  z-10 bg-livered text-white 2xl:text-2xl"
-                                radius="full"
-                                size={BigScreen ? "lg" : "sm"}
-                                
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
-                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
-                            </Button>
-                            </a>
+                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} />
                         </div>
                     </div>
                 </div>

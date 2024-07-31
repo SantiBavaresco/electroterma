@@ -264,10 +264,12 @@ export default function Home() {
                         <h2 className="text-[#4C4B4B] text-center text-xs xm:text-base md:text-2xl 2xl:text-4xl font-nunito-bold">
                             {" "}
                             Conocé nuestras {" "}
+                            <Link href="/solucionesHVAC">
                             <Button size="lg" radius="full" className="border-[4px] border-white bg-[#EF771C]  2xl:text-3xl lg:px-8 mr-[23px] lg:mr-0 text-[#FFFFFF]" 
-                                onClick={handleEmailClick}>
+                                // onClick={handleEmailClick}
+                                >
                             Soluciones
-                        </Button>
+                        </Button></Link>
                         </h2>
                     </div>
                     <div className="mr-4 md:mr-12  ">
