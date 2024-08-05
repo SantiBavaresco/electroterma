@@ -74,23 +74,19 @@ export default function FrameScrubberWebUta() {
     return (
         <div className="" id="frame" ref={frameRef}>
             <section class="frames flex flex-col ">
-                <div className="z-10 w-1/2 flex flex-row justify-around mx-auto -translate-x-10 translate-y-0 bottom-20  bg-blue-500">
-                    <span>
-                        <h1> Seccion 1</h1>
-                        <h1> Seccion 1</h1>
-                        </span>
-                    <h1> Seccion 1</h1>
-
-                    <h1> Seccion 1</h1>
-
-
+                <div className="z-10 w-2/3 flex flex-col justify-around mx-auto  text-center font-lexend-bold text-[2.0vw] text-[#FF7800]
+                    -translate-x-0 translate-y-0 bottom-20  bg-blue-00">
+                    <h1>Nuestra UTA se adapta a múltiples aplicaciones, </h1>
+                    <h1>brindando soluciones eficientes </h1>
+                    <h1>para diversas necesidades.</h1>
                 </div>
+
                 <div class="holder">
                     <canvas id="hero-lightpass" className="mb- 16" />
                 </div>
 
                 <div class="story text-3xl mr-0 lg:text-5xl ">
-                    <div>
+                    {/* <div>
                     <span className="text-end  ">
                                 <h1> HOLA UTA 1</h1>
                                 </span>
@@ -104,7 +100,7 @@ export default function FrameScrubberWebUta() {
                     <span className="text-end  ">
                                 <h1> HOLA UTA 3</h1>
                                 </span>
-                    </div>
+                    </div> */}
                     {/* <div className="m-auto">
 
                             <span className="text-end  ">

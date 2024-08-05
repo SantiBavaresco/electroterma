@@ -18,7 +18,7 @@ let frameCount = 600;
     if(keyAttribute === "tsa") frameCount = 600
     if(keyAttribute === "tda") frameCount = 600
     if(keyAttribute === "home") frameCount = 850
-    if(keyAttribute === "uta") frameCount = 950
+    if(keyAttribute === "uta") frameCount = 73
 
 
 
@@ -45,7 +45,7 @@ let imgArray = [];
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index.toString().padStart(3, "0")}.jpg`;
 
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute}/frames/web/${index.toString()}.webp`;
-const currentFrame = (index) => `../img/tempomatic/uta/frames-uta-2/${index.toString()}.webp`;
+const currentFrame = (index) => `../img/videos/frames uta/4/${index.toString()}.webp`;
 
 
 
@@ -98,11 +98,11 @@ const updateImage = (index) => {
     console.log("img n°: ",imgArray[index]);
 
     // context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
-    if(keyAttribute === "home") context.drawImage(imgArray[index], 250, -40, 1000, 563, 0, 0, canvas.width, canvas.height)
+    if(keyAttribute === "home") context.drawImage(imgArray[index], 250, -40, 1920, 1080, 0, 0, canvas.width, canvas.height)
     else
     (window.innerWidth <= 768 ) ?
         context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
-        : context.drawImage(imgArray[index], 0, 0, 1000, 563, 0, 0, canvas.width, canvas.height)
+        : context.drawImage(imgArray[index], 0, 0, 1920, 1080, 0, 0, canvas.width, canvas.height)
 
     
 };
@@ -123,7 +123,7 @@ window.addEventListener("scroll", () => {
     console.log(frameHeigh1);
 
     // const scrollTop = html.scrollTop - 1280;
-    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : 500);
+    const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 3380 : 7500);
     // const scrollTop = html.scrollTop - ((window.innerWidth <= 768) ? 380 : keyAttribute==="tsa" ? 2200 : 1300);
 
     console.log(html.scrollTop);
