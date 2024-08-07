@@ -53,6 +53,7 @@ import ModalPdf from "@/components/pdfReader/modalPdfReader";
 import { ManualButton } from "@/components/custonButtons/manual";
 import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
 import { EscribinosButton } from "@/components/custonButtons/escribinos";
+import { TiendaButton } from "@/components/custonButtons/tienda";
 
 
 export default function TSAPage() {
@@ -111,7 +112,7 @@ export default function TSAPage() {
                         imgInfo={tsaData.bannerImageInfo}
                     />
                 </div>
-                <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
+                {/* <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-12">
                         <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
@@ -122,7 +123,7 @@ export default function TSAPage() {
                     
                     <EscribinosButton size={BigScreen ? 30 : 25} screen={BigScreen ? "lg" : "lg"} />
                     </div>
-                </div>
+                </div> */}
             </section>
 
             {/* <section className="">
@@ -281,7 +282,10 @@ export default function TSAPage() {
                                 <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a> */}
-                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} css={"z-10 xl:translate-x-32"}/>
+                            
+                            <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
+                            {/* <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} css={"z-10 xl:translate-x-32"} 
+                                link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20este%20Ventilador%20Centrífugo%20Multipala%20TSA"}/> */}
                             
 
                         </div>
@@ -422,7 +426,9 @@ export default function TSAPage() {
                                 <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a> */}
-                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}/>
+                            <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
+                            {/* <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}
+                                link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20este%20Ventilador%20Centrífugo%20Multipala%20TSA"}/> */}
                         </div>
                         
                     </div>
@@ -785,7 +791,13 @@ export default function TSAPage() {
                             fileName={tsaData.demoImageNames}
                         />
                     </div>
-                    <div className="flex justify-bettween items-center mt-10 md:mt-2  w-full">
+                    <section className="mt-10 mb-10 w-2/3 ">
+                        <div className="mx-[3%] flex flex-row items-center justify-center mt-10 md:mt-2 gap-[2%] ">
+                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}/>
+                            <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
+                        </div>    
+                    </section>
+                    {/* <div className="flex justify-bettween items-center mt-10 md:mt-2  w-full">
                         <div className="2xl:ml-[6%] me-auto flex justify-start items-start ">
                             <a href="/soler&palau">
                                 <Image
@@ -797,10 +809,10 @@ export default function TSAPage() {
                             </a>
                         </div>
                         <div className="w-full float-right flex justify-end items-end lg:pr-0 2xl:mr-[5%] md:pr-0">
-
+                            <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
                             <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}/>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             {/* ----------------- FIN Imagenes DEMO + logos ----------------- */}
@@ -809,7 +821,7 @@ export default function TSAPage() {
             <section className="max-w-[80%] w-full h-[100%] z-10 my-10">
 
             <h1 className="text-2xl ml-2 lg:text-4xl 2xl:text-5xl text-center leading-none  font-nunito-bolder me-auto mb-6 my-2 text-livered-title">
-                        Otros productos de Soler&Palau
+                        Otros productos de Soler & Palau
                     </h1>
                 <div className="flex justify-center gap-2 ">
                     

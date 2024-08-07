@@ -33,7 +33,7 @@ export const itemsNavSolerPalau: ItemsNavbar[] = [
         {
             key: "edit",
             category: "solor&palau",
-            label: ["Ventilador ","Centrífugo - TDA"],
+            label: ["Ventilador Centrífugo","Multipala - TDA"],
             labelShort: "TDA",
             img: "../../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
@@ -97,22 +97,24 @@ export const itemsNavSolerPalau: ItemsNavbar[] = [
 
 
 export const itemsNavTempomatic: ItemsNavbar[] = [
+
         {
             key: "11",
-            category: "tempomatic",
-            label: ["Caja Ventiladora",],
-            labelShort: "CV",
-            img: "../../img/navbar/Tempomatic1.png",
-            href: "/tempomatic/CajaVentiladora",
-            color : "bg-[#EF7916]",
-        },
-        {
-            key: "12",
             category: "tempomatic",
             label: ["UTA"],
             labelShort: "UTA",
             img: "../../img/navbar/Tempomatic2.png",
             href: "/tempomatic/uta",
+            color : "bg-[#EF7916]",
+
+        },
+        {
+            key: "12",
+            category: "tempomatic",
+            label: ["Generador de aire caliente"],
+            labelShort: "GDAC",
+            img: "../../img/navbar/Tempomatic5.png",
+            href: "/tempomatic/GeneradorAireCaliente",
             color : "bg-[#EF7916]",
 
         },
@@ -139,12 +141,11 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
         {
             key: "22",
             category: "tempomatic",
-            label: ["Generador de aire caliente"],
-            labelShort: "GDAC",
-            img: "../../img/navbar/Tempomatic5.png",
-            href: "/tempomatic/GeneradorAireCaliente",
+            label: ["Caja Ventiladora",],
+            labelShort: "CV",
+            img: "../../img/navbar/Tempomatic1.png",
+            href: "/tempomatic/CajaVentiladora",
             color : "bg-[#EF7916]",
-
         },
         {
             key: "23",

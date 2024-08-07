@@ -216,7 +216,7 @@ export default function HabitatInlinePage() {
                 
                 <section className="flex items-center justify-center text-livered-title  my-10 pt-4">
                     <div className="text-center">
-                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw]   ">Conoce toda la línea de extrctores de baño</h1>
+                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw]   ">Conoce toda la línea de extractores de baño</h1>
                         {/* <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">helicocentrífugos en línea</h1> */}
                     </div>
                 </section>
@@ -271,7 +271,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla1.jpg"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla1.png"
                                     width="100%"
                                 />
                 </section>
@@ -316,7 +316,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla2.jpg"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatextractorTabla2.png"
                                     width="100%"
                                 />
                 </section>
@@ -359,7 +359,7 @@ export default function HabitatInlinePage() {
 
                 {/* ------------- NAVEGACION ------------- */}
                 <section className={`flex flex-row  items-start my-10 mx-[15%] gap-16 `}>
-                    <a href="/soler&palau" className="hover:opacity-70">
+                    <a href="/soler&palau/habitat" className="hover:opacity-70">
                         <Image
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"

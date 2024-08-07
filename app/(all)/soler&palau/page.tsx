@@ -67,7 +67,7 @@ export default function SolerPalauPage() {
 
                     <span className="">Gracias a <span className=" text-livered-title">nuestra alianza</span>, garantizamos soluciones de </span><br/>
                     <span className="">ventilación innovadoras y eficientes para asegurar una</span><br/>
-                    <span className=""> óptima calidad del aire en todos los espacios </span><br/>
+                    <span className=""> óptima calidad del aire en todos tus espacios </span><br/>
 
 
                     <div className="absolute bottom-0 right-[26.5%] lg:right-[27.5%] xl:right-[28.5%] 2xl:right-[29.5%]">
