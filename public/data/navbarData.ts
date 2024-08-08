@@ -65,7 +65,7 @@ export const itemsNavSolerPalau: ItemsNavbar[] = [
         {
             key: "copy",
             category: "solor&palau",
-            label: ["Ventilador Centrífugo Multipala - TSA"],
+            label: ["Ventilador Centrífugo", "Multipala - TSA"],
             labelShort: "TSA",
             img: "../../img/navbar/NavBarTSA1SolerPalau.png",
             href: "/soler&palau/TSA",
@@ -76,7 +76,7 @@ export const itemsNavSolerPalau: ItemsNavbar[] = [
         {
             key: "edit",
             category: "solor&palau",
-            label: ["Ventilador Centrífugo - TDA"],
+            label: ["Ventilador Centrífugo"," Multipala - TDA"],
             labelShort: "TDA",
             img: "../../img/navbar/NavBarTDA1SolerPalau.png",
             href: "/soler&palau/TDA",
@@ -101,7 +101,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
         {
             key: "11",
             category: "tempomatic",
-            label: ["UTA"],
+            label: ["Unidad de tratamiento de aire"],
             labelShort: "UTA",
             img: "../../img/navbar/Tempomatic2.png",
             href: "/tempomatic/uta",

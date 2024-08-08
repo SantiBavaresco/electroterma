@@ -16,6 +16,10 @@ import { BsWhatsapp } from "react-icons/bs";
 import { itemsNavSolerPalauHome } from "@/public/data/navbarData";
 import { SolerPalauSVG } from "@/public/svg/solerPalauSVG";
 import CardDisplaySypHome from "@/components/navbar/cardDisplaySypHome";
+import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
+import { TiendaButton } from "@/components/custonButtons/tienda";
+import { useEffect, useState } from "react";
+import { EscribinosButton } from "@/components/custonButtons/escribinos";
 
 
 
@@ -30,6 +34,20 @@ interface ItemsNavbar {
 }
 
 export default function SolerPalauPage() {
+
+    const [BigScreen, setBigScreen] = useState(false);
+    useEffect(() => {
+        const handler = (e:any) => setBigScreen(e.matches);
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        mediaQuery.addEventListener('change', handler);
+        setBigScreen(mediaQuery.matches);
+
+        return () => {
+        mediaQuery.removeEventListener('change', handler);
+        };
+    }, []);
+
     const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
         const subject = 'Consulta sobre equipamiento';
@@ -162,9 +180,19 @@ export default function SolerPalauPage() {
             </section>
 
             {/* ------------- Asesoramiento ------------- */}
+
             <section className="w-1/2 mx-[3%] mb-10 mt-16  flex flex-col items-center lg:flex-row justify-center md:justify-around
                 overflow-hidden">
-                    <div className="w-[200px] md:w-[340] lg:w-[250px] ">
+                    
+                    <section className=" w-2/3 ">
+                        <div className="mx-[3%] flex flex-row items-center justify-center mt-10 md:mt-2 gap-[14%] ">
+                            
+                            <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
+                            <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} />
+
+                        </div>    
+                    </section>
+                    {/* <div className="w-[200px] md:w-[340] lg:w-[250px] ">
                         <a href="/">
                         <Image
                             alt="Electroterma Logo"
@@ -191,7 +219,7 @@ export default function SolerPalauPage() {
                                 <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
                             </Button>
                             </a>
-                            
+                             */}
                         </section>
 
             {/* ------------- Imagenes presentacion ------------- */}
