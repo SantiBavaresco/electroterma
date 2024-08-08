@@ -12,7 +12,7 @@ import { Image } from "@nextui-org/image";
 // import { Button } from "@nextui-org/button";
 import { BsWhatsapp } from "react-icons/bs";
 import { IoMailOutline } from "react-icons/io5";
-import {extendVariants, Button} from "@nextui-org/react";
+import {extendVariants, Button, Divider} from "@nextui-org/react";
 import { lazy, Suspense, useState, useEffect } from "react";
 
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
@@ -80,16 +80,19 @@ export default function Home() {
 
     return (
         <main id="vent" accessKey="home" className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 ">
-           <section className="h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
-            <Image
-                className=" mt-0"
-                alt="Background Tempomatic"
-                radius="none"
-                src="../../img/home/video.png"
-                width="100%"
-            />
-                        {/* <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p> */}
-                    </section>
+            <section className="h-[100%] w-full xl:px-[0%] flex items-center justify-center overflow-hidden bg-lowgrasy">
+                <VideoAutoPlayer url="../img/home/video/homePresentacion.mp4"/>
+                
+            </section>
+            {/* <section className="h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
+                <Image
+                    className=" mt-0"
+                    alt="Background Tempomatic"
+                    radius="none"
+                    src="../../img/home/video.png"
+                    width="100%"
+                />
+            </section> */}
             <Navbar/>
 
             <section className="relative w-full px-[3%] my-10 text-center font-lexend text-[#4C4B4B] text-[1.75vw] overflow-hidden">
@@ -290,9 +293,22 @@ export default function Home() {
                 <Image  
                     classNames={{ wrapper: "<-10 min-w-full h-full"}}
                     alt="Imagen grupal"
-                    src="../../img/home/homeBanner/hh1.png"
+                    src="../../img/home/home.png"
                     width={"100%"}
                 />
+               
+                
+            </section>
+
+            {/* ------------- Foto leyenda ------------- */}
+            <section className="mx-0 w-1/3 ">
+                <Image  
+                    classNames={{ wrapper: "<-10 min-w-full h-full"}}
+                    alt="Imagen grupal"
+                    src="../../img/home/leyenda.png"
+                    width={"100%"}
+                />
+               
                 
             </section>
             
@@ -316,7 +332,7 @@ export default function Home() {
                         
                     <Suspense fallback={<div>Loading</div>}>
                         
-                        <FrameFanWeb />
+                        {/* <FrameFanWeb /> */}
                         
                     </Suspense>
                     
@@ -406,59 +422,44 @@ export default function Home() {
                     
             </section>
 
-            {/* ------------- PAGOS ------------- */}
-            <section className="mt-10">
-                <div className="mx-auto w-1/2 flex flex-row gap-[2%]">
-                    {/* ------------- TEMPOMATIC ------------- */}
-                    
-                    <div className=" mx-auto -mt-10">
-                        <Image  
-                            className=" "
-                            alt="tempomatic"
-                            radius="none"
-                            src="../../img/home/homeBanner/pagos.png"
-                            width="100%"
-                        />
-                    </div>
-                </div>    
 
-                   
+            {/* ------------- Botonera ------------- */}
 
+            <section className="w-2/3 mx-[3%] mb-10 mt-16  flex flex-col items-center lg:flex-row justify-center md:justify-around
+                overflow-hidden">
                     
-            </section>.
+                <section className=" w-3/4 ">
+					<div className=" px-auto  flex h-[250px] items-center mt-10 md:mt-2 space-x-10  text-2xl text-center text-[#4C4B4B]">
+						<div>
+							<h1>Contactá</h1>
+							<h1>a un vendedor</h1><br/>
 
-            {/* ------------- Botones ------------- */}
-            <section className="-mt-10 mb-10 w-2/3 ">
-                <div className="mx-[3%] flex flex-row items-center justify-center gap-[2%] ">
-                    {/* ------------- TEMPOMATIC ------------- */}
-                    
-                                {/* size={BigScreen ? "xl" : "lg"}  */}
-                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}/>
+							<AsesoramietoButton size={BigScreen ? 42 : 25} screen={BigScreen ? "xl" : "lg"}/>
+						</div>
+
+						<Divider orientation="vertical" className="bg-[#EDEDED]" />
+						<div>
+							<h1>Comprá en</h1>
+							<h1>nuestra tienda</h1><br/>
 
                             <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
-
+                            {/* <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} /> */}
+						</div>
+                        <Divider orientation="vertical" className="bg-[#EDEDED]" />
+						<div>
+							<h1>Escribinos a travéz</h1>
+							<h1>de nuestro mail</h1><br/>
 
                             <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} />
+						</div>
 
-
-                    
-                    
-                    {/* <div className=" mx-auto -mt-10">
-                        <Image  
-                            className=" "
-                            alt="tempomatic"
-                            radius="none"
-                            src="../../img/home/homeBanner/pagos.png"
-                            width="100%"
-                        />
-                    </div> */}
-                </div>    
-
-                   
-
-                    
+					</div>
+                        
+                </section>
             </section>
 
+
+          
 
 
           

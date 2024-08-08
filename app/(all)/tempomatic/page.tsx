@@ -188,11 +188,11 @@ export default function TempomaticPage() {
             <section className="w-1/2 mx-[3%] mb-10 mt-16  flex flex-col items-center lg:flex-row justify-center md:justify-around
                 overflow-hidden">
                     
-                    <section className=" w-3/4 ">
+                <section className=" w-3/4 ">
 					<div className=" px-auto  flex h-[250px] items-center mt-10 md:mt-2 space-x-10  text-2xl text-center text-white">
 						<div>
 							<h1>Contactá</h1>
-							<h1>a un vendedor</h1>
+							<h1>a un vendedor</h1><br/>
 
 							<AsesoramietoButton size={BigScreen ? 42 : 25} screen={BigScreen ? "xl" : "lg"}/>
 						</div>
@@ -201,53 +201,23 @@ export default function TempomaticPage() {
 
 						<div>
 							<h1>Escribinos a travéz</h1>
-							<h1>de nuestro mail</h1>
+							<h1>de nuestro mail</h1><br/>
 
                             <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} />
 						</div>
 
 					</div>
                         
-                    </section>
+                </section>
 
-				
-
-                    {/* <div className="w-[200px] md:w-[340] lg:w-[250px] ">
-                        <a href="/">
-                        <Image
-                            alt="Electroterma Logo"
-                            className=""
-                            src="../../img/electrotermalogoletras.png"
-                            width="100%"
-                        />
-                        </a>
-                    </div>
-                            <a href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." 
-                                target="_blank" rel="noopener noreferrer">
-                            <Button
-                                className="z-10 mt-4 bg-[#EDEDED] font-nunito text-[#4C4B4B] w-full 2xl:text-2xl"
-                                radius="full"
-                                size="lg"
-                                href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
-                            >
-                                <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
-                                    bg-gradient-to-r from-[#78E933] to-[#5C9104]
-                                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
-                                    group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                                "> 
-                                    <BsWhatsapp className=" text-white  group-active:text-livered mx-1 lg:mx-2 lg:text-2xl" /> </div>
-                                <span className="ml-[35px] lg:ml-12">Asesoramiento</span>
-                            </Button>
-                            </a>
-                             */}
-                        </section>
+            </section>
 
             {/* ------------- Imagenes presentacion ------------- */}
             <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
                     <Image
                         alt="Otam Logo"
                         src="../img/tempomatic/home/1.png"
-                        width={1280}
+                        width={1285}
                     />
                     <Image
                         alt="Otam Logo"

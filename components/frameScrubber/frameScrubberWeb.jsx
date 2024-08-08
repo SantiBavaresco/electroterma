@@ -94,7 +94,7 @@ export default function FrameScrubber() {
                         <Image  
                         classNames={{ wrapper: "z-100 min-w-full h-full -translate-y-[42.60vw] "} }
                         alt="Diagonal de diferenciales naranjas"
-                        src="../../img/home/homeBanner/hh2.png"
+                        src="../../img/home/home.png"
                         width={"100%"}
                     /></div>
                     : <></>
