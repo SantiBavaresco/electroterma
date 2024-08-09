@@ -202,7 +202,7 @@ export default function HabitatPage() {
                                 <Button className="font-nunito text-xl md:text-2xl xl:text-3xl 2xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                     radius="none"
                                     size="lg"
-                                    onClick={()=>(window.open("/soler&palau/habitat/inline", '_blank'))}
+                                    onClick={()=>(window.open("/soler&palau/habitat/inline", '_top'))}
                                 >
                                     Más info </Button>
                             </div>
@@ -230,7 +230,7 @@ export default function HabitatPage() {
                                 <Button className="font-nunito text-xl md:text-2xl xl:text-3xl 2xl:text-4xl py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                     radius="none"
                                     size="lg"
-                                    onClick={()=>(window.open("/soler&palau/habitat/extractor", '_blank'))}
+                                    onClick={()=>(window.open("/soler&palau/habitat/extractor", '_top'))}
                                 >
                                     Más info </Button>
                             </div>
