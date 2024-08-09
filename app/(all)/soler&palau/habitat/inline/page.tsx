@@ -328,7 +328,7 @@ export default function HabitatInlinePage() {
                 
                 {/* ------------- NAVEGACION ------------- */}
                 <section className={`flex flex-row  items-start my-10 mx-[15%] gap-16 `}>
-                    <a href="/soler&palau" className="hover:opacity-70">
+                    <a href="/soler&palau/habitat" className="hover:opacity-70">
                         <Image
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"

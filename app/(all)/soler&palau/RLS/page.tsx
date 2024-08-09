@@ -594,7 +594,7 @@ export default function RLSPage() {
                     <section className="mt-10 mb-10 w-2/3 ">
                         <div className="mx-[3%] flex flex-row items-center justify-center mt-10 md:mt-2 gap-[2%] ">
                             <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}
-                                link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20este%20Ventilador%20Centrífugo%20Multipala%20TSA"}/>
+                                link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20este%20Ventilador%20Centrífugo%20Multipala%20RLS"}/>
                             <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
                         </div>    
                     </section>

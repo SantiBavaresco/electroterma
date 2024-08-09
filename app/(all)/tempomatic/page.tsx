@@ -75,7 +75,7 @@ export default function TempomaticPage() {
                     width="100%"
                 />
             </section>
-            <section className="relative w-full px-[3%] mt-20 mb-20 text-center font-lexend text-[1.6vw] overflow-hidden">
+            <section className="relative w-full px-[3%] mt-20 mb-20 text-center font-lexend text-[1.6vw] overflow-hidden text-[#787878]">
                 <p>
                     {/* <span className="relative  align-bottom text-livered-title ">&quot;</span> */}
                     <div className="absolute top-0 left-[23%] lg:left-[24%] xl:left-[25%] 2xl:left-[23%]">
@@ -216,11 +216,13 @@ export default function TempomaticPage() {
             <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
                     <Image
                         alt="Otam Logo"
+                        radius="none"
                         src="../img/tempomatic/home/1.png"
                         width={1285}
                     />
                     <Image
                         alt="Otam Logo"
+                        radius="none"
                         src="../img/tempomatic/home/2.png"
                         width={920}
                     />
