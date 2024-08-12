@@ -317,17 +317,6 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatInlineTabla.jpg"
-                                    width="100%"
-                                />
-                </section>
-
-                {/* ------------- Tabla ------------- */}
-                <section className={`flex flex-col  items-start my-10 mx-[3%] gap-4 `}>
-                {/* <TableSolerPalau tableData={habitatData.tableData}/> */}
-                    <Image
-                                    alt="SolerPalauHabitatInline1.png"
-                                    className="mb-2"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractorTabla2.jpg"
                                     width="100%"
                                 />
