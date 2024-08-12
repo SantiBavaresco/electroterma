@@ -308,6 +308,18 @@ export default function HabitatInlinePage() {
                 <section className="mx-[4%] ml-auto">
                     <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TSA.pdf"} dwName={"TSA Manual.pdf"}/>
 
+
+                </section>
+
+                {/* ------------- Tabla ------------- */}
+                <section className={`flex flex-col  items-start my-10 mx-[3%] gap-4 `}>
+                {/* <TableSolerPalau tableData={habitatData.tableData}/> */}
+                    <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInlineTabla.jpg"
+                                    width="100%"
+                                />
                 </section>
 
                 {/* ------------- Tabla ------------- */}
