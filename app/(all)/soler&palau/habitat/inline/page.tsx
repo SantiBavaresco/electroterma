@@ -34,6 +34,7 @@ import { Download } from "@/public/svg/download";
 import { TableSolerPalau } from "@/components/table/tableSoler&palau";
 import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
 import { TiendaButton } from "@/components/custonButtons/tienda";
+import { ManualButton } from "@/components/custonButtons/manual";
 
 
 export default function HabitatInlinePage() {
@@ -235,6 +236,9 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                     </section>
+                    <section className="mx-[4%] ml-auto">
+                        <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatInline.pdf"} dwName={"Habitat Inline Manual.pdf"}/>
+                    </section>
                     {/* <section className="grid grid-cols-[37%_37%_26%] gap-4 p-3 mx-[3%]">
                         {/* ------------- COL 1 ------------- *
                         <div className="  w-full h-max overflow-hidden">
@@ -258,13 +262,7 @@ export default function HabitatInlinePage() {
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col justify-center  items-center gap-y-10 h-full mx-[3%] ">
                         {mobileImagesCol}
-                        <Button
-                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl mt-0"
-                            radius="full"
-                            size={BigScreen ? "lg" : "sm"}
-                            >
-                            Manual <Download />
-                            </Button> 
+                        <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatInline.pdf"} dwName={"Habitat Inline Manual.pdf"}/>
                     </section>
                     </>
                 }

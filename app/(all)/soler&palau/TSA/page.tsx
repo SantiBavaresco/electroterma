@@ -573,7 +573,7 @@ export default function TSAPage() {
                                     <Download css=" text-white  group-active:text-livered mx-0 lg:mx-0 lg:text-xl" size={40} /> </div>
                                 <span className="ml-[35px] lg:ml-14 lg:text-xl xl:text-2xl">Manual</span>
                             </Button> */}
-                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TSA.pdf"} dwName={"TSA Manual.pdf"}/>
+                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/tsa.pdf"} dwName={"TSA Manual.pdf"}/>
                             
                     </section>
                 </div>

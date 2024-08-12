@@ -248,20 +248,14 @@ export default function HabitatInlinePage() {
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col justify-center  items-center gap-y-10 h-full mx-[3%] ">
                         {mobileImagesCol}
-                        <Button
-                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl mt-0"
-                            radius="full"
-                            size={BigScreen ? "lg" : "sm"}
-                            >
-                            Manual <Download />
-                            </Button> 
+                        <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/>
                     </section>
                     </>
                 }
                 
                 {/* ------------- Boton manual ------------- */}
                 <section className="mx-[4%] ml-auto">
-                    <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TSA.pdf"} dwName={"TSA Manual.pdf"}/>
+                    <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/>
 
                 </section>
 
@@ -293,20 +287,14 @@ export default function HabitatInlinePage() {
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col justify-center  items-center gap-y-10 h-full mx-[3%] ">
                         {mobileImagesCol}
-                        <Button
-                            className="  z-10 bg-livered font-nunito text-white 2xl:text-2xl mt-0"
-                            radius="full"
-                            size={BigScreen ? "lg" : "sm"}
-                            >
-                            Manual <Download />
-                            </Button> 
+                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/> 
                     </section>
                     </>
                 }
                 
                 {/* ------------- Boton manual ------------- */}
                 <section className="mx-[4%] ml-auto">
-                    <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TSA.pdf"} dwName={"TSA Manual.pdf"}/>
+                    <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/>
 
 
                 </section>

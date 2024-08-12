@@ -395,7 +395,7 @@ export default function RLSPage() {
                             
                             overflow-hidden">
                             
-                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TSA.pdf"} dwName={"TSA Manual.pdf"}/>
+                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/rls.pdf"} dwName={"RLS Manual.pdf"}/>
                     </section>
                 </div>
             </section>
