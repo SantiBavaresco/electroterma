@@ -115,7 +115,7 @@ export const tsaData: ventDataType  = {
     urltdaImageDemo: "../img/solerpalau/tsa/imgDemo/",
     demoImageNames: ["1", "2", "3", "4", "5"],
 
-    urlImageBanner: "../img/solerpalau/imgbanner/",
+    urlImageBanner: "../img/solerpalau/tsa/imgbanner/",
     bannerImageInfo: [
         {
             imgName:"1",
@@ -167,7 +167,7 @@ export const tsaData: ventDataType  = {
                     textColor:""
                 },
                 {   
-                    textLable:"renovaión de aire",
+                    textLable:"renovación de aire",
                     textColor:""
                 },
             ],
