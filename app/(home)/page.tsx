@@ -95,7 +95,7 @@ export default function Home() {
             </section> */}
             <Navbar/>
 
-            <section className="relative w-full px-[3%] my-10 text-center font-lexend text-[#4C4B4B] text-[1.75vw] overflow-hidden">
+           {!BigScreen || <section className="relative w-full px-[3%] my-10 text-center font-lexend text-[#4C4B4B] text-[1.75vw] overflow-hidden">
                 <p>
                     {/* <span className="relative  align-bottom text-livered-title ">&quot;</span> */}
                     <div className="absolute top-0 left-[23%] lg:left-[24%] xl:left-[25%] 2xl:left-[26%]">
@@ -119,21 +119,15 @@ export default function Home() {
 
                    
                 </p>
-                <div className="">
-                        <div>
 
-                        </div>
-                        
-                        
-                    </div>
-            </section>
+            </section>}
 
             {/* <section>
                 <h1>Texto con comillas</h1>
             </section> */}
 
             {/* ------------- Banners de prodcutos ------------- */}
-            <section className="relative w-full h-[51vw] bg-gray-00 overflow-hidden">
+            <section className="relative w-full h-[58vw] lg:h-[51vw] bg-gray-00 overflow-hidden">
                 <div className="mx-[3%] flex flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <a
@@ -262,13 +256,13 @@ export default function Home() {
 
 
                 {/* ------------- Consultanos ------------- */}
-                <div className="relative top-[4.5%]  md:w-98% py-2  flex justify-center items-center rounded-tr-[24px] rounded-bl-[24px]">
+                <div className="relative top-[9.5%] lg:top-[4.5%]  md:w-98% py-2  flex justify-center items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-12">
                         <h2 className="text-[#4C4B4B] text-center text-xs xm:text-base md:text-2xl 2xl:text-4xl font-nunito-bold">
                             {" "}
                             Conocé nuestras {" "}
                             <Link href="/solucionesHVAC">
-                            <Button size="lg" radius="full" className="border-[4px] border-white bg-[#EF771C]  2xl:text-3xl lg:px-8 mr-[23px] lg:mr-0 text-[#FFFFFF]" 
+                            <Button size={BigScreen ? "lg" : "sm"} radius="full" className="border-[4px] border-white bg-[#EF771C]  2xl:text-3xl lg:px-8 mr-[23px] lg:mr-0 text-[#FFFFFF]" 
                                 // onClick={handleEmailClick}
                                 >
                             Soluciones
@@ -301,7 +295,7 @@ export default function Home() {
             </section>
 
             {/* ------------- Foto leyenda ------------- */}
-            <section className="mx-0 w-1/3 ">
+            <section className="mx-0 w-3/4 lg:w-1/3 ">
                 <Image  
                     classNames={{ wrapper: "<-10 min-w-full h-full"}}
                     alt="Imagen grupal"
@@ -342,14 +336,14 @@ export default function Home() {
                 : <div className="-mt-32"> {/* ----- Mobile ----- */}
 
                     <Suspense fallback={<div>Loading</div>}>
-                        <FrameFan />
+                        {/* <FrameFan /> */}
                     </Suspense>
                 </div>
             }
 
             {/* ------------- Direccionamiento a los productos ------------- */}
-            <section className="my-10">
-                <div className="mx-auto w-1/2 flex flex-row gap-[2%]">
+            <section className="my-10 mt-14 translate-y-[80px] lg:mt-0 lg:translate-y-0">
+                <div className="mx-auto w-3/4 lg:w-1/2 flex flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <a
 						className="w-[100%] hover:opacity-80 hover:translate-y-1" 
@@ -425,16 +419,16 @@ export default function Home() {
 
             {/* ------------- Botonera ------------- */}
 
-            <section className="w-2/3 mx-[3%] mb-10 mt-16  flex flex-col items-center lg:flex-row justify-center md:justify-around
+            <section className="lg:w-2/3 mx-auto lg:mx-[3%] lg:mb-10 lg:mt-10  flex flex-col items-center lg:flex-row justify-center md:justify-around
                 overflow-hidden">
                     
-                <section className=" w-3/4 ">
-					<div className=" px-auto  flex h-[250px] items-center mt-10 md:mt-2 space-x-10  text-2xl text-center text-[#4C4B4B]">
+                <section className=" lg:w-3/4 ">
+					<div className=" px-auto  flex h-[150px] lg:h-[250px] items-center mt-10 md:mt-2 space-x-1 lg:space-x-10  text-[12px] lg:text-2xl text-center text-[#4C4B4B]">
 						<div>
 							<h1>Contactá</h1>
 							<h1>a un vendedor</h1><br/>
 
-							<AsesoramietoButton size={BigScreen ? 42 : 25} screen={BigScreen ? "xl" : "lg"}/>
+							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}/>
 						</div>
 
 						<Divider orientation="vertical" className="bg-[#EDEDED]" />
@@ -442,7 +436,7 @@ export default function Home() {
 							<h1>Comprá en</h1>
 							<h1>nuestra tienda</h1><br/>
 
-                            <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
+                            <TiendaButton size={BigScreen ? 40 : 15} screen={BigScreen ? "xl" : "xs"}/>
                             {/* <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} /> */}
 						</div>
                         <Divider orientation="vertical" className="bg-[#EDEDED]" />
@@ -450,7 +444,7 @@ export default function Home() {
 							<h1>Escribinos a travéz</h1>
 							<h1>de nuestro mail</h1><br/>
 
-                            <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} />
+                            <EscribinosButton size={BigScreen ? 40 : 15} screen={BigScreen ? "xl" : "xs"} />
 						</div>
 
 					</div>

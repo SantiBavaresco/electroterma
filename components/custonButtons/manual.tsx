@@ -31,7 +31,7 @@ export const ManualButton: React.FC<Props> = ({ css, size, screen, label, link, 
                     size={screen}
                     onClick={handlePdfDownload}
                 >
-                    <div className="absolute rounded-full left-0 z-20 p-3  px-[20px]  shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                    <div className="absolute rounded-full left-0 z-20 p-3 px-[12px] lg:px-[20px]  shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                         bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
                         group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                         group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]

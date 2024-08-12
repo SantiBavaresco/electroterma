@@ -206,7 +206,7 @@ export default function HabitatInlinePage() {
                         {habitatData.inlineData.subTitle1}
                         <span className=" underline decoration-[3px] underline-offset-8">{habitatData.inlineData.subTitle2}</span>
                     </h2>
-                    <p className="text-[#575756] text-[2.5vw] md:text-[2vw] xl:text-[1.5vw]">
+                    <p className="text-[#575756] text-[2.1vw] md:text-[2vw] xl:text-[1.5vw]">
                         <br/>
                         <span>{habitatData.inlineData.p1}</span>
                         <br/>
@@ -261,7 +261,13 @@ export default function HabitatInlinePage() {
                     : <>
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col justify-center  items-center gap-y-10 h-full mx-[3%] ">
-                        {mobileImagesCol}
+                        {/* {mobileImagesCol} */}
+                        <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline0.png"
+                                    width="100%"
+                                />
                         <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatInline.pdf"} dwName={"Habitat Inline Manual.pdf"}/>
                     </section>
                     </>
@@ -291,9 +297,9 @@ export default function HabitatInlinePage() {
 
                 {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
                 <section className="flex  h-full ">
-                    <div className="flex flex-col mx-auto justify-center  items-center gap-y-6 xl:my-16">
+                    <div className="flex flex-col mx-auto justify-center  items-center lg:gap-y-6 xl:my-16">
                         <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
-                        <TiendaButton size={BigScreen ? 70 : 35} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
+                        <TiendaButton size={BigScreen ? 70 : 30} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
                     </div>
                 </section>
 
@@ -325,7 +331,7 @@ export default function HabitatInlinePage() {
                 }
                 
                 {/* ------------- NAVEGACION ------------- */}
-                <section className={`flex flex-row  items-start my-10 mx-[15%] gap-16 `}>
+                <section className={`flex flex-row  items-start my-6 lg:my-10 lg:mx-[15%] lg:gap-16 `}>
                     <a href="/soler&palau/habitat" className="hover:opacity-70">
                         <Image
                             alt="SolerPalauHabitatInline1.png"
@@ -354,6 +360,10 @@ export default function HabitatInlinePage() {
               
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
 
+                <section className=" mx-auto"> 
+                {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
+                </section>
+                
                 <section className="flex flex-row justify-between  items-center  h-full">
                     <div className="w-[240px] md:w-[340] lg:w-[250px] ">
                         <a href="/">
@@ -366,7 +376,7 @@ export default function HabitatInlinePage() {
                         </a>
                     </div>
                     <div>
-                    <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/>
+                        {!BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
                     </div>
                    
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">

@@ -198,7 +198,7 @@ export default function HabitatInlinePage() {
                 </section>
 
                 {/* ------------- Parrafo Habitat ------------- */}
-                <article className=" mx-[8%] flex mb-10 flex-col items-start justify-center font-nunito  ">
+                <article className=" mx-[8%] flex lg:mb-10 flex-col items-start justify-center font-nunito  ">
                     {/* <h1 className="text-livered-title text-[6.5vw] md:text-[2vw] xl:text-[5.0vw]"> 
                         {habitatData.inlineData.title} 
                     </h1> */}   
@@ -209,14 +209,14 @@ export default function HabitatInlinePage() {
                     <p className="text-[#575756] text-[2.5vw] md:text-[2vw] xl:text-[1.5vw]">
                         <br/>
                         <span>{habitatData.extractorData.p1}</span>
-                        <br/>
+                        {!BigScreen || <br/>}
                         <span>{habitatData.extractorData.p2}</span>
                     </p>
                 </article>
                 
-                <section className="flex items-center justify-center text-livered-title  my-10 pt-4">
+                <section className="flex items-center justify-center text-livered-title my-4 lg:my-10 pt-4">
                     <div className="text-center">
-                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw]   ">Conoce toda la línea de extractores de baño</h1>
+                        <h1 className="font-nunito-thin text-[4.5vw] md:text-[4vw] xl:text-[3.0vw]   ">Conoce toda la línea de extractores de baño</h1>
                         {/* <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">helicocentrífugos en línea</h1> */}
                     </div>
                 </section>
@@ -247,14 +247,20 @@ export default function HabitatInlinePage() {
                     : <>
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col justify-center  items-center gap-y-10 h-full mx-[3%] ">
-                        {mobileImagesCol}
-                        <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/>
+                        {/* {mobileImagesCol} */}
+                        <Image
+                            alt="SolerPalauHabitatInline1.png"
+                            className="mb-2"
+                            src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor3.png"
+                            width="100%"
+                        />
+                        {/* <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/> */}
                     </section>
                     </>
                 }
                 
                 {/* ------------- Boton manual ------------- */}
-                <section className="mx-[4%] ml-auto">
+                <section className="lg:mx-[4%] mx-auto lg:ml-auto">
                     <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/>
 
                 </section>
@@ -286,14 +292,20 @@ export default function HabitatInlinePage() {
                     : <>
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col justify-center  items-center gap-y-10 h-full mx-[3%] ">
-                        {mobileImagesCol}
-                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/> 
+                        {/* {mobileImagesCol} */}
+                        <Image
+                            alt="SolerPalauHabitatInline1.png"
+                            className="mb-2"
+                            src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor4.png"
+                            width="100%"
+                        />
+                            {/* <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/>  */}
                     </section>
                     </>
                 }
                 
                 {/* ------------- Boton manual ------------- */}
-                <section className="mx-[4%] ml-auto">
+                <section className="mx-auto lg:mx-[4%] lg:l-auto">
                     <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/>
 
 
@@ -313,7 +325,7 @@ export default function HabitatInlinePage() {
 
                 {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
                 <section className="flex  h-full ">
-                    <div className="flex flex-col mx-auto justify-center  items-center gap-y-6 xl:my-16">
+                    <div className="flex flex-col mx-auto justify-center  items-center lg:gap-y-6 xl:my-16">
                         <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
                         <TiendaButton size={BigScreen ? 70 : 35} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
                     </div>
@@ -347,7 +359,7 @@ export default function HabitatInlinePage() {
                 }
 
                 {/* ------------- NAVEGACION ------------- */}
-                <section className={`flex flex-row  items-start my-10 mx-[15%] gap-16 `}>
+                <section className={`flex flex-row  items-start my-6 lg:my-10 lg:mx-[15%] lg:gap-16 `}>
                     <a href="/soler&palau/habitat" className="hover:opacity-70">
                         <Image
                             alt="SolerPalauHabitatInline1.png"
@@ -375,6 +387,9 @@ export default function HabitatInlinePage() {
                 </section>
 
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
+                <section className=" mx-auto"> 
+                {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
+                </section>
 
                 <section className="flex flex-row justify-between  items-center  h-full">
                     <div className="w-[240px] md:w-[340] lg:w-[250px] ">
@@ -388,7 +403,7 @@ export default function HabitatInlinePage() {
                         </a>
                     </div>
                     <div>
-                    <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/>
+                        {!BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
                     </div>
                    
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">

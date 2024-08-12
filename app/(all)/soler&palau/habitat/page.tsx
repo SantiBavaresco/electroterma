@@ -364,7 +364,7 @@ export default function HabitatPage() {
                 </section>
 
 
-                {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
+                {/* -------------  TIENDA ------------- */}
                 <section className="flex  h-full ">
                     <div className="flex flex-col mx-auto justify-center  items-center gap-y-6 xl:my-16">
                         <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
@@ -401,7 +401,9 @@ export default function HabitatPage() {
                     </>
                 }
                 
-
+                <section className=" mx-auto"> 
+                {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
+                </section>
               
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
 
@@ -418,7 +420,7 @@ export default function HabitatPage() {
                     </div>
                     <div>
                     
-                    <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/>
+                    {!BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
                     
                     </div>
                    
