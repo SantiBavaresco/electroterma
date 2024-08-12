@@ -317,7 +317,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInlineTabla.jpg"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatInlineTabla.jpg"
                                     width="100%"
                                 />
                 </section>
