@@ -148,9 +148,9 @@ export default function HabitatPage() {
 
                 {/* ------------- Parrafo Habitat ------------- */}
                 <article className=" flex  items-center justify-center font-nunito-thin text-[#575756] ">
-                    <div className="w-[70%] xl:w-3/4  max-w-[700px]">
-                        <h1 className="text-[6vw] xl:text-[4vw]">{habitatData.pageData.title1}</h1>
-                        <div className="text-[3.2vw] md:text-[2vw] xl:text-[1.1vw]">
+                    <div className="w-[85%] xl:w-3/4  max-w-[700px]">
+                        <h1 className="text-[8vw] xl:text-[4vw]">{habitatData.pageData.title1}</h1>
+                        <div className="text-[3.8vw] md:text-[2vw] xl:text-[1.1vw]">
                             <p>
                                 {habitatData.pageData.p1}
                                 <br/><br/>
@@ -165,7 +165,7 @@ export default function HabitatPage() {
                 {/* ------------- Titulo post parrafo ------------- */}
                 <section className="flex items-center justify-center my-4 md:my-10">
                     <div>
-                        <h1 className="font-nunito-thin text-[3.5vw] text-[#575756] py-4">
+                        <h1 className="font-nunito-thin text-[4.2vw] text-[#575756] py-4">
                             {habitatData.pageData.subTitle}
                         </h1>
                     </div>
@@ -332,16 +332,14 @@ export default function HabitatPage() {
                     <>
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col mt-2 py-4 gap-6">
-                        <div className="flex flex-row mx-auto">
-                            <div className="w-max  text-center"> 
-                                <DiferencialGranConfort size={40} textSize={10}/> 
+                            <div className="w-max mx-auto text-center"> 
+                                <DiferencialGranConfort size={50} textSize={14}/> 
                             </div>
-                            <div className="w-max  text-center">
-                                <DiferencialVolumenBajo size={40} textSize={10} text="Bajo nivel sonoro"/> 
+                            <div className="w-max mx-auto text-center">
+                                <DiferencialVolumenBajo size={50} textSize={14} text="Bajo nivel sonoro"/> 
                             </div>
-                        </div>
                         <div className="w-max mx-auto text-center">
-                            <DiferencialFacilInstalacion  size={40} textSize={10}/>
+                            <DiferencialFacilInstalacion  size={50} textSize={14}/>
                         </div>
                     </section>
                     </>
@@ -350,12 +348,12 @@ export default function HabitatPage() {
                
 
                 {/* ------------- Youtube ------------- */}
-                <section className="flex flex-col xl:flex-row  items-start my-10 mx-[5%] gap-4 ">
+                <section className="flex flex-col xl:flex-row  items-start my-10 mx-[5%] gap-y-4 ">
                     <div className="w-full  ">
                         <YouTubePlayer
                             // url={item.presentationVideoId}
                             url={habitatData.videoYoutubeId1}
-                            height={"400px"}
+                            height={"200px"}
                             width={"100%"}
                             autoplay={1}
                         />
@@ -364,7 +362,7 @@ export default function HabitatPage() {
                         <YouTubePlayer
                             // url={item.presentationVideoId}
                             url={habitatData.videoYoutubeId2}
-                            height={"400px"}
+                            height={"200px"}
                             width={"100%"}
                             autoplay={1}
                         />
