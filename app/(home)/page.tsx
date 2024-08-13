@@ -283,12 +283,12 @@ export default function Home() {
 
 
             {/* ------------- Foto grupal ------------- */}
-            <section className="mx-0 w-full ">
+            <section className=" mx-0 w-full mr-auto">
                 <Image  
-                    classNames={{ wrapper: "<-10 min-w-full h-full"}}
+                    classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen grupal"
                     src="../../img/home/home.png"
-                    width={"100%"}
+                    width={"95%"}
                 />
                
                 
@@ -342,7 +342,7 @@ export default function Home() {
             }
 
             {/* ------------- Direccionamiento a los productos ------------- */}
-            <section className="my-10 mt-14 translate-y-[80px] lg:mt-0 lg:translate-y-0">
+            <section className="my-10 mt-14 translate-y-[80px] lg:mt-0 lg:translate-y-10">
                 <div className="mx-auto w-3/4 lg:w-1/2 flex flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <a
@@ -419,7 +419,7 @@ export default function Home() {
 
             {/* ------------- Botonera ------------- */}
 
-            <section className="w-3/4 2xl:w-2/3 mx-auto 2xl:mx-[3%] lg:mb-10 lg:mt-10  flex flex-col items-center lg:flex-row justify-center md:justify-around
+            <section className="w-full 2xl:w-2/3 mx-auto 2xl:mx-[3%] lg:mb-10 lg:mt-10 font-nunito flex flex-col items-center lg:flex-row justify-center md:justify-around
                 overflow-hidden">
                     
                 <section className=" 2xl:w-3/4 ">
@@ -428,7 +428,10 @@ export default function Home() {
 							<h1>Contactá</h1>
 							<h1>a un vendedor</h1><br/>
 
-							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}/>
+							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}
+                            link={"https://wa.me/5492236356756?text=Hola.%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información."}
+                            // Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion
+                            />
 						</div>
 
 						<Divider orientation="vertical" className="bg-[#EDEDED]" />
@@ -441,7 +444,7 @@ export default function Home() {
 						</div>
                         <Divider orientation="vertical" className="bg-[#EDEDED]" />
 						<div>
-							<h1>Escribinos a travéz</h1>
+							<h1>Escribinos a través</h1>
 							<h1>de nuestro mail</h1><br/>
 
                             <EscribinosButton size={BigScreen ? 40 : 15} screen={BigScreen ? "xl" : "xs"} />

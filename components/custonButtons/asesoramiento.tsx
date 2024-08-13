@@ -21,7 +21,7 @@ export const AsesoramietoButton: React.FC<Props> = ({ css, size, screen, label, 
                         className="z-10 mt-4 bg-[#EDEDED] font-nunito text-[#4C4B4B] 3xl:ml-0 2xl:text-2xl "
                         radius="full"
                         size={screen} 
-                        href="https://wa.me/5492236356756?text=Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion." target="_blank"
+                        href="https://wa.me/5492236356756?text=Hola,%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información." target="_blank"
                     >
                         <div className={`absolute rounded-full left-0 z-20 ${size===15 ? " p-2" : " p-3 "}   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                             bg-gradient-to-r from-[#78E933] to-[#5C9104]
