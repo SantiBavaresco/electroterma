@@ -17,6 +17,7 @@ let frameCount = 600;
     console.log(keyAttribute);
     if(keyAttribute === "tsa") frameCount = 600
     if(keyAttribute === "tda") frameCount = 600
+    if(keyAttribute === "rls") frameCount = 700
     if(keyAttribute === "home") frameCount = 850
 
 

@@ -159,7 +159,7 @@ export const Navbar = () => {
                         // className="sm:w-[180px]"
                         src="../../img/electrotermalogoletrasNoPadding.png"
                         // height={50}
-                        width={200}
+                        width={220}
                         alt="hola"
                     />
                     {/* <p className="font-bold text-inherit">Electroterma</p> */}

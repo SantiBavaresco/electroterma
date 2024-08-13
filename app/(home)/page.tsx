@@ -80,7 +80,7 @@ export default function Home() {
 
     return (
         <main id="vent" accessKey="home" className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 ">
-            <section className="h-[100%] w-full xl:px-[0%] flex items-center justify-center overflow-hidden bg-lowgrasy">
+            <section className="max-h-[90vh] w-full xl:px-[0%] flex items-center justify-center overflow-hidden bg-lowgrasy">
                 <VideoAutoPlayer url="../img/home/video/homePresentacion.mp4"/>
                 
             </section>
@@ -419,10 +419,10 @@ export default function Home() {
 
             {/* ------------- Botonera ------------- */}
 
-            <section className="lg:w-2/3 mx-auto lg:mx-[3%] lg:mb-10 lg:mt-10  flex flex-col items-center lg:flex-row justify-center md:justify-around
+            <section className="w-3/4 2xl:w-2/3 mx-auto 2xl:mx-[3%] lg:mb-10 lg:mt-10  flex flex-col items-center lg:flex-row justify-center md:justify-around
                 overflow-hidden">
                     
-                <section className=" lg:w-3/4 ">
+                <section className=" 2xl:w-3/4 ">
 					<div className=" px-auto  flex h-[150px] lg:h-[250px] items-center mt-10 md:mt-2 space-x-1 lg:space-x-10  text-[12px] lg:text-2xl text-center text-[#4C4B4B]">
 						<div>
 							<h1>Contactá</h1>

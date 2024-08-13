@@ -87,7 +87,7 @@ export default function Footer() {
 			<Link href="/" target="_top">
 				<Image
 				src="../../electroterma-logo.png"
-				// height={50}
+
 				
 				width="100%"
 				alt="hola"

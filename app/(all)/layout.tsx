@@ -20,7 +20,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { usePathname } from 'next/navigation'
 
 import clsx from "clsx";
-import Footer from "./footer";
+import Footer from "../../components/footer";
 
 
 
@@ -72,8 +72,8 @@ export default function RootLayout({
                     {/* {<section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
                     </section>} */}
+                    {/* <Navbar />  */}
 
-                    <Navbar /> 
 
                     <div className="relative flex flex-col h-screen">
                         <main className="container mx-auto max-w-full">

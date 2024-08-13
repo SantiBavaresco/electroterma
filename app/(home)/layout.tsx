@@ -20,7 +20,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { usePathname } from 'next/navigation'
 
 import clsx from "clsx";
-import Footer from "../(all)/footer";
+import Footer from "../../components/footer";
 
 
 
