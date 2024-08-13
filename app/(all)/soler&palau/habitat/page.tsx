@@ -148,9 +148,9 @@ export default function HabitatPage() {
 
                 {/* ------------- Parrafo Habitat ------------- */}
                 <article className=" flex  items-center justify-center font-nunito-thin text-[#575756] ">
-                    <div className="w-1/2 xl:w-3/4  max-w-[700px]">
+                    <div className="w-[70%] xl:w-3/4  max-w-[700px]">
                         <h1 className="text-[6vw] xl:text-[4vw]">{habitatData.pageData.title1}</h1>
-                        <div className="text-[2.5vw] md:text-[2vw] xl:text-[1.1vw]">
+                        <div className="text-[3.2vw] md:text-[2vw] xl:text-[1.1vw]">
                             <p>
                                 {habitatData.pageData.p1}
                                 <br/><br/>
@@ -411,7 +411,7 @@ export default function HabitatPage() {
                     </>
                 }
                 
-                <section className=" mx-auto mt-6"> 
+                <section className=" mx-auto mt-6 mb-6"> 
                 {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
                 </section>
               
