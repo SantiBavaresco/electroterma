@@ -148,8 +148,8 @@ export default function HabitatPage() {
 
                 {/* ------------- Parrafo Habitat ------------- */}
                 <article className=" flex  items-center justify-center font-nunito-thin text-[#575756] ">
-                    <div className="w-3/4  max-w-[700px]">
-                        <h1 className=" text-[4vw]">{habitatData.pageData.title1}</h1>
+                    <div className="w-1/2 xl:w-3/4  max-w-[700px]">
+                        <h1 className="text-[6vw] xl:text-[4vw]">{habitatData.pageData.title1}</h1>
                         <div className="text-[2.5vw] md:text-[2vw] xl:text-[1.1vw]">
                             <p>
                                 {habitatData.pageData.p1}
@@ -239,60 +239,70 @@ export default function HabitatPage() {
                     </>
                     : <>
                     {/* ------------- MOBILE ------------- */}
-                    <section className="flex flex-col justify-between  items-center gap-y-10 h-full  ">
+                    
+                    <section className="flex flex-row justify-between  items-center gap-x-2 h-full my-2 ">
                         
                         {/* ------------- Vent INLINE ------------- */}
-                        <div className=" w-full flex ">
-                            <div className="w-[60%] pr-2">
-                                <a href="/soler&palau/habitat/extractor">
+                        
+                        <div className=" w-1/2 flex " >
+                        
+                            <div className="w-2/3 pr-2">
                                 <Image
-                                    alt="Habitat mobile 1"
+                                    alt="Habitat 1"
                                     className=""
                                     radius="none"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitatMobile1.png"
-                                    width={"100%"}
+                                    src="../img/solerpalau/habitat/SolerPalauHabitat1.png"
+                                    width="100%"
                                 />
-                                 </a>
                             </div>
-                            <div className="flex flex-col justify-end  w-[40%]">
-                                {habitatData.pageData.mobileSpecsExtractor.map((item) =>(
-                                    <>
-                                        
-                                        <span className="flex items-center font-nunito align-middle text-[2vw] md:text-xs py-0.5"> <MdKeyboardDoubleArrowRight className=" text-livered-title"/> {item}</span>
-                                    </>
-                                ))
-
-                                }
+                            <div className="flex flex-col justify-end  w-[30%]">
                                 
+                                <Image
+                                    alt="Habitat inline 1"
+                                    className="w"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatInline1.png"
+                                    width="100%"
+                                />
+                                <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
+                                <Button className="font-nunito text-sm py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                                    radius="none"
+                                    size="sm"
+                                    onClick={()=>(window.open("/soler&palau/habitat/inline", '_top'))}
+                                >
+                                    Más info </Button>
                             </div>
                         </div>
 
                         {/* ------------- Vent EXTRACTOR ------------- */}
-                        <div className=" w-full flex ">
-                            <div className="w-[60%] pr-2">
-                                <a href="/soler&palau/habitat/inline"> 
+                        <div className=" w-1/2 flex ">
+                            <div className="w-2/3 pr-2">
                                 <Image
-                                    alt="Habitat mobile 2"
+                                    alt="Habitat 2"
                                     className=""
                                     radius="none"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitatMobile2.png"
-                                    width={"100%"}
+                                    src="../img/solerpalau/habitat/SolerPalauHabitat2.png"
+                                    width="100%"
                                 />
-                                </a>
                             </div>
-                            <div className="flex flex-col justify-end  w-[40%]">
-                                {habitatData.pageData.mobileSpecsInline.map((item) =>(
-                                    <div className="flex items-start" key={item}>
-                                        
-                                        <MdKeyboardDoubleArrowRight className="min-w-max mt-1 sm:mt-1.5 text-[2vw] text-livered-title"/> <span className=" font-nunito  text-[2vw]  md:text-xs py-0.5">  {item}</span>
-                                    </div>
-                                ))
-
-                                }
+                            <div className="flex flex-col justify-end  w-[30%]">
                                 
+                                <Image
+                                    alt="Habitat extractor 1"
+                                    className="w"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.png"
+                                    width="100%"
+                                />
+                                <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
+                                <Button className="font-nunito text-sm py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
+                                    radius="none"
+                                    size="sm"
+                                    onClick={()=>(window.open("/soler&palau/habitat/extractor", '_top'))}
+                                >
+                                    Más info </Button>
                             </div>
                         </div>
                     </section>
+                    
                     </>
                 }
                 
@@ -321,7 +331,7 @@ export default function HabitatPage() {
                     </> : 
                     <>
                     {/* ------------- MOBILE ------------- */}
-                    <section className="flex flex-col mt-10 py-4 gap-6">
+                    <section className="flex flex-col mt-2 py-4 gap-6">
                         <div className="flex flex-row mx-auto">
                             <div className="w-max  text-center"> 
                                 <DiferencialGranConfort size={40} textSize={10}/> 
@@ -331,7 +341,7 @@ export default function HabitatPage() {
                             </div>
                         </div>
                         <div className="w-max mx-auto text-center">
-                            <DiferencialCompuertaAntiretorno  size={40} textSize={10}/>
+                            <DiferencialFacilInstalacion  size={40} textSize={10}/>
                         </div>
                     </section>
                     </>
@@ -368,7 +378,7 @@ export default function HabitatPage() {
                 <section className="flex  h-full ">
                     <div className="flex flex-col mx-auto justify-center  items-center gap-y-6 xl:my-16">
                         <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
-                        <TiendaButton size={BigScreen ? 70 : 35} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
+                        <TiendaButton size={BigScreen ? 70 : 30} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
                     </div>
                 </section>
 
@@ -401,7 +411,7 @@ export default function HabitatPage() {
                     </>
                 }
                 
-                <section className=" mx-auto"> 
+                <section className=" mx-auto mt-6"> 
                 {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
                 </section>
               
