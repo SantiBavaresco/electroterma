@@ -206,7 +206,7 @@ export default function HabitatInlinePage() {
                         {habitatData.inlineData.subTitle1}
                         <span className=" underline decoration-[3px] underline-offset-8">{habitatData.inlineData.subTitle2}</span>
                     </h2>
-                    <p className="text-[#575756] text-[2.1vw] md:text-[2vw] xl:text-[1.5vw]">
+                    <p className="text-[#575756] text-[3.8vw] md:text-[2vw] xl:text-[1.5vw]">
                         <br/>
                         <span>{habitatData.inlineData.p1}</span>
                         <br/>
@@ -340,14 +340,14 @@ export default function HabitatInlinePage() {
                             width="100%"
                         />
                     </a>
-                    <a href="/soler&palau/habitat/inline" className="hover:opacity-70">
+                    {/* <a href="/soler&palau/habitat/inline" className="hover:opacity-70">
                         <Image
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"
                             src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav2.png"
                             width="100%"
                         />
-                    </a>
+                    </a> */}
                     <a href="/soler&palau/habitat/extractor" className="hover:opacity-70">
                         <Image
                             alt="SolerPalauHabitatInline1.png"
@@ -360,7 +360,7 @@ export default function HabitatInlinePage() {
               
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
 
-                <section className=" mx-auto"> 
+                <section className=" mx-auto mt-6 mb-6"> 
                 {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
                 </section>
                 

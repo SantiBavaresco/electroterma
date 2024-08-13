@@ -206,7 +206,7 @@ export default function HabitatInlinePage() {
                         {habitatData.extractorData.subTitle1}
                         <span className=" underline decoration-[3px] underline-offset-8">{habitatData.extractorData.subTitle2}</span>
                     </h2>
-                    <p className="text-[#575756] text-[2.5vw] md:text-[2vw] xl:text-[1.5vw]">
+                    <p className="text-[#575756] text-[3.8vw] md:text-[2vw] xl:text-[1.5vw]">
                         <br/>
                         <span>{habitatData.extractorData.p1}</span>
                         {!BigScreen || <br/>}
@@ -376,14 +376,14 @@ export default function HabitatInlinePage() {
                             width="100%"
                         />
                     </a>
-                    <a href="/soler&palau/habitat/extractor" className="hover:opacity-70">
+                    {/* <a href="/soler&palau/habitat/extractor" className="hover:opacity-70">
                         <Image
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"
                             src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav3.png"
                             width="100%"
                         />
-                    </a>
+                    </a> */}
                 </section>
 
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
