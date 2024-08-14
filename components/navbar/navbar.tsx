@@ -188,6 +188,7 @@ export const Navbar = () => {
                     placement="bottom"
                     className="bg-[#EF771C] !important translate-y-[-1.7%] rounded-none rounded-bl-[64px]"
                     isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
+                    
                 >
                     <DropdownTrigger className="bg-red-500 h-full">
                         {/* --------------- Burger --------------- */}
@@ -227,6 +228,7 @@ export const Navbar = () => {
                                 key={dropDown.label}
                                 isReadOnly
                                 className="h-[38px] gap-2 flex justify-start text-start  "
+                                onClick={()=>console.log("HOLAAAAAAAAAAAAAAAAAAAAAAAA")}
                             >
                                 {dropDown.dropdown ? (
                                     <Dropdown

@@ -79,7 +79,7 @@ export default function Home() {
       });
 
     return (
-        <main id="vent" accessKey="home" className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 ">
+        <main id="vent" accessKey="home" className="flex flex-col items-center justify-center gap-4 pb-0 md:pb-0 ">
             <section className="max-h-[90vh] w-full xl:px-[0%] flex items-center justify-center overflow-hidden bg-lowgrasy">
                 <VideoAutoPlayer url="../img/home/video/homePresentacion.mp4"/>
                 
@@ -93,7 +93,9 @@ export default function Home() {
                     width="100%"
                 />
             </section> */}
-            <Navbar/>
+            <section className="w-full -translate-y-4">
+                <Navbar/>
+            </section>
 
            {!BigScreen || <section className="relative w-full px-[3%] my-10 text-center font-lexend text-[#4C4B4B] text-[1.75vw] overflow-hidden">
                 <p>
@@ -109,7 +111,7 @@ export default function Home() {
                    
 
 
-                    <div className="absolute bottom-3 right-[26.5%] lg:right-[27.5%] xl:right-[28.5%] 2xl:right-[32.5%]">
+                    <div className="absolute bottom-3 right-[26.5%] lg:right-[27.5%] xl:right-[31.0%] 2xl:right-[32.5%]">
                         <svg width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.00898 30.1L0.908985 25.2C3.57565 24 5.74232 22.6 7.40898 21C9.07565 19.3333 9.90898 17.9333 9.90898 16.8C9.90898 16 9.57565 15.2667 8.90898 14.6C8.30898 13.8667 7.64232 13.2333 6.90898 12.7C5.37565 11.5 4.34232 10.4667 3.80898 9.6C3.27565 8.73333 3.00898 7.76666 3.00898 6.7C3.00898 4.96666 3.64232 3.56666 4.90898 2.5C6.24232 1.43333 7.90898 0.899995 9.90898 0.899995C11.7757 0.899995 13.4757 1.39999 15.009 2.39999C16.609 3.4 17.8423 4.76666 18.709 6.49999C19.5757 8.23333 20.009 10.3 20.009 12.7C20.009 14.5667 19.6423 16.4 18.909 18.2C18.1757 20 17.109 21.7 15.709 23.3C14.3757 24.8333 12.7757 26.2 10.909 27.4C9.10899 28.6 7.14232 29.5 5.00898 30.1ZM26.309 30.1L22.209 25.2C24.8757 24 27.0423 22.6 28.709 21C30.3757 19.3333 31.209 17.9333 31.209 16.8C31.209 16 30.8757 15.2667 30.209 14.6C29.609 13.8667 28.9423 13.2333 28.209 12.7C26.6757 11.5 25.6423 10.4667 25.109 9.6C24.5757 8.73333 24.309 7.76666 24.309 6.7C24.309 4.96666 24.9423 3.56666 26.209 2.5C27.5423 1.43333 29.209 0.899995 31.209 0.899995C33.0757 0.899995 34.7757 1.39999 36.309 2.39999C37.909 3.4 39.1423 4.76666 40.009 6.49999C40.8757 8.23333 41.309 10.3 41.309 12.7C41.309 14.5667 40.9423 16.4 40.209 18.2C39.4757 20 38.409 21.7 37.009 23.3C35.6757 24.8333 34.0757 26.2 32.209 27.4C30.409 28.6 28.4423 29.5 26.309 30.1Z" fill="#EF771C"/>
                         </svg>
@@ -288,7 +290,7 @@ export default function Home() {
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen grupal"
                     src="../../img/home/home.png"
-                    width={"95%"}
+                    width={"100%"}
                 />
                
                 
@@ -428,7 +430,7 @@ export default function Home() {
 							<h1>Contactá</h1>
 							<h1>a un vendedor</h1><br/>
 
-							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}
+							<AsesoramietoButton size={BigScreen ? 42 : 10} screen={BigScreen ? "xl" : "xs"}
                             link={"https://wa.me/5492236356756?text=Hola.%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información."}
                             // Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion
                             />

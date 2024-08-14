@@ -393,7 +393,7 @@ export default function TDAPage() {
                             
                             overflow-hidden">
                             
-                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TSA.pdf"} dwName={"TSA Manual.pdf"}/>
+                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TDA.pdf"} dwName={"TDA Manual.pdf"}/>
                             
                     </section>
                 </div>

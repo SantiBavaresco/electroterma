@@ -23,14 +23,19 @@ export const AsesoramietoButton: React.FC<Props> = ({ css, size, screen, label, 
                         size={screen} 
                         href="https://wa.me/5492236356756?text=Hola,%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información." target="_blank"
                     >
-                        <div className={`absolute rounded-full left-0 z-20 ${size===15 ? " p-2" : " p-3 "}   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                        <div className={`absolute rounded-full left-0 z-20 
+                            ${size===15 ? " p-2" : size===10 ? " p-1.5" : " p-3 "} 
+                            $}   
+                            shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                             bg-gradient-to-r from-[#78E933] to-[#5C9104]
                             group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                             group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                         `}> 
-                            <BsWhatsapp className={` text-white font-nunito  group-active:text-livered p- mx-1  lg:mx-2 ${size===15? "text-[3.7vw]" : "text-[6vw] "} lg:text-[2.7vw] 2xl:text-[2.1vw] `} /> 
+                            <BsWhatsapp className={` text-white font-nunito  group-active:text-livered p- mx-1  lg:mx-2  
+                                ${size===15? "text-[3.8vw]" : "text-[6vw] "} 
+                                ${size===10? "text-[2.6vw]" : "text-[6vw] "} lg:text-[2.7vw] 2xl:text-[2.1vw] `} /> 
                         </div>
-                        <span className="ml-[35px] lg:ml-14 ">{label ? label : "Asesoramiento" }</span>
+                        <span className={`ml-[35px] ${size===10? "text-[2.0vw] ml-[25px]" : " "}  lg:ml-14 `}>{label ? label : "Asesoramiento" }</span>
                     </MyButton>
             </a>
         </>

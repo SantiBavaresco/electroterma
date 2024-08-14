@@ -23,14 +23,15 @@ export const TiendaButton: React.FC<Props> = ({ css, size, screen, label, link, 
                     size={screen} 
                     // href="https://www.tiendaelectroterma.com.ar/" target="_blank"
                 >
-                    <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                    <div className={`absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
+                        ${size===15 ? " p-1.5" : " p-3 "} 
                         bg-gradient-to-r from-[#E6EB01] to-[#FFD600]
                         group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                         group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
-                    "> 
+                        `}> 
                         <ShoppingCart size={size} css="group-${}active:text-livered p- mx-0 lg:mx-1 lg:text-2xl "/>
                     </div>
-                    <span className={`ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"}`}>{label ? label : "Tienda Online" }</span>
+                    <span className={`ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[24px]" : " "} `}>{label ? label : "Tienda Online" }</span>
                 </MyButton>
             </a>
         </>
