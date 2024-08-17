@@ -305,7 +305,8 @@ export default function HabitatInlinePage() {
                 }
                 
                 {/* ------------- Boton manual ------------- */}
-                <section className="mx-auto lg:mx-[4%] lg:l-auto">
+                
+                <section className="mx-auto lg:mx-[4%] lg:ml-auto">
                     <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatExtractor.pdf"} dwName={"Habitat Extractor Manual.pdf"}/>
 
 

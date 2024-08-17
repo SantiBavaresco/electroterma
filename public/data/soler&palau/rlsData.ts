@@ -101,7 +101,7 @@ export const rlsData: ventDataType  = {
     },
 
     urltdaImageDemo: "../img/solerpalau/rls/imgDemo/",
-    demoImageNames: ["1", "2", "3", "1", "2", "3"],
+    demoImageNames: ["1", "2", "3", "4"],
 
     urlImageBanner: "../img/solerpalau/rls/imgbanner/",
     bannerImageInfo: [
@@ -109,11 +109,11 @@ export const rlsData: ventDataType  = {
             imgName:"1",
             imgLable:[
                 {   
-                    textLable:"Componente de",
-                    textColor:""
+                    textLable:"Renovación",
+                    textColor:""    
                 },
                 {   
-                    textLable:"equipo tempomatic",
+                    textLable:"de Aire ",
                     textColor:""
                 },
             ],
@@ -122,42 +122,63 @@ export const rlsData: ventDataType  = {
             imgName:"2",
             imgLable:[
                 {   
-                    textLable:"Es ideal para",
+                    textLable:"Extracción e inyección",
                     textColor:"stone-300"
                 },
                 {   
-                    textLable:"Extracción localizada",
+                    textLable:"cocina restaurante",
                     textColor:""
                 },
-                {   
-                    textLable:"en procesos de",
-                    textColor:""
-                },
-                {   
-                    textLable:"industria",
-                    textColor:""
-                },
+                // {   
+                //     textLable:"en procesos de",
+                //     textColor:""
+                // },
+                // {   
+                //     textLable:"industria",
+                //     textColor:""
+                // },
             ],
         },
         {
             imgName:"3",
             imgLable:[
                 {   
-                    textLable:"Es ideal para",
+                    textLable:"Equipo de secado y",
                     textColor:"stone-100"
                 },
                 {   
-                    textLable:"Áreas de proceso",
+                    textLable:"almacenaje de granos",
                     textColor:""
+                },
+                // {   
+                //     textLable:"donde se requiera",
+                //     textColor:""
+                // },
+                // {   
+                //     textLable:"renovaión de aire",
+                //     textColor:""
+                // },
+            ],
+        },
+        {
+            imgName:"4",
+            imgLable:[
+                {   
+                    textLable:"Extracción e inyección",
+                    textColor:"stone-100"
                 },
                 {   
-                    textLable:"donde se requiera",
+                    textLable:"en procesos industriales",
                     textColor:""
                 },
-                {   
-                    textLable:"renovaión de aire",
-                    textColor:""
-                },
+                // {   
+                //     textLable:"donde se requiera",
+                //     textColor:""
+                // },
+                // {   
+                //     textLable:"renovaión de aire",
+                //     textColor:""
+                // },
             ],
         }
         

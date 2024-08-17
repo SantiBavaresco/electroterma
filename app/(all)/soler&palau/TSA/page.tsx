@@ -555,7 +555,7 @@ export default function TSAPage() {
                                 />
                         
                     </section> */}
-                    <section className="pb-[10vh] w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
+                    <section className="pb-[10vh] mt-10 w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
                             
                             overflow-hidden">
                             

@@ -353,7 +353,7 @@ export default function HabitatPage() {
                         <YouTubePlayer
                             // url={item.presentationVideoId}
                             url={habitatData.videoYoutubeId1}
-                            height={"200px"}
+                            height={BigScreen ? "500px" : "200px"}
                             width={"100%"}
                             autoplay={1}
                         />
@@ -362,7 +362,7 @@ export default function HabitatPage() {
                         <YouTubePlayer
                             // url={item.presentationVideoId}
                             url={habitatData.videoYoutubeId2}
-                            height={"200px"}
+                            height={BigScreen ? "500px" : "200px"}
                             width={"100%"}
                             autoplay={1}
                         />

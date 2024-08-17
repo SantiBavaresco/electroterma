@@ -27,7 +27,7 @@ export default function Footer() {
 		<span className="font-lexeng-bolder font-bold">Calle 5 entre 6 y 8</span>
 		<span className="font-lexeng-bold text-[10px] xm:text-xs lg:text-lg">Parque Industrial Mar del Plata - Batán</span>
 		<div className="my-1">
-			<span className="flex items-center justify-center font-lexeng-bolder font-bold text-center"> <h1 className="pr-4">223-4649999</h1> 
+			<span className="flex items-center justify-center font-lexeng-bolder font-bold text-center"> <h1 className="pr-4">+54 9 223 464999</h1> 
 
 			<a className="font-normal flex flex-row items-center justify-center rounded-md pr-2 hover:bg-midgray" onClick={handleEmailClick} >
 				<IoMailOutline className="mx-2 text-orange-600 text-xl" /> 

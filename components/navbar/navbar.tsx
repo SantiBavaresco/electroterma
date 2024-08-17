@@ -59,9 +59,14 @@ import CardDisplay from "./cardDisplay";
 import { ItemsNavbar } from "@/types/itemsNavbar";
 import { itemsNavSolerPalau } from "@/public/data/navbarData";
 
+interface Props {
+    css?: string;
+
+}
 
 
-export const Navbar = () => {
+// export const Navbar = () => {
+export const Navbar: React.FC<Props> = ({ css, ...props }) => {
     const [firstDropdownOpen, setFirstDropdownOpen] = useState(false);
     const [secondDropdownOpen, setSecondDropdownOpen] = useState(false);
 
@@ -141,7 +146,7 @@ export const Navbar = () => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className="h-[42px] md:h-[64px]  lg:px-10  flex justify-center items-center font-nunito"
+            className={`h-[42px] md:h-[64px]  lg:px-10  flex justify-center items-center font-nunito ${css}`}
             position="sticky"
             height={"42px"}
 
@@ -159,7 +164,7 @@ export const Navbar = () => {
                         // className="sm:w-[180px]"
                         src="../../img/electrotermalogoletrasNoPadding.png"
                         // height={50}
-                        width={220}
+                        width={240}
                         alt="hola"
                     />
                     {/* <p className="font-bold text-inherit">Electroterma</p> */}
