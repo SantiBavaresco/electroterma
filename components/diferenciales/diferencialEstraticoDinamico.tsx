@@ -36,7 +36,7 @@ export const DiferencialEstaticoDinamico : React.FC<Props> =  ({size, text, text
 						<h5>Niveles de velocidad de vibración en</h5>
 						<h5>funcionamiento inferiores a 6 mm/s; -</h5>
 
-						<h5>Alcanzar rendimientos de hasta el 70%</h5>
+						<h5>Alcanzar rendimientos de hasta el 81%</h5>
 
 					</span>
 					

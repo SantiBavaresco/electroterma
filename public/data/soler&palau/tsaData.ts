@@ -113,7 +113,7 @@ export const tsaData: ventDataType  = {
     },
 
     urltdaImageDemo: "../img/solerpalau/tsa/imgDemo/",
-    demoImageNames: ["1", "2", "3", "4", "5"],
+    demoImageNames: ["1", "2", "3", "4"],
 
     urlImageBanner: "../img/solerpalau/tsa/imgbanner/",
     bannerImageInfo: [
@@ -171,8 +171,29 @@ export const tsaData: ventDataType  = {
                     textColor:""
                 },
             ],
+        },
+        {
+            imgName:"4",
+            imgLable:[
+                {   
+                    textLable:"Es ideal para",
+                    textColor:"stone-100"
+                },
+                {   
+                    textLable:"Áreas de proceso",
+                    textColor:""
+                },
+                {   
+                    textLable:"donde se requiera",
+                    textColor:""
+                },
+                {   
+                    textLable:"renovación de aire",
+                    textColor:""
+                },
+            ],
         }
-        
+
     ],
 
 

@@ -2,10 +2,11 @@
 import React from "react";
 import { MyButton } from "./myButton";
 import { BsWhatsapp } from "react-icons/bs";
+import { WhatsappLogo } from "@/public/svg/whatsappLogo";
 interface Props {
     css?: string;
     size?: number;
-    screen?: "xs" | "md" | "lg" | "xl" | "sm" | undefined;
+    screen?: "xs" | "md" | "lg" | "xl" | "xxl" | "sm" | undefined;
     label?: string;
     link?: string;
 }
@@ -31,11 +32,13 @@ export const AsesoramietoButton: React.FC<Props> = ({ css, size, screen, label, 
                             group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
                             group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                         `}> 
-                            <BsWhatsapp className={` text-white font-nunito  group-active:text-livered p- mx-1  lg:mx-2  
-                                ${size===15? "text-[3.8vw]" : "text-[6vw] "} 
-                                ${size===10? "text-[2.6vw]" : "text-[6vw] "} lg:text-[2.7vw] 2xl:text-[2.1vw] `} /> 
+                            <WhatsappLogo size={size} css="group-${}active:text-livered p- mx-0 lg:mx-1 lg:text-2xl "/>
+                            {/* <BsWhatsapp className={` text-white font-nunito  group-active:text-livered p- mx-1  lg:mx-2  
+                                ${size===15? "text-[3.8vw]" : "text-[4vw] "} 
+                                ${size===10? "text-[2.6vw]" : "text-[6vw] "} lg:text-[2.7vw] 2xl:text-[2.1vw] `} />  */}
                         </div>
-                        <span className={`ml-[35px] ${size===10? "text-[2.0vw] ml-[25px]" : " "}  lg:ml-14 `}>{label ? label : "Asesoramiento" }</span>
+                        <span className={`ml-[28px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[24px]" : " "} `}
+                        >{label ? label : "Asesoramiento" }</span>
                     </MyButton>
             </a>
         </>

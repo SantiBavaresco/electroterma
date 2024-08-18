@@ -64,7 +64,7 @@ export default function TempomaticPage() {
 
     return (
         <main className="flex flex-col h-full items-center justify-center gap-4 pb-4 md:pb-10 bg-[url('/svg/ondasTempomatic.svg')] bg-fill
-        bg-[center_top_20vw] bg-no-repeat overflow-hidden">
+        bg-[center_top_-64vw] md:bg-[center_top_-32vw] lg:bg-[center_top_20vw] bg-no-repeat overflow-hidden">
 
             {/* ------------- 3 columnas diferenciales superiores ------------- */}
             <section className="w-full px-[3%] mt-4">
@@ -75,16 +75,20 @@ export default function TempomaticPage() {
                     width="100%"
                 />
             </section>
-            <section className="relative w-full pt-6 px-[3%] mt-24 mb-20 text-center font-lexend text-[1.6vw] overflow-hidden text-[#787878]">
+            <section className="relative w-full pt-6 px-[3%] lg:mt-24 lg:mb-20 text-center font-lexend text-[2.0vw] lg:text-[1.6vw] overflow-hidden text-[#787878]">
                 <p>
                     {/* <span className="relative  align-bottom text-livered-title ">&quot;</span> */}
-                    <div className="z-20 absolute -top-[8%]  left-[23%] lg:left-[24%] xl:left-[22%] 2xl:left-[19.5%]">
+                    <div className="z-20 absolute 
+                        top-[30%] xm:top-[26%] sm:top-[8%] md:top-[14%] lg:top-[5%] xl:top-[1%]  2xl:top-[0%] 
+                        left-[13%] lg:left-[20%] xl:left-[20%] 2xl:left-[20.5%]
+                        w-[4vw] 
+                        ">
                     <Image  
                             className="z-20 mt-0"
                             alt="Background Tempomatic"
                             radius="none"
                             src="../../img/tempomatic/imgbanner/comillas.png"
-                            width="66%"
+                            width="100%"
                         />
                         {/* <svg width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.7625 29.2C8.82917 29.2 7.09583 28.7 5.5625 27.7C4.02917 26.7 2.79583 25.3333 1.8625 23.6C0.995834 21.8 0.5625 19.7667 0.5625 17.5C0.5625 15.6333 0.929167 13.8 1.6625 12C2.4625 10.2 3.52917 8.5 4.8625 6.89999C6.2625 5.3 7.8625 3.9 9.6625 2.7C11.5292 1.49999 13.5292 0.599994 15.6625 -5.96046e-06L19.6625 5C16.9958 6.13333 14.8292 7.53333 13.1625 9.19999C11.4958 10.8 10.6625 12.2 10.6625 13.4C10.6625 14.2 10.9625 14.9333 11.5625 15.6C12.2292 16.2667 12.9292 16.9 13.6625 17.5C15.1958 18.6333 16.2292 19.6667 16.7625 20.6C17.2958 21.4667 17.5625 22.4 17.5625 23.4C17.5625 25.1333 16.9292 26.5333 15.6625 27.6C14.3958 28.6667 12.7625 29.2 10.7625 29.2ZM32.2625 29.2C30.3292 29.2 28.5958 28.7 27.0625 27.7C25.5292 26.7 24.2958 25.3333 23.3625 23.6C22.4958 21.8 22.0625 19.7667 22.0625 17.5C22.0625 15.6333 22.4292 13.8 23.1625 12C23.9625 10.2 25.0292 8.5 26.3625 6.89999C27.7625 5.3 29.3625 3.9 31.1625 2.7C33.0292 1.49999 35.0292 0.599994 37.1625 -5.96046e-06L41.1625 5C38.4958 6.13333 36.3292 7.53333 34.6625 9.19999C32.9958 10.8 32.1625 12.2 32.1625 13.4C32.1625 14.2 32.4625 14.9333 33.0625 15.6C33.7292 16.2667 34.4292 16.9 35.1625 17.5C36.6958 18.6333 37.7292 19.6667 38.2625 20.6C38.7958 21.4667 39.0625 22.4 39.0625 23.4C39.0625 25.1333 38.4292 26.5333 37.1625 27.6C35.8958 28.6667 34.2625 29.2 32.2625 29.2Z" fill="#EC721B"/>
@@ -93,7 +97,7 @@ export default function TempomaticPage() {
 
 
                     <span className="">TEMPOMATIC es nuestra línea de productos HVAC, estándar como </span><br/>
-                    <span className="">personalizados, que ofrece soluciones eficientes para diversas </span><br/>
+                    <span className="">personalizado, que ofrece soluciones eficientes para diversas </span><br/>
                     <span className="">industrias, respaldadas por la confiabilidad y solidez de </span><br/>
                     <span className="">nuestro equipo de ingeniería. </span><br/>
 
@@ -169,7 +173,7 @@ export default function TempomaticPage() {
             {/* ------------- Barra de navegacion S&P ------------- */}
             <section className="z-0  h-full w-[100%]  md:mt-2 overflow-hidden ">
                 
-                <div className="flex justify-center contain  w-max mx-auto mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
+                <div className="flex justify-center contaainn  w-max mx-auto mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
                     
                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-4   "> 
                     {itemsNavTempomatic?.map((item) => (
@@ -191,8 +195,43 @@ export default function TempomaticPage() {
             </section>
 
             {/* ------------- Asesoramiento ------------- */}
+            <section className="w-full 2xl:w-2/3 mx-auto 2xl:mx-[3%] 2xl:-translate-x-10 lg:mb-10 lg:mt-10 font-nunito flex flex-col items-center lg:flex-row justify-center md:justify-around
+                overflow-hidden">
+                    
+                <section className=" 2xl:w-4/5 ">
+					<div className=" px-auto  flex h-[150px] md:h-[200px] lg:h-[250px] items-center mt-10 md:mt-2 space-x-1 md:space-x-5 lg:space-x-10  text-[12px] md:text-lg lg:text-3xl text-center text-[#4C4B4B]">
+						<div>
+							<h1>Contactá</h1>
+							<h1>a un vendedor</h1><br/>
 
-            <section className="w-1/2 mx-[3%] mb-10 mt-16 font- font-nunito flex flex-col items-center lg:flex-row justify-center md:justify-around
+							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}
+                            link={"https://wa.me/5492236356756?text=Hola.%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información."}
+                            // Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion
+                            />
+						</div>
+
+						<Divider orientation="vertical" className="bg-[#EDEDED]" />
+						<div>
+							<h1>Comprá en</h1>
+							<h1>nuestra tienda</h1><br/>
+
+                            <TiendaButton size={BigScreen ? 40 : 15} screen={BigScreen ? "xl" : "xs"}/>
+                            {/* <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} /> */}
+						</div>
+                        <Divider orientation="vertical" className="bg-[#EDEDED]" />
+						<div>
+							<h1 className="lg:w-max">Escribinos a través</h1>
+							<h1>de nuestro mail</h1><br/>
+
+                            <EscribinosButton size={BigScreen ? 40 : 15} screen={BigScreen ? "xl" : "xs"} />
+						</div>
+
+					</div>
+                        
+                </section>
+            </section>
+
+            {/* <section className="w-1/2 mx-[3%] mb-10 mt-16 font- font-nunito flex flex-col items-center lg:flex-row justify-center md:justify-around
                 overflow-hidden">
                     
                 <section className=" w-3/4 ">
@@ -201,7 +240,7 @@ export default function TempomaticPage() {
 							<h1>Contactá</h1>
 							<h1>a un vendedor</h1><br/>
 
-							<AsesoramietoButton size={BigScreen ? 42 : 25} screen={BigScreen ? "xl" : "lg"}
+							<AsesoramietoButton size={BigScreen ? 42 : 20} screen={BigScreen ? "xl" : "lg"}
                             link={"https://wa.me/5492236356756?text=Hola.%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información."}   
                             />
 						</div>
@@ -209,7 +248,7 @@ export default function TempomaticPage() {
 						<Divider orientation="vertical" className="bg-white" />
 
 						<div>
-							<h1>Escribinos a travéz</h1>
+							<h1>Escribinos a través</h1>
 							<h1>de nuestro mail</h1><br/>
 
                             <EscribinosButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} />
@@ -219,7 +258,7 @@ export default function TempomaticPage() {
                         
                 </section>
 
-            </section>
+            </section> */}
 
             {/* ------------- Imagenes presentacion ------------- */}
             <section className="w-full flex items-center justify-center mx-auto p-0 bg-transparent space-x-0">
@@ -233,7 +272,7 @@ export default function TempomaticPage() {
                         alt="Otam Logo"
                         radius="none"
                         src="../img/tempomatic/home/2.png"
-                        width={920}
+                        width={870}
                     />
                     {/* <Image
                         alt="Otam Logo"

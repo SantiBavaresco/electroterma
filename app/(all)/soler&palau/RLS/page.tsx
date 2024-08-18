@@ -441,7 +441,7 @@ export default function RLSPage() {
                                                     <h1 className="font-lexend ">Caudales de inyección </h1>
                                                     <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
                                                     <h1 className="font-lexend ">y contrapresiones desde</h1>
-                                                    <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
+                                                    <h1 className="font-lexend-bold  ">15 a 160 mmCA </h1>
 
                                                 </div>
                                         </div>
@@ -521,7 +521,7 @@ export default function RLSPage() {
                                                     <h1 className="font-lexend ">Caudales de inyección </h1>
                                                     <h1 >desde <span className="font-lexend-bold  ">2000 a 14000 m3/h</span></h1>
                                                     <h1 className="font-lexend ">y contrapresiones desde</h1>
-                                                    <h1 className="font-lexend-bold  ">15 a 180 mmCA </h1>
+                                                    <h1 className="font-lexend-bold  ">15 a 160 mmCA </h1>
 
                                                 </div>
                                         </div>

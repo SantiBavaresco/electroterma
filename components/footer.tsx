@@ -94,7 +94,7 @@ export default function Footer() {
 				/>
 			</Link>
 		</div>
-		<div className="w-full px-[3%] h-12 py-2 mt-2 flex flew-row justify-between bg-[#D9D9D9]">
+		<div className="w-full px-[3%] h-6 lg:h-12 py-2 mt-2 flex flew-row justify-between bg-[#D9D9D9]">
 			{/* <Link
 				isExternal
 				className="flex items-center gap-1 text-current pt-2"

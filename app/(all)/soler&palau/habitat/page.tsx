@@ -333,15 +333,26 @@ export default function HabitatPage() {
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col mt-2 py-4 gap-6">
                             <div className="w-max mx-auto text-center"> 
-                                <DiferencialGranConfort size={50} textSize={14}/> 
+                                <DiferencialGranConfort size={50} textSize={14} /> 
                             </div>
                             <div className="w-max mx-auto text-center">
-                                <DiferencialVolumenBajo size={50} textSize={14} text="Bajo nivel sonoro"/> 
+                                <DiferencialVolumenBajo size={50} textSize={14} text="Bajo nivel sonoro" /> 
                             </div>
                         <div className="w-max mx-auto text-center">
-                            <DiferencialFacilInstalacion  size={50} textSize={14}/>
+                            <DiferencialFacilInstalacion  size={50} textSize={14} />
                         </div>
                     </section>
+
+                    {/* <div className=" mx-[3%] flex flex-col justify-end items-end overflow-hidden">
+                    
+                    <section className=" my-4 md:flex">
+                        <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:mr-[10vw] ">
+                            <DiferencialGranConfort size={70} customWith={150} />
+                            <DiferencialVolumenBajo size={70} customWith={150}/>
+                            <DiferencialFacilInstalacion size={70} customWith={250} />
+                        </div>
+                    </section>
+                    </div> */}
                     </>
 
                 }
@@ -410,7 +421,7 @@ export default function HabitatPage() {
                 }
                 
                 <section className=" mx-auto mt-6 mb-6"> 
-                {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
+                {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessageHabitat}`}/> }
                 </section>
               
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
@@ -428,7 +439,7 @@ export default function HabitatPage() {
                     </div>
                     <div>
                     
-                    {!BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
+                    {!BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessageHabitat}`}/> }
                     
                     </div>
                    

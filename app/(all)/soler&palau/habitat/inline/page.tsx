@@ -297,7 +297,7 @@ export default function HabitatInlinePage() {
 
                 {/* ------------- ASESORAMIENTO Y TIENDA ------------- */}
                 <section className="flex  h-full ">
-                    <div className="flex flex-col mx-auto justify-center  items-center lg:gap-y-6 xl:my-16">
+                    <div className="flex flex-col mx-auto justify-center  items-center lg:gap-y-6 my-10 xl:my-16">
                         <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
                         <TiendaButton size={BigScreen ? 70 : 30} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
                     </div>
@@ -361,10 +361,10 @@ export default function HabitatInlinePage() {
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
 
                 <section className=" mx-auto mt-6 mb-6"> 
-                {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
+                {BigScreen || <AsesoramietoButton  screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessageInline}`}/> }
                 </section>
                 
-                <section className="flex flex-row justify-between  items-center  h-full">
+                {!BigScreen ||<section className="flex flex-row justify-between  items-center  h-full">
                     <div className="w-[240px] md:w-[340] lg:w-[250px] ">
                         <a href="/">
                         <Image
@@ -376,7 +376,7 @@ export default function HabitatInlinePage() {
                         </a>
                     </div>
                     <div>
-                        {!BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessage}`}/> }
+                         <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessageInline}`}/> 
                     </div>
                    
                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[200px] xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
@@ -389,7 +389,36 @@ export default function HabitatInlinePage() {
                         </a>
                         <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-sm">Distribuidor en Argentina</span>
                     </div>
-                </section>
+                </section>}
+
+                {BigScreen || 
+                 <section className="flex flex-col px-[3%] w-full">
+
+                 {/* ------------- Logos Electo-S&P ------------- */}
+                 <section className="flex flex-row justify-between  items-center  h-full">
+                     <div className="w-[240px] md:w-[340] lg:w-[450px] ">
+                         <a href="/">
+                         <Image
+                             alt="Electroterma Logo"
+                             className=""
+                             src="../../img/electrotermalogoletras.png"
+                             width="100%"
+                         />
+                         </a>
+                     </div>
+                     <div className="left-0 w-[120px] md:w-[200px] lg:w-[250px] mr-10 xl:top-2 xl:left-16 2xl:top-2 2xl:-left-10">
+                         <a href="/soler&palau">
+                             <Image
+                                 alt="Otam Logo"
+                                 src="../../img/otamlogo.png"
+                                 width="100%"
+                             />
+                         </a>
+                         <span className="ml-0 font-nunito relative -top-4 text-[8px] md:text-sm xl:text-lg">Distribuidor en Argentina</span>
+                     </div>
+                 </section>
+                 </section>
+                }
 
                 
             </section>

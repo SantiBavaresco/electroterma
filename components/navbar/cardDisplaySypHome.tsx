@@ -17,7 +17,7 @@ const CardDisplaySypHome: React.FC<dataProps> = ({ data, actual, ...props }) => 
         <main className={`bg-white 
             data-[selectable=true]:focus:bg-blue-500 !important 
             data-[hover=true]:bg-orange-500 !important
-            w-[20vw]
+            w-[40vw] lg:w-[20vw]
             group group-hover:bg-gray-5 gap-3
             z-10
             ${(data.key==="first") ? " md:rounded-tl-[28px] md:rounded-bl-[28px] hover:bg-none !important" : "" } 
@@ -35,9 +35,10 @@ const CardDisplaySypHome: React.FC<dataProps> = ({ data, actual, ...props }) => 
              <Image
                     // shadow="sm"
                     radius="lg"
+                    shadow="none"
                     width="100%"
                     alt={data.key}
-                    className="p-1 my-2 w-[140px] h-[70px]  md:w-[240px] md:h-[140px] object-contain  gap-3 shadow-lg"
+                    className="p-1 my-2 w-[140px] h-[70px]  md:w-[240px] md:h-[140px] object-contain  gap-3 shadow-none"
                     src={data.img}
                     key={data.key}
                 />

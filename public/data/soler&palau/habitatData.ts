@@ -3,7 +3,10 @@ interface habitatDataType {
     email: string;
     tiendaOnline: string;
     whatsappNumber: string;
-    whatsappMessage: string;
+    whatsappNumber1: string;
+    whatsappMessageHabitat: string;
+    whatsappMessageExtractor: string;
+    whatsappMessageInline: string;
     whatsappLink: string;
     pageData: {
       title1: string;
@@ -73,7 +76,10 @@ export const habitatData: habitatDataType  = {
     tiendaOnline: "https://www.tiendaelectroterma.com.ar/",
     whatsappLink: "https://wa.me/",
     whatsappNumber: "5492234365978",
-    whatsappMessage: "?text=¡Hola!%20Estoy%20en%20la%20tienda%20ELECTROTERMA%20y%20quiero%20pedir%20más%20información.",
+    whatsappNumber1: "54922343659788",
+    whatsappMessageHabitat: "?text=Hola.%20Quiero%20más%20información%20sobre%20los%20productos%20de%20la%20línea%20Hábitat%20de%20Soler%20&%20Palau.",
+    whatsappMessageExtractor: "?text=Hola.%20Quiero%20más%20información%20sobre%20los%20extractores%20de%20la%20línea%20Hábitat%20de%20Soler%20&%20Palau.",
+    whatsappMessageInline: "?text=Hola.%20Quiero%20más%20información%20sobre%20los%20ventiladores%20de%20la%20línea%20Hábitat%20de%20Soler%20&%20Palau.",
     pageData: {
         title1: "Hábitat",
         p1: "Integramos los espacios considerando cada detalle de calidad y confort para ofrecer bienestar y seguridad.",
