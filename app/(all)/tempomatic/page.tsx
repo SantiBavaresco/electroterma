@@ -75,12 +75,12 @@ export default function TempomaticPage() {
                     width="100%"
                 />
             </section>
-            <section className="relative w-full pt-6 px-[3%] lg:mt-24 lg:mb-20 text-center font-lexend text-[2.0vw] lg:text-[1.6vw] overflow-hidden text-[#787878]">
+            <section className="relative w-full pt-6 px-[3%] lg:mt-24 lg:mb-20 text-center font-lexend text-[2.9vw] lg:text-[1.6vw] overflow-hidden text-[#787878]">
                 <p>
                     {/* <span className="relative  align-bottom text-livered-title ">&quot;</span> */}
                     <div className="z-20 absolute 
-                        top-[30%] xm:top-[26%] sm:top-[8%] md:top-[14%] lg:top-[5%] xl:top-[1%]  2xl:top-[0%] 
-                        left-[13%] lg:left-[20%] xl:left-[20%] 2xl:left-[20.5%]
+                        top-[26%] xm:top-[24%] sm:top-[8%] md:top-[12%] lg:top-[5%] xl:top-[1%]  2xl:top-[0%] 
+                        left-[0%] lg:left-[20%] xl:left-[20%] 2xl:left-[20.5%]
                         w-[4vw] 
                         ">
                     <Image  
