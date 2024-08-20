@@ -33,7 +33,7 @@ export const siteConfig = {
         {
             label: "Zila",
             href: "/zila",
-			dropdown: true,
+			dropdown: false,
             dwData: itemsNavZila,
         },
         {

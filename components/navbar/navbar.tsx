@@ -77,7 +77,70 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
     };
 
 //  items acordion para mobile, hay que cambiarlo
-    const items: ItemsNavbar[] = [
+
+ const itemsTempomatic: ItemsNavbar[] = [
+
+    {
+        key: "11",
+        category: "tempomatic",
+        label: ["Unidad de tratamiento de aire"],
+        labelShort: "UTA",
+        img: "../../img/navbar/Tempomatic2.png",
+        href: "/tempomatic/uta",
+        color : "bg-[#EF7916]",
+
+    },
+    {
+        key: "12",
+        category: "tempomatic",
+        label: ["Generador de aire caliente"],
+        labelShort: "GDAC",
+        img: "../../img/navbar/Tempomatic5.png",
+        href: "/tempomatic/GeneradorAireCaliente",
+        color : "bg-[#EF7916]",
+
+    },
+    {
+        key: "13",
+        category: "tempomatic",
+        label: ["Calefactor eléctrico"],
+        labelShort: "CE",
+        img: "../../img/navbar/Tempomatic3.png",
+        href: "/tempomativ/CalefactorElectrico",
+        color : "bg-[#EF7916]",
+
+    },
+    {
+        key: "21",
+        category: "tempomatic",
+        label: ["Unidad manejadora de aire"],
+        labelShort: "UMDA",
+        img: "../../img/navbar/Tempomatic4.png",
+        href: "/tempomatic/UnidadManejadoraAire",
+        color : "bg-[#EF7916]",
+
+    },
+    {
+        key: "22",
+        category: "tempomatic",
+        label: ["Caja Ventiladora",],
+        labelShort: "CV",
+        img: "../../img/navbar/Tempomatic1.png",
+        href: "/tempomatic/CajaVentiladora",
+        color : "bg-[#EF7916]",
+    },
+    {
+        key: "23",
+        category: "tempomatic",
+        label: ["Caldera para calefacción"],
+        labelShort: "CC",
+        img: "../../img/navbar/Tempomatic6.png",
+        href: "/tempomatic/CalderaParaCalefaccion",
+        color : "bg-[#EF7916]",
+
+    },
+];
+    const itemsSyP: ItemsNavbar[] = [
         {
             key: "first",
             category: "soler&palau",
@@ -201,7 +264,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                             <svg
                                 width="30"
                                 height="28"
-                                viewBox="0 0 30 28"
+                                viewBox="0 0 40 37"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
@@ -332,10 +395,10 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                  aria-label={isMenuOpen ? "C" : "O"}
                  icon={isMenuOpen ? "C" : 
                  
-                 <div className="w-[200px] h-[100%] min-w-64 flex items-center justify-center bg-[#EF771C]">
+                 <div className="w-[150px] h-[100%] min-w-32 flex items-center justify-center bg-[#EF771C]">
                             <svg
-                                width="30"
-                                height="28"
+                                width="25"
+                                height="25"
                                 viewBox="0 0 40 37"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -369,39 +432,64 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                 
                 <div className="mx-4 mt-2 flex flex-col gap-2 ">
                     
-                    {siteConfig.navMenuItems.map((item, index) => (
-                        <NavbarMenuItem key={`${item}-${index}`}
+                    {siteConfig.navItems.map((dropdown, index) => (
+                        <NavbarMenuItem key={`${dropdown}-${index}`}
                         onClick={() => setMobileDropdownOpen(false)} 
                         >
                             
-                                {item.dropdown ? 
+                            
+
+                                {dropdown.dropdown ? 
                                     <div className="">
                                         <Accordion variant="light">
-                                            <AccordionItem key={item.label} aria-label={item.label} title={item.label}
+                                            <AccordionItem key={dropdown.label} aria-label={dropdown.label} title={dropdown.label}
                                             className=""
+                                         
                                             startContent={
                                                 <Avatar
-                                                  isBordered
-                                                  color="primary"
-                                                  radius="lg"
-                                                  src="../img/navbar/NavBarHabitat1SolerPalau.png"
+                                                    isBordered
+                                                    color={`${dropdown.label==="Tempomatic" ? `warning`: "danger"}`}
+                                                    radius="lg"
+                                                    src={`../img/navbar/${dropdown.label}.png`}
                                                 />
-                                              }>
+                                            }>
                                                 <div className="grid grid-cols-2 gap-2 w-[100%]">
-                                                {items?.map((item) => (
-                                                    // <p key={item.key}>{item.label}</p>
-                                                    <NextLink
-                                                        className="max-w-[40vw] "
-                                                        color="foreground"
-                                                        href={item.href}
-                                                        target="_top"
-                                                        key={item.key}
-                                                        
-                                                    >
-                                                        
-                                                        <CardDisplay data={item}/>
-                                                    </NextLink>
-                                                ))}
+                                                    
+                                                {/* Aca va la logica hardcodeada para mobile */}
+                                                {dropdown.label === "Tempomatic"
+                                                    ? itemsTempomatic?.map((i) => (
+                                                
+                                                        <NextLink
+                                                            className="max-w-[40vw] "
+                                                            color="foreground"
+                                                            href={i.href}
+                                                            target="_top"
+                                                            key={i.key}
+                                                            
+                                                        >
+                                                            
+                                                            <CardDisplay data={i}/>
+                                                        </NextLink>
+                                                    ))
+
+                                                    : dropdown.label === "Soler & Palau"
+                                                        ? itemsSyP?.map((i) => (
+                                                
+                                                            <NextLink
+                                                                className="max-w-[40vw] "
+                                                                color="foreground"
+                                                                href={i.href}
+                                                                target="_top"
+                                                                key={i.key}
+                                                                
+                                                            >
+                                                                
+                                                                <CardDisplay data={i}/>
+                                                            </NextLink>
+                                                        ))
+
+                                                    : null
+                                                }
                                                 </div>
                                             </AccordionItem>
                                             
@@ -412,11 +500,11 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                 <NextLink
                                     className=""
                                     color="foreground"
-                                    href={item.href}
-                                    target={item.label === "Tienda Online" ? undefined : "_blank"}
+                                    href={dropdown.href}
+                                    target={dropdown.label === "Tienda Online" ? undefined : "_blank"}
                                               
                                 >
-                                    <h1>{item.label}</h1> 
+                                    <h1>{dropdown.label}</h1> 
                                 </NextLink>
                                 }
                                 {/* {item.label} */}
