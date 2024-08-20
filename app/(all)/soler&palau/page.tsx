@@ -69,7 +69,8 @@ export default function SolerPalauPage() {
             <section className="w-full px-[3%] mt-4">
                 <Image
                     alt="Home banner 1"
-                    className="rounded-[44px]"
+                    className="rounded-[44-px]"
+                    radius="none"
                     src="../img/solerpalau/imgbanner/SolerPalauHome4.png"
                     width="100%"
                 />

@@ -201,7 +201,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                             <svg
                                 width="30"
                                 height="28"
-                                viewBox="0 0 40 37"
+                                viewBox="0 0 30 28"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                             >

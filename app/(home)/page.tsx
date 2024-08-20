@@ -441,7 +441,7 @@ export default function Home() {
 							<h1>Contactá</h1>
 							<h1>a un vendedor</h1><br/>
 
-							<AsesoramietoButton size={BigScreen ? 42 : 10} screen={BigScreen ? "xl" : "xs"}
+							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}
                             link={"https://wa.me/5492236356756?text=Hola.%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información."}
                             // Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion
                             />
