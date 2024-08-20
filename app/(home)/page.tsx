@@ -101,13 +101,13 @@ export default function Home() {
 
             <Navbar css=" -mt-4"/>
 
-           {<section className="relative w-full px-[3%] my-3 lg:my-10 pt-4 text-center font-lexend text-[#4C4B4B] text-[1.75vw] overflow-hidden">
+           {<section className="relative w-full px-[3%] my-3 lg:my-10 pt-4 text-center font-lexend text-[#4C4B4B] text-[3.5vw] lg:text-[1.75vw] overflow-hidden">
                 <p>
                     {/* <span className="relative  align-bottom text-livered-title ">&quot;</span> */}
                     <div className="z-20 absolute 
-                        top-[30%] xm:top-[26%] sm:top-[10%] md:top-[10%] lg:top-[5%] xl:top-[1%]  2xl:-top-[22%] 
-                        left-[24%] lg:left-[24%] xl:left-[25%] 2xl:left-[23.5%]
-                        w-[4vw]
+                        top-[30%] xs:top-[20%] xm:top-[14%] sm:top-[15%] md:top-[10%] lg:top-[5%] xl:top-[1%]  2xl:-top-[22%] 
+                        left-[0.5%] lg:left-[24%] xl:left-[25%] 2xl:left-[23.5%]
+                        w-[7vw] lg:w-[4vw]
                         ">
                         <Image  
                             className=" mt-0"
