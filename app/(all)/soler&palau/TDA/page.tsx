@@ -531,12 +531,12 @@ export default function TDAPage() {
                         </div>
                         <div className="-z-10 mx-[3%]">
                                 <div className=" w-full mx-auto mt-0">
-                                    <div className="mt-2  flex items-center justify-center opacity-30">
+                                    <div className="mt-2  flex items-center justify-end opacity-30">
                                         <Image
                                             alt="Otam Logo"
                                             className=""
                                             src="../img/otamlogo.png"
-                                            width={300}
+                                            width={150}
                                         />
                                     </div>
                                     
@@ -548,7 +548,7 @@ export default function TDAPage() {
                                             alt="Electroterma Logo"
                                             className=""
                                             src="../img/electrotermalogoletras.png"
-                                            width={340}
+                                            width={140}
                                         />
                                         </a>
                                     </div>
@@ -589,11 +589,11 @@ export default function TDAPage() {
                             fileName={tdaData.demoImageNames}
                         />
                     </div>
-                    <section className="mt-10 mb-10 w-2/3 ">
+                    <section className="mt-10 mb-10 w-screen lg:w-3/4 ">
                         <div className="mx-[3%] flex flex-row items-center justify-center mt-10 md:mt-2 gap-[2%] ">
-                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}
+                            <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
                                 link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20este%20Ventilador%20Centrífugo%20Multipala%20TDA"}/>
-                            <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
+                            <TiendaButton size={BigScreen ? 40 : 20} screen={BigScreen ? "xl" : "md"}/>
                         </div>    
                     </section>
                     {/* <div className="flex justify-bettween items-center mt-10 md:mt-2  w-full">

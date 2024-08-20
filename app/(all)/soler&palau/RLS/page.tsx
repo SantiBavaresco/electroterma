@@ -391,7 +391,7 @@ export default function RLSPage() {
                         </Button>
                     </section> */}
                    
-                    <section className="pb-[10vh] w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
+                    <section className="pb-[5vh] pt-[5vh] lg:pb-[10vh] lg:pt-[0vh] w-[40%] 3xl:w-[50%] ml-auto flex justify-end md:justify-center
                             
                             overflow-hidden">
                             
@@ -591,11 +591,11 @@ export default function RLSPage() {
                             fileName={rlsData.demoImageNames}
                         />
                     </div>
-                    <section className="mt-10 mb-10 w-2/3 ">
-                        <div className="mx-[3%] flex flex-row items-center justify-center mt-10 md:mt-2 gap-[2%] ">
-                            <AsesoramietoButton screen={BigScreen ? "xl" : "lg"}
+                    <section className="mt-10 mb-10 w-screen lg:w-3/4">
+                        <div className="mx-[0%]  flex flex-row items-center justify-center mt-10 md:mt-2 gap-[2%] ">
+                            <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
                                 link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20este%20Ventilador%20Centrífugo%20Multipala%20RLS"}/>
-                            <TiendaButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"}/>
+                            <TiendaButton size={BigScreen ? 40 : 20} screen={BigScreen ? "xl" : "md"}/>
                         </div>    
                     </section>
                     {/* <div className="flex justify-bettween items-center mt-10 md:mt-2  w-full">
