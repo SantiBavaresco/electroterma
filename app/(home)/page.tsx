@@ -300,7 +300,7 @@ export default function Home() {
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen grupal"
-                    src="../../img/home/home.png"
+                    src={`../../img/home/${BigScreen ? "home" : "homeMobile"}.png`}
                     width={"100%"}
                 />
                
@@ -356,7 +356,7 @@ export default function Home() {
 
             {/* ------------- Direccionamiento a los productos ------------- */}
             <section className="my-10 mt-14 translate-y-[80px] lg:mt-0 lg:translate-y-10">
-                <div className="mx-auto w-3/4 lg:w-3/5 flex flex-row gap-[2%]">
+                <div className="mx-auto w-3/4 lg:w-3/5 flex flex-col-2 lg:flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <a
 						className="w-[100%] hover:opacity-80 hover:translate-y-1" 
