@@ -361,7 +361,7 @@ export default function HabitatInlinePage() {
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
 
                 <section className=" mx-auto mt-6 mb-6"> 
-                {BigScreen || <AsesoramietoButton  screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessageInline}`}/> }
+                {BigScreen || <AsesoramietoButton  screen={BigScreen ? "xl" : "lg"} size={25} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessageInline}`}/> }
                 </section>
                 
                 {!BigScreen ||<section className="flex flex-row justify-between  items-center  h-full">

@@ -421,7 +421,7 @@ export default function HabitatPage() {
                 }
                 
                 <section className=" mx-auto mt-6 mb-6"> 
-                {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessageHabitat}`}/> }
+                {BigScreen || <AsesoramietoButton screen={BigScreen ? "xl" : "lg"} size={25} link={`${habitatData.whatsappLink}${habitatData.whatsappNumber}${habitatData.whatsappMessageHabitat}`}/> }
                 </section>
               
                 {/* ------------- LOGOS Electroterma-Soler ------------- */}
