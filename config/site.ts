@@ -59,41 +59,48 @@ export const siteConfig = {
         {
             label: "Inicio",
             href: "/",
+			dropdown: false,
+        },
+
+
+        {
+            label: "Tempomatic",
+            href: "/tempomatic",
+			dropdown: true,
+            dwData: itemsNavTempomatic,
+        },
+        {
+            label: "Soler & Palau",
+            href: "/soler&palau",
+			dropdown: true,
+            dwData: itemsNavSolerPalau,
+        },
+        {
+            label: "DTI",
+            href: "/dti",
+			dropdown: false,
+        },
+
+        {
+            label: "Zila",
+            href: "/zila",
+			dropdown: false,
+            dwData: itemsNavZila,
         },
         {
             label: "Soluciones en HVAC",
             href: "/solucionesHVAC",
 			dropdown: false,
         },
-        {
-            label: "Tempomatic",
-            href: "/tempomatic",
-			dropdown: true,
+        // {
+        //     label: "Nosotros",
+        //     href: "/nosotros",
+		// 	dropdown: false,
 
-        },
-        {
-            label: "Soler&Palau",
-            href: "/soler&palau",
-            imgHref: "",
-			dropdown: true,
-
-        },
-
-        {
-            label: "Zila",
-            href: "/zila",
-			dropdown: true,
-
-        },
-        {
-            label: "Nosotros",
-            href: "/nosotros",
-			dropdown: false,
-
-        },
+        // },
         {
             label: "Tienda Online",
-            href: "/tiendaonline",
+            href: "https://www.tiendaelectroterma.com.ar/",
 			dropdown: false,
 
         },

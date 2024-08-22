@@ -76,6 +76,13 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
         setFirstDropdownOpen(false);
     };
 
+    const handleAnchor = (link:string) => {
+        // setSecondDropdownOpen(false)
+        setFirstDropdownOpen(false)
+        // setFirstFalse
+        window.open(link, '_top', 'noopener noreferrer');
+      };
+
 //  items acordion para mobile, hay que cambiarlo
 
  const itemsTempomatic: ItemsNavbar[] = [
@@ -296,7 +303,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                 key={dropDown.label}
                                 isReadOnly
                                 className="h-[38px] gap-2 flex justify-start text-start  "
-                                onClick={()=>console.log("HOLAAAAAAAAAAAAAAAAAAAAAAAA")}
+                                onClick={()=>setSecondDropdownOpen}
                             >
                                 {dropDown.dropdown ? (
                                     <Dropdown
@@ -309,11 +316,22 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                             <div>
                                                 <p className="flex items-center justify-center1 font-nunito text-white text-xl ">
                                                 <BsArrowBarLeft className="text-3xl"/>
+                                                        <div onClick={(e)=>{
+                                                                
+                                                                // if (dropDown.label==="Tempomatic") {
+                                                                //     e.stopPropagation();
+                                                                //     handleAnchor(dropDown.href);
+                                                                //   }
+                                                                dropDown.label==="Tempomatic" ? handleAnchor(dropDown.href) : dropDown.label==="Soler & Palau" ? handleAnchor(dropDown.href) : <></>
+                                                        }}>
                                                     {dropDown.label}
+                                                    </div>
+                                                    {/* </a> */}
                                                 </p>
                                             </div>
                                         </DropdownTrigger>
                                         <DropdownMenu
+                                            
                                             aria-label="Profile Actions"
                                             variant="flat"
                                             items={dropDown.dwData}
@@ -387,7 +405,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
 
 {/* ------------------------------------ MENU MOBILE ------------------------------------ */}
 
-            <NavbarContent className="md:hidden basis-1 w-screen pl-4" justify="end">
+            <NavbarContent className=" md:hidden basis-1 w-screen pl-4" justify="end">
                 
                 
                 <NavbarMenuToggle 
@@ -432,7 +450,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                 
                 <div className="mx-4 mt-2 flex flex-col gap-2 ">
                     
-                    {siteConfig.navItems.map((dropdown, index) => (
+                    {siteConfig.navMenuItems.map((dropdown, index) => (
                         <NavbarMenuItem key={`${dropdown}-${index}`}
                         onClick={() => setMobileDropdownOpen(false)} 
                         >
@@ -442,9 +460,13 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                 {dropdown.dropdown ? 
                                     <div className="">
                                         <Accordion variant="light">
-                                            <AccordionItem key={dropdown.label} aria-label={dropdown.label} title={dropdown.label}
+                                            <AccordionItem key={dropdown.label} aria-label={dropdown.label} 
+                                            title={
+                                                <a key={dropdown.label} 
+                                                href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
+                                                {dropdown.label}
+                                            </a>}
                                             className=""
-                                         
                                             startContent={
                                                 <Avatar
                                                     isBordered
@@ -501,15 +523,28 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                     className=""
                                     color="foreground"
                                     href={dropdown.href}
-                                    target={dropdown.label === "Tienda Online" ? undefined : "_blank"}
+                                    target={dropdown.label === "Tienda Online" ? "_blank" : undefined  }
                                               
                                 >
                                     <h1>{dropdown.label}</h1> 
                                 </NextLink>
                                 }
+
+                                {/* <NextLink
+                                    className=""
+                                    color="foreground"
+                                    href={dropdown.href}
+                                    target={dropdown.label === "Tienda Online" ? "_blank" : undefined  }
+                                              
+                                > */}
+                                {/* </NextLink> */}
                                 {/* {item.label} */}
                             {/* </Link> */}
+
+                            {/* <h1 onClick={() => setMobileDropdownOpen(false)}>HOLAAA</h1>  */}
+                            
                         </NavbarMenuItem>
+                        
                     ))}
                 </div>
             </NavbarMenu>

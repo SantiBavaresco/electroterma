@@ -141,7 +141,7 @@ export default function Home() {
             </section> */}
 
             {/* ------------- Banners de prodcutos ------------- */}
-            <section className="relative w-full h-[58vw] lg:h-[51vw] bg-gray-00 overflow-hidden">
+            {BigScreen ? <section className="relative w-full h-[58vw] lg:h-[51vw] bg-gray-00 overflow-hidden">
                 <section className="z-10 mx-[3%] flex flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <div
@@ -288,6 +288,164 @@ export default function Home() {
                 </section>
 
             </section>
+            : <>
+            {/* ------------- Banners de prodcutos MOBILE ------------- */}
+
+            <section className="w-full h-full  bg-gray-00 overflow-hidden">
+
+                <section className="z-10 w-[95%] mx-[5%]  flex gap-[5%]">
+                    {/* ------------- TEMPOMATIC ------------- */}
+                    <div
+                        className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
+                        onClick={()=>handleAnchor("/tempomatic")}
+                    >
+                    <>
+                        <Image  
+                            className=" mt-0"
+                            alt="Background Tempomatic"
+                            radius="none"
+                            src="../../img/home/homeBanner/h1.png"
+                            width="100%"
+                        />
+
+                        <div className="w-[60%] mx-auto -mt-10 ">
+                            <Image  
+                                className=" "
+                                alt="Tempomatic"
+                                radius="none"
+                                src="../../img/home/homeBanner/1.png"
+                                width="100%"
+                            />
+                        </div>
+                    </>
+                    </div>
+
+                    {/* ------------- SOLER Y PALAU ------------- */}
+                    <div
+                        className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
+                        onClick={()=>handleAnchor("/soler&palau")}
+                    >
+                    <>
+                        <Image  
+                            className=" mt-0"
+                            alt="Background SyP"
+                            radius="none"
+                            src="../../img/home/homeBanner/h2.png"
+                            width="100%"
+                        />
+                        <div className="w-[60%] mx-auto -mt-10">
+                            <Image  
+                                className=" "
+                                alt="Syp"
+                                radius="none"
+                                src="../../img/home/homeBanner/2.png"
+                                width="100%"
+                            />
+                        </div>
+                    </>
+                    </div>
+
+               
+                </section>
+
+                <section className="z-10 w-[95%] mx-[5%]  flex gap-[5%]">
+                     {/* ------------- DTI ------------- */}
+                     <div
+                        className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
+                        onClick={()=>handleAnchor("/dti")}
+                    >
+                    <>
+                        <Image  
+                            className=" mt-0"
+                            alt="Background DTI"
+                            radius="none"
+                            src="../../img/home/homeBanner/h3.png"
+                            width="100%"
+                        />
+                        <div className="w-[60%] mx-auto -mt-10">
+                            <Image  
+                                className=" "
+                                alt="DTI"
+                                radius="none"
+                                src="../../img/home/homeBanner/3.png"
+                                width="100%"
+                            />
+                        </div>
+                    </>
+                    </div>
+
+                    {/* ------------- ZILA ------------- */}
+                    <div
+                        className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
+                        onClick={()=>handleAnchor("/zila")}
+                    >
+                    <>
+                        <Image  
+                            className=" mt-0"
+                            alt="Background Zila"
+                            radius="none"
+                            src="../../img/home/homeBanner/h4.png"
+                            width="100%"
+                        />
+                        <div className="w-[60%] mx-auto -mt-10">
+                            <Image  
+                                className=" "
+                                alt="Zila"
+                                radius="none"
+                                src="../../img/home/homeBanner/4.png"
+                                width="100%"
+                            />
+                        </div>
+                    </>
+                    </div>
+                    
+                </section>
+
+              
+                
+
+            </section>
+                {/* ------------- Lineas curvas ------------- */}
+                <section className="z-10 mx-[3%] flex grid-col-2 gap-[2%]">
+                <div className=" absolute z-0 w-[40%] -mt-[2%] xs:-mt-[5.5vw] xm:-mt-[8%] botto-[40.5vw] left-[4.2%]">
+                    <Image  
+                        className="mt-0 "
+                        alt="Linea Izquierda"
+                        radius="none"
+                        src="../../img/home/homeBanner/l1.png"
+                        width="100%"
+                    />
+                </div>
+                <div className="absolute z-10  w-[40%] -mt-[2%] xs:-mt-[5.5vw] xm:-mt-[8%] toap-[2.5vw]  right-[3.9%]">
+                    <Image  
+                        className="mt-0"
+                        alt="Linea Derecha"
+                        radius="none"
+                        src="../../img/home/homeBanner/l2.png"
+                        width="100%"
+                    />
+                </div>
+                </section>
+
+
+                {/* ------------- Consultanos ------------- */}
+                <section className="relative z-20 bg-white top-[9.5%]  md:w-98% py-2  flex justify-center items-center">
+                <div className="ml-[10px] mr-[10px]">
+                    <h2 className="text-[#4C4B4B] text-center text-xs xm:text-base md:text-2xl 2xl:text-4xl font-nunito-bold">
+                        {" "}
+                        Conocé nuestras {" "}
+                        <Link href="/solucionesHVAC">
+                        <Button size={BigScreen ? "lg" : "sm"} radius="full" className="border-[4px] border-white bg-[#EF771C]  2xl:text-3xl lg:px-8 -[23px] lg:mr-0 text-[#FFFFFF]" 
+                            // onClick={handleEmailClick}
+                            >
+                        Soluciones
+                    </Button></Link>
+                    </h2>
+                </div>
+
+                </section>
+            </>
+            }
 
 
 

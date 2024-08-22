@@ -240,11 +240,11 @@ export default function HabitatPage() {
                     : <>
                     {/* ------------- MOBILE ------------- */}
                     
-                    <section className="flex flex-row justify-between  items-center gap-x-2 h-full my-2 ">
+                    <section className="flex flex-col xm:flex-row justify-between  items-center gap-6 gap-x-2 h-full my-2 ">
                         
                         {/* ------------- Vent INLINE ------------- */}
                         
-                        <div className=" w-1/2 flex " >
+                        <div className=" w-4/5 xm:w-1/2 flex " >
                         
                             <div className="w-2/3 pr-2">
                                 <Image
@@ -274,7 +274,7 @@ export default function HabitatPage() {
                         </div>
 
                         {/* ------------- Vent EXTRACTOR ------------- */}
-                        <div className=" w-1/2 flex ">
+                        <div className=" w-4/5 xm:w-1/2 flex ">
                             <div className="w-2/3 pr-2">
                                 <Image
                                     alt="Habitat 2"
@@ -328,10 +328,11 @@ export default function HabitatPage() {
                             
                         </div>
                     </section>
+                    
                     </> : 
                     <>
                     {/* ------------- MOBILE ------------- */}
-                    <section className="flex flex-col mt-2 py-4 gap-6">
+                    {/* <section className="flex flex-col mt-2 py-4 gap-6">
                             <div className="w-max mx-auto text-center"> 
                                 <DiferencialGranConfort size={50} textSize={14} /> 
                             </div>
@@ -340,6 +341,16 @@ export default function HabitatPage() {
                             </div>
                         <div className="w-max mx-auto text-center">
                             <DiferencialFacilInstalacion  size={50} textSize={14} />
+                        </div>
+                    </section> */}
+
+                    <section className=" mx-auto my-8 flex">
+                        <div className="flex flex-col gap-4 w-4/ justify-center items-start align-center ">
+                        
+                            <DiferencialGranConfort size={60} customWith={100} />
+                            <DiferencialVolumenBajo size={60} customWith={250} />
+                            <DiferencialFacilInstalacion size={60} customWith={150} />
+                            <DiferencialFacilInstalacion size={60} customWith={250} />
                         </div>
                     </section>
 

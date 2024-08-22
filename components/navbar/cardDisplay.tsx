@@ -51,7 +51,9 @@ const CardDisplay: React.FC<dataProps> = ({ data, actual, ...props }) => {
                     ${(data.key==="23") ? " md:rounded-br-[28px]  hover:bg-none !important" : "" }  
                 `}>
                     {data?.label?.map((description:string)=>(
+                        // <a key={description} href={description==="Tempomatic" ? description : description==="Soler & Palau" ? description : "HOLA"}  target="_top" >
                         <p key={description} className="gap-3 xm:px-2 text-[10px] xm:text-xs md:text-base lg:text-base xl:text-xl">{description}</p>
+                        // </a>
             
                     ))}
 

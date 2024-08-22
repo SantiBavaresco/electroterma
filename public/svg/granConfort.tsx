@@ -28,7 +28,7 @@ export const GranConfort: React.FC<Props> = ({
                 ry="49.5"
                 fill="#E90303"
             />
-            <g clip-path="url(#clip0_0_1)">
+
                 <path
                     d="M72.1983 53.749C72.9982 53.749 73.6467 53.1175 73.6467 52.3386C73.6467 51.5597 72.9982 50.9282 72.1983 50.9282C71.3984 50.9282 70.75 51.5597 70.75 52.3386C70.75 53.1175 71.3984 53.749 72.1983 53.749Z"
                     fill="white"
@@ -76,17 +76,7 @@ export const GranConfort: React.FC<Props> = ({
                     stroke-miterlimit="10"
                     stroke-linecap="round"
                 />
-            </g>
-            <defs>
-                <clipPath id="clip0_0_1">
-                    <rect
-                        width="64"
-                        height="65"
-                        fill="white"
-                        transform="translate(16 11)"
-                    />
-                </clipPath>
-            </defs>
+
         </svg>
     );
 };

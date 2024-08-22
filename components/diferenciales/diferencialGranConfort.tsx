@@ -14,11 +14,10 @@ interface Props {
 export const DiferencialGranConfort : React.FC<Props> =  ({size, text, textSize, customWith}) => {
 	return (
 		<>
-			<main className="relative xm:pl-4 flex justify-start items-center  w-">
+			{/* <main className="relative xm:pl-4 flex justify-start items-center  w-">
 				<span className=" z-10">
 					
 				<GranConfort size={size || 70}/>
-				{/* <svg size={size || 70}/> */}
 				</span>
 				<p className={`z-0   h-2/3 pl-8 pr-1 md:px-10 py-1 -translate-x-8 
 					bg-white bg-opacity-100 border-2 border-livered-title rounded-tr-2xl md:rounded-tr-3xl  
@@ -29,6 +28,23 @@ export const DiferencialGranConfort : React.FC<Props> =  ({size, text, textSize,
 					`}>
 
 					<span className="w-full pl-1 py-0 flex justify-start items-center">{text || "Gran confort"}</span>
+				</p>
+				
+			</main> */}
+
+			<main className="relative pl-4 xm:pl-4 flex justify-start items-center  w-full">
+				<span className=" z-10">
+					<GranConfort size={size || 70}/>
+				</span>
+				<p className={`z-0   h-2/3 pl-8 pr-1 md:px-10 py-1 -translate-x-8 
+					bg-white bg-opacity-100 border-2 border-livered-title rounded-tr-2xl md:rounded-tr-3xl  
+					text-center
+					${textSize ?  `text-[${textSize}px]` : "xs:text-[12px] xm:text-[14px] lg:text-2xl " }
+					w-[110%]
+					
+					`}>
+
+					<span className="w-full pl-1 py-0 flex justify-start items-center">{text || "Grand confort"}</span>
 				</p>
 				
 			</main>
