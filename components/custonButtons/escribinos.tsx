@@ -47,7 +47,7 @@ export const EscribinosButton: React.FC<Props> = ({ css, size, screen, label, li
 
                         {/* <IoMailOutline className=" text-white  group-active:text-livered p- mx-1 lg:mx-2 lg:text-[2vw]" />  */}
                 </div>
-                <span className={`ml-[35px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[25px]" : " "} `}>{label ? label : "Escribinos" }</span>
+                <span className={`ml-[25px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[25px]" : " "} `}>{label ? label : "Escribinos" }</span>
             </MyButton>
             </a>
         </>

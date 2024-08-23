@@ -291,9 +291,9 @@ export default function Home() {
             : <>
             {/* ------------- Banners de prodcutos MOBILE ------------- */}
 
-            <section className="w-full h-full  bg-gray-00 overflow-hidden">
+            <section className="w-full h-full  gbg-gray-00 overflow-hidden">
 
-                <section className="z-10 w-[95%] mx-[5%]  flex gap-[5%]">
+                <section className="z-10 w-[95%] mx-[5%]  flex gap-[5%] mb-4">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <div
                         className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
