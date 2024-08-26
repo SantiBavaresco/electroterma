@@ -265,7 +265,7 @@ export default function HabitatInlinePage() {
                         <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
-                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline0.png"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInlineMobile0.png"
                                     width="100%"
                                 />
                         <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatInline.pdf"} dwName={"Habitat Inline Manual.pdf"}/>
@@ -277,7 +277,7 @@ export default function HabitatInlinePage() {
                 
 
                 {/* ------------- Tabla ------------- */}
-                <section className={`flex flex-col  items-start my-10 mx-[3%] gap-4 `}>
+                <section className={`hidden lg:flex flex-col  items-start my-10 mx-[3%] gap-4 `}>
                 {/* <TableSolerPalau tableData={habitatData.tableData}/> */}
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
@@ -299,7 +299,7 @@ export default function HabitatInlinePage() {
                 <section className="flex  h-full ">
                     <div className="flex flex-col mx-auto justify-center  items-center lg:gap-y-6 my-10 xl:my-16">
                         <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
-                        <TiendaButton size={BigScreen ? 70 : 30} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
+                        <TiendaButton size={BigScreen ? 70 : 40} screen={BigScreen ? "xxl" : "xl"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
                     </div>
                 </section>
 

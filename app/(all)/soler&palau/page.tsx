@@ -97,7 +97,7 @@ export default function SolerPalauPage() {
 
                     <span className="">Gracias a <span className=" text-livered-title">nuestra alianza</span>, garantizamos soluciones de </span><br/>
                     <span className="">ventilación innovadoras y eficientes para asegurar una</span><br/>
-                    <span className=""> óptima calidad del aire en todos tus espacios </span><br/>
+                    <span className=""> óptima calidad del aire en todos tus espacios&quot;</span><br/>
 
 {/* 
                     <div className="absolute bottom-0 right-[26.5%] lg:right-[27.5%] xl:right-[28.5%] 2xl:right-[29.5%]">
@@ -235,7 +235,7 @@ export default function SolerPalauPage() {
                         </section>
 
             {/* ------------- Imagenes presentacion ------------- */}
-            <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
+            {BigScreen ? <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
                     <Image
                         alt="Otam Logo"
                         src="../img/home/imgHome/1.png"
@@ -257,6 +257,20 @@ export default function SolerPalauPage() {
                         width={450}
                     />
                 </section>
+            :
+            <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
+                    <Image
+                        alt="Otam Logo"
+                        src="../img/home/imgHome/3.png"
+                        width={450}
+                    />
+                    <Image
+                        alt="Otam Logo"
+                        src="../img/home/imgHome/4.png"
+                        width={450}
+                    />
+                </section>
+            }
         </main>
         // 	<div className={'h-[5000px]'}>
         // 		<VideoScrollPlayer/>

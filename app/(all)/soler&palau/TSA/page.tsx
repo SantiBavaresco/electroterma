@@ -374,15 +374,16 @@ export default function TSAPage() {
 
                     <h1 className=" text-[18px]  text-[#9D9D9C] font-nunito ">
                         {/* DE SIMPLE ASPIRACIÓN */}
-                        {tsaData.pageData.description} 
+                        {tsaData.pageData.subTitle} 
+
                     </h1>
                 </section>
 
                 <section className="w-[80vw] mx-6 flex items-start min-h-[100%] overflow-hidden h-[100%] ">
-                    <div className="z-20 h-full my-auto ">
+                <div className="z-20 ">
                         <div className="min-w-1/2 flex flex-col items-center xm:mt-6 font-lexend-bold tracking-widest ">
-                            <div className="-mt-4 text-[12px] xm:text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
-                                <p className="">
+                            <div className="mt-10 text-[12px] xm:text-[15px] tracking-normal text-[#4C4B4B] font-lexend-bold">
+                            <p className="">
                                     Sistema de
                                 </p>
                                 <p className="">
@@ -400,11 +401,11 @@ export default function TSAPage() {
                             
                         </div>
                     </div>
-                    <div className="relative max-w-screen z-10 overflow-y-hidde">
+                    <div className="relative max-w-screen w-full z-10 overflow-y-hidde">
                         <Image
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
-                            className="inline-block w-[310px] top-0  left-4 "
+                            className="inline-block w-[320px] top-0  left-2 "
                             src="../img/solerpalau/tsa/SolerPalauTsa1.png"
                             width={"100%"}
                         />

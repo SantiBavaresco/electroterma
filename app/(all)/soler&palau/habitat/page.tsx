@@ -398,7 +398,7 @@ export default function HabitatPage() {
                 <section className="flex  h-full ">
                     <div className="flex flex-col mx-auto justify-center  items-center gap-y-6 xl:my-16">
                         <h1 className="font-nunito text-xl lg:text-3xl">COMPRÁ AHORA</h1>
-                        <TiendaButton size={BigScreen ? 70 : 30} screen={BigScreen ? "xxl" : "lg"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
+                        <TiendaButton size={BigScreen ? 70 : 40} screen={BigScreen ? "xxl" : "xl"} link={`${habitatData.tiendaOnline}`} css={"lg:text-5xl"}/>
                     </div>
                 </section>
 

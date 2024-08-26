@@ -17,7 +17,7 @@ export const ShoppingCart: React.FC<Props> = ({
             className={css}
             width={size || width || 50}
             height={size || height || 40}
-            viewBox="0 0 50 40"
+            viewBox="1 0 48 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >

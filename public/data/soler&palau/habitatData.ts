@@ -77,7 +77,7 @@ export const habitatData: habitatDataType  = {
     whatsappLink: "https://wa.me/",
     whatsappNumber: "5492234365978",
     whatsappNumber1: "54922343659788",
-    whatsappMessageHabitat: "?text=Hola.%20Quiero%20más%20información%20sobre%20los%20productos%20de%20la%20línea%20Hábitat%20de%20Soler%20&%20Palau.",
+    whatsappMessageHabitat: "?text=Hola.%20Quiero%20más%20información%20sobre%20los%20productos%20de%20la%20línea%20Hábitat%20de%20Soler%20%26%20Palau.",
     whatsappMessageExtractor: "?text=Hola.%20Quiero%20más%20información%20sobre%20los%20extractores%20de%20la%20línea%20Hábitat%20de%20Soler%20&%20Palau.",
     whatsappMessageInline: "?text=Hola.%20Quiero%20más%20información%20sobre%20los%20ventiladores%20de%20la%20línea%20Hábitat%20de%20Soler%20&%20Palau.",
     pageData: {

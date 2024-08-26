@@ -36,8 +36,8 @@ export const EscribinosButton: React.FC<Props> = ({ css, size, screen, label, li
             >
                 <div className={`absolute rounded-full left-0 z-20 p-0   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200
                      ${size===15 ? " p-1.5" : " p-3 "} 
-                    bg-gradient-to-r from-[#EF771CE5] to-[#E80303]
-                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#fe694f]
+                    bg-gradient-to-r from-[#FF994B] to-[#F46900]
+                    group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-[#E80303]
                     group-active:bg-gradient-to-r group-active:from-[#f37a7ae5] group-active:to-[#FFFFFF]
                     `}> 
                     <EscribinosMail size={size} css="group-active:text-livered p- mx-0 lg:mx-1 lg:text-2xl"/>
@@ -47,7 +47,7 @@ export const EscribinosButton: React.FC<Props> = ({ css, size, screen, label, li
 
                         {/* <IoMailOutline className=" text-white  group-active:text-livered p- mx-1 lg:mx-2 lg:text-[2vw]" />  */}
                 </div>
-                <span className={`ml-[25px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[25px]" : " "} `}>{label ? label : "Escribinos" }</span>
+                <span className={`ml-[32px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[25px]" : " "} `}>{label ? label : "Escribinos" }</span>
             </MyButton>
             </a>
         </>

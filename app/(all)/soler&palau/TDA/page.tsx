@@ -298,7 +298,7 @@ export default function TDAPage() {
 
                     <h1 className=" text-[18px]  text-[#9D9D9C] font-nunito ">
                         {/* DE DOBLE ASPIRACIÓN */}
-                        {tdaData.pageData.description} 
+                        {tdaData.pageData.subTitle} 
                     </h1>
                 </section>
 
@@ -320,11 +320,11 @@ export default function TDAPage() {
                             
                         </div>
                     </div>
-                    <div className="relative max-w-screen z-10 overflow-y-hidde">
+                    <div className="relative max-w-screen w-full z-10 overflow-y-hidde">
                         <Image
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
-                            className="inline-block w-[310px] top-0  left-4 "
+                            className="inline-block w-[320px] top-0  left-2 "
                             src="../img/solerpalau/tda/SolerPalauTda1.png"
                             width={"100%"}
                         />

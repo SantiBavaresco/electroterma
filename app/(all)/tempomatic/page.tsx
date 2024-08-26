@@ -100,7 +100,7 @@ export default function TempomaticPage() {
                     <span className="">TEMPOMATIC es nuestra línea de productos HVAC, estándar como </span><br/>
                     <span className="">personalizado, que ofrece soluciones eficientes para diversas </span><br/>
                     <span className="">industrias, respaldadas por la confiabilidad y solidez de </span><br/>
-                    <span className="">nuestro equipo de ingeniería. </span><br/>
+                    <span className="">nuestro equipo de ingeniería&quot;</span><br/>
 
 
 

@@ -105,7 +105,7 @@ export default function Home() {
                 <p>
                     {/* <span className="relative  align-bottom text-livered-title ">&quot;</span> */}
                     <div className="z-20 absolute 
-                        top-[30%] xs:top-[20%] xm:top-[14%] sm:top-[15%] md:top-[10%] lg:top-[5%] xl:top-[1%]  2xl:-top-[22%] 
+                        top-[30%] xs:top-[20%] xm:top-[14%] sm:top-[15%] md:top-[10%] lg:top-[5%] xl:top-[1%]  2xl:-top-[10%] 
                         left-[0.5%] lg:left-[24%] xl:left-[25%] 2xl:left-[23.5%]
                         w-[7vw] lg:w-[4vw]
                         ">
@@ -275,7 +275,7 @@ export default function Home() {
                             {" "}
                             Conocé nuestras {" "}
                             <Link href="/solucionesHVAC">
-                            <Button size={BigScreen ? "lg" : "sm"} radius="full" className="border-[4px] border-white bg-[#EF771C]  2xl:text-3xl lg:px-8 mr-[23px] lg:mr-0 text-[#FFFFFF]" 
+                            <Button size={BigScreen ? "lg" : "sm"} radius="full" className="border-[2px] border-white bg-[#EF771C] xl:text-2xl  2xl:text-4xl lg:px-8 mr-[23px] lg:mr-0 text-[#FFFFFF]" 
                                 // onClick={handleEmailClick}
                                 >
                             Soluciones
@@ -594,9 +594,9 @@ export default function Home() {
                 overflow-hidden">
                     
                 <section className=" 2xl:w-4/5 ">
-					<div className=" px-auto  flex h-[150px] lg:h-[250px] items-center mt-10 md:mt-2 space-x-1 lg:space-x-10  text-[12px] lg:text-3xl text-center text-[#4C4B4B]">
+					<div className=" px-auto  flex h-[150px] lg:h-[250px] items-center mt-10 md:mt-2 space-x-2 lg:space-x-10  text-[12px] lg:text-3xl text-center text-[#4C4B4B]">
 						<div>
-							<h1>Contactá</h1>
+							<h1 className="w-mx px-1">Contactá</h1>
 							<h1>a un vendedor</h1><br/>
 
 							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}
@@ -607,7 +607,7 @@ export default function Home() {
 
 						<Divider orientation="vertical" className="bg-[#EDEDED]" />
 						<div>
-							<h1>Comprá en</h1>
+							<h1 className="w-mx px-1">Comprá en</h1>
 							<h1>nuestra tienda</h1><br/>
 
                             <TiendaButton size={BigScreen ? 40 : 15} screen={BigScreen ? "xl" : "xs"}/>
@@ -615,10 +615,10 @@ export default function Home() {
 						</div>
                         <Divider orientation="vertical" className="bg-[#EDEDED]" />
 						<div>
-							<h1 className="w-max">Escribinos a través</h1>
+							<h1 className="w-max px-0.5">Escribinos a través</h1>
 							<h1>de nuestro mail</h1><br/>
 
-                            <EscribinosButton size={BigScreen ? 40 : 15} screen={BigScreen ? "xl" : "xs"} />
+                            <EscribinosButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"} />
 						</div>
 
 					</div>

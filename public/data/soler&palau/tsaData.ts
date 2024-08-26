@@ -121,11 +121,11 @@ export const tsaData: ventDataType  = {
             imgName:"1",
             imgLable:[
                 {   
-                    textLable:"Componente de",
-                    textColor:""
+                    textLable:"Sistemas de ventilación",
+                    textColor:"stone-100"
                 },
                 {   
-                    textLable:"equipo tempomatic",
+                    textLable:"en áreas de procesos",
                     textColor:""
                 },
             ],
@@ -134,63 +134,63 @@ export const tsaData: ventDataType  = {
             imgName:"2",
             imgLable:[
                 {   
-                    textLable:"Es ideal para",
+                    textLable:"Renovación de aire",
                     textColor:"stone-300"
                 },
                 {   
-                    textLable:"Extracción localizada",
+                    textLable:"por medio de inyección",
                     textColor:""
                 },
-                {   
-                    textLable:"en procesos de",
-                    textColor:""
-                },
-                {   
-                    textLable:"industria",
-                    textColor:""
-                },
+                // {   
+                //     textLable:"en procesos de",
+                //     textColor:""
+                // },
+                // {   
+                //     textLable:"industria",
+                //     textColor:""
+                // },
             ],
         },
         {
             imgName:"3",
             imgLable:[
                 {   
-                    textLable:"Es ideal para",
+                    textLable:"Extracción de aire ",
                     textColor:"stone-100"
                 },
                 {   
-                    textLable:"Áreas de proceso",
+                    textLable:"en lavaderos industriales",
                     textColor:""
                 },
-                {   
-                    textLable:"donde se requiera",
-                    textColor:""
-                },
-                {   
-                    textLable:"renovación de aire",
-                    textColor:""
-                },
+                // {   
+                //     textLable:"donde se requiera",
+                //     textColor:""
+                // },
+                // {   
+                //     textLable:"renovación de aire",
+                //     textColor:""
+                // },
             ],
         },
         {
             imgName:"4",
             imgLable:[
                 {   
-                    textLable:"Es ideal para",
+                    textLable:"Sistemas de extracción",
                     textColor:"stone-100"
                 },
                 {   
-                    textLable:"Áreas de proceso",
+                    textLable:" localizada de procesos",
                     textColor:""
                 },
                 {   
-                    textLable:"donde se requiera",
+                    textLable:"de industria",
                     textColor:""
                 },
-                {   
-                    textLable:"renovación de aire",
-                    textColor:""
-                },
+                // {   
+                //     textLable:"renovación de aire",
+                //     textColor:""
+                // },
             ],
         }
 

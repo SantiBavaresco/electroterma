@@ -31,7 +31,7 @@ export const TiendaButton: React.FC<Props> = ({ css, size, screen, label, link, 
                         `}> 
                         <ShoppingCart size={size} css="group-${}active:text-livered p- mx-0 lg:mx-1 lg:text-2xl "/>
                     </div>
-                    <span className={`ml-[25px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[25px]" : " "} `}>{label ? label : "Tienda Online" }</span>
+                    <span className={`ml-[32px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[25px]" : " "} `}>{label ? label : "Tienda Online" }</span>
                 </MyButton>
             </a>
         </>
