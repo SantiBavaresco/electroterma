@@ -68,8 +68,11 @@ export default function SolucionesHVACPage() {
 					</div>
 					<div className="w-full min-h-[150px] bg-white text-[#EF771C] shadow-xl">
 						<p className="w-2/3 h-full   m-auto py-2 text-full font-lexend-bold text-center align-middle text-[2.0vw]">
-							{item.lable}
+							<span className="font-lexend text-lowgray">{item.lable}</span>
+							{item.title}
+
 						</p>
+						
 					</div>
 					<div>
 						<Button

@@ -7,6 +7,7 @@ interface generalDataType {
       products:{
         imgUrl: string,
         lable: string,
+        title: string,
         href?: string,
       }[];
       title1: string;
@@ -31,32 +32,56 @@ interface generalDataType {
         products:[
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones1.png",
-            lable: "SOLUCIÓN CLIMATIZACIÓN DE BARCOS",
+            lable: "SOLUCIÓN ",
+            title: "CLIMATIZACIÓN DE BARCOS",
             href: "/solucionesHVAC/barcos",
           },
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones2.png",
-            lable: "",
+            lable: "SOLUCIÓN ",
+            title: "CALEFACCIÓN DE EDIFICIOS POR AGUA CALIENTE",
             href: "/soler&palau/habitat/extractor",
           },
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones3.png",
-            lable: "",
+            lable: "SOLUCIÓN ",
+            title: "EXTRACCIÓN DE AIRE LOCALIZADA",
             href: "/soler&palau/habitat/extractor",
           },
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones4.png",
-            lable: "",
+            lable: "SOLUCIÓN ",
+            title: "VENTILACIÓN EN OFICINAS Y ESPACIOS PÚBLICOS",
             href: "/soler&palau/habitat/extractor",
           },
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones5.png",
-            lable: "",
+            lable: "SOLUCIÓN ",
+            title: "VENTILACIÓN DE SALA DE TRANSFORMADORES",
             href: "/soler&palau/habitat/extractor",
           },
           {
             imgUrl:"../../img/soluciones/imgBanner/Soluciones6.png",
-            lable: "",
+            lable: "SOLUCIÓN ",
+            title: "VENTILACIÓN NAVE INDUSTRIAL",
+            href: "/soler&palau/habitat/extractor",
+          },
+          {
+            imgUrl:"../../img/soluciones/imgBanner/Soluciones7.png",
+            lable: "SOLUCIÓN ",
+            title: "CALEFACCIÓN DE LOCALES COMERCIALES CON UNIDADES MANEJADORAS DE AIRE",
+            href: "/soler&palau/habitat/extractor",
+          },
+          {
+            imgUrl:"../../img/soluciones/imgBanner/Soluciones8.png",
+            lable: "SOLUCIÓN ",
+            title: "DUCTOS TEXTILES PARA MEJORAR LA DISTRIBUCIÓN DEL AIRE",
+            href: "/soler&palau/habitat/extractor",
+          },
+          {
+            imgUrl:"../../img/soluciones/imgBanner/Soluciones9.png",
+            lable: "SOLUCIÓN ",
+            title: "VENTILACIÓN NAVE INDUSTRIAL",
             href: "/soler&palau/habitat/extractor",
           },
         ],

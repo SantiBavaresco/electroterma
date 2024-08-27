@@ -106,7 +106,7 @@ export const tdaData = {
     urlImageBanner: "../img/solerpalau/tda/imgbanner/",
     bannerImageInfo: [
         {
-            imgName:"1",
+            imgName:"5",
             imgLable:[
                 {   
                     textLable:"Componente de",
@@ -119,7 +119,7 @@ export const tdaData = {
             ],
         },
         {
-            imgName:"2",
+            imgName:"5",
             imgLable:[
                 {   
                     textLable:"Es ideal para",
@@ -140,7 +140,7 @@ export const tdaData = {
             ],
         },
         {
-            imgName:"3",
+            imgName:"5",
             imgLable:[
                 {   
                     textLable:"Es ideal para",
