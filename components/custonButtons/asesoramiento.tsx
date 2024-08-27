@@ -37,7 +37,7 @@ export const AsesoramietoButton: React.FC<Props> = ({ css, size, screen, label, 
                                 ${size===15? "text-[3.8vw]" : "text-[4vw] "} 
                                 ${size===10? "text-[2.6vw]" : "text-[6vw] "} lg:text-[2.7vw] 2xl:text-[2.1vw] `} />  */}
                         </div>
-                        <span className={`ml-[32px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[24px]" : " "} `}
+                        <span className={`ml-[28px] xm:ml-[28px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[24px]" : " "} `}
                         >{label ? label : "Asesoramiento" }</span>
                     </MyButton>
             </a>

@@ -29,7 +29,7 @@ export const EscribinosButton: React.FC<Props> = ({ css, size, screen, label, li
         <>
             <a className={css || ""}>
             <MyButton
-                className="z-10 mt-4 bg-[#EDEDED] font-nunito text-[#4C4B4B] 3xl:ml-0 2xl:text-2xl"
+                className="z-10 mt-4 bg-[#EDEDED] min-w-[] font-nunito text-[#4C4B4B] 3xl:ml-0 2xl:text-2xl"
                 radius="full"
                 size={screen}
                 onClick={handleEmailClick} target="_blank"
@@ -47,7 +47,9 @@ export const EscribinosButton: React.FC<Props> = ({ css, size, screen, label, li
 
                         {/* <IoMailOutline className=" text-white  group-active:text-livered p- mx-1 lg:mx-2 lg:text-[2vw]" />  */}
                 </div>
-                <span className={`ml-[32px] sm:ml-[35px] lg:ml-14 ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[25px]" : " "} `}>{label ? label : "Escribinos" }</span>
+                <span className={`ml-[24px] xm:ml-[28px] sm:ml-[35px] lg:ml-14 
+                    mr-[12px] xm:mr-[14px] sm:mr-[17px] lg:mr-0
+                    ${screen==="xxl" && "text-5xl"} ${size===15? "text-[2.0vw] ml-[25px]" : " "} `}>{label ? label : "Escribinos" }</span>
             </MyButton>
             </a>
         </>
