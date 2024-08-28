@@ -18,7 +18,7 @@ let frameCount = 600;
     if(keyAttribute === "tsa") frameCount = 650
     if(keyAttribute === "tda") frameCount = 650
     if(keyAttribute === "rls") frameCount = 750
-    if(keyAttribute === "home") frameCount = 750
+    if(keyAttribute === "home") frameCount = 800
 
 
   }
@@ -43,7 +43,7 @@ let imgArray = [];
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/mobile/e-${index.toString().padStart(3, "0")}.png`;
 // const currentFrame = (index) => `../img/solerpalau/${keyAttribute && "rls"}/frames/web/e-${index.toString().padStart(3, "0")}.jpg`;
 
-const currentFrame = (index) => `../img/home/frames/websd/${index.toString()}.webp`;
+const currentFrame = (index) => `../img/home/frames/webhd/${index.toString()}.webp`;
 
 
 
@@ -97,9 +97,12 @@ const updateImage = (index) => {
     // context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
     // if(keyAttribute === "home") context.drawImage(imgArray[index], 250, -40, 1000, 563, 0, 0, canvas.width, canvas.height)
     // else
+    // (window.innerWidth <= 768 ) ?
+    //     context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
+    //     : context.drawImage(imgArray[index], 0, 0, 1000, 563, 0, 0, canvas.width, canvas.height)
     (window.innerWidth <= 768 ) ?
         context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
-        : context.drawImage(imgArray[index], 0, 0, 1000, 563, 0, 0, canvas.width, canvas.height)
+        : context.drawImage(imgArray[index], 0, 0, 1920, 1075, 0, 0, canvas.width, canvas.height)
 
     
 };

@@ -517,6 +517,7 @@ export default function Home() {
                     alt="Imagen grupal"
                     src={`../../img/home/${BigScreen ? "grupo" : ""}.png`}
                     width={"100%"}
+                    radius="none"
                 />
             </section>
 
