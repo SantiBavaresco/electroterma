@@ -38,7 +38,7 @@ export default function SolucionesHVACPage() {
 
 	return (
 		<main className="flex flex-col mt-4 items-center justify-center gap-1 md:gap-4 pb-4 md:pb-10 overflow-hidden ">
-		{/* ------------- VIDEO INTRO ------------- */}
+		{/* ------------- BANNER ------------- */}
 
 		<section className="w-full flex flex-row">
 			<div className="w-full h-full">
@@ -46,56 +46,82 @@ export default function SolucionesHVACPage() {
 						alt="Banner 1"
 						className=""
 						radius="none"
-						src="../../img/soluciones/imgBanner/SolucionesBanner1.png"
+						src="../../img/soluciones/home/SolucionesBanner1.png"
 						width="100%"
 					/>
 				</div>
 			
 		</section>
 
-		<section className="w-full px-[3%] grid grid-cols-3 grid-rows-2 gap-4 p-3">
-			{solucionesGeneralData.pageData.products.map((item, index)=>(
-				<div key={index} className="w-full min-h-full flex flex-col items-center p-4 gap-4 bg-[#F7F6F6] border-1 rounded-[36px]">
-					<div className="w-full bg-lowgray min-h-[300px]  text-white rounded-[20px] shadow-xl">
-						<Image
-							alt="product"
-							key={index}
-							className="rounded-t-[20px] min-w-full h-full"
-							radius="none"
-							src={item.imgUrl}
-							width="100%"
-						/>
+		{/* ------------- SOLUCIONES ------------- */}
+		{BigScreen ? 
+			<> 		{/* ------------- WEB ------------- */}
+			<section className="w-full px-[3%] grid grid-cols-3 grid-rows-2 gap-4 p-3">
+				{solucionesGeneralData.pageData.products.map((item, index)=>(
+					<div key={index} className="w-full min-h-full flex flex-col items-center p-4 gap-4 bg-[#F7F6F6] border-1 rounded-[36px]">
+						<div className="w-full bg-lowgray min-h-[300p-x]  text-white rounded-[20px] shadow-xl">
+							<Image
+								alt="product"
+								key={index}
+								className="rounded-t-[20px] min-w-full h-full"
+								radius="none"
+								src={item.imgUrl}
+								width="100%"
+							/>
+						</div>
+						<div className="w-full min-h-[80px] h-full bg-white text-[#EF771C] shadow-xl">
+							<p className="w-4/5 h-full   m-auto py-2 text-full font-lexend-bold text-center align-middle text-[1.9vw]">
+								<span className="font-lexend text-lowgray">{item.lable}</span> <br/>
+								{item.title}
+
+							</p>
+							
+						</div>
+						<div>
+							<Button
+								className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
+								radius="full"
+								size={BigScreen ? "lg" : "lg"}
+								onClick={()=>(window.open(item.href))}
+							>
+								Saber más
+							</Button>
+						</div>
+
 					</div>
-					<div className="w-full min-h-[150px] bg-white text-[#EF771C] shadow-xl">
-						<p className="w-2/3 h-full   m-auto py-2 text-full font-lexend-bold text-center align-middle text-[2.0vw]">
-							<span className="font-lexend text-lowgray">{item.lable}</span>
-							{item.title}
+				))
 
-						</p>
-						
+				}
+			</section>
+			</>
+		:
+			<> 		{/* ------------- MOBILE ------------- */}
+			<section className="px-[3%] w-full p-2  bg-blue-500 h-full flex flex-col gap-3">
+				{solucionesGeneralData.pageData.products.map((item, index)=>(
+					<div className="w-full h- bg-[#D9D9D9] rounded-[12px]">
+						<div className="flex">
+							<div className="w-[25%] bg-livered">
+								<Image
+									alt="product"
+									key={index}
+									className="rounded-t-[20px] min-w-full h-full"
+									radius="none"
+									src={item.imgUrl}
+									width="100%"
+								/>
+							</div>
+							<div className="w-[70%] bg-green-500">
+
+							</div>
+							<div className="w-[5%] bg-mustard">
+
+							</div>
+						</div>
 					</div>
-					<div>
-						<Button
-							className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
-							radius="full"
-							size={BigScreen ? "lg" : "lg"}
-							onClick={()=>(window.open(item.href))}
-						>
-							Saber más
-						</Button>
-					</div>
-
-				</div>
-			))
-
-			}
-			{/* <div className="bg-gray-200 rounded-lg">Content 2</div>
-			<div className="bg-gray-200 rounded-lg">Content 3</div>
-			<div className="bg-gray-200 rounded-lg">Content 4</div>
-			<div className="bg-gray-200 rounded-lg">Content 5</div>
-			<div className="bg-gray-200 rounded-lg">Content 6</div> */}
-		</section>
-
+				))}
+			</section>
+			</>
+		}
             {/* ------------- Consultanos ------------- */}
             <section className="w-full max-h-[50%] py-0 font-size overflow-hidden">
                 <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
