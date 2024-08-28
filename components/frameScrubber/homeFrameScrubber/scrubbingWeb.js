@@ -80,7 +80,7 @@ console.log( window.innerWidth);
 console.log( innerHeight);
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight+15;
 
 
 img.onload = function () {
@@ -100,9 +100,9 @@ const updateImage = (index) => {
     // (window.innerWidth <= 768 ) ?
     //     context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
     //     : context.drawImage(imgArray[index], 0, 0, 1000, 563, 0, 0, canvas.width, canvas.height)
-    (window.innerWidth <= 768 ) ?
-        context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
-        : context.drawImage(imgArray[index], 0, 0, 1920, 1075, 0, 0, canvas.width, canvas.height)
+    (window.innerWidth <= 1450 ) ?
+        context.drawImage(imgArray[index], 0, 0, 1920, 1110, 0, 30, canvas.width, canvas.height)
+        : context.drawImage(imgArray[index], 0, 0, 2120, 1075, 0, 10, canvas.width, canvas.height)
 
     
 };

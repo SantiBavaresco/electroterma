@@ -79,7 +79,7 @@ export default function FrameScrubber() {
     }, []);
 
     return (
-        <div className="" id="frame" ref={frameRef}>
+        <div className="w-[99vw]" id="frame" ref={frameRef}>
             <section class="frames flex flex-col ">
                 <div class="holder">
                     <canvas id="hero-lightpass" className="mb-0" />
