@@ -45,11 +45,11 @@ export default function Home() {
 
 
     const FrameFan = lazy(
-        () => import("@/components/frameScrubber/frameScrubber")
+        () => import("@/components/frameScrubber/homeFrameScrubber/frameScrubber")
     );
 
     const FrameFanWeb = lazy(
-        () => import("@/components/frameScrubber/frameScrubberWeb")
+        () => import("@/components/frameScrubber/homeFrameScrubber/frameScrubberWeb")
     );
 
     const handleEmailClick = () => {
@@ -464,7 +464,7 @@ export default function Home() {
 
 
 
-            {/* ------------- Foto grupal ------------- */}
+            {/* ------------- Foto Inicial ------------- */}
             <section className=" mx-0 w-full mr-auto">
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
@@ -472,21 +472,8 @@ export default function Home() {
                     src={`../../img/home/${BigScreen ? "home" : "homeMobile"}.png`}
                     width={"100%"}
                 />
-               
-                
             </section>
 
-            {/* ------------- Foto leyenda ------------- */}
-            <section className="mx-0 w-3/4 lg:w-1/3 mr-[27%] -mt-10">
-                <Image  
-                    classNames={{ wrapper: "<-10 min-w-full h-full"}}
-                    alt="Imagen grupal"
-                    src="../../img/home/leyenda.png"
-                    width={"100%"}
-                />
-               
-                
-            </section>
             
 
             {/* <section className="h-[100%] w-full xl:px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
@@ -508,7 +495,7 @@ export default function Home() {
                         
                     <Suspense fallback={<div>Loading</div>}>
                         
-                        {/* <FrameFanWeb /> */}
+                        <FrameFanWeb />
                         
                     </Suspense>
                     
@@ -522,6 +509,29 @@ export default function Home() {
                     </Suspense>
                 </div>
             }
+
+            {/* ------------- Foto Grupal ------------- */}
+            <section className="-mt-4 mx-0 w-full mr-auto">
+                <Image  
+                    classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
+                    alt="Imagen grupal"
+                    src={`../../img/home/${BigScreen ? "grupo" : ""}.png`}
+                    width={"100%"}
+                />
+            </section>
+
+            {/* ------------- Foto leyenda ------------- */}
+            <section className="mx-0 w-3/4 lg:w-1/3 mr-[27%] -mt-4">
+                <Image  
+                    classNames={{ wrapper: "<-10 min-w-full h-full"}}
+                    alt="Imagen grupal"
+                    src="../../img/home/leyenda.png"
+                    width={"100%"}
+                />
+            </section>
+
+
+            
 
             {/* ------------- Direccionamiento a los productos ------------- */}
             <section className="my-10 mt-14 translate-y-[80px] lg:mt-0 lg:translate-y-10">
