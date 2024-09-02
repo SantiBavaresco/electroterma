@@ -66,6 +66,8 @@ export default function HabitatInlinePage() {
           size: "xl",  // <- set new size variant as default
         },
       });
+    
+    const DobleFlechaRoja = <span className="text-livered">»</span>
 
     const [BigScreen, setBigScreen] = useState(false);
 
@@ -228,14 +230,101 @@ export default function HabitatInlinePage() {
                 {BigScreen ? 
                     <>
                     {/* ------------- WEB ------------- */}
-                    <section className="p-3 mx-[14%]">
-                        <Image
+                    <section className="p-3 mx-[3%] mt-[3%]">
+                        {/* ------------- LINEA 1 ------------- */}
+                        <section className="flex grid-cols-2 gap-[10vw] font-nunito text-[#575756] text-[3.8vw] md:text-[1.3vw] xl:text-[1.3vw] 2xl:text-[1.3vw]">
+                            <div className="relative w-[50%]">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2"
+                                    radius="none"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline1.png"
+                                    width="100%"
+                                />
+                                
+                                <p className="absolute bottom-[2.2vw] -right-10 align-middle ">
+                                    <h2> {DobleFlechaRoja} Bajo perfil.</h2>
+                                    <h2> {DobleFlechaRoja} Muy fácil instalación.</h2>
+                                    <h2> {DobleFlechaRoja} Fabricación de material plástico ( 250 al 800).</h2>
+                                    <h2> {DobleFlechaRoja} Fabricación en acero ( 1300 y 2000).</h2>
+
+                            
+                                </p>
+                                
+                            </div>
+
+                            <div className="relative w-[50%]">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2 w-[64%]"
+                                    radius="none"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline2.png"
+                                    width="100%"
+                                />
+                                
+                                <p className="absolute bottom-[2.2vw] right-[8.5vw] align-middle ">
+
+                                    <h2> {DobleFlechaRoja} Fácil mantenimiento.</h2>
+                                    <h2> {DobleFlechaRoja} Se evita la  generación de un gran</h2>
+                                    <h2> volumen de residuos.</h2>
+                                    {/* <h2> {DobleFlechaRoja} Fabricación en acero ( 1300 y 2000)</h2> */}
+
+                            
+                                </p>
+                                
+                            </div>
+                        </section>
+                        {/* ------------- LINEA 2 ------------- */}
+                        <section className="flex grid-cols-2 gap-[10vw]  text-[3.8vw] md:text-[1.3vw] xl:text-[1.3vw] 2xl:text-[1.3vw]">
+                            <div className="relative w-[50%]">
+                            <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2 w-[64%]"
+                                    radius="none"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline3.png"
+                                    width="100%"
+                                />
+                                
+                                <p className="absolute bottom-[1.2vw] right-[5.5vw] align-middle ">
+                                    <h2> {DobleFlechaRoja} Electrónica totalmente </h2>
+                                    <h2> integrada con el producto.</h2>
+
+
+                            
+                                </p>
+                                
+                            </div>
+
+                            <div className="relative w-[50%]">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2 w-[64%]"
+                                    radius="none"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline4.png"
+                                    width="100%"
+                                />
+                                
+                                <p className="absolute bottom-[1.2vw] right-[3.2vw] align-middle ">
+
+                                    <h2> {DobleFlechaRoja} Motor brushless de corriente continua, de </h2>
+                                    <h2> alto rendimiento y bajo consumo, regulable </h2>
+                                    <h2> de forma lineal.</h2>
+                                    {/* <h2> {DobleFlechaRoja} Fabricación en acero ( 1300 y 2000)</h2> */}
+
+                            
+                                </p> 
+                                
+                            </div>
+                        </section>
+
+                        {/* <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
                                     src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline0.png"
                                     width="100%"
-                                />
+                                /> */}
                     </section>
+
                     <section className="mx-[4%] ml-auto">
                         <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatInline.pdf"} dwName={"Habitat Inline Manual.pdf"}/>
                     </section>
@@ -261,13 +350,104 @@ export default function HabitatInlinePage() {
                     : <>
                     {/* ------------- MOBILE ------------- */}
                     <section className="flex flex-col justify-center  items-center gap-y-10 h-full mx-[3%] ">
+
+                        <section className="p-3 mx-[3%] mt-[3%]">
+                        {/* ------------- LINEA 1 ------------- */}
+                        <section className="flex flex-col gap-[10vw] font-nunito text-[#575756] text-[3.8vw] md:text-[1.3vw] xl:text-[1.3vw] 2xl:text-[1.3vw]">
+                            <div className="relative h-[70vw]">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2  w-[85%]"
+                                    radius="none"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline1.png"
+                                    width="100%"
+                                />
+                                
+                                <p className="absolute w-[85%] -bottom-[1.2vw] -right-[8vw] align-middle ">
+                                    <h2> {DobleFlechaRoja} Bajo perfil.</h2>
+                                    <h2> {DobleFlechaRoja} Muy fácil instalación.</h2>
+                                    <h2> {DobleFlechaRoja} Fabricación de material plástico </h2>
+                                    <h2> ( 250 al 800).</h2>
+                                    <h2> {DobleFlechaRoja} Fabricación en acero ( 1300 y 2000).</h2>
+
+                            
+                                </p>
+                                
+                            </div>
+
+                            <div className="relative h-[65vw]">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2  w-[65%]"
+                                    radius="none"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline2.png"
+                                    width="100%"
+                                />
+                                
+                                <p className="absolute w-[85%] -bottom-[1.2vw] -right-[6vw] align-middle ">
+                                <h2> {DobleFlechaRoja} Fácil mantenimiento.</h2>
+                                    <h2> {DobleFlechaRoja} Se evita la  generación de un gran</h2>
+                                    <h2> volumen de residuos.</h2>
+                                </p>
+                                
+                            </div>
+                        
+                            <div className="relative h-[65vw]">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2  w-[65%]"
+                                    radius="none"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline3.png"
+                                    width="100%"
+                                />
+                                
+                                <p className="absolute w-[85%] -bottom-[1.2vw] -right-[22vw] align-middle ">
+                                <h2> {DobleFlechaRoja} Electrónica totalmente </h2>
+                                <h2> integrada con el producto.</h2>
+                                </p>
+                                
+                            </div>
+
+
+                            
+                               
+                            <div className="relative h-[65vw]">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2  w-[65%]"
+                                    radius="none"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline4.png"
+                                    width="100%"
+                                />
+                                
+                                <p className="absolute w-[85%] -bottom-[4.2vw] -right-[6vw] align-middle ">
+                                <h2> {DobleFlechaRoja} Motor brushless de corriente </h2>
+                                    <h2> continua, de alto rendimiento y bajo  </h2>
+                                    <h2> consumo, regulable de forma lineal.</h2>
+                                </p>
+                                
+                            </div>
+                                    
+                                    {/* <h2> {DobleFlechaRoja} Fabricación en acero ( 1300 y 2000)</h2> */}
+
+                            
+                               
+                        </section>
+
+                        {/* <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2"
+                                    src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInline0.png"
+                                    width="100%"
+                                /> */}
+                    </section>
                         {/* {mobileImagesCol} */}
-                        <Image
+                        {/* <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
                                     src="../../img/solerpalau/habitat/inline/SolerPalauHabitatInlineMobile0.png"
                                     width="100%"
-                                />
+                                /> */}
                         <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/habitatInline.pdf"} dwName={"Habitat Inline Manual.pdf"}/>
                     </section>
                     </>
