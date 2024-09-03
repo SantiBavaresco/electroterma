@@ -465,14 +465,16 @@ export default function Home() {
 
 
             {/* ------------- Foto Inicial ------------- */}
-            <section className=" mx-0 w-full mr-auto">
+            <section className=" -mb-10 w-full h-full  mr-auto">
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
-                    alt="Imagen grupal"
-                    src={`../../img/home/${BigScreen ? "home" : "homeMobile"}.png`}
+                    alt="Imagen Inicio"
+                    src={`../../img/home/${BigScreen ? "home" : "home"}.png`}
                     width={"100%"}
                 />
             </section>
+
+            
 
             
 
@@ -502,31 +504,43 @@ export default function Home() {
 
                 </> 
                 
-                : <div className="-mt-32"> {/* ----- Mobile ----- */}
-
-                    <Suspense fallback={<div>Loading</div>}>
-                        {/* <FrameFan /> */}
-                    </Suspense>
+                : <div className="-mt-32- -mt-2"> {/* ----- Mobile ----- */}
+                    <div className=" mx-auto h-32">Mapa scroll mobile</div>
+                    {/* <Suspense fallback={<div>Loading</div>}>
+                        <FrameFan />
+                    </Suspense> */}
+                     {/* ------------- Diferenciales mobile ------------- */}
+                    <section className=" mx-0 w-full h-full  mr-auto">
+                        <Image  
+                            classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
+                            alt="Imagen Inicio"
+                            src={`../../img/home/${BigScreen ? "" : "diferencialesMobile"}.png`}
+                            width={"100%"}
+                        />
+                    </section>
                 </div>
             }
+
+           
 
             {/* ------------- Foto Grupal ------------- */}
             <section className="-mt-4 mx-0 w-full mr-auto">
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen grupal"
-                    src={`../../img/home/${BigScreen ? "grupo" : ""}.png`}
+                    src={`../../img/home/${BigScreen ? "grupo" : "grupo"}.png`}
                     width={"100%"}
                     radius="none"
                 />
             </section>
 
             {/* ------------- Foto leyenda ------------- */}
-            <section className="mx-0 w-3/4 lg:w-1/3 mr-[27%] -mt-4">
+            <section className="mx-0 w-3/4 lg:w-1/3 lg:mr-[27%] -mt-4">
                 <Image  
                     classNames={{ wrapper: "<-10 min-w-full h-full"}}
                     alt="Imagen grupal"
                     src="../../img/home/leyenda.png"
+                    radius="none"
                     width={"100%"}
                 />
             </section>
@@ -535,7 +549,7 @@ export default function Home() {
             
 
             {/* ------------- Direccionamiento a los productos ------------- */}
-            <section className="my-10 mt-14 translate-y-[80px] lg:mt-0 lg:translate-y-10">
+            <section className="lg:my-10 mt--14 translate-y-[30px] lg:mt-0 lg:translate-y-10">
                 <div className="mx-auto w-3/4 lg:w-3/5 flex flex-col-2 lg:flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <a

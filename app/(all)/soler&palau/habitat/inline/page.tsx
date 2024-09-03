@@ -470,7 +470,7 @@ export default function HabitatInlinePage() {
                 {/* ------------- DISFRUTA ------------- */}
                 <section className="flex items-center justify-center text-livered-title  my-10 pt-4">
                     <div className="text-center">
-                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw]   ">Conoce toda la línea de ventiladores</h1>
+                        <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw]   ">Conoce toda la gama de ventiladores</h1>
                         <h1 className="font-nunito-thin text-[5vw] md:text-[4vw] xl:text-[3.0vw] ">helicocentrífugos en línea</h1>
                     </div>
                 </section>
