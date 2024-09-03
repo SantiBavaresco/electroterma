@@ -337,7 +337,7 @@ export default function HabitatInlinePage() {
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor00.png"
-                                        width="100%"
+                                        width="50%"
                                     />
                                 </div>
                                 <article className="w-full pl-2 my-auto text-bla">
@@ -568,7 +568,7 @@ export default function HabitatInlinePage() {
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor00.png"
-                                        width="100%"
+                                        width="50%"
                                     />
                                 </div>
                                 <article className="w-full pl-2 my-auto text-bla">
