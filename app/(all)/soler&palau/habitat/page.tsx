@@ -250,7 +250,7 @@ export default function HabitatPage() {
                         
                         {/* ------------- Vent INLINE ------------- */}
                         
-                        <div className=" w-4/5 md:w-1/2 flex " >
+                        <div className=" w-4/5 md:w-1/2 flex "onClick={()=>(window.open("/soler&palau/habitat/inline", '_top'))} >
                         
                             <div className="w-2/3 pr-2">
                                 <Image
@@ -273,14 +273,14 @@ export default function HabitatPage() {
                                 <Button className="font-nunito text-sm py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                     radius="none"
                                     size="sm"
-                                    onClick={()=>(window.open("/soler&palau/habitat/inline", '_top'))}
+                                    
                                 >
                                     Más info </Button>
                             </div>
                         </div>
 
                         {/* ------------- Vent EXTRACTOR ------------- */}
-                        <div className=" w-4/5 md:w-1/2 flex ">
+                        <div className=" w-4/5 md:w-1/2 flex " onClick={()=>(window.open("/soler&palau/habitat/extractor", '_top'))}>
                             <div className="w-2/3 pr-2">
                                 <Image
                                     alt="Habitat 2"
@@ -302,7 +302,7 @@ export default function HabitatPage() {
                                 <Button className="font-nunito text-sm py-4  text-white bg-gradient-to-b from-[#E80303] to-[#E74024]"
                                     radius="none"
                                     size="sm"
-                                    onClick={()=>(window.open("/soler&palau/habitat/extractor", '_top'))}
+                                    
                                 >
                                     Más info </Button>
                             </div>
