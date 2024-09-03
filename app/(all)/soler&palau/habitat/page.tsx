@@ -98,8 +98,10 @@ export default function HabitatPage() {
         <main className="flex flex-col items-center justify-center gap-4 pb-4 md:pb-10 overflow-hidden ">
             {/* ------------- VIDEO INTRO ------------- */}
 
-            <section className="h-[100%] w-full xl:px-[3%] flex items-center justify-center overflow-hidden bg-lowgrasy">
-                <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4"/>
+            {/* <section className="h-[100%] w-full 2xl:w-[90%] xl:px-[%] flex items-center justify-center overflow-hidden bg-lowgrasy"> */}
+            <section className="max-h-[100vh] w-[119%] -translate-x-16 2xl:w-[111%] xl:px-[0%] flex items-center justify-center overflow-hidden bg-lowgrasy">
+            
+                <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4" width="100%"/>
                 
             </section>
 
@@ -150,7 +152,7 @@ export default function HabitatPage() {
                 <article className=" flex  items-center justify-center font-nunito-thin text-[#575756] ">
                     <div className="w-[85%] xl:w-3/4  max-w-[700px]">
                         <h1 className="text-[8vw] xl:text-[4vw]">{habitatData.pageData.title1}</h1>
-                        <div className="text-[3.8vw] md:text-[2vw] xl:text-[1.1vw]">
+                        <div className="text-[3.8vw] md:text-[2vw] xl:text-[1.4vw] 2xl:text-[1.4vw]">
                             <p>
                                 {habitatData.pageData.p1}
                                 <br/><br/>
@@ -186,6 +188,7 @@ export default function HabitatPage() {
                                 <Image
                                     alt="Habitat 1"
                                     className=""
+                                    radius="none"
                                     src="../img/solerpalau/habitat/SolerPalauHabitat1.png"
                                     width="100%"
                                 />
@@ -195,6 +198,7 @@ export default function HabitatPage() {
                                 <Image
                                     alt="Habitat inline 1"
                                     className="w"
+                                    radius="none"
                                     src="../img/solerpalau/habitat/SolerPalauHabitatInline1.png"
                                     width="100%"
                                 />
@@ -214,6 +218,7 @@ export default function HabitatPage() {
                                 <Image
                                     alt="Habitat 2"
                                     className=""
+                                    radius="none"
                                     src="../img/solerpalau/habitat/SolerPalauHabitat2.png"
                                     width="100%"
                                 />
@@ -223,6 +228,7 @@ export default function HabitatPage() {
                                 <Image
                                     alt="Habitat extractor 1"
                                     className="w"
+                                    radius="none"
                                     src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.png"
                                     width="100%"
                                 />

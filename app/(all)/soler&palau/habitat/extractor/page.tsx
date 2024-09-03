@@ -327,7 +327,7 @@ export default function HabitatInlinePage() {
                                         width="100%"
                                 />
                                 </div>
-                                <article className="w-2/3 pl-2 my-auto">
+                                <article className="w-2/3 pl-4 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2>
                                     <p className="text-[105%]">
                                      {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
@@ -528,7 +528,7 @@ export default function HabitatInlinePage() {
                                         width="100%"
                                 />
                             </div>
-                                <article className="w-2/3 pl-2 my-auto">
+                                <article className="w-2/3 pl-4 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2>
                                     <p className="text-[105%]">
                                      {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
@@ -549,7 +549,7 @@ export default function HabitatInlinePage() {
                                         width="100%"
                                 />
                             </div>
-                                <article className="w-2/3 pl-2 my-auto">
+                                <article className="w-2/3 pl-4 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Silent-blocks elásticos</h2>
                                     <p className="text-[105%]">
                                      {DobleFlechaRoja} Motor montado sobre Silent-blocks que absorben las vibraciones, evitando que se transmitan al exterior.
@@ -569,7 +569,7 @@ export default function HabitatInlinePage() {
                                         width="100%"
                                 />
                             </div>
-                                <article className="w-2/3 pl-2 my-auto">
+                                <article className="w-2/3 pl-4 my-auto">
                                     <p className="text-[100%]">
                                         {DobleFlechaRoja} Rodamiento a bolas de larga vida (30.000 horas) trabajando en cualquier posición de eje especialmente recomendado para condiciones duras de trabajo en instalaciones industriales o comerciales.
                                         <h2 className=""></h2>

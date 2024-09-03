@@ -384,7 +384,7 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute w-[85%] -bottom-[1.2vw] -right-[6vw] align-middle ">
+                                <p className="absolute w-[85%] -bottom-[3.2vw] -right-[4vw] align-middle ">
                                 <h2> {DobleFlechaRoja} Fácil mantenimiento.</h2>
                                     <h2> {DobleFlechaRoja} Se evita la  generación de un gran</h2>
                                     <h2> volumen de residuos.</h2>
@@ -401,7 +401,7 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute w-[85%] -bottom-[1.2vw] -right-[22vw] align-middle ">
+                                <p className="absolute w-[85%] -bottom-[4.2vw] -right-[21vw] align-middle ">
                                 <h2> {DobleFlechaRoja} Electrónica totalmente </h2>
                                 <h2> integrada con el producto.</h2>
                                 </p>
@@ -420,7 +420,7 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute w-[85%] -bottom-[4.2vw] -right-[6vw] align-middle ">
+                                <p className="absolute w-[85%] -bottom-[4.2vw] -right-[4vw] align-middle ">
                                 <h2> {DobleFlechaRoja} Motor brushless de corriente </h2>
                                     <h2> continua, de alto rendimiento y bajo  </h2>
                                     <h2> consumo, regulable de forma lineal.</h2>

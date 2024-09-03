@@ -15,7 +15,7 @@ const VideoAutoPlayer: React.FC<Props> = ({ url, height, width, autoplay }) => {
     <video
       loop muted autoPlay 
       src={url}
-      width="100%"
+      width={width || "100%"}
       // height="100%"
     />
   );
