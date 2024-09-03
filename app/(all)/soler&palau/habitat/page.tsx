@@ -99,7 +99,7 @@ export default function HabitatPage() {
             {/* ------------- VIDEO INTRO ------------- */}
 
             {/* <section className="h-[100%] w-full 2xl:w-[90%] xl:px-[%] flex items-center justify-center overflow-hidden bg-lowgrasy"> */}
-            <section className="max-h-[100vh] w-[119%] xl:-translate-x-16 2xl:w-[111%] xl:px-[0%] flex items-center justify-center overflow-hidden bg-lowgrasy">
+            <section className="max-h-[100vh] w-[119%] -translate-x-10 xl:-translate-x-16 2xl:w-[111%] xl:px-[0%] flex items-center justify-center overflow-hidden bg-lowgrasy">
             
                 <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4" width="100%"/>
                 
