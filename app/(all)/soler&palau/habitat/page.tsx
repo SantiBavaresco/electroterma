@@ -246,11 +246,11 @@ export default function HabitatPage() {
                     : <>
                     {/* ------------- MOBILE ------------- */}
                     
-                    <section className="flex flex-col xm:flex-row justify-between  items-center gap-6 gap-x-2 h-full my-2 ">
+                    <section className="flex flex-col md:flex-row justify-between  items-center gap-6 gap-x-2 h-full my-2 ">
                         
                         {/* ------------- Vent INLINE ------------- */}
                         
-                        <div className=" w-4/5 xm:w-1/2 flex " >
+                        <div className=" w-4/5 md:w-1/2 flex " >
                         
                             <div className="w-2/3 pr-2">
                                 <Image
@@ -280,7 +280,7 @@ export default function HabitatPage() {
                         </div>
 
                         {/* ------------- Vent EXTRACTOR ------------- */}
-                        <div className=" w-4/5 xm:w-1/2 flex ">
+                        <div className=" w-4/5 md:w-1/2 flex ">
                             <div className="w-2/3 pr-2">
                                 <Image
                                     alt="Habitat 2"
