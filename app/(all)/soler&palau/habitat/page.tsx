@@ -356,7 +356,6 @@ export default function HabitatPage() {
                             <DiferencialGranConfort size={60} customWith={100} />
                             <DiferencialVolumenBajo size={60} customWith={250} />
                             <DiferencialFacilInstalacion size={60} customWith={150} />
-                            <DiferencialFacilInstalacion size={60} customWith={250} />
                         </div>
                     </section>
 
