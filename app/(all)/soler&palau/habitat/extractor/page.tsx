@@ -94,6 +94,9 @@ export default function HabitatInlinePage() {
         window.open(mailtoLink, '_blank');
     };
 
+    const DobleFlechaRoja = <span className="text-livered">»</span>
+
+
     const mobileImagesCol = [];
     for (let i = 0; i < 5; i++) {
         mobileImagesCol.push(
@@ -235,13 +238,59 @@ export default function HabitatInlinePage() {
                 {BigScreen ? 
                     <>
                     {/* ------------- WEB ------------- */}
-                    <section className="p-3 mx-[14%]">
-                        <Image
+                    <section className="p-3 mx-[3%] flex flex-col font-nunito text-[#575756] text-[3.8vw] md:text-[1.3vw] xl:text-[1.4vw] 2xl:text-[1.3vw]">
+                        {/* ------------- DECOR ------------- */}
+
+                        <div className=" flex w-[50%] mx-aut ml-[34%] mr-auto ">
+                            <Image
                                     alt="SolerPalauHabitatInline1.png"
-                                    className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor1.png"
+                                    className="mb-2 "
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor01.png"
                                     width="100%"
                                 />
+                            <h1 className=" my-auto text-livered-title font-nunito-thin text-[4.5vw] md:text-[2vw] xl:text-[6.5vw] 2xl:text-[3.5vw]">Decor</h1>
+
+                        </div>
+
+                        {/* ------------- Info Decor ------------- */}
+                        <div className=" flex gap-4">
+                            {/* ------------- COL 1 ------------- */}
+                            <div className=" flex w-1/2">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2 "
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor02.png"
+                                    width="100%"
+                                />
+                                <article className="w-2/3 pl-2 my-auto">
+                                    <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2>
+                                    <p className="text-[105%]">
+                                     {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
+                                        <h2 className=""></h2>
+                                    </p>
+
+                                </article>
+                            </div>
+                            {/* ------------- COL 2 ------------- */}
+                            <div className=" flex w-1/2">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mt-2"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor00.png"
+                                    width="100%"
+                                />
+                                <article className="w-full pl-2 my-auto text-bla">
+                                    
+                                        <h2 className="">{DobleFlechaRoja} Protector térmico para trabajar a temperaturas de hasta 40ºC.</h2>
+                                        <h2 className="">{DobleFlechaRoja} Renueva el aire húmedo o contaminado de baños, pequeñas habitaciones y oficinas.</h2>
+                                        <h2 className="">{DobleFlechaRoja} Modelo con temporizador regulable (mantiene el extractor en marcha entre 1 -30 minutos después de apagada la luz).</h2>
+                                        <h2 className="">{DobleFlechaRoja} Aislamiento y protección II-IP45 protección contra objetos con un diámetro superior a 1mm y resistente a chorros de agua.</h2>
+
+
+                                </article>
+                            </div>
+
+                        </div>
                     </section>
                     </>
                     : <>
@@ -280,13 +329,103 @@ export default function HabitatInlinePage() {
                 {BigScreen ? 
                     <>
                     {/* ------------- WEB ------------- */}
-                    <section className="p-3 mx-[14%]">
-                        <Image
+                    <section className="p-3 mx-[3%] flex flex-col font-nunito text-[#575756] text-[3.8vw] md:text-[1.3vw] xl:text-[1.4vw] 2xl:text-[1.3vw]">
+                        {/* ------------- DECOR ------------- */}
+
+                        <div className=" flex w-[50%] mx-aut ml-[34%] mr-auto ">
+                            <Image
                                     alt="SolerPalauHabitatInline1.png"
-                                    className="mb-2"
-                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor2.png"
+                                    className="mb-2 "
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor03.png"
                                     width="100%"
                                 />
+                            <h1 className=" my-auto text-livered-title font-nunito-thin text-[4.5vw] md:text-[2vw] xl:text-[6.5vw] 2xl:text-[3.5vw]">Silent</h1>
+
+                        </div>
+
+                        {/* ------------- Info Silent 1 ------------- */}
+                        <div className=" flex gap-4">
+                            {/* ------------- COL 1 ------------- */}
+                            <div className=" flex w-1/2">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2 "
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor04.png"
+                                    width="100%"
+                                />
+                                <article className="w-2/3 pl-2 my-auto">
+                                    <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2>
+                                    <p className="text-[105%]">
+                                     {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
+                                        <h2 className=""></h2>
+                                    </p>
+
+                                </article>
+                            </div>
+                            {/* ------------- COL 2 ------------- */}
+                            <div className=" flex w-1/2">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2 "
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor05.png"
+                                    width="100%"
+                                />
+                                <article className="w-2/3 pl-2 my-auto">
+                                    <h2 className="text-[115%] text-livered-title">Silent-blocks elásticos</h2>
+                                    <p className="text-[105%]">
+                                     {DobleFlechaRoja} Motor montado sobre Silent-blocks que absorben las vibraciones, evitando que se transmitan al exterior.
+                                        <h2 className=""></h2>
+                                    </p>
+
+                                </article>
+                            </div>
+
+                            
+
+                        </div>
+
+                        {/* ------------- Info Silent 2 ------------- */}
+                        <div className=" flex gap-4">
+                            {/* ------------- COL 1 ------------- */}
+                            <div className=" flex w-1/2">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mb-2 "
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor06.png"
+                                    width="100%"
+                                />
+                                <article className="w-2/3 pl-2 my-auto">
+                                    {/* <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2> */}
+                                    <p className="text-[100%]">
+                                        {DobleFlechaRoja} Rodamiento a bolas de larga vida (30.000 horas) trabajando en cualquier posición de eje especialmente recomendado para condiciones duras de trabajo en instalaciones industriales o comerciales.
+                                        <h2 className=""></h2>
+                                    </p>
+
+                                </article>
+                            </div>
+                            {/* ------------- COL 2 ------------- */}
+                            <div className=" flex w-1/2">
+                                <Image
+                                    alt="SolerPalauHabitatInline1.png"
+                                    className="mt-2"
+                                    src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor00.png"
+                                    width="100%"
+                                />
+                                <article className="w-full pl-2 my-auto text-bla">
+                                    
+                                        <h2 className="">{DobleFlechaRoja} Protector térmico para trabajar a temperaturas de hasta 40ºC.</h2>
+                                        <h2 className="">{DobleFlechaRoja} Renueva el aire húmedo o contaminado de baños, pequeñas habitaciones y oficinas.</h2>
+                                        <h2 className="">{DobleFlechaRoja} Modelo con temporizador regulable (mantiene el extractor en marcha entre 1 -30 minutos después de apagada la luz).</h2>
+                                        <h2 className="">{DobleFlechaRoja} Aislamiento y protección II-IP45 protección contra objetos con un diámetro superior a 1mm y resistente a chorros de agua.</h2>
+
+
+                                </article>
+                            </div>
+
+                            
+
+                        </div>
+
                     </section>
                     </>
                     : <>
