@@ -245,6 +245,7 @@ export default function HabitatInlinePage() {
                             <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2 "
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor01.png"
                                     width="100%"
                                 />
@@ -259,6 +260,7 @@ export default function HabitatInlinePage() {
                                 <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2 "
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor02.png"
                                     width="100%"
                                 />
@@ -276,6 +278,7 @@ export default function HabitatInlinePage() {
                                 <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mt-2"
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor00.png"
                                     width="100%"
                                 />
@@ -305,6 +308,7 @@ export default function HabitatInlinePage() {
                             <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor01.png"
                                     width="100%"
                                 />
@@ -318,6 +322,7 @@ export default function HabitatInlinePage() {
                                     <Image
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2 "
+                                        radius="none"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor02.png"
                                         width="100%"
                                 />
@@ -336,8 +341,9 @@ export default function HabitatInlinePage() {
                                     <Image
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2"
+                                        radius="none"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor00.png"
-                                        width="70%"
+                                        width="65%"
                                     />
                                 </div>
                                 <article className="w-full pl-2 my-auto text-bla">
@@ -378,6 +384,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractorTabla1.jpg"
                                     width="100%"
                                 />
@@ -394,6 +401,7 @@ export default function HabitatInlinePage() {
                             <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2 "
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor03.png"
                                     width="100%"
                                 />
@@ -408,6 +416,7 @@ export default function HabitatInlinePage() {
                                 <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2 "
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor04.png"
                                     width="100%"
                                 />
@@ -425,6 +434,7 @@ export default function HabitatInlinePage() {
                                 <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2 "
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor05.png"
                                     width="100%"
                                 />
@@ -449,6 +459,7 @@ export default function HabitatInlinePage() {
                                 <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2 "
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor06.png"
                                     width="100%"
                                 />
@@ -465,6 +476,7 @@ export default function HabitatInlinePage() {
                                 <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mt-2"
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor00.png"
                                     width="100%"
                                 />
@@ -497,6 +509,7 @@ export default function HabitatInlinePage() {
                                 <Image
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2"
+                                        radius="none"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor03.png"
                                         width="100%"
                                     />
@@ -510,6 +523,7 @@ export default function HabitatInlinePage() {
                                     <Image
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2 "
+                                        radius="none"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor04.png"
                                         width="100%"
                                 />
@@ -530,6 +544,7 @@ export default function HabitatInlinePage() {
                                     <Image
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2 "
+                                        radius="none"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor05.png"
                                         width="100%"
                                 />
@@ -549,6 +564,7 @@ export default function HabitatInlinePage() {
                                     <Image
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2 "
+                                        radius="none"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor06.png"
                                         width="100%"
                                 />
@@ -567,8 +583,9 @@ export default function HabitatInlinePage() {
                                     <Image
                                         alt="SolerPalauHabitatInline1.png"
                                         className="mb-2"
+                                        radius="none"
                                         src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractor00.png"
-                                        width="70%"
+                                        width="65%"
                                     />
                                 </div>
                                 <article className="w-full pl-2 my-auto text-bla">
@@ -607,6 +624,7 @@ export default function HabitatInlinePage() {
                     <Image
                                     alt="SolerPalauHabitatInline1.png"
                                     className="mb-2"
+                                    radius="none"
                                     src="../../img/solerpalau/habitat/extractor/SolerPalauHabitatExtractorTabla2.jpg"
                                     width="100%"
                                 />
@@ -635,6 +653,7 @@ export default function HabitatInlinePage() {
                                     <Image
                                         alt="Electroterma Logo"
                                         className=""
+                                        radius="none"
                                         src="../../img/solerpalau/habitat/SolerPalauHabitatPay.png"
                                         width="100%"
                                     />
@@ -654,6 +673,7 @@ export default function HabitatInlinePage() {
                         <Image
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"
+                            radius="none"
                             src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav1.png"
                             width="100%"
                         />
@@ -662,6 +682,7 @@ export default function HabitatInlinePage() {
                         <Image
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"
+                            radius="none"
                             src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav2.png"
                             width="100%"
                         />
@@ -687,6 +708,7 @@ export default function HabitatInlinePage() {
                         <Image
                             alt="Electroterma Logo"
                             className=""
+                            radius="none"
                             src="../../img/electrotermalogoletras.png"
                             width="100%"
                         />
@@ -700,6 +722,7 @@ export default function HabitatInlinePage() {
                         <a href="/soler&palau">
                             <Image
                                 alt="Otam Logo"
+                                radius="none"
                                 src="../../img/otamlogo.png"
                                 width="100%"
                             />
@@ -718,6 +741,7 @@ export default function HabitatInlinePage() {
                          <Image
                              alt="Electroterma Logo"
                              className=""
+                             radius="none"
                              src="../../img/electrotermalogoletras.png"
                              width="100%"
                          />
@@ -727,6 +751,7 @@ export default function HabitatInlinePage() {
                          <a href="/soler&palau">
                              <Image
                                  alt="Otam Logo"
+                                 radius="none"
                                  src="../../img/otamlogo.png"
                                  width="100%"
                              />
