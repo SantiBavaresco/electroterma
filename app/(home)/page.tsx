@@ -84,7 +84,7 @@ export default function Home() {
       });
 
     return (
-        <main id="vent" accessKey="home" className="flex flex-col items-center justify-center gap-4 pb-0 md:pb-0 ">
+        <main id="vent" accessKey="home" className="flex flex-col items-center justify-center gap-4  pb-0 md:pb-0 ">
             <section className="max-h-[90vh] w-full xl:px-[0%] flex items-center justify-center overflow-hidden bg-lowgrasy">
                 <VideoAutoPlayer url="../img/home/video/homePresentacion.mp4"/>
                 
@@ -465,7 +465,7 @@ export default function Home() {
 
 
             {/* ------------- Foto Inicial ------------- */}
-            <section className=" -mb-10 w-full h-full  mr-auto">
+            <section className=" -mb-10 w-full h-full  mr-auto overflow-hidden">
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen Inicio"
@@ -514,7 +514,7 @@ export default function Home() {
                 </div>
             }
 
-                <section className=" mx-2 w-full h-full  mr-auto">
+                <section className=" mx-2 w-full h-full  mr-auto  overflow-hidden">
                         <Image  
                             classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                             alt="Imagen Inicio"
@@ -524,18 +524,18 @@ export default function Home() {
                     </section>
 
             {/* ------------- Foto Grupal ------------- */}
-            <section className="-mt-4 mx-0 w-full mr-auto">
+            <section className="-mt-4 lg:-mt-14 mx-0 w-full mr-auto  overflow-hidden">
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen grupal"
-                    src={`../../img/home/${BigScreen ? "grupo" : "grupo"}.png`}
+                    src={`../../img/home/${BigScreen ? "grupo" : "grupoMobile"}.png`}
                     width={"100%"}
                     radius="none"
                 />
             </section>
 
             {/* ------------- Foto leyenda ------------- */}
-            <section className="mx-0 w-3/4 lg:w-1/3 lg:mr-[27%] mt-4">
+            <section className="mx-0 w-3/4 lg:w-1/3 lg:mr-[27%] lg:mt-4  overflow-hidden">
                 <Image  
                     classNames={{ wrapper: "<-10 min-w-full h-full"}}
                     alt="Imagen grupal"
@@ -549,7 +549,7 @@ export default function Home() {
             
 
             {/* ------------- Direccionamiento a los productos ------------- */}
-            <section className="lg:my-10 mt--14 translate-y-[30px] lg:mt-0 lg:translate-y-10">
+            <section className="z-0 lg:my-0 pt-14 translate-y-[30px] lg:mt-0 lg:translate-y-[0px]  min-h-[100px] overflow-hidden">
                 <div className="mx-auto w-3/4 lg:w-3/5 flex flex-col-2 lg:flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <a

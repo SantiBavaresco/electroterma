@@ -75,8 +75,8 @@ export default function RootLayout({
 
                     {/* <Navbar />  */}
 
-                    <div className="relative flex flex-col h-screen">
-                        <main className="container mx-auto max-w-full">
+                    <div className="relative flex flex-col h-screen ">
+                        <main className="container mx-auto max-w-[99.1%]">
                             {children}
                         </main>
                         
