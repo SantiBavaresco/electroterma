@@ -549,7 +549,7 @@ export default function Home() {
             
 
             {/* ------------- Direccionamiento a los productos ------------- */}
-            <section className="z-0 lg:my-0 pt-14 translate-y-[30px] lg:mt-0 lg:translate-y-[0px]  min-h-[100px] overflow-hidden">
+            <section className="z-0 lg:my-0 pt-12 lg:pt-14 translate-y-[0px] lg:mt-0 lg:translate-y-[0px]  lg:min-h-[100px] overflow-hidden">
                 <div className="mx-auto w-3/4 lg:w-3/5 flex flex-col-2 lg:flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
                     <a
@@ -630,7 +630,7 @@ export default function Home() {
                 overflow-hidden">
                     
                 <section className=" 2xl:w-4/5 ">
-					<div className=" px-auto  flex h-[150px] lg:h-[250px] items-center mt-10 md:mt-2 space-x-2 lg:space-x-10  text-[12px] lg:text-3xl text-center text-[#4C4B4B]">
+					<div className=" px-auto  flex h-[150px] lg:h-[250px] items-center mt-4 md:mt-2 space-x-2 lg:space-x-10  text-[12px] lg:text-3xl text-center text-[#4C4B4B]">
 						<div>
 							<h1 className="w-mx px-1">Contactá</h1>
 							<h1>a un vendedor</h1><br/>
