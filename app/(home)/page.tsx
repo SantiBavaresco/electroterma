@@ -535,7 +535,7 @@ export default function Home() {
             </section>
 
             {/* ------------- Foto leyenda ------------- */}
-            <section className="mx-0 w-3/4 lg:w-1/3 lg:mr-[27%] -mt-4">
+            <section className="mx-0 w-3/4 lg:w-1/3 lg:mr-[27%] mt-4">
                 <Image  
                     classNames={{ wrapper: "<-10 min-w-full h-full"}}
                     alt="Imagen grupal"
