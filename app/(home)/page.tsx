@@ -504,13 +504,17 @@ export default function Home() {
 
                 </> 
                 
-                : <div className="-mt-32- -mt-2"> {/* ----- Mobile ----- */}
+                : <div className="-mt-64 -mb-64 -mt--2"> {/* ----- Mobile ----- */}
                     {/* <div className=" mx-auto h-32">Mapa scroll mobile</div> */}
                     <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
                     </Suspense>
                      {/* ------------- Diferenciales mobile ------------- */}
-                    <section className=" mx-0 w-full h-full  mr-auto">
+                    
+                </div>
+            }
+
+                <section className=" mx-0 w-full h-full  mr-auto">
                         <Image  
                             classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                             alt="Imagen Inicio"
@@ -518,10 +522,6 @@ export default function Home() {
                             width={"100%"}
                         />
                     </section>
-                </div>
-            }
-
-           
 
             {/* ------------- Foto Grupal ------------- */}
             <section className="-mt-4 mx-0 w-full mr-auto">
