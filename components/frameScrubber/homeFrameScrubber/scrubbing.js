@@ -16,7 +16,7 @@ let keyAttribute = "ventElement.accessKey";
   }
 
 // const frameCount = 599;
-const frameCount = 1000;
+const frameCount = 1200;
 // const frameCount = 460;
 
 

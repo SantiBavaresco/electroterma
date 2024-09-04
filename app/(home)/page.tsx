@@ -504,7 +504,7 @@ export default function Home() {
 
                 </> 
                 
-                : <div className="-mt-64 -mb-64 -mt--2"> {/* ----- Mobile ----- */}
+                : <div className="-mt-56 -mb-64 -mt--2"> {/* ----- Mobile ----- */}
                     {/* <div className=" mx-auto h-32">Mapa scroll mobile</div> */}
                     <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
@@ -514,12 +514,12 @@ export default function Home() {
                 </div>
             }
 
-                <section className=" mx-0 w-full h-full  mr-auto">
+                <section className=" mx-2 w-full h-full  mr-auto">
                         <Image  
                             classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                             alt="Imagen Inicio"
                             src={`../../img/home/${BigScreen ? "" : "diferencialesMobile"}.png`}
-                            width={"100%"}
+                            width={"95%"}
                         />
                     </section>
 
