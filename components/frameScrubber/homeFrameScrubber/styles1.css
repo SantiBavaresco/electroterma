@@ -29,7 +29,7 @@
         /* height: 725vh;
          */
         /* height: 600vh; */
-        height: 5000px;
+        height: 3500px;
 
 
 
@@ -90,7 +90,7 @@
       section.frames {
         /* height: 4000px; */
         z-index: 0;
-        height: 2700px;
+        height: 2300px;
         /* height: 580vh; */
         position: relative;
         background: #fefefe;
