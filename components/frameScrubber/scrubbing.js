@@ -78,7 +78,8 @@ const updateImage = (index) => {
 
     // context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
     (window.innerWidth <= 768 ) ?
-        context?.drawImage(imgArray[index], 0, 0, 1000, 1778, 0, 0, canvas.width, canvas.height)
+        // context?.drawImage(imgArray[index], 0, 0, 1000, 1778, 0, 0, canvas.width, canvas.height) //mobilehd
+        context?.drawImage(imgArray[index], 0, 0, 500, 1000, 0, 50, canvas.width, canvas.height)
         : context?.drawImage(imgArray[index], 0, 0, 1000, 563, 0, 0, canvas.width, canvas.height)
 
     
