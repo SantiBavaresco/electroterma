@@ -69,7 +69,9 @@ export default function SolucionesBarcosPage() {
 			
 		</section>
 
-		<section className="w-full ml-[3%] grid grid-cols-[25%_75%]">
+		<section className="w-full ml-[3%] grid lg:grid-cols-[25%_75%]">
+			{BigScreen ?
+			<>
 			<section className="w-full h-[104%] z-0 rounded-tl-[0px] -mt-10 pt-10   bg-[#F7F6F6] ">
 				<div className="  ml-[0.5vw] mt-6  bg-gray-00">
 					<div className=" flex mr-auto ml-4 pl-10 text-white font-lexend-bold text-[2.5vw] bg-white- rounded-l-full border-1- border-lowgray- shadow-2xl-"> 
@@ -80,15 +82,6 @@ export default function SolucionesBarcosPage() {
 
 					</div>
 				</div>
-				{/* <div className="  ml-[0.5vw] mt-6  bg-gray-00">
-					<div className=" flex mr-auto ml-4 pl-10 text-white font-lexend-bold text-[2.5vw] bg-white rounded-l-full border-1 border-lowgray shadow-2xl"> 
-					<Avatar  src="../../img/soluciones/barcos/SolucionesBarcosAutor.png" className="-ml-8 w- h-[5.0vw] my-2 text-large"/>
-					<p className="my-auto ml-4 pt-4  pb-4  text-[#EF771C] font-lexend-bold text-[1.2vw]">Por: {" "}
-						<span className="">Victor Barbarito</span>
-					</p>
-
-					</div>
-				</div> */}
 
 				<div className="  ml-[0.5vw] mt-6  bg-gray-00">
 					<div className=" flex flex-col items-center justify-center align-middle gap-4 p-10 m-10 mx-4 mt-16  text-white font-lexend-bold text-[2.5vw] 
@@ -130,15 +123,118 @@ export default function SolucionesBarcosPage() {
 						</Button>
 					</div>
 			</section>
+			</>
+			:
+			<>
+			{/* ------------------- MOBILE ------------------- */}
+			{/* <section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[95%]">
+				<div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
+					<div className=" bg-[#EF771C] rounded-2xl">
+						<Image
+							alt="Banner 1"
+							className="pr-1"
+							radius="none"
+							src="../../img/soluciones/barcos/SolucionesBarcos1.png"
+							// width="100%"
+							height="100%"
+							/> 
+					</div>
+					<div className="flex flex-col items-center mt-[1%] justify-cente h-full">
+						<div className="">
+							<Avatar  src="../../img/soluciones/barcos/SolucionesBarcosAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
+							<p className="px-auto py-2  text-[#EF771C] font-lexend-bold text-[2.8vw] text-center">Por: {" "}
+								<span className="underline">Victor Barbarito</span>
+							</p>
+							<h1 className="w-full text-center text-[6.5vw] font-nunito-bold bg-white text-black">Calefactor Eléctrico</h1>
+						</div>
+						<div className="py-4">
+						<Button
+									className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
+									radius="full"
+									size="sm"
+									onClick={()=>(window.open("electroterma.com"))}
+								>
+									Saber más
+								</Button>
+						</div>
+						<div className="">
+						<Button
+									className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
+									radius="full"
+									size="sm"
+									onClick={()=>(window.open("electroterma.com"))}
+								>
+									Ver otras soluciones
+								</Button>
+						</div>
+					</div>
+					
+				</div>
+			</section> */}
+			
+			</>
+			}
+			
 			<article className="w-full h-full bg-green-00">
-				<div className=" mx-4 mt-6 bg-[#EF771C">
+				<div className=" ml-2 mr-4 lg:mx-4 mt-6 bg-[#EF771C">
 					{/* ------------- TITULO PRINCIPAL ------------- */}
-					<h1 className="pt-6 pl-24 pb-6 text-white font-lexend-bold text-[2.1vw] bg-[#EF771C] shadow-2xl"> SOLUCIÓN CLIMATIZACIÓN DE BARCOS</h1>
+					<h1 className="lg:py-6 pl-2 lg:pl-24 py-2 text-white font-lexend-bold lg:text-[2.1vw] bg-[#EF771C] shadow-2xl"> SOLUCIÓN CLIMATIZACIÓN DE BARCOS</h1>
 
-					<div className="w-full mt-4 pl-2 pr-20 py-10 grid grid-cols-2 gap-10">
+					{BigScreen || 
+					<>
+					{/* ------------------- MOBILE ------------------- */}
+					<section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[99.5%] mt-2">
+						<div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
+							<div className=" bg-[#EF771C] rounded-2xl">
+								<Image
+									alt="Banner 1"
+									className="pr-1"
+									radius="none"
+									src="../../img/soluciones/barcos/SolucionesBarcos1.png"
+									// width="100%"
+									height="100%"
+									/> 
+							</div>
+							<div className="flex flex-col items-center mt-[1%] justify-cente h-full">
+								<div className="">
+									<Avatar  src="../../img/soluciones/barcos/SolucionesBarcosAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
+									<p className="px-auto py-2  text-[#EF771C] font-lexend-bold text-[2.8vw] text-center">Por: {" "}
+										<span className="underline">Victor Barbarito</span>
+									</p>
+									<h1 className="w-full text-center text-[6.5vw] font-nunito-bold bg-white text-black">Calefactor Eléctrico</h1>
+								</div>
+								<div className="py-4">
+								<Button
+											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
+											radius="full"
+											size="sm"
+											onClick={()=>(window.open("electroterma.com"))}
+										>
+											Saber más
+										</Button>
+								</div>
+								<div className="">
+								<Button
+											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
+											radius="full"
+											size="sm"
+											onClick={()=>(window.open("electroterma.com"))}
+										>
+											Ver otras soluciones
+										</Button>
+								</div>
+							</div>
+							
+						</div>
+					</section>
+					
+					</>
+					}
+
+					<div className="w-full mt-4 pl-2 pr-2 lg:pr-20 py-2 lg:py-10 grid lg:grid-cols-2 gap-10">
 
 						{/* ------------- Contenido primario ------------- */}
-						<div className="w-full flex flex-col gap-6 text-[1.10vw] font-nunito items-center ">
+						<div className="w-full flex flex-col gap-6 text-[2.8vw] lg:text-[1.10vw] font-nunito items-center ">
 						    <p className="">
 								Es conocido que las personas que se desarrollan en la actividad marítima pueden estar expuestas a condiciones de lo más adversas, entre ellas, espacios reducidos, climas extremos y embarcaciones que pueden llegar a extenderse por semanas.
 							</p>
@@ -148,8 +244,8 @@ export default function SolucionesBarcosPage() {
 							</p>
 
 							
-							<h2 className="text-[#EF771C] text-[1.3vw] font-nunito-bold mt-16">ANÁLISIS DE SITUACIÓN Y SOLUCIÓN PROPUESTA POR EL EQUIPO DE INGENIERÍA PARA CALEFACCIÓN EN BARCOS</h2>
-							<p className="text-[1.10vw] font-nunito">
+							<h2 className="text-[#EF771C] text-[2.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">ANÁLISIS DE SITUACIÓN Y SOLUCIÓN PROPUESTA POR EL EQUIPO DE INGENIERÍA PARA CALEFACCIÓN EN BARCOS</h2>
+							<p className="text-[2.8vw] lg:text-[1.10vw] font-nunito">
 								Ante el desafío de calefaccionar una embarcación, se evalúan diversos factores entre los cuales se encuentran, condiciones climáticas y tamaño de equipos. Esto último es de especial importancia ya que un factor común que comparten la mayoría de las embarcaciones es, sin duda la falta de “espacios”, la cual no solo dificulta la movilidad de las personas, sino que además condiciona la distribución y ubicación de los equipos y elementos necesarios para el funcionamiento.
 							</p>
 							<p>
@@ -163,14 +259,14 @@ export default function SolucionesBarcosPage() {
 								<li><span className="text-[#EF771C]">»</span> Equipo e instalación más económica</li>
 								<li><span className="text-[#EF771C]">»</span> No se ve afectado por la corrosión del ambiente marino</li>
 							</ul>
-							<p className="text-[1.10vw] font-nunito">
+							<p className="text-[2.8vw] lg:text-[1.10vw] font-nunito">
 								Dentro de las distintas opciones disponibles para la generación de aire caliente, los {}
 								<a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/calefactor-electrico-tempomatic/" target="_blank">calefactores eléctricos </a>
 								poseen características que los vuelven adecuados para las condiciones impuestas. Un equipo que funcione a gas necesita un depósito para almacenar dicho combustible, haciendo que el conjunto crezca en volumen. En cambio, la energía eléctrica disponible es un barco es suficiente para destinar parte de ella en calefaccionar sin generar inconvenientes.
 							</p>
 
 							
-							<h2 className="pt-6 text-center font-nunito-bold text-[#EF771C] text-[1.3vw] mt-16 mr-auto">BALANCE TÉRMICO Y SELECCIÓN DE EQUIPO</h2>
+							<h2 className="pt-6 text-center font-nunito-bold text-[#EF771C] text-[2.8vw] lg:text-[1.3vw] lg:mt-16 mr-auto">BALANCE TÉRMICO Y SELECCIÓN DE EQUIPO</h2>
 							<p className="w-full">
 								Se realizó el balance térmico correspondiente a la cubierta de tripulantes, la cual se quiere calefaccionar, dando como resultado una necesidad de 18.000 kcal/h. Para cubrir esta necesidad se optó por un {""}
 								<a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/generador-de-aire-caliente-tempomatic/" target="_blank">Generador de aire caliente Tempomatic ET-027.</a>
@@ -188,7 +284,7 @@ export default function SolucionesBarcosPage() {
 							width="100%"
 							/>
 
-							<p className="text-[1.10vw] font-nunito">
+							<p className="text-[2.8vw] lg:text-[1.10vw] font-nunito">
 								Esta línea de calefactores ofrece una excelente respuesta a esta problemática. La instalación es rápida y sencilla, el tiempo de precalentamiento es breve y la circulación de aire genera las renovaciones necesarias rápidamente. Su gran capacidad y compacto diseño les permiten adaptarse a los espacios disponibles.
 							</p>
 
@@ -201,8 +297,8 @@ export default function SolucionesBarcosPage() {
 							/>
 
 							
-							<h2 className="pt-6 text-center font-nunito-bold text-[#EF771C] text-[1.3vw] mt-16 mr-auto">UBICACIÓN Y TENDIDO DE CONDUCTOS</h2>
-							<p className="text-[1.10vw] font-nunito w-full">
+							<h2 className="pt-6 text-center font-nunito-bold text-[#EF771C] text-[2.8vw] lg:text-[1.3vw] lg:mt-16 mr-auto">UBICACIÓN Y TENDIDO DE CONDUCTOS</h2>
+							<p className="text-[2.8vw] lg:text-[1.10vw] font-nunito w-full">
 								Para lograr la correcta distribución del aire se utilizaron conductos metálicos para las líneas troncales, de los cualesparten las derivaciones hacia camarotes y espacios comunes mediante mangueras especiales para la conducción 
 								de aire. 
 							</p>
@@ -213,8 +309,8 @@ export default function SolucionesBarcosPage() {
 							}
 							</div>
 
-							<h2 className="pt-6 text-center font-nunito-bold text-[#9D9D9C] text-[1.3vw] mt-16 mr-auto">RECOMENDACIÓN FINAL</h2>
-							<p className="w-full text-[#EF771C] text-[1.10vw] font-nunito ">
+							<h2 className="pt-6 text-center font-nunito-bold text-[#9D9D9C] text-[2.8vw] lg:text-[1.3vw] lg:mt-16 mr-auto">RECOMENDACIÓN FINAL</h2>
+							<p className="w-full text-[#EF771C] text-[2.8vw] lg:text-[1.10vw] font-nunito ">
 							Cada embarcación tendrá sus propias características y estará expuesta a condiciones distintas de trabajo. Analizar y adaptar el sistema que mejor satisfaga las necesidades en cada caso es lo que transforma algo tan simple como acondicionar un ambiente en todo un desafío.
 							</p>
 						</div>
