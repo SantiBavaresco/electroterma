@@ -113,15 +113,18 @@ export default function SolucionesBarcosPage() {
 					
 				</div>
 				<div className="h-full pb-[20%] flex flex-col items-center justify-center align-middle">
+					<a href="/solucionesHVAC"> 
 						<Button
 							className="  z-10 bg-[#EF771C] px-10 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 							radius="full"
 							size={BigScreen ? "lg" : "lg"}
-							onClick={()=>(window.open("electroterma.com"))}
+							
+							// onClick={()=>(window.open("electroterma.com"))}
 						>
 							Ver otras soluciones
 						</Button>
-					</div>
+					</a>
+				</div>
 			</section>
 			</>
 			:
@@ -185,7 +188,7 @@ export default function SolucionesBarcosPage() {
 					<div className="w-full mt-4 pl-2 pr-2 lg:pr-20 py-2 lg:py-10 grid lg:grid-cols-2 gap-10">
 
 						{/* ------------- Contenido primario ------------- */}
-						<div className="w-full flex flex-col gap-6 text-[3.8vw] lg:text-[1.10vw] font-nunito items-center ">
+						<div className="w-full flex flex-col gap-6 text-[3.8vw] lg:text-[1.20vw] font-nunito items-center ">
 						    <p className="">
 								Es conocido que las personas que se desarrollan en la actividad marítima pueden estar expuestas a condiciones de lo más adversas, entre ellas, espacios reducidos, climas extremos y embarcaciones que pueden llegar a extenderse por semanas.
 							</p>
@@ -196,7 +199,7 @@ export default function SolucionesBarcosPage() {
 
 							
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">ANÁLISIS DE SITUACIÓN Y SOLUCIÓN PROPUESTA POR EL EQUIPO DE INGENIERÍA PARA CALEFACCIÓN EN BARCOS</h2>
-							<p className="text-[3.8vw] lg:text-[1.10vw] font-nunito">
+							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
 								Ante el desafío de calefaccionar una embarcación, se evalúan diversos factores entre los cuales se encuentran, condiciones climáticas y tamaño de equipos. Esto último es de especial importancia ya que un factor común que comparten la mayoría de las embarcaciones es, sin duda la falta de “espacios”, la cual no solo dificulta la movilidad de las personas, sino que además condiciona la distribución y ubicación de los equipos y elementos necesarios para el funcionamiento.
 							</p>
 							<p>
@@ -210,7 +213,7 @@ export default function SolucionesBarcosPage() {
 								<li><span className="text-[#EF771C]">»</span> Equipo e instalación más económica</li>
 								<li><span className="text-[#EF771C]">»</span> No se ve afectado por la corrosión del ambiente marino</li>
 							</ul>
-							<p className="text-[3.8vw] lg:text-[1.10vw] font-nunito">
+							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
 								Dentro de las distintas opciones disponibles para la generación de aire caliente, los {}
 								<a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/calefactor-electrico-tempomatic/" target="_blank">calefactores eléctricos </a>
 								poseen características que los vuelven adecuados para las condiciones impuestas. Un equipo que funcione a gas necesita un depósito para almacenar dicho combustible, haciendo que el conjunto crezca en volumen. En cambio, la energía eléctrica disponible es un barco es suficiente para destinar parte de ella en calefaccionar sin generar inconvenientes.
@@ -235,7 +238,7 @@ export default function SolucionesBarcosPage() {
 							width="100%"
 							/>
 
-							<p className="text-[3.8vw] lg:text-[1.10vw] font-nunito">
+							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
 								Esta línea de calefactores ofrece una excelente respuesta a esta problemática. La instalación es rápida y sencilla, el tiempo de precalentamiento es breve y la circulación de aire genera las renovaciones necesarias rápidamente. Su gran capacidad y compacto diseño les permiten adaptarse a los espacios disponibles.
 							</p>
 
@@ -249,7 +252,7 @@ export default function SolucionesBarcosPage() {
 
 							
 							<h2 className="pt-6 text-center font-nunito-bold text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] lg:mt-16 mr-auto">UBICACIÓN Y TENDIDO DE CONDUCTOS</h2>
-							<p className="text-[3.8vw] lg:text-[1.10vw] font-nunito w-full">
+							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito w-full">
 								Para lograr la correcta distribución del aire se utilizaron conductos metálicos para las líneas troncales, de los cualesparten las derivaciones hacia camarotes y espacios comunes mediante mangueras especiales para la conducción 
 								de aire. 
 							</p>
@@ -261,7 +264,7 @@ export default function SolucionesBarcosPage() {
 							</div>
 
 							<h2 className="pt-6 text-center font-nunito-bold text-[#9D9D9C] text-[3.8vw] lg:text-[1.3vw] lg:mt-16 mr-auto">RECOMENDACIÓN FINAL</h2>
-							<p className="w-full text-[#EF771C] text-[3.8vw] lg:text-[1.10vw] font-nunito ">
+							<p className="w-full text-[#EF771C] text-[3.8vw] lg:text-[1.20vw] font-nunito ">
 							Cada embarcación tendrá sus propias características y estará expuesta a condiciones distintas de trabajo. Analizar y adaptar el sistema que mejor satisfaga las necesidades en cada caso es lo que transforma algo tan simple como acondicionar un ambiente en todo un desafío.
 							</p>
 						</div>
