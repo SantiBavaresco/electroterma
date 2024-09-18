@@ -274,14 +274,16 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 										</Button>
 								</div>
 								<div className="">
-								<Button
+								<a  href="/solucionesHVAC">
+									<Button
 											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
 											radius="full"
 											size="sm"
-											onClick={()=>(window.open("electroterma.com"))}
+											// onClick={()=>(window.open("electroterma.com"))}
 										>
 											Ver otras soluciones
 										</Button>
+									</a>
 								</div>
 							</div>
 							
