@@ -120,9 +120,9 @@ export default function SolucionesHVACPage() {
 			<> 		{/* ------------- MOBILE ------------- */}
 			<section className="px-[3%] w-full p-2  bg-white h-full flex flex-col gap-3">
 				{solucionesGeneralData.pageData.products.map((item, index)=>(
-					<div  key={index} className="w-full h- bg-[#D9D9D9] rounded-[12px]">
+					<div  key={index} className="w-full h- bg-[#D9D9D9] rounded-[12px]" onClick={()=>(window.open(item.href))}>
 						<div className="flex ">
-							<div className="w-[25%] rounded-l-[12px] bg-[#D9D9D9]">
+							<div className="w-[35%] rounded-l-[12px] bg-[#D9D9D9]">
 								<Image
 									alt="product"
 									key={index}
@@ -132,7 +132,7 @@ export default function SolucionesHVACPage() {
 									width="100%"
 								/>
 							</div>
-							<div className="w-[72%] m-1 p-1 mr-1 rounded-[12px] bg-white">
+							<div className="w-[62%] m-1 p-1 mr-1 rounded-[12px] bg-white py-auto flex items-center">
 								<h1 className=" font-lexend-bold text-[#EF771C] text-[3.8vw] ">{item.title}</h1>
 							</div>
 							<div className="w-[8%] rounded-r-[12px] flex items-center justify-center bg-mustard">
