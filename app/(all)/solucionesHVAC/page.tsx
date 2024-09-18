@@ -78,7 +78,9 @@ export default function SolucionesHVACPage() {
 							
 						</div>
 						<div>
-							<Button
+							{(item.title===("VENTILACIÓN NAVE INDUSTRIAL" )|| item.title===("VENTILACIÓN DE SALA DE TRANSFORMADORES") || item.title===("VENTILACIÓN EN OFICINAS Y ESPACIOS PÚBLICOS")) ?
+								<Button
+								isDisabled
 								className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
 								radius="full"
 								size={BigScreen ? "lg" : "lg"}
@@ -86,6 +88,26 @@ export default function SolucionesHVACPage() {
 							>
 								Saber más
 							</Button>
+							:
+							<Button
+								
+									className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
+									radius="full"
+									size={BigScreen ? "lg" : "lg"}
+									onClick={()=>(window.open(item.href))}
+								>
+									Saber más
+								</Button>
+							}
+							{/* <Button
+							
+								className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
+								radius="full"
+								size={BigScreen ? "lg" : "lg"}
+								onClick={()=>(window.open(item.href))}
+							>
+								Saber más
+							</Button> */}
 						</div>
 
 					</div>
