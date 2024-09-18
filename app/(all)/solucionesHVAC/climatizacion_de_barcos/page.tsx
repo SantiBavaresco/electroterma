@@ -8,7 +8,7 @@ import {Link} from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { IoMailOutline } from "react-icons/io5";
 
-export default function SolucionesBarcosPage() {
+export default function Soluciones_climatizacion_de_barcos_Page() {
 
 	const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
@@ -46,7 +46,7 @@ export default function SolucionesBarcosPage() {
             alt="Electroterma Logo"
             className=""
 			radius="none"
-            src={`../../img/soluciones/barcos/SolucionesBarcos${i+4}.png`}
+            src={`../../img/soluciones/climatizacion_de_barcos/Soluciones${i+4}.png`}
             width="100%"
             />
         );
@@ -54,7 +54,7 @@ export default function SolucionesBarcosPage() {
 
 	return (
 		<main className="flex flex-col  mt-4 items-center justify-center gap-1 md:gap-4 pb-4 md:pb-10 overflow-hidden ">
-		{/* ------------- VIDEO INTRO ------------- */}
+		{/* ------------- Imagen INTRO ------------- */}
 
 		<section className="w-full rounded-tl-[43px] ml-[3%] flex flex-row bg-[#F7F6F6]">
 			<div className="w-full  ml-[1vw] mt-[1vw] h-full ">
@@ -62,7 +62,7 @@ export default function SolucionesBarcosPage() {
 						alt="Banner 1"
 						className="rounded-tl-[30px] "
 						radius="none"
-						src="../../img/soluciones/barcos/SolucionesBarcosBanner1.png"
+						src="../../img/soluciones/climatizacion_de_barcos/SolucionesBanner1.png"
 						width="100%"
 					/>
 				</div>
@@ -75,7 +75,7 @@ export default function SolucionesBarcosPage() {
 			<section className="w-full h-[104%] z-0 rounded-tl-[0px] -mt-10 pt-10   bg-[#F7F6F6] ">
 				<div className="  ml-[0.5vw] mt-6  bg-gray-00">
 					<div className=" flex mr-auto ml-4 pl-10 text-white font-lexend-bold text-[2.5vw] bg-white- rounded-l-full border-1- border-lowgray- shadow-2xl-"> 
-					<Avatar  src="../../img/soluciones/barcos/SolucionesBarcosAutor.png" className="-ml-8 w- h-[5.0vw] my-2 text-large"/>
+					<Avatar  src="../../img/soluciones/climatizacion_de_barcos/SolucionesAutor.png" className="-ml-8 w- h-[5.0vw] my-2 text-large"/>
 					<p className="my-auto ml-4 pt-4  pb-4  text-[#EF771C] font-lexend-bold text-[1.2vw]">Por: {" "}
 						<span className="underline">Victor Barbarito</span>
 					</p>
@@ -92,7 +92,7 @@ export default function SolucionesBarcosPage() {
 							alt="Banner 1"
 							className="p-6"
 							radius="none"
-							src="../../img/soluciones/barcos/SolucionesBarcos1.png"
+							src="../../img/soluciones/climatizacion_de_barcos/Soluciones1.png"
 							// width="100%"
 							height="100%"
 							/> 
@@ -118,8 +118,6 @@ export default function SolucionesBarcosPage() {
 							className="  z-10 bg-[#EF771C] px-10 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 							radius="full"
 							size={BigScreen ? "lg" : "lg"}
-							
-							// onClick={()=>(window.open("electroterma.com"))}
 						>
 							Ver otras soluciones
 						</Button>
@@ -128,54 +126,7 @@ export default function SolucionesBarcosPage() {
 			</section>
 			</>
 			:
-			<>
-			{/* ------------------- MOBILE ------------------- */}
-			{/* <section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[95%]">
-				<div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
-					<div className=" bg-[#EF771C] rounded-2xl">
-						<Image
-							alt="Banner 1"
-							className="pr-1"
-							radius="none"
-							src="../../img/soluciones/barcos/SolucionesBarcos1.png"
-							// width="100%"
-							height="100%"
-							/> 
-					</div>
-					<div className="flex flex-col items-center mt-[1%] justify-cente h-full">
-						<div className="">
-							<Avatar  src="../../img/soluciones/barcos/SolucionesBarcosAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
-							<p className="px-auto py-2  text-[#EF771C] font-lexend-bold text-[3.8vw] text-center">Por: {" "}
-								<span className="underline">Victor Barbarito</span>
-							</p>
-							<h1 className="w-full text-center text-[6.5vw] font-nunito-bold bg-white text-black">Calefactor Eléctrico</h1>
-						</div>
-						<div className="py-4">
-						<Button
-									className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
-									radius="full"
-									size="sm"
-									onClick={()=>(window.open("electroterma.com"))}
-								>
-									Saber más
-								</Button>
-						</div>
-						<div className="">
-						<Button
-									className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
-									radius="full"
-									size="sm"
-									onClick={()=>(window.open("electroterma.com"))}
-								>
-									Ver otras soluciones
-								</Button>
-						</div>
-					</div>
-					
-				</div>
-			</section> */}
-			
-			</>
+			<></>
 			}
 			
 			<article className="w-full h-full bg-green-00">
@@ -231,10 +182,10 @@ export default function SolucionesBarcosPage() {
 						
 						<div className="w-full flex flex-col gap-6">
 							<Image
-							alt="Barco 2"
+							alt="Imagen 2"
 							className=""
 							radius="none"
-							src="../../img/soluciones/barcos/SolucionesBarcos2.png"
+							src="../../img/soluciones/climatizacion_de_barcos/Soluciones2.png"
 							width="100%"
 							/>
 
@@ -243,10 +194,10 @@ export default function SolucionesBarcosPage() {
 							</p>
 
 							<Image
-								alt="Barco 3"
+								alt="Imagen 3"
 								className=""
 								radius="none"
-								src="../../img/soluciones/barcos/SolucionesBarcos3.png"
+								src="../../img/soluciones/climatizacion_de_barcos/Soluciones3.png"
 								width="100%"
 							/>
 
@@ -279,14 +230,14 @@ export default function SolucionesBarcosPage() {
 									alt="Banner 1"
 									className="pr-1"
 									radius="none"
-									src="../../img/soluciones/barcos/SolucionesBarcos1.png"
+									src="../../img/soluciones/climatizacion_de_barcos/Soluciones1.png"
 									// width="100%"
 									height="100%"
 									/> 
 							</div>
 							<div className="flex flex-col items-center mt-[1%] justify-cente h-full">
 								<div className="">
-									<Avatar  src="../../img/soluciones/barcos/SolucionesBarcosAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
+									<Avatar  src="../../img/soluciones/climatizacion_de_barcos/SolucionesAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
 									<p className="px-auto py-2  text-[#EF771C] font-lexend-bold text-[3.8vw] text-center">Por: {" "}
 										<span className="underline">Victor Barbarito</span>
 									</p>
