@@ -201,13 +201,62 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
 						<div className="w-full flex flex-col gap-6">
 							
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-">En el caso de análisis se requería la captación en diversos puntos:</h2>
-							<Image
+
+							<table className="table-fixed text-[14px] font-nunito">
+								<thead>
+									<tr className="text-white border-1 border-highgray ">
+										<th className="bg-[#ff994c] border-1 border-highgray py-1">ETAPA DEL PROCESO</th>
+										<th className="bg-midgray border-1 border-highgray">Tipo de captacion</th>
+										<th className="bg-midgray border-1 border-highgray px-4">Cantidad</th>
+										<th className="bg-midgray text-[12px]">Superficie de captacion(m2)</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr className="text-center bg-gray-200 ">
+										<td className="border-1 border-highgray">Tolva de mezcla</td>
+										<td className="border-1 border-highgray">Boca de equipo</td>
+										<td className="border-1 border-highgray">2</td>
+										<td className="border-1 border-highgray">0.3</td>
+
+									</tr>
+									<tr className="text-center ">
+										<td className="border-1 border-highgray">Descarga en envasadora</td>
+										<td className="border-1 border-highgray">Boca de equipo</td>
+										<td className="border-1 border-highgray">2</td>
+										<td className="border-1 border-highgray">0.3</td>
+
+									</tr>
+									<tr className="text-center bg-gray-200">
+										<td className="border-1 border-highgray">Pesado y dosificación</td>
+										<td className="border-1 border-highgray">Campana sobre proceso</td>
+										<td className="border-1 border-highgray">2</td>
+										<td className="border-1 border-highgray">0.25</td>
+
+									</tr>
+									<tr className="text-center">
+										<td className="border-1 border-highgray">Cerrado</td>
+										<td className="border-1 border-highgray">Boca de equipo</td>
+										<td className="border-1 border-highgray">2</td>
+										<td className="border-1 border-highgray">0.3</td>
+
+									</tr>
+									<tr className="text-center bg-gray-200">
+										<td className="border-1 border-highgray">Cerrado</td>
+										<td className="border-1 border-highgray">Rejilla</td>
+										<td className="border-1 border-highgray">1</td>
+										<td className="border-1 border-highgray">0.05</td>
+
+									</tr>
+								</tbody>
+							</table>
+							{/* <Image
 								alt="Imagen 4"
 								className="lg:mt-"
 								radius="none"
 								src="../../img/soluciones/extraccion_de_aire_localizada/Soluciones4.png"
 								width="100%"
-							/>
+							/> */}
 
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito-bolder">La superficie total de captación (A) = 1.2 m 2</p>
 

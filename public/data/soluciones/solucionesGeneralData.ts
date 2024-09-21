@@ -64,7 +64,7 @@ interface generalDataType {
             imgUrl:"../../img/soluciones/home/Soluciones6.png",
             lable: "SOLUCIÓN ",
             title: "VENTILACIÓN NAVE INDUSTRIAL",
-            href: "/solucionesHVAC/barcos",
+            href: "/solucionesHVAC/ventilacion_nave_industrial",
           },
           {
             imgUrl:"../../img/soluciones/home/Soluciones7.png",

@@ -112,7 +112,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 					</div>
 					
 				</div>
-				<div className="h-full pb-[20%] flex flex-col items-center justify-center align-middle">
+				<div className="h-full pb-[0%] flex flex-col items-center justify-center align-middle">
 					<a href="/solucionesHVAC"> 
 						<Button
 							className="  z-10 bg-[#EF771C] px-10 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
@@ -150,11 +150,21 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 							    A menudo se presentan problemas en los sistemas de calefacción por agua en edificios de propiedad horizontal, tales como  aire en los circuitos de piping,  fallas en las calderas, excesivos consumos por departamentos no habitados, altos costos y frecuencia de mantenimientos correctivos. Estos problemas, se originan principalmente por las siguientes causas:  
 							</p>
 
-							<p className="pl-2">
-								1.	Proyecto mal desarrollado para ahorrar costos. <br/>
-								2.	Errónea selección de materiales de cañería por desconocimiento técnico. <br/>
-								3.	Salas de máquinas con equipamiento domiciliario no apto para uso en calefacción central.
-							</p>
+							<article className="pl-2">
+								<p className="flex ">
+									<span className="pr-2">1.</span>
+									<span>Proyecto mal desarrollado para ahorrar costos. </span> <br/>
+								</p>
+								<p className="flex ">
+									<span className="pr-2">2.</span>
+									<span>Errónea selección de materiales de cañería por desconocimiento técnico. </span> <br/>
+								</p>
+								<p className="flex ">
+									<span className="pr-2">3.</span>
+									<span>Salas de máquinas con equipamiento domiciliario no apto para uso en calefacción central. </span> <br/>
+								</p>
+							</article>
+							
 							<p>
 								Al desarrollar un proyecto de propiedad horizontal, lo primero que nos dice la experiencia, es que el sistema de calefacción y climatización rondará el 5% del valor del proyecto. No se debería confiar en soluciones mágicas que prometan grandes ahorros, si bien este tipo de instalaciones no se ven a simple vista, son las que aseguran confort en los momentos de mayor necesidad y paradójicamente, debería resultar la de mayor confiabilidad y la que no fallara una vez que las propiedades sean habitadas.
 							</p>
@@ -182,23 +192,54 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 
 							<p className="w-full">
 								Para la locación de una sala de calderas, en este tipo de proyectos, se deben tener en cuenta varios factores, entre ellos podemos citar: <br/><br/>
-								<p className="pl-2">
-									•	Acceso para la instalación de la caldera.<br/>
-									•	Espacio para mantenimiento.<br/>
-									•	Salida de gases de combustión.<br/>
-									•	Costo por unidad de superficie del espacio seleccionado.<br/>
-									•	Marco regulatorio para estas instalaciones según ente de incumben.<br/><br/>
-								</p>
-								Una vez definido el espacio dentro del edificio, se diseñan las distintas partes: <br/><br/>
-								<p className="pl-2">
-									1.	Sistema de circulación de ACC: se definen cuadros compuestos por colectores de mandada y retorno, con bombas centrifugas con sellos aptos para temperatura y de la capacidad requerida para la totalidad del sistema. Las bombas serán redundantes para darle mayor confiabilidad a la instalación y realizarles correcto mantenimiento preventivo. 
-									<br/>
-									2.	Vasos de expansión de la capacidad de diseño de acuerdo con las características de la instalación.  
-									<br/>
-									3.	Piping de interconexión entre todos los elementos de SMAQ: se realiza en caño de acero calidad SCH40 con aislación de goma elastomérica, de diámetros adecuados para los caudales y presiones de la instalación. 
-									<br/>
-									4.	Se diseña un tablero eléctrico, con componentes de primera calidad, para control automático del sistema, alarmas y capacidad de retransmitir información del estado del sistema, a un dispositivo móvil para monitoreo y control a distancia.
-								</p>
+
+
+								<article className="pl-2">
+									<p className="flex ">
+										<span className="pr-2">•</span>
+										<span>Acceso para la instalación de la caldera. </span> <br/>
+									</p>
+										<p className="flex ">
+									<span className="pr-2">•</span>
+
+										<span>Espacio para mantenimiento.</span> <br/>
+									</p>
+									<p className="flex ">
+										<span className="pr-2">•</span>
+										<span>Salida de gases de combustión. </span> <br/>
+									</p>
+									<p className="flex ">
+										<span className="pr-2">•</span>
+										<span>Costo por unidad de superficie del espacio seleccionado. </span> <br/>
+									</p>
+									<p className="flex ">
+										<span className="pr-2">•</span>
+										<span>Marco regulatorio para estas instalaciones según ente de incumben.</span> <br/>
+									</p>
+								</article>
+
+								<p><br/>Una vez definido el espacio dentro del edificio, se diseñan las distintas partes: <br/><br/></p>
+
+								<article className="pl-2">
+									<p className="flex ">
+										<span className="pr-2">1.</span>
+										<span>Sistema de circulación de ACC: se definen cuadros compuestos por colectores de mandada y retorno, con bombas centrifugas con sellos aptos para temperatura y de la capacidad requerida para la totalidad del sistema. Las bombas serán redundantes para darle mayor confiabilidad a la instalación y realizarles correcto mantenimiento preventivo. </span> <br/>
+									</p>
+									<p className="flex ">
+										<span className="pr-2">2.</span>
+										<span>Vasos de expansión de la capacidad de diseño de acuerdo con las características de la instalación.   </span> <br/>
+									</p>
+									<p className="flex ">
+										<span className="pr-2">3.</span>
+										<span>Piping de interconexión entre todos los elementos de SMAQ: se realiza en caño de acero calidad SCH40 con aislación de goma elastomérica, de diámetros adecuados para los caudales y presiones de la instalación.  </span> <br/>
+									</p>
+									<p className="flex ">
+										<span className="pr-2">4.</span>
+										<span>Se diseña un tablero eléctrico, con componentes de primera calidad, para control automático del sistema, alarmas y capacidad de retransmitir información del estado del sistema, a un dispositivo móvil para monitoreo y control a distancia.</span> <br/>
+									</p>
+								</article>
+
+								
 							</p>
 
 						</div>
