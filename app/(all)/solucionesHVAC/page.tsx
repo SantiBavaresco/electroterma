@@ -84,7 +84,7 @@ export default function SolucionesHVACPage() {
 								className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
 								radius="full"
 								size={BigScreen ? "lg" : "lg"}
-								onClick={()=>(window.open(item.href))}
+								onClick={()=>(window.open(item.href, '_top'))}
 							>
 								Saber más
 							</Button>
@@ -94,7 +94,7 @@ export default function SolucionesHVACPage() {
 									className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open(item.href))}
+									onClick={()=>(window.open(item.href, '_top'))}
 								>
 									Saber más
 							</Button>
@@ -120,7 +120,7 @@ export default function SolucionesHVACPage() {
 			<> 		{/* ------------- MOBILE ------------- */}
 			<section className="px-[5%] w-full p-2  bg-white h-full flex flex-col gap-3">
 				{solucionesGeneralData.pageData.products.map((item, index)=>(
-					<div  key={index} className="w-full h- bg-[#D9D9D9] rounded-[12px]" onClick={()=>(window.open(item.href))}>
+					<div  key={index} className="w-full h- bg-[#D9D9D9] rounded-[12px]" onClick={()=>(window.open(item.href, '_top'))}>
 						<div className="flex ">
 							<div className="w-[35%] rounded-l-[12px] bg-[#D9D9D9]">
 								<Image

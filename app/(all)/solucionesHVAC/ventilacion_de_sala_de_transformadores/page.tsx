@@ -134,7 +134,12 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 					{/* ------------- TITULO PRINCIPAL ------------- */}
 					<h1 className="lg:py-6 pl-2 lg:pl-12 py-2 text-white font-lexend-bold lg:text-[2.0vw] bg-[#EF771C] shadow-2xl"> SOLUCIÓN VENTILACIÓN DE SALA DE TRANSFORMADORES</h1>
 
-					
+					<div className="visible md:hidden flex mr-auto mt-1 text-white font-lexend-bold text-[2.5vw] bg-white- rounded-l-full border-1- border-lowgray- shadow-2xl-"> 
+							<Avatar  src="../../img/soluciones/ventilacion_de_sala_de_transformadores/SolucionesAutor.png" className="w- h-[10.0vw] my-2 text-large"/>
+							<p className="my-auto ml-2 pt-4  pb-4  text-[#EF771C] font-lexend-bold text-[3.2vw]">Por: {" "}
+								<span className="underline">Nicolás Cabot</span>
+							</p>
+						</div>
 
 					<div className="w-full mt-4 pl-2 pr-2 lg:pr-20 py-2 lg:py-10 grid lg:grid-cols-2 gap-10">
 

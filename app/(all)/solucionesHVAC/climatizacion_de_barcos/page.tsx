@@ -140,6 +140,14 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 
 						{/* ------------- Contenido primario ------------- */}
 						<div className="w-full flex flex-col gap-6 text-[3.8vw] lg:text-[1.20vw] font-nunito items-center ">
+
+							<div className="visible md:hidden flex mr-auto mt-1 text-white font-lexend-bold text-[2.5vw] bg-white- rounded-l-full border-1- border-lowgray- shadow-2xl-"> 
+								<Avatar  src="../../img/soluciones/climatizacion_de_barcos/SolucionesAutor.png" className="w- h-[10.0vw] my-2 text-large"/>
+								<p className="my-auto ml-2 pt-4  pb-4  text-[#EF771C] font-lexend-bold text-[3.2vw]">Por: {" "}
+									<span className="underline">Victor Barbarito</span>
+								</p>
+							</div>
+							
 						    <p className="">
 								Es conocido que las personas que se desarrollan en la actividad marítima pueden estar expuestas a condiciones de lo más adversas, entre ellas, espacios reducidos, climas extremos y embarcaciones que pueden llegar a extenderse por semanas.
 							</p>
@@ -223,7 +231,51 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 						{BigScreen || 
 					<>
 					{/* ------------------- MOBILE ------------------- */}
-					<section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[99.5%] mt-2">
+
+					<section className="bg-[#F7F6F6] h rounded-3xl">
+						<div className="grid grid-cols-[40%_57%] gap-[3%] p-3 "> 
+							<div className=" bg-[#EF771C] rounded-2xl shadow-2xl">
+								<Image
+									alt="Banner 1"
+									className="p-1 px-2	"
+									radius="none"
+									src="../../img/soluciones/climatizacion_de_barcos/Soluciones1.png"
+									// width="100%"
+									height="100%"
+									/> 
+							</div>
+							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
+								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
+									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-12 -ml-10 mr-4 mt-2 rounded-r-2xl">Calefactor Eléctrico</h1>
+									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
+										<Button
+											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
+											radius="full"
+											size="sm"
+											onClick={()=>(window.open("electroterma.com"))}
+										>
+											Saber más
+										</Button>
+										</div>
+								</div>
+								<div className="w-full h-[40%] bg-white rounded-2xl shadow-xl flex align-bottom justif	">
+									
+										<Button
+											className="mt-auto m-1 2 xm:mt-auto  ml-2 mb-2 z-10 bg-[#EF771C] xm:px-4 xm:py-4  font-nunito text-white shadow-xl"
+											radius="full"
+											size="sm"
+											onClick={()=>(window.open("/solucionesHVAC", "_top"))}
+										>
+											Ver otras soluciones
+										</Button>
+									
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					{/* <section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[99.5%] mt-2">
 						<div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
 							<div className=" bg-[#EF771C] rounded-2xl">
 								<Image
@@ -268,7 +320,7 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 							</div>
 							
 						</div>
-					</section>
+					</section> */}
 					
 					</>
 					}
