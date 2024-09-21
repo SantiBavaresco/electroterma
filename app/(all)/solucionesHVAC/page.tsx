@@ -78,7 +78,7 @@ export default function SolucionesHVACPage() {
 							
 						</div>
 						<div>
-							{(item.title===("VENTILACIÓN NAVE INDUSTRIAL" )|| item.title===("VENTILACIÓN DE SALA DE TRANSFORMADORES") || item.title===("VENTILACIÓN EN OFICINAS Y ESPACIOS PÚBLICOS")) ?
+							{(item.title===("VENTILACIÓN NAVE INDUSTRIAL" ))?
 								<Button
 								isDisabled
 								className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
@@ -97,7 +97,7 @@ export default function SolucionesHVACPage() {
 									onClick={()=>(window.open(item.href))}
 								>
 									Saber más
-								</Button>
+							</Button>
 							}
 							{/* <Button
 							
@@ -118,7 +118,7 @@ export default function SolucionesHVACPage() {
 			</>
 		:
 			<> 		{/* ------------- MOBILE ------------- */}
-			<section className="px-[3%] w-full p-2  bg-white h-full flex flex-col gap-3">
+			<section className="px-[5%] w-full p-2  bg-white h-full flex flex-col gap-3">
 				{solucionesGeneralData.pageData.products.map((item, index)=>(
 					<div  key={index} className="w-full h- bg-[#D9D9D9] rounded-[12px]" onClick={()=>(window.open(item.href))}>
 						<div className="flex ">
@@ -130,10 +130,11 @@ export default function SolucionesHVACPage() {
 									radius="none"
 									src={item.imgUrl}
 									width="100%"
+									// height="100%"
 								/>
 							</div>
-							<div className="w-[62%] m-1 p-1 mr-1 rounded-[12px] bg-white py-auto flex items-center">
-								<h1 className=" font-lexend-bold text-[#EF771C] text-[3.8vw] ">{item.title}</h1>
+							<div className="w-[62%] my-1 p-1 mr-1 rounded-[12px] bg-white py-auto flex items-center">
+								<h1 className=" font-lexend-bold text-[#EF771C] text-[3.5vw] ">{item.title}</h1>
 							</div>
 							<div className="w-[8%] rounded-r-[12px] flex items-center justify-center bg-mustard">
 								<h1 className="text-white">+</h1>

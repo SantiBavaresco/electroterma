@@ -8,7 +8,7 @@ import {Link} from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { IoMailOutline } from "react-icons/io5";
 
-export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Page() {
+export default function Soluciones_ventilacion_de_sala_de_transformadores_Page() {
 
 	const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
@@ -46,7 +46,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
             alt="Electroterma Logo"
             className=""
 			radius="none"
-            src={`../../img/soluciones/calefaccion_de_edificio_por_agua_caliente/Soluciones${i+4}.png`}
+            src={`../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones${i+4}.png`}
             width="100%"
             />
         );
@@ -62,7 +62,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 						alt="Banner 1"
 						className="rounded-tl-[30px] "
 						radius="none"
-						src="../../img/soluciones/calefaccion_de_edificio_por_agua_caliente/SolucionesBanner1.png"
+						src="../../img/soluciones/ventilacion_de_sala_de_transformadores/SolucionesBanner1.png"
 						width="100%"
 					/>
 				</div>
@@ -72,10 +72,10 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 		<section className="w-full ml-[3%] grid lg:grid-cols-[25%_75%]">
 			{BigScreen ?
 			<>
-			<section className="w-full h-[134%] z-0 rounded-tl-[0px] -mt-10 pt-10   bg-[#F7F6F6] ">
+			<section className="w-full h-[184%] z-0 rounded-tl-[0px] -mt-10 pt-10   bg-[#F7F6F6] ">
 				<div className="  ml-[0.5vw] mt-6  bg-gray-00">
 					<div className=" flex mr-auto ml-4 pl-10 text-white font-lexend-bold text-[2.5vw] bg-white- rounded-l-full border-1- border-lowgray- shadow-2xl-"> 
-					<Avatar  src="../../img/soluciones/calefaccion_de_edificio_por_agua_caliente/SolucionesAutor.png" className="-ml-8 w- h-[5.0vw] my-2 text-large"/>
+					<Avatar  src="../../img/soluciones/ventilacion_de_sala_de_transformadores/SolucionesAutor.png" className="-ml-8 w- h-[5.0vw] my-2 text-large"/>
 					<p className="my-auto ml-4 pt-4  pb-4  text-[#EF771C] font-lexend-bold text-[1.2vw]">Por: {" "}
 						<span className="underline">Nicolás Cabot</span>
 					</p>
@@ -83,7 +83,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 					</div>
 				</div>
 
-				<div className="  ml-[0.5vw] mt-6  bg-gray-00">
+				{/* <div className="  ml-[0.5vw] mt-6  bg-gray-00">
 					<div className=" flex flex-col items-center justify-center align-middle gap-4 p-10 m-10 mx-4 mt-16  text-white font-lexend-bold text-[2.5vw] 
 						bg-white rounded-[59px] border-1 border-lowgray shadow-2xl"> 
 					
@@ -92,7 +92,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 							alt="Banner 1"
 							className="p-6"
 							radius="none"
-							src="../../img/soluciones/calefaccion_de_edificio_por_agua_caliente/Soluciones1.png"
+							src="../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones1.png"
 							// width="100%"
 							height="100%"
 							/> 
@@ -111,7 +111,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 						
 					</div>
 					
-				</div>
+				</div> */}
 				<div className="h-full pb-[20%] flex flex-col items-center justify-center align-middle">
 					<a href="/solucionesHVAC"> 
 						<Button
@@ -132,7 +132,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 			<article className="w-full h-full bg-green-00">
 				<div className=" ml-2 mr-4 lg:mx-4 mt-6 bg-[#EF771C">
 					{/* ------------- TITULO PRINCIPAL ------------- */}
-					<h1 className="lg:py-6 pl-2 lg:pl-12 py-2 text-white font-lexend-bold lg:text-[2.0vw] bg-[#EF771C] shadow-2xl"> SOLUCIÓN CALEFACCIÓN DE EDIFICIOS POR AGUA CALIENTE</h1>
+					<h1 className="lg:py-6 pl-2 lg:pl-12 py-2 text-white font-lexend-bold lg:text-[2.0vw] bg-[#EF771C] shadow-2xl"> SOLUCIÓN VENTILACIÓN DE SALA DE TRANSFORMADORES</h1>
 
 					
 
@@ -141,123 +141,99 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 						{/* ------------- Contenido primario ------------- */}
 						<div className="w-full flex flex-col gap-6 text-[3.8vw] lg:text-[1.20vw] font-nunito items-center ">
 						    <p className="">
-							    A menudo se presentan problemas en los sistemas de calefacción por agua en edificios de propiedad horizontal, tales como  aire en los circuitos de piping,  fallas en las calderas, excesivos consumos por departamentos no habitados, altos costos y frecuencia de mantenimientos correctivos. Estos problemas, se originan principalmente por las siguientes causas:  
+								Las denominadas salas de transformación son recintos donde la energía eléctrica provista por la distribuidora es adecuada para su uso dentro de instalaciones civiles o industriales. En dichos recintos, se coloca uno o más transformadores que se encargan de disminuir la tensión de distribución (generalmente alta o media) a tensiones utilizables en la industria (media o baja, siendo los más difundidos los sistemas de 380/220 V). Además de los transformadores propiamente dichos, podemos encontrar diferentes dispositivos de maniobra y protección que complementan y protegen al sistema. A continuación, vamos a mencionar las problemáticas que encontramos para una correcta ventilación de sala de transformadores y su solución. 
 							</p>
 
-							<p className="pl-2">
-								1.	Proyecto mal desarrollado para ahorrar costos. <br/>
-								2.	Errónea selección de materiales de cañería por desconocimiento técnico. <br/>
-								3.	Salas de máquinas con equipamiento domiciliario no apto para uso en calefacción central.
+							<p className="pl-">
+								En un transformador eléctrico, existen diferentes factores que generan pérdidas de energía en forma de calor. En equipos de gran potencia, estas pérdidas pueden producir considerables aumentos de temperatura, tanto en la unidad como en su entorno. Si las condiciones de temperatura no son controladas en forma adecuada, pueden producirse efectos adversos sobre los equipos, los cuales van desde una merma en el rendimiento, hasta problemas más graves como una prematura degradación de los materiales aislantes. 
 							</p>
 							<p>
-								Al desarrollar un proyecto de propiedad horizontal, lo primero que nos dice la experiencia, es que el sistema de calefacción y climatización rondará el 5% del valor del proyecto. No se debería confiar en soluciones mágicas que prometan grandes ahorros, si bien este tipo de instalaciones no se ven a simple vista, son las que aseguran confort en los momentos de mayor necesidad y paradójicamente, debería resultar la de mayor confiabilidad y la que no fallara una vez que las propiedades sean habitadas.
+								Las condiciones de calor excesivo en los recintos pueden también ocasionar inconvenientes sobre los aparatos de protección y maniobra, provocando muchas veces falsos disparos de los mismos. El costo operativo de esto resulta muy alto, ya que pueden producirse paradas de procesos continuos, junto a un desgaste prematuro de los equipos. 
 							</p>
-							<p className="text-[#EF771C]">
-								Desarrollaremos un caso a modo de ejemplo, con calefacción por radiadores en un edificio de la Patagonia.
+							<p className="">
+								Por estos motivos, es fundamental disipar el calor generado en las salas, y mantener así una temperatura operativa acorde a las condiciones que exigen el transformador y sus periféricos.
+							</p>
+
+							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">ANÁLISIS DE SITUACIÓN Y SOLUCIÓN PROPUESTA POR EL EQUIPO DE INGENIERÍA</h2>
+							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
+								En general las salas de transformadores se encuentran en un sector independiente de las plantas, dispuesto según normativa. Las dimensiones aproximadas son de 3x6 mts, con un volumen estimado de 54 m³. En el caso bajo estudio, encontramos dentro de la misma dos transformadores de 1.000 kVA de potencia. Cada transformador genera una importante cantidad de calor.
 							</p>
 
 							<Image
 							alt="Imagen 2"
 							className=""
 							radius="none"
-							src="../../img/soluciones/calefaccion_de_edificio_por_agua_caliente/Soluciones2.png"
+							src="../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones2.png"
 							width="100%"
 							/>
 							
-							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">1. DEFINIMOS LA CAPACIDAD DE LA SALA DE MÁQUINAS</h2>
-							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-								El edificio cuenta con 26 espacios que requieren climatización, entre espacios comunes y departamentos, lo cual suma un total de 850 m2. 
-								<br/> <br/>
-								Para alimentar todos los puntos de consumo de Agua Caliente de Calefacción (ACC), se dispusieron dos calderas marca TEMPOMATIC chequear link a caldera de agua caliente tempomatic, de alta confiabilidad, de 120.000 kcal/h cada una.
-							</p>
-														
-							
-							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">2. LOCACIÓN Y DISEÑO DE LA SALA DE MÁQUINAS (SMAQ)</h2>
 
 							<p className="w-full">
-								Para la locación de una sala de calderas, en este tipo de proyectos, se deben tener en cuenta varios factores, entre ellos podemos citar: <br/><br/>
-								<p className="pl-2">
-									•	Acceso para la instalación de la caldera.<br/>
-									•	Espacio para mantenimiento.<br/>
-									•	Salida de gases de combustión.<br/>
-									•	Costo por unidad de superficie del espacio seleccionado.<br/>
-									•	Marco regulatorio para estas instalaciones según ente de incumben.<br/><br/>
-								</p>
-								Una vez definido el espacio dentro del edificio, se diseñan las distintas partes: <br/><br/>
-								<p className="pl-2">
-									1.	Sistema de circulación de ACC: se definen cuadros compuestos por colectores de mandada y retorno, con bombas centrifugas con sellos aptos para temperatura y de la capacidad requerida para la totalidad del sistema. Las bombas serán redundantes para darle mayor confiabilidad a la instalación y realizarles correcto mantenimiento preventivo. 
-									<br/>
-									2.	Vasos de expansión de la capacidad de diseño de acuerdo con las características de la instalación.  
-									<br/>
-									3.	Piping de interconexión entre todos los elementos de SMAQ: se realiza en caño de acero calidad SCH40 con aislación de goma elastomérica, de diámetros adecuados para los caudales y presiones de la instalación. 
-									<br/>
-									4.	Se diseña un tablero eléctrico, con componentes de primera calidad, para control automático del sistema, alarmas y capacidad de retransmitir información del estado del sistema, a un dispositivo móvil para monitoreo y control a distancia.
-								</p>
+							Se propuso instalar un sistema que genere una corriente de aire entre los puntos de entrada (inyección) y salida (extracción). De esta forma se producirá un “barrido” entre la inyección de aire frío, el foco generador de calor y la extracción de aire caliente en la sala de transformadores.
 							</p>
 
 						</div>
 						
 						<div className="w-full flex flex-col gap-6">
 							
-							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-">3. DISTRIBUCIÓN CENTRAL Y CONEXIÓN A VIVIENDAS</h2>
 
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-								La distribución de ACC entre SMAQ y los distribuidores de cada vivienda será por medio de caños plásticos con uniones por termofusión, de baja conductividad térmica con recubrimiento de aluminio y propiedades no adherentes para no favorecer la incrustación de sarro. 
+								Este recinto está construido en mampostería, con dos únicas caras disponibles para la inyección/expulsión de aire, sin posibilidad de instalar extractores en la cubierta. 
 								<br/><br/>
-								Los distribuidores deben incluir los colectores junto con las cajas metálicas diseñadas para dicha aplicación con válvulas motorizadas para cada uno de los circuitos que se instalarán en los departamentos. En la alimentación a los distribuidores de cada vivienda, recomendamos instalar un medidor de consumo, para poder prorratear el gasto total del sistema, según el uso de cada departamento.
+								Para el balance térmico de la sala utilizamos la cantidad de calor cedido por los transformadores (dato provisto por el fabricante de los mismos) y la diferencia de temperatura admisible. Con estos datos determinamos el caudal de aire necesario para mantener la temperatura interior dentro del rango de operación solicitado.
 							</p>
-
-							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">4. DISEÑO DE CIRCUITOS Y RADIADORES DE CALEFACCIÓN</h2>
-							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-								El diseño de los circuitos dentro de los departamentos se realiza según el destino y simultaneidad de usos, se deberá buscar un equilibrio entre lo económico para la instalación y la posterior operación.
-								<br/><br/>
-								Las cañerías de alimentación y retorno, entre los distribuidores y los radiadores se realizan en cañerías tipo “pex” con uniones por sistemas de presión.
-								<br/><br/>
-								Determinamos la cantidad de elementos por ambiente, en función de su superficie. Así por ejemplo un dormitorio de aproximadamente 8 m2, se le colocará un radiador de no menos de 7 elementos. 
-								<br/><br/>
-								Los radiadores a utilizar serán de aluminio con certificaciones según reglamentación vigente, los cuales se instalarán con sus kits, válvulas, detentores, niples cromados y rosetas metálicas, para asegurar el correcto funcionamiento.
-								<br/><br/>
-								Para el comando y control del sistema, se instalan termostatos ambientes digitales, uno por circuito, con conexión remota para comando por dispositivos móviles.
-								<br/><br/>
-
-							</p>
-
-
 							<Image
 								alt="Imagen 3"
 								className="lg:mt-16"
 								radius="none"
-								src="../../img/soluciones/calefaccion_de_edificio_por_agua_caliente/Soluciones3.png"
+								src="../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones3.png"
+								width="100%"
+							/>
+							<Image
+								alt="Imagen 3"
+								className="lg:mt-16"
+								radius="none"
+								src="../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones4.png"
 								width="100%"
 							/>
 
-							
-							
+							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">LA INSTALACIÓN PROPUESTA Y POSTERIORMENTE EJECUTADA CONSTÓ DE:</h2>
+							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
+								<h2 className="text-[#EF771C] font-nunito-bold">Inyección:</h2>
+								En la zona inferior de una de las caras de la sala, 6 (seis) ventiladores axiales, marca TEMPOMATIC, modelo 3 - AX - 450, diámetro 450 mm - 1440 RPM - pala de poliamida marca OTAM/Soler & Palau.
+								<br/><br/>
 
-							<h2 className="pt-6 text-center font-nunito-bold text-[#9D9D9C] text-[3.8vw] lg:text-[1.3vw] lg:mt-16 mr-auto">RECOMENDACIÓN FINAL</h2>
-							<p className="w-full text-[#EF771C] text-[3.8vw] lg:text-[1.20vw] font-nunito ">
-							Antes de comenzar a desarrollar un proyecto de este tipo, el paso “cero”, la piedra fundamental debe ser conocer la calidad del agua con la que trabajará el sistema a fines de saber que la calidad y materiales de accesorios que elijamos, no se deteriorarán antes de cumplir con su vida útil programada.
+								<h2 className="text-[#EF771C] font-nunito-bold">Extracción:</h2>
+								En la zona superior de la cara opuesta a la inyección, 2 (dos) ventiladores axiales, marca TEMPOMATIC, modelo 2 - AX - 650, diámetro 650 mm - 1440 RPM - pala de poliamida marca OTAM/Soler & Palau.
+								<br/><br/>
+
+								<h2 className="text-[#EF771C] font-nunito-bold">Sistema de control:</h2>
+								Comando encargado de ordenar el encendido/apagado de los ventiladores, con el fin de optimizar el consumo energético y asegurar el funcionamiento del sistema de ventilación exclusivamente en los momentos en que este sea requerido.
+								<br/><br/>
+								
 							</p>
+
+
 						</div>
 						
 						{BigScreen || 
 					<>
 					{/* ------------------- MOBILE ------------------- */}
 					<section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[99.5%] mt-2">
-						<div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
+						{/* <div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
 							<div className=" bg-[#EF771C] rounded-2xl">
 								<Image
 									alt="Banner 1"
 									className="pr-1"
 									radius="none"
-									src="../../img/soluciones/calefaccion_de_edificio_por_agua_caliente/Soluciones1.png"
+									src="../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones1.png"
 									// width="100%"
 									height="100%"
 									/> 
 							</div>
 							<div className="flex flex-col items-center mt-[1%] justify-cente h-full">
 								<div className="">
-									<Avatar  src="../../img/soluciones/calefaccion_de_edificio_por_agua_caliente/SolucionesAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
+									<Avatar  src="../../img/soluciones/ventilacion_de_sala_de_transformadores/SolucionesAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
 									<p className="px-auto py-2  text-[#EF771C] font-lexend-bold text-[3.8vw] text-center">Por: {" "}
 										<span className="underline">Nicolás Cabot</span>
 									</p>
@@ -287,7 +263,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 								</div>
 							</div>
 							
-						</div>
+						</div> */}
 					</section>
 					
 					</>

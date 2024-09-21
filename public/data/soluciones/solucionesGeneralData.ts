@@ -48,17 +48,17 @@ interface generalDataType {
             title: "EXTRACCIÓN DE AIRE LOCALIZADA",
             href: "/solucionesHVAC/extraccion_de_aire_localizada",
           },
-          {
-            imgUrl:"../../img/soluciones/home/Soluciones4.png",
-            lable: "SOLUCIÓN ",
-            title: "VENTILACIÓN EN OFICINAS Y ESPACIOS PÚBLICOS",
-            href: "/solucionesHVAC/barcos",
-          },
+          // {
+          //   imgUrl:"../../img/soluciones/home/Soluciones4.png",
+          //   lable: "SOLUCIÓN ",
+          //   title: "VENTILACIÓN EN OFICINAS Y ESPACIOS PÚBLICOS",
+          //   href: "/solucionesHVAC/barcos",
+          // },
           {
             imgUrl:"../../img/soluciones/home/Soluciones5.png",
             lable: "SOLUCIÓN ",
             title: "VENTILACIÓN DE SALA DE TRANSFORMADORES",
-            href: "/solucionesHVAC/barcos",
+            href: "/solucionesHVAC/ventilacion_de_sala_de_transformadores",
           },
           {
             imgUrl:"../../img/soluciones/home/Soluciones6.png",
