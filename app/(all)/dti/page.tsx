@@ -102,8 +102,8 @@ export default function TempomaticPage() {
             </section>
 
             {/* ------------- DUCTOS TEXTILES ------------- */}
-            <section className="w-full flex flex-row items-center justify- pl-[5%] -mt-4">
-                <VinietaNaranjaSVG css=" h-[15px] w-[10px] md:h-[50px] md:h-[30px] lg:h-[60px] lg:w-[55px]"/>
+            <section className="w-full flex flex-row items-center justify- pl-[5vw] -mt-4">
+                <VinietaNaranjaSVG css=" h-[20px] w-[10px] md:h-[50px] md:h-[30px] lg:h-[60px] lg:w-[55px]"/>
                 <h1 className="text-[6.5vw] font-nunito-bolder text-livered-title ml-3">DUCTOS TEXTILES</h1>
             </section>
 
@@ -146,7 +146,7 @@ export default function TempomaticPage() {
                 {/* -------------PARRAFO CON COMILLAS MOBILE------------- */}
                         
                         <div className="z-20 absolute 
-                            top-[10%] xm:top-[20%] sm:top-[6%] md:top-[12%] lg:top-[5%] 
+                            top-[10%] xm:top-[10%] sm:top-[6%] md:top-[12%] lg:top-[5%] 
                             left-[3.5%] lg:left-[20%] 
                             w-[5vw] 
                             ">
@@ -236,13 +236,15 @@ export default function TempomaticPage() {
 
             {/* ------------- Electroterma ------------- */}
             <section className="w-full pl-[5%] pr-auto mt-12">
-                <Image
-                    alt="Home banner 1"
-                    className=""
-                    radius="none"
-                    src="../img/electrotermalogoletrasNoPadding.png"
-                    width={BigScreen ? "20%" : "50%"}
-                />
+                <a href="/" target="_top">
+                    <Image
+                        alt="Home banner 1"
+                        className=""
+                        radius="none"
+                        src="../img/electrotermalogoletrasNoPadding.png"
+                        width={BigScreen ? "40%" : "50%"}
+                    />
+                </a>
             </section>
 
             {/* ------------- IMG ------------- */}
@@ -251,7 +253,7 @@ export default function TempomaticPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/dti/DtiDuctosTextiles04.png"
+                    src={`../img/dti/DtiDuctos${BigScreen ? "Textiles04" : "Textiles04Mobile"}.png`}
                     width="100%"
                 />
             </section>
