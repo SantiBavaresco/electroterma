@@ -246,7 +246,7 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 							</div>
 							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
 								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
-									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-12 -ml-10 mr-4 mt-2 rounded-r-2xl">Calefactor Eléctrico</h1>
+									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-[58px] -ml-10 mr-4 mt-2 rounded-r-2xl">Calefactor Eléctrico</h1>
 									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
 										<Button
 											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"

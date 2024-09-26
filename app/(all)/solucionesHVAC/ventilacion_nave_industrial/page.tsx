@@ -273,7 +273,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 							<div className=" bg-[#EF771C] rounded-2xl shadow-2xl">
 								<Image
 									alt="Banner 1"
-									className="p-1 px-2 pt-10 pb-4	"
+									className="p-1 px-2 pt-12 pb-4	"
 									radius="none"
 									src="../../img/soluciones/ventilacion_nave_industrial/Soluciones11.png"
 									// width="100%"
@@ -282,7 +282,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 							</div>
 							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
 								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
-									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-12 -ml-10 mr-4 mt-2 rounded-r-2xl">Caja ventiladora</h1>
+									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-[58px] -ml-10 mr-4 mt-2 rounded-r-2xl">Caja ventiladora</h1>
 									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
 										<Button
 											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
@@ -316,7 +316,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 							<div className=" bg-[#EF771C] rounded-2xl shadow-2xl">
 								<Image
 									alt="Banner 1"
-									className="p-1 px-2 pt-6	"
+									className="p-1 px-2 pt-10	"
 									radius="none"
 									src="../../img/soluciones/ventilacion_nave_industrial/Soluciones12.png"
 									// width="100%"
@@ -325,7 +325,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 							</div>
 							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
 								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
-									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-12 -ml-10 mr-4 mt-2 rounded-r-2xl">Ventilador RLS</h1>
+									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-[58px] -ml-10 mr-4 mt-2 rounded-r-2xl">Ventilador RLS</h1>
 									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
 										<Button
 											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
@@ -368,7 +368,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 							</div>
 							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
 								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
-									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-12 -ml-10 mr-4 mt-2 rounded-r-2xl">Ductos textiles</h1>
+									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-[58px] -ml-10 mr-4 mt-2 rounded-r-2xl">Ductos textiles</h1>
 									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
 										<Button
 											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"

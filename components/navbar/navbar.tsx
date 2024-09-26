@@ -458,7 +458,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                             
 
                                 {dropdown.dropdown ? 
-                                    <div className="">
+                                    <div className="py-0">
                                         <Accordion variant="light">
                                             <AccordionItem key={dropdown.label} aria-label={dropdown.label} 
                                             title={
@@ -466,15 +466,16 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                                 href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
                                                 {dropdown.label}
                                             </a>}
-                                            className=""
-                                            startContent={
-                                                <Avatar
-                                                    isBordered
-                                                    color={`${dropdown.label==="Tempomatic" ? `warning`: "danger"}`}
-                                                    radius="lg"
-                                                    src={`../img/navbar/${dropdown.label}.png`}
-                                                />
-                                            }>
+                                            className="-mx-2  "
+                                            // startContent={
+                                            //     <Avatar
+                                            //         isBordered
+                                            //         color={`${dropdown.label==="Tempomatic" ? `warning`: "danger"}`}
+                                            //         radius="lg"
+                                            //         src={`../img/navbar/${dropdown.label}.png`}
+                                            //     />
+                                            // }
+                                            >
                                                 <div className="grid grid-cols-2 gap-2 w-[100%]">
                                                     
                                                 {/* Aca va la logica hardcodeada para mobile */}

@@ -141,7 +141,7 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 							</p>
 						</div>
 
-					<div className="w-full mt-4 pl-2 pr-2 lg:pr-20 py-2 lg:py-10 grid lg:grid-cols-2 gap-10">
+					<div className="w-full mt-4 pl-2 pr-2 lg:pr-20 py-2 lg:py-10 grid lg:grid-cols-2 lg:gap-10">
 
 						{/* ------------- Contenido primario ------------- */}
 						<div className="w-full flex flex-col gap-6 text-[3.8vw] lg:text-[1.20vw] font-nunito items-center ">
@@ -218,58 +218,22 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 								
 							</p>
 
-
+							<div className="mx-auto">
+								<Button
+											className="mt-auto m-1 2 xm:mt-auto  ml-2 mb-2 z-10 bg-[#EF771C] xm:px-4 xm:py-4  font-nunito text-white shadow-xl"
+											radius="full"
+											size="md"
+											onClick={()=>(window.open("/solucionesHVAC", "_top"))}
+										>
+											Ver otras soluciones
+										</Button>
+							</div>
 						</div>
 						
 						{BigScreen || 
 					<>
 					{/* ------------------- MOBILE ------------------- */}
-					<section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[99.5%] mt-2">
-						{/* <div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
-							<div className=" bg-[#EF771C] rounded-2xl">
-								<Image
-									alt="Banner 1"
-									className="pr-1"
-									radius="none"
-									src="../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones1.png"
-									// width="100%"
-									height="100%"
-									/> 
-							</div>
-							<div className="flex flex-col items-center mt-[1%] justify-cente h-full">
-								<div className="">
-									<Avatar  src="../../img/soluciones/ventilacion_de_sala_de_transformadores/SolucionesAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
-									<p className="px-auto py-2  text-[#EF771C] font-lexend-bold text-[3.8vw] text-center">Por: {" "}
-										<span className="underline">Nicolás Cabot</span>
-									</p>
-									<h1 className="w-full text-center text-[6.5vw] font-nunito-bold bg-white text-black">Caldera para calefacción</h1>
-								</div>
-								<div className="py-4">
-								<Button
-											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											onClick={()=>(window.open("electroterma.com"))}
-										>
-											Saber más
-										</Button>
-								</div>
-								<div className="">
-								<a  href="/solucionesHVAC">
-									<Button
-											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											// onClick={()=>(window.open("electroterma.com"))}
-										>
-											Ver otras soluciones
-										</Button>
-									</a>
-								</div>
-							</div>
-							
-						</div> */}
-					</section>
+					
 					
 					</>
 					}

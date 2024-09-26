@@ -69,7 +69,7 @@ interface generalDataType {
           {
             imgUrl:"../../img/soluciones/home/Soluciones7.png",
             lable: "SOLUCIÓN ",
-            title: "CALEFACCIÓN DE LOCALES COMERCIALES CON UNIDADES MANEJADORAS DE AIRE",
+            title: "CALEFACCIÓN DE LOCALES COMERCIALESE",
             href: "/solucionesHVAC/calefaccion_de_locales_comerciales_con_unidades_manejadoras_de_aire",
           },
           {

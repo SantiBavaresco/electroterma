@@ -289,7 +289,7 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">VENTILADOR DE EXTRACCIÓN</h2>
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
 								En el caso de análisis 
-								<span className="font-nunito-bolder"> se seleccionó un <span className="text-[#EF771C]">ventilador centrífugo</span>  de simple aspiración de palas inclinadas hacia atrás, marca  Soler &; Palau,</span> modelo RLS para el caudal correspondiente. Para la selección del ventilador, se deberá tener en cuenta la pérdida de carga infringida por los conductos y por el sistema separador.
+								<span className="font-nunito-bolder"> se seleccionó un <span className="text-[#EF771C]">ventilador centrífugo</span>  de simple aspiración de palas inclinadas hacia atrás, marca  Soler & Palau,</span> modelo RLS para el caudal correspondiente. Para la selección del ventilador, se deberá tener en cuenta la pérdida de carga infringida por los conductos y por el sistema separador.
 							</p>
 
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">SISTEMA SEPARADOR</h2>
@@ -321,7 +321,7 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
 							</div>
 							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
 								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
-									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-12 -ml-10 mr-4 mt-2 rounded-r-2xl">Ventilador RLS</h1>
+									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-[58px] -ml-10 mr-4 mt-2 rounded-r-2xl">Ventilador RLS</h1>
 									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
 										<Button
 											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
