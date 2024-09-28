@@ -466,7 +466,7 @@ export default function TempomaticPage() {
                 <section className="w-full px-[5%] -mt-10 ">
                 {/* -------------PARRAFO CON BOTON ------------- */}
 
-                    <p className="w-full font-lexend text-[#4C4B4B] text-[3.2vw] leading-none">
+                    <p className="w-full font-lexend text-[#4C4B4B] text-[4.3vw] leading-non">
                         Presentan distintas variantes de configuración, se construyen para 
                         agua caliente, agua enfriada o expansión directa, combinando a la 
                         vez cualquiera de estas variantes.
