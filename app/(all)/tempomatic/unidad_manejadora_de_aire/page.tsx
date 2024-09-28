@@ -173,7 +173,7 @@ export default function TempomaticPage() {
                     <ul className="w-2/5 font-nunito space-y-16 mt-10">
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">1</span> FILTRADO</h1>
-                            <p className="text-[1.3vw] text-midgray">Las unidades incluyen portafíltros para filtros de 2" de espesor, de cualquier tipo. Son provistas con  filtros descartables MERV 8.</p>
+                            <p className="text-[1.3vw] text-midgray">Las unidades incluyen portafíltros para filtros de 2&quot; de espesor, de cualquier tipo. Son provistas con  filtros descartables MERV 8.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">2</span> SERPENTINA</h1>
@@ -495,7 +495,7 @@ export default function TempomaticPage() {
                         <ul className="w-2/ font-nunito space-y-4 mt-0">
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">1</span> FILTRADO</h1>
-                                <p className="text-[4.3vw] text-midgray">Las unidades incluyen portafíltros para filtros de 2" de espesor, de cualquier tipo. Son provistas con  filtros descartables MERV 8.</p>
+                                <p className="text-[4.3vw] text-midgray">Las unidades incluyen portafíltros para filtros de 2&quot; de espesor, de cualquier tipo. Son provistas con  filtros descartables MERV 8.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">2</span> SERPENTINA</h1>
