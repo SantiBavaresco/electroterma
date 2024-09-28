@@ -123,7 +123,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
         label: ["Unidad manejadora de aire"],
         labelShort: "UMDA",
         img: "../../img/navbar/Tempomatic4.png",
-        href: "/tempomatic/UnidadManejadoraAire",
+        href: "/tempomatic/unidad_manejadora_de_aire",
         color : "bg-[#EF7916]",
 
     },
