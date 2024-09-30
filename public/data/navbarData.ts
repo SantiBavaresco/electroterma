@@ -124,7 +124,7 @@ export const itemsNavTempomatic: ItemsNavbar[] = [
             label: ["Calefactor eléctrico"],
             labelShort: "CE",
             img: "../../img/navbar/Tempomatic3.png",
-            href: "/tempomativ/calefactor_electrico",
+            href: "/tempomatic/calefactor_electrico",
             color : "bg-[#EF7916]",
 
         },
