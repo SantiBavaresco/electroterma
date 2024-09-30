@@ -103,7 +103,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
         label: ["Generador de aire caliente"],
         labelShort: "GDAC",
         img: "../../img/navbar/Tempomatic5.png",
-        href: "/tempomatic/GeneradorAireCaliente",
+        href: "/tempomatic/generador_aire_caliente",
         color : "bg-[#EF7916]",
 
     },
@@ -113,7 +113,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
         label: ["Calefactor eléctrico"],
         labelShort: "CE",
         img: "../../img/navbar/Tempomatic3.png",
-        href: "/tempomativ/CalefactorElectrico",
+        href: "/tempomativ/calefactor_electrico",
         color : "bg-[#EF7916]",
 
     },
@@ -133,7 +133,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
         label: ["Caja Ventiladora",],
         labelShort: "CV",
         img: "../../img/navbar/Tempomatic1.png",
-        href: "/tempomatic/CajaVentiladora",
+        href: "/tempomatic/caja_ventiladora",
         color : "bg-[#EF7916]",
     },
     {
@@ -142,7 +142,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
         label: ["Caldera para calefacción"],
         labelShort: "CC",
         img: "../../img/navbar/Tempomatic6.png",
-        href: "/tempomatic/CalderaParaCalefaccion",
+        href: "/tempomatic/caldera_para_calefaccion",
         color : "bg-[#EF7916]",
 
     },
