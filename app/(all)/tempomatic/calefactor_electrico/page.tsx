@@ -491,11 +491,11 @@ export default function CalefactorElectricoPage() {
                 </section> 
 
                 <section className="w-auto my-auto m    -auto mt-4 px-[%] space-y-4">
-                    <Diferencial15Anio size={75} customWith={10} />
-                    <DiferencialUnicosEnElMercado size={75} customWith={10} />
-                    <DiferencialAltaConfiabilidad size={75} customWith={10} />
-                    <DiferencialConVentiladorSyP size={75} customWith={10} />
-                    <DiferencialElementosOpcionales size={75} customWith={10} />
+                    <Diferencial15Anio size={55} customWith={10} />
+                    <DiferencialUnicosEnElMercado size={55} customWith={10} />
+                    <DiferencialAltaConfiabilidad size={55} customWith={10} />
+                    <DiferencialConVentiladorSyP size={55} customWith={10} />
+                    <DiferencialElementosOpcionales size={55} customWith={10} />
                 </section>
 
 
