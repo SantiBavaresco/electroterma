@@ -97,7 +97,7 @@ export default function CalefactorElectricoPage() {
                     alt="Home banner 1"
                     className=""
                     radius="none"
-                    src="../img/tempomatic/calefactor_electrico/tempomatic-Logo.png"
+                    src="../img/tempomatic/calefactor_electrico/tempomatic-Logo.jpg"
                     width="100%"
                 />
             </section>  
