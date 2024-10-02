@@ -99,7 +99,7 @@ export default function CajaVentiladoraPage() {
                     alt="Home banner 1"
                     className=""
                     radius="none"
-                    src="../img/tempomatic/imgBanner/tempomatic-Logo.png"
+                    src="../../img/tempomatic/imgBanner/tempomatic-Logo.png"
                     width="100%"
                 />
             </section>  
