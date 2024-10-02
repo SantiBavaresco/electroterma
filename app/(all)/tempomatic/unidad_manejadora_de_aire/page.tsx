@@ -89,7 +89,7 @@ export default function UnidadManejadoraDeAirePage() {
                     alt="Home banner 1"
                     className=""
                     radius="none"
-                    src=".../../img/tempomatic/imgBanner/tempomatic-Logo.png"
+                    src=".../img/tempomatic/unidad_manejadora_de_aire/tempomatic-Logo.png"
                     width="100%"
                 />
             </section>  
