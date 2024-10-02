@@ -259,10 +259,10 @@ export default function CajaVentiladoraPage() {
                                 <td>655</td>
                                 <td>1070</td>
                                 <td>915</td>
-                                <td>750</td>
-                                <td>450</td>
-                                <td>350</td>
-                                <td>350</td>
+                                <td className="border-l-2 border-[#FF7800]">750</td>
+                                <td className="border-r-2 border-[#FF7800]">450</td>
+                                <td className="border-l-2 border-[#FF7800]">350</td>
+                                <td className="border-r-2 border-[#FF7800]">350</td>
                                 <td>1060</td>
 
                             </tr>
@@ -273,10 +273,10 @@ export default function CajaVentiladoraPage() {
                                 <td>895</td>
                                 <td>1070</td>
                                 <td>915</td>
-                                <td>695</td>
-                                <td>505</td>
-                                <td>445</td>
-                                <td>445</td>
+                                <td className="border-l-2 border-[#FF7800]">695</td>
+                                <td className="border-r-2 border-[#FF7800]">505</td>
+                                <td className="border-l-2 border-[#FF7800]">445</td>
+                                <td className="border-r-2 border-[#FF7800]">445</td>
                                 <td>1060</td>
 
                             </tr>
@@ -287,10 +287,10 @@ export default function CajaVentiladoraPage() {
                                 <td>1020</td>
                                 <td>1070</td>
                                 <td>915</td>
-                                <td>900</td>
-                                <td>610</td>
-                                <td>495</td>
-                                <td>545</td>
+                                <td className="border-l-2 border-[#FF7800]">900</td>
+                                <td className="border-r-2 border-[#FF7800]">610</td>
+                                <td className="border-l-2 border-[#FF7800]">495</td>
+                                <td className="border-r-2 border-[#FF7800]">545</td>
                                 <td>1220</td>
 
                             </tr>
@@ -301,10 +301,10 @@ export default function CajaVentiladoraPage() {
                                 <td>1020</td>
                                 <td>1070</td>
                                 <td>915</td>
-                                <td>900</td>
-                                <td>750</td>
-                                <td>545</td>
-                                <td>495</td>
+                                <td className="border-l-2 border-[#FF7800]">900</td>
+                                <td className="border-r-2 border-[#FF7800]">750</td>
+                                <td className="border-l-2 border-[#FF7800]">545</td>
+                                <td className="border-r-2 border-[#FF7800]">495</td>
                                 <td>1220</td>
                             </tr>
 
@@ -315,10 +315,10 @@ export default function CajaVentiladoraPage() {
                                 <td>1195</td>
                                 <td>1170</td>
                                 <td>1015</td>
-                                <td>1390</td>
-                                <td>750</td>
-                                <td>645</td>
-                                <td>645</td>
+                                <td className="border-l-2 border-[#FF7800]">1390</td>
+                                <td className="border-r-2 border-[#FF7800]">750</td>
+                                <td className="border-l-2 border-[#FF7800]">645</td>
+                                <td className="border-r-2 border-[#FF7800]">645</td>
                                 <td>1800</td>
 
                             </tr>
@@ -330,10 +330,10 @@ export default function CajaVentiladoraPage() {
                                 <td>1195</td>
                                 <td>1170</td>
                                 <td>1415</td>
-                                <td>1500</td>
-                                <td>1200</td>
-                                <td>850</td>
-                                <td>695</td>
+                                <td className="border-l-2 border-[#FF7800]">1500</td>
+                                <td className="border-r-2 border-[#FF7800]">1200</td>
+                                <td className="border-l-2 border-[#FF7800]">850</td>
+                                <td className="border-r-2 border-[#FF7800]">695</td>
                                 <td>1800</td>
                             </tr>
 
@@ -344,10 +344,10 @@ export default function CajaVentiladoraPage() {
                                 <td>1500</td>
                                 <td>1570</td>
                                 <td>1415</td>
-                                <td>1500</td>
-                                <td>1200</td>
-                                <td>850</td>
-                                <td>950</td>
+                                <td className="border-l-2 border-[#FF7800]">1500</td>
+                                <td className="border-r-2 border-[#FF7800]">1200</td>
+                                <td className="border-l-2 border-[#FF7800]">850</td>
+                                <td className="border-r-2 border-[#FF7800]">950</td>
                                 <td>1560</td>
                             </tr>
 
@@ -358,10 +358,10 @@ export default function CajaVentiladoraPage() {
                                 <td>1800</td>
                                 <td>1570</td>
                                 <td>1415</td>
-                                <td>1700</td>
-                                <td>1550</td>
-                                <td>1000</td>
-                                <td>1100</td>
+                                <td className="border-l-2 border-[#FF7800]">1700</td>
+                                <td className="border-r-2 border-[#FF7800]">1550</td>
+                                <td className="border-l-2 border-[#FF7800]">1000</td>
+                                <td className="border-r-2 border-[#FF7800]">1100</td>
                                 <td>1560</td>
                             </tr>
 
@@ -372,10 +372,10 @@ export default function CajaVentiladoraPage() {
                                 <td>2000</td>
                                 <td>1870</td>
                                 <td>1715</td>
-                                <td>1900</td>
-                                <td>1250</td>
-                                <td>1250</td>
-                                <td>1250</td>
+                                <td className="border-l-2 border-[#FF7800]">1900</td>
+                                <td className="border-r-2 border-[#FF7800]">1250</td>
+                                <td className="border-l-2 border-[#FF7800]">1250</td>
+                                <td className="border-r-2 border-[#FF7800]">1250</td>
                                 <td>1860</td>
                             </tr>
 
@@ -386,10 +386,10 @@ export default function CajaVentiladoraPage() {
                                 <td>2600</td>
                                 <td>1970</td>
                                 <td>1815</td>
-                                <td>2500</td>
-                                <td>2100</td>
-                                <td>1400</td>
-                                <td>1650</td>
+                                <td className="border-l-2 border-[#FF7800]">2500</td>
+                                <td className="border-r-2 border-[#FF7800]">2100</td>
+                                <td className="border-l-2 border-[#FF7800]">1400</td>
+                                <td className="border-r-2 border-[#FF7800]">1650</td>
                                 <td>1960</td>
                             </tr>
 
@@ -400,10 +400,10 @@ export default function CajaVentiladoraPage() {
                                 <td>2600</td>
                                 <td>2170</td>
                                 <td>2015</td>
-                                <td>2800</td>
-                                <td>2500</td>
-                                <td>1600</td>
-                                <td>2000</td>
+                                <td className="border-l-2 border-[#FF7800]">2800</td>
+                                <td className="border-r-2 border-[#FF7800]">2500</td>
+                                <td className="border-l-2 border-[#FF7800]">1600</td>
+                                <td className="border-r-2 border-[#FF7800]">2000</td>
                                 <td>3260</td>
                             </tr>
 
