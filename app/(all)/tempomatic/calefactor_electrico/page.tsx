@@ -146,7 +146,7 @@ export default function CalefactorElectricoPage() {
                 </p>
                 <div className="w-1/4 flex justify-end">
                     <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
-                        link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20este%20Ventilador%20Centrífugo%20Multipala%20TDA"}/>
+                        link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20el%20Calefactor%20Eléctrico"}/>
                     </div>
             </section> 
 
@@ -484,7 +484,7 @@ export default function CalefactorElectricoPage() {
                     </p>
                     <div className=" flex justify-end">
                         <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
-                                        link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20este%20Ventilador%20Centrífugo%20Multipala%20TDA"}/>
+                                link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20el%20Calefactor%20Eléctrico"}/>
                     </div>
                     
 
