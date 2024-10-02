@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 
-import { OptimoRendimiento } from "@/public/svg/optimoRendimiento";
+
+import { BajoMantenimiento } from "@/public/svg/bajoMantenimiento";
+
 
 interface Props {
     svg?: string;
@@ -11,13 +13,14 @@ interface Props {
 	customWith?: number;
 }
 
-export const DiferencialOptimoRendimiento : React.FC<Props> =  ({size, text, textSize, customWith}) => {
+export const DiferencialBajoMantenimiento : React.FC<Props> =  ({size, text, textSize, customWith}) => {
 	return (
 		<>
 			<main className="relative pl-4 flex justify-start items-center  w-full">
 				<span className=" z-10">
-					
-				<OptimoRendimiento size={size || 70}/>
+
+				<BajoMantenimiento size={size || 70}/>		
+				
 				{/* <svg size={size || 70}/> */}
 				</span>
 				<p className={`z-0   h-2/3 pl-8 pr-1 md:px-10 py-1 -translate-x-8 
@@ -28,7 +31,7 @@ export const DiferencialOptimoRendimiento : React.FC<Props> =  ({size, text, tex
 					
 					`}>
 
-					<span className="w-full pl-1 py-0 flex justify-start items-center">{text || "Óptimo rendimiento"}</span>
+					<span className="w-full pl-1 py-0 flex justify-start items-center">{text || "Bajo mantenimiento"}</span>
 				</p>
 				
 			</main>

@@ -144,7 +144,7 @@ export default function UnidadManejadoraDeAirePage() {
             </section> 
 
             <section className="w-full px-[3%] -mt-10 flex
-            bg-[url('/svg/ondasTempomaticUnidadDeManejo.svg')] bg-fill  bg-[center_top_vw] md:bg-[center_top_0vw] lg:bg-[center_top_6vw] bg-no-repeat
+            bg-[url('/svg/ondasTempomaticItems.svg')] bg-fill  bg-[center_top_vw] md:bg-[center_top_0vw] lg:bg-[center_top_6vw] bg-no-repeat
             ">
             {/* -------------IMG con diferenciales ------------- */}
 
@@ -451,7 +451,7 @@ export default function UnidadManejadoraDeAirePage() {
                 
                 </section>
                 <section className="w-full px-[%] -mt-4 flex
-                    bg-[url('/svg/ondasTempomaticUnidadDeManejo.svg')] bg-contain lg:bg-fill  bg-[center_bottom_10vw] md:bg-[center_top_0vw] lg:bg-[center_top_6vw] bg-no-repeat
+                    bg-[url('/svg/ondasTempomaticItemsMobile.svg')] bg-contain lg:bg-fill  bg-[center_bottom_10vw] md:bg-[center_top_0vw] lg:bg-[center_top_6vw] bg-no-repeat
                     ">
                         <div className="w- ml-[40vw] mr-6">
                         <Image
