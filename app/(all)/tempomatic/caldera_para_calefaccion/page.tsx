@@ -184,32 +184,32 @@ export default function CalderaParaCalefaccionPage() {
                 <div className="w-full flex">
                     <ul className="w-3/5 font-nunito space-y-8 mt-10">
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">1</span> COLECTOR DE CHIMENEA</h1>
-                            <p className="text-[1.0vw] text-midgray">Sumergido para un mejor aprovechamiento del calor. Caja de humos desmontables.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">1</span> COLECTOR DE CHIMENEA</h1>
+                            <p className="text-[1.3vw] text-midgray">Sumergido para un mejor aprovechamiento del calor. Caja de humos desmontables.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">2</span> TUBOS</h1>
-                            <p className="text-[1.0vw] text-midgray">Verticales de acero sin costura certificados ASTM, con turbuladores internos de acero inoxidable.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">2</span> TUBOS</h1>
+                            <p className="text-[1.3vw] text-midgray">Verticales de acero sin costura certificados ASTM, con turbuladores internos de acero inoxidable.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">3</span> SOLDADURA ELÉCTRICA CERTIFICADA</h1>
-                            <p className="text-[1.0vw] text-midgray">Según los requerimientos del código ANSI/AWS D1 3/98 (Entre certificador INTEMA/UNMDP).</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">3</span> SOLDADURA ELÉCTRICA CERTIFICADA</h1>
+                            <p className="text-[1.3vw] text-midgray">Según los requerimientos del código ANSI/AWS D1 3/98 (Entre certificador INTEMA/UNMDP).</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">4</span> ACCESORIOS</h1>
-                            <p className="text-[1.0vw] text-midgray">Ánodo de sacrificio para inhibir los procesos de corrosión, válvula de alivio por sobrepesión, purgador automático y válvula de limpieza.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">4</span> ACCESORIOS</h1>
+                            <p className="text-[1.3vw] text-midgray">Ánodo de sacrificio para inhibir los procesos de corrosión, válvula de alivio por sobrepesión, purgador automático y válvula de limpieza.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">5</span> CUERPO</h1>
-                            <p className="text-[1.0vw] text-midgray">Cilíndro de posición vertical, fabricado de chapa F24 en espesores adecuados para garantizar una larga vida útil y soportar esfuerzos de origen termodinámico, électricamente soldado con sistema de electrodo contínuo. Aislación de lana de vidrio y revestimiento con chapa de acero inoxidable.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">5</span> CUERPO</h1>
+                            <p className="text-[1.3vw] text-midgray">Cilíndro de posición vertical, fabricado de chapa F24 en espesores adecuados para garantizar una larga vida útil y soportar esfuerzos de origen termodinámico, électricamente soldado con sistema de electrodo contínuo. Aislación de lana de vidrio y revestimiento con chapa de acero inoxidable.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">6</span> HOGAR</h1>
-                            <p className="text-[1.0vw] text-midgray">Sumergido, diseñado acorde a la evolución de la llama.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">6</span> HOGAR</h1>
+                            <p className="text-[1.3vw] text-midgray">Sumergido, diseñado acorde a la evolución de la llama.</p>
                         </li>  
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">6</span> QUEMADOR</h1>
-                            <p className="text-[1.0vw] text-midgray">Monotobera de construcción nacional, con cuerpo metálico, cabeza de combustión regulable, bruida de montaje de aluminio, control electrónico de llama, doble válvula a selenoide para gas, válvula de regulación manual, electrodos y transformador de encendido automático, ventilador, presostato de aire y filtro de gas. </p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">6</span> QUEMADOR</h1>
+                            <p className="text-[1.3vw] text-midgray">Monotobera de construcción nacional, con cuerpo metálico, cabeza de combustión regulable, bruida de montaje de aluminio, control electrónico de llama, doble válvula a selenoide para gas, válvula de regulación manual, electrodos y transformador de encendido automático, ventilador, presostato de aire y filtro de gas. </p>
                         </li>  
                     </ul>
                     <div className="w-2/5 pr-[3%] mt-[5%] my-auto">

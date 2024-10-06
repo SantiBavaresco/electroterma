@@ -185,30 +185,30 @@ export default function GeneradoDeAireCalientePage() {
             <section className="w-full px-[6%] lg:-mt-0 ">
                 <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">COMPONENTES</h1>
                 <div className="w-full flex">
-                    <ul className="w-2/5 font-nunito space-y-8 mt-10">
+                    <ul className="w-[45%] font-nunito space-y-8 mt-10">
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">1</span> INTERCAMBIADOR DE CALOR</h1>
-                            <p className="text-[1.0vw] text-midgray">Tubular de tres pasos, construido en chapa de acero soldada eléctricamente. Direccionadores de flujo de aire que mejoran el intercambio térmico con nuevo hogar cónico.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">1</span> INTERCAMBIADOR DE CALOR</h1>
+                            <p className="text-[1.3vw] text-midgray">Tubular de tres pasos, construido en chapa de acero soldada eléctricamente. Direccionadores de flujo de aire que mejoran el intercambio térmico con nuevo hogar cónico.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">2</span> GABINETE</h1>
-                            <p className="text-[1.0vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminacíon en pintura horneada.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">2</span> GABINETE</h1>
+                            <p className="text-[1.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminacíon en pintura horneada.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">3</span> QUEMADOR</h1>
-                            <p className="text-[1.0vw] text-midgray">Tipo monoblock, con altos valores de combustión. Fácil mantenimiento y limpiezo. Funcionamiento con gas natural, envasado o gas oil, totalmente automático con control electrónico.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">3</span> QUEMADOR</h1>
+                            <p className="text-[1.3vw] text-midgray">Tipo monoblock, con altos valores de combustión. Fácil mantenimiento y limpiezo. Funcionamiento con gas natural, envasado o gas oil, totalmente automático con control electrónico.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">4</span> MOTOR</h1>
-                            <p className="text-[1.0vw] text-midgray">Blindado, normalizado para tensión 3 x 380V - 50Hz.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">4</span> MOTOR</h1>
+                            <p className="text-[1.3vw] text-midgray">Blindado, normalizado para tensión 3 x 380V - 50Hz.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">5</span> SISTEMA ELÉCTRICO</h1>
-                            <p className="text-[1.0vw] text-midgray">Compuesto de tablero de protección, instalación eléctrica, control de límite y ventilador con conmutador manual-automático y panel de comando accesible desde el exterior.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">5</span> SISTEMA ELÉCTRICO</h1>
+                            <p className="text-[1.3vw] text-midgray">Compuesto de tablero de protección, instalación eléctrica, control de límite y ventilador con conmutador manual-automático y panel de comando accesible desde el exterior.</p>
                         </li> 
                         <li>
-                            <h1 className="h-[10%] text-[2.0vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">6</span> VENTILADOR</h1>
-                            <p className="text-[1.0vw] text-midgray">Centrifugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas. <br/> Nuevo soporte de grupo ventilador para multiposición.</p>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">6</span> VENTILADOR</h1>
+                            <p className="text-[1.3vw] text-midgray">Centrifugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas. <br/> Nuevo soporte de grupo ventilador para multiposición.</p>
                         </li>  
 
                     </ul>
