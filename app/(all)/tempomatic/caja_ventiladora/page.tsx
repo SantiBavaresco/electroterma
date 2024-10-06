@@ -118,7 +118,7 @@ export default function CajaVentiladoraPage() {
                     <div className="w-full mr-auto text-[#4C4B4B] text-[10.5vw] lg:text-[5.5vw] font-nunito-bolder leading-none">
                         <h1 className="text-[4.7vw] lg:text-[2.7vw] font-nunito mb-[1vw]">VENTILACIÓN</h1>
                         <h1 className="text-[#FF7800]">CAJA</h1>
-                        <h1 className="text-[#FF7800]   ">VENTILADORA</h1>
+                        <h1 className="text-[#FF7800]">VENTILADORA</h1>
 
                         <h2 className="text-[4.7vw] lg:text-[2.7vw] mt-[1vw] font-lexend-bold">Inyección de aire para confort de</h2>
                         <h2 className="text-[4.7vw] lg:text-[2.7vw] mt-3 lg:mt-2 font-lexend-bold">personas en <span className="text-[#FF7800]">espacios habitados</span></h2>
@@ -148,7 +148,7 @@ export default function CajaVentiladoraPage() {
                 </p>
                 <div className="w-1/2 flex justify-end">
                     <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
-                        link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20la%20Caja%20Ventiladora"}/>
+                        link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20la%20Caja%20Ventiladora."}/>
                     </div>
             </section> 
 
@@ -407,33 +407,21 @@ export default function CajaVentiladoraPage() {
                                 <td>3260</td>
                             </tr>
 
-                            <tr className="bg-white text-white text-center">
+                            <tr className="bg-white text-white text-[0.9vw] text-center">
                                 <td className="p-2 pl-[1.7vw] text-left"></td>                   
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td className="bg-[#FF7800]  text-right border-l-2">TOM</td>
-                                <td className="bg-[#FF7800] pl-[0%] text-left border-r-2">A DE</td>
-                                <td className="bg-[#FF7800]  text-right border-l-2">INYEC</td>
-                                <td className="bg-[#FF7800]  text-left border-r-2">CIÓN</td>
+                                <td className="bg-[#FF7800] border-[#FF7800] py-3 text-right border-l- rounded-bl-[1.7vw]">INYECCIÓ</td>
+                                <td className="bg-[#FF7800] border-white pl-[0.0%] text-left border-r-2 rounded-br-[1.7vw]">N DE AIRE</td>
+                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">TOMA D</td>
+                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">E AIRE</td>
                                 <td></td>
                             </tr>
 
-                            <tr className="bg-white text-white text-center ">
-                                <td className="p-2 pl-[1.7vw] text-left"></td>                   
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td className="bg-[#FF7800] border-l-2 rounded-bl-[1.7vw] text-right border-white">AI</td>
-                                <td className="bg-[#FF7800] border-r-2 rounded-br-[1.7vw] text-left border-white">RE</td>
-                                <td className="bg-[#FF7800] border-l-2 rounded-bl-[1.7vw] text-right border-white">DE A</td>
-                                <td className="bg-[#FF7800] border-r-2 rounded-br-[1.7vw] text-left border-white">IRE</td>
-                                <td></td>
-                            </tr>
+                           
                             
                         </tbody>
                     </table>
@@ -619,7 +607,7 @@ export default function CajaVentiladoraPage() {
                     </p>
                     <div className=" flex justify-end">
                         <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
-                            link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20la%20Caja%20Ventiladora"}/>
+                            link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20la%20Caja%20Ventiladora."}/>
                     </div>
                     
 
