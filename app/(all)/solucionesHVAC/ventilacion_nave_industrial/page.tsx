@@ -90,7 +90,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 						<div className=" w-full flex flex-col  bg-[#EF771C] rounded-t-[30px]">
 							<Image
 							alt="Banner 1"
-							className="p-6"
+							className="p-6 py-6"
 							radius="none"
 							src="../../img/soluciones/ventilacion_nave_industrial/Soluciones11.png"
 							// width="100%"
@@ -104,7 +104,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/tempomatic/caja_ventiladora", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -120,7 +120,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 						<div className=" w-full flex flex-col  bg-[#EF771C] rounded-t-[30px]">
 							<Image
 							alt="Banner 1"
-							className="p-6"
+							className="px-8"
 							radius="none"
 							src="../../img/soluciones/ventilacion_nave_industrial/Soluciones12.png"
 							// width="100%"
@@ -134,7 +134,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/soler&palau/RLS", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -151,7 +151,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 						<div className=" w-full flex flex-col  bg-[#EF771C] rounded-t-[30px]">
 							<Image
 							alt="Banner 1"
-							className="p-6"
+							className="p- rounded-t-[30px]"
 							radius="none"
 							src="../../img/soluciones/ventilacion_nave_industrial/Soluciones13.png"
 							// width="100%"
@@ -165,7 +165,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/solucionesHVAC/ductos_textiles_para_mejorar_la_distribucion_del_aire", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -258,9 +258,15 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 							/>
 
 							<ul>
-								<li><span className="text-[#EF771C]">»</span> Para la <span className="text-[#EF771C] font-nunito-bold"> inyección </span>, se instalaran 6 Cajas Ventiladoras Tempomatic modelo CV 665 - 045 de 40.000 m3/hora (contra 45mmca) con distribución de aire mediante <a className="text-[#EF771C] font-nunito-bold underline " href="/solucionesHVAC/ductos_textiles_para_mejorar_la_distribucion_del_aire" target="_blank">Ductos Textiles DTI</a>.</li>
+								<li>
+									<span className="text-[#EF771C]">»</span> Para la <span className="text-[#EF771C] font-nunito-bold"> inyección </span>, se instalaran 6 Cajas Ventiladoras Tempomatic modelo CV 665 - 045 de 40.000 m3/hora (contra 45mmca) con distribución de aire mediante {" "}
+									<a className="text-[#EF771C] font-nunito-bold underline " href="/solucionesHVAC/ductos_textiles_para_mejorar_la_distribucion_del_aire" target="_top">Ductos Textiles DTI</a>.
+								</li>
 								<br/>
-								<li><span className="text-[#EF771C]">»</span> Para la <span className="text-[#EF771C] font-nunito-bold"> extracción </span>, se instalaran 6 <a className="text-[#EF771C] font-nunito-bold underline " href="/soler&palau" target="_blank">Ventiladores Centrífugos OTAM | Soler & Palau</a> modelo RLS900 con motor de acople directo a 900 rpm (potencia 12,5HP), con aspiración a través de plenos de captación instalados en cielorraso.</li>
+								<li>
+									<span className="text-[#EF771C]">»</span> Para la <span className="text-[#EF771C] font-nunito-bold"> extracción </span>, se instalaran 6 {" "}
+									<a className="text-[#EF771C] font-nunito-bold underline " href="/soler&palau" target="_top">Ventiladores Centrífugos OTAM | Soler & Palau</a> modelo RLS900 con motor de acople directo a 900 rpm (potencia 12,5HP), con aspiración a través de plenos de captación instalados en cielorraso.
+								</li>
 							</ul>
 
 						</div>
@@ -459,14 +465,14 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 
 		{/* ------------- Consultanos ------------- */}
 		<section className="w-full max-h-[50%] z-20 py-0 font-size overflow-hidden">
-                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-[35px] md:ml-24">
-                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-[10vw] md:gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="pl-[25px] md:ml-24 ">
+                        <h2 className="w-[40v] text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12  ">
+                    <div className="mr-0 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 shadow-2xl" onClick={handleEmailClick}>
                             <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771C] to-[#F4A86F]
@@ -481,6 +487,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
                     </div>
                 </div>
             </section>
+
 
 		</main>
 	);

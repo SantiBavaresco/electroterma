@@ -104,7 +104,7 @@ export default function Soluciones_calefaccion_de_gimnasio_polideportivo_Page() 
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/tempomatic/unidad_manejadora_de_aire", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -184,10 +184,10 @@ export default function Soluciones_calefaccion_de_gimnasio_polideportivo_Page() 
 							
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.8vw] font-nunito-bolder lg:mt- mr-auto">¿Cómo se resolvió la problemática utilizando productos TEMPOMATIC?</h2>
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-								La calefacción del gimnasio, se resolvió instalando <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_blank">Generadores de Aire Caliente TEMPOMATIC</a> a gas natural. Se realizó un balance térmico del edificio, con un resultado de 414.000 Kcal/hora de pérdidas totales.
+								La calefacción del gimnasio, se resolvió instalando <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/generador_de_aire_caliente" target="_top">Generadores de Aire Caliente TEMPOMATIC</a> a gas natural. Se realizó un balance térmico del edificio, con un resultado de 414.000 Kcal/hora de pérdidas totales.
 							</p>
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-								Para compensar estas pérdidas, se instalaron 6 <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_blank">Generadores de Aire Caliente TEMPOMATIC</a> modelo TEO 080 mp, a 3 metros de altura del piso, con inyección a pleno mediante plenos direccionables.
+								Para compensar estas pérdidas, se instalaron 6 <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/generador_de_aire_caliente" target="_top">Generadores de Aire Caliente TEMPOMATIC</a> modelo TEO 080 mp, a 3 metros de altura del piso, con inyección a pleno mediante plenos direccionables.
 							</p>
 							<Image
 								alt="Imagen 3"
@@ -197,7 +197,7 @@ export default function Soluciones_calefaccion_de_gimnasio_polideportivo_Page() 
 								width="100%"
 							/>
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-							Para aumentar la eficiencia energética del sistema, se puede instalar en el centro del gimnasio un <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_blank">CEILING FAN</a> de 7.2m de diámetro. El funcionamiento de este equipo evitará la estratificación del aire, impulsando el aire caliente de la parte alta del gimnasio hacia el piso del mismo, que es donde se requiere realmente el control de temperatura.
+							Para aumentar la eficiencia energética del sistema, se puede instalar en el centro del gimnasio un <a className="text-[#EF771C] font-nunito-bold underline " href="/ceiling_fan" target="_top">CEILING FAN</a> de 7.2m de diámetro. El funcionamiento de este equipo evitará la estratificación del aire, impulsando el aire caliente de la parte alta del gimnasio hacia el piso del mismo, que es donde se requiere realmente el control de temperatura.
 							</p>
 							<Image
 								alt="Imagen 4"
@@ -210,7 +210,7 @@ export default function Soluciones_calefaccion_de_gimnasio_polideportivo_Page() 
 							
 						</div>
 						
-						{BigScreen || 
+				{BigScreen || 
 					<>
 					{/* ------------------- MOBILE ------------------- */}
 					<section className="bg-[#F7F6F6] h rounded-3xl">
@@ -233,7 +233,7 @@ export default function Soluciones_calefaccion_de_gimnasio_polideportivo_Page() 
 											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
 											radius="full"
 											size="sm"
-											onClick={()=>(window.open("electroterma.com"))}
+											onClick={()=>(window.open("/tempomatic/generador_de_aire_caliente", "_top"))}
 										>
 											Saber más
 										</Button>
@@ -316,14 +316,14 @@ export default function Soluciones_calefaccion_de_gimnasio_polideportivo_Page() 
 
 		{/* ------------- Consultanos ------------- */}
 		<section className="w-full max-h-[50%] z-20 py-0 font-size overflow-hidden">
-                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-[35px] md:ml-24">
-                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-[10vw] md:gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="pl-[25px] md:ml-24 ">
+                        <h2 className="w-[40v] text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12  ">
+                    <div className="mr-0 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 shadow-2xl" onClick={handleEmailClick}>
                             <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771C] to-[#F4A86F]

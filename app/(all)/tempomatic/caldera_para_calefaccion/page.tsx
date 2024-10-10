@@ -565,7 +565,7 @@ export default function CalderaParaCalefaccionPage() {
 
             {/* -------------OTROS PRODUCTOS TEMPOMATIC ------------- */}
             <section className="w-full px-[6%] mt-4 lg:mt-10 flex justify-center">
-            <h1 className="font-nunito-bolder text-[#FF7800] text-[5.9vw] lg:text-[3.9vw]">Otros productos Tempomatic</h1>
+            <h1 className="font-nunito-bolder text-[#FF7800] text-[5.5vw] lg:text-[3.5vw]">Otros productos Tempomatic</h1>
             </section>
 
             {/* ------------- Barra de navegacion S&P ------------- */}
@@ -636,7 +636,7 @@ export default function CalderaParaCalefaccionPage() {
                         alt="Otam Logo"
                         radius="none"
                         src="../img/electrotermalogoletrasProducido.png"
-                        width={550}
+                        width={500}
                     />
                     
             </section>

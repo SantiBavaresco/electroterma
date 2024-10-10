@@ -83,14 +83,14 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 					</div>
 				</div>
 
-				{/* <div className="  ml-[0.5vw] mt-6  bg-gray-00">
+				<div className="  ml-[0.5vw] mt-6  bg-gray-00">
 					<div className=" flex flex-col items-center justify-center align-middle gap-4 p-10 m-10 mx-4 mt-16  text-white font-lexend-bold text-[2.5vw] 
 						bg-white rounded-[59px] border-1 border-lowgray shadow-2xl"> 
 					
 						<div className=" w-full flex flex-col  bg-[#EF771C] rounded-t-[30px]">
 							<Image
 							alt="Banner 1"
-							className="p-6"
+							className="p-"
 							radius="none"
 							src="../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones1.png"
 							// width="100%"
@@ -98,21 +98,22 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 							/> 
 							
 						</div>
-						<h1 className="w-full text-center text-[1.5vw] font-nunito-bold bg-white text-black">Caldera para calefacción</h1>
+						<h1 className="w-full text-center text-[1.5vw] font-nunito-bold bg-white text-black">Soler & Palau</h1>
 
 								<Button
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/soler&palau/", "_top"))}
 								>
 									Saber más
 								</Button>
 						
 					</div>
 					
-				</div> */}
-				<div className="h-full pb-[20%] flex flex-col items-center justify-center align-middle">
+				</div>
+
+				<div className="h-[65%] pb-[0%] flex flex-col items-center justify-center align-middle">
 					<a href="/solucionesHVAC"> 
 						<Button
 							className="  z-10 bg-[#EF771C] px-10 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
@@ -218,7 +219,7 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 								
 							</p>
 
-							<div className="mx-auto">
+							<div className="mx-auto md:hidden">
 								<Button
 											className="mt-auto m-1 2 xm:mt-auto  ml-2 mb-2 z-10 bg-[#EF771C] xm:px-4 xm:py-4  font-nunito text-white shadow-xl"
 											radius="full"
@@ -230,13 +231,55 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 							</div>
 						</div>
 						
-						{BigScreen || 
+					{BigScreen || 
 					<>
 					{/* ------------------- MOBILE ------------------- */}
-					
+					<section className="bg-[#F7F6F6] h rounded-3xl">
+						<div className="grid grid-cols-[40%_57%] gap-[3%] p-3 "> 
+							<div className=" bg-[#EF771C] rounded-2xl shadow-2xl">
+								<Image
+									alt="Banner 1"
+									className="p- px-0 pt-6 rounded-2xl"
+									radius="none"
+									src="../../img/soluciones/ventilacion_de_sala_de_transformadores/Soluciones1.png"
+									// width="100%"
+									height="100%"
+									/> 
+							</div>
+							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
+								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
+									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-[58px] -ml-10 mr-4 mt-2 rounded-r-2xl">Soler & Palau</h1>
+									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
+										<Button
+											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
+											radius="full"
+											size="sm"
+											onClick={()=>(window.open("/soler&palau", "_top"))}
+										>
+											Saber más
+										</Button>
+										</div>
+								</div>
+								<div className="w-full h-[40%] bg-white rounded-2xl shadow-xl flex align-bottom justif	">
+									
+										<Button
+											className="mt-auto m-1 2 xm:mt-auto  ml-2 mb-2 z-10 bg-[#EF771C] xm:px-4 xm:py-4  font-nunito text-white shadow-xl"
+											radius="full"
+											size="sm"
+											onClick={()=>(window.open("/solucionesHVAC", "_top"))}
+										>
+											Ver otras soluciones
+										</Button>
+									
+								</div>
+							</div>
+
+						</div>
+					</section>
 					
 					</>
 					}
+
 
 					</div>
 
@@ -249,14 +292,14 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 
 		{/* ------------- Consultanos ------------- */}
 		<section className="w-full max-h-[50%] z-20 py-0 font-size overflow-hidden">
-                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-[35px] md:ml-24">
-                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-[10vw] md:gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="pl-[25px] md:ml-24 ">
+                        <h2 className="w-[40v] text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12  ">
+                    <div className="mr-0 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 shadow-2xl" onClick={handleEmailClick}>
                             <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771C] to-[#F4A86F]

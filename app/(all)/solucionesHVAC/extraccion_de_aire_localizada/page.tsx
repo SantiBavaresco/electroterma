@@ -104,7 +104,7 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/soler&palau/RLS", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -304,7 +304,7 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
 							</p>
 						</div>
 						
-						{BigScreen || 
+					{BigScreen || 
 					<>
 					{/* ------------------- MOBILE ------------------- */}
 					<section className="bg-[#F7F6F6] h rounded-3xl">
@@ -349,53 +349,6 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
 
 						</div>
 					</section>
-
-					{/* <section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[99.5%] mt-2">
-						<div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
-							<div className=" flex items-center bg-[#EF771C] rounded-2xl">
-								<Image
-									alt="Banner 1"
-									className="pr-1"
-									radius="none"
-									src="../../img/soluciones/extraccion_de_aire_localizada/Soluciones1.png"
-									// width="100%"
-									height="100%"
-									/> 
-							</div>
-							<div className="flex flex-col items-center mt-[1%] justify-cente h-full">
-								<div className="">
-									<Avatar  src="../../img/soluciones/extraccion_de_aire_localizada/SolucionesAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
-									<p className="px-auto py-2  text-[#EF771C] font-lexend-bold text-[3.8vw] text-center">Por: {" "}
-										<span className="underline">Juan Manuel de Porras</span>
-									</p>
-									<h1 className="w-full text-center text-[6.5vw] font-nunito-bold bg-white text-black">Ventilador RLS</h1>
-								</div>
-								<div className="py-4">
-								<Button
-											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											onClick={()=>(window.open("electroterma.com"))}
-										>
-											Saber más
-										</Button>
-								</div>
-								<div className="">
-								<a  href="/solucionesHVAC">
-									<Button
-											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											// onClick={()=>(window.open("electroterma.com"))}
-										>
-											Ver otras soluciones
-										</Button>
-									</a>
-								</div>
-							</div>
-							
-						</div>
-					</section> */}
 					
 					</>
 					}
@@ -411,14 +364,14 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
 
 		{/* ------------- Consultanos ------------- */}
 		<section className="w-full max-h-[50%] z-20 py-0 font-size overflow-hidden">
-                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-[35px] md:ml-24">
-                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-[10vw] md:gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="pl-[25px] md:ml-24 ">
+                        <h2 className="w-[40v] text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12  ">
+                    <div className="mr-0 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 shadow-2xl" onClick={handleEmailClick}>
                             <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771C] to-[#F4A86F]
@@ -433,6 +386,7 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
                     </div>
                 </div>
             </section>
+
 
 		</main>
 	);

@@ -228,11 +228,11 @@ export default function CajaVentiladoraPage() {
             </section>
 
             {/* -------------MEDIDAS ------------- */}
-            <section className="w-full px-[6%] mt-10 ">
+            <section className="w-full px-[6%] mt-16 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
-                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1>
+                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5">TOMA / INYECCIÓN DE AIRE</h1>
 
-                    <table className="table-auto font-nunito text-[1.3vw] w-full">
+                    <table className="table-auto font-nunito text-[1.3vw] w-4/5">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
 
@@ -430,7 +430,7 @@ export default function CajaVentiladoraPage() {
 
             
             {/* -------------CARACTERÍSTICAS ------------- */}
-            <section className="w-full px-[6%] mt-10 ">
+            <section className="w-full px-[6%] mt-16 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CARACTERÍSTICAS</h1>
                 {/* <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1> */}
 
@@ -686,7 +686,7 @@ export default function CajaVentiladoraPage() {
 
             {/* -------------OTROS PRODUCTOS TEMPOMATIC ------------- */}
             <section className="w-full px-[6%] mt-4 lg:mt-10 flex justify-center">
-            <h1 className="font-nunito-bolder text-[#FF7800] text-[5.9vw] lg:text-[3.9vw]">Otros productos Tempomatic</h1>
+            <h1 className="font-nunito-bolder text-[#FF7800] text-[5.5vw] lg:text-[3.5vw]">Otros productos Tempomatic</h1>
             </section>
 
             {/* ------------- Barra de navegacion S&P ------------- */}
@@ -757,7 +757,7 @@ export default function CajaVentiladoraPage() {
                         alt="Otam Logo"
                         radius="none"
                         src="../img/electrotermalogoletrasProducido.png"
-                        width={550}
+                        width={500}
                     />
                     
             </section>

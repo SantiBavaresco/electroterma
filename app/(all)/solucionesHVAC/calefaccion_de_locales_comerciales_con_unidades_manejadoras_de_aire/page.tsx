@@ -104,7 +104,7 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/tempomatic/unidad_manejadora_de_aire", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -151,7 +151,7 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
 								La calefacción de locales comerciales es uno de los ejercicios mas demandantes de soluciones para la industria del HVAC, ya que el correcto y eficiente funcionamiento del mismo constituye un punto a favor del éxito del negocio.
 							</p>
 							<p>
-								Uno de los sistemas de calefacción más utilizados, son los sistemas con calentamiento de agua para calefacción centralizada y la aplicación de <a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/unidad-manejadora-de-aire-tempomatic/" target="_blank">Unidades Manejadoras de Aire</a> tempomatic en los diferentes niveles/sectores de los centros o locales comerciales.
+								Uno de los sistemas de calefacción más utilizados, son los sistemas con calentamiento de agua para calefacción centralizada y la aplicación de <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/unidad_manejadora_de_aire" target="_top">Unidades Manejadoras de Aire</a> tempomatic en los diferentes niveles/sectores de los centros o locales comerciales.
 							</p>
 							<p>
 								Con la aplicación de este sistema, solo hay gas y combustión en sala de máquinas, con lo cual la instalación de gas es simple y económica. Además, el riesgo de incendio es bajo porque solo hay un artefacto con fuego en todo el edificio.
@@ -171,8 +171,8 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
 							/>
 
 						    <p className="">
-								Realizado el balance térmico, se decide instalar 80.000 Kcal/hora de calefacción por planta, por lo cual se instalan 2 (dos) <a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/unidad-manejadora-de-aire-tempomatic/" target="_blank">Unidades Manejadores de Aire</a> Caliente marca 
-								<a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_blank"> TEMPOMATIC</a> chequear link a uma modelo UMA 10/40.
+								Realizado el balance térmico, se decide instalar 80.000 Kcal/hora de calefacción por planta, por lo cual se instalan 2 (dos) <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/unidad_manejadora_de_aire" target="_top">Unidades Manejadores de Aire</a> Caliente marca 
+								<a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_top"> TEMPOMATIC</a> chequear link a uma modelo UMA 10/40.
 							</p>
 							
 
@@ -190,7 +190,7 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
 								width="100%"
 							/>
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-								El retorno de aire a las <a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/unidad-manejadora-de-aire-tempomatic/" target="_blank">Unidades Manejadoras de Aire</a> (UMAS) se ejecutará a pleno a través de una rejilla aplicada sobre la pared del local, mientras que la distribución de aire caliente se hará mediante ductos de chapa a la vista y rejillas regulables.
+								El retorno de aire a las <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/unidad_manejadora_de_aire" target="_top">Unidades Manejadoras de Aire</a> (UMAS) se ejecutará a pleno a través de una rejilla aplicada sobre la pared del local, mientras que la distribución de aire caliente se hará mediante ductos de chapa a la vista y rejillas regulables.
 							</p>
 							<Image
 								alt="Imagen 4"
@@ -200,7 +200,7 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
 								width="100%"
 							/>
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-								Las <a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/unidad-manejadora-de-aire-tempomatic/" target="_blank">Unidades Manejadoras de Aire</a> contaran con válvulas de 3 vías, con lo cual el control del sistema podrá seleccionar ventilación y calefacción en forma independiente.
+								Las <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/unidad_manejadora_de_aire" target="_top">Unidades Manejadoras de Aire</a> contaran con válvulas de 3 vías, con lo cual el control del sistema podrá seleccionar ventilación y calefacción en forma independiente.
 							</p>
 
 							<Image
@@ -238,7 +238,7 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
 											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
 											radius="full"
 											size="sm"
-											onClick={()=>(window.open("electroterma.com"))}
+											onClick={()=>(window.open("/tempomatic/generador_de_aire_caliente", "_top"))}
 										>
 											Saber más
 										</Button>
@@ -322,14 +322,14 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
 
 		{/* ------------- Consultanos ------------- */}
 		<section className="w-full max-h-[50%] z-20 py-0 font-size overflow-hidden">
-                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-[35px] md:ml-24">
-                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-[10vw] md:gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="pl-[25px] md:ml-24 ">
+                        <h2 className="w-[40v] text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12  ">
+                    <div className="mr-0 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 shadow-2xl" onClick={handleEmailClick}>
                             <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771C] to-[#F4A86F]
@@ -344,6 +344,7 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
                     </div>
                 </div>
             </section>
+
 
 		</main>
 	);

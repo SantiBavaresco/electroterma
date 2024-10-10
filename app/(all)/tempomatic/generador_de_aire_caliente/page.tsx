@@ -254,9 +254,9 @@ export default function GeneradoDeAireCalientePage() {
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] mt-10 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
-                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1>
+                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5">TOMA / INYECCIÓN DE AIRE</h1>
 
-                <table className="table-auto font-nunito text-[1.4vw] w-full">
+                <table className="table-auto font-nunito text-[1.4vw] w-4/5">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
                                 <th className="p-2 text-left px-[1.7vw] w-[20vw] text-[1.5vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">MODELO/MEDIDA</th>
@@ -363,10 +363,10 @@ export default function GeneradoDeAireCalientePage() {
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td className="bg-[#FF7800] border-[#FF7800] py-3 text-right border-l- rounded-bl-[1.7vw]">INYECCIÓN</td>
-                                <td className="bg-[#FF7800] border-white pl-[0.3%] text-left border-r-2 rounded-br-[1.7vw]">DE AIRE</td>
-                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">TOMA D</td>
-                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">E AIRE</td>
+                                <td className="bg-[#FF7800] border-[#FF7800] py-3 text-right border-l- rounded-bl-[1.7vw]">INYEC</td>
+                                <td className="bg-[#FF7800] border-white pl-[0.%] text-left border-r-2 rounded-br-[1.7vw]">CIÓN</td>
+                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">TO</td>
+                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">MA</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -374,7 +374,7 @@ export default function GeneradoDeAireCalientePage() {
                         </tbody>
                     </table>
 
-                <h1 className="font-nunito mt-2 text-[#FF7800] text-[2.3vw] text-right">MEDIDAS EN MILÍMETROS</h1>
+                <h1 className="font-nunito mt-2 text-[#FF7800] text-[2.3vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
                 
             </section>
 
@@ -524,7 +524,7 @@ export default function GeneradoDeAireCalientePage() {
             </section>
 
             {/* ------------- CONFIGURACIONES  ------------- */}
-            <section className="w-full px-[6%] mt-[1vw] ">
+            <section className="w-full px-[6%] mt-[4vw] ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CONFIGURACIONES</h1>
                 
                     <div className="w-full ">
@@ -690,7 +690,7 @@ export default function GeneradoDeAireCalientePage() {
 
             {/* -------------OTROS PRODUCTOS TEMPOMATIC ------------- */}
             <section className="w-full px-[6%] mt-4 lg:mt-10 flex justify-center">
-            <h1 className="font-nunito-bolder text-[#FF7800] text-[5.9vw] lg:text-[3.9vw]">Otros productos Tempomatic</h1>
+            <h1 className="font-nunito-bolder text-[#FF7800] text-[5.5vw] lg:text-[3.5vw]">Otros productos Tempomatic</h1>
             </section>
 
             {/* ------------- Barra de navegacion S&P ------------- */}
@@ -761,7 +761,7 @@ export default function GeneradoDeAireCalientePage() {
                         alt="Otam Logo"
                         radius="none"
                         src="../img/electrotermalogoletrasProducido.png"
-                        width={550}
+                        width={500}
                     />
                     
             </section>

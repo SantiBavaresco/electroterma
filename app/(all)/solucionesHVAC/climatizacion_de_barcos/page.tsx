@@ -104,7 +104,7 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/tempomatic/calefactor_electrico", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -174,7 +174,7 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 							</ul>
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
 								Dentro de las distintas opciones disponibles para la generación de aire caliente, los {}
-								<a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/calefactor-electrico-tempomatic/" target="_blank">calefactores eléctricos </a>
+								<a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/calefactor_electrico" target="_top">calefactores eléctricos </a>
 								poseen características que los vuelven adecuados para las condiciones impuestas. Un equipo que funcione a gas necesita un depósito para almacenar dicho combustible, haciendo que el conjunto crezca en volumen. En cambio, la energía eléctrica disponible es un barco es suficiente para destinar parte de ella en calefaccionar sin generar inconvenientes.
 							</p>
 
@@ -182,7 +182,7 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 							<h2 className="pt-6 text-center font-nunito-bold text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] lg:mt-16 mr-auto">BALANCE TÉRMICO Y SELECCIÓN DE EQUIPO</h2>
 							<p className="w-full">
 								Se realizó el balance térmico correspondiente a la cubierta de tripulantes, la cual se quiere calefaccionar, dando como resultado una necesidad de 18.000 kcal/h. Para cubrir esta necesidad se optó por un {""}
-								<a className="text-[#EF771C] font-nunito-bold underline " href="https://electroterma.com.ar/producto/generador-de-aire-caliente-tempomatic/" target="_blank">Generador de aire caliente Tempomatic ET-027.</a>
+								<a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/generador_de_aire_caliente" target="_top">Generador de aire caliente Tempomatic ET-027.</a>
 								
 							</p>
 
@@ -252,7 +252,7 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
 											radius="full"
 											size="sm"
-											onClick={()=>(window.open("electroterma.com"))}
+											onClick={()=>(window.open("/tempomatic/calefactor_electrico", "_top"))}
 										>
 											Saber más
 										</Button>
@@ -336,14 +336,14 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
 
 		{/* ------------- Consultanos ------------- */}
 		<section className="w-full max-h-[50%] z-20 py-0 font-size overflow-hidden">
-                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-[35px] md:ml-24">
-                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-[10vw] md:gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="pl-[25px] md:ml-24 ">
+                        <h2 className="w-[40v] text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12  ">
+                    <div className="mr-0 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 shadow-2xl" onClick={handleEmailClick}>
                             <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771C] to-[#F4A86F]
@@ -352,12 +352,13 @@ export default function Soluciones_climatizacion_de_barcos_Page() {
                                 "> 
                                     {/* <MailSvg css=" group-active:text-livered text-white lg:text-3xl" size={40}/> */}
                                     <IoMailOutline className=" group-active:text-livered text-white lg:text-4xl"/>
-                                    </div>
+                                </div>
                                 <span className="ml-[30px] lg:ml-10">Escribinos</span>
                         </Button>
                     </div>
                 </div>
             </section>
+
 
 		</main>
 	);

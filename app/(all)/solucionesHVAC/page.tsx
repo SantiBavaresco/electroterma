@@ -58,7 +58,9 @@ export default function SolucionesHVACPage() {
 			<> 		{/* ------------- WEB ------------- */}
 			<section className="w-full px-[3%] grid grid-cols-3 grid-rows-2 gap-4 p-3">
 				{solucionesGeneralData.pageData.products.map((item, index)=>(
-					<div key={index} className="w-full min-h-full flex flex-col items-center p-4 gap-4 bg-[#F7F6F6] border-1 rounded-[36px]">
+					<button key={index} className="w-full min-h-full flex flex-col items-center p-4 gap-4 bg-[#F7F6F6] hover:bg-[#EF771C] hover:translate-x-[1px] hover:translate-y-[2px] border-1 rounded-[36px]"
+						onClick={()=>(window.open(item.href, '_top'))}
+					>
 						<div className="w-full bg-lowgray min-h-[300p-x]  text-white rounded-[20px] shadow-xl">
 							<Image
 								alt="product"
@@ -69,7 +71,7 @@ export default function SolucionesHVACPage() {
 								width="100%"
 							/>
 						</div>
-						<div className="w-full min-h-[80px] h-full bg-white text-[#EF771C] shadow-xl">
+						<div className="w-full min-h-[80px] h-full rounded-b-[20px] bg-white text-[#EF771C] shadow-xl">
 							<p className="w-4/5 h-full   m-auto py-2 text-full font-lexend-bold text-center align-middle text-[1.9vw]">
 								<span className="font-lexend text-lowgray">{item.lable}</span> <br/>
 								{item.title}
@@ -77,7 +79,7 @@ export default function SolucionesHVACPage() {
 							</p>
 							
 						</div>
-						<div>
+						{/* <div>
 							
 							<Button
 								
@@ -88,19 +90,9 @@ export default function SolucionesHVACPage() {
 								>
 									Saber más
 							</Button>
-							
-							{/* <Button
-							
-								className="  z-10 bg-[#EF771C] px-10 font-nunito text-white text-xl 2xl:text-2xl shadow-xl"
-								radius="full"
-								size={BigScreen ? "lg" : "lg"}
-								onClick={()=>(window.open(item.href))}
-							>
-								Saber más
-							</Button> */}
-						</div>
+						</div> */}
 
-					</div>
+					</button>
 				))
 
 				}

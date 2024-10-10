@@ -98,7 +98,7 @@ export default function UnidadManejadoraDeAirePage() {
             <>
             {/* ------------- WEB----------- */}
 
-            <section className="w-full px-[3%] mt-[4vw] mr-auto flex flex-col lg:flex-row">
+            <section className="w-full pl-[3%] mt-[4vw] mr-auto flex flex-col lg:flex-row">
             {/* ------------- Unidad Manejadora de aire ------------- */}
                 
                 <div className="flex w-full lg:w-[60%]">
@@ -116,7 +116,7 @@ export default function UnidadManejadoraDeAirePage() {
                     </div>
                 </div>
                 
-                    <div className="flex w-full lg:w-1/2">
+                    <div className="flex w-full lg:w-3/5">
                         <Image
                             alt="Home banner 1"
                             className=""
@@ -218,9 +218,9 @@ export default function UnidadManejadoraDeAirePage() {
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] -mt- ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
-                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1>
+                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5">TOMA DE AIRE INTECCIÓN DE AIRE</h1>
 
-                    <table className="table-auto font-nunito text-[1.7vw] w-full">
+                    <table className="table-auto font-nunito text-[1.7vw] w-4/5">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
                                 <th className="p-2 text-left pl-[1.7vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">MODELO/MEDIDA</th>
@@ -323,11 +323,11 @@ export default function UnidadManejadoraDeAirePage() {
 
             
             {/* -------------CARACTERÍSTICAS ------------- */}
-            <section className="w-full px-[6%] mt-10 ">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CARACTERÍSTICAS</h1>
+            <section className="w-full px-[6%] mt-16 ">
+                <h1 className="font-nunito text-[#FF7800] text-[3.3vw] ">CARACTERÍSTICAS</h1>
                 {/* <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1> */}
 
-                    <table className="table-auto font-nunito text-[1.5vw] w-full">
+                    <table className="table-auto mt-4 font-nunito text-[1.5vw] w-4/5">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
                                 <th className="p-2 text-left px-[1.7vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">CARACTERISTICAS/MODELOS</th>
@@ -408,7 +408,7 @@ export default function UnidadManejadoraDeAirePage() {
             </section>
 
             {/* -------------COMPONENTES ------------- */}
-            <section className="w-full px-[6%] mt-10 ">
+            <section className="w-full px-[6%] mt-16 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CONFIGURACIONES</h1>
                 
                     <div className="w-full ">
@@ -542,7 +542,7 @@ export default function UnidadManejadoraDeAirePage() {
 
             {/* -------------OTROS PRODUCTOS TEMPOMATIC ------------- */}
             <section className="w-full px-[6%] mt-4 lg:mt-10 flex justify-center">
-            <h1 className="font-nunito-bolder text-[#FF7800] text-[5.9vw] lg:text-[3.9vw]">Otros productos Tempomatic</h1>
+            <h1 className="font-nunito-bolder text-[#FF7800] text-[5.5vw] lg:text-[3.5vw]">Otros productos Tempomatic</h1>
             </section>
 
             {/* ------------- Barra de navegacion S&P ------------- */}
@@ -613,7 +613,7 @@ export default function UnidadManejadoraDeAirePage() {
                         alt="Otam Logo"
                         radius="none"
                         src="../img/electrotermalogoletrasProducido.png"
-                        width={550}
+                        width={500}
                     />
                     
             </section>

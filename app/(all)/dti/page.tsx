@@ -85,14 +85,14 @@ export default function TempomaticPage() {
                     className=" pt-8 lg:pt-24 pr-4 lg:pl-4"
                     radius="none"
                     src="../img/electrotermalogoletrasNoPadding.png"
-                    width="100%"
+                    width={`${BigScreen ? 100 : 80}%`}
                 />
                 <Image
                     alt="Home banner 1"
-                    className="rounded-[44-px] "
+                    className=" "
                     radius="none"
                     src="../img/dti/DtiDuctosTextilesLogo.png"
-                    width="100%"
+                    width={`${BigScreen ? 100 : 80}%`}
                 />
             </section>
 
@@ -104,12 +104,12 @@ export default function TempomaticPage() {
             {/* ------------- DUCTOS TEXTILES ------------- */}
             <section className="w-full flex flex-row items-center justify- pl-[5vw] -mt-4">
                 <VinietaNaranjaSVG css=" h-[20px] w-[10px] md:h-[50px] md:h-[30px] lg:h-[60px] lg:w-[55px]"/>
-                <h1 className="text-[6.5vw] font-nunito-bolder text-livered-title ml-3">DUCTOS TEXTILES</h1>
+                <h1 className="text-[7.5vw]  lg:text-[5.5vw] font-nunito-bolder text-livered-title ml-3">DUCTOS TEXTILES</h1>
             </section>
 
             {/* -------------PARRAFO CON COMILLAS ------------- */}
 
-            <section className="relative w-full pt-6 px-[3%] lg:mt-10 lg:mb-20 text-center font-lexend text-[2.9vw] lg:text-[1.9vw] overflow-hidden text-[#4C4B4B]">
+            <section className="relative w-full pt-6 px-[3%] lg:mt-10 lg:mb-20 text-center font-lexend text-[2.9vw] lg:text-[1.6vw] overflow-hidden text-[#4C4B4B]">
                 {/* -------------PARRAFO CON COMILLAS WEB ------------- */}
 
                 {BigScreen ? 
@@ -117,7 +117,7 @@ export default function TempomaticPage() {
                         
                         <div className="z-20 absolute 
                             top-[26%] xm:top-[24%] sm:top-[8%] md:top-[12%] lg:top-[5%] xl:top-[2.5%]  2xl:top-[0.5%] 
-                            left-[0%] lg:left-[16%] xl:left-[16%] 2xl:left-[15.5%]
+                            left-[0%] lg:left-[21%] xl:left-[20%] 2xl:left-[20.5%]
                             w-[4vw] 
                             ">
                         <Image  
@@ -136,8 +136,7 @@ export default function TempomaticPage() {
                         <span className="">de aire que marcan la diferencia.</span><br/>
                         <br/>
                         <span className="">Nuestros equipos de diseño e ingeniería crean <span className="font-nunito-bolder">sistemas HVAC</span></span><br/>
-                        <span className="">líder en ductos textiles, para ofrecer soluciones de distribución</span><br/>
-                        <span className="">personalizados que responden a las necesidades más exigentes.&quot;</span><br/>
+                        <span className="">personalizados que responden a las necesidades más exigentes.</span><br/>
 
                     </p>
                 :
@@ -146,7 +145,7 @@ export default function TempomaticPage() {
                 {/* -------------PARRAFO CON COMILLAS MOBILE------------- */}
                         
                         <div className="z-20 absolute 
-                            top-[10%] xm:top-[10%] sm:top-[6%] md:top-[12%] lg:top-[5%] 
+                            top-[20%] xm:top-[10%] sm:top-[6%] md:top-[12%] lg:top-[5%] 
                             left-[3.5%] lg:left-[20%] 
                             w-[5vw] 
                             ">
@@ -166,8 +165,7 @@ export default function TempomaticPage() {
                         <span className="">de distribución de aire que marcan la diferencia.</span><br/>
                         <br/>
                         <span className="">Nuestros equipos de diseño e ingeniería crean <span className="font-nunito-bolder">sistemas HVAC</span></span><br/>
-                        <span className="">líder en ductos textiles, para ofrecer soluciones de distribución</span><br/>
-                        <span className="">personalizados que responden a las necesidades más exigentes.&quot;</span><br/>
+                        <span className="">personalizados que responden a las necesidades más exigentes.</span><br/>
                     </p>
                 }
                 <div className="">
@@ -258,77 +256,6 @@ export default function TempomaticPage() {
                 />
             </section>
 
-            {/* <section className="w-full h-[100%] px-[3%] mt-6 flex flex-col lg:grid grid-cols-[37.5%_25%_37.5%] gap-4
-            ">
-
-                
-                <div className="w-full flex flex-col justify-center items-center self-start
-                    bg-gradient-to-t from-[#ef771c] from-5% via-[#e80303] via-30% to-[#e80303]  rounded-[44px]">
-                    <span className="rounded-[24px]">
-                        <Image
-                            alt="Home banner 1"
-                            className="rounded-[44px]"
-                            src="../img/solerpalau/imgbanner/SolerPalauHome1.jpg"
-                            width="100%"
-                        />
-                    </span>
-                    <article className="flex items-center gap-4 py-2 text-white text-start align-middle font-lexend">
-                        <h1 className="text-[6.0vw] leading-none ">+60</h1>
-                        <p className="m-auto">años en el <br/>mercado</p>
-                    </article>
-                </div>
-
-                
-                <div className="w-full p-2 flex justify-center items-center 
-                    bg-gradient-to-t from-[#ef771c] to-[#E80303] rounded-[44px]">
-                    <SolerPalauSVG width={240}/>
-                </div>
-
-                
-                <div className="w-full  flex flex-col justify-top items-center  self-start
-                    bg-gradient-to-t from-[#ef771c] from-5% via-[#e80303] via-30% to-[#e80303]  rounded-[44px]">
-                    <span className="rounded-[24px]">
-                        <Image
-                            alt="Home banner 2"
-                            className="rounded-[44px]"
-                            src="../img/solerpalau/imgbanner/SolerPalauHome2.jpg"
-                            width="100%"
-                        />
-                    </span>
-                    <article className="flex items-center gap-4 py-2 text-white text-start align-middle font-lexend">
-                        <h1 className="text-[6.0vw] leading-none">+90</h1>
-                        <p className="m-auto">paises en el mundo cuentan
-                            <br/>
-                            con los servicios, productos y
-                            <br/>
-                            la atención de OTAM | S&P.
-                        </p>
-                    </article>
-                </div>
-            </section> */}
-
-            {/* ------------- Barra de navegacion S&P ------------- */}
-            {/* <section className="z-0  h-full w-[100%]  md:mt-2 overflow-hidden ">
-                
-                <div className="flex justify-center contaainn  w-max mx-auto mt-6 lg:mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
-                    
-                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4   "> 
-                    {itemsNavTempomatic?.map((item) => (
-                            <a
-                                className=""
-                                color="foreground"
-                                href={item.href}
-                                key={item.key}
-                            >
-                                <CardDisplaySypHome data={item}  actual={""}/>
-
-                            </a>
-                        ))}  
-                        </div>
-                    </div>
-                    
-                
-            </section> */}
 
             {/* ------------- Botonera ------------- */}
 

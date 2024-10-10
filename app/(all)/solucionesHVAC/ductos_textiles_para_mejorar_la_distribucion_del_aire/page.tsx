@@ -104,7 +104,7 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("electroterma.com"))}
+									onClick={()=>(window.open("/dti", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -112,7 +112,7 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
 					</div>
 					
 				</div>
-				<div className="h-full pb-[0%] flex flex-col items-center justify-center align-middle">
+				<div className="h-[115%] pb-[0%] flex flex-col items-center justify-center align-middle">
 					<a href="/solucionesHVAC"> 
 						<Button
 							className="  z-10 bg-[#EF771C] px-10 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
@@ -175,7 +175,7 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.8vw] font-nunito-bold lg:mt-16 mr-auto">Desarrollo de proyecto de distribución del aire para una industria con procesos de horneado, enfriamiento y envasado de productos</h2>
 
 						    <p className="">
-							El mismo incluía Unidades de Tratamiento de Aire <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_blank">TEMPOMATIC</a>, pero el sistema de ductos a nivel de techo (a 11 metros de altura e inyección por difusores tradicionales) no aseguraba la llegada de aire tratado a los puestos de los operarios, generando elevadas cargas térmicas en determinados momentos del año.  
+							El mismo incluía Unidades de Tratamiento de Aire <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_top">TEMPOMATIC</a>, pero el sistema de ductos a nivel de techo (a 11 metros de altura e inyección por difusores tradicionales) no aseguraba la llegada de aire tratado a los puestos de los operarios, generando elevadas cargas térmicas en determinados momentos del año.  
 								 
 							</p>
 							
@@ -189,8 +189,8 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
 							
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
 								Para este caso, desarrollamos una solución en conjunto con nuestros colegas de 
-								<a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_blank"> DTI</a>. Modificamos el sistema de distribución existente y lo complementamos con {" "}
-								<a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_blank">ductos textiles.</a>
+								<a className="text-[#EF771C] font-nunito-bold underline " href="/dti" target="_top"> DTI</a>. Modificamos el sistema de distribución existente y lo complementamos con {" "}
+								<a className="text-[#EF771C] font-nunito-bold underline " href="/dti" target="_top">ductos textiles.</a>
 								{" "}La propuesta incorporó la generación de una distribución del aire en segundo plano y a 2,5 metros de altura, que se ubicó estratégicamente sobre los puestos de los operarios utilizando los mencionados ductos textiles. De esta manera se optimizó la distribución de aire tratado, eliminando las zonas de altas temperaturas y, en consecuencia, la disconformidad de los operarios. Se alcanzaron temperaturas más homogéneas en toda la nave sin la necesidad de modificar la capacidad del equipamiento instalada y acortando sus horas de uso/día.
 							</p>
 
@@ -324,14 +324,14 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
 
 		{/* ------------- Consultanos ------------- */}
 		<section className="w-full max-h-[50%] z-20 py-0 font-size overflow-hidden">
-                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
-                    <div className="ml-[35px] md:ml-24">
-                        <h2 className="text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
+                <div className="bg-[#EF771C]  md:w-98% py-3  flex justify-center gap-[10vw] md:gap-20 items-center rounded-tr-[24px] rounded-bl-[24px]">
+                    <div className="pl-[25px] md:ml-24 ">
+                        <h2 className="w-[40v] text-white text-xs xm:text-base md:text-2xl 2xl:text-3xl font-nunito-bold">
                             {" "}
                             ¿Cuál es tu necesidad?{" "}
                         </h2>
                     </div>
-                    <div className="mr-4 md:mr-12  ">
+                    <div className="mr-0 md:mr-12  ">
                         <Button size={BigScreen ? "lg" : "sm"} radius="full" className="2xl:text-2xl lg:px-8 mr-[23px] lg:mr-0 shadow-2xl" onClick={handleEmailClick}>
                             <div className="absolute rounded-full left-0 z-20 p-3   shadow-r-xl shadow-[rgba(29,29,27,0.24)] border- border-gray-200 
                                     bg-gradient-to-r from-[#EF771C] to-[#F4A86F]
@@ -346,6 +346,7 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
                     </div>
                 </div>
             </section>
+
 
 		</main>
 	);
