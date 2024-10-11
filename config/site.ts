@@ -40,6 +40,7 @@ export const siteConfig = {
             label: "Soluciones en HVAC",
             href: "/solucionesHVAC",
 			dropdown: false,
+            // dwData: itemsNavZila,
         },
         // {
         //     label: "Nosotros",

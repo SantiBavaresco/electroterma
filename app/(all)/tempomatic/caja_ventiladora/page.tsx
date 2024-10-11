@@ -201,7 +201,7 @@ export default function CajaVentiladoraPage() {
                         </li>  
 
                     </ul>
-                    <div className="w-3/5 pr-[3%]">
+                    <div className="w-3/5 pr-[10%] mt-10">
                         <Image
                             alt="Home banner 1"
                             className=""

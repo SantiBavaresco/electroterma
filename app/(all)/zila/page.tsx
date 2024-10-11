@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { title } from "@/components/primitives";
 import { Image } from "@nextui-org/image";
+import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
 
 
 export default function ZilaPage() {
@@ -23,7 +24,7 @@ export default function ZilaPage() {
          overflow-hidden">
 
             {/* ------------- Banner------------- */}
-            <section className="w-full px-[0%] mt-4">
+            <section className="w-full px-[0%] mt-">
                 <Image
                     alt="Home banner 1"
                     className="rounded-[44-px]"
@@ -31,6 +32,10 @@ export default function ZilaPage() {
                     src={`../img/zila/${BigScreen ? "webFija" : "mobileFija"}.png`}
                     width="100%"
                 />
+            </section>
+            <section className="w-full flex justify-center">
+                <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
+                    link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20Zila."}/>
             </section>
 		</main>
 	);

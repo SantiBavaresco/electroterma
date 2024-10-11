@@ -218,7 +218,6 @@ export default function UnidadManejadoraDeAirePage() {
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] -mt- ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
-                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5">TOMA DE AIRE INTECCIÓN DE AIRE</h1>
 
                     <table className="table-auto font-nunito text-[1.7vw] w-4/5">
                         <thead >
@@ -246,10 +245,10 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td>1195</td>
                                 <td>1060</td>
                                 <td>915</td>
-                                <td>710</td>
-                                <td>470</td>
-                                <td>445</td>
-                                <td>445</td>
+                                <td className="border-l-2 border-[#FF7800]">710</td>
+                                <td className="border-r-2 border-[#FF7800]">470</td>
+                                <td className="border-l-2 border-[#FF7800]">445</td>
+                                <td className="border-r-2 border-[#FF7800]">445</td>
                             </tr>
                             <tr className="bg-[#e7e7e7] text-center">
                                 <td className="p-2 pl-[1.7vw] text-left">UMA 08/30</td>
@@ -259,10 +258,10 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td>1195</td>
                                 <td>1060</td>
                                 <td>915</td>
-                                <td>710</td>
-                                <td>570</td>
-                                <td>445</td>
-                                <td>445</td>
+                                <td className="border-l-2 border-[#FF7800]">710</td>
+                                <td className="border-r-2 border-[#FF7800]">570</td>
+                                <td className="border-l-2 border-[#FF7800]">445</td>
+                                <td className="border-r-2 border-[#FF7800]">445</td>
                             </tr>
                             <tr className="bg-[#f7f7f7] text-center">
                                 <td className="p-2 pl-[1.7vw] text-left">UMA 10/40</td>
@@ -272,10 +271,10 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td>1195</td>
                                 <td>1250</td>
                                 <td>915</td>
-                                <td>910</td>
-                                <td>570</td>
-                                <td>495</td>
-                                <td>545</td>
+                                <td className="border-l-2 border-[#FF7800]">910</td>
+                                <td className="border-r-2 border-[#FF7800]">570</td>
+                                <td className="border-l-2 border-[#FF7800]">495</td>
+                                <td className="border-r-2 border-[#FF7800]">545</td>
                             </tr>
                             <tr className="bg-[#e7e7e7] text-center">
                                 <td className="p-2 pl-[1.7vw] text-left">UMA 12/50</td>
@@ -285,10 +284,10 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td>1245</td>
                                 <td>1250</td>
                                 <td>965</td>
-                                <td>910</td>
-                                <td>735</td>
-                                <td>495</td>
-                                <td>545</td>
+                                <td className="border-l-2 border-[#FF7800]">910</td>
+                                <td className="border-r-2 border-[#FF7800]">735</td>
+                                <td className="border-l-2 border-[#FF7800]">495</td>
+                                <td className="border-r-2 border-[#FF7800]">545</td>
                             </tr>
                             <tr className="bg-[#f7f7f7] text-center">
                                 <td className="p-2 pl-[1.7vw] text-left">UMA 17/78</td>
@@ -298,10 +297,10 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td>1295</td>
                                 <td>1800</td>
                                 <td>1015</td>
-                                <td>1410</td>
-                                <td>735</td>
-                                <td>595</td>
-                                <td>645</td>
+                                <td className="border-l-2 border-[#FF7800]">1410</td>
+                                <td className="border-r-2 border-[#FF7800]">735</td>
+                                <td className="border-l-2 border-[#FF7800]">595</td>
+                                <td className="border-r-2 border-[#FF7800]">645</td>
                             </tr>
                             <tr className="bg-[#e7e7e7] text-center">
                                 <td className="p-2 pl-[1.7vw] text-left">UMA 20/100</td>
@@ -311,10 +310,24 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td>1320</td>
                                 <td>2270</td>
                                 <td>1040</td>
-                                <td>1920</td>
-                                <td>735</td>
-                                <td>700</td>
-                                <td>700</td>
+                                <td className="border-l-2 border-[#FF7800]">1920</td>
+                                <td className="border-r-2 border-[#FF7800]">735</td>
+                                <td className="border-l-2 border-[#FF7800]">700</td>
+                                <td className="border-r-2 border-[#FF7800]">700</td>
+                            </tr>
+
+                            <tr className="bg-white text-white text-[1.3vw] text-center">
+                                <td className="p-2 pl-[1.7vw] text-left"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td className="bg-[#FF7800] border-[#FF7800] py-1 text-right border-l- rounded-bl-[1.7vw]">TO</td>
+                                <td className="bg-[#FF7800] border-white pl-[0.%] text-left border-r-2 rounded-br-[1.7vw]">MA</td>
+                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">INYEC</td>
+                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">CIÓN</td>
                             </tr>
                         </tbody>
                     </table>

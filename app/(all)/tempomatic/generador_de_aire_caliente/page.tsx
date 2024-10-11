@@ -227,7 +227,7 @@ export default function GeneradoDeAireCalientePage() {
             <section className="w-full px-[6%] mt-[3vw] ">
                 <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INTERIOR</h1>
                 
-                    <div className="w-full ">
+                    <div className="w-4/5 mx-auto ">
                         <Image
                             alt="Home banner 1"
                             className=""
@@ -241,7 +241,7 @@ export default function GeneradoDeAireCalientePage() {
             <section className="w-full px-[6%] mt-[1vw] ">
                 <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFO TÉCNICA</h1>
                 
-                    <div className="w-full ">
+                    <div className="w-4/5 mx-auto ">
                         <Image
                             alt="Home banner 1"
                             className=""
@@ -254,7 +254,6 @@ export default function GeneradoDeAireCalientePage() {
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] mt-10 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
-                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5">TOMA / INYECCIÓN DE AIRE</h1>
 
                 <table className="table-auto font-nunito text-[1.4vw] w-4/5">
                         <thead >
@@ -374,7 +373,7 @@ export default function GeneradoDeAireCalientePage() {
                         </tbody>
                     </table>
 
-                <h1 className="font-nunito mt-2 text-[#FF7800] text-[2.3vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
+                <h1 className="font-nunito mt-2 text-[#FF7800] text-[1.6vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
                 
             </section>
 
@@ -527,7 +526,7 @@ export default function GeneradoDeAireCalientePage() {
             <section className="w-full px-[6%] mt-[4vw] ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CONFIGURACIONES</h1>
                 
-                    <div className="w-full ">
+                    <div className="w-4/5 mx-auto ">
                         <Image
                             alt="Home banner 1"
                             className=""

@@ -208,7 +208,7 @@ export default function CalderaParaCalefaccionPage() {
                             <p className="text-[1.3vw] text-midgray">Sumergido, diseñado acorde a la evolución de la llama.</p>
                         </li>  
                         <li>
-                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">6</span> QUEMADOR</h1>
+                            <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">7</span> QUEMADOR</h1>
                             <p className="text-[1.3vw] text-midgray">Monotobera de construcción nacional, con cuerpo metálico, cabeza de combustión regulable, bruida de montaje de aluminio, control electrónico de llama, doble válvula a selenoide para gas, válvula de regulación manual, electrodos y transformador de encendido automático, ventilador, presostato de aire y filtro de gas. </p>
                         </li>  
                     </ul>
@@ -227,7 +227,7 @@ export default function CalderaParaCalefaccionPage() {
             <section className="w-full px-[6%] mt-[3vw] ">
                 <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFORMACIÓN TÉCNICA</h1>
                 
-                    <div className="w-full ">
+                    <div className="w-4/5 mx-auto">
                         <Image
                             alt="Home banner 1"
                             className=""
@@ -352,7 +352,7 @@ export default function CalderaParaCalefaccionPage() {
                         </tbody>
                     </table>
 
-                <h1 className="font-nunito mt-2 text-[#FF7800] text-[2.3vw] text-right">MEDIDAS EN MILÍMETROS</h1>
+                <h1 className="font-nunito mt-2 text-[#FF7800] text-[1.6vw] text-right">MEDIDAS EN MILÍMETROS</h1>
                 
             </section>
 

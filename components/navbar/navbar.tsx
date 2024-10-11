@@ -316,17 +316,16 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                             <div>
                                                 <p className="flex items-center justify-center1 font-nunito text-white text-xl ">
                                                 <BsArrowBarLeft className="text-3xl"/>
-                                                        <div onClick={(e)=>{
-                                                                
-                                                                // if (dropDown.label==="Tempomatic") {
-                                                                //     e.stopPropagation();
-                                                                //     handleAnchor(dropDown.href);
-                                                                //   }
-                                                                dropDown.label==="Tempomatic" ? handleAnchor(dropDown.href) : dropDown.label==="Soler & Palau" ? handleAnchor(dropDown.href) : <></>
-                                                        }}>
-                                                    {dropDown.label}
+                                                    <div onClick={(e)=>{
+                                                        dropDown.label==="Tempomatic" 
+                                                        ? handleAnchor(dropDown.href) 
+                                                        : dropDown.label==="Soler & Palau" 
+                                                        ? handleAnchor(dropDown.href) 
+                                                        
+                                                        : <></>
+                                                    }}>
+                                                        {dropDown.label}
                                                     </div>
-                                                    {/* </a> */}
                                                 </p>
                                             </div>
                                         </DropdownTrigger>
@@ -373,11 +372,18 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                         target={dropDown.label === "Tienda Online" ?  "_blank" : undefined }
                                         onClick={setFirstFalse}
                                     >
-                                        <p
-                                            className={`font-nunito text-white text-xl ml-[30px]`}
-                                        >
-                                            {dropDown.label}
-                                        </p>
+                                        {dropDown.label==="Soluciones en HVAC" 
+                                            ? 
+                                                <p className={`font-nunito text-white text-xl flex`}>
+                                                    <BsArrowBarLeft className="text-3xl"/>
+                                                    {dropDown.label}
+                                                </p>          
+                                            : 
+                                                <p className={`font-nunito text-white text-xl ml-[30px]`}>
+                                                    {dropDown.label}
+                                                </p>
+                                        }
+                                        
                                     </NextLink>
                                 )}
                             </DropdownItem>

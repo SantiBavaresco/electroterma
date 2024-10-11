@@ -155,7 +155,7 @@ export default function CalefactorElectricoPage() {
             ">
             {/* -------------IMG con diferenciales ------------- */}
 
-                <div className="w-1/2">
+                <div className="w-[45%]">
                 <Image
                         alt="Home banner 1"
                         className=""
@@ -174,7 +174,7 @@ export default function CalefactorElectricoPage() {
                 </div>
             </section> 
             {/* -------------COMPONENTES ------------- */}
-            <section className="w-full px-[6%] lg:-mt-10 ">
+            <section className="w-full px-[6%] lg:mt-10 ">
                 <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">COMPONENTES</h1>
                 <div className="w-full flex">
                     <ul className="w-2/5 font-nunito space-y-8 mt-10">
@@ -219,7 +219,7 @@ export default function CalefactorElectricoPage() {
             <section className="w-full px-[6%] mt-[1vw] ">
                 <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFO TÉCNICA</h1>
                 
-                    <div className="w-full ">
+                    <div className="w-3/5 mx-auto ">
                         <Image
                             alt="Home banner 1"
                             className=""
@@ -233,7 +233,7 @@ export default function CalefactorElectricoPage() {
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] mt-16 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
-                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5" >TOMA DE AIRE INTECCIÓN DE AIRE</h1>
+                <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5" >TOMA DE AIRE INTECCIÓN DE AIRE</h1>
 
                     <table className="table-auto font-nunito text-[1.7vw] w-4/5">
                         <thead >
@@ -315,7 +315,7 @@ export default function CalefactorElectricoPage() {
                             
                         </tbody>
                     </table>
-                    <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
+                    <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
                
             </section>
 
@@ -407,7 +407,7 @@ export default function CalefactorElectricoPage() {
             <section className="w-full px-[6%] mt-16 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CONFIGURACIONES</h1>
                 
-                    <div className="w-full ">
+                    <div className="w-4/5 mx-auto ">
                         <Image
                             alt="Home banner 1"
                             className=""
