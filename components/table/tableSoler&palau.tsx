@@ -8,7 +8,27 @@ interface DataType {
   tableData: {
     rows: {
       key: string;
-      modelo: string;
+      modelo?: string;
+      A?: number;
+      B?: number;
+      D?: number;
+      E?: number;
+      F?: number;
+      G?: number;
+      H?: number;
+      I?: number;
+      J?: number;
+      K?: number;
+      L?: number;
+      M?: number;
+      R?: number;
+      X?: number;
+      Y?: number;
+      Z?: number;
+      nxp?: string;
+      O?: number;
+      peso?: string;
+
       qimn?: number; // Assuming numerical values for these properties
       ap?: number;
       omax?: number;
@@ -29,9 +49,9 @@ export const TableSolerPalau: React.FC<DataType> = ({ tableData, ...props }) => 
   return (
     <Table aria-label="Tabla de caracteristicas"
         classNames={{
-            td:"text-center text-sm lg:text-md 2xl:text-xl  3xl:text-2xl",
+            td:"text-center min-w-[4vw] text-sm lg:text-md 2xl:text-xl  3xl:text-2xl",
             // thead: "bg-green-500", // This would set the background color of the header
-            th: "border-r-4  border-white rounded-2xl rounded-t-none  text-sm lg:text-md xl:text-md bg-livered-title text-white",
+            th: "text-center border-r-4  border-white rounded-2xl rounded-t-none  text-sm lg:text-md xl:text-lg bg-livered-title text-white",
             // thead: " border-b-[20px] space-x-1 ",
             tr: "even:bg-gray-200 bg-gray-100 ",
         }}

@@ -411,22 +411,31 @@ export default function TDAPage() {
 
                         
                         bg-[url('/svg/ondas02.svg')] bg-fill
-                        bg-[center_1rem] bg-no-repeat
+                        bg-[center_60rem] bg-no-repeat
                     
                       ">
-                        <div className="ml-[3%] h-full  flex flex-col justify-center items-center lg:flex-row lg:grow">
+                        <div className="mx-[3%] h-full  flex flex-col justify-center items-center lg:flex-row lg:grow ">
 
-                             <div className="min-h-[55vh] w-full lg:min-h-[45vh] ">
+                             <div className="min-h-[55vh] w-full lg:min-h-[45vh] space-y-10">
                                 <h1 className="flex items-center justify-start py-4  md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
                                 ">
-                                   <VinietaRojaSVG size={40} /> CARACTERÍSTICAS TÉCNICAS
+                                   <VinietaRojaSVG size={40} /> REFERENCIAS DE TAMAÑO
                                 </h1>
+                                <Image
+                                    className="w-3/5"
+                                    alt="Ventilador"
+                                    
+                                    src="../img/solerpalau/tda/SolerPalauTda3.png"
+                                    width={"100%"}
+                                />
                                 <TableSolerPalau tableData={tdaData.tableData}/>
+                                <TableSolerPalau tableData={tdaData.tableData2}/>
+
                                
                             </div>
-                            <div className=" w-full flex justify-center items-center">
+                            {/* <div className=" w-full flex justify-center items-center"> */}
                             {/* ----------------- Specs Web ----------------- */}
-                                <div className=" w-full ms-auto overflow ">
+                                {/* <div className=" w-full ms-auto overflow ">
                                         <div
                                                 className=" my-10 mx-auto  px-4 z-10
                                             
@@ -444,9 +453,9 @@ export default function TDAPage() {
 
                                                 </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                             {/* ----------------- FIN Specs Web ----------------- */}
-                            </div>
+                            {/* </div> */}
                             
                         </div>
                         <div className="-z-10 mx-[3%]">

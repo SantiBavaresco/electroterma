@@ -504,7 +504,7 @@ export default function Home() {
 
                 </> 
                 
-                : <div className="-mt-56 -mb-64 -mt--2"> {/* ----- Mobile ----- */}
+                : <div className="-mt-48 -mb-64 mt-"> {/* ----- Mobile ----- */}
                     {/* <div className=" mx-auto h-32">Mapa scroll mobile</div> */}
                     <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
