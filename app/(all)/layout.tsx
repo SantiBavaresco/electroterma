@@ -22,7 +22,8 @@ import { usePathname } from 'next/navigation'
 import clsx from "clsx";
 import Footer from "../../components/footer";
 import Script from "next/script";
-
+import Head from "next/head";
+import { GoogleAnalytics } from '@next/third-parties/google'
 // import { GoogleAnalytics } from "nextjs-google-analytics";
 
 
@@ -62,14 +63,15 @@ export default function RootLayout({
     return (
         <html lang="es" suppressHydrationWarning>
             <head>
-                <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`}></Script>
-                <Script id="google-analytics">
-                    {`npwindow.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+    {/*                 
+                    <script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`}></script>
+                    <script id="google-analytics">
+                        {`npwindow.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
 
-                    gtag('config', 'G-X8EBB5PW7Y');`}
-                </Script>
+                        gtag('config', 'G-X8EBB5PW7Y');`}
+                    </script> */}
             </head> 
             <body   
                 id="home" accessKey="home"
@@ -85,7 +87,8 @@ export default function RootLayout({
                 <Providers
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
                 >
-                    <SpeedInsights/> <Analytics/>
+                    {/* <SpeedInsights/> <Analytics/> */}
+                    <GoogleAnalytics gaId="G-X8EBB5PW7Y" />
                     
                     {/* {<section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
@@ -107,7 +110,10 @@ export default function RootLayout({
                             `}
                             </Script>
 
-                            
+                           
+
+
+
                         </main>
                         
                        <Footer/>

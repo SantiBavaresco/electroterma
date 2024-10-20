@@ -22,6 +22,8 @@ import { usePathname } from 'next/navigation'
 import clsx from "clsx";
 import Footer from "../../components/footer";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script";
 
 
 export const metadata: Metadata = {
@@ -68,6 +70,17 @@ export default function RootLayout({
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
                 >
                     <SpeedInsights/> <Analytics/>
+                    <GoogleAnalytics gaId="G-X8EBB5PW7Y" />
+
+                    <Script id="clarity-script" type="text/javascript" strategy="afterInteractive">
+                            {`
+                                (function(c,l,a,r,i,t,y){
+                                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                                })(window, document, "clarity", "script", "ojjh5gdoug");
+                            `}
+                    </Script>
                     
                     {/* {<section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
