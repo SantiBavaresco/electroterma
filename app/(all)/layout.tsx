@@ -22,8 +22,9 @@ import { usePathname } from 'next/navigation'
 import clsx from "clsx";
 import Footer from "../../components/footer";
 import Script from "next/script";
-import { GoogleAnalytics } from '@next/third-parties/google'
+// import { GoogleAnalytics } from '@next/third-parties/google'
 
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 
 export const metadata: Metadata = {
@@ -66,22 +67,9 @@ export default function RootLayout({
                     fontSans.variable
                 )}
             >
-            <GoogleAnalytics gaId="G-X8EBB5PW7Y" />
-
-            <script
-                id="google"
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y"
-                dangerouslySetInnerHTML={{
-                __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config','G-X8EBB5PW7Y');
-                `,
-                }}
-            />
+            {/* <GoogleAnalytics gaId="G-X8EBB5PW7Y" /> */}
+            <GoogleAnalytics trackPageViews gaMeasurementId="G-X8EBB5PW7Y"/>
+            
 
                 <Providers
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
