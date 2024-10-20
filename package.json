@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.15",
     "@nextui-org/button": "2.0.26",
     "@nextui-org/card": "^2.0.24",
     "@nextui-org/chip": "^2.0.25",
@@ -48,7 +49,7 @@
     "gsap": "^3.12.5",
     "intl-messageformat": "^10.5.0",
     "lottie-react": "^2.4.0",
-    "next": "^14.2.3",
+    "next": "^14.2.15",
     "next-themes": "^0.2.1",
     "or": "^0.2.0",
     "postcss": "8.4.31",
