@@ -59,7 +59,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <head />
-            <body
+            <body   
                 id="home" accessKey="home"
                 className={clsx(
                     "min-h-screen bg-background font-lexend   ",
@@ -68,7 +68,7 @@ export default function RootLayout({
             >
             <GoogleAnalytics gaId="G-X8EBB5PW7Y" />
 
-            <Script
+            <script
                 id="google"
                 async
                 src="https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y"
@@ -78,8 +78,7 @@ export default function RootLayout({
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                    gtag('config',   
-                    'G-X8EBB5PW7Y');
+                    gtag('config','G-X8EBB5PW7Y');
                 `,
                 }}
             />
