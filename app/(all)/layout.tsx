@@ -66,6 +66,24 @@ export default function RootLayout({
                     fontSans.variable
                 )}
             >
+            <GoogleAnalytics gaId="G-X8EBB5PW7Y" />
+
+            <Script
+                id="google"
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y"
+                dangerouslySetInnerHTML={{
+                __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config',   
+                    'G-X8EBB5PW7Y');
+                `,
+                }}
+            />
+
                 <Providers
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
                 >
@@ -91,7 +109,6 @@ export default function RootLayout({
                             `}
                             </Script>
 
-                            <GoogleAnalytics gaId="G-X8EBB5PW7Y" />
                             
                         </main>
                         
