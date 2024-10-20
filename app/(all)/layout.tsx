@@ -62,9 +62,9 @@ export default function RootLayout({
 
     return (
         <html lang="es" suppressHydrationWarning>
-            <Head>
-                <script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`} />
-            </Head>
+            <head>
+                
+            </head>
             <body   
                 id="home" accessKey="home"
                 className={clsx(
@@ -72,6 +72,25 @@ export default function RootLayout({
                     fontSans.variable
                 )}
             >
+
+                {/* GTM Script */}
+                <Script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y"
+                />
+                <Script
+                    id="gtag"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config',   
+                        'G-X8EBB5PW7Y');
+                        `,
+                    }}
+                />
             {/* <GoogleAnalytics gaId='G-X8EBB5PW7Y' /> */}
             {/* <GoogleAnalytics  gaMeasurementId="G-X8EBB5PW7Y"/> */}
             
