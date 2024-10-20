@@ -22,8 +22,7 @@ import { usePathname } from 'next/navigation'
 import clsx from "clsx";
 import Footer from "../../components/footer";
 import Script from "next/script";
-import { GoogleAnalytics } from '@next/third-parties/google'
-import Head from 'next/head';
+
 // import { GoogleAnalytics } from "nextjs-google-analytics";
 
 
@@ -63,9 +62,9 @@ export default function RootLayout({
     return (
         <html lang="es" suppressHydrationWarning>
             <head>
-                <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`} />
-                <Script id="google-analitics">
-                    {` window.dataLayer = window.dataLayer || [];
+                <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`}></Script>
+                <Script id="google-analytics">
+                    {`npwindow.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
