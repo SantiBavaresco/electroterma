@@ -23,7 +23,7 @@ import clsx from "clsx";
 import Footer from "../../components/footer";
 import Script from "next/script";
 import { GoogleAnalytics } from '@next/third-parties/google'
-
+import Head from 'next/head';
 // import { GoogleAnalytics } from "nextjs-google-analytics";
 
 
@@ -57,9 +57,14 @@ export default function RootLayout({
 //   const Layout = isHomePage ? HomepageLayout : OtherPagesLayout;
     // const pathname = usePathname()
 
+    // const measurementId = 'G-X8EBB5PW7Y';
+    // const ga= GoogleAnalytics(measurementId);
+
     return (
         <html lang="es" suppressHydrationWarning>
-            <head />
+            <Head>
+                <script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`} />
+            </Head>
             <body   
                 id="home" accessKey="home"
                 className={clsx(
@@ -67,7 +72,7 @@ export default function RootLayout({
                     fontSans.variable
                 )}
             >
-            <GoogleAnalytics gaId='G-X8EBB5PW7Y' />
+            {/* <GoogleAnalytics gaId='G-X8EBB5PW7Y' /> */}
             {/* <GoogleAnalytics  gaMeasurementId="G-X8EBB5PW7Y"/> */}
             
 
