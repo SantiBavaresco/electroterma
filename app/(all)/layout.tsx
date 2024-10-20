@@ -22,9 +22,9 @@ import { usePathname } from 'next/navigation'
 import clsx from "clsx";
 import Footer from "../../components/footer";
 import Script from "next/script";
-// import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
-import { GoogleAnalytics } from "nextjs-google-analytics";
+// import { GoogleAnalytics } from "nextjs-google-analytics";
 
 
 export const metadata: Metadata = {
@@ -58,7 +58,7 @@ export default function RootLayout({
     // const pathname = usePathname()
 
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="es" suppressHydrationWarning>
             <head />
             <body   
                 id="home" accessKey="home"
@@ -67,8 +67,8 @@ export default function RootLayout({
                     fontSans.variable
                 )}
             >
-            {/* <GoogleAnalytics gaId="G-X8EBB5PW7Y" /> */}
-            <GoogleAnalytics trackPageViews gaMeasurementId="G-X8EBB5PW7Y"/>
+            <GoogleAnalytics gaId='G-X8EBB5PW7Y' />
+            {/* <GoogleAnalytics  gaMeasurementId="G-X8EBB5PW7Y"/> */}
             
 
                 <Providers
