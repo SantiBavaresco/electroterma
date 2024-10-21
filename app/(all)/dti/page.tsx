@@ -35,7 +35,7 @@ interface ItemsNavbar {
     href: string;
 }
 
-export default function TempomaticPage() {
+export default function DTIPage() {
 
     const [BigScreen, setBigScreen] = useState(false);
     useEffect(() => {
@@ -269,7 +269,7 @@ export default function TempomaticPage() {
 							<h1>a un vendedor</h1><br/>
 
 							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}
-                            link={"https://wa.me/5492236356756?text=Hola.%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información."}
+                            link={"https://wa.me/5492236356756?text=Hola.%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información%20sobre%20Ductos%20Textiles."}
                             // Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion
                             />
 						</div>
