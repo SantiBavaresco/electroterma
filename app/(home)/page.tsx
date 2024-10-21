@@ -16,7 +16,7 @@ import {extendVariants, Button, Divider} from "@nextui-org/react";
 import { lazy, Suspense, useState, useEffect } from "react";
 
 import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
-import { Navbar } from "@/components/navbar/navbar";
+import { NavbarHome } from "@/components/navbar/navbarHome";
 import { ShoppingCart } from "@/public/svg/shoppingCart";
 import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
 import { TiendaButton } from "@/components/custonButtons/tienda";
@@ -99,7 +99,7 @@ export default function Home() {
                 />
             </section> */}
 
-            <Navbar css=" -mt-4"/>
+            <NavbarHome css="-mt-[25px] lg:-mt-2"/>
 
             <section className="relative w-full px-[3%] my-3 lg:my-10 pt-4 text-center font-lexend text-[#4C4B4B] text-[3.5vw] lg:text-[1.75vw] overflow-hidden">
                 {BigScreen ? 

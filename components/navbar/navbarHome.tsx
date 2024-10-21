@@ -17,8 +17,10 @@ import {
     DropdownItem,
 } from "@nextui-org/dropdown";
 
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter} from "@nextui-org/modal"
+
 import { useState } from "react";
-import {Accordion, AccordionItem} from "@nextui-org/react";
+import {Accordion, AccordionItem, useDisclosure} from "@nextui-org/react";
 
 import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 
@@ -66,11 +68,13 @@ interface Props {
 
 
 // export const Navbar = () => {
-export const Navbar: React.FC<Props> = ({ css, ...props }) => {
+export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
     const [firstDropdownOpen, setFirstDropdownOpen] = useState(false);
     const [secondDropdownOpen, setSecondDropdownOpen] = useState(false);
 
     const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+
+    const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
     const setFirstFalse = () => {
         setFirstDropdownOpen(false);
@@ -84,69 +88,70 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
       };
 
 //  items acordion para mobile, hay que cambiarlo
+    const [BigScreen, setBigScreen] = useState(false);
 
- const itemsTempomatic: ItemsNavbar[] = [
+    const itemsTempomatic: ItemsNavbar[] = [
 
-    {
-        key: "11",
-        category: "tempomatic",
-        label: ["Unidad de tratamiento de aire"],
-        labelShort: "UTA",
-        img: "../../img/navbar/Tempomatic2.png",
-        href: "/tempomatic/uta",
-        color : "bg-[#EF7916]",
+        {
+            key: "11",
+            category: "tempomatic",
+            label: ["Unidad de tratamiento de aire"],
+            labelShort: "UTA",
+            img: "../../img/navbar/Tempomatic2.png",
+            href: "/tempomatic/uta",
+            color : "bg-[#EF7916]",
 
-    },
-    {
-        key: "12",
-        category: "tempomatic",
-        label: ["Generador de aire caliente"],
-        labelShort: "GDAC",
-        img: "../../img/navbar/Tempomatic5.png",
-        href: "/tempomatic/generador_aire_caliente",
-        color : "bg-[#EF7916]",
+        },
+        {
+            key: "12",
+            category: "tempomatic",
+            label: ["Generador de aire caliente"],
+            labelShort: "GDAC",
+            img: "../../img/navbar/Tempomatic5.png",
+            href: "/tempomatic/generador_aire_caliente",
+            color : "bg-[#EF7916]",
 
-    },
-    {
-        key: "13",
-        category: "tempomatic",
-        label: ["Calefactor eléctrico"],
-        labelShort: "CE",
-        img: "../../img/navbar/Tempomatic3.png",
-        href: "/tempomatic/calefactor_electrico",
-        color : "bg-[#EF7916]",
+        },
+        {
+            key: "13",
+            category: "tempomatic",
+            label: ["Calefactor eléctrico"],
+            labelShort: "CE",
+            img: "../../img/navbar/Tempomatic3.png",
+            href: "/tempomatic/calefactor_electrico",
+            color : "bg-[#EF7916]",
 
-    },
-    {
-        key: "21",
-        category: "tempomatic",
-        label: ["Unidad manejadora de aire"],
-        labelShort: "UMDA",
-        img: "../../img/navbar/Tempomatic4.png",
-        href: "/tempomatic/unidad_manejadora_de_aire",
-        color : "bg-[#EF7916]",
+        },
+        {
+            key: "21",
+            category: "tempomatic",
+            label: ["Unidad manejadora de aire"],
+            labelShort: "UMDA",
+            img: "../../img/navbar/Tempomatic4.png",
+            href: "/tempomatic/unidad_manejadora_de_aire",
+            color : "bg-[#EF7916]",
 
-    },
-    {
-        key: "22",
-        category: "tempomatic",
-        label: ["Caja Ventiladora",],
-        labelShort: "CV",
-        img: "../../img/navbar/Tempomatic1.png",
-        href: "/tempomatic/caja_ventiladora",
-        color : "bg-[#EF7916]",
-    },
-    {
-        key: "23",
-        category: "tempomatic",
-        label: ["Caldera para calefacción"],
-        labelShort: "CC",
-        img: "../../img/navbar/Tempomatic6.png",
-        href: "/tempomatic/caldera_para_calefaccion",
-        color : "bg-[#EF7916]",
+        },
+        {
+            key: "22",
+            category: "tempomatic",
+            label: ["Caja Ventiladora",],
+            labelShort: "CV",
+            img: "../../img/navbar/Tempomatic1.png",
+            href: "/tempomatic/caja_ventiladora",
+            color : "bg-[#EF7916]",
+        },
+        {
+            key: "23",
+            category: "tempomatic",
+            label: ["Caldera para calefacción"],
+            labelShort: "CC",
+            img: "../../img/navbar/Tempomatic6.png",
+            href: "/tempomatic/caldera_para_calefaccion",
+            color : "bg-[#EF7916]",
 
-    },
-];
+        },
+    ];
     const itemsSyP: ItemsNavbar[] = [
         {
             key: "first",
@@ -216,9 +221,10 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className={`h-[42px] md:h-[64px]  lg:px-10  flex justify-center items-center font-nunito ${css}`}
+            className={`h-[52px] md:h-[42px]  pt-[10px] lg:pt-0 lg:px-10  flex justify-center items-center font-nunito ${css}`}
             position="sticky"
-            height={"42px"}
+            disableScrollHandler
+            height={BigScreen ? "42px" : "52px"}
 
             // height={"100%"}
             isMenuOpen={mobileDropdownOpen}
@@ -267,7 +273,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                 >
                     <DropdownTrigger className="bg-red-500 h-full">
                         {/* --------------- Burger --------------- */}
-                        <div className="w-[263px] h-[120%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
+                        <div className="w-[263px] h-[110%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
                             <svg
                                 width="30"
                                 height="28"
@@ -411,10 +417,33 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
 
 {/* ------------------------------------ MENU MOBILE ------------------------------------ */}
 
-            <NavbarContent className=" md:hidden basis-1 w-screen pl-4" justify="end">
+            <NavbarContent  className=" md:hidden basis-1 w-screen h-full pl-4" justify="end">
                 
-                
-                <NavbarMenuToggle 
+            <Button radius="none" className="w-[100px] h-[80%] lg:h-[80%] min-w-32 flex items-center justify-center bg-[#EF771C]"
+                onClick={onOpen}
+            >
+                            <svg
+                                width="25"
+                                height="25"
+                                viewBox="0 0 40 37"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </Button>
+                {/* <NavbarMenuToggle 
                 
                  aria-label={isMenuOpen ? "C" : "O"}
                  icon={isMenuOpen ? "C" : 
@@ -441,18 +470,123 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                 />
                             </svg>
                         </div>
-                    // <Menu className="text-base" />
+
                  
                 }
                  className="w-20 md:hidden "
                  
-                />
+                /> */}
             </NavbarContent>
+
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="full" isDismissable={false}>
+                <ModalContent className="bg-white bg-opacity-75 backdrop-blur-xl">
+                {(onClose) => (
+                    <>
+                    <ModalHeader className="flex flex-col gap-1"></ModalHeader>
+                    <ModalBody className="mx-4 mt-2 flex flex-col gap-4 ">
+                        {/* <div className="mx-4 mt-2 flex flex-col gap-2 "> */}
+                        
+                        {siteConfig.navMenuItems.map((dropdown, index) => (
+                            <>
+                                    {dropdown.dropdown ? 
+                                        <div className="py-0">
+                                            <Accordion variant="light">
+                                                <AccordionItem key={dropdown.label} aria-label={dropdown.label} 
+                                                title={
+                                                    <a key={dropdown.label} 
+                                                    href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
+                                                    {dropdown.label}
+                                                </a>}
+                                                className="-mx-2  "
+                                                // startContent={
+                                                //     <Avatar
+                                                //         isBordered
+                                                //         color={`${dropdown.label==="Tempomatic" ? `warning`: "danger"}`}
+                                                //         radius="lg"
+                                                //         src={`../img/navbar/${dropdown.label}.png`}
+                                                //     />
+                                                // }
+                                                >
+                                                    <div className="grid grid-cols-2 gap-2 w-[100%]">
+                                                        
+                                                    {/* Aca va la logica hardcodeada para mobile */}
+                                                    {dropdown.label === "Tempomatic"
+                                                        ? itemsTempomatic?.map((i) => (
+                                                    
+                                                            <NextLink
+                                                                className="max-w-[40vw] "
+                                                                color="foreground"
+                                                                href={i.href}
+                                                                target="_top"
+                                                                key={i.key}
+                                                                
+                                                            >
+                                                                
+                                                                <CardDisplay data={i}/>
+                                                            </NextLink>
+                                                        ))
+
+                                                        : dropdown.label === "Soler & Palau"
+                                                            ? itemsSyP?.map((i) => (
+                                                    
+                                                                <NextLink
+                                                                    className="max-w-[40vw] "
+                                                                    color="foreground"
+                                                                    href={i.href}
+                                                                    target="_top"
+                                                                    key={i.key}
+                                                                    
+                                                                >
+                                                                    
+                                                                    <CardDisplay data={i}/>
+                                                                </NextLink>
+                                                            ))
+
+                                                        : null
+                                                    }
+                                                    </div>
+                                                </AccordionItem>
+                                                
+                                            </Accordion>
+
+                                        </div>
+                                    : 
+                                    <NextLink
+                                        className=""
+                                        color="foreground"
+                                        href={dropdown.href}
+                                        target={dropdown.label === "Tienda Online" ? "_blank" : undefined  }
+                                        onClick={dropdown.label === "Salir" ? onClose : undefined}
+                                                
+                                    >
+                                        <h1>{dropdown.label}</h1> 
+                                    </NextLink>
+                                    }
+
+                            </>
+                            
+                        ))}
+                    {/* </div> */}
+                    </ModalBody>
+                    <ModalFooter>
+                        {/* <Button color="warning" variant="light" onPress={onClose}>
+                        Cerrar
+                        </Button> */}
+                        {/* <Button color="primary" onPress={onClose}>
+                        Action
+                        </Button> */}
+                    </ModalFooter>
+                    </>
+                )}
+                </ModalContent>
+            </Modal>
 
             <NavbarMenu
             
             >
                 {/* {searchInput} */}
+
+               
                 
                 <div className="mx-4 mt-2 flex flex-col gap-2 ">
                     
@@ -537,19 +671,6 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                 </NextLink>
                                 }
 
-                                {/* <NextLink
-                                    className=""
-                                    color="foreground"
-                                    href={dropdown.href}
-                                    target={dropdown.label === "Tienda Online" ? "_blank" : undefined  }
-                                              
-                                > */}
-                                {/* </NextLink> */}
-                                {/* {item.label} */}
-                            {/* </Link> */}
-
-                            {/* <h1 onClick={() => setMobileDropdownOpen(false)}>HOLAAA</h1>  */}
-                            
                         </NavbarMenuItem>
                         
                     ))}
