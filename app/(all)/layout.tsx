@@ -88,7 +88,7 @@ export default function RootLayout({
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
                 >
                     {/* <SpeedInsights/> <Analytics/> */}
-                    <GoogleAnalytics gaId="G-X8EBB5PW7Y" />
+                    <GoogleAnalytics gaId="G-BVSRLKEKLX" />
                     
                     {/* {<section className="${h-screen w-full flex items-center justify-center overflow-hidden bg-lowgray">
                         <p className=" h-full w-max  py-[45vh] text-xl text-center align-middle">Video para la web</p>
