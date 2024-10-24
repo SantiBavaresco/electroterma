@@ -49,9 +49,9 @@ export const TableSolerPalau: React.FC<DataType> = ({ tableData, ...props }) => 
   return (
     <Table aria-label="Tabla de caracteristicas"
         classNames={{
-            td:"text-center min-w-[4vw] text-sm lg:text-md 2xl:text-xl  3xl:text-2xl",
+            td:"text-center min-w-[4vw] text-sm lg:text-md 2xl:text-xl  3xl:text-xl",
             // thead: "bg-green-500", // This would set the background color of the header
-            th: "text-center border-r-4  border-white rounded-2xl rounded-t-none  text-sm lg:text-md xl:text-lg bg-livered-title text-white",
+            th: "text-center border-r-4  border-white rounded-2xl rounded-t-none  text-sm lg:text-md xl:text-md 2xl:text-lg bg-livered-title text-white",
             // thead: " border-b-[20px] space-x-1 ",
             tr: "even:bg-gray-200 bg-gray-100 ",
         }}

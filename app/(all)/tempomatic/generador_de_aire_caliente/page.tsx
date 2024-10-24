@@ -147,7 +147,7 @@ export default function GeneradoDeAireCalientePage() {
 
                 <p className="w-4/5 font-lexend text-[#4C4B4B] text-[1.8vw] leading-tight">
                     La línea de <span className="text-[#FF7800] font-nunito-bolder">GENERADORES DE AIRE CALIENTE TEMPOMATIC</span> ha sido diseñada para dar 
-                    <span className="text-[#FF7800]"> soluciones de </span> por aire caliente a requerimientos de 
+                    <span className="text-[#FF7800]"> soluciones </span> por aire caliente a requerimientos de 
                     <span className="text-[#FF7800]"> extrema confiabilidad</span>.
 
                 </p>
@@ -192,11 +192,11 @@ export default function GeneradoDeAireCalientePage() {
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">2</span> GABINETE</h1>
-                            <p className="text-[1.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminacíon en pintura horneada.</p>
+                            <p className="text-[1.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminación en pintura horneada.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">3</span> QUEMADOR</h1>
-                            <p className="text-[1.3vw] text-midgray">Tipo monoblock, con altos valores de combustión. Fácil mantenimiento y limpiezo. Funcionamiento con gas natural, envasado o gas oil, totalmente automático con control electrónico.</p>
+                            <p className="text-[1.3vw] text-midgray">Tipo monoblock, con altos valores de combustión. Fácil mantenimiento y limpieza. Funcionamiento con gas natural, envasado o gas oil, totalmente automático con control electrónico.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">4</span> MOTOR</h1>
@@ -208,7 +208,7 @@ export default function GeneradoDeAireCalientePage() {
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">6</span> VENTILADOR</h1>
-                            <p className="text-[1.3vw] text-midgray">Centrifugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas. <br/> Nuevo soporte de grupo ventilador para multiposición.</p>
+                            <p className="text-[1.3vw] text-midgray">Centrífugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas. <br/> Nuevo soporte de grupo ventilador para multiposición.</p>
                         </li>  
 
                     </ul>
@@ -400,7 +400,7 @@ export default function GeneradoDeAireCalientePage() {
                         </thead>
                         <tbody>
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">CAPACIDAD (KCAL/H)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Capacidad (KCAL/H)</td>
                                 <td>40.000</td>
                                 <td>50.000</td>
                                 <td>65.000</td>
@@ -416,7 +416,7 @@ export default function GeneradoDeAireCalientePage() {
                             </tr>
                                                         
                             <tr className="bg-[#f7f7f7] text-[1.48vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">POTENCIA DEL QUEMADOR (KCAL/H)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Potencia del quemado (KCAL/H)</td>
                                 <td>50.000</td>
                                 <td>70.000</td>
                                 <td>80.000</td>
@@ -431,7 +431,7 @@ export default function GeneradoDeAireCalientePage() {
                             </tr>
                             
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">CONSUMO DE GAS NATURAL (M3/H)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Consumo de gas natural (M3/H)</td>
                                 <td>5,4</td>
                                 <td>7,5</td>
                                 <td>8,6</td>
@@ -444,7 +444,7 @@ export default function GeneradoDeAireCalientePage() {
 
                             </tr>
                             <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">CAUDAL DE AIRE (M3/H)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Ccaudal de aire (M3/H)</td>
                                 <td>3.600</td>
                                 <td>5.400</td>
                                 <td>6.300</td>
@@ -457,7 +457,7 @@ export default function GeneradoDeAireCalientePage() {
                             </tr>
 
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">CONTRAPRESÍON (MMCA)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Contrapresión (MMCA)</td>
                                 <td>25</td>
                                 <td>25</td>
                                 <td>25</td>
@@ -470,7 +470,7 @@ export default function GeneradoDeAireCalientePage() {
                             </tr>
 
                             <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">POTENCIA MOTOR (HP)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Potencia motor (HP)</td>
                                 <td>1</td>
                                 <td>1,5</td>
                                 <td>2</td>
@@ -482,7 +482,7 @@ export default function GeneradoDeAireCalientePage() {
                             </tr>
 
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">POTENCIA CONSUMIDA (HP)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Potencia consumida (HP)</td>
                                 <td>0,8</td>
                                 <td>1,35</td>
                                 <td>1,6</td>
@@ -494,7 +494,7 @@ export default function GeneradoDeAireCalientePage() {
                             </tr>
                             
                             <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">CONEXIÓN DE GAS (PULG)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Conexión de gas (PULG)</td>
                                 <td>1/2</td>
                                 <td>3/4</td>
                                 <td>3/4</td>
@@ -506,7 +506,7 @@ export default function GeneradoDeAireCalientePage() {
                             </tr>
 
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">PESO APROX. SIN QUEMADOR (kg)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Peso aprox. sin quemador (kg)</td>
                                 <td>145</td>
                                 <td>225</td>
                                 <td>285</td>
@@ -599,7 +599,7 @@ export default function GeneradoDeAireCalientePage() {
                     <h2 className="text-[5.7vw] lg:text-[2.7vw] mt-0 lg:mt-2 font-lexend-bold"><span className="text-[#FF7800]">grandes dimensiones</span>.</h2>
                     <p className="w-full mt-4 font-lexend text-[#4C4B4B] text-[4.3vw] leading-tight">
                         La línea de <span className="text-[#FF7800] font-nunito-bolder">GENERADORES DE AIRE CALIENTE TEMPOMATIC</span> ha sido diseñada para dar 
-                        <span className="text-[#FF7800]"> soluciones de </span> por aire caliente a requerimientos de 
+                        <span className="text-[#FF7800]"> soluciones </span> por aire caliente a requerimientos de 
                         <span className="text-[#FF7800]"> extrema confiabilidad</span>.
                     </p>
                     <div className=" flex justify-end">
@@ -630,11 +630,11 @@ export default function GeneradoDeAireCalientePage() {
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">2</span> GABINETE</h1>
-                                <p className="text-[4.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminacíon en pintura horneada.</p>
+                                <p className="text-[4.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminación en pintura horneada.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">3</span> QUEMADOR</h1>
-                                <p className="text-[4.3vw] text-midgray">Tipo monoblock, con altos valores de combustión. Fácil mantenimiento y limpiezo. Funcionamiento con gas natural, envasado o gas oil, totalmente automático con control electrónico.</p>
+                                <p className="text-[4.3vw] text-midgray">Tipo monoblock, con altos valores de combustión. Fácil mantenimiento y limpieza. Funcionamiento con gas natural, envasado o gas oil, totalmente automático con control electrónico.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">4</span> MOTOR</h1>
@@ -646,7 +646,7 @@ export default function GeneradoDeAireCalientePage() {
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">6</span> VENTILADOR</h1>
-                                <p className="text-[4.3vw] text-midgray">Centrifugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas. <br/> Nuevo soporte de grupo ventilador para multiposición.</p>
+                                <p className="text-[4.3vw] text-midgray">Centrífugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas. <br/> Nuevo soporte de grupo ventilador para multiposición.</p>
                             </li>  
                         </ul>
                         <div className="w- pr-[3%] pl-[5vw] mt-2">

@@ -82,29 +82,29 @@ export default function DTIPage() {
             <section className="w-full flex justify-between px-[3%] mt-4">
                 <Image
                     alt="Home banner 1"
-                    className=" pt-8 lg:pt-24 pr-4 lg:pl-4"
+                    className=" pt-8 lg:pt-24 pr-4 lg:pl-[12%]"
                     radius="none"
                     src="../img/electrotermalogoletrasNoPadding.png"
-                    width={`${BigScreen ? 100 : 80}%`}
+                    width={`${BigScreen ? 80 : 80}%`}
                 />
                 <Image
                     alt="Home banner 1"
                     className=" "
                     radius="none"
                     src="../img/dti/DtiDuctosTextilesLogo.png"
-                    width={`${BigScreen ? 100 : 80}%`}
+                    width={`${BigScreen ? 80 : 80}%`}
                 />
             </section>
 
             {/* ------------- Distribución de aire ------------- */}
-            <section className="w-full flex justify-between pl-[11%] lg:pl-[9%] mb-2 lg:mt-0">
-                <h1 className="text-[2.5vw] font-lexend-bold">Distribución de aire</h1>
+            <section className="w-full flex justify-between pl-[11%] lg:pl-[9%] mb-2 lg:mb-0 mt-0 lg:mt-4">
+                <h1 className="text-[2.5vw] lg:text-[2.0vw] font-lexend-bold">Distribución de aire</h1>
             </section>
 
             {/* ------------- DUCTOS TEXTILES ------------- */}
             <section className="w-full flex flex-row items-center justify- pl-[5vw] -mt-4">
                 <VinietaNaranjaSVG css=" h-[20px] w-[10px] md:h-[50px] md:h-[30px] lg:h-[60px] lg:w-[55px]"/>
-                <h1 className="text-[7.5vw]  lg:text-[5.5vw] font-nunito-bolder text-livered-title ml-3">DUCTOS TEXTILES</h1>
+                <h1 className="text-[7.5vw]  lg:text-[5.0vw] font-nunito-bolder text-livered-title ml-3">DUCTOS TEXTILES</h1>
             </section>
 
             {/* -------------PARRAFO CON COMILLAS ------------- */}
@@ -135,7 +135,7 @@ export default function DTIPage() {
                         <span className="">líder en ductos textiles, para ofrecer soluciones de distribución</span><br/>
                         <span className="">de aire que marcan la diferencia.</span><br/>
                         <br/>
-                        <span className="">Nuestros equipos de diseño e ingeniería crean <span className="font-nunito-bolder">sistemas HVAC</span></span><br/>
+                        <span className="">Nuestros equipos de diseño e ingeniería crean en conjunto <span className="font-nunito-bolder">sistemas de HVAC</span></span><br/>
                         <span className="">personalizados que responden a las necesidades más exigentes.</span><br/>
 
                     </p>
@@ -145,7 +145,7 @@ export default function DTIPage() {
                 {/* -------------PARRAFO CON COMILLAS MOBILE------------- */}
                         
                         <div className="z-20 absolute 
-                            top-[20%] xm:top-[10%] sm:top-[6%] md:top-[12%] lg:top-[5%] 
+                            top-[15%] xm:top-[10%] sm:top-[6%] md:top-[12%] lg:top-[5%] 
                             left-[3.5%] lg:left-[20%] 
                             w-[5vw] 
                             ">
@@ -164,8 +164,9 @@ export default function DTIPage() {
                         <span className=""> con <span className="font-nunito-bolder">DTI</span>, líder en ductos textiles, para ofrecer soluciones </span><br/>
                         <span className="">de distribución de aire que marcan la diferencia.</span><br/>
                         <br/>
-                        <span className="">Nuestros equipos de diseño e ingeniería crean <span className="font-nunito-bolder">sistemas HVAC</span></span><br/>
-                        <span className="">personalizados que responden a las necesidades más exigentes.</span><br/>
+                        <span className="">Nuestros equipos de diseño e ingeniería crean </span><br/>
+                        <span className=""> en conjunto <span className="font-nunito-bolder">sistemas de HVAC</span> personalizados</span><br/>
+                        <span className=""> que responden a las necesidades más exigentes.</span><br/>
                     </p>
                 }
                 <div className="">
@@ -189,7 +190,7 @@ export default function DTIPage() {
             </section>
 
             {/* ------------- Columna de diferenciales ------------- */}
-            {BigScreen ? <section className="w-full px-[10%] -mt-12 gap-32 mt- flex flex-col-2 items-cente justify-center">
+            {BigScreen ? <section className="w-full px-[15%] -mt-12 gap-32 mt- flex flex-col-2 items-cente justify-center">
                 {/* <div className="px-10"> */}
                     <Image
                         alt="Home banner 1 w-1/2"

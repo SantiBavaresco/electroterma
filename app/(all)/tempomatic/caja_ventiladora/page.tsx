@@ -193,11 +193,11 @@ export default function CajaVentiladoraPage() {
                         </li>  
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">3</span> VENTILADOR SOLER & PALAU</h1>
-                            <p className="text-[1.3vw] text-midgray">Centrifugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas.</p>
+                            <p className="text-[1.3vw] text-midgray">Centrífugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">4</span> SISTEMA ELÉCTRICO</h1>
-                            <p className="text-[1.3vw] text-midgray">Seleccionador rotativo para ganrantizar la protección en el mantenimiento.</p>
+                            <p className="text-[1.3vw] text-midgray">Seleccionador rotativo para garantizar la protección en el mantenimiento.</p>
                         </li>  
 
                     </ul>
@@ -638,11 +638,11 @@ export default function CajaVentiladoraPage() {
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">3</span> VENTILADOR SOLER & PALAU</h1>
-                                <p className="text-4.3vw] text-midgray">Centrifugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas.</p>
+                                <p className="text-4.3vw] text-midgray">Centrífugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">4</span> SISTEMA ELÉCTRICO</h1>
-                                <p className="text-[4.3vw] text-midgray">Seleccionador rotativo para ganrantizar la protección en el mantenimiento.</p>
+                                <p className="text-[4.3vw] text-midgray">Seleccionador rotativo para garantizar la protección en el mantenimiento.</p>
                             </li> 
 
                         </ul>

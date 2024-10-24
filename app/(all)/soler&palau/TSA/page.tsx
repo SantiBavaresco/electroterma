@@ -598,7 +598,7 @@ export default function TSAPage() {
                       ">
                         <div className="ml-[3%] h-full  flex flex-col justify-center items-center lg:flex-row lg:grow">
 
-                        <div className="min-h-[55vh] w-full lg:min-h-[45vh] ">
+                            <div className="min-h-[55vh] w-full 2xl:w-3/5 lg:min-h-[45vh] ">
                                 <h1 className="flex items-center justify-start py-4  md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder me-auto  text-livered-title  
                                 ">
                                    <VinietaRojaSVG size={40} /> CARACTERÍSTICAS TÉCNICAS
@@ -607,7 +607,7 @@ export default function TSAPage() {
                                 
                                
                             </div>
-                            <div className=" w-full my-auto flex justify-center items-center">
+                            <div className=" w-full 2xl:w-2/5 my-auto flex justify-center items-center">
                             {/* ----------------- Specs Web ----------------- */}
                                 <div className=" w-full  ms-auto overflow ">
                                         <div

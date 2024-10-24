@@ -180,23 +180,23 @@ export default function CalefactorElectricoPage() {
                     <ul className="w-2/5 font-nunito space-y-8 mt-10">
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">1</span> RESISTENCIAS</h1>
-                            <p className="text-[1.3vw] text-midgray">Construcción indrustrial, blindadas y aletadas.</p>
+                            <p className="text-[1.3vw] text-midgray">Construcción industrial, blindadas y aletadas.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">2</span> SISTEMAS DE SEGURIDAD</h1>
-                            <p className="text-[1.3vw] text-midgray">Termostato límite para prcotección ante falta de caudal de aire mínimo.</p>
+                            <p className="text-[1.3vw] text-midgray">Termostato límite para protección ante falta de caudal de aire mínimo.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">3</span> GABINETE</h1>
-                            <p className="text-[1.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminacíon en pintura horneada.</p>
+                            <p className="text-[1.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminación en pintura horneada.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">4</span> SISTEMA ELÉCTRICO</h1>
-                            <p className="text-[1.3vw] text-midgray">Compuesto de tablero de fuerza y comando, instalción eléctrica y panel de comando.</p>
+                            <p className="text-[1.3vw] text-midgray">Compuesto de tablero de fuerza y comando, instalación eléctrica y panel de comando.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">5</span> VENTILADOR</h1>
-                            <p className="text-[1.3vw] text-midgray">Centrifugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas.</p>
+                            <p className="text-[1.3vw] text-midgray">Centrífugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">6</span> MOTOR</h1>
@@ -506,23 +506,23 @@ export default function CalefactorElectricoPage() {
                         <ul className="w-2/ font-nunito space-y-4 mt-0">
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">1</span> RESISTENCIAS</h1>
-                                <p className="text-[4.3vw] text-midgray">Construcción indrustrial, blindadas y aletadas.</p>
+                                <p className="text-[4.3vw] text-midgray">Construcción industrial, blindadas y aletadas.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">2</span> SISTEMAS DE SEGURIDAD</h1>
-                                <p className="text-[4.3vw] text-midgray">Termostato límite para prcotección ante falta de caudal de aire mínimo.</p>
+                                <p className="text-[4.3vw] text-midgray">Termostato límite para protección ante falta de caudal de aire mínimo.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">3</span> GABINETE</h1>
-                                <p className="text-4.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminacíon en pintura horneada.</p>
+                                <p className="text-4.3vw] text-midgray">Tapas desmontables, revestido en paneles aislantes de lana de vidrio y terminación en pintura horneada.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">4</span> SISTEMA ELÉCTRICO</h1>
-                                <p className="text-[4.3vw] text-midgray">Compuesto de tablero de fuerza y comando, instalción eléctrica y panel de comando.</p>
+                                <p className="text-[4.3vw] text-midgray">Compuesto de tablero de fuerza y comando, instalación eléctrica y panel de comando.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">5</span> VENTILADOR</h1>
-                                <p className="text-[4.3vw] text-midgray">Centrifugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas.</p>
+                                <p className="text-[4.3vw] text-midgray">Centrífugo multipalas, balanceado estática y dinámicamente de doble entrada, con transmisión por correas.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">6</span> MOTOR</h1>

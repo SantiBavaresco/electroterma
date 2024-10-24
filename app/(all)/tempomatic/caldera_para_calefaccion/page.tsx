@@ -125,7 +125,7 @@ export default function CalderaParaCalefaccionPage() {
                         <h1 className="text-[#FF7800]">CALDERA PARA</h1>
                         <h1 className="text-[#FF7800]">CALEFACCIÓN</h1>
 
-                        <h2 className="text-[4.7vw] lg:text-[2.7vw] mt-[1vw] font-lexend-bold">Dan solución a las necesidades</h2>
+                        <h2 className="text-[4.7vw] lg:text-[2.7vw] mt-[1vw] font-lexend-bold">Da solución a las necesidades</h2>
                         <h2 className="text-[4.7vw] lg:text-[2.7vw] mt-3 lg:mt-2 font-lexend-bold">de agua caliente <span className="text-[#FF7800]">para sistemas</span></h2>
                         <h2 className="text-[4.7vw] lg:text-[2.7vw] mt-3 lg:mt-2 font-lexend-bold text-[#FF7800]">de piso radiante, radiadores,</h2>
                         <h2 className="text-[4.7vw] lg:text-[2.7vw] mt-3 lg:mt-2 font-lexend-bold text-[#FF7800]">fan-coils, agua de piscinas</h2>
@@ -470,7 +470,7 @@ export default function CalderaParaCalefaccionPage() {
 
                 {/* ------------- PARRAFO ------------- */}
                 <section className="w-full px-[5%] text-[#4C4B4B] -mt-0 flex flex-col">
-                    <h2 className="text-[5.2vw] lg:text-[2.5vw] mt-[1vw] font-lexend-bold">Dan solución a las necesidades </h2>
+                    <h2 className="text-[5.2vw] lg:text-[2.5vw] mt-[1vw] font-lexend-bold">Da solución a las necesidades </h2>
                     <h2 className="text-[5.2vw] lg:text-[2.vw] mt-0 lg:mt-2 font-lexend-bold">de agua caliente <span className="text-[#FF7800]"> para sistemas </span>.</h2>
                     <h2 className="text-[5.2vw] lg:text-[2.7vw] mt-[1vw] font-lexend-bold text-[#FF7800]">de piso radiante, radiadores,</h2>
                     <h2 className="text-[5.2vw] lg:text-[2.7vw] mt-[1vw] font-lexend-bold text-[#FF7800]"> fan-coils, agua de piscinas </h2>
