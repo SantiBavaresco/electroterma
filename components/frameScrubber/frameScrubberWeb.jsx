@@ -8,7 +8,6 @@ import "./styles1.css";
 
 // import "./scrubbing.js"
 import { Chip } from "@nextui-org/chip";
-// import { Reveal } from "@/components/revealFramemotion";
 
 // import ScrollyVideo from "scrolly-video/dist/ScrollyVideo.cjs.jsx";
 
