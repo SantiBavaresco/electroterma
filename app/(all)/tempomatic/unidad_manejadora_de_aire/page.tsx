@@ -437,7 +437,7 @@ export default function UnidadManejadoraDeAirePage() {
 
             {/* -------------BOTON MANUAL ------------- */}
             <section className="w-full px-[6%] mt-10 flex justify-end">
-                    <ManualButtonNaranja size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../.pdf"} dwName={"Manual.pdf"}/>
+                    <ManualButtonNaranja size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/05. Folleto unidad manejadora de aire.pdf"} dwName={"05. Folleto unidad manejadora de aire.pdf"}/>
             </section>
             </>
             :
@@ -537,7 +537,7 @@ export default function UnidadManejadoraDeAirePage() {
 
                 {/* -------------BOTON MANUAL ------------- */}
                 <section className="w-full px-[6%] lg:mt-4 flex justify-center">
-                        <ManualButtonNaranja size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../.pdf"} dwName={"Manual.pdf"}/>
+                        <ManualButtonNaranja size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/05. Folleto unidad manejadora de aire.pdf"} dwName={"05. Folleto unidad manejadora de aire.pdf"}/>
                 </section>
                 {/* ------------- Imagenes presentacion ------------- */}
                 <section className="w-full flex items-center justify-center mx-auto p-0 bg-transparent space-x-0">

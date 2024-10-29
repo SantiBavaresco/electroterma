@@ -553,7 +553,7 @@ export default function CajaVentiladoraPage() {
                         />
                         </a>
                     
-                    <ManualButtonNaranja size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../.pdf"} dwName={"Manual.pdf"}/>
+                    <ManualButtonNaranja size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/04. Folleto Caja ventiladora.pdf"} dwName={"04. Folleto Caja ventiladora.pdf"}/>
             </section>
             </>
             :
@@ -668,7 +668,7 @@ export default function CajaVentiladoraPage() {
                             width="100%"
                         />
                         </a>
-                        <ManualButtonNaranja size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../.pdf"} dwName={"Manual.pdf"}/>
+                        <ManualButtonNaranja size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/04. Folleto Caja ventiladora.pdf"} dwName={"04. Folleto Caja ventiladora.pdf"}/>
                 </section>
                 {/* ------------- Imagenes presentacion ------------- */}
                 <section className="w-full flex items-center justify-center mx-auto p-0 bg-transparent space-x-0">
