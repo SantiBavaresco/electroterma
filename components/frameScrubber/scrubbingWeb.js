@@ -95,11 +95,11 @@ const updateImage = (index) => {
     console.log("img n°: ",imgArray[index]);
 
     // context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
-    if(keyAttribute === "home") context.drawImage(imgArray[index], 250, -40, 1080, 608, 0, 0, canvas.width, canvas.height)
+    if(keyAttribute === "home") context.drawImage(imgArray[index], 250, -40, 1920, 1080, 0, 0, canvas.width, canvas.height)
     else
     (window.innerWidth <= 768 ) ?
         context.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
-        : context.drawImage(imgArray[index], 0, 0, 1080, 608, 0, 0, canvas.width, canvas.height)
+        : context.drawImage(imgArray[index], 0, 0, 1920, 1080, 0, 0, canvas.width, canvas.height)
 
     
 };
