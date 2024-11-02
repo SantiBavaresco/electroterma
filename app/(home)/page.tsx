@@ -105,7 +105,7 @@ export default function Home() {
                 {BigScreen ? 
                 <p>
                 {/* -------------PARRAFO CON COMILLAS WEB------------- */}
-                    <div className="z-20 absolute 
+                    <span className="z-20 absolute 
                         top-[30%] xs:top-[20%] xm:top-[14%] sm:top-[15%] md:top-[10%] lg:top-[5%] xl:top-[1%]  2xl:-top-[10%] 
                         left-[0.5%] lg:left-[24%] xl:left-[25%] 2xl:left-[23.5%]
                         w-[7vw] lg:w-[4vw]
@@ -117,7 +117,7 @@ export default function Home() {
                             src="../../img/home/homeBanner/comillas.png"
                             width="100%"
                         />
-                    </div>
+                    </span>
 
                     <span className="">Desarrollamos productos innovadores y de calidad</span><br/>
                     <span className="">para soluciones en  <span className="  font-lexend-bold">termomecánica&quot;</span></span><br/>
@@ -125,7 +125,7 @@ export default function Home() {
                 :
                 <p>
                 {/* -------------PARRAFO CON COMILLAS MOBILE------------- */}
-                    <div className="z-20 absolute 
+                    <span className="z-20 absolute 
                         top-[35%] xs:top-[20%] xm:top-[17%] sm:top-[15%] md:top-[10%] lg:top-[5%] xl:top-[1%]  2xl:-top-[10%] 
                         left-[11.5%] lg:left-[24%] xl:left-[25%] 2xl:left-[23.5%]
                         w-[5vw] lg:w-[4vw]
@@ -137,7 +137,7 @@ export default function Home() {
                             src="../../img/home/homeBanner/comillas.png"
                             width="100%"
                         />
-                    </div>
+                    </span>
 
                     <span className="">Desarrollamos productos innovadores y </span><br/>
                     <span className="">de calidad para soluciones</span><br/>
@@ -155,9 +155,10 @@ export default function Home() {
             {BigScreen ? <section className="relative w-full h-[58vw] lg:h-[51vw] bg-gray-00 overflow-hidden">
                 <section className="z-10 mx-[3%] flex flex-row gap-[2%]">
                     {/* ------------- TEMPOMATIC ------------- */}
-                    <div
+                    <a
 						className="z-10 cursor-pointer w-[30%] hover:opacity-80 hover:translate-y-1 " 
-                        onClick={()=>handleAnchor("/tempomatic")}
+                        // onClick={()=>handleAnchor("/tempomatic")}
+                        href="/tempomatic"
 					>
                     <>
                         <Image  
@@ -178,12 +179,13 @@ export default function Home() {
                             />
                         </div>
                     </>
-                    </div>
+                    </a>
 
                     {/* ------------- SOLER Y PALAU ------------- */}
-                    <div
+                    <a
 						className="z-10 cursor-pointer w-[30%] hover:opacity-80 hover:translate-y-1 " 
-                        onClick={()=>handleAnchor("/soler&palau")}
+                        // onClick={()=>handleAnchor("/soler&palau")}
+                        href="/soler&palau"
 					>
                     <>
                         <Image  
@@ -203,12 +205,13 @@ export default function Home() {
                             />
                         </div>
                     </>
-                    </div>
+                    </a>
 
                 {/* ------------- DTI ------------- */}
-                    <div
+                    <a
 						className="z-10 cursor-pointer w-[30%] hover:opacity-80 hover:translate-y-1 " 
-                        onClick={()=>handleAnchor("/dti")}
+                        // onClick={()=>handleAnchor("/dti")}
+                        href="/dti"
 					>
                     <>
                         <Image  
@@ -228,12 +231,13 @@ export default function Home() {
                             />
                         </div>
                     </>
-                    </div>
+                    </a>
 
                     {/* ------------- ZILA ------------- */}
-                    <div
+                    <a
 						className="z-10 cursor-pointer w-[30%] hover:opacity-80 hover:translate-y-1 " 
-                        onClick={()=>handleAnchor("/zila")}
+                        // onClick={()=>handleAnchor("/zila")}
+                        href="/zila"
 					>
                     <>
                         <Image  
@@ -253,7 +257,7 @@ export default function Home() {
                             />
                         </div>
                     </>
-                    </div>
+                    </a>
                 </section>
 
                 {/* ------------- Lineas curvas ------------- */}
@@ -306,9 +310,10 @@ export default function Home() {
 
                 <section className="z-10 w-[95%] mx-[5%]  flex gap-[5%] mb-4">
                     {/* ------------- TEMPOMATIC ------------- */}
-                    <div
+                    <a
                         className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
-                        onClick={()=>handleAnchor("/tempomatic")}
+                        // onClick={()=>handleAnchor("/tempomatic")}
+                        href="/tempomatic"
                     >
                     <>
                         <Image  
@@ -329,12 +334,13 @@ export default function Home() {
                             />
                         </div>
                     </>
-                    </div>
+                    </a>
 
                     {/* ------------- SOLER Y PALAU ------------- */}
-                    <div
+                    <a
                         className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
-                        onClick={()=>handleAnchor("/soler&palau")}
+                        // onClick={()=>handleAnchor("/soler&palau")}
+                        href="/soler&palau"
                     >
                     <>
                         <Image  
@@ -354,16 +360,17 @@ export default function Home() {
                             />
                         </div>
                     </>
-                    </div>
+                    </a>
 
                
                 </section>
 
                 <section className="z-10 w-[95%] mx-[5%]  flex gap-[5%]">
                      {/* ------------- DTI ------------- */}
-                     <div
+                     <a
                         className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
-                        onClick={()=>handleAnchor("/dti")}
+                        // onClick={()=>handleAnchor("/dti")}
+                        href="/dti"
                     >
                     <>
                         <Image  
@@ -383,12 +390,13 @@ export default function Home() {
                             />
                         </div>
                     </>
-                    </div>
+                    </a>
 
                     {/* ------------- ZILA ------------- */}
-                    <div
+                    <a
                         className="z-10 cursor-pointer w-[45%] hover:opacity-80 hover:translate-y-1 " 
-                        onClick={()=>handleAnchor("/zila")}
+                        // onClick={()=>handleAnchor("/zila")}
+                        href="/zila"
                     >
                     <>
                         <Image  
@@ -408,7 +416,7 @@ export default function Home() {
                             />
                         </div>
                     </>
-                    </div>
+                    </a>
                     
                 </section>
 
@@ -469,7 +477,7 @@ export default function Home() {
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen Inicio"
-                    src={`../../img/home/${BigScreen ? "home" : "home"}.png`}
+                    src={`../../img/home/${BigScreen ? "home" : "homeMobile"}.png`}
                     width={"100%"}
                 />
             </section>

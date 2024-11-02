@@ -47,6 +47,7 @@ interface DataType {
 export const TableSolerPalau: React.FC<DataType> = ({ tableData, ...props }) => {
 // export default function TableSolerPalau() {
   return (
+    <div>
     <Table aria-label="Tabla de caracteristicas"
         classNames={{
             td:"text-center min-w-[4vw] text-sm lg:text-md 2xl:text-xl  3xl:text-xl",
@@ -66,6 +67,9 @@ export const TableSolerPalau: React.FC<DataType> = ({ tableData, ...props }) => 
           </TableRow>
         )}
       </TableBody>
+      
     </Table>
+    <h1 className="font-nunito text-livered text-[1.7vw] mt-2  text-right w-full">MEDIDAS EN MILÍMETROS</h1>
+    </div>
   );
 }

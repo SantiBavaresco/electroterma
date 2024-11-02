@@ -239,7 +239,7 @@ export default function GeneradoDeAireCalientePage() {
 
             {/* -------------INFO TECNICA ------------- */}
             <section className="w-full px-[6%] mt-[1vw] ">
-                <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFO TÉCNICA</h1>
+                <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFORMACIÓN TÉCNICA</h1>
                 
                     <div className="w-4/5 mx-auto ">
                         <Image
@@ -362,10 +362,10 @@ export default function GeneradoDeAireCalientePage() {
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td className="bg-[#FF7800] border-[#FF7800] py-3 text-right border-l- rounded-bl-[1.7vw]">INYEC</td>
-                                <td className="bg-[#FF7800] border-white pl-[0.%] text-left border-r-2 rounded-br-[1.7vw]">CIÓN</td>
-                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">TO</td>
-                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">MA</td>
+                                <td className="bg-[#FF7800] border-[#FF7800] py-3 pl-1 text-right border-l- rounded-bl-[1.7vw]">INYECCIÓN</td>
+                                <td className="bg-[#FF7800] border-white pr-1 text-left border-r-2 rounded-br-[1.7vw]">DE AIRE</td>
+                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">TOMA D</td>
+                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">E AIRE</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -373,7 +373,7 @@ export default function GeneradoDeAireCalientePage() {
                         </tbody>
                     </table>
 
-                <h1 className="font-nunito mt-2 text-[#FF7800] text-[1.6vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
+               
                 
             </section>
 
@@ -519,7 +519,7 @@ export default function GeneradoDeAireCalientePage() {
                             
                         </tbody>
                     </table>
-               
+                    <h1 className="font-nunito mt-2 text-[#FF7800] text-[1.6vw] text-right w-5/5">MEDIDAS EN MILÍMETROS</h1>
             </section>
 
             {/* ------------- CONFIGURACIONES  ------------- */}

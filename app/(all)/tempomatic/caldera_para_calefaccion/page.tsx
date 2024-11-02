@@ -193,15 +193,15 @@ export default function CalderaParaCalefaccionPage() {
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">3</span> SOLDADURA ELÉCTRICA CERTIFICADA</h1>
-                            <p className="text-[1.3vw] text-midgray">Según los requerimientos del código ANSI/AWS D1 3/98 (Entre certificador INTEMA/UNMDP).</p>
+                            <p className="text-[1.3vw] text-midgray">Según los requerimientos del código ANSI/AWS D1 3/98 (Ente certificador INTEMA/UNMDP).</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">4</span> ACCESORIOS</h1>
-                            <p className="text-[1.3vw] text-midgray">Ánodo de sacrificio para inhibir los procesos de corrosión, válvula de alivio por sobrepesión, purgador automático y válvula de limpieza.</p>
+                            <p className="text-[1.3vw] text-midgray">Ánodo de sacrificio para inhibir los procesos de corrosión, válvula de alivio por sobrepresión, purgador automático y válvula de limpieza.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">5</span> CUERPO</h1>
-                            <p className="text-[1.3vw] text-midgray">Cilíndro de posición vertical, fabricado de chapa F24 en espesores adecuados para garantizar una larga vida útil y soportar esfuerzos de origen termodinámico, électricamente soldado con sistema de electrodo contínuo. Aislación de lana de vidrio y revestimiento con chapa de acero inoxidable.</p>
+                            <p className="text-[1.3vw] text-midgray">Cilíndrico de posición vertical, fabricado de chapa F24 en espesores adecuados para garantizar una larga vida útil y soportar esfuerzos de origen termodinámico, eléctricamente soldado con sistema de electrodo contínuo. Aislación de lana de vidrio y revestimiento con chapa de acero inoxidable.</p>
                         </li> 
                         <li>
                             <h1 className="h-[10%] text-[2.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[1.8%] rounded-full">6</span> HOGAR</h1>
@@ -375,43 +375,51 @@ export default function CalderaParaCalefaccionPage() {
                         </thead>
                         <tbody>
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">POTENCIA MÁXIMA (Kcal/h)</td>
-                                <td>700</td>
-                                <td>1220</td>
-                                <td>420</td>
-                                <td>1125</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Potencia máxima (Kcal/h)</td>
+                                <td>80.000</td>
+                                <td>100.000</td>
+                                <td>150.000</td>
+                                <td>200.000</td>
                             </tr>
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">VOLUMEN DE AGUA (L)</td>
-                                <td>780</td>
-                                <td>1620</td>
-                                <td>480</td>
-                                <td>1290</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Volumen de agua (L)</td>
+                                <td>225</td>
+                                <td>385</td>
+                                <td>600</td>
+                                <td>760</td>
                             
                             </tr>
                                                         
                             <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">SUP. DE INTERCAMBIO (m2)</td>
-                                <td>870</td>
-                                <td>1855</td>
-                                <td>540</td>
-                                <td>1390</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Sup. de intecambio (m2)</td>
+                                <td>3,2</td>
+                                <td>5,3</td>
+                                <td>7,2</td>
+                                <td>10,2</td>
                             </tr>
                             
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">PESO EN VACÍO (Kg)</td>
-                                <td>925</td>
-                                <td>2060</td>
-                                <td>585</td>
-                                <td>1685</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Peso en vacío (Kg)</td>
+                                <td>215</td>
+                                <td>338</td>
+                                <td>452</td>
+                                <td>570</td>
+                            </tr>
+
+                            <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
+                                <td className="p-2 pl-[1.7vw]  text-left">Ppresión de trabajo (Kg/cm2)</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
                             </tr>
 
                             <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">CONSUMO DE GAS (m3/H)</td>
-                                <td>870</td>
-                                <td>1855</td>
-                                <td>540</td>
-                                <td>1390</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Consumo de gas (m3/H)</td>
+                                <td>8,6</td>
+                                <td>10,7</td>
+                                <td>16,1</td>
+                                <td>21,5</td>
                             </tr>
                             
                         </tbody>
@@ -506,15 +514,15 @@ export default function CalderaParaCalefaccionPage() {
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">3</span> SOLDADURA ELÉCTRICA CERTIFICADA</h1>
-                                <p className="text-[4.3vw] text-midgray">Según los requerimientos del código ANSI/AWS D1 3/98 (Entre certificador INTEMA/UNMDP).</p>
+                                <p className="text-[4.3vw] text-midgray">Según los requerimientos del código ANSI/AWS D1 3/98 (Ente certificador INTEMA/UNMDP).</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">4</span> ACCESORIOS</h1>
-                                <p className="text-[4.3vw] text-midgray">Ánodo de sacrificio para inhibir los procesos de corrosión, válvula de alivio por sobrepesión, purgador automático y válvula de limpieza.</p>
+                                <p className="text-[4.3vw] text-midgray">Ánodo de sacrificio para inhibir los procesos de corrosión, válvula de alivio por sobrepresión, purgador automático y válvula de limpieza.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">5</span> CUERPO</h1>
-                                <p className="text-[4.3vw] text-midgray">Cilíndro de posición vertical, fabricado de chapa F24 en espesores adecuados para garantizar una larga vida útil y soportar esfuerzos de origen termodinámico, électricamente soldado con sistema de electrodo contínuo. Aislación de lana de vidrio y revestimiento con chapa de acero inoxidable.</p>
+                                <p className="text-[4.3vw] text-midgray">Cilíndrico de posición vertical, fabricado de chapa F24 en espesores adecuados para garantizar una larga vida útil y soportar esfuerzos de origen termodinámico, eléctricamente soldado con sistema de electrodo contínuo. Aislación de lana de vidrio y revestimiento con chapa de acero inoxidable.</p>
                             </li> 
                             <li>
                                 <h1 className="h-[10%] text-[5.3vw] text-[#FF7800]"><span className="bg-[#FF7800] text-white px-[2.5%] rounded-full">6</span> HOGAR</h1>

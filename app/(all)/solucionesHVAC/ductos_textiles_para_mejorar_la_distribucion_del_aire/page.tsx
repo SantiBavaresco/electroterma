@@ -175,7 +175,7 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.8vw] font-nunito-bold lg:mt-16 mr-auto">Desarrollo de proyecto de distribución del aire para una industria con procesos de horneado, enfriamiento y envasado de productos</h2>
 
 						    <p className="">
-							El mismo incluía Unidades de Tratamiento de Aire <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic" target="_top">TEMPOMATIC</a>, pero el sistema de ductos a nivel de techo (a 11 metros de altura e inyección por difusores tradicionales) no aseguraba la llegada de aire tratado a los puestos de los operarios, generando elevadas cargas térmicas en determinados momentos del año.  
+							El mismo incluía <a className="text-[#EF771C] font-nunito-bold underline " href="/uta" target="_top">Unidades de Tratamiento de Aire TEMPOMATIC</a>, pero el sistema de ductos a nivel de techo (a 11 metros de altura e inyección por difusores tradicionales) no aseguraba la llegada de aire tratado a los puestos de los operarios, generando elevadas cargas térmicas en determinados momentos del año.  
 								 
 							</p>
 							
@@ -188,8 +188,8 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-">¿Cómo se resolvió la problemática?</h2>
 							
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-								Para este caso, desarrollamos una solución en conjunto con nuestros colegas de 
-								<a className="text-[#EF771C] font-nunito-bold underline " href="/dti" target="_top"> DTI</a>. Modificamos el sistema de distribución existente y lo complementamos con {" "}
+								Para este caso, desarrollamos una solución en conjunto con nuestros colegas de{" "}
+								<a className="text-[#EF771C] font-nunito-bold underline " href="/dti" target="_top">DTI</a>. Modificamos el sistema de distribución existente y lo complementamos con {" "}
 								<a className="text-[#EF771C] font-nunito-bold underline " href="/dti" target="_top">ductos textiles.</a>
 								{" "}La propuesta incorporó la generación de una distribución del aire en segundo plano y a 2,5 metros de altura, que se ubicó estratégicamente sobre los puestos de los operarios utilizando los mencionados ductos textiles. De esta manera se optimizó la distribución de aire tratado, eliminando las zonas de altas temperaturas y, en consecuencia, la disconformidad de los operarios. Se alcanzaron temperaturas más homogéneas en toda la nave sin la necesidad de modificar la capacidad del equipamiento instalada y acortando sus horas de uso/día.
 							</p>

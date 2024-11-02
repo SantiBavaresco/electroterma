@@ -44,7 +44,7 @@ export const DiferencialGranConfort : React.FC<Props> =  ({size, text, textSize,
 					
 					`}>
 
-					<span className="w-full pl-1 py-0 flex justify-start items-center">{text || "Grand confort"}</span>
+					<span className="w-full pl-1 py-0 flex justify-start items-center">{text || "Gran confort"}</span>
 				</p>
 				
 			</main>

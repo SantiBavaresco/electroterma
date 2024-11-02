@@ -217,7 +217,7 @@ export default function CalefactorElectricoPage() {
 
             {/* -------------INFO TECNICA ------------- */}
             <section className="w-full px-[6%] mt-[1vw] ">
-                <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFO TÉCNICA</h1>
+                <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFORMACIÓN TÉCNICA</h1>
                 
                     <div className="w-3/5 mx-auto ">
                         <Image
@@ -257,10 +257,10 @@ export default function CalefactorElectricoPage() {
                                 <td>555</td>
                                 <td>735</td>
                                 <td>1300</td>
-                                <td>415</td>
-                                <td>595</td>
-                                <td>425</td>
-                                <td>480</td>
+                                <td className="border-l-2 border-[#FF7800]">415</td>
+                                <td className="border-r-2 border-[#FF7800]">595</td>
+                                <td className="border-l-2 border-[#FF7800]">425</td>
+                                <td className="border-r-2 border-[#FF7800]">480</td>
                                 <td>35</td>
 
                             </tr>
@@ -269,10 +269,10 @@ export default function CalefactorElectricoPage() {
                                 <td>610</td>
                                 <td>825</td>
                                 <td>1315</td>
-                                <td>475</td>
-                                <td>595</td>
-                                <td>395</td>
-                                <td>450</td>
+                                <td className="border-l-2 border-[#FF7800]">475</td>
+                                <td className="border-r-2 border-[#FF7800]">595</td>
+                                <td className="border-l-2 border-[#FF7800]">395</td>
+                                <td className="border-r-2 border-[#FF7800]">450</td>
                                 <td>35</td>
 
                             </tr>
@@ -281,10 +281,10 @@ export default function CalefactorElectricoPage() {
                                 <td>610</td>
                                 <td>825</td>
                                 <td>1315</td>
-                                <td>475</td>
-                                <td>595</td>
-                                <td>395</td>
-                                <td>450</td>
+                                <td className="border-l-2 border-[#FF7800]">475</td>
+                                <td className="border-r-2 border-[#FF7800]">595</td>
+                                <td className="border-l-2 border-[#FF7800]">395</td>
+                                <td className="border-r-2 border-[#FF7800]">450</td>
                                 <td>35</td>
 
                             </tr>
@@ -293,10 +293,10 @@ export default function CalefactorElectricoPage() {
                                 <td>645</td>
                                 <td>835</td>
                                 <td>1350</td>
-                                <td>475</td>
-                                <td>655</td>
-                                <td>395</td>
-                                <td>495</td>
+                                <td className="border-l-2 border-[#FF7800]">475</td>
+                                <td className="border-r-2 border-[#FF7800]">655</td>
+                                <td className="border-l-2 border-[#FF7800]">395</td>
+                                <td className="border-r-2 border-[#FF7800]">495</td>
                                 <td>35</td>
 
                             </tr>
@@ -304,18 +304,31 @@ export default function CalefactorElectricoPage() {
                                 <td className="p-2 pl-[1.7vw] text-left">ET 54</td>
                                 <td>1135</td>
                                 <td>840</td>
-                                <td>1335</td>
-                                <td>1015</td>
-                                <td>715</td>
-                                <td>395</td>
-                                <td>1000</td>
+                                <td >1335</td>
+                                <td className="border-l-2 border-[#FF7800]">1015</td>
+                                <td className="border-r-2 border-[#FF7800]">715</td>
+                                <td className="border-l-2 border-[#FF7800]">395</td>
+                                <td className="border-r-2 border-[#FF7800]">1000</td>
                                 <td>35</td>
 
+                            </tr>
+
+                            <tr className="bg-white text-white text-[0.9vw] text-center">
+                                <td className=" pl-[1.7vw] text-left"></td>                   
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td className="bg-[#FF7800] border-[#FF7800] py-3 pl-1 text-right border-l- rounded-bl-[1.7vw]">TOMA D</td>
+                                <td className="bg-[#FF7800] border-white pr-1 text-left border-r-2 rounded-br-[1.7vw]">E AIRE</td>
+                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">INYECCIÓ<br/></td>
+                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">N DE AIRE</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             
                         </tbody>
                     </table>
-                    <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
                
             </section>
 
@@ -400,6 +413,7 @@ export default function CalefactorElectricoPage() {
                             </tr>
                         </tbody>
                     </table>
+                    <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
                
             </section>
 

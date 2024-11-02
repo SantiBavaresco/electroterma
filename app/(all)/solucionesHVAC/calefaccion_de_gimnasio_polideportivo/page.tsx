@@ -197,7 +197,7 @@ export default function Soluciones_calefaccion_de_gimnasio_polideportivo_Page() 
 								width="100%"
 							/>
 							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
-							Para aumentar la eficiencia energética del sistema, se puede instalar en el centro del gimnasio un <a className="text-[#EF771C] font-nunito-bold underline " href="/ceiling_fan" target="_top">CEILING FAN</a> de 7.2m de diámetro. El funcionamiento de este equipo evitará la estratificación del aire, impulsando el aire caliente de la parte alta del gimnasio hacia el piso del mismo, que es donde se requiere realmente el control de temperatura.
+							Para aumentar la eficiencia energética del sistema, se puede instalar en el centro del gimnasio un <span className="text-[#EF771C] font-nunito-bold underline " >CEILING FAN</span > de 7.2m de diámetro. El funcionamiento de este equipo evitará la estratificación del aire, impulsando el aire caliente de la parte alta del gimnasio hacia el piso del mismo, que es donde se requiere realmente el control de temperatura.
 							</p>
 							<Image
 								alt="Imagen 4"

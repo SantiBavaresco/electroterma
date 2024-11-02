@@ -165,7 +165,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 									className="  z-10 bg-[#EF771C] px-16 py-4  font-nunito text-white text-xl 2xl:text-3xl shadow-xl"
 									radius="full"
 									size={BigScreen ? "lg" : "lg"}
-									onClick={()=>(window.open("/solucionesHVAC/ductos_textiles_para_mejorar_la_distribucion_del_aire", "_top"))}
+									onClick={()=>(window.open("/dti", "_top"))}
 								>
 									Saber más
 								</Button>
@@ -260,7 +260,7 @@ export default function Soluciones_ventilacion_nave_industrial_Page() {
 							<ul>
 								<li>
 									<span className="text-[#EF771C]">»</span> Para la <span className="text-[#EF771C] font-nunito-bold"> inyección </span>, se instalaran 6 Cajas Ventiladoras Tempomatic modelo CV 665 - 045 de 40.000 m3/hora (contra 45mmca) con distribución de aire mediante {" "}
-									<a className="text-[#EF771C] font-nunito-bold underline " href="/solucionesHVAC/ductos_textiles_para_mejorar_la_distribucion_del_aire" target="_top">Ductos Textiles DTI</a>.
+									<a className="text-[#EF771C] font-nunito-bold underline " href="/dti" target="_top">Ductos Textiles DTI</a>.
 								</li>
 								<br/>
 								<li>

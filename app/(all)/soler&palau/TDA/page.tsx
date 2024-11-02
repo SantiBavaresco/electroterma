@@ -393,7 +393,7 @@ export default function TDAPage() {
                             
                             overflow-hidden">
                             
-                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../TDA.pdf"} dwName={"TDA Manual.pdf"}/>
+                            <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/tda.pdf"} dwName={"TDA Manual.pdf"}/>
                             
                     </section>
                 </div>
@@ -501,11 +501,9 @@ export default function TDAPage() {
                         h-[100%] w-[100%] min-h-[100%] max-w-[100%]  ml-auto
 
                         
-                        bg-[url('/svg/ondas022.svg')] bg-fill
-                        bg-[center_1rem] bg-no-repeat
                     
                     ">
-                        <div className="ml-[%] h-full  flex flex-col justify-center items-center ">
+                        <div className="hidden ml-[%] h-full  lg:flex flex-col justify-center items-center ">
                             <h1 className="  mx-auto pt-10 py-4 xs:text-lg xm:text-2xl md:text-3xl  leading-none font-nunito-bolder me-auto  text-livered-title  
                                 ">
                                     CARACTERÍSTICAS TÉCNICAS
@@ -515,7 +513,7 @@ export default function TDAPage() {
                                 
                             
                             {/* ----------------- Specs Web ----------------- */}
-                                <div className=" w-full ms-auto overflow ">
+                                <div className="  w-full ms-auto overflow ">
                                         <div
                                                 className=" my-10 mx-auto  px-4 z-10
                                             

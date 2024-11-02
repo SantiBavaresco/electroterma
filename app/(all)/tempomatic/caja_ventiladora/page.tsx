@@ -201,7 +201,7 @@ export default function CajaVentiladoraPage() {
                         </li>  
 
                     </ul>
-                    <div className="w-3/5 pr-[10%] mt-10">
+                    <div className="w-3/5 px-[5%] mt-10">
                         <Image
                             alt="Home banner 1"
                             className=""
@@ -214,7 +214,7 @@ export default function CajaVentiladoraPage() {
 
             {/* -------------INFO TECNICA ------------- */}
             <section className="w-full px-[6%] mt-[1vw] ">
-                <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFO TÉCNICA</h1>
+                <h1 className="font-nunito-bolder text-[#FF7800] text-[3.3vw]">INFORMACIÓN TÉCNICA</h1>
                 
                     <div className="w-full ">
                         <Image
@@ -414,10 +414,10 @@ export default function CajaVentiladoraPage() {
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td className="bg-[#FF7800] border-[#FF7800] py-3 text-right border-l- rounded-bl-[1.7vw]">INYECCIÓ</td>
-                                <td className="bg-[#FF7800] border-white pl-[0.0%] text-left border-r-2 rounded-br-[1.7vw]">N DE AIRE</td>
-                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">TOMA D</td>
-                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">E AIRE</td>
+                                <td className="bg-[#FF7800] border-[#FF7800] py-3 text-right border-l- rounded-bl-[1.7vw]">TOMA D</td>
+                                <td className="bg-[#FF7800] border-white pl-[0.0%] text-left border-r-2 rounded-br-[1.7vw]">E AIRE</td>
+                                <td className="bg-[#FF7800]  text-right border-l-2 rounded-bl-[1.7vw]">INYECCIÓ</td>
+                                <td className="bg-[#FF7800]  border-[#FF7800] pl-[0%] text-left border-r- rounded-br-[1.7vw]">N DE AIRE</td>
                                 <td></td>
                             </tr>
 

@@ -79,8 +79,8 @@ const updateImage = (index) => {
 
     // context.drawImage(imgArray[index], 0, 0, 531, 299, 0, 0, canvas.width, canvas.height);
     (window.innerWidth <= 768 ) ?
-        context?.drawImage(imgArray[index], 0, 0, 500, 1000, 0, 50, canvas.width, canvas.height)
-        : context?.drawImage(imgArray[index], 0, 0, 1000, 563, 0, 0, canvas.width, canvas.height)
+        context?.drawImage(imgArray[index], 0, 0, 480, 880, 0, 10, canvas.width, canvas.height)
+        : context?.drawImage(imgArray[index], 0, 0, 900, 563, 0, 0, canvas.width, canvas.height)
 
     
 };
