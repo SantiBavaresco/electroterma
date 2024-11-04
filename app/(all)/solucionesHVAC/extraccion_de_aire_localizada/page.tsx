@@ -304,54 +304,53 @@ export default function Soluciones_extraccion_de_aire_localizada_Page() {
 							</p>
 						</div>
 						
-					{BigScreen || 
-					<>
-					{/* ------------------- MOBILE ------------------- */}
-					<section className="bg-[#F7F6F6] h rounded-3xl">
-						<div className="grid grid-cols-[40%_57%] gap-[3%] p-3 "> 
-							<div className=" bg-[#EF771C] rounded-2xl shadow-2xl">
-								<Image
-									alt="Banner 1"
-									className="p-1 px-1 pt-6	"
-									radius="none"
-									src="../../img/soluciones/extraccion_de_aire_localizada/Soluciones1.png"
-									// width="100%"
-									height="100%"
-									/> 
-							</div>
-							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
-								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
-									<h1 className="bg-[#EF771C] p-2 text-white text-[3.5vw] pl-[58px] -ml-10 mr-4 mt-2 rounded-r-2xl">Ventilador RLS</h1>
-									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
-										<Button
-											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											onClick={()=>(window.open("electroterma.com"))}
-										>
-											Saber más
-										</Button>
+						{BigScreen || 
+						<>
+						{/* ------------------- MOBILE ------------------- */}
+							<div className="space-y-2">
+								<section className="bg-[#F7F6F6] h rounded-3xl">
+									<div className="grid grid-cols-[40%_57%] gap-[3%] p-3 "> 
+										<div className=" bg-[#EF771C] rounded-2xl shadow-2xl">
+											<Image
+												alt="Banner 1"
+												className="p-2 px-	"
+												radius="none"
+												src="../../img/soluciones/extraccion_de_aire_localizada/Soluciones1.png"	
+												height="100%"
+												/> 
 										</div>
-								</div>
-								<div className="w-full h-[40%] bg-white rounded-2xl shadow-xl flex align-bottom justif	">
+										<div className="w-full  flex flex-row justify-center items-center gap-[%]">
+											<div className="h-max w-full flex flex-row " onClick={()=>(window.open("/soler&palau/RLS", "_top"))}>
+												<div className=" w-full py-auto flex items-center gap-1">
+													<div className="w-[90%]  rounded-l-[12px]  bg-[#EF771C]">
+														<h1 className="my-1 px-2 py-1 mr-1 font-lexend text-white text-[3.8vw] ">Ventilador RLS</h1>
+													</div>
+													<div className="w-[8%] h-full rounded-r-[12px] flex items-center justify-center bg-[#EF771C]">
+														<h1 className="text-white">+</h1>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
 									
-										<Button
-											className="mt-auto m-1 2 xm:mt-auto  ml-2 mb-2 z-10 bg-[#EF771C] xm:px-4 xm:py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											onClick={()=>(window.open("/solucionesHVAC", "_top"))}
-										>
-											Ver otras soluciones
-										</Button>
-									
-								</div>
+								</section>
+								<section>
+									<div className="h-full pr-[0vw] xm:pr-[16.5vw] flex flex-col items-center xm:items-end justify-center align-middle">
+										<a href="/solucionesHVAC"> 
+											<button
+												className="  z-10 bg-[#EF771C] px-2 py-2 rounded-[12px] font-nunito text-white text-sm 2xl:text-xl shadow-xl"
+												// radius="full"
+												// size={BigScreen ? "sm" : "sm"}
+											>
+												Ver otras soluciones
+											</button>
+										</a>
+									</div>
+								</section>
 							</div>
-
-						</div>
-					</section>
-					
-					</>
-					}
+						</>
+						}
 
 					</div>
 

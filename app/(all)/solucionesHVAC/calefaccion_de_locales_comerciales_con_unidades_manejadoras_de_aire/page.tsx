@@ -214,102 +214,54 @@ export default function Soluciones_calefaccion_de_locales_comerciales_con_unidad
 							
 						</div>
 						
+
 						{BigScreen || 
-					<>
-					{/* ------------------- MOBILE ------------------- */}
-
-					<section className="bg-[#F7F6F6] h rounded-3xl">
-						<div className="grid grid-cols-[40%_57%] gap-[3%] p-3 "> 
-							<div className=" bg-[#EF771C] rounded-2xl shadow-2xl">
-								<Image
-									alt="Banner 1"
-									className="p- px-2	pt-10"
-									radius="none"
-									src="../../img/soluciones/calefaccion_de_locales_comerciales_con_unidades_manejadoras_de_aire/Soluciones1.png"
-									// width="100%"
-									height="100%"
-									/> 
-							</div>
-							<div className=" h-full flex flex-col justify-center items-center gap-[5%]">
-								<div className="w-full h-[100%] xm:h-[50%] bg-white rounded-2xl shadow-xl flex flex-col">
-									<h1 className="bg-[#EF771C] px-2 text-white text-[3.5vw] pl-[58px] -ml-10 mr-4 mt-2 rounded-r-2xl">Unidad <br/> manejadora de aire</h1>
-									<div className="mt-auto m-1 xm:mb-2 xm:ml-2">
-										<Button
-											className=" w-auto z-10 bg-[#EF771C] p-1 py- px-4 xm:py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											onClick={()=>(window.open("/tempomatic/generador_de_aire_caliente", "_top"))}
-										>
-											Saber más
-										</Button>
+						<>
+						{/* ------------------- MOBILE ------------------- */}
+							<div className="space-y-2">
+								<section className="bg-[#F7F6F6] h rounded-3xl">
+									<div className="grid grid-cols-[40%_57%] gap-[3%] p-3 "> 
+										<div className=" bg-[#EF771C] rounded-2xl shadow-2xl">
+											<Image
+												alt="Banner 1"
+												className="p-2 px-	"
+												radius="none"
+												src="../../img/soluciones/calefaccion_de_locales_comerciales_con_unidades_manejadoras_de_aire/Soluciones1.png"	
+												height="100%"
+												/> 
 										</div>
-								</div>
-								<div className="w-full h-[40%] bg-white rounded-2xl shadow-xl flex align-bottom justif	">
+										<div className="w-full  flex flex-row justify-center items-center gap-[%]">
+											<div className="h-max w-full flex flex-row " onClick={()=>(window.open("/tempomatic/unidad_manejadora_de_aire", "_top"))}>
+												<div className=" w-full py-auto flex items-center gap-1">
+													<div className="w-[90%]  rounded-l-[12px]  bg-[#EF771C]">
+														<h1 className="my-1 px-2 py-1 mr-1 font-lexend text-white text-[3.8vw] ">Unidad <br/> manejadora de aire</h1>
+													</div>
+													<div className="w-[8%] h-full rounded-r-[12px] flex items-center justify-center bg-[#EF771C]">
+														<h1 className="text-white">+</h1>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
 									
-										<Button
-											className="mt-auto m-1 2 xm:mt-auto  ml-2 mb-2 z-10 bg-[#EF771C] xm:px-4 xm:py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											onClick={()=>(window.open("/solucionesHVAC", "_top"))}
-										>
-											Ver otras soluciones
-										</Button>
-									
-								</div>
+								</section>
+								<section>
+									<div className="h-full pr-[0vw] xm:pr-[16.5vw] flex flex-col items-center xm:items-end justify-center align-middle">
+										<a href="/solucionesHVAC"> 
+											<button
+												className="  z-10 bg-[#EF771C] px-2 py-2 rounded-[12px] font-nunito text-white text-sm 2xl:text-xl shadow-xl"
+												// radius="full"
+												// size={BigScreen ? "sm" : "sm"}
+											>
+												Ver otras soluciones
+											</button>
+										</a>
+									</div>
+								</section>
 							</div>
-
-						</div>
-					</section>
-{/* 
-					<section className="bg-white border-1 border-lowgray rounded-3xl shadow-2xl w-[99.5%] mt-2">
-						<div className=" grid grid-cols-[50%_40%] gap-[5%] p-3 ">
-							<div className=" flex items-center bg-[#EF771C] rounded-2xl">
-								<Image
-									alt="Banner 1"
-									className="pr-1"
-									radius="none"
-									src="../../img/soluciones/calefaccion_de_locales_comerciales_con_unidades_manejadoras_de_aire/Soluciones1.png"
-									// width="100%"
-									height="100%"
-									/> 
-							</div>
-							<div className="flex flex-col items-center mt-[1%] justify-cente h-full">
-								<div className="">
-									<Avatar  src="../../img/soluciones/calefaccion_de_locales_comerciales_con_unidades_manejadoras_de_aire/SolucionesAutor.png" className="h-[15.0vw] w-[15.0vw] my-2 mx-auto text-large"/>
-									<p className="px-auto py-2  text-[#EF771C] font-lexend-bold text-[3.8vw] text-center">Por: {" "}
-										<span className="underline">Juan Manuel de Porras</span>
-									</p>
-									<h1 className="w-full text-center text-[6.5vw] font-nunito-bold bg-white text-black">Unidad manejadora de aire</h1>
-								</div>
-								<div className="py-4">
-								<Button
-											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											onClick={()=>(window.open("electroterma.com"))}
-										>
-											Saber más
-										</Button>
-								</div>
-								<div className="">
-								<a  href="/solucionesHVAC">
-									<Button
-											className="  z-10 bg-[#EF771C] px-2 py-4  font-nunito text-white shadow-xl"
-											radius="full"
-											size="sm"
-											// onClick={()=>(window.open("electroterma.com"))}
-										>
-											Ver otras soluciones
-										</Button>
-									</a>
-								</div>
-							</div>
-							
-						</div>
-					</section>
-					 */}
-					</>
-					}
+						</>
+						}
 
 					</div>
 
