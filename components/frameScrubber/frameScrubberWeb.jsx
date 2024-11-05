@@ -86,7 +86,7 @@ export default function FrameScrubber() {
                 
                 <div class="story text-3xl mr-0 lg:text-5xl ">
                   
-                    <div className="relative">
+                    <div className={`relative ${keyAttribute === "rls" || "mt-10"} `}>
 
                    { (keyAttribute === "home") ? 
                    <div className="fixed ">

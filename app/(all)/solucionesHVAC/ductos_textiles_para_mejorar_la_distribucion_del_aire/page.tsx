@@ -175,7 +175,7 @@ export default function Soluciones_ductos_textiles_para_mejorar_la_distribucion_
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.8vw] font-nunito-bold lg:mt-16 mr-auto">Desarrollo de proyecto de distribución del aire para una industria con procesos de horneado, enfriamiento y envasado de productos</h2>
 
 						    <p className="">
-							El mismo incluía <a className="text-[#EF771C] font-nunito-bold underline " href="/uta" target="_top">Unidades de Tratamiento de Aire TEMPOMATIC</a>, pero el sistema de ductos a nivel de techo (a 11 metros de altura e inyección por difusores tradicionales) no aseguraba la llegada de aire tratado a los puestos de los operarios, generando elevadas cargas térmicas en determinados momentos del año.  
+							El mismo incluía <a className="text-[#EF771C] font-nunito-bold underline " href="/tempomatic/uta" target="_top">Unidades de Tratamiento de Aire TEMPOMATIC</a>, pero el sistema de ductos a nivel de techo (a 11 metros de altura e inyección por difusores tradicionales) no aseguraba la llegada de aire tratado a los puestos de los operarios, generando elevadas cargas térmicas en determinados momentos del año.  
 								 
 							</p>
 							

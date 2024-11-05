@@ -219,7 +219,7 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 								
 							</p>
 
-							<div className="mx-auto md:hidden">
+							{/* <div className="mx-auto md:hidden">
 								<Button
 											className="mt-auto m-1 2 xm:mt-auto  ml-2 mb-2 z-10 bg-[#EF771C] xm:px-4 xm:py-4  font-nunito text-white shadow-xl"
 											radius="full"
@@ -228,7 +228,7 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 										>
 											Ver otras soluciones
 										</Button>
-							</div>
+							</div> */}
 						</div>
 
 						{BigScreen || 
