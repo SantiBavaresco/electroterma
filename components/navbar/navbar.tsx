@@ -310,22 +310,13 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                         key={dropDown.label}
                                         placement="left"
                                         className="rounded-[34px] !important border-1 border-[#F5F4F4] 
-                                                        bg-[#e1e1e1] translate-x-[-1.5%] 2xl:translate-x-[-5%]"
+                                                        bg-[#e1e1e1] translate-x-[-1.5%] 2xl:translate-x-[-2%]"
                                     >
                                         <DropdownTrigger>
                                             <div>
                                                 <p className="flex items-center justify-center1 font-nunito text-white text-xl ">
-                                                <BsArrowBarLeft className="text-3xl"/>
-                                                    <div onClick={(e)=>{
-                                                        dropDown.label==="Tempomatic" 
-                                                        ? handleAnchor(dropDown.href) 
-                                                        : dropDown.label==="Soler & Palau" 
-                                                        ? handleAnchor(dropDown.href) 
-                                                        
-                                                        : <></>
-                                                    }}>
-                                                        {dropDown.label}
-                                                    </div>
+                                                    <BsArrowBarLeft className="text-3xl"/>
+                                                    {dropDown.label}
                                                 </p>
                                             </div>
                                         </DropdownTrigger>
@@ -372,13 +363,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                         target={dropDown.label === "Tienda Online" ?  "_blank" : undefined }
                                         onClick={setFirstFalse}
                                     >
-                                        {dropDown.label==="Soluciones en HVAC" 
-                                            ? 
-                                                <p className={`font-nunito text-white text-xl flex`}>
-                                                    <BsArrowBarLeft className="text-3xl"/>
-                                                    {dropDown.label}
-                                                </p>          
-                                            : 
+                                        {
                                                 <p className={`font-nunito text-white text-xl ml-[30px]`}>
                                                     {dropDown.label}
                                                 </p>
@@ -469,9 +454,9 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                             <AccordionItem key={dropdown.label} aria-label={dropdown.label} 
                                             title={
                                                 <a key={dropdown.label} 
-                                                href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
-                                                {dropdown.label}
-                                            </a>}
+                                                    href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
+                                                    {dropdown.label}
+                                                </a>}
                                             className="-mx-2  "
                                             // startContent={
                                             //     <Avatar

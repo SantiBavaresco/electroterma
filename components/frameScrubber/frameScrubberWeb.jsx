@@ -71,7 +71,8 @@ export default function FrameScrubber() {
     // const context = canvas.getContext("2d");
     const ventElement = document.getElementById("vent");
     let keyAttribute = ventElement.accessKey;
-
+    console.log(keyAttribute);
+    
     useEffect(() => {
         require("./scrubbingWeb");
         return () => {};
@@ -86,7 +87,7 @@ export default function FrameScrubber() {
                 
                 <div class="story text-3xl mr-0 lg:text-5xl ">
                   
-                    <div className={`relative ${keyAttribute === "rls" || "mt-10"} `}>
+                    <div className={`relative ${keyAttribute === "tda" || "pt-32"} `}>
 
                    { (keyAttribute === "home") ? 
                    <div className="fixed ">

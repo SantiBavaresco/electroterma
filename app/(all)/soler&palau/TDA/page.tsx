@@ -370,7 +370,7 @@ export default function TDAPage() {
                     </Suspense>
                 </div>
             }
-            <section className=" -mt-[30vh] lg:-mt-[70vh] w-full"> 
+            <section className=" -mt-[30vh] lg:-mt-[65vh] w-full"> 
                 <div className=" mx-[3%] flex flex-col justify-end items-end md:justify-start md:items-start overflow-hidden">
                     <section className="hidden pb-[25vh] my-4 md:flex">
                         <div className="flex flex-col gap-4 w-full justify-center items-start align-center xl:ml-[10vw] ">
