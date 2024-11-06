@@ -22,6 +22,16 @@ import { useEffect, useState } from "react";
 import { EscribinosButton } from "@/components/custonButtons/escribinos";
 import { Divider } from "@nextui-org/react";
 import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
+import { DiferencialMaterialGalvanizado } from "@/components/diferenciales/diferencialMaterialGalvanizado";
+import { DiferencialDisenioPersonalizado } from "@/components/diferenciales/diferencialDisenioPersonalizado";
+import { DiferencialDistribucionHomogenea } from "@/components/diferenciales/diferencialDistribucionHomogenea";
+import { DiferencialLavable } from "@/components/diferenciales/diferencialLavable";
+import { DiferencialBajoCosto } from "@/components/diferenciales/diferencialBajoCosto";
+import { DiferencialTratamientoAntibacterial } from "@/components/diferenciales/diferencialTratamientoAntibacterial";
+import { DiferencialResistenteFuego } from "@/components/diferenciales/diferencialResistenteFuego";
+import { DiferencialAmbienteCorrosivo } from "@/components/diferenciales/diferencialAmbienteCorrosivo";
+import { DiferencialEficienciaEnergetica } from "@/components/diferenciales/diferencialEficienciaEnergetica";
+import { DiferencialMaterialesInmunes } from "@/components/diferenciales/diferencialMaterialesInmunes";
 
 
 
@@ -36,6 +46,10 @@ interface ItemsNavbar {
 }
 
 export default function DTIPage() {
+
+    const TamanioDiferenciales = 100;
+    const TamanioDiferencialesMobile = 70;
+
 
     const [BigScreen, setBigScreen] = useState(false);
     useEffect(() => {
@@ -190,37 +204,61 @@ export default function DTIPage() {
             </section>
 
             {/* ------------- Columna de diferenciales ------------- */}
-            {BigScreen ? <section className="w-full px-[15%] -mt-12 gap-32 mt- flex flex-col-2 items-cente justify-center">
-                {/* <div className="px-10"> */}
-                    <Image
-                        alt="Home banner 1 w-1/2"
-                        className=""
-                        radius="none"
-                        src="../img/dti/DtiDuctosTextilesDiferenciales01.png"
-                        width="100%"
-                    />
-                {/* </div>
-                <div className=""> */}
+            {BigScreen ? <>
+            <section className=" w-[75%] grid grid-cols-2 gap-4 -mt-14 z-10">
+                <div className="space-y-8">
+                    <DiferencialDisenioPersonalizado size={TamanioDiferenciales} customWith={10} />
+                    <DiferencialDistribucionHomogenea size={TamanioDiferenciales} customWith={10} />
+                    <DiferencialLavable size={TamanioDiferenciales} customWith={10} />
                     <Image
                         alt="Home banner 1"
                         className=""
                         radius="none"
-                        src="../img/dti/DtiDuctosTextilesDiferenciales02.png"
+                        src="../img/dti/DtiDuctosTextiles02.png"
                         width="100%"
                     />
-                {/* </div> */}
+                </div>
+                <div className="space-y-8 ">
+                    <DiferencialBajoCosto size={TamanioDiferenciales} customWith={10} />
+                    <DiferencialTratamientoAntibacterial size={TamanioDiferenciales} customWith={10} />
+                    <DiferencialResistenteFuego size={TamanioDiferenciales} customWith={10} />
+                    <DiferencialAmbienteCorrosivo size={TamanioDiferenciales} customWith={10} />
+                    <DiferencialEficienciaEnergetica size={TamanioDiferenciales} customWith={10} />
+                    <DiferencialMaterialesInmunes size={TamanioDiferenciales} customWith={10} />
 
+                </div>
+                
+                
+                
             </section>
-            :
-            <section className="w-full px-[10%] mt-4">
+
+            </>
+            :<>
+            <section className="w-full px-[5%] z-10 -mt-8 mb-4 space-y-4">
+                <DiferencialDisenioPersonalizado size={TamanioDiferencialesMobile} customWith={10} />
+                <DiferencialDistribucionHomogenea size={TamanioDiferencialesMobile} customWith={10} />
+                <DiferencialLavable size={TamanioDiferencialesMobile} customWith={10} />
+                <DiferencialBajoCosto size={TamanioDiferencialesMobile} customWith={10} />
+
+                
+            </section>
                 <Image
-                        alt="Home banner 1 w-1/2"
-                        className=""
-                        radius="none"
-                        src="../img/dti/DtiDuctosTextilesDiferencialesMobile.png"
-                        width="100%"
-                    />
+                alt="Home banner 1 w-1/2"
+                className=""
+                radius="none"
+                src="../img/dti/DtiDuctosTextiles02Mobile.png"
+                width="100%"
+                />
+             <section className="w-full px-[5%] z-10 -mt-8 mb-4 space-y-4">
+                <DiferencialTratamientoAntibacterial size={TamanioDiferencialesMobile} customWith={10} />
+                <DiferencialResistenteFuego size={TamanioDiferencialesMobile} customWith={10} />
+                <DiferencialAmbienteCorrosivo size={TamanioDiferencialesMobile} customWith={10} />
+                <DiferencialEficienciaEnergetica size={TamanioDiferencialesMobile} customWith={10} />
+                <DiferencialMaterialesInmunes size={TamanioDiferencialesMobile} customWith={10} />
+
+                
             </section>
+            </>
             }       
             {/* ------------- IMG ------------- */}
             <section className="w-full px-[5%] lg:px-[15%] mt-12">

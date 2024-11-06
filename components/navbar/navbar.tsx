@@ -70,6 +70,9 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
     const [firstDropdownOpen, setFirstDropdownOpen] = useState(false);
     const [secondDropdownOpen, setSecondDropdownOpen] = useState(false);
 
+    const [selectedKeys, setSelectedKeys] = React.useState(new Set(['text']));
+    const [isOpenHover, setIsOpenHover] = React.useState(false);
+
     const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
 
     const setFirstFalse = () => {
@@ -310,16 +313,29 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                         key={dropDown.label}
                                         placement="left"
                                         className="rounded-[34px] !important border-1 border-[#F5F4F4] 
-                                                        bg-[#e1e1e1] translate-x-[-1.5%] 2xl:translate-x-[-2%]"
+                                            bg-[#e1e1e1] translate-x-[-1.5%] 2xl:translate-x-[-2%]"
                                     >
                                         <DropdownTrigger>
-                                            <div>
+                                            <div onMouseEnter={()=>{
+                                                    console.log("PASTE POR ENCIMA MIO")
+                                                    setIsOpenHover(true)
+                                                    console.log("True en hover",isOpenHover);
+                                                    
+                                                }}
+                                                onMouseLeave={()=>{
+                                                    console.log("Saliste POR ENCIMA MIO")
+                                                    setIsOpenHover(false)
+                                                    console.log("False en hover",isOpenHover);
+                                                    
+                                                }}
+                                            >
                                                 <p className="flex items-center justify-center1 font-nunito text-white text-xl ">
                                                     <BsArrowBarLeft className="text-3xl"/>
                                                     {dropDown.label}
                                                 </p>
                                             </div>
                                         </DropdownTrigger>
+                                        
                                         <DropdownMenu
                                             
                                             aria-label="Profile Actions"
