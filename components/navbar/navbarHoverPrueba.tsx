@@ -10,6 +10,7 @@ import { Select } from 'antd';
 import { BsArrowBarLeft } from "react-icons/bs";
 import { siteConfig } from "@/config/site";
 import { itemsNavSolerPalau as Soler, itemsNavTempomatic as Tempomatic } from "@/public/data/navbarData";
+import { Image } from "@nextui-org/image";
 
 
 import NextLink from "next/link";
@@ -49,15 +50,14 @@ const items: MenuProps['items'] = [
   {
     key: '1',
     type: 'group',
-    style: { backgroundColor: "#EF771C" },
+    style: { backgroundColor: "#EF771C", borderTopLeftRadius:4, borderTopRightRadius: 4 , },
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
-    
     children: [
       {
         key: '1-1',
-        label: 
+    label: 
           <NextLink
             className=""
             color="foreground"
@@ -69,8 +69,24 @@ const items: MenuProps['items'] = [
               </p>
             
           </NextLink>,
-      },
-    ],
+      }]
+    // children: [
+    //   {
+    //     key: '1-1',
+    //     label: 
+    //       <NextLink
+    //         className=""
+    //         color="foreground"
+    //         href="/"
+    //         target={undefined }
+    //       >
+    //           <p className={`font-nunito text-white text-xl ml-[30px]`}>
+    //             Inicio
+    //           </p>
+            
+    //       </NextLink>,
+    //   },
+    // ],
   },
   {
     key: '2',
@@ -80,8 +96,8 @@ const items: MenuProps['items'] = [
     
     style: { backgroundColor: "#EF771C" },
     label: 
-      <h1 className='flex text-xl text-white items-center font-nunito'> <BsArrowBarLeft className=""/> 
-        <h2 className='pl-4'>Tempomatic</h2> 
+      <h1 className='flex text-xl text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
+        <h2 className='pl-3'>Tempomatic</h2> 
       </h1>,
     // dropdownRender: ,
     // style: { backgroundColor: "lime"},
@@ -91,12 +107,13 @@ const items: MenuProps['items'] = [
     // popupClassName:"HOLA",
     children: [
       {
-        key: '1-1',
+        key: '2-1',
         label: 
         <div className='grid grid-cols-3 gap-3 -mx-2'> 
           {Tempomatic.map((element)=>(
             <NextLink
               className=""
+              key={element.key}
               color="foreground"
               href={element.href}
               target="_top"
@@ -122,17 +139,18 @@ const items: MenuProps['items'] = [
     style: { backgroundColor: "#EF771C" },
 
     label: 
-      <h1 className='flex text-xl text-white items-center font-nunito'> <BsArrowBarLeft className=""/> 
-        <h2 className='pl-4'>Soler & Palau</h2> 
+      <h1 className='flex text-xl text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
+        <h2 className='pl-3'>Soler & Palau</h2> 
       </h1>,
     children: [
       {
-        key: '1-1',
+        key: '3-1',
         label: 
         <div className='flex gap-3 -mx-2'> 
           
           {Soler.map((element)=>(
             <NextLink
+              key={element.key}
               className=""
               color="foreground"
               href={element.href}
@@ -158,24 +176,22 @@ const items: MenuProps['items'] = [
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
-    
     children: [
       {
-        key: '1-1',
-        label: 
-          <NextLink
-            className=""
-            color="foreground"
-            href="/dti"
-            target={undefined }
-          >
-              <p className={`font-nunito text-white text-xl ml-[30px]`}>
-                DTI
-              </p>
-            
-          </NextLink>,
-      },
-    ],
+        key: '4-1',
+    label: 
+      <NextLink
+        className=""
+        color="foreground"
+        href="/dti"
+        target={undefined }
+      >
+          <p className={`font-nunito text-white text-xl ml-[30px]`}>
+            DTI
+          </p>
+        
+      </NextLink>,
+      }]
   },
   {
     key: '5',
@@ -184,10 +200,9 @@ const items: MenuProps['items'] = [
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
-    
     children: [
       {
-        key: '1-1',
+        key: '5-1',
         label: 
           <NextLink
             className=""
@@ -200,20 +215,18 @@ const items: MenuProps['items'] = [
               </p>
             
           </NextLink>,
-      },
-    ],
+      }]
   },
   {
     key: '6',
     type: 'group',
-    style: { backgroundColor: "#EF771C" },
+    style: { backgroundColor: "#EF771C",  borderRadius: 0},
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
-    
     children: [
       {
-        key: '1-1',
+        key: '6-1',
         label: 
           <NextLink
             className=""
@@ -221,39 +234,40 @@ const items: MenuProps['items'] = [
             href="/solucionesHVAC"
             target={undefined }
           >
-              <p className={`font-nunito text-white text-xl ml-[30px]`}>
+              <p className={`font-nunito text-white text-xl ml-[30px] `}>
               Soluciones en HVAC
               </p>
             
           </NextLink>,
-      },
-    ],
+      }]
   },
   {
     key: '7',
-    type: 'group',
-    style: { backgroundColor: "#EF771C", paddingBottom: 10 },
+    type: "group",
+    style: { backgroundColor: "#EF771C", paddingBottom: 10, 
+      borderTopLeftRadius:0, borderTopRightRadius: 0 ,
+      borderBottomLeftRadius:4, borderBottomRightRadius: 4},
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
-    
     children: [
-      {
-        key: '1-1',
-        label: 
+        {
+          key: '7-1',
+          label: 
           <NextLink
-            className=""
-            color="foreground"
-            href="https://www.tiendaelectroterma.com.ar/"
-            target="_blank"
-          >
-              <p className={`font-nunito text-white text-xl ml-[30px]`}>
-                Tienda Online
-              </p>
-            
-          </NextLink>,
-      },
-    ],
+          className="rounded-none"
+          color="foreground"
+          href="https://www.tiendaelectroterma.com.ar/"
+          target="_blank"
+        >
+            <p className={`font-nunito text-white text-xl ml-[30px]`}>
+              Tienda Online
+            </p>
+          
+        </NextLink>,
+        },
+      ],
+    
   },
 ];  
 
@@ -270,17 +284,17 @@ const items: MenuProps['items'] = [
 //   boxShadow: 'none',
 // };
 
-const algo =(
-  <div className='w-10 h-5 bg-blue-400'>
-    <h1>HOLA</h1>
-  </div>
-)
+// const algo =(
+//   <div className='w-10 h-5 bg-blue-400'>
+//     <h1>HOLA</h1>
+//   </div>
+// )
 
-const options = [
-  { value: 'apple', label: 'Apple' },
-  { value: 'pear', label: 'Pear' },
-  { value: 'orange', label: 'Orange' },
-];
+// const options = [
+//   { value: 'apple', label: 'Apple' },
+//   { value: 'pear', label: 'Pear' },
+//   { value: 'orange', label: 'Orange' },
+// ];
 
 export const NavbarPrueba: React.FC = () => (
 
@@ -293,7 +307,22 @@ export const NavbarPrueba: React.FC = () => (
   //     )}
   //     options={options}
   //   />
-<div id="area">
+<div id="area" className='flex fixe w-full bg-opacity-80 bg-white backdrop-blur-sm'>
+    <NextLink
+          className="rounded-none my-auto ml-10"
+          color="foreground"
+          href="/"
+          target="_blank"
+        >
+           <Image
+                        // className="sm:w-[180px]"
+                        src="../../img/electrotermalogoletrasNoPadding.png"
+                        // height={50}
+                        width={240}
+                        alt="hola"
+                    />
+          
+        </NextLink>
   <Dropdown menu={{ items }} placement="bottom" arrow={{ pointAtCenter: true }} 
   // <Dropdown menu={{ items }} placement="bottom" arrow={{ pointAtCenter: true }}  
 
@@ -319,7 +348,7 @@ export const NavbarPrueba: React.FC = () => (
     //               padding: 0, 
     //               width: "14vw",
     //               zIndex:100,
-    //               // backgroundColor: "orange",
+    //               backgroundColor: "orange",
     //               // borderColor: '#ccc',
     //               // borderWidth: '22px',
     //               // borderStyle: 'solid',
@@ -327,7 +356,15 @@ export const NavbarPrueba: React.FC = () => (
               
     //         </div>
     //       )}
-    
+          // overlayStyle={{ 
+          //   padding: 10, 
+          //   width: "14vw",
+          //   zIndex:100,
+          //   backgroundColor: "orange",
+          //   // borderColor: '#ccc',
+          //   // borderWidth: '22px',
+          //   // borderStyle: 'solid',
+          // }}
     className='bg-yellow-500 text-5xl '>
     <div onClick={(e) => e.preventDefault()} className='w-[14vw] ml-auto -2 bg-livered h-16  rounded-3xl '>
       <Space>
