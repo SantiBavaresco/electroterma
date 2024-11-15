@@ -1,30 +1,341 @@
+"use client"
 import React from 'react';
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/react';
+// import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/react';
+// import React from 'react';
+// import './index.css';
+import { DownOutlined } from '@ant-design/icons';
+import type { MenuProps } from 'antd';
+import { Dropdown, Space, Menu, Button, Divider, theme  } from 'antd';
+import { Select } from 'antd';
+import { BsArrowBarLeft } from "react-icons/bs";
+import { siteConfig } from "@/config/site";
+import { itemsNavSolerPalau as Soler, itemsNavTempomatic as Tempomatic } from "@/public/data/navbarData";
 
-interface AppProps {
-  children: React.ReactNode;
-}
 
-export default function App({ children }: AppProps) {
-  const [selectedKeys, setSelectedKeys] = React.useState(new Set(['text']));
-  const [isOpen, setIsOpen] = React.useState(false);
+import NextLink from "next/link";
+import CardDisplay from './cardDisplay';
 
-  const handleMouseEnter = () => setIsOpen(true);
-  const handleMouseLeave = () => setIsOpen(false);
 
-  return (
-    <div onMouseLeave={handleMouseLeave}>
-      {/* <Dropdown isOpen={isOpen} closeOnSelect placement="bottom-end">
-        <DropdownTrigger>{React.cloneElement(children, { onMouseEnter: handleMouseEnter })}</DropdownTrigger>
-        <DropdownMenu
-          selectionMode="single"
-          selectedKeys={selectedKeys}
-          onSelectionChange={setSelectedKeys}
-        >
-          <DropdownItem key="text">Text</DropdownItem>
-          <DropdownItem key="number">Number</DropdownItem>
-        </DropdownMenu>
-      </Dropdown> */}
+
+
+
+const Burger =  
+  <div className="w-[14vw] px-auto h-[150%] md:min-w-64 flex items-center justify-center p-[18px] bg-[#EF771C]">
+    <svg
+        width="30"
+        height="28"
+        viewBox="0 0 40 37"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
+            fill="white"
+        />
+        <path
+            d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
+            fill="white"
+        />
+        <path
+            d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
+            fill="white"
+        />
+    </svg>
+  </div>
+
+
+
+const items: MenuProps['items'] = [
+  {
+    key: '1',
+    type: 'group',
+    style: { backgroundColor: "#EF771C" },
+    // mode: "horizontal",
+    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
+    // label: 'Group title',
+    
+    children: [
+      {
+        key: '1-1',
+        label: 
+          <NextLink
+            className=""
+            color="foreground"
+            href="/"
+            target={undefined }
+          >
+              <p className={`font-nunito text-white text-xl ml-[30px]`}>
+                Inicio
+              </p>
+            
+          </NextLink>,
+      },
+    ],
+  },
+  {
+    key: '2',
+    type: "submenu",
+    // popupClassName: "flex flex-row",
+    popupOffset:[7,0],
+    
+    style: { backgroundColor: "#EF771C" },
+    label: 
+      <h1 className='flex text-xl text-white items-center font-nunito'> <BsArrowBarLeft className=""/> 
+        <h2 className='pl-4'>Tempomatic</h2> 
+      </h1>,
+    // dropdownRender: ,
+    // style: { backgroundColor: "lime"},
+    // arrow: false,
+    // icon: ,
+    // icon: <DownOutlined />,
+    // popupClassName:"HOLA",
+    children: [
+      {
+        key: '1-1',
+        label: 
+        <div className='grid grid-cols-3 gap-3 -mx-2'> 
+          {Tempomatic.map((element)=>(
+            <NextLink
+              className=""
+              color="foreground"
+              href={element.href}
+              target="_top"
+              // onClick={setFirstFalse}
+              >
+                <CardDisplay  data={element} />
+            </NextLink>
+
+          ))}
+          
+        </div>,
+        
+        // style: { backgroundColor: "blue" },
+
+      },
+     
+    ],
+  },
+  {
+    key: '3',
+    type: "submenu",
+    popupOffset:[7,0],
+    style: { backgroundColor: "#EF771C" },
+
+    label: 
+      <h1 className='flex text-xl text-white items-center font-nunito'> <BsArrowBarLeft className=""/> 
+        <h2 className='pl-4'>Soler & Palau</h2> 
+      </h1>,
+    children: [
+      {
+        key: '1-1',
+        label: 
+        <div className='flex gap-3 -mx-2'> 
+          
+          {Soler.map((element)=>(
+            <NextLink
+              className=""
+              color="foreground"
+              href={element.href}
+              target="_top"
+              // onClick={setFirstFalse}
+              >
+                <CardDisplay  data={element} />
+            </NextLink>
+
+          ))}
+        </div>,
+        
+        // style: { backgroundColor: "blue" },
+
+      },
+     
+    ],
+  },
+  {
+    key: '4',
+    type: 'group',
+    style: { backgroundColor: "#EF771C" },
+    // mode: "horizontal",
+    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
+    // label: 'Group title',
+    
+    children: [
+      {
+        key: '1-1',
+        label: 
+          <NextLink
+            className=""
+            color="foreground"
+            href="/dti"
+            target={undefined }
+          >
+              <p className={`font-nunito text-white text-xl ml-[30px]`}>
+                DTI
+              </p>
+            
+          </NextLink>,
+      },
+    ],
+  },
+  {
+    key: '5',
+    type: 'group',
+    style: { backgroundColor: "#EF771C" },
+    // mode: "horizontal",
+    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
+    // label: 'Group title',
+    
+    children: [
+      {
+        key: '1-1',
+        label: 
+          <NextLink
+            className=""
+            color="foreground"
+            href="/zila"
+            target={undefined }
+          >
+              <p className={`font-nunito text-white text-xl ml-[30px]`}>
+                Zila
+              </p>
+            
+          </NextLink>,
+      },
+    ],
+  },
+  {
+    key: '6',
+    type: 'group',
+    style: { backgroundColor: "#EF771C" },
+    // mode: "horizontal",
+    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
+    // label: 'Group title',
+    
+    children: [
+      {
+        key: '1-1',
+        label: 
+          <NextLink
+            className=""
+            color="foreground"
+            href="/solucionesHVAC"
+            target={undefined }
+          >
+              <p className={`font-nunito text-white text-xl ml-[30px]`}>
+              Soluciones en HVAC
+              </p>
+            
+          </NextLink>,
+      },
+    ],
+  },
+  {
+    key: '7',
+    type: 'group',
+    style: { backgroundColor: "#EF771C", paddingBottom: 10 },
+    // mode: "horizontal",
+    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
+    // label: 'Group title',
+    
+    children: [
+      {
+        key: '1-1',
+        label: 
+          <NextLink
+            className=""
+            color="foreground"
+            href="https://www.tiendaelectroterma.com.ar/"
+            target="_blank"
+          >
+              <p className={`font-nunito text-white text-xl ml-[30px]`}>
+                Tienda Online
+              </p>
+            
+          </NextLink>,
+      },
+    ],
+  },
+];  
+
+
+// const { useToken } = theme;
+// const { token } = useToken();
+// const contentStyle: React.CSSProperties = {
+//   backgroundColor: token.colorBgElevated,
+//   borderRadius: token.borderRadiusLG,
+//   boxShadow: token.boxShadowSecondary,
+// };
+
+// const menuStyle: React.CSSProperties = {
+//   boxShadow: 'none',
+// };
+
+const algo =(
+  <div className='w-10 h-5 bg-blue-400'>
+    <h1>HOLA</h1>
+  </div>
+)
+
+const options = [
+  { value: 'apple', label: 'Apple' },
+  { value: 'pear', label: 'Pear' },
+  { value: 'orange', label: 'Orange' },
+];
+
+export const NavbarPrueba: React.FC = () => (
+
+  // <Select
+  //     dropdownRender={(menus) => (
+  //       <div>
+  //         <div style={{ padding: 40, width: 550 }}>Custom Content</div>
+  //         {menus}
+  //       </div>
+  //     )}
+  //     options={options}
+  //   />
+<div id="area">
+  <Dropdown menu={{ items }} placement="bottom" arrow={{ pointAtCenter: true }} 
+  // <Dropdown menu={{ items }} placement="bottom" arrow={{ pointAtCenter: true }}  
+
+    // mode="Horizontal"
+    // destroyPopupOnHide
+    // overlayClassName=" bg-livered m-2 p-2 "
+  
+    // dropdownRender={(menu) => (
+    //   <div style={contentStyle}>
+    //     {React.cloneElement(menu as React.ReactElement, { style: menuStyle })}
+    //     <Divider style={{ margin: 0 }} />
+    //     <Space style={{ padding: 8 }}>
+    //       <Button type="primary">Click me!</Button>
+    //     </Space>
+    //   </div>
+    // )}
+    // getPopupContainer={() => document.body}
+    // getPopupContainer={() => document.getElementById('area')}
+    // dropdownRender={(menus) => (
+    //         <div>
+    //           <div className='bg-livered text-3xl z-10 '
+    //             style={{ 
+    //               padding: 0, 
+    //               width: "14vw",
+    //               zIndex:100,
+    //               // backgroundColor: "orange",
+    //               // borderColor: '#ccc',
+    //               // borderWidth: '22px',
+    //               // borderStyle: 'solid',
+    //             }}>{menus}</div>
+              
+    //         </div>
+    //       )}
+    
+    className='bg-yellow-500 text-5xl '>
+    <div onClick={(e) => e.preventDefault()} className='w-[14vw] ml-auto -2 bg-livered h-16  rounded-3xl '>
+      <Space>
+        {/* <DownOutlined /> */}
+        {Burger}
+      </Space>
     </div>
-  );
-}
+  </Dropdown>
+  </div>
+);
+

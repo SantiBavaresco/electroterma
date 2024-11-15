@@ -7,6 +7,7 @@ export const siteConfig = {
     navItems: [
         {
             label: "Inicio",
+            key: "Inicio",
             href: "/",
 			dropdown: false,
         },
@@ -14,30 +15,37 @@ export const siteConfig = {
 
         {
             label: "Tempomatic",
+            key: "Tempomatic",
             href: "/tempomatic",
 			dropdown: true,
+            cant: 6,
             dwData: itemsNavTempomatic,
         },
         {
             label: "Soler & Palau",
+            key: "Soler",
             href: "/soler&palau",
 			dropdown: true,
+            cant: 4,
             dwData: itemsNavSolerPalau,
         },
         {
             label: "DTI",
+            key: "DTI",
             href: "/dti",
 			dropdown: false,
         },
 
         {
             label: "Zila",
+            key: "Zila",
             href: "/zila",
 			dropdown: false,
             dwData: itemsNavZila,
         },
         {
             label: "Soluciones en HVAC",
+            key:"SolucionesEnHVAC",
             href: "/solucionesHVAC",
 			dropdown: false,
             // dwData: itemsNavZila,
@@ -50,6 +58,7 @@ export const siteConfig = {
         // },
         {
             label: "Tienda Online",
+            key: "TiendaOnline",
             href: "https://www.tiendaelectroterma.com.ar/",
 			dropdown: false,
 

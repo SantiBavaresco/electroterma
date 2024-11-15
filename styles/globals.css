@@ -107,6 +107,12 @@
     .force-duration div {
       transition-duration: 3500ms;
     }
+
+    .force-padding div {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
     /* .card-footer {
         background-color: #fff;
         transition: background-color 0.2s ease-in-out;
