@@ -21,7 +21,7 @@ import CardDisplay from './cardDisplay';
 
 
 const Burger =  
-  <div className="w-[14vw] px-auto h-[150%] md:min-w-64 flex items-center justify-center p-[18px] bg-[#EF771C]">
+  <div className="w-[22vw] 2xl:w-[18vw] px-auto h-[150%] md:min-w-64 flex items-center justify-center p-[18px] bg-[#EF771C]">
     <svg
         width="30"
         height="28"
@@ -50,7 +50,7 @@ const items: MenuProps['items'] = [
   {
     key: '1',
     type: 'group',
-    style: { backgroundColor: "#EF771C", borderTopLeftRadius:4, borderTopRightRadius: 4 , },
+    style: { backgroundColor: "#EF771C", borderTopLeftRadius:4, borderTopRightRadius: 4 , margin:-4},
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
@@ -64,7 +64,7 @@ const items: MenuProps['items'] = [
             href="/"
             target={undefined }
           >
-              <p className={`font-nunito text-white text-xl ml-[30px]`}>
+              <p className={`font-nunito text-white text-[1.5vw] ml-[30px] bg-blue-500 !important`}>
                 Inicio
               </p>
             
@@ -80,7 +80,7 @@ const items: MenuProps['items'] = [
     //         href="/"
     //         target={undefined }
     //       >
-    //           <p className={`font-nunito text-white text-xl ml-[30px]`}>
+    //           <p className={`font-nunito text-white text-[1.5vw] ml-[30px]`}>
     //             Inicio
     //           </p>
             
@@ -94,9 +94,9 @@ const items: MenuProps['items'] = [
     // popupClassName: "flex flex-row",
     popupOffset:[7,0],
     
-    style: { backgroundColor: "#EF771C" },
+    style: { backgroundColor: "#EF771C", margin:-4 },
     label: 
-      <h1 className='flex text-xl text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
+      <h1 className='flex text-[1.5vw] text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
         <h2 className='pl-3'>Tempomatic</h2> 
       </h1>,
     // dropdownRender: ,
@@ -109,7 +109,7 @@ const items: MenuProps['items'] = [
       {
         key: '2-1',
         label: 
-        <div className='grid grid-cols-3 gap-3 -mx-2'> 
+        <div className='grid grid-cols-3 gap-3 -mx-'> 
           {Tempomatic.map((element)=>(
             <NextLink
               className=""
@@ -136,10 +136,10 @@ const items: MenuProps['items'] = [
     key: '3',
     type: "submenu",
     popupOffset:[7,0],
-    style: { backgroundColor: "#EF771C" },
+    style: { backgroundColor: "#EF771C", margin:-4 },
 
     label: 
-      <h1 className='flex text-xl text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
+      <h1 className='flex text-[1.5vw] text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
         <h2 className='pl-3'>Soler & Palau</h2> 
       </h1>,
     children: [
@@ -172,7 +172,7 @@ const items: MenuProps['items'] = [
   {
     key: '4',
     type: 'group',
-    style: { backgroundColor: "#EF771C" },
+    style: { backgroundColor: "#EF771C", margin:-4 },
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
@@ -186,7 +186,7 @@ const items: MenuProps['items'] = [
         href="/dti"
         target={undefined }
       >
-          <p className={`font-nunito text-white text-xl ml-[30px]`}>
+          <p className={`font-nunito text-white text-[1.5vw] ml-[30px]`}>
             DTI
           </p>
         
@@ -196,7 +196,7 @@ const items: MenuProps['items'] = [
   {
     key: '5',
     type: 'group',
-    style: { backgroundColor: "#EF771C" },
+    style: { backgroundColor: "#EF771C", margin:-4 },
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
@@ -210,7 +210,7 @@ const items: MenuProps['items'] = [
             href="/zila"
             target={undefined }
           >
-              <p className={`font-nunito text-white text-xl ml-[30px]`}>
+              <p className={`font-nunito text-white text-[1.5vw] ml-[30px]`}>
                 Zila
               </p>
             
@@ -220,7 +220,7 @@ const items: MenuProps['items'] = [
   {
     key: '6',
     type: 'group',
-    style: { backgroundColor: "#EF771C",  borderRadius: 0},
+    style: { backgroundColor: "#EF771C",  borderRadius: 0, margin:-4},
     // mode: "horizontal",
     // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
     // label: 'Group title',
@@ -234,7 +234,7 @@ const items: MenuProps['items'] = [
             href="/solucionesHVAC"
             target={undefined }
           >
-              <p className={`font-nunito text-white text-xl ml-[30px] `}>
+              <p className={`font-nunito text-white text-[1.5vw] ml-[30px] `}>
               Soluciones en HVAC
               </p>
             
@@ -244,7 +244,7 @@ const items: MenuProps['items'] = [
   {
     key: '7',
     type: "group",
-    style: { backgroundColor: "#EF771C", paddingBottom: 10, 
+    style: { backgroundColor: "#EF771C", paddingBottom: 10, margin:-4 ,
       borderTopLeftRadius:0, borderTopRightRadius: 0 ,
       borderBottomLeftRadius:4, borderBottomRightRadius: 4},
     // mode: "horizontal",
@@ -260,7 +260,7 @@ const items: MenuProps['items'] = [
           href="https://www.tiendaelectroterma.com.ar/"
           target="_blank"
         >
-            <p className={`font-nunito text-white text-xl ml-[30px]`}>
+            <p className={`font-nunito text-white text-[1.5vw] ml-[30px]`}>
               Tienda Online
             </p>
           
@@ -272,29 +272,6 @@ const items: MenuProps['items'] = [
 ];  
 
 
-// const { useToken } = theme;
-// const { token } = useToken();
-// const contentStyle: React.CSSProperties = {
-//   backgroundColor: token.colorBgElevated,
-//   borderRadius: token.borderRadiusLG,
-//   boxShadow: token.boxShadowSecondary,
-// };
-
-// const menuStyle: React.CSSProperties = {
-//   boxShadow: 'none',
-// };
-
-// const algo =(
-//   <div className='w-10 h-5 bg-blue-400'>
-//     <h1>HOLA</h1>
-//   </div>
-// )
-
-// const options = [
-//   { value: 'apple', label: 'Apple' },
-//   { value: 'pear', label: 'Pear' },
-//   { value: 'orange', label: 'Orange' },
-// ];
 
 export const NavbarPrueba: React.FC = () => (
 
@@ -307,7 +284,7 @@ export const NavbarPrueba: React.FC = () => (
   //     )}
   //     options={options}
   //   />
-<div id="area" className='flex fixe w-full bg-opacity-80 bg-white backdrop-blur-sm'>
+<div id="area" className='flex fixe w-full bg-opacity-80 bg-white backdrop-blur-sm '>
     <NextLink
           className="rounded-none my-auto ml-10"
           color="foreground"
@@ -328,7 +305,7 @@ export const NavbarPrueba: React.FC = () => (
 
     // mode="Horizontal"
     // destroyPopupOnHide
-    // overlayClassName=" bg-livered m-2 p-2 "
+    overlayClassName=" bg-liverd rounded m- p- w-[22vw] 2xl:w-[18vw] "
   
     // dropdownRender={(menu) => (
     //   <div style={contentStyle}>
@@ -343,12 +320,13 @@ export const NavbarPrueba: React.FC = () => (
     // getPopupContainer={() => document.getElementById('area')}
     // dropdownRender={(menus) => (
     //         <div>
-    //           <div className='bg-livered text-3xl z-10 '
+    //           <div className='bg-transparent text-3xl z-10 rounded-full !important '
     //             style={{ 
-    //               padding: 0, 
-    //               width: "14vw",
+    //               padding: -10, 
+    //               borderRadius: 30,
+    //               // width: "14vw",
     //               zIndex:100,
-    //               backgroundColor: "orange",
+    //               // backgroundColor: "orange",
     //               // borderColor: '#ccc',
     //               // borderWidth: '22px',
     //               // borderStyle: 'solid',
@@ -357,16 +335,17 @@ export const NavbarPrueba: React.FC = () => (
     //         </div>
     //       )}
           // overlayStyle={{ 
-          //   padding: 10, 
+          //   margin: -20, 
+          //   backgroundColor: "transparent",
           //   width: "14vw",
           //   zIndex:100,
-          //   backgroundColor: "orange",
+          //   // backgroundColor: "orange",
           //   // borderColor: '#ccc',
           //   // borderWidth: '22px',
           //   // borderStyle: 'solid',
           // }}
-    className='bg-yellow-500 text-5xl '>
-    <div onClick={(e) => e.preventDefault()} className='w-[14vw] ml-auto -2 bg-livered h-16  rounded-3xl '>
+    className=' text-5xl '>
+    <div onClick={(e) => e.preventDefault()} className='w-[22vw] 2xl:w-[18vw] ml-auto -2 bg-livered h-16  rounded-3xl  '>
       <Space>
         {/* <DownOutlined /> */}
         {Burger}
