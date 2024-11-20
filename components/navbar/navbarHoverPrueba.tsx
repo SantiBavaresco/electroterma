@@ -21,7 +21,7 @@ import CardDisplay from './cardDisplay';
 
 
 const Burger =  
-  <div className="w-[22vw] 2xl:w-[18vw] px-auto h-[150%] md:min-w-64 flex items-center justify-center p-[18px] bg-[#EF771C]">
+  <div className="w-[22vw] 2xl:w-[15vw] px-auto h-[150%] md:min-w-64 flex items-center justify-center p-[18px] bg-[#EF771C]">
     <svg
         width="30"
         height="28"
@@ -64,47 +64,25 @@ const items: MenuProps['items'] = [
             href="/"
             target={undefined }
           >
-              <p className={`font-nunito text-white text-[1.5vw] ml-[30px] bg-blue-500 !important`}>
+              <p className={`font-nunito text-white text-[1.1vw] ml-[30px] bg-blue-500 !important`}>
                 Inicio
               </p>
             
           </NextLink>,
       }]
-    // children: [
-    //   {
-    //     key: '1-1',
-    //     label: 
-    //       <NextLink
-    //         className=""
-    //         color="foreground"
-    //         href="/"
-    //         target={undefined }
-    //       >
-    //           <p className={`font-nunito text-white text-[1.5vw] ml-[30px]`}>
-    //             Inicio
-    //           </p>
-            
-    //       </NextLink>,
-    //   },
-    // ],
+
   },
   {
     key: '2',
     type: "submenu",
     // popupClassName: "flex flex-row",
-    popupOffset:[7,0],
+    popupOffset:[0,0],
     
     style: { backgroundColor: "#EF771C", margin:-4 },
     label: 
-      <h1 className='flex text-[1.5vw] text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
+      <h1 className='flex text-[1.1vw] text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
         <h2 className='pl-3'>Tempomatic</h2> 
       </h1>,
-    // dropdownRender: ,
-    // style: { backgroundColor: "lime"},
-    // arrow: false,
-    // icon: ,
-    // icon: <DownOutlined />,
-    // popupClassName:"HOLA",
     children: [
       {
         key: '2-1',
@@ -135,11 +113,11 @@ const items: MenuProps['items'] = [
   {
     key: '3',
     type: "submenu",
-    popupOffset:[7,0],
+    popupOffset:[0,0],
     style: { backgroundColor: "#EF771C", margin:-4 },
 
     label: 
-      <h1 className='flex text-[1.5vw] text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
+      <h1 className='flex text-[1.1vw] text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
         <h2 className='pl-3'>Soler & Palau</h2> 
       </h1>,
     children: [
@@ -186,7 +164,7 @@ const items: MenuProps['items'] = [
         href="/dti"
         target={undefined }
       >
-          <p className={`font-nunito text-white text-[1.5vw] ml-[30px]`}>
+          <p className={`font-nunito text-white text-[1.1vw] ml-[30px]`}>
             DTI
           </p>
         
@@ -210,7 +188,7 @@ const items: MenuProps['items'] = [
             href="/zila"
             target={undefined }
           >
-              <p className={`font-nunito text-white text-[1.5vw] ml-[30px]`}>
+              <p className={`font-nunito text-white text-[1.1vw] ml-[30px]`}>
                 Zila
               </p>
             
@@ -234,7 +212,7 @@ const items: MenuProps['items'] = [
             href="/solucionesHVAC"
             target={undefined }
           >
-              <p className={`font-nunito text-white text-[1.5vw] ml-[30px] `}>
+              <p className={`font-nunito text-white text-[1.1vw] ml-[30px] `}>
               Soluciones en HVAC
               </p>
             
@@ -260,7 +238,7 @@ const items: MenuProps['items'] = [
           href="https://www.tiendaelectroterma.com.ar/"
           target="_blank"
         >
-            <p className={`font-nunito text-white text-[1.5vw] ml-[30px]`}>
+            <p className={`font-nunito text-white text-[1.1vw] ml-[30px]`}>
               Tienda Online
             </p>
           
@@ -275,15 +253,6 @@ const items: MenuProps['items'] = [
 
 export const NavbarPrueba: React.FC = () => (
 
-  // <Select
-  //     dropdownRender={(menus) => (
-  //       <div>
-  //         <div style={{ padding: 40, width: 550 }}>Custom Content</div>
-  //         {menus}
-  //       </div>
-  //     )}
-  //     options={options}
-  //   />
 <div id="area" className='flex fixe w-full bg-opacity-80 bg-white backdrop-blur-sm '>
     <NextLink
           className="rounded-none my-auto ml-10"
@@ -291,13 +260,13 @@ export const NavbarPrueba: React.FC = () => (
           href="/"
           target="_blank"
         >
-           <Image
-                        // className="sm:w-[180px]"
-                        src="../../img/electrotermalogoletrasNoPadding.png"
-                        // height={50}
-                        width={240}
-                        alt="hola"
-                    />
+            <Image
+               // className="sm:w-[180px]"
+              src="../../img/electrotermalogoletrasNoPadding.png"
+              // height={50}
+              width={240}
+              alt="hola"
+            />
           
         </NextLink>
   <Dropdown menu={{ items }} placement="bottom" arrow={{ pointAtCenter: true }} 
@@ -305,7 +274,7 @@ export const NavbarPrueba: React.FC = () => (
 
     // mode="Horizontal"
     // destroyPopupOnHide
-    overlayClassName=" bg-liverd rounded m- p- w-[22vw] 2xl:w-[18vw] "
+    overlayClassName=" bg-liverd rounded m- p- w-[22vw] 2xl:w-[15vw] "
   
     // dropdownRender={(menu) => (
     //   <div style={contentStyle}>
@@ -345,7 +314,7 @@ export const NavbarPrueba: React.FC = () => (
           //   // borderStyle: 'solid',
           // }}
     className=' text-5xl '>
-    <div onClick={(e) => e.preventDefault()} className='w-[22vw] 2xl:w-[18vw] ml-auto -2 bg-livered h-16  rounded-3xl  '>
+    <div onClick={(e) => e.preventDefault()} className='w-[22vw] 2xl:w-[15vw] ml-auto -2 bg-livered h-16  rounded-3xl  '>
       <Space>
         {/* <DownOutlined /> */}
         {Burger}
