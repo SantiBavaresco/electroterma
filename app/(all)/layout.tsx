@@ -61,7 +61,7 @@ export default function RootLayout({
     // const ga= GoogleAnalytics(measurementId);
 
     return (
-        <html lang="es" suppressHydrationWarning>
+        <html lang="es" suppressHydrationWarning style={{scrollbarColor: "#EF771C #ffedd5", }}>
             <head>
     {/*                 
                     <script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`}></script>

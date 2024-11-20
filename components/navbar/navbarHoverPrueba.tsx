@@ -64,7 +64,7 @@ const items: MenuProps['items'] = [
             href="/"
             target={undefined }
           >
-              <p className={`font-nunito text-white text-[1.1vw] ml-[30px] bg-blue-500 !important`}>
+              <p className={`font-nunito text-white text-[1.1vw] ml-[30px] !important`}>
                 Inicio
               </p>
             
@@ -261,7 +261,7 @@ export const NavbarPrueba: React.FC = () => (
           className="rounded-none my-auto ml-10"
           color="foreground"
           href="/"
-          target="_blank"
+          target="_top"
         >
             <Image
                // className="sm:w-[180px]"

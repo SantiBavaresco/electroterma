@@ -57,7 +57,7 @@ export default function RootLayout({
     // const pathname = usePathname()
 
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning style={{scrollbarColor: "#EF771C #ffedd5", }}>
             <head />
             <body
                 id="home" accessKey="home"
@@ -65,6 +65,7 @@ export default function RootLayout({
                     "min-h-screen bg-background font-lexend   ",
                     fontSans.variable
                 )}
+                // style={{scrollbarColor: "#007 #bada55"}}
             >
                 <Providers
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
