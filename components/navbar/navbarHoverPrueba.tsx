@@ -86,6 +86,8 @@ const items: MenuProps['items'] = [
     children: [
       {
         key: '2-1',
+        type: 'group',
+
         label: 
         <div className='grid grid-cols-3 gap-3 -mx-'> 
           {Tempomatic.map((element)=>(
@@ -123,6 +125,7 @@ const items: MenuProps['items'] = [
     children: [
       {
         key: '3-1',
+        type: 'group',
         label: 
         <div className='flex gap-3 -mx-2'> 
           
