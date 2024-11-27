@@ -51,9 +51,6 @@ const items: MenuProps['items'] = [
     key: '1',
     type: 'group',
     style: { backgroundColor: "#EF771C", borderTopLeftRadius:4, borderTopRightRadius: 4 , margin:-4},
-    // mode: "horizontal",
-    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
-    // label: 'Group title',
     children: [
       {
         key: '1-1',
@@ -144,8 +141,6 @@ const items: MenuProps['items'] = [
           ))}
         </div>,
         
-        // style: { backgroundColor: "blue" },
-
       },
      
     ],
@@ -154,9 +149,6 @@ const items: MenuProps['items'] = [
     key: '4',
     type: 'group',
     style: { backgroundColor: "#EF771C", margin:-4 },
-    // mode: "horizontal",
-    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
-    // label: 'Group title',
     children: [
       {
         key: '4-1',
@@ -202,9 +194,6 @@ const items: MenuProps['items'] = [
     key: '6',
     type: 'group',
     style: { backgroundColor: "#EF771C",  borderRadius: 0, margin:-4},
-    // mode: "horizontal",
-    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
-    // label: 'Group title',
     children: [
       {
         key: '6-1',
@@ -228,9 +217,6 @@ const items: MenuProps['items'] = [
     style: { backgroundColor: "#EF771C", paddingBottom: 10, margin:-4 ,
       borderTopLeftRadius:0, borderTopRightRadius: 0 ,
       borderBottomLeftRadius:4, borderBottomRightRadius: 4},
-    // mode: "horizontal",
-    // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
-    // label: 'Group title',
     children: [
         {
           key: '7-1',
@@ -256,7 +242,7 @@ const items: MenuProps['items'] = [
 
 export const NavbarPrueba: React.FC = () => (
 
-<div id="area" className='flex fixe w-full bg-opacity-80 bg-white backdrop-blur-sm '>
+  <div id="area" className='flex fixe w-full bg-opacity-80 bg-white backdrop-blur-sm '>
     <NextLink
           className="rounded-none my-auto ml-10"
           color="foreground"
@@ -273,49 +259,7 @@ export const NavbarPrueba: React.FC = () => (
           
         </NextLink>
   <Dropdown menu={{ items }} placement="bottom" arrow={{ pointAtCenter: true }} 
-  // <Dropdown menu={{ items }} placement="bottom" arrow={{ pointAtCenter: true }}  
-
-    // mode="Horizontal"
-    // destroyPopupOnHide
     overlayClassName=" bg-liverd rounded m- p- w-[22vw] 2xl:w-[15vw] "
-  
-    // dropdownRender={(menu) => (
-    //   <div style={contentStyle}>
-    //     {React.cloneElement(menu as React.ReactElement, { style: menuStyle })}
-    //     <Divider style={{ margin: 0 }} />
-    //     <Space style={{ padding: 8 }}>
-    //       <Button type="primary">Click me!</Button>
-    //     </Space>
-    //   </div>
-    // )}
-    // getPopupContainer={() => document.body}
-    // getPopupContainer={() => document.getElementById('area')}
-    // dropdownRender={(menus) => (
-    //         <div>
-    //           <div className='bg-transparent text-3xl z-10 rounded-full !important '
-    //             style={{ 
-    //               padding: -10, 
-    //               borderRadius: 30,
-    //               // width: "14vw",
-    //               zIndex:100,
-    //               // backgroundColor: "orange",
-    //               // borderColor: '#ccc',
-    //               // borderWidth: '22px',
-    //               // borderStyle: 'solid',
-    //             }}>{menus}</div>
-              
-    //         </div>
-    //       )}
-          // overlayStyle={{ 
-          //   margin: -20, 
-          //   backgroundColor: "transparent",
-          //   width: "14vw",
-          //   zIndex:100,
-          //   // backgroundColor: "orange",
-          //   // borderColor: '#ccc',
-          //   // borderWidth: '22px',
-          //   // borderStyle: 'solid',
-          // }}
     className=' text-5xl '>
     <div onClick={(e) => e.preventDefault()} className='w-[22vw] 2xl:w-[15vw] ml-auto -2 bg-livered h-16  rounded-3xl  '>
       <Space>
