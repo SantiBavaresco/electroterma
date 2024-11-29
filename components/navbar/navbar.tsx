@@ -540,6 +540,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                     <div className="py-0">
                                         <Accordion variant="light">
                                             <AccordionItem key={dropdown.label} aria-label={dropdown.label} 
+                                            indicator={<BsArrowBarRight className="text-2xl text-black"/> }
                                             title={
                                                 <a key={dropdown.label} 
                                                     href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >

@@ -99,7 +99,7 @@ export default function Home() {
                 />
             </section> */}
 
-            <NavbarHome css="-mt-[25px] lg:-mt-2"/>
+            <NavbarHome css="-mt-[25px] lg:-mt-3 "/>
 
             <section className="relative w-full px-[3%] my-3 lg:my-10 pt-4 text-center font-lexend text-[#4C4B4B] text-[3.5vw] lg:text-[1.75vw] overflow-hidden">
                 {BigScreen ? 

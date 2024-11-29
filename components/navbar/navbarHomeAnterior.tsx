@@ -10,7 +10,7 @@ import {
     NavbarMenuItem,
 } from "@nextui-org/navbar";
 import {
-    // Dropdown,
+    Dropdown,
     DropdownTrigger,
     DropdownMenu,
     DropdownSection,
@@ -21,10 +21,6 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter} from "@nextui
 
 import { useState } from "react";
 import {Accordion, AccordionItem, useDisclosure} from "@nextui-org/react";
-
-import { itemsNavSolerPalau as Soler, itemsNavTempomatic as Tempomatic } from "@/public/data/navbarData";
-import { Dropdown, Space, Menu, Button, Divider, theme  } from 'antd';
-import type { MenuProps } from 'antd';
 
 import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 
@@ -37,7 +33,7 @@ import icono from "../electroterma-logo.png";
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
 
-// import { Button } from "@nextui-org/button";
+import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
@@ -55,7 +51,7 @@ import {
     DiscordIcon,
     HeartFilledIcon,
     SearchIcon,
-    // Menu,
+    Menu,
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
@@ -199,222 +195,6 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
         },
     ];
 
-    const Burger =  
-    <div className="w-[22vw] 2xl:w-[15vw] px-auto h-[150%] md:min-w-64 flex items-center justify-center p-[18px] bg-[#EF771C]">
-    <svg
-        width="30"
-        height="28"
-        viewBox="0 0 40 37"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path
-            d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
-            fill="white"
-        />
-        <path
-            d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
-            fill="white"
-        />
-        <path
-            d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
-            fill="white"
-        />
-    </svg>
-    </div>
-    const items: MenuProps['items'] = [
-        {
-          key: '1',
-          type: 'group',
-          style: { backgroundColor: "#EF771C", borderTopLeftRadius:4, borderTopRightRadius: 4 , margin:-4},
-          children: [
-            {
-              key: '1-1',
-          label: 
-                <NextLink
-                  className=""
-                  color="foreground"
-                  href="/"
-                  target={undefined }
-                >
-                    <p className={`font-nunito text-white text-[1.1vw] ml-[30px] !important`}>
-                      Inicio
-                    </p>
-                  
-                </NextLink>,
-            }]
-      
-        },
-        {
-          key: '2',
-          type: "submenu",
-          // popupClassName: "flex flex-row",
-          popupOffset:[0,0],
-          
-          style: { backgroundColor: "#EF771C", margin:-4 },
-          label: 
-            <h1 className='flex text-[1.1vw] text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
-              <h2 className='pl-3'>Tempomatic</h2> 
-            </h1>,
-          children: [
-            {
-              key: '2-1',
-              type: 'group',
-      
-              label: 
-              <div className='grid grid-cols-3 gap-3 -mx-'> 
-                {Tempomatic.map((element)=>(
-                  <NextLink
-                    className=""
-                    key={element.key}
-                    color="foreground"
-                    href={element.href}
-                    target="_top"
-                    // onClick={setFirstFalse}
-                    >
-                      <CardDisplay  data={element} />
-                  </NextLink>
-      
-                ))}
-                
-              </div>,
-              
-              // style: { backgroundColor: "blue" },
-      
-            },
-           
-          ],
-        },
-        {
-          key: '3',
-          type: "submenu",
-          popupOffset:[0,0],
-          style: { backgroundColor: "#EF771C", margin:-4 },
-      
-          label: 
-            <h1 className='flex text-[1.1vw] text-white items-center font-nunito'> <BsArrowBarLeft className="text-2xl"/> 
-              <h2 className='pl-3'>Soler & Palau</h2> 
-            </h1>,
-          children: [
-            {
-              key: '3-1',
-              type: 'group',
-              label: 
-              <div className='flex gap-3 -mx-2'> 
-                
-                {Soler.map((element)=>(
-                  <NextLink
-                    key={element.key}
-                    className=""
-                    color="foreground"
-                    href={element.href}
-                    target="_top"
-                    // onClick={setFirstFalse}
-                    >
-                      <CardDisplay  data={element} />
-                  </NextLink>
-      
-                ))}
-              </div>,
-              
-            },
-           
-          ],
-        },
-        {
-          key: '4',
-          type: 'group',
-          style: { backgroundColor: "#EF771C", margin:-4 },
-          children: [
-            {
-              key: '4-1',
-          label: 
-            <NextLink
-              className=""
-              color="foreground"
-              href="/dti"
-              target={undefined }
-            >
-                <p className={`font-nunito text-white text-[1.1vw] ml-[30px]`}>
-                  DTI
-                </p>
-              
-            </NextLink>,
-            }]
-        },
-        {
-          key: '5',
-          type: 'group',
-          style: { backgroundColor: "#EF771C", margin:-4 },
-          // mode: "horizontal",
-          // label: <div className='bg-green-500 mx-2 w-full -m -trans- -mt-2 overflow-hidden '></div>,
-          // label: 'Group title',
-          children: [
-            {
-              key: '5-1',
-              label: 
-                <NextLink
-                  className=""
-                  color="foreground"
-                  href="/zila"
-                  target={undefined }
-                >
-                    <p className={`font-nunito text-white text-[1.1vw] ml-[30px]`}>
-                      Zila
-                    </p>
-                  
-                </NextLink>,
-            }]
-        },
-        {
-          key: '6',
-          type: 'group',
-          style: { backgroundColor: "#EF771C",  borderRadius: 0, margin:-4},
-          children: [
-            {
-              key: '6-1',
-              label: 
-                <NextLink
-                  className=""
-                  color="foreground"
-                  href="/solucionesHVAC"
-                  target={undefined }
-                >
-                    <p className={`font-nunito text-white text-[1.1vw] ml-[30px] `}>
-                    Soluciones en HVAC
-                    </p>
-                  
-                </NextLink>,
-            }]
-        },
-        {
-          key: '7',
-          type: "group",
-          style: { backgroundColor: "#EF771C", paddingBottom: 10, margin:-4 ,
-            borderTopLeftRadius:0, borderTopRightRadius: 0 ,
-            borderBottomLeftRadius:4, borderBottomRightRadius: 4},
-          children: [
-              {
-                key: '7-1',
-                label: 
-                <NextLink
-                className="rounded-none"
-                color="foreground"
-                href="https://www.tiendaelectroterma.com.ar/"
-                target="_blank"
-              >
-                  <p className={`font-nunito text-white text-[1.1vw] ml-[30px]`}>
-                    Tienda Online
-                  </p>
-                
-              </NextLink>,
-              },
-            ],
-          
-        },
-      ];  
-      
-
     const searchInput = (
         <Input
             aria-label="Buscar"
@@ -441,10 +221,10 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className={`h-[52px] md:h-[64px] px- pt-[10px] lg:pt-0 lg:px-10  flex justify-center items-center font-nunito ${css}`}
+            className={`h-[52px] md:h-[42px]  pt-[10px] lg:pt-0 lg:px-10  flex justify-center items-center font-nunito ${css}`}
             position="sticky"
             disableScrollHandler
-            height={BigScreen ? "42px" : "42px"}
+            height={BigScreen ? "42px" : "52px"}
 
             // height={"100%"}
             isMenuOpen={mobileDropdownOpen}
@@ -467,26 +247,179 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
                 </NextLink>
             </NavbarBrand>
 
-            <NavbarContent className="hidden md:flex gap-4" justify="center">
-
-                <Dropdown menu={{ items }} placement="bottom" arrow={{ pointAtCenter: true }} 
-                    overlayClassName=" bg-liverd rounded m- p- w-[22vw] 2xl:w-[15vw] "
-                    className=' text-5xl '>
-                    <div onClick={(e) => e.preventDefault()} className='w-[22vw] 2xl:w-[15vw] ml-auto -2 bg-livered h-16  rounded-3xl  '>
-                    <Space>
-                        {/* <DownOutlined /> */}
-                        {Burger}
-                    </Space>
-                    </div>
-                </Dropdown>
-
+            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+                {/* <NavbarItem>
+                    <Link color="foreground" href="#">
+                        Features
+                    </Link>
+                </NavbarItem>
+                <NavbarItem isActive>
+                    <Link href="#" aria-current="page" color="secondary">
+                        Customers
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link color="foreground" href="#">
+                        Integrations
+                    </Link>
+                </NavbarItem> */}
             </NavbarContent>
+            <NavbarContent className="hidden md:flex  " as="div" justify="end">
+                <Dropdown
+                    placement="bottom"
+                    className="bg-[#EF771C] !important translate-y-[-1.7%] rounded-none rounded-bl-[64px]"
+                    isOpen={firstDropdownOpen} onOpenChange={setFirstDropdownOpen}
+                    
+                >
+                    <DropdownTrigger className="bg-red-500 h-full">
+                        {/* --------------- Burger --------------- */}
+                        <div className="w-[263px] h-[110%] md:min-w-64 flex items-center justify-center bg-[#EF771C]">
+                            <svg
+                                width="30"
+                                height="28"
+                                viewBox="0 0 40 37"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        {/* --------------- Burger --------------- */}
+
+                    </DropdownTrigger>
+                    <DropdownMenu
+                        aria-label="Profile Actions"
+                        variant="flat"
+                        className="bg-[#EF771C] !important mb-10"
+                    >
+                        {/* <ul className="hidden md:flex gap-4 justify-around pl-1 ml-1"> */}
+                        {siteConfig.navItems.map((dropDown) => (
+                            <DropdownItem
+                                key={dropDown.label}
+                                isReadOnly
+                                className="h-[38px] gap-2 flex justify-start text-start  "
+                                onClick={()=>setSecondDropdownOpen}
+                            >
+                                {dropDown.dropdown ? (
+                                    <Dropdown
+                                        key={dropDown.label}
+                                        placement="left"
+                                        className="rounded-[34px] !important border-1 border-[#F5F4F4] 
+                                                        bg-[#e1e1e1] translate-x-[-1.5%] 2xl:translate-x-[-5%]"
+                                    >
+                                        <DropdownTrigger>
+                                            <div>
+                                                <p className="flex items-center justify-center1 font-nunito text-white text-xl ">
+                                                <BsArrowBarLeft className="text-3xl"/>
+                                                    <div onClick={(e)=>{
+                                                        dropDown.label==="Tempomatic" 
+                                                        ? handleAnchor(dropDown.href) 
+                                                        : dropDown.label==="Soler & Palau" 
+                                                        ? handleAnchor(dropDown.href) 
+                                                        
+                                                        : <></>
+                                                    }}>
+                                                        {dropDown.label}
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </DropdownTrigger>
+                                        <DropdownMenu
+                                            
+                                            aria-label="Profile Actions"
+                                            variant="flat"
+                                            items={dropDown.dwData}
+                                            className={dropDown.label === "Tempomatic" ? "force-col-4 " : "force-row"}
+                                            
+                                        >
+                                            {(item) => (
+                                                
+                                                <DropdownItem
+                                                    key={item.key}
+                                                    className={`rounded-none `}
+                                                    
+                                                >
+                                                    
+                                                    <NextLink
+                                                        className=""
+                                                        color="foreground"
+                                                        href={item.href}
+                                                        target="_top"
+                                                        onClick={setFirstFalse}
+                                                    >
+
+                                                        <CardDisplay
+                                                            data={item}
+                                                            
+                                                        />
+                                                    </NextLink>
+                                                </DropdownItem>
+                                                
+                                            )}
+                                            
+                                        </DropdownMenu>
+                                    </Dropdown>
+                                ) : (
+                                    <NextLink
+                                        className=""
+                                        color="foreground"
+                                        href={dropDown.href}
+                                        target={dropDown.label === "Tienda Online" ?  "_blank" : undefined }
+                                        onClick={setFirstFalse}
+                                    >
+                                        {dropDown.label==="Soluciones en HVAC" 
+                                            ? 
+                                                <p className={`font-nunito text-white text-xl flex`}>
+                                                    <BsArrowBarLeft className="text-3xl"/>
+                                                    {dropDown.label}
+                                                </p>          
+                                            : 
+                                                <p className={`font-nunito text-white text-xl ml-[30px]`}>
+                                                    {dropDown.label}
+                                                </p>
+                                        }
+                                        
+                                    </NextLink>
+                                )}
+                            </DropdownItem>
+                        ))}
+                        {/* </ul> */}
+                        {/* <DropdownItem key="settings">My Settings</DropdownItem>
+                        <DropdownItem key="team_settings">
+                            Team Settings
+                        </DropdownItem>
+                        <DropdownItem key="analytics">Analytics</DropdownItem>
+                        <DropdownItem key="system">System</DropdownItem>
+                        <DropdownItem key="configurations">
+                            Configurations
+                        </DropdownItem>
+                        <DropdownItem key="help_and_feedback">
+                            Help & Feedback
+                        </DropdownItem>
+                        <DropdownItem key="logout" color="danger">
+                            Log Out
+                        </DropdownItem> */}
+                    </DropdownMenu>
+                </Dropdown>
+            </NavbarContent>
+
 
 {/* ------------------------------------ MENU MOBILE ------------------------------------ */}
 
             <NavbarContent  className=" md:hidden basis-1 w-screen h-full pl-4" justify="end">
                 
-            <div className="w-[100px] h-[80%] lg:h-[80%] min-w-32 flex items-center justify-center bg-[#EF771C]"
+            <Button radius="none" className="w-[100px] h-[80%] lg:h-[80%] min-w-32 flex items-center justify-center bg-[#EF771C]"
                 onClick={onOpen}
             >
                             <svg
@@ -509,7 +442,7 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
                                     fill="white"
                                 />
                             </svg>
-                </div >
+                        </Button>
                 {/* <NavbarMenuToggle 
                 
                  aria-label={isMenuOpen ? "C" : "O"}
@@ -559,7 +492,6 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
                                         <div className="py-0">
                                             <Accordion variant="light">
                                                 <AccordionItem key={dropdown.label} aria-label={dropdown.label} 
-                                                indicator={<BsArrowBarRight className="text-2xl text-black"/> }
                                                 title={
                                                     <a key={dropdown.label} 
                                                     href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
