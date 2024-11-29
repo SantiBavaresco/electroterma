@@ -533,7 +533,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                                 indicator={<BsArrowBarRight className="text-2xl text-black"/> }
                                                 title={
                                                     <a key={dropdown.label} 
-                                                    href={dropdown.href}  target="_top" >
+                                                    href={dropdown.label==="Tempomatic" ? undefined : dropdown.label==="Soler & Palau" ? undefined : dropdown.href }   target="_top" >
                                                     {dropdown.label}
                                                 </a>}
                                                 className="-mx-2  "
