@@ -489,7 +489,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
 
 {/* ------------------------------------ MENU MOBILE ------------------------------------ */}
 
-            <NavbarContent className=" md:hidden basis-1 w-screen pl-4" justify="end">
+            <NavbarContent className=" md:hidden font-nunito basis-1 w-screen pl-4" justify="end">
                 
                  <div className="w-[150px] h-[100%] min-w-32 flex items-center justify-center bg-[#EF771C]" onClick={onOpen}>
                             <svg
@@ -533,7 +533,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                                 indicator={<BsArrowBarRight className="text-2xl text-black"/> }
                                                 title={
                                                     <a key={dropdown.label} 
-                                                    href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
+                                                    href={dropdown.href}  target="_top" >
                                                     {dropdown.label}
                                                 </a>}
                                                 className="-mx-2  "
