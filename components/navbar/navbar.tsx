@@ -18,7 +18,9 @@ import {
 } from "@nextui-org/dropdown";
 
 import { useState } from "react";
-import {Accordion, AccordionItem} from "@nextui-org/react";
+import {Accordion, AccordionItem, useDisclosure} from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter} from "@nextui-org/modal"
+
 
 import { itemsNavSolerPalau as Soler, itemsNavTempomatic as Tempomatic } from "@/public/data/navbarData";
 import { Dropdown, Space, Menu, Button, Divider, theme  } from 'antd';
@@ -71,6 +73,9 @@ interface Props {
 
 // export const Navbar = () => {
 export const Navbar: React.FC<Props> = ({ css, ...props }) => {
+
+    const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
     const [firstDropdownOpen, setFirstDropdownOpen] = useState(false);
     const [secondDropdownOpen, setSecondDropdownOpen] = useState(false);
 
@@ -486,13 +491,7 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
 
             <NavbarContent className=" md:hidden basis-1 w-screen pl-4" justify="end">
                 
-                
-                <NavbarMenuToggle 
-                
-                 aria-label={isMenuOpen ? "C" : "O"}
-                 icon={isMenuOpen ? "C" : 
-                 
-                 <div className="w-[150px] h-[100%] min-w-32 flex items-center justify-center bg-[#EF771C]">
+                 <div className="w-[150px] h-[100%] min-w-32 flex items-center justify-center bg-[#EF771C]" onClick={onOpen}>
                             <svg
                                 width="25"
                                 height="25"
@@ -514,18 +513,119 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                 />
                             </svg>
                         </div>
-                    // <Menu className="text-base" />
-                 
-                }
-                 className="w-20 md:hidden "
-                 
-                />
+
             </NavbarContent>
 
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="full" isDismissable={false}>
+                <ModalContent className="bg-white bg-opacity-75 backdrop-blur-xl">
+                {(onClose) => (
+                    <>
+                    <ModalHeader className="flex flex-col gap-1"></ModalHeader>
+                    <ModalBody className="mx-4 mt-2 flex flex-col gap-4 ">
+                        {/* <div className="mx-4 mt-2 flex flex-col gap-2 "> */}
+                        
+                        {siteConfig.navMenuItems.map((dropdown, index) => (
+                            <>
+                                    {dropdown.dropdown ? 
+                                        <div className="py-0">
+                                            <Accordion variant="light">
+                                                <AccordionItem key={dropdown.label} aria-label={dropdown.label} 
+                                                indicator={<BsArrowBarRight className="text-2xl text-black"/> }
+                                                title={
+                                                    <a key={dropdown.label} 
+                                                    href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
+                                                    {dropdown.label}
+                                                </a>}
+                                                className="-mx-2  "
+                                                // startContent={
+                                                //     <Avatar
+                                                //         isBordered
+                                                //         color={`${dropdown.label==="Tempomatic" ? `warning`: "danger"}`}
+                                                //         radius="lg"
+                                                //         src={`../img/navbar/${dropdown.label}.png`}
+                                                //     />
+                                                // }
+                                                >
+                                                    <div className="grid grid-cols-2 gap-2 w-[100%]">
+                                                        
+                                                    {/* Aca va la logica hardcodeada para mobile */}
+                                                    {dropdown.label === "Tempomatic"
+                                                        ? itemsTempomatic?.map((i) => (
+                                                    
+                                                            <NextLink
+                                                                className="max-w-[40vw] "
+                                                                color="foreground"
+                                                                href={i.href}
+                                                                target="_top"
+                                                                key={i.key}
+                                                                
+                                                            >
+                                                                
+                                                                <CardDisplay data={i}/>
+                                                            </NextLink>
+                                                        ))
+
+                                                        : dropdown.label === "Soler & Palau"
+                                                            ? itemsSyP?.map((i) => (
+                                                    
+                                                                <NextLink
+                                                                    className="max-w-[40vw] "
+                                                                    color="foreground"
+                                                                    href={i.href}
+                                                                    target="_top"
+                                                                    key={i.key}
+                                                                    
+                                                                >
+                                                                    
+                                                                    <CardDisplay data={i}/>
+                                                                </NextLink>
+                                                            ))
+
+                                                        : null
+                                                    }
+                                                    </div>
+                                                </AccordionItem>
+                                                
+                                            </Accordion>
+
+                                        </div>
+                                    : 
+                                    <NextLink
+                                        className=""
+                                        color="foreground"
+                                        href={dropdown.href}
+                                        target={dropdown.label === "Tienda Online" ? "_blank" : undefined  }
+                                        onClick={dropdown.label === "Salir" ? onClose : undefined}
+                                                
+                                    >
+                                        <h1>{dropdown.label}</h1> 
+                                    </NextLink>
+                                    }
+
+                            </>
+                            
+                        ))}
+                    {/* </div> */}
+                    </ModalBody>
+                    <ModalFooter>
+                        {/* <Button color="warning" variant="light" onPress={onClose}>
+                        Cerrar
+                        </Button> */}
+                        {/* <Button color="primary" onPress={onClose}>
+                        Action
+                        </Button> */}
+                    </ModalFooter>
+                    </>
+                )}
+                </ModalContent>
+            </Modal>
+
             <NavbarMenu
-            
+
             >
                 {/* {searchInput} */}
+
+            
                 
                 <div className="mx-4 mt-2 flex flex-col gap-2 ">
                     
@@ -540,12 +640,11 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                     <div className="py-0">
                                         <Accordion variant="light">
                                             <AccordionItem key={dropdown.label} aria-label={dropdown.label} 
-                                            indicator={<BsArrowBarRight className="text-2xl text-black"/> }
                                             title={
                                                 <a key={dropdown.label} 
-                                                    href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
-                                                    {dropdown.label}
-                                                </a>}
+                                                href={dropdown.label==="Tempomatic" ? dropdown.href : dropdown.label==="Soler & Palau" ? dropdown.href : undefined}  target="_top" >
+                                                {dropdown.label}
+                                            </a>}
                                             className="-mx-2  "
                                             // startContent={
                                             //     <Avatar
@@ -605,25 +704,12 @@ export const Navbar: React.FC<Props> = ({ css, ...props }) => {
                                     color="foreground"
                                     href={dropdown.href}
                                     target={dropdown.label === "Tienda Online" ? "_blank" : undefined  }
-                                              
+                                            
                                 >
                                     <h1>{dropdown.label}</h1> 
                                 </NextLink>
                                 }
 
-                                {/* <NextLink
-                                    className=""
-                                    color="foreground"
-                                    href={dropdown.href}
-                                    target={dropdown.label === "Tienda Online" ? "_blank" : undefined  }
-                                              
-                                > */}
-                                {/* </NextLink> */}
-                                {/* {item.label} */}
-                            {/* </Link> */}
-
-                            {/* <h1 onClick={() => setMobileDropdownOpen(false)}>HOLAAA</h1>  */}
-                            
                         </NavbarMenuItem>
                         
                     ))}

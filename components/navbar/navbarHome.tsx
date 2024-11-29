@@ -17,10 +17,11 @@ import {
     DropdownItem,
 } from "@nextui-org/dropdown";
 
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter} from "@nextui-org/modal"
 
 import { useState } from "react";
 import {Accordion, AccordionItem, useDisclosure} from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter} from "@nextui-org/modal"
+
 
 import { itemsNavSolerPalau as Soler, itemsNavTempomatic as Tempomatic } from "@/public/data/navbarData";
 import { Dropdown, Space, Menu, Button, Divider, theme  } from 'antd';
@@ -485,8 +486,30 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
 {/* ------------------------------------ MENU MOBILE ------------------------------------ */}
 
             <NavbarContent  className=" md:hidden basis-1 w-screen h-full pl-4" justify="end">
+            <div className="w-[150px] h-[100%] min-w-32 flex items-center justify-center bg-[#EF771C]" onClick={onOpen}>
+                            <svg
+                                width="25"
+                                height="25"
+                                viewBox="0 0 40 37"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
                 
-            <div className="w-[100px] h-[80%] lg:h-[80%] min-w-32 flex items-center justify-center bg-[#EF771C]"
+            {/* <div className="w-[100px] h-[80%] lg:h-[80%] min-w-32 flex items-center justify-center bg-[#EF771C]"
                 onClick={onOpen}
             >
                             <svg
@@ -509,40 +532,8 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
                                     fill="white"
                                 />
                             </svg>
-                </div >
-                {/* <NavbarMenuToggle 
-                
-                 aria-label={isMenuOpen ? "C" : "O"}
-                 icon={isMenuOpen ? "C" : 
-                 
-                 <div className="w-[150px] h-[100%] min-w-32 flex items-center justify-center bg-[#EF771C]">
-                            <svg
-                                width="25"
-                                height="25"
-                                viewBox="0 0 40 37"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M0 7C0 3.13401 3.13401 0 7 0H40C40 3.86599 36.866 7 33 7H0Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M0 22C0 18.134 3.13401 15 7 15H40C40 18.866 36.866 22 33 22H0Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M0 37C0 33.134 3.13401 30 7 30H40C40 33.866 36.866 37 33 37H0Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-
-                 
-                }
-                 className="w-20 md:hidden "
-                 
-                /> */}
+                </div > */}
+               
             </NavbarContent>
 
             <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="full" isDismissable={false}>
