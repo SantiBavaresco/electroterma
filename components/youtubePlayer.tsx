@@ -32,6 +32,6 @@ const YouTubePlayer: React.FC<Props> = ({ id, url, height, width, autoplay }) =>
         },
       };
     
-      return <YouTube ref={youtubeRef} id={id} width={width} height={height} class="mp4" title={id} loading="lazy" iframeClassNam={id} className="flex justify-center m-auto" videoId={url} opts={opts} onReady={onPlayerReady} />;
+      return <YouTube ref={youtubeRef} id={id} className="flex justify-center m-auto" videoId={url} opts={opts} onReady={onPlayerReady} />;
     }
 export default YouTubePlayer;
