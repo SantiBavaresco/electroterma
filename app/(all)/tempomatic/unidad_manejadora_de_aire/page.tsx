@@ -415,6 +415,16 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td>11/2</td>
                                
                             </tr>
+                            <tr className="bg-[#e7e7e7] text-center">
+                                <td className="p-2 pl-[1.7vw] text-left">Peso (Kg)</td>
+                                <td>176</td>
+                                <td>179</td>
+                                <td>197</td>
+                                <td>273</td>
+                                <td>326</td>
+                                <td>418</td>
+                               
+                            </tr>
                         </tbody>
                     </table>
                     <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>

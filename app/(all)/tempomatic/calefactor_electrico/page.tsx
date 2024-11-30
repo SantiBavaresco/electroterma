@@ -233,7 +233,7 @@ export default function CalefactorElectricoPage() {
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] mt-16 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
-                <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5" >TOMA DE AIRE INTECCIÓN DE AIRE</h1>
+                {/* <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5" >TOMA DE AIRE INTECCIÓN DE AIRE</h1> */}
 
                     <table className="table-auto font-nunito text-[1.7vw] w-4/5">
                         <thead >

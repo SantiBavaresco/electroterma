@@ -230,7 +230,7 @@ export default function CajaVentiladoraPage() {
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] mt-16 ">
                 <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
-                <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5">TOMA / INYECCIÓN DE AIRE</h1>
+                {/* <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right w-4/5">TOMA / INYECCIÓN DE AIRE</h1> */}
 
                     <table className="table-auto font-nunito text-[1.3vw] w-4/5">
                         <thead >

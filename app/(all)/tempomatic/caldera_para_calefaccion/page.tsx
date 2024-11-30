@@ -407,7 +407,7 @@ export default function CalderaParaCalefaccionPage() {
                             </tr>
 
                             <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">Ppresión de trabajo (Kg/cm2)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Presión de trabajo (Kg/cm2)</td>
                                 <td>3</td>
                                 <td>3</td>
                                 <td>3</td>
