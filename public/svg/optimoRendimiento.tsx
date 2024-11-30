@@ -26,16 +26,16 @@ export const OptimoRendimiento: React.FC<Props> = ({
             <path
                 d="M17.2524 65.7386L44.8657 49.7827L56.8502 61.2104L78.6904 39.8687"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
             />
             <path
                 d="M63.5122 36.2612L78.8529 38.1154C79.3914 38.1785 79.8297 38.5947 79.9299 39.1371L82.7476 54.3613"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
             />
         </svg>
     );

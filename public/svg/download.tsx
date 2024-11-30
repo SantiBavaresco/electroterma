@@ -16,8 +16,8 @@ export const Download: React.FC<Props> = ({ css, size, height, width, ...props }
             xmlns="http://www.w3.org/2000/svg"
         >
             {/* <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg"> */}
-<path d="M2 39H42" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22 2V30M22 30L34 21.8333M22 30L10 21.8333" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 39H42" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M22 2V30M22 30L34 21.8333M22 30L10 21.8333" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
     );

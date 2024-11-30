@@ -33,14 +33,14 @@ export const metadata: Metadata = {
         template: `%s - ${siteConfig.name}`,
     },
     description: siteConfig.description,
-    themeColor: [
-        { media: "(prefers-color-scheme: light)", color: "white" },
-        { media: "(prefers-color-scheme: dark)", color: "black" },
-    ],
+    // themeColor: [
+    //     { media: "(prefers-color-scheme: light)", color: "white" },
+    //     { media: "(prefers-color-scheme: dark)", color: "black" },
+    // ],
     icons: {
-        icon: "https://electroterma.com.ar/wp-content/uploads/2020/06/cropped-imageonline-co-transparentimage-2-512x465.png",
-        shortcut: "/favicon-16x16.png",
-        apple: "/apple-touch-icon.png",
+        icon: "/electroterma-logo.png",
+        shortcut: "/electroterma-logo.ico",
+        apple: "/electroterma-logo.png",
     },
 };
 

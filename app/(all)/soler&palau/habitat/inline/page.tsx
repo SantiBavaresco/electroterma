@@ -242,14 +242,14 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute bottom-[2.2vw] -right-10 align-middle ">
+                                <article className="absolute bottom-[2.2vw] -right-10 align-middle ">
                                     <h2> {DobleFlechaRoja} Bajo perfil.</h2>
                                     <h2> {DobleFlechaRoja} Muy fácil instalación.</h2>
                                     <h2> {DobleFlechaRoja} Fabricación de material plástico ( 250 al 800).</h2>
                                     <h2> {DobleFlechaRoja} Fabricación en acero (1000, 1300 y 2000).</h2>
 
                             
-                                </p>
+                                </article>
                                 
                             </div>
 
@@ -262,7 +262,7 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute bottom-[2.2vw] right-[8.5vw] align-middle ">
+                                <article className="absolute bottom-[2.2vw] right-[8.5vw] align-middle ">
 
                                     <h2> {DobleFlechaRoja} Fácil mantenimiento.</h2>
                                     <h2> {DobleFlechaRoja} Se evita la  generación de un gran</h2>
@@ -270,7 +270,7 @@ export default function HabitatInlinePage() {
                                     {/* <h2> {DobleFlechaRoja} Fabricación en acero ( 1300 y 2000)</h2> */}
 
                             
-                                </p>
+                                </article>
                                 
                             </div>
                         </section>
@@ -285,13 +285,13 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute bottom-[0.2vw] right-[6.0vw] align-middle ">
+                                <article className="absolute bottom-[0.2vw] right-[6.0vw] align-middle ">
                                     <h2> {DobleFlechaRoja} Electrónica totalmente </h2>
                                     <h2> integrada con el producto.</h2>
 
 
                             
-                                </p>
+                                </article>
                                 
                             </div>
 
@@ -304,7 +304,7 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute bottom-[0.2vw] right-[4.2vw] align-middle ">
+                                <article className="absolute bottom-[0.2vw] right-[4.2vw] align-middle ">
 
                                     <h2> {DobleFlechaRoja} Motor brushless de corriente continua, de </h2>
                                     <h2> alto rendimiento y bajo consumo, regulable </h2>
@@ -312,7 +312,7 @@ export default function HabitatInlinePage() {
                                     {/* <h2> {DobleFlechaRoja} Fabricación en acero ( 1300 y 2000)</h2> */}
 
                             
-                                </p> 
+                                </article> 
                                 
                             </div>
                         </section>
@@ -363,7 +363,7 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute w-[85%] -bottom-[1.2vw] -right-[8vw] align-middle ">
+                                <article className="absolute w-[85%] -bottom-[1.2vw] -right-[8vw] align-middle ">
                                     <h2> {DobleFlechaRoja} Bajo perfil.</h2>
                                     <h2> {DobleFlechaRoja} Muy fácil instalación.</h2>
                                     <h2> {DobleFlechaRoja} Fabricación de material plástico </h2>
@@ -371,7 +371,7 @@ export default function HabitatInlinePage() {
                                     <h2> {DobleFlechaRoja} Fabricación en acero ( 1300 y 2000).</h2>
 
                             
-                                </p>
+                                </article>
                                 
                             </div>
 
@@ -384,11 +384,11 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute w-[85%] -bottom-[3.2vw] -right-[4vw] align-middle ">
-                                <h2> {DobleFlechaRoja} Fácil mantenimiento.</h2>
+                                <article className="absolute w-[85%] -bottom-[3.2vw] -right-[4vw] align-middle ">
+                                    <h2> {DobleFlechaRoja} Fácil mantenimiento.</h2>
                                     <h2> {DobleFlechaRoja} Se evita la  generación de un gran</h2>
                                     <h2> volumen de residuos.</h2>
-                                </p>
+                                </article>
                                 
                             </div>
                         
@@ -401,10 +401,10 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute w-[85%] -bottom-[4.2vw] -right-[21vw] align-middle ">
-                                <h2> {DobleFlechaRoja} Electrónica totalmente </h2>
-                                <h2> integrada con el producto.</h2>
-                                </p>
+                                <article className="absolute w-[85%] -bottom-[4.2vw] -right-[21vw] align-middle ">
+                                    <h2> {DobleFlechaRoja} Electrónica totalmente </h2>
+                                    <h2> integrada con el producto.</h2>
+                                </article>
                                 
                             </div>
 
@@ -420,11 +420,11 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 
-                                <p className="absolute w-[85%] -bottom-[4.2vw] -right-[4vw] align-middle ">
-                                <h2> {DobleFlechaRoja} Motor brushless de corriente </h2>
+                                <article className="absolute w-[85%] -bottom-[4.2vw] -right-[4vw] align-middle ">
+                                    <h2> {DobleFlechaRoja} Motor brushless de corriente </h2>
                                     <h2> continua, de alto rendimiento y bajo  </h2>
                                     <h2> consumo, regulable de forma lineal.</h2>
-                                </p>
+                                </article>
                                 
                             </div>
                                     

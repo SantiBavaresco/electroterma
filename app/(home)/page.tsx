@@ -103,7 +103,7 @@ export default function Home() {
 
             <section className="relative w-full px-[3%] my-3 lg:my-10 pt-4 text-center font-lexend text-[#4C4B4B] text-[3.5vw] lg:text-[1.75vw] overflow-hidden">
                 {BigScreen ? 
-                <p>
+                <>
                 {/* -------------PARRAFO CON COMILLAS WEB------------- */}
                     <span className="z-20 absolute 
                         top-[30%] xs:top-[20%] xm:top-[14%] sm:top-[15%] md:top-[10%] lg:top-[5%] xl:top-[1%]  2xl:-top-[10%] 
@@ -121,9 +121,9 @@ export default function Home() {
 
                     <span className="">Desarrollamos productos innovadores y de calidad</span><br/>
                     <span className="">para soluciones en  <span className="  font-lexend-bold">termomecánica&quot;</span></span><br/>
-                </p>
+                </>
                 :
-                <p>
+                <>
                 {/* -------------PARRAFO CON COMILLAS MOBILE------------- */}
                     <span className="z-20 absolute 
                         top-[35%] xs:top-[20%] xm:top-[17%] sm:top-[15%] md:top-[10%] lg:top-[5%] xl:top-[1%]  2xl:-top-[10%] 
@@ -143,7 +143,7 @@ export default function Home() {
                     <span className="">de calidad para soluciones</span><br/>
                     <span className=""> en  <span className="  font-lexend-bold">termomecánica&quot;</span></span><br/>
 
-                </p>    
+                </>    
                 }
             </section>
 
@@ -492,41 +492,36 @@ export default function Home() {
             </section> */}
 
 
-            {/* ------------- Framescrubber ------------- */}
-            {BigScreen ? 
-                <>   {/* ----- Web ----- */}
-                    {/* <VideoScrubber/> */}
-                    
-                    {/* <ScrollyVideo src="../img/solerpalau/rls/video/original.mkv" transitionSpeed={1} /> */}
-                    {/* <ScrollVideoPlayer/> */}
-                    {/* <VideoScrollPlayer/> */}
-                    
-                        {/* <h1 className=" fixed top-5 text-[200px] -z-100">HOLAAAAAAA</h1> */}
-                        
-                    <Suspense fallback={<div>Loading</div>}>
+
+
+            {/* ------------- FRAME SCRUBBER ------------- */}
+            {/* {BigScreen ?  */}
+                {/* <>   {/* ----- Web ----- */}                        
+                 {/*   <Suspense fallback={<div>Loading</div>}>
                         
                         <FrameFanWeb />
                         
                     </Suspense>
                     
 
-                </> 
+                </>  */}
                 
-                : <div className="-mt-48 -mb-64 mt-"> {/* ----- Mobile ----- */}
-                    {/* <div className=" mx-auto h-32">Mapa scroll mobile</div> */}
-                    <Suspense fallback={<div>Loading</div>}>
+                {/* : <div className="-mt-48 -mb-64 mt-"> 
+                    {/* ----- Mobile ----- */}
+                {/*    <Suspense fallback={<div>Loading</div>}>
                         <FrameFan />
                     </Suspense>
-                     {/* ------------- Diferenciales mobile ------------- */}
-                    
-                </div>
-            }
 
-                <section className=" mx-2 w-full h-full  mr-auto  overflow-hidden">
+                    
+                </div> 
+            }*/}
+
+            {/* ------------- Diferenciales mobile ------------- */}
+                <section className=" md:hidden mx-2 w-full h-full  mr-auto  overflow-hidden">
                         <Image  
                             classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                             alt="Imagen Inicio"
-                            src={`../../img/home/${BigScreen ? "" : "diferencialesMobile"}.png`}
+                            src={`../../img/home/diferencialesMobile.png`}
                             width={"95%"}
                         />
                     </section>

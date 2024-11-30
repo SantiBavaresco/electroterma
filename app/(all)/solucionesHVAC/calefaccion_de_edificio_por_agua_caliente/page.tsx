@@ -190,7 +190,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 							
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">2. LOCACIÓN Y DISEÑO DE LA SALA DE MÁQUINAS (SMAQ)</h2>
 
-							<p className="w-full">
+							<article className="w-full">
 								Para la locación de una sala de calderas, en este tipo de proyectos, se deben tener en cuenta varios factores, entre ellos podemos citar: <br/><br/>
 
 
@@ -240,7 +240,7 @@ export default function Soluciones_calefaccion_de_edificio_por_agua_caliente_Pag
 								</article>
 
 								
-							</p>
+							</article>
 
 						</div>
 						

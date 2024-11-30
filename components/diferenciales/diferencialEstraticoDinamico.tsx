@@ -23,7 +23,7 @@ export const DiferencialEstaticoDinamico : React.FC<Props> =  ({size, text, text
 				 }
 				*/}
 				</span>
-				<p className={`z-0  pb-10 h-2/3 pl-8 pr-2 md:px-10 py-1 -translate-x-8 
+				<article className={`z-0  pb-10 h-2/3 pl-8 pr-2 md:px-10 py-1 -translate-x-8 
 					bg-livered-title bg-opacity-100 border-2 border-livered-title rounded-tr-2xl md:rounded-tr-3xl  
 					text-start
 					
@@ -40,7 +40,7 @@ export const DiferencialEstaticoDinamico : React.FC<Props> =  ({size, text, text
 
 					</span>
 					
-				</p>
+				</article>
 			
 				
 			</main>

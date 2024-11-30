@@ -44,37 +44,37 @@ export const GranConfort: React.FC<Props> = ({
                 <path
                     d="M67.7029 15.6006L63.2759 20.5026"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M25.8513 46.1221H22.2304C19.544 46.1221 17.3662 48.3045 17.3662 50.9967V66.2369C17.3662 68.9291 19.544 71.1115 22.2304 71.1115H25.8513C28.5377 71.1115 30.7155 68.9291 30.7155 66.2369V50.9967C30.7155 48.3045 28.5377 46.1221 25.8513 46.1221Z"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M37.2739 48.0803V69.0577C37.2739 69.7013 37.6975 70.2764 38.326 70.4544C41.7692 71.4266 53.0416 74.3842 63.2756 74.4664C63.2756 74.4664 74.0971 75.7672 74.0971 71.1117C74.0971 71.1117 74.589 67.3872 70.2577 67.4557C70.2577 67.4557 75.8324 67.8254 75.8324 63.43C75.8324 63.43 75.9007 59.8287 71.0092 59.8287C71.0092 59.8287 76.9392 60.6366 76.9528 56.2275C76.9528 52.2429 72.0066 52.3251 72.0066 52.3251C72.0066 52.3251 78.5378 52.0512 78.6198 48.3541C78.7291 43.767 74.0971 44.0135 74.0971 44.0135H63.4942C62.9204 44.0135 62.4831 43.5069 62.5651 42.9318C63.057 39.5222 64.3687 29.0472 62.4012 26.158C60.051 22.68 55.7197 23.5564 55.4737 26.7742C55.2278 29.9372 55.6377 41.672 38.2714 46.7247C37.6702 46.9027 37.2603 47.4504 37.2603 48.0666L37.2739 48.0803Z"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M51.0195 15.6006L55.4465 20.5026"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M59.2724 12.3691L59.1494 18.9828"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
                 />
 
         </svg>

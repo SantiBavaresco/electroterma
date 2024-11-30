@@ -16,12 +16,12 @@ export const DotSVG: React.FC<Props> = ({ css, size, height, width, color, ...pr
             fill={color || "#000000"}
             stroke={color || "#000000"}
         >
-            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
             <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
             />
 
             <g id="SVGRepo_iconCarrier">

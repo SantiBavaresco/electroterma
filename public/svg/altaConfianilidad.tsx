@@ -37,37 +37,37 @@ export const AltaConfiabilidad: React.FC<Props> = ({
             <path
                 d="M64.0178 21.948L59.9707 26.4199"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
             />
             <path
                 d="M25.7571 49.791H22.4469C19.9909 49.791 18 51.782 18 54.2379V68.1406C18 70.5966 19.9909 72.5875 22.4469 72.5875H25.7571C28.213 72.5875 30.2039 70.5966 30.2039 68.1406V54.2379C30.2039 51.782 28.213 49.791 25.7571 49.791Z"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
             />
             <path
                 d="M36.1998 51.5771V70.7137C36.1998 71.3008 36.587 71.8254 37.1616 71.9878C40.3094 72.8746 50.6022 76.3472 59.9581 76.4222C59.9581 76.4222 69.8637 76.8344 69.8637 72.5998C69.8637 72.5998 70.3133 69.2022 66.3536 69.2647C66.3536 69.2647 71.45 69.6019 71.45 65.5923C71.45 65.5923 71.5125 62.3071 67.0406 62.3071C67.0406 62.3071 72.4618 63.0441 72.4743 59.0219C72.4743 55.3869 67.9525 55.4619 67.9525 55.4619C67.9525 55.4619 73.9233 55.2121 73.9983 51.8394C74.0982 47.6549 69.8637 47.8797 69.8637 47.8797H60.1705C59.6458 47.8797 59.2461 47.4175 59.3211 46.8929C59.7707 43.7826 60.9699 34.2268 59.1712 31.5911C57.0227 28.4184 53.063 29.2178 52.8381 32.1532C52.6133 35.0887 52.988 45.7437 37.1117 50.353C36.562 50.5153 36.1873 51.015 36.1873 51.5771H36.1998Z"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
             />
             <path
                 d="M48.7658 21.948L52.8129 26.4199"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
             />
             <path
                 d="M56.3107 19L56.1983 25.0333"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
             />
         </svg>
     );

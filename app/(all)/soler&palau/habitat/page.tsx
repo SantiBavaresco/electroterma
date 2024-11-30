@@ -379,6 +379,7 @@ export default function HabitatPage() {
                     <div className="w-full  ">
                         <YouTubePlayer
                             // url={item.presentationVideoId}
+                            id={habitatData.videoYoutubeId1}
                             url={habitatData.videoYoutubeId1}
                             height={BigScreen ? "500px" : "200px"}
                             width={"100%"}
@@ -388,6 +389,7 @@ export default function HabitatPage() {
                     <div className="w-full h-full  ">
                         <YouTubePlayer
                             // url={item.presentationVideoId}
+                            id={habitatData.videoYoutubeId2}
                             url={habitatData.videoYoutubeId2}
                             height={BigScreen ? "500px" : "200px"}
                             width={"100%"}

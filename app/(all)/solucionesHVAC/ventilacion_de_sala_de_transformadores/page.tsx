@@ -204,7 +204,7 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 							/>
 
 							<h2 className="text-[#EF771C] text-[3.8vw] lg:text-[1.3vw] font-nunito-bold lg:mt-16">LA INSTALACIÓN PROPUESTA Y POSTERIORMENTE EJECUTADA CONSTÓ DE:</h2>
-							<p className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
+							<article className="text-[3.8vw] lg:text-[1.20vw] font-nunito">
 								<h2 className="text-[#EF771C] font-nunito-bold">Inyección:</h2>
 								En la zona inferior de una de las caras de la sala, 6 (seis) ventiladores axiales, marca TEMPOMATIC, modelo 3 - AX - 450, diámetro 450 mm - 1440 RPM - pala de poliamida marca OTAM/Soler & Palau.
 								<br/><br/>
@@ -217,7 +217,7 @@ export default function Soluciones_ventilacion_de_sala_de_transformadores_Page()
 								Comando encargado de ordenar el encendido/apagado de los ventiladores, con el fin de optimizar el consumo energético y asegurar el funcionamiento del sistema de ventilación exclusivamente en los momentos en que este sea requerido.
 								<br/><br/>
 								
-							</p>
+							</article>
 
 							{/* <div className="mx-auto md:hidden">
 								<Button

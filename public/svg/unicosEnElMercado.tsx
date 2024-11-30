@@ -46,7 +46,7 @@ export const UnicosEnElMercado: React.FC<Props> = ({
                 rx="2"
                 fill="white"
                 stroke="#FF7800"
-                stroke-width="2"
+                strokeWidth="2"
             />
         </svg>
     );

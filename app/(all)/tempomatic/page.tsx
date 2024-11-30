@@ -82,7 +82,7 @@ export default function TempomaticPage() {
                 {/* -------------PARRAFO CON COMILLAS WEB ------------- */}
 
                 {BigScreen ? 
-                    <p>
+                    <article>
                         
                         <div className="z-20 absolute 
                             top-[26%] xm:top-[24%] sm:top-[8%] md:top-[12%] lg:top-[5%] xl:top-[1%]  2xl:top-[0%] 
@@ -105,10 +105,10 @@ export default function TempomaticPage() {
                         <span className="">industrias, respaldadas por la confiabilidad y solidez de </span><br/>
                         <span className="">nuestro equipo de ingeniería&quot;</span><br/>
 
-                    </p>
+                    </article>
                 :
                 
-                    <p className="text-[3.0vw]">
+                    <article className="text-[3.0vw]">
                 {/* -------------PARRAFO CON COMILLAS MOBILE------------- */}
                         
                         <div className="z-20 absolute 
@@ -133,7 +133,7 @@ export default function TempomaticPage() {
                         <span className="">respaldadas por la confiabilidad y solidez de </span><br/>
                         <span className="">nuestro equipo de ingeniería&quot;</span><br/>
 
-                    </p>
+                    </article>
                 }
                 <div className="">
                         <div>

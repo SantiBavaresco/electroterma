@@ -24,17 +24,11 @@ export const VinietaNaranjaSVG: React.FC<Props> = ({
             // fill={color || "#000000"}
             // stroke={color || "#000000"}
         >
-            <g clip-path="url(#clip0_1_1216)">
                 <path
                     d="M0 40.8931L7.0073 32.591C8.9781 30.292 8.9781 26.5667 7.0073 24.2676L0 16.072V0L16.8978 19.7121C18.7591 21.8834 19.854 24.7785 19.9818 27.8652C19.9818 28.2484 19.9818 28.6528 19.9818 29.036C19.854 32.1227 18.7591 34.9965 16.8978 37.1891L0 56.9012V40.8931Z"
                     fill="#EF771C"
                 />
-            </g>
-            <defs>
-                <clipPath id="clip0_1_1216">
-                    <rect width="20" height="56.9012" fill="white" />
-                </clipPath>
-            </defs>
+
         </svg>
     );
 };

@@ -76,7 +76,7 @@ export default function SolerPalauPage() {
                 />
             </section>
             <section className="relative w-full px-[3%] mt-10 mb-10 text-center font-lexend text-[3.0vw] lg:text-[1.6vw] overflow-hidden text-[#787878]     ">
-                <p>
+                <article>
                     
                     <div className="absolute 
                         -top-[0%] xm:-top-[0%] sm:top-[6%] md:-top-[0%] lg:-top-[10%] xl:-top-[9%]  2xl:-top-[9%] 
@@ -97,7 +97,7 @@ export default function SolerPalauPage() {
                     <span className="">ventilación innovadoras y eficientes para asegurar una</span><br/>
                     <span className=""> óptima calidad del aire en todos tus espacios&quot;</span><br/>
 
-                </p>
+                </article>
                 <div className="">
                         <div>
 

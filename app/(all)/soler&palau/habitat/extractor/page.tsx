@@ -267,8 +267,7 @@ export default function HabitatInlinePage() {
                                 <article className="w-2/3 pl-2 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2>
                                     <p className="text-[105%]">
-                                     {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
-                                        <h2 className=""></h2>
+                                        {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
                                     </p>
 
                                 </article>
@@ -330,8 +329,7 @@ export default function HabitatInlinePage() {
                                 <article className="w-2/3 pl-4 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2>
                                     <p className="text-[105%]">
-                                     {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
-                                        <h2 className=""></h2>
+                                        {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
                                     </p>
 
                                 </article>
@@ -347,13 +345,10 @@ export default function HabitatInlinePage() {
                                     />
                                 </div>
                                 <article className="w-full pl-2 my-auto text-bla">
-                                    
                                         <h2 className="">{DobleFlechaRoja} Protector térmico para trabajar a temperaturas de hasta 40ºC.</h2>
                                         <h2 className="">{DobleFlechaRoja} Renueva el aire húmedo o contaminado de baños, pequeñas habitaciones y oficinas.</h2>
                                         <h2 className="">{DobleFlechaRoja} Modelo con temporizador regulable (mantiene el extractor en marcha entre 1 -30 minutos después de apagada la luz).</h2>
                                         <h2 className="">{DobleFlechaRoja} Aislamiento y protección II-IP45 protección contra objetos con un diámetro superior a 1mm y resistente a chorros de agua.</h2>
-
-
                                 </article>
                             </div>
 
@@ -423,8 +418,7 @@ export default function HabitatInlinePage() {
                                 <article className="w-2/3 pl-2 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2>
                                     <p className="text-[105%]">
-                                     {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
-                                        <h2 className=""></h2>
+                                        {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
                                     </p>
 
                                 </article>
@@ -441,15 +435,11 @@ export default function HabitatInlinePage() {
                                 <article className="w-2/3 pl-2 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Silent-blocks elásticos</h2>
                                     <p className="text-[105%]">
-                                     {DobleFlechaRoja} Motor montado sobre Silent-blocks que absorben las vibraciones, evitando que se transmitan al exterior.
-                                        <h2 className=""></h2>
+                                        {DobleFlechaRoja} Motor montado sobre Silent-blocks que absorben las vibraciones, evitando que se transmitan al exterior.
                                     </p>
 
                                 </article>
                             </div>
-
-                            
-
                         </div>
 
                         {/* ------------- Info Silent 2 ------------- */}
@@ -466,7 +456,6 @@ export default function HabitatInlinePage() {
                                 <article className="w-2/3 pl-2 my-auto">
                                     <p className="text-[100%]">
                                         {DobleFlechaRoja} Rodamiento a bolas de larga vida (30.000 horas) trabajando en cualquier posición de eje especialmente recomendado para condiciones duras de trabajo en instalaciones industriales o comerciales.
-                                        <h2 className=""></h2>
                                     </p>
 
                                 </article>
@@ -481,13 +470,10 @@ export default function HabitatInlinePage() {
                                     width="100%"
                                 />
                                 <article className="w-full pl-2 my-auto text-bla">
-                                    
                                         <h2 className="">{DobleFlechaRoja} Protector térmico para trabajar a temperaturas de hasta 40ºC.</h2>
                                         <h2 className="">{DobleFlechaRoja} Renueva el aire húmedo o contaminado de baños, pequeñas habitaciones y oficinas.</h2>
                                         <h2 className="">{DobleFlechaRoja} Modelo con temporizador regulable (mantiene el extractor en marcha entre 1 -30 minutos después de apagada la luz).</h2>
                                         <h2 className="">{DobleFlechaRoja} Aislamiento y protección II-IP45 protección contra objetos con un diámetro superior a 1mm y resistente a chorros de agua.</h2>
-
-
                                 </article>
                             </div>
 
@@ -531,13 +517,11 @@ export default function HabitatInlinePage() {
                                 <article className="w-2/3 pl-4 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Compuerta antirretorno</h2>
                                     <p className="text-[105%]">
-                                     {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
-                                        <h2 className=""></h2>
+                                        {DobleFlechaRoja} Evita la entrada de aire del exterior y las fugas de calefacción, cuando el extractor no está en funcionamiento. Se abre por la presión de aire.
                                     </p>
                                 </article>
                             </div>
 
-                           
 
                             <div className=" flex w-full">
                             <div className="w-1/3 h-full my-auto">
@@ -552,8 +536,7 @@ export default function HabitatInlinePage() {
                                 <article className="w-2/3 pl-4 my-auto">
                                     <h2 className="text-[115%] text-livered-title">Silent-blocks elásticos</h2>
                                     <p className="text-[105%]">
-                                     {DobleFlechaRoja} Motor montado sobre Silent-blocks que absorben las vibraciones, evitando que se transmitan al exterior.
-                                        <h2 className=""></h2>
+                                        {DobleFlechaRoja} Motor montado sobre Silent-blocks que absorben las vibraciones, evitando que se transmitan al exterior.
                                     </p>
 
                                 </article>
@@ -572,7 +555,6 @@ export default function HabitatInlinePage() {
                                 <article className="w-2/3 pl-4 my-auto">
                                     <p className="text-[100%]">
                                         {DobleFlechaRoja} Rodamiento a bolas de larga vida (30.000 horas) trabajando en cualquier posición de eje especialmente recomendado para condiciones duras de trabajo en instalaciones industriales o comerciales.
-                                        <h2 className=""></h2>
                                     </p>
 
                                 </article>
@@ -589,13 +571,10 @@ export default function HabitatInlinePage() {
                                     />
                                 </div>
                                 <article className="w-full pl-2 my-auto text-bla">
-                                    
                                         <h2 className="">{DobleFlechaRoja} Protector térmico para trabajar a temperaturas de hasta 40ºC.</h2>
                                         <h2 className="">{DobleFlechaRoja} Renueva el aire húmedo o contaminado de baños, pequeñas habitaciones y oficinas.</h2>
                                         <h2 className="">{DobleFlechaRoja} Modelo con temporizador regulable (mantiene el extractor en marcha entre 1 -30 minutos después de apagada la luz).</h2>
                                         <h2 className="">{DobleFlechaRoja} Aislamiento y protección II-IP45 protección contra objetos con un diámetro superior a 1mm y resistente a chorros de agua.</h2>
-
-
                                 </article>
                             </div>
                         {/* {mobileImagesCol} */}
