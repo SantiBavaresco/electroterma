@@ -15,7 +15,7 @@ let frameCount = 600;
   if (ventElement) {    
     keyAttribute = ventElement.accessKey;    
     console.log(keyAttribute);
-    if(keyAttribute === "tsa") frameCount = 650
+    if(keyAttribute === "tsa") frameCount = 700
     if(keyAttribute === "tda") frameCount = 650
     if(keyAttribute === "rls") frameCount = 750
     if(keyAttribute === "home") frameCount = 850
@@ -101,7 +101,7 @@ const updateImage = (index) => {
     else
     (window.innerWidth <= 768 ) ?
         context?.drawImage(imgArray[index], 0, 0, 299, 531, 0, 0, canvas.width, canvas.height)
-        : context?.drawImage(imgArray[index], 0, 0, 1920, 1080, 0, 0, canvas.width, canvas.height)
+        : context?.drawImage(imgArray[index], 0, 0, 1920, 1080, 0, 30, canvas.width, canvas.height)
 
     
 };
