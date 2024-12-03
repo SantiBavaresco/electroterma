@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { title } from "@/components/primitives";
 import { Image } from "@nextui-org/image";
 import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
+import { ManualButton } from "@/components/custonButtons/manual";
 
 
 export default function UtaPage() {
@@ -36,6 +37,7 @@ export default function UtaPage() {
             <section className="w-full flex justify-center">
                 <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
                     link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20UTA."}/>
+                <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/uta.pdf"} dwName={"UTA Manual.pdf"}/>
             </section>
 		</main>
 	);
