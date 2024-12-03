@@ -546,7 +546,7 @@ export default function CalderaParaCalefaccionPage() {
 
                 {/* -------------BOTON MANUAL ------------- */}
                 <section className="w-full px-[6%] lg:mt-4 flex justify-between">
-                        <a  className="w-[120px] mt-4" href="/soler&palau" target="_top">
+                        <a  className="w-[120px] mt-4" href="/zila" target="_top">
                         <Image
                             alt="Home banner 1 "
                             className=""

@@ -113,7 +113,7 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
             label: ["Generador de aire caliente"],
             labelShort: "GDAC",
             img: "../../img/navbar/Tempomatic5.png",
-            href: "/tempomatic/generador_aire_caliente",
+            href: "/tempomatic/generador_de_aire_caliente",
             color : "bg-[#EF7916]",
 
         },
