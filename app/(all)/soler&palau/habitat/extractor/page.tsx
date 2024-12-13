@@ -120,7 +120,7 @@ export default function HabitatInlinePage() {
                             alt="Banner 1"
                             className=""
                             radius="none"
-                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatExtractorBanner1.png"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatExtractorBanner1.webp"
                             width="100%"
                         />
                     </div>
@@ -129,7 +129,7 @@ export default function HabitatInlinePage() {
                             alt="Banner 2"
                             className=""
                             radius="none"
-                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatExtractorBanner2.png"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatExtractorBanner2.webp"
                             width="120%"
                         />
                     </div>    
@@ -653,7 +653,7 @@ export default function HabitatInlinePage() {
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"
                             radius="none"
-                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav1.png"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav1.webp"
                             width="100%"
                         />
                     </a>
@@ -662,7 +662,7 @@ export default function HabitatInlinePage() {
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"
                             radius="none"
-                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav2.png"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav2.webp"
                             width="100%"
                         />
                     </a>

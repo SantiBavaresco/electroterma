@@ -87,7 +87,7 @@ export default function DTIPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/dti/DtiDuctosTextilesBanner.png"
+                    src="../img/dti/DtiDuctosTextilesBanner.webp"
                     width="100%"
                 />
             </section>
@@ -198,7 +198,7 @@ export default function DTIPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src={`../img/dti/DtiDuctos${BigScreen ? "Textiles01" : "Textiles01Mobile"}.png`}
+                    src={`../img/dti/DtiDuctos${BigScreen ? "Textiles01.webp" : "Textiles01Mobile.png"}`}
                     width="100%"
                 />
             </section>

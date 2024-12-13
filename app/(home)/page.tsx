@@ -165,7 +165,7 @@ export default function Home() {
                             className=" mt-0"
                             alt="Background Tempomatic"
                             radius="none"
-                            src="../../img/home/homeBanner/h1.png"
+                            src="../../img/home/homeBanner/h1.webp"
                             width="100%"
                         />
 
@@ -192,7 +192,7 @@ export default function Home() {
                             className=" mt-0"
                             alt="Background SyP"
                             radius="none"
-                            src="../../img/home/homeBanner/h2.png"
+                            src="../../img/home/homeBanner/h2.webp"
                             width="100%"
                         />
                         <div className="w-[60%] mx-auto -mt-10">
@@ -218,7 +218,7 @@ export default function Home() {
                             className=" mt-0"
                             alt="Background DTI"
                             radius="none"
-                            src="../../img/home/homeBanner/h3.png"
+                            src="../../img/home/homeBanner/h3.webp"
                             width="100%"
                         />
                         <div className="w-[60%] mx-auto -mt-10">
@@ -244,7 +244,7 @@ export default function Home() {
                             className=" mt-0"
                             alt="Background Zila"
                             radius="none"
-                            src="../../img/home/homeBanner/h4.png"
+                            src="../../img/home/homeBanner/h4.webp"
                             width="100%"
                         />
                         <div className="w-[60%] mx-auto -mt-10">
@@ -320,7 +320,7 @@ export default function Home() {
                             className=" mt-0"
                             alt="Background Tempomatic"
                             radius="none"
-                            src="../../img/home/homeBanner/h1.png"
+                            src="../../img/home/homeBanner/h1.webp"
                             width="100%"
                         />
 
@@ -347,7 +347,7 @@ export default function Home() {
                             className=" mt-0"
                             alt="Background SyP"
                             radius="none"
-                            src="../../img/home/homeBanner/h2.png"
+                            src="../../img/home/homeBanner/h2.webp"
                             width="100%"
                         />
                         <div className="w-[60%] mx-auto -mt-10">
@@ -377,7 +377,7 @@ export default function Home() {
                             className=" mt-0"
                             alt="Background DTI"
                             radius="none"
-                            src="../../img/home/homeBanner/h3.png"
+                            src="../../img/home/homeBanner/h3.webp"
                             width="100%"
                         />
                         <div className="w-[60%] mx-auto -mt-10">
@@ -403,7 +403,7 @@ export default function Home() {
                             className=" mt-0"
                             alt="Background Zila"
                             radius="none"
-                            src="../../img/home/homeBanner/h4.png"
+                            src="../../img/home/homeBanner/h4.webp"
                             width="100%"
                         />
                         <div className="w-[60%] mx-auto -mt-10">
@@ -477,7 +477,7 @@ export default function Home() {
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen Inicio"
-                    src={`../../img/home/${BigScreen ? "home" : "homeMobile"}.png`}
+                    src={`../../img/home/${BigScreen ? "home.webp" : "homeMobile.png"}`}
                     width={"100%"}
                 />
             </section>
@@ -531,7 +531,7 @@ export default function Home() {
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen grupal"
-                    src={`../../img/home/${BigScreen ? "grupo" : "grupoMobile"}.png`}
+                    src={`../../img/home/${BigScreen ? "grupo.webp" : "grupoMobile.webp"}`}
                     width={"100%"}
                     radius="none"
                 />

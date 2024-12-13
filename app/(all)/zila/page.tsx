@@ -29,7 +29,7 @@ export default function ZilaPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src={`../img/zila/${BigScreen ? "webFija" : "mobileFija"}.png`}
+                    src={`../img/zila/${BigScreen ? "webFija" : "mobileFija"}.webp`}
                     width="100%"
                 />
             </section>

@@ -223,6 +223,7 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
         />
     </svg>
     </div>
+    
     const items: MenuProps['items'] = [
         {
           key: '1',

@@ -79,7 +79,7 @@ export default function UnidadManejadoraDeAirePage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire-Banner.png"
+                    src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire-Banner.webp"
                     width="100%"
                 />
             </section>
@@ -121,7 +121,7 @@ export default function UnidadManejadoraDeAirePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_01.png"
+                            src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_01.webp"
                             width="100%"
                         />
                     </div>
@@ -153,7 +153,7 @@ export default function UnidadManejadoraDeAirePage() {
                         alt="Home banner 1"
                         className=""
                         radius="none"
-                        src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_02.png"
+                        src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_02.webp"
                         width="100%"
                     />
                 </div>
@@ -194,7 +194,7 @@ export default function UnidadManejadoraDeAirePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_03.png"
+                            src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_03.webp"
                         />
                     </div>
                 </div>
@@ -209,7 +209,7 @@ export default function UnidadManejadoraDeAirePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_04.png"
+                            src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_04.webp"
                         />
                     </div>
                
@@ -440,7 +440,7 @@ export default function UnidadManejadoraDeAirePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_05.png"
+                            src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_05.webp"
                         />
                     </div>
             
@@ -482,7 +482,7 @@ export default function UnidadManejadoraDeAirePage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_02.png"
+                                src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_02.webp"
                                 width="100%"
                             />
                         </div>
@@ -540,7 +540,7 @@ export default function UnidadManejadoraDeAirePage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_03.png"
+                                src="../img/tempomatic/unidad_manejadora_de_aire/unidad_manejadora_de_aire_03.webp"
                             />
                         </div>
                     </div>

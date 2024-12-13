@@ -189,7 +189,7 @@ export default function HabitatPage() {
                                     alt="Habitat 1"
                                     className=""
                                     radius="none"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitat1.png"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitat1.webp"
                                     width="100%"
                                 />
                             </div>
@@ -199,7 +199,7 @@ export default function HabitatPage() {
                                     alt="Habitat inline 1"
                                     className="w"
                                     radius="none"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitatInline1.png"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatInline1.webp"
                                     width="100%"
                                 />
                                 <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
@@ -219,7 +219,7 @@ export default function HabitatPage() {
                                     alt="Habitat 2"
                                     className=""
                                     radius="none"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitat2.png"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitat2.webp"
                                     width="100%"
                                 />
                             </div>
@@ -229,7 +229,7 @@ export default function HabitatPage() {
                                     alt="Habitat extractor 1"
                                     className="w"
                                     radius="none"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.png"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.webp"
                                     width="100%"
                                 />
                                 <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
@@ -257,7 +257,7 @@ export default function HabitatPage() {
                                     alt="Habitat 1"
                                     className=""
                                     radius="none"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitat1.png"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitat1.webp"
                                     width="100%"
                                 />
                             </div>
@@ -266,7 +266,7 @@ export default function HabitatPage() {
                                 <Image
                                     alt="Habitat inline 1"
                                     className="w"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitatInline1.png"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatInline1.webp"
                                     width="100%"
                                 />
                                 <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
@@ -286,7 +286,7 @@ export default function HabitatPage() {
                                     alt="Habitat 2"
                                     className=""
                                     radius="none"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitat2.png"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitat2.webp"
                                     width="100%"
                                 />
                             </div>
@@ -295,7 +295,7 @@ export default function HabitatPage() {
                                 <Image
                                     alt="Habitat extractor 1"
                                     className="w"
-                                    src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.png"
+                                    src="../img/solerpalau/habitat/SolerPalauHabitatExtractor1.webp"
                                     width="100%"
                                 />
                                 <span className="h-[4px] my-4 w-full  bg-livered-title">{" "}</span>
@@ -425,7 +425,7 @@ export default function HabitatPage() {
                                     <Image
                                         alt="Payment"
                                         className=""
-                                        src="../img/solerpalau/habitat/SolerPalauHabitatPay.png"
+                                        src="../img/solerpalau/habitat/SolerPalauHabitatPay.webp"
                                         width="100%"
                                     />
                         </section>

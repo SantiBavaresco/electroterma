@@ -89,7 +89,7 @@ export default function CajaVentiladoraPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/tempomatic/caja_ventiladora/caja_ventiladora-Banner.png"
+                    src="../img/tempomatic/caja_ventiladora/caja_ventiladora-Banner.webp"
                     width="100%"
                 />
             </section>
@@ -131,7 +131,7 @@ export default function CajaVentiladoraPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/caja_ventiladora/caja_ventiladora_01.png"
+                            src="../img/tempomatic/caja_ventiladora/caja_ventiladora_01.webp"
                             width="100%"
                         />
                     </div>
@@ -162,7 +162,7 @@ export default function CajaVentiladoraPage() {
                         alt="Home banner 1"
                         className=""
                         radius="none"
-                        src="../img/tempomatic/caja_ventiladora/caja_ventiladora_02.png"
+                        src="../img/tempomatic/caja_ventiladora/caja_ventiladora_02.webp"
                         width="100%"
                     />
                 </div>
@@ -206,7 +206,7 @@ export default function CajaVentiladoraPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/caja_ventiladora/caja_ventiladora_03.png"
+                            src="../img/tempomatic/caja_ventiladora/caja_ventiladora_03.webp"
                         />
                     </div>
                 </div>
@@ -221,7 +221,7 @@ export default function CajaVentiladoraPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/caja_ventiladora/caja_ventiladora_04.png"
+                            src="../img/tempomatic/caja_ventiladora/caja_ventiladora_04.webp"
                         />
                     </div>
                
@@ -591,7 +591,7 @@ export default function CajaVentiladoraPage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/caja_ventiladora/caja_ventiladora_02.png"
+                                src="../img/tempomatic/caja_ventiladora/caja_ventiladora_02.webp"
                                 width="100%"
                             />
                         </div>
@@ -651,7 +651,7 @@ export default function CajaVentiladoraPage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/caja_ventiladora/caja_ventiladora_03.png"
+                                src="../img/tempomatic/caja_ventiladora/caja_ventiladora_03.webp"
                             />
                         </div>
                     </div>

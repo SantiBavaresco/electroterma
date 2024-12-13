@@ -94,7 +94,7 @@ export default function CalderaParaCalefaccionPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion-Banner.png"
+                    src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion-Banner.webp"
                     width="100%"
                 />
             </section>
@@ -145,7 +145,7 @@ export default function CalderaParaCalefaccionPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_01.png"
+                            src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_01.webp"
                             width="100%"
                         />
                     </div>
@@ -164,7 +164,7 @@ export default function CalderaParaCalefaccionPage() {
                         alt="Home banner 1"
                         className=""
                         radius="none"
-                        src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_02.png"
+                        src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_02.webp"
                         width="100%"
                     />
                 </div>
@@ -217,7 +217,7 @@ export default function CalderaParaCalefaccionPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_03.png"
+                            src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_03.webp"
                         />
                     </div>
                 </div>
@@ -232,7 +232,7 @@ export default function CalderaParaCalefaccionPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_04.png"
+                            src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_04.webp"
                         />
                     </div>
             </section>
@@ -460,7 +460,7 @@ export default function CalderaParaCalefaccionPage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_01.png"
+                                src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_01.webp"
                                 width="100%"
                             />
                         </div>
@@ -538,7 +538,7 @@ export default function CalderaParaCalefaccionPage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_03.png"
+                                src="../img/tempomatic/caldera_para_calefaccion/caldera_para_calefaccion_03.webp"
                             />
                         </div>
                     </div>

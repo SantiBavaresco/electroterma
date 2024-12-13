@@ -119,7 +119,7 @@ export default function HabitatInlinePage() {
                             alt="Banner 1"
                             className=""
                             radius="none"
-                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatInlineBanner1.png"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatInlineBanner1.webp"
                             width="100%"
                         />
                     </div>
@@ -128,7 +128,7 @@ export default function HabitatInlinePage() {
                             alt="Banner 2"
                             className=""
                             radius="none"
-                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatInlineBanner2.png"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitatInlineBanner2.webp"
                             width="100%"
                         />
                     </div>    
@@ -516,7 +516,7 @@ export default function HabitatInlinePage() {
                         <Image
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"
-                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav1.png"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav1.webp"
                             width="100%"
                         />
                     </a>
@@ -532,7 +532,7 @@ export default function HabitatInlinePage() {
                         <Image
                             alt="SolerPalauHabitatInline1.png"
                             className="mb-2"
-                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav3.png"
+                            src="../../img/solerpalau/habitat/imgBanner/SolerPalauHabitaNav3.webp"
                             width="100%"
                         />
                     </a>

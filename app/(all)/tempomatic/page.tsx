@@ -72,7 +72,7 @@ export default function TempomaticPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/tempomatic/imgbanner/SolerPalauHome1.png"
+                    src="../img/tempomatic/imgbanner/SolerPalauHome1.webp"
                     width="100%"
                 />
             </section>
@@ -323,13 +323,13 @@ export default function TempomaticPage() {
                     <Image
                         alt="Otam Logo"
                         radius="none"
-                        src="../img/tempomatic/home/1.png"
+                        src="../img/tempomatic/home/1.webp"
                         width={1285}
                     />
                     <Image
                         alt="Otam Logo"
                         radius="none"
-                        src="../img/tempomatic/home/2.png"
+                        src="../img/tempomatic/home/2.webp"
                         width={870}
                     />
                     {/* <Image

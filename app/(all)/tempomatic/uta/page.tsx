@@ -30,7 +30,7 @@ export default function UtaPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src={`../img/tempomatic/uta/provisorio/${BigScreen ? "webFija" : "mobileFija"}.png`}
+                    src={`../img/tempomatic/uta/provisorio/${BigScreen ? "webFija" : "mobileFija"}.webp`}
                     width="100%"
                 />
             </section>

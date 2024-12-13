@@ -234,7 +234,7 @@ export default function RLSPage() {
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
                             className=" w-[520px] md:w-[100%]  top-[75px] lg:top-[65px] 2xl:top-[70px] left-4 md:left-12"
-                            src="../img/solerpalau/rls/SolerPalauRls1.png"
+                            src="../img/solerpalau/rls/SolerPalauRls1.webp"
                             width={"100%"}
                         />
                         
@@ -321,7 +321,7 @@ export default function RLSPage() {
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
                             className="inline-block w-[320px] top-0  left- "
-                            src="../img/solerpalau/rls/SolerPalauRls1.png"
+                            src="../img/solerpalau/rls/SolerPalauRls1.webp"
                             width={"100%"}
                         />
                         <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">

@@ -91,6 +91,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
                     <h1 className="font-bold">equipo tempomatic</h1>
                 </div>
             </div> */}
+            
             <Slider {...settings}>
                 {imgInfo?.map((item, index) => (
                     <div
@@ -101,11 +102,13 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
                         "
                     >
                         <div className="z-0">
-                            <img className=" w-[100%] h-auto max-h-[42vh] md:max-h-[82vh] block m-auto object-fill "
+                            <Image className=" w-[100%] h-auto max-h-[42vh] md:max-h-[82vh] block m-auto object-fill "
                                 alt={`Imagen ${index}`}
                                 src={`${url}${item.imgName}.jpg`}
                                 key={index}
-                            ></img>
+                            >
+
+                            </Image>
                         {/* <Image
                             className=" w-[100%] h-auto max-h-[80%] block m-auto"
                             alt={`Imagen ${index}`}
@@ -117,13 +120,10 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
                             // width={1000}
                             // height={"30%"}
                         /> */}
-                        </div>
-
                         <div
                             className="absolute px-6 z-10
                             
                             bottom-[0%]
-
                             // right-0
                             rounded-tl-[42px]
                             flex flex-col justify-start items-center bg-white p-1 "
@@ -132,10 +132,11 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
                                 {item.imgLable?.map((item, index) => (
                                      <h1 className={`text-${item.textColor||"livered-title"} font-bold font-lexend`} key={`${index}-${item}`}>{item.textLable}</h1>
                                 ))}
-                                {/* <h1 className=" font-bold">Componente de</h1>
-                                <h1 className="font-bold">equipo tempomatic</h1> */}
                             </div>
                         </div>
+                        </div>
+
+                        
                     </div>
                 ))}
             </Slider>

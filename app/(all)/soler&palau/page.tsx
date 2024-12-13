@@ -71,7 +71,7 @@ export default function SolerPalauPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/solerpalau/imgbanner/SolerPalauHome4.png"
+                    src="../img/solerpalau/imgbanner/SolerPalauHome1.webp"
                     width="100%"
                 />
             </section>
@@ -226,22 +226,22 @@ export default function SolerPalauPage() {
             {BigScreen ? <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
                     <Image
                         alt="Otam Logo"
-                        src="../img/home/imgHome/1.png"
+                        src="../img/home/imgHome/1.webp"
                         width={450}
                     />
                     <Image
                         alt="Otam Logo"
-                        src="../img/home/imgHome/2.png"
+                        src="../img/home/imgHome/2.webp"
                         width={450}
                     />
                     <Image
                         alt="Otam Logo"
-                        src="../img/home/imgHome/3.png"
+                        src="../img/home/imgHome/3.webp"
                         width={450}
                     />
                     <Image
                         alt="Otam Logo"
-                        src="../img/home/imgHome/4.png"
+                        src="../img/home/imgHome/4.webp"
                         width={450}
                     />
                 </section>
@@ -249,12 +249,12 @@ export default function SolerPalauPage() {
             <section className="w-full flex items-center justify-center mx-auto p-4 bg-transparent space-x-2">
                     <Image
                         alt="Otam Logo"
-                        src="../img/home/imgHome/3.png"
+                        src="../img/home/imgHome/3.webp"
                         width={450}
                     />
                     <Image
                         alt="Otam Logo"
-                        src="../img/home/imgHome/4.png"
+                        src="../img/home/imgHome/4.webp"
                         width={450}
                     />
                 </section>

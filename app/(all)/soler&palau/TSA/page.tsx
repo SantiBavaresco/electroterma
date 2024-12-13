@@ -249,7 +249,7 @@ export default function TSAPage() {
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
                             className="z-0 w-[520px] md:w-[100%]  mb-10 top-[75px] lg:top-[65px] 2xl:top-[70px] left-4 md:left-12"
-                            src="../img/solerpalau/tsa/SolerPalauTsa1.png"
+                            src="../img/solerpalau/tsa/SolerPalauTsa1.webp"
                             width={"100%"}
                         />
                         
@@ -406,7 +406,7 @@ export default function TSAPage() {
                             // className="-top-16 left-1/2"
                             alt="Ventilador"
                             className="inline-block w-[320px] top-0  left-2 "
-                            src="../img/solerpalau/tsa/SolerPalauTsa1.png"
+                            src="../img/solerpalau/tsa/SolerPalauTsa1.webp"
                             width={"100%"}
                         />
                         <div className="mt-2 ml-auto w-full flex justify-end overflow-hidden">

@@ -46,7 +46,7 @@ export default function SolucionesHVACPage() {
 						alt="Banner 1"
 						className=""
 						radius="none"
-						src={`../../img/soluciones/home/SolucionesBanner1${BigScreen ? "" : "Mobile"}.png`}
+						src={`../../img/soluciones/home/SolucionesBanner1${BigScreen ? "" : "Mobile"}.webp`}
 						width="100%"
 					/>
 				</div>

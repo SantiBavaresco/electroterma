@@ -92,7 +92,7 @@ export default function GeneradoDeAireCalientePage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente-Banner.png"
+                    src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente-Banner.webp"
                     width="100%"
                 />
             </section>
@@ -134,7 +134,7 @@ export default function GeneradoDeAireCalientePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_01.png"
+                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_01.webp"
                             width="100%"
                         />
                     </div>
@@ -167,7 +167,7 @@ export default function GeneradoDeAireCalientePage() {
                         alt="Home banner 1"
                         className=""
                         radius="none"
-                        src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_02.png"
+                        src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_02.webp"
                         width="100%"
                     />
                 </div>
@@ -217,7 +217,7 @@ export default function GeneradoDeAireCalientePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_03.png"
+                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_03.webp"
                         />
                     </div>
                 </div>
@@ -232,7 +232,7 @@ export default function GeneradoDeAireCalientePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_04.png"
+                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_04.webp"
                         />
                     </div>
             </section>
@@ -246,7 +246,7 @@ export default function GeneradoDeAireCalientePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_05.png"
+                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_05.webp"
                         />
                     </div>
             </section>
@@ -531,7 +531,7 @@ export default function GeneradoDeAireCalientePage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_06.png"
+                            src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_06.webp"
                         />
                     </div>
                
@@ -586,7 +586,7 @@ export default function GeneradoDeAireCalientePage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_01.png"
+                                src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_01.webp"
                                 width="100%"
                             />
                         </div>
@@ -654,7 +654,7 @@ export default function GeneradoDeAireCalientePage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_03.png"
+                                src="../img/tempomatic/generador_de_aire_caliente/generador_de_aire_caliente_03.webp"
                             />
                         </div>
                     </div>

@@ -87,7 +87,7 @@ export default function CalefactorElectricoPage() {
                     alt="Home banner 1"
                     className="rounded-[44-px]"
                     radius="none"
-                    src="../img/tempomatic/calefactor_electrico/calefactor_electrico-Banner.png"
+                    src="../img/tempomatic/calefactor_electrico/calefactor_electrico-Banner.webp"
                     width="100%"
                 />
             </section>
@@ -130,7 +130,7 @@ export default function CalefactorElectricoPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/calefactor_electrico/calefactor_electrico_01.png"
+                            src="../img/tempomatic/calefactor_electrico/calefactor_electrico_01.webp"
                             width="100%"
                         />
                     </div>
@@ -160,7 +160,7 @@ export default function CalefactorElectricoPage() {
                         alt="Home banner 1"
                         className=""
                         radius="none"
-                        src="../img/tempomatic/calefactor_electrico/calefactor_electrico_02.png"
+                        src="../img/tempomatic/calefactor_electrico/calefactor_electrico_02.webp"
                         width="100%"
                     />
                 </div>
@@ -209,7 +209,7 @@ export default function CalefactorElectricoPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/calefactor_electrico/calefactor_electrico_03.png"
+                            src="../img/tempomatic/calefactor_electrico/calefactor_electrico_03.webp"
                         />
                     </div>
                 </div>
@@ -224,7 +224,7 @@ export default function CalefactorElectricoPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/calefactor_electrico/calefactor_electrico_04.png"
+                            src="../img/tempomatic/calefactor_electrico/calefactor_electrico_04.webp"
                         />
                     </div>
                
@@ -426,7 +426,7 @@ export default function CalefactorElectricoPage() {
                             alt="Home banner 1"
                             className=""
                             radius="none"
-                            src="../img/tempomatic/calefactor_electrico/calefactor_electrico_05.png"
+                            src="../img/tempomatic/calefactor_electrico/calefactor_electrico_05.webp"
                         />
                     </div>
             
@@ -479,7 +479,7 @@ export default function CalefactorElectricoPage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/calefactor_electrico/calefactor_electrico_01-mobile.png"
+                                src="../img/tempomatic/calefactor_electrico/calefactor_electrico_01-mobile.webp"
                                 width="100%"
                             />
                         </div>
@@ -548,7 +548,7 @@ export default function CalefactorElectricoPage() {
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
-                                src="../img/tempomatic/calefactor_electrico/calefactor_electrico_03.png"
+                                src="../img/tempomatic/calefactor_electrico/calefactor_electrico_03.webp"
                             />
                         </div>
                     </div>
