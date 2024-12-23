@@ -5,6 +5,8 @@ import animationData from "../../../../public/lottie/ventilador.json";
 
 import { Reveal } from "@/components/revealFramemotion";
 
+// import { Carousel } from 'antd';
+
 import { FaRegCirclePlay } from "react-icons/fa6";
 import { Image } from "@nextui-org/image";
 
@@ -21,6 +23,17 @@ import VideoAutoPlayer from "@/components/videoplayer/videoautoplayer";
 
 
 export default function Uta() {
+
+    const contentStyle: React.CSSProperties = {
+        margin: 0,
+        height: '160px',
+        color: '#fff',
+        lineHeight: '160px',
+        textAlign: 'center',
+        background: '#364d79',
+      };
+
+
     return (
         <main className="flex flex-col items-center justify-center gap- pb-4  md:pb-10">
 
@@ -156,7 +169,7 @@ export default function Uta() {
             </section>
             </Reveal>
 
-             {/* ------------- BANNER 1 ------------- */} 
+            {/* ------------- BANNER 1 ------------- */} 
             <section className=" bg-[url('/img/uta/utaBanner1.jpg')] bg-cover lg:bg-fill
             bg-[center_top_0vw] bg-no-repeat h-[100vh] lg:h-[160vh]">
                     <div className="px-[5%] lg:mx-[20%] pb-[35%] lg:pb-[15%] flex flex-col justify-end h-full text-[4.2vw] lg:text-[1.3vw] text-white ">
@@ -173,6 +186,81 @@ export default function Uta() {
                     </Reveal>
                     
                     </div>
+            </section>
+
+            {/* ------------- BANNER 1 - SLIDER IMG ------------- */} 
+            <section className=" ">
+                    <div className="px-[5%] lg:mx-[20%] pb-[%] lg:pb-[%] flex flex-col justify-end h-full text-[4.2vw] lg:text-[1.3vw] text-white ">
+                    <Reveal duration={0.5} delay={0.5}>
+                        <>
+                        {/* <h2 className="text-[#EF771C] mb-[1vw]">Carrera</h2> */}
+                        <h1 className="py-10 w-4/5 text-[6vw] lg:text-[2.0vw] font-bold leading-none"> Descubre más de tu compañero perfecto..</h1>
+
+                        
+                        </>
+                    </Reveal>
+
+
+                    
+                    </div>
+
+
+                    {/* <>
+                    <Carousel arrows dotPosition="bottom" infinite={false}>
+                    <div>
+                        <h3 style={contentStyle}>1</h3>
+                    </div>
+                    <div>
+                        <h3 style={contentStyle}>2</h3>
+                    </div>
+                    <div>
+                        <h3 style={contentStyle}>3</h3>
+                    </div>
+                    <div>
+                        <h3 style={contentStyle}>4</h3>
+                    </div>
+                    </Carousel>
+                    </> */}
+
+                    <div className="carousel carousel-center   rounded px-[5%] lg:px-[25%]  space-x-[8vw] lg:space-x-[2vw] lg:h-[35vw]">
+                        <div className="carousel-item" id="slide1">
+                            <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" alt="Pizza" />
+                            
+                        </div>
+                        <div className="carousel-item">
+                            <img
+                            src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+                            alt="Pizza" />
+                        </div>
+                        <div className="carousel-item">
+                            <img
+                            src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+                            alt="Pizza" />
+                        </div>
+                        <div className="carousel-item">
+                            <img
+                            src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+                            alt="Pizza" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" alt="Pizza" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp" alt="Pizza" />
+                        </div>
+                        <div className="carousel-item" id="slide4">
+                            <img
+                            src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+                            alt="Pizza" />
+                        </div>
+
+                        
+                    </div>
+                    <div className=" left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" className="btn btn-circle">❮</a>
+      <a href="#slide4" className="btn btn-circle">❯</a>
+    </div>
+
             </section>
 
         
