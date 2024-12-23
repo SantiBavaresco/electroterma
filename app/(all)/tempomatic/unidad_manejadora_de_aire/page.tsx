@@ -1,6 +1,7 @@
 "use client";
 import { Link } from "@nextui-org/link";
 import Lottie from "lottie-react";
+import NextLink from "next/link";
 
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
@@ -575,16 +576,15 @@ export default function UnidadManejadoraDeAirePage() {
                     
                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-4   "> 
                     {itemsNavTempomatic?.map((item) => (
-                            <a
-                                className=""
-                                color="foreground"
-                                href={item.href}
-                                key={item.key}
+                        <NextLink
+                            className=""
+                            color="foreground"
+                            href={ item.labelShort === "UMDA" ? "javascript:void(0)" : item.href}
+                            target={(item.labelShort === "UMDA" ) ? "" : "_top"}
+                            key={item.key}
                             >
-                                {/* <CardDisplay data={item}  actual={""} /> */}
-                                <CardDisplaySypHome data={item}  actual={""}/>
-
-                            </a>
+                            <CardDisplay data={item}  actual={"UMDA"} />
+                        </NextLink>
                         ))}  
                         </div>
                     </div>

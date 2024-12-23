@@ -22,7 +22,7 @@ export const VersatilidadAplicacion: React.FC<Props> = ({
             xmlns="http://www.w3.org/2000/svg"
         >
             <ellipse cx="49.5" cy="51" rx="49.5" ry="51" fill="#E90303" />
-            <g clip-path="url(#clip0_0_1)">
+           
                 <path
                     d="M35.624 35.7275V60.0376C35.624 60.4858 35.9621 60.8593 36.3953 60.8913L42.6818 61.4569C43.1784 61.4996 43.6116 61.1048 43.6116 60.5925L43.5165 34.8418C43.5165 34.3188 43.0622 33.924 42.5445 33.988L36.353 34.8738C35.9304 34.9378 35.624 35.3006 35.624 35.7275Z"
                     stroke="white"
@@ -72,17 +72,7 @@ export const VersatilidadAplicacion: React.FC<Props> = ({
                     strokeMiterlimit="10"
                     strokeLinecap="round"
                 />
-            </g>
-            <defs>
-                <clipPath id="clip0_0_1">
-                    <rect
-                        width="68"
-                        height="68"
-                        fill="white"
-                        transform="translate(15 14)"
-                    />
-                </clipPath>
-            </defs>
+
         </svg>
     );
 };

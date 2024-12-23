@@ -95,20 +95,20 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
             <Slider {...settings}>
                 {imgInfo?.map((item, index) => (
                     <div
-                        key={index}
+                        key={`${index} - ${item.imgName}`}
                         className="relative
                          
                         max-h-[80%]
                         "
                     >
                         <div className="z-0">
-                            <Image className=" w-[100%] h-auto max-h-[42vh] md:max-h-[82vh] block m-auto object-fill "
+                            <img className=" w-[100%] h-auto max-h-[42vh] md:max-h-[82vh] block m-auto object-fill "
                                 alt={`Imagen ${index}`}
                                 src={`${url}${item.imgName}.jpg`}
-                                key={index}
+                                key={`Imagen ${index} - ${item.imgName}`}
                             >
 
-                            </Image>
+                            </img>
                         {/* <Image
                             className=" w-[100%] h-auto max-h-[80%] block m-auto"
                             alt={`Imagen ${index}`}

@@ -9,6 +9,8 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { Image } from "@nextui-org/image";
+import NextLink from "next/link";
+
 import { Button } from "@nextui-org/button";
 import CardDisplay from "@/components/navbar/cardDisplay";
 import SimpleSliderDemoImages from "@/components/imgslider/simpleSliderDemoImages";
@@ -695,16 +697,26 @@ export default function CajaVentiladoraPage() {
                     
                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-4   "> 
                     {itemsNavTempomatic?.map((item) => (
-                            <a
-                                className=""
-                                color="foreground"
-                                href={item.href}
-                                key={item.key}
-                            >
-                                {/* <CardDisplay data={item}  actual={""} /> */}
-                                <CardDisplaySypHome data={item}  actual={""}/>
 
-                            </a>
+                        <NextLink
+                            className=""
+                            color="foreground"
+                            href={ item.labelShort === "CV" ? "javascript:void(0)" : item.href}
+                            target={(item.labelShort === "CV" ) ? "" : "_top"}
+                            key={item.key}
+                            >
+                            <CardDisplay data={item}  actual={"CV"} />
+                        </NextLink>
+                            // <a
+                            //     className=""
+                            //     color="foreground"
+                            //     href={item.href}
+                            //     key={item.key}
+                            // >
+
+                            //     <CardDisplaySypHome data={item}  actual={""}/>
+
+                            // </a>
                         ))}  
                         </div>
                     </div>
