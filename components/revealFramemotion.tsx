@@ -40,7 +40,7 @@ export const Reveal: React.FC<Props> = ({ children, width = "fit-content", delay
         else {
             mainControls.start({ 
                 opacity: 0, 
-                y: 0, 
+                translateY:"10%", 
                 transition: { duration: 0.3, ease: "easeInOut" } 
                 }); 
             slideControls.start("hidden");

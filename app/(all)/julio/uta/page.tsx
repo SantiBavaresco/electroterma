@@ -222,7 +222,7 @@ export default function Uta() {
                     </Carousel>
                     </> */}
 
-                    <div className="carousel carousel-center   rounded px-[5%] lg:px-[25%]  space-x-[8vw] lg:space-x-[2vw] lg:h-[35vw]">
+                    <div className="carousel carousel-center   rounded px-[5%] lg:px-[25%]  space-x-[8vw] lg:space-x-[2vw] lg:h-[25vw]">
                         <div className="carousel-item" id="slide1">
                             <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" alt="Pizza" />
                             
