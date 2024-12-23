@@ -46,13 +46,13 @@ export default function Uta() {
             <section className="px-[5%] lg:px-[20%] h-[70vh] lg:h-[135vh] flex flex-col justify-center items-center gap-[4vw] lg:gap-[2vw] first-letter 
             bg-gradient-to-b from-[#eeeeee] to-50% to-white
             ">
-                <Reveal duration={0.8} delay={0.2}>
+                <Reveal duration={0.5} delay={0.2}>
                     <h1 className="text-[12vw] lg:text-[4.0vw]  font-bold lg:h- leading-none text-center">
                         Nueva armadura. <br/>
                         Nuevas aventuras.
                     </h1>
                 </Reveal>
-                <Reveal duration={0.8} delay={0.3}>
+                <Reveal duration={0.5} delay={0.3}>
 
                     <p className="text-[4.6vw] lg:text-[1.3vw] lg:px-[13%] text-center leading-tight text-midgray">
                         Ahora disponible en una nueva e impresionante caja de titanio negro, el Apple Watch Ultra 2 es el compañero perfecto para el deporte y la aventura. 
@@ -61,7 +61,7 @@ export default function Uta() {
                     </p>
                     </Reveal>
                 
-                <Reveal duration={0.8} delay={0.4}>
+                <Reveal duration={0.5} delay={0.4}>
                 
                     <footer className="text-[4.6vw] lg:text-[1.4vw] h-max flex">
                         <h3>Ver el video </h3> <FaRegCirclePlay className="my-auto mx-2" />
@@ -73,7 +73,7 @@ export default function Uta() {
             {/* ------------- DISEÑO ------------- */}            
             <section className=" h-[70vh] lg:h-[110vh] flex flex-col justify-center items-center gap-[2vw text-center">
                 <div className="px-[5%] lg:px-[20%]">
-                <Reveal duration={0.8} delay={0.3}> 
+                <Reveal duration={0.5} delay={0.3}> 
                     <>
                         <h3 className="text-[4.6vw] lg:text-[1.3vw]">Diseño</h3>
                         <h1 className="text-[12vw] lg:text-[4.0vw] h-[30vw] lg:h-[10vw] font-bold leading-none ">
@@ -84,7 +84,7 @@ export default function Uta() {
 
                 </Reveal>
                 </div>
-                <Reveal duration={1.2} delay={0.3}> 
+                <Reveal duration={0.5} delay={0.3}> 
                     <Image
 								alt="product"
 								key="img1"
@@ -104,26 +104,26 @@ export default function Uta() {
             {/* ------------- ARTICULO 2 COL ------------- */}            
             <section className="px-[10%] lg:px-[25%] h-[70vh] lg:h-[50vh] flex flex-col justify-center items-center gap-[2vw] first-letter ">
                 <article className="w-full flex flex-col lg:flex-row gap-[4vw] lg:gap-[2vw] text-[4.2vw] lg:text-[1.3vw] leading-tight">
-                    <Reveal duration={1.2} delay={0.3}>
+                    <Reveal duration={0.5} delay={0.3}>
                         <p className="lg:pl-[7%] w text-midgray">
                             El Apple Watch Ultra 2 viene equipado para afrontar cualquier reto. La caja de 49 mm, ahora disponible en titanio negro, está diseñada para soportar 
                             las condiciones más extremas y cuenta con la certificación <span className="text-[#EF771C]">EN13319</span>, la norma reconocida a nivel internacional para accesorios de buce
                         </p>
                     </Reveal>
                     <div className="lg:w-min-1/3  space-y-[8vw] mt-[8vw] lg:mt-0 lg:space-y-[1vw]">
-                        <Reveal duration={1.2} delay={0.55}>
+                        <Reveal duration={0.5} delay={0.55}>
                             <div>
                                 <h2 className="text-[10vw] lg:text-[2.3vw] font-bold">3,000 nits</h2>
                                 <h3 className="text-midgray">La pantalla más brillante de Apple hasta ahora</h3>
                             </div>
                         </Reveal>
-                        <Reveal duration={1.2} delay={0.7}>
+                        <Reveal duration={0.5} delay={0.65}>
                             <div>
                                 <h2 className="text-[10vw] lg:text-[2.3vw] font-bold">WR100</h2>
                                 <h3 className="text-midgray">Resistencia al agua hasta 100 metros</h3>
                             </div>
                         </Reveal>
-                        <Reveal duration={1.2} delay={0.8}>
+                        <Reveal duration={0.5} delay={0.75}>
                             <div>
                                 <h2 className="text-[10vw] lg:text-[2.3vw] font-bold">IPX6</h2>
                                 <h3 className="text-midgray">Resistencia al polvo</h3>
@@ -134,7 +134,7 @@ export default function Uta() {
             </section>
 
             {/* ------------- ARTICULO 2 COL ------------- */}            
-            <Reveal duration={1.5} delay={0.8}>
+            <Reveal duration={0.5} delay={0.55}>
             <section className="px-[5%] lg:mx-[15%] h-[70vh] lg:h-[90vh] flex flex-col justify-center items-center lg:flex-row">
                 <div className="lg:w-2/3">
                     <Image
@@ -142,7 +142,7 @@ export default function Uta() {
                         key="img2"
                         className="w-full"
                         radius="none"
-                        src="img/uta/uta2.png"
+                        src="../../img/uta/uta2.png"
                         width="100%"
                     />
                 </div>
@@ -175,86 +175,8 @@ export default function Uta() {
                     </div>
             </section>
 
-            {/* <div className="w-[200px w-2/3 lg:w-[350px">
-                    <Lottie
-                        animationData={animationData}
-                        // speed={2}
-                    />
-                </div> */}
-            
-            {/* <section className="flex flex-col items-center justify-center gap-4 py-2 md:py-4">
-                <div className="inline-block max-w-2xl text-center justify-center ">
-                    <h1 className={title()}>Lo Sentimos &nbsp;</h1>
-                    <br />
-                    <h2 className="w-3/4 mx-auto">
-                        Estamos desarrollando una página web de catálogo online,
-                        intuitiva y atractiva, que permite a los usuarios
-                        explorar productos con facilidad.
-                    </h2>
-                </div>
-                
-
-                <div className="flex gap-3">
-                    <Link
-                        isExternal
-                        // href={siteConfig.links.docs}
-                        href={"https://electroterma.com.ar/"}
-                        className={buttonStyles({
-                            color: "warning",
-                            radius: "full",
-                            variant: "shadow",
-                        })}
-                    >
-                        Pagina Electroterma
-                    </Link>
-                    <Link
-                        isExternal
-                        className={buttonStyles({
-                            variant: "bordered",
-                            radius: "full",
-                        })}
-                        // href={siteConfig.links.github}
-                        href={"https://github.com/SantiBavaresco/electroterma"}
-                    >
-                        <GithubIcon size={20} />
-                        GitHub
-                    </Link>
-                </div>
-
-                <div className=" -top-8">
-                    <div className=" flex flex-col lg:flex-row justify-center items-center">
-                        <h1>No dude en contactaser via mail:&nbsp;</h1>
-                        <Snippet
-                            hideSymbol
-                            variant="solid"
-                            color="warning"
-                            tooltipProps={{
-                                color: "foreground",
-                                content: "Copiar Email",
-                                disableAnimation: true,
-                                placement: "right",
-                                closeDelay: 0,
-                            }}
-                        >
-                            info@electroterma.com.ar
-                        </Snippet>
-                    </div>
-                </div>
-				<div className="text-xl gap-4">
-					<div>
-						<p className="font-nunito">Texto en nunito, NUNITO REGULAR</p>
-						<p className="font-nunito-bold">Texto en nunito-bold, NUNUTITO BOLD</p>
-					</div>
-					<hr/>
-					<div>
-						<p className="font-lexend">Texto en lexend, LEXEND REGULAR</p>
-						<p className="font-lexend-bold">Texto en lexend-bold, LEXEND BOLD</p>
-					</div>
-				</div>
-            </section> */}
+        
         </main>
-        // 	<div className={'h-[5000px]'}>
-        // 		<VideoScrollPlayer/>
-        // </div>
+
     );
 }
