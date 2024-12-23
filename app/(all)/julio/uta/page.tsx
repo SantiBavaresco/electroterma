@@ -35,7 +35,7 @@ export default function Uta() {
 
 
     return (
-        <main className="flex flex-col items-center justify-center gap- pb-4  md:pb-10">
+        <main className="flex flex-col items-center justify-center gap- pb-4  md:pb-10 ">
 
             {/* ------------- VIDEO INTRO ------------- */}            
             <section className="px-[%] lg:h-screen bg-[#eeeeee]"> 
@@ -50,6 +50,7 @@ export default function Uta() {
                     muted autoPlay controls={false}
                     src="../img/uta/UTA_presentacion_v1.mp4"
                     width="100%"
+                    
                     // height="100%"
                 />
             {/* <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4" width="100%"/> */}
@@ -84,7 +85,7 @@ export default function Uta() {
             </section>
             
             {/* ------------- DISEÑO ------------- */}            
-            <section className=" h-[70vh] lg:h-[110vh] flex flex-col justify-center items-center gap-[2vw text-center">
+            <section className=" h-[70vh] lg:h-[110vh] flex flex-col justify-center items-center gap-[2vw text-center ">
                 <div className="px-[5%] lg:px-[20%]">
                 <Reveal duration={0.5} delay={0.3}> 
                     <>
@@ -190,7 +191,7 @@ export default function Uta() {
 
             {/* ------------- BANNER 1 - SLIDER IMG ------------- */} 
             <section className=" ">
-                    <div className="px-[5%] lg:mx-[20%] pb-[%] lg:pb-[%] flex flex-col justify-end h-full text-[4.2vw] lg:text-[1.3vw] text-white ">
+                    <div className="px-[5%] lg:mx-[20%] pb-[%] lg:pb-[%] flex flex-col justify-end h-full text-[4.2vw] lg:text-[1.3vw] text-whit ">
                     <Reveal duration={0.5} delay={0.5}>
                         <>
                         {/* <h2 className="text-[#EF771C] mb-[1vw]">Carrera</h2> */}
