@@ -35,7 +35,7 @@ export default function Uta() {
 
 
     return (
-        <main className="flex flex-col items-center justify-center gap- pb-4  md:pb-10 ">
+        <main className="flex flex-col items-center justify-center gap- pb-4  md:pb-10 overflow-hidden ">
 
             {/* ------------- VIDEO INTRO ------------- */}            
             <section className="px-[%] lg:h-screen bg-[#eeeeee]"> 
@@ -262,7 +262,7 @@ export default function Uta() {
                         </div>
                         
                     </div>
-                    <div className="  pl-[75%] flex gap-4 top-1/2 fle -translate-y-1/ transfor ">
+                    <div className="  pl-[75%] py-4 flex gap-4 top-1/2 fle -translate-y-1/ transfor ">
                     <a href="#slide1" className="btn btn-circle bg-white">❮</a>
                     <a href="#slide4" className="btn btn-circle bg-white">❯</a>
                     </div>
@@ -360,7 +360,7 @@ export default function Uta() {
                         </div>
                         
                     </div>
-                    <div className="  pl-[75%] flex gap-4 top-1/2 fle -translate-y-1/ transfor ">
+                    <div className="  pl-[75%] py-4 flex gap-4 top-1/2 fle -translate-y-1/ transfor ">
                     <a href="#slide2.1" className="btn btn-circle bg-white">❮</a>
                     <a href="#slide2.4" className="btn btn-circle bg-white">❯</a>
                     </div>
@@ -471,7 +471,7 @@ export default function Uta() {
                         </div>
                         
                     </div>
-                    <div className="  pl-[75%] flex gap-4 top-1/2 fle -translate-y-1/ transfor ">
+                    <div className="  pl-[75%] py-4  flex gap-4 top-1/2 fle -translate-y-1/ transfor ">
                     <a href="#slide3.1" className="btn btn-circle bg-white">❮</a>
                     <a href="#slide3.5" className="btn btn-circle bg-white">❯</a>
                     </div>
