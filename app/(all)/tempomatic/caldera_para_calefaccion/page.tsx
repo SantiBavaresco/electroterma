@@ -577,12 +577,14 @@ export default function CalderaParaCalefaccionPage() {
             <h1 className="font-nunito-bolder text-[#FF7800] text-[5.5vw] lg:text-[3.5vw]">Otros productos Tempomatic</h1>
             </section>
 
-            {/* ------------- Barra de navegacion S&P ------------- */}
-            <section className="z-0  h-full w-[100%]  md:mt-0 overflow-hidden ">
-                <div className="flex justify-center contaainn  w-max mx-auto mt-3 lg:mt-0 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
+			
+			{/* ------------- Barra de navegacion S&P ------------- */}
+            <section className="z-0  h-full w-[100%]  md:mt-2 overflow-hidden ">
+                
+                <div className="flex justify-center contaainn  w-max mx-auto mt-6 lg:mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
                     
                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-4   "> 
-                    {itemsNavTempomatic?.map((item) => (
+                     {itemsNavTempomatic?.map((item) => (
                             <NextLink
                             className=""
                             color="foreground"
@@ -592,13 +594,13 @@ export default function CalderaParaCalefaccionPage() {
                             >
                             <CardDisplay data={item}  actual={"CC"} />
                         </NextLink>
-                        ))}  
+                        ))}    
                         </div>
                     </div>
                     
                 
             </section>
-
+            
             {/* ------------- Botonera ------------- */}
 {/* 
             <section className="w-full 2xl:w-2/3 mx-auto 2xl:mx-[3%] 2xl:-translate-x-10 lg:mb-10 lg:mt-10 font-nunito flex flex-col items-center lg:flex-row justify-center md:justify-around

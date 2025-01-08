@@ -477,7 +477,7 @@ export default function Home() {
                 <Image  
                     classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                     alt="Imagen Inicio"
-                    src={`../../img/home/${BigScreen ? "home.webp" : "homeMobile.png"}`}
+                    src={`../../img/home/${BigScreen ? "home.webp" : "homeMobile.webp"}`}
                     width={"100%"}
                 />
             </section>

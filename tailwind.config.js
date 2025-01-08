@@ -1,5 +1,5 @@
 import {nextui} from '@nextui-org/theme'
-const colors = require('tailwindcss/colors')
+import colors from 'tailwindcss/colors'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -80,7 +80,6 @@ module.exports = {
   },
   darkMode: "class",
   plugins: [nextui({addCommonColors: true,}),
-    require('tailwindcss-directional-shadows'),
-    require('daisyui')
+    require('tailwindcss-directional-shadows')
   ],
 }

@@ -691,39 +691,30 @@ export default function CajaVentiladoraPage() {
             <h1 className="font-nunito-bolder text-[#FF7800] text-[5.5vw] lg:text-[3.5vw]">Otros productos Tempomatic</h1>
             </section>
 
-            {/* ------------- Barra de navegacion S&P ------------- */}
-            <section className="z-0  h-full w-[100%]  md:mt-0 overflow-hidden ">
-                <div className="flex justify-center contaainn  w-max mx-auto mt-3 lg:mt-0 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
+           {/* ------------- Barra de navegacion S&P ------------- */}
+            <section className="z-0  h-full w-[100%]  md:mt-2 overflow-hidden ">
+                
+                <div className="flex justify-center contaainn  w-max mx-auto mt-6 lg:mt-14 gap-2  rounded-[38px] border-1 border-gray-100 bg-[#FFFFFF]  p-4">
                     
                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-4   "> 
-                    {itemsNavTempomatic?.map((item) => (
-
-                        <NextLink
+						
+						 {itemsNavTempomatic?.map((item) => (
+                            <a
                             className=""
-                            color="foreground"
+                            
                             href={ item.labelShort === "CV" ? "javascript:void(0)" : item.href}
-                            target={(item.labelShort === "CV" ) ? "" : "_top"}
+                            target={(item.labelShort === "CC" ) ? "" : "_top"}
                             key={item.key}
                             >
                             <CardDisplay data={item}  actual={"CV"} />
-                        </NextLink>
-                            // <a
-                            //     className=""
-                            //     color="foreground"
-                            //     href={item.href}
-                            //     key={item.key}
-                            // >
-
-                            //     <CardDisplaySypHome data={item}  actual={""}/>
-
-                            // </a>
+                        </a>
                         ))}  
+                    
                         </div>
                     </div>
                     
                 
             </section>
-
             {/* ------------- Botonera ------------- */}
 {/* 
             <section className="w-full 2xl:w-2/3 mx-auto 2xl:mx-[3%] 2xl:-translate-x-10 lg:mb-10 lg:mt-10 font-nunito flex flex-col items-center lg:flex-row justify-center md:justify-around

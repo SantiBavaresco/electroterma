@@ -34,10 +34,10 @@ export default function UtaPage() {
                     width="100%"
                 />
             </section>
-            <section className="w-full flex justify-center">
+            <section className="w-full flex justify-center gap-4">
                 <AsesoramietoButton screen={BigScreen ? "xl" : "md"} size={BigScreen ? 40 : 16}
                     link={"https://wa.me/5492236356756?text=Hola.%20Quiero%20más%20información%20sobre%20UTA."}/>
-                <ManualButton size={BigScreen ? 40 : 25} screen={BigScreen ? "xl" : "lg"} link={"../../manuales/uta.pdf"} dwName={"UTA Manual.pdf"}/>
+                <ManualButton size={BigScreen ? 40 : 16} screen={BigScreen ? "xl" : "md"} link={"../../manuales/uta.pdf"} dwName={"UTA Manual.pdf"}/>
             </section>
 		</main>
 	);

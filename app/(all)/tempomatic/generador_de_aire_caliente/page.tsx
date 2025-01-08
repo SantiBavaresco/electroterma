@@ -445,7 +445,7 @@ export default function GeneradoDeAireCalientePage() {
 
                             </tr>
                             <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
-                                <td className="p-2 pl-[1.7vw]  text-left">Ccaudal de aire (M3/H)</td>
+                                <td className="p-2 pl-[1.7vw]  text-left">Caudal de aire (M3/H)</td>
                                 <td>3.600</td>
                                 <td>5.400</td>
                                 <td>6.300</td>

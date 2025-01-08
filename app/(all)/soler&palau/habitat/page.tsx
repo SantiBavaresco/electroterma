@@ -83,7 +83,7 @@ export default function HabitatPage() {
     const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
         const subject = 'Consulta sobre equipamiento';
-        const body = 'Hola! Me gustaria hacer una consulta sobre equipamiento de Electroterma';
+        const body = 'Hola! Me gustaría hacer una consulta sobre equipamiento de Electroterma';
     
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
             subject

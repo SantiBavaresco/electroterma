@@ -416,7 +416,7 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td>11/2</td>
                                
                             </tr>
-                            <tr className="bg-[#e7e7e7] text-center">
+                            <tr className="bg-[#f7f7f7] text-center">
                                 <td className="p-2 pl-[1.7vw] text-left">Peso (Kg)</td>
                                 <td>176</td>
                                 <td>179</td>
