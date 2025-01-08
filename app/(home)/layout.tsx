@@ -71,7 +71,7 @@ export default function RootLayout({
                     themeProps={{ attribute: "class", defaultTheme: "light" }}
                 >
                     <SpeedInsights/> <Analytics/>
-                    <GoogleAnalytics gaId="G-BVSRLKEKLX" />
+                    <GoogleAnalytics gaId="G-YVFJLBCL2C" />
 
                     <Script id="clarity-script" type="text/javascript" strategy="afterInteractive">
                             {`
