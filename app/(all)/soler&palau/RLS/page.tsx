@@ -637,7 +637,7 @@ export default function RLSPage() {
                             className=""
                             color="foreground"
                             href={ item.labelShort === "RLS" ? "javascript:void(0)" :  item.href}
-                            target={(item.labelShort === "RLS" ) ? "" : "_top"}
+                            target={(item.labelShort === "RLS" ) ? "_top" : "_top"}
                             key={item.key}
                         >
                             <CardDisplay data={item}  actual={"RLS"} />
