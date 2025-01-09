@@ -636,7 +636,7 @@ export default function RLSPage() {
                         <NextLink
                             className=""
                             color="foreground"
-                            href={ item.labelShort === "RLS" ? "javascript:void(0)" :  item.href}
+                            href={ item.labelShort === "RLS" ? "#" :  item.href}
                             target={(item.labelShort === "RLS" ) ? "_self" : "_top"}
                             key={item.key}
                         >

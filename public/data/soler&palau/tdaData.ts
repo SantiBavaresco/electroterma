@@ -414,7 +414,7 @@ export const tdaData = {
     urltdaImageDemo: "../img/solerpalau/tda/imgDemo/",
     demoImageNames: ["1", "2", "3", "1", "2", "3"],
 
-    urlImageBanner: "../../img/solerpalau/tda/imgbanner/",
+    urlImageBanner: "../img/solerpalau/tda/imgbanner/",
     bannerImageInfo: [
         {
             imgName:"5",

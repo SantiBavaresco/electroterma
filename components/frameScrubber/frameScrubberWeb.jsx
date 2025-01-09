@@ -80,12 +80,12 @@ export default function FrameScrubber() {
 
     return (
         <div className="" id="frame" ref={frameRef}>
-            <section class="frames flex flex-col ">
-                <div class="holder">
+            <section className="frames flex flex-col ">
+                <div className="holder">
                     <canvas id="hero-lightpass" className="mb-0" />
                 </div>
                 
-                <div class="story text-3xl mr-0 lg:text-5xl ">
+                <div className="story text-3xl mr-0 lg:text-5xl ">
                   
                     <div className={`relative ${keyAttribute === "tda" || "pt-32"} `}>
 

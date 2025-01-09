@@ -834,7 +834,7 @@ export default function TSAPage() {
                         <NextLink
                                                             className=""
                                                             color="foreground"
-                                                            href={ item.labelShort === "TSA" ? "javascript:void(0)" : item.href}
+                                                            href={ item.labelShort === "TSA" ? "#" : item.href}
                                                             target={(item.labelShort === "TSA" ) ? "_self" : "_top"}
                                                             key={item.key}
                                                         >

@@ -639,7 +639,7 @@ export default function TDAPage() {
                         <NextLink
                             className=""
                             color="foreground"
-                            href={ item.labelShort === "TDA" ? "javascript:void(0)" :  item.href}
+                            href={ item.labelShort === "TDA" ? "#" :  item.href}
                             target={(item.labelShort === "TDA" ) ? "_self" : "_top"}
                             key={item.key}
                         >
