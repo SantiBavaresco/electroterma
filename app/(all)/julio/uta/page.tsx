@@ -24,16 +24,32 @@ export default function Uta() {
     return (
         <main className="flex flex-col items-center justify-center gap- pb-4  md:pb-10">
 
-            {/* ------------- VIDEO INTRO ------------- */}            
-            <section className="px-[%] lg:h-screen bg-[#eeeeee]"> 
-                <div className="absolute left-[45%] lg:left-[41%] lg:top-[15%] ">
-                    <Reveal duration={0.8} delay={1.6}>
-                        <h1 className="text-[60px] lg:text-[10vw] font-lexend-bold text-[#EF771C]">UTA</h1>
 
+            {/* ------------- Segmento 1 | Presentación ------------- */}
+            {/* ------------- VIDEO INTRO ------------- */}      
+            {/* <section className="text-center m-0 bg-[#eeeeee] ">
+                <Reveal duration={0.8} delay={1.6}>
+                    <>
+                        <h1 className="text-[60px] lg:text-[10vw] font-lexend-bold text-[#EF771C]">UTA</h1>
+                        <h2 className="text-[40px] lg:text-[3vw]">UNIDAD DE TRATAMIENTO DE AIRE </h2>
+                    </>
+                </Reveal>
+            </section>       */}
+            <section className="bg-[#eeeeee] w-full flex items-center justify-center -py-10">
+                <div className=" text-center  leading-none">
+                    <Reveal duration={0.8} delay={1.6}>
+                        <>
+                        <h1 className="text-[10vw] lg:text-[10vw] font-lexend-bold text-[#EF771C]">UTA</h1>
+                        <h2 className="text-[3vw] lg:text-[3vw] pb-10 ">UNIDAD DE TRATAMIENTO DE AIRE </h2>
+                        </>
                     </Reveal>
 
                 </div>
+            </section>
+            <section className="px-[%] lg:h-[100%] -mt-[6vw] bg-[#eeeeee]"> 
+
                 <video
+                    // className="lg:pt-[5%]"
                     muted autoPlay controls={false}
                     src="../img/uta/UTA_presentacion_v1.mp4"
                     width="100%"
@@ -42,22 +58,23 @@ export default function Uta() {
             {/* <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4" width="100%"/> */}
             </section> 
 
-            {/* ------------- NUEVA ARMADURA ------------- */}            
-            <section className="px-[5%] lg:px-[20%] h-[70vh] lg:h-[135vh] flex flex-col justify-center items-center gap-[4vw] lg:gap-[2vw] first-letter 
+            {/* ------------- Texto ------------- */}           
+            <section className="px-[5%] lg:px-[20%] h-[100%] lg:h-[125vh] flex flex-col justify-center items-center gap-[4vw] lg:gap-[2vw] first-letter 
             bg-gradient-to-b from-[#eeeeee] to-50% to-white
             ">
                 <Reveal duration={0.8} delay={0.2}>
-                    <h1 className="text-[12vw] lg:text-[4.0vw]  font-bold lg:h- leading-none text-center">
-                        Nueva armadura. <br/>
-                        Nuevas aventuras.
+                    <h1 className="pb-10  text-[10vw] lg:text-[4.0vw]  font-bold lg:h- leading-none text-center">
+                        Respira tranquilo. <br/>
+                        Controla el aire.
                     </h1>
                 </Reveal>
                 <Reveal duration={0.8} delay={0.3}>
 
-                    <p className="text-[4.6vw] lg:text-[1.3vw] lg:px-[13%] text-center leading-tight text-midgray">
-                        Ahora disponible en una nueva e impresionante caja de titanio negro, el Apple Watch Ultra 2 es el compañero perfecto para el deporte y la aventura. 
-                        Incluye un GPS de precisión increíble para hacer frente a los entornos más complejos, entrenamientos personalizados para natación y funcionalidades 
-                        de conectividad, salud y seguridad para todos los días.
+                    <p className="pb-10 top-0 text-[4.6vw] lg:text-[1.3vw] lg:px-[13%] text-center leading-tight text-midgray">
+                     <span className="font-bold">La UTA se adapta a tus necesidades específicas</span>, integrándose fácilmente con sistemas existentes. 
+                    Cumple con los más altos estándares internacionales, asegurando que cada ambiente, ya sea sanitario o industrial, 
+                    cumpla con los requisitos más exigentes en todo momento. Con tecnología avanzada, eficiencia energética y monitoreo remoto, 
+                    la UTA fabricada por Tempomatic ofrece soluciones HVAC que superan expectativas, brindando seguridad, personalización y rendimiento sin igual.
                     </p>
                     </Reveal>
                 
@@ -88,7 +105,7 @@ export default function Uta() {
                     <Image
 								alt="product"
 								key="img1"
-								className="h-full"
+								className="h-full "
 								radius="none"
 								src="../../img/uta/uta1.png"
 								width="100%"
@@ -142,7 +159,7 @@ export default function Uta() {
                         key="img2"
                         className="w-full"
                         radius="none"
-                        src="img/uta/uta2.png"
+                        src="../img/uta/uta2.png"
                         width="100%"
                     />
                 </div>
