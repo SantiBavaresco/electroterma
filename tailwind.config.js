@@ -80,6 +80,7 @@ module.exports = {
   },
   darkMode: "class",
   plugins: [nextui({addCommonColors: true,}),
-    require('tailwindcss-directional-shadows')
+    require('tailwindcss-directional-shadows'),
+    require('daisyui')
   ],
 }
