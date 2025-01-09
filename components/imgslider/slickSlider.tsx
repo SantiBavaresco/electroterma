@@ -104,7 +104,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
                         <div className="z-0">
                             <img className=" w-[100%] h-auto max-h-[42vh] md:max-h-[82vh] block m-auto object-fill "
                                 alt={`Imagen ${index}`}
-                                src={`${url}${item.imgName}.jpg`}
+                                src={`${url}${item.imgName}.webp`}
                                 key={`Imagen ${index} - ${item.imgName}`}
                             >
 
