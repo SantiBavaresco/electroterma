@@ -633,7 +633,7 @@ export default function RLSPage() {
                 {itemsNavSolerPalau?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
                     
-                        <a
+                        <NextLink
                             className=""
                             color="foreground"
                             href={ item.labelShort === "RLS" ? "javascript:void(0)" :  item.href}
@@ -641,7 +641,7 @@ export default function RLSPage() {
                             key={item.key}
                         >
                             <CardDisplay data={item}  actual={"RLS"} />
-                        </a>
+                        </NextLink>
                     ))}  
                     </div>
                          

@@ -636,7 +636,7 @@ export default function TDAPage() {
                 {itemsNavSolerPalau?.map((item) => (
                     // <p key={item.key}>{item.label}</p>
                     
-                        <a
+                        <NextLink
                             className=""
                             color="foreground"
                             href={ item.labelShort === "TDA" ? "javascript:void(0)" :  item.href}
@@ -644,7 +644,7 @@ export default function TDAPage() {
                             key={item.key}
                         >
                             <CardDisplay data={item}  actual={"TDA"} />
-                        </a>
+                        </NextLink>
                     ))}  
                     </div>
                          
