@@ -579,7 +579,7 @@ export default function UnidadManejadoraDeAirePage() {
                         <NextLink
                             className=""
                             color="foreground"
-                            href={ item.labelShort === "UMDA" ? "javascript:void(0)" : item.href}
+                            href={ item.labelShort === "UMDA" ? "#" : item.href}
                             target={(item.labelShort === "UMDA" ) ? "" : "_top"}
                             key={item.key}
                             >

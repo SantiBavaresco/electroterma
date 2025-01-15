@@ -702,7 +702,7 @@ export default function CajaVentiladoraPage() {
                             <a
                             className=""
                             
-                            href={ item.labelShort === "CV" ? "javascript:void(0)" : item.href}
+                            href={ item.labelShort === "CV" ? "#" : item.href}
                             target={(item.labelShort === "CC" ) ? "" : "_top"}
                             key={item.key}
                             >

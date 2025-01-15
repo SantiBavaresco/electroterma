@@ -702,7 +702,7 @@ export default function GeneradoDeAireCalientePage() {
                         <NextLink
                             className=""
                             color="foreground"
-                            href={ item.labelShort === "GDAC" ? "javascript:void(0)" : item.href}
+                            href={ item.labelShort === "GDAC" ? "#" : item.href}
                             target={(item.labelShort === "GDAC" ) ? "" : "_top"}
                             key={item.key}
                         >

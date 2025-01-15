@@ -588,7 +588,7 @@ export default function CalderaParaCalefaccionPage() {
                             <NextLink
                             className=""
                             color="foreground"
-                            href={ item.labelShort === "CC" ? "javascript:void(0)" : item.href}
+                            href={ item.labelShort === "CC" ? "#" : item.href}
                             target={(item.labelShort === "CV" ) ? "" : "_top"}
                             key={item.key}
                             >

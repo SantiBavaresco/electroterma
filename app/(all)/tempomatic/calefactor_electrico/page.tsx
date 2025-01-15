@@ -233,10 +233,10 @@ export default function CalefactorElectricoPage() {
 
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] mt-16 ">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
+                <h1 className="font-nunito text-[#FF7800] text-[2.8vw]">MEDIDAS</h1>
                 {/* <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5" >TOMA DE AIRE INTECCIÓN DE AIRE</h1> */}
 
-                    <table className="table-auto font-nunito text-[1.7vw] w-4/5">
+                    <table className="table-auto font-nunito text-[1.3vw] w-4/5">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
                                 <th className="p-2 text-left pl-[1.7vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">MODELO/MEDIDA</th>
@@ -336,10 +336,10 @@ export default function CalefactorElectricoPage() {
             
             {/* -------------CARACTERÍSTICAS ------------- */}
             <section className="w-full px-[6%] mt-10 ">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CARACTERÍSTICAS</h1>
+                <h1 className="font-nunito text-[#FF7800] text-[2.8vw]">CARACTERÍSTICAS</h1>
                 {/* <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1> */}
 
-                    <table className="table-auto font-nunito text-[1.5vw] w-4/5">
+                    <table className="table-auto font-nunito text-[1.3vw] w-4/5">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
                                 <th className="p-2 text-left px-[1.7vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">CARACTERISTICAS/MODELOS</th>
@@ -596,7 +596,7 @@ export default function CalefactorElectricoPage() {
                             <NextLink
                                 className=""
                                 color="foreground"
-                                href={ item.labelShort === "CE" ? "javascript:void(0)" : item.href}
+                                href={ item.labelShort === "CE" ? "#" : item.href}
                                 target={(item.labelShort === "CE" ) ? "" : "_top"}
                                 key={item.key}
                                 >
