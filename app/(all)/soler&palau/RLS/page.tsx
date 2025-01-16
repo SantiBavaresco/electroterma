@@ -54,8 +54,34 @@ import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
 import { EscribinosButton } from "@/components/custonButtons/escribinos";
 import { TiendaButton } from "@/components/custonButtons/tienda";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 export default function RLSPage() {
+
+    const settings = {
+        // dots: true,
+        className:
+            "center variable-width  aspect[16/9] object-cover w-[100%] h-[90%] flex flex-nowrap overflow-hidden ",
+        // centerMode: true,
+        // display: "flex",
+        // flexDirection: "row",
+        // flexGrow: 1,
+        // height: "80%",
+        infinite: true,
+        // centerPadding: "60px",
+        // variableWidth: true,
+        // width: 1200,
+        // adaptiveHeight: true,
+        // lazyLoad: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 10000,
+        autoplaySpeed: 0,
+    }
 
     const handleEmailClick = () => {
         const email = 'info@electroterma.com.ar';
@@ -99,10 +125,56 @@ export default function RLSPage() {
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
-                    <SimpleSlider
+                    {/* <SimpleSlider
                         url={rlsData.urlImageBanner}
                         imgInfo={rlsData.bannerImageInfo}
-                    />
+                    /> */}
+
+                    <div className="overflow-hidden flex flex-grow min-h-full">
+                        <Slider {...settings}>
+                            {rlsData.bannerImageInfo?.map((item, index) => (
+                                <div
+                                    key={`${index} - ${item.imgName}`}
+                                    className="relative
+                                    
+                                    max-h-[80%]
+                                    "
+                                >
+                                    <div className="z-0">
+                                        <img
+                                            className=" w-[100%] h-auto max-h-[42vh] md:max-h-[82vh] block m-auto object-fill "
+                                            alt={`Imagen ${index}`}
+                                            src={`${rlsData.urlImageBanner}${item.imgName}.webp`}
+                                            key={`Imagen ${index} - ${item.imgName}`}
+                                        ></img>
+
+                                        <div
+                                            className="absolute px-6 z-10
+                                        
+                                        bottom-[0%]
+                                        // right-0
+                                        rounded-tl-[42px]
+                                        flex flex-col justify-start items-center bg-white p-1 "
+                                        >
+                                            <div className="flex flex-col justify-start items-start text-sm lg:text-3xl  py-4 lg:py-6 2xl:py-10">
+                                                {item.imgLable?.map((item, index) => (
+                                                    <h1
+                                                        className={`text-${
+                                                            item.textColor ||
+                                                            "livered-title"
+                                                        } font-bold font-lexend`}
+                                                        key={`${index}-${item}`}
+                                                    >
+                                                        {item.textLable}
+                                                    </h1>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
                 {/* <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-12">
