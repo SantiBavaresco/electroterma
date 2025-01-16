@@ -26,7 +26,7 @@ interface Props {
 
 const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
 
-    const settings1 = {
+    const settings2 = {
         className: "center variable-width aspect[16/9] object-cover w-[100%] h-[40%] md:h-[100%]",
         dots: true,
         infinite: true,
@@ -39,8 +39,8 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
 
         slidesToShow: 2,
         slidesToScroll: 1,
-        // adaptiveHeight: true,
-        // variableWidth: true,
+        adaptiveHeight: true,
+        variableWidth: true,
         // height: 800,
         // width: 900,
 
@@ -73,7 +73,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         // ],
     };
     // const wii = "500px";
-    const settingsss = {
+    const settings = {
         // dots: true,
         className:
             "center variable-width  aspect[16/9] object-cover w-[100%] h-[90%] flex flex-nowrap overflow-hidden ",
@@ -98,10 +98,10 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         cssEase: "linear",
     };
 
-    const settings = {
+    const settingss = {
         // dots: true,
         className:
-            "center variable-width   flex flex-nowrap overflow-hidden ",
+            "center variable-width  aspect[16/9] object-cover w-[100%] h-[90%] flex flex-nowrap overflow-hidden ",
         // centerMode: true,
         // display: "flex",
         // flexDirection: "row",
@@ -114,7 +114,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         // adaptiveHeight: true,
         // lazyLoad: true,
         slidesToShow: 1,
-        // slidesToScroll: 1,
+        slidesToScroll: 1,
         autoplay: true,
         speed: 10000,
         autoplaySpeed: 0,
