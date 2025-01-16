@@ -125,11 +125,11 @@ export default function TDAPage() {
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
-                    {/* <SimpleSlider
+                    <SimpleSlider
                         url={tdaData.urlImageBanner}
                         imgInfo={tdaData.bannerImageInfo}
-                    /> */}
-                    <div className="overflow-hidden flex flex-grow min-h-full">
+                    />
+                    {/* <div className="overflow-hidden flex flex-grow min-h-full">
                         <Slider {...settings}>
                             {tdaData.bannerImageInfo?.map((item, index) => (
                                 <div
@@ -173,7 +173,7 @@ export default function TDAPage() {
                                 </div>
                             ))}
                         </Slider>
-                    </div>
+                    </div> */}
 
 
 

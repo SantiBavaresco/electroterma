@@ -125,12 +125,12 @@ export default function RLSPage() {
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
-                    {/* <SimpleSlider
+                    <SimpleSlider
                         url={rlsData.urlImageBanner}
                         imgInfo={rlsData.bannerImageInfo}
-                    /> */}
+                    />
 
-                    <div className="overflow-hidden flex flex-grow min-h-full">
+                    {/* <div className="overflow-hidden flex flex-grow min-h-full">
                         <Slider {...settings}>
                             {rlsData.bannerImageInfo?.map((item, index) => (
                                 <div
@@ -174,7 +174,7 @@ export default function RLSPage() {
                                 </div>
                             ))}
                         </Slider>
-                    </div>
+                    </div> */}
                 </div>
                 {/* <div className="bg-[#E61E25]  md:w-98% py-3  flex justify-between items-center rounded-tr-[24px] rounded-bl-[24px]">
                     <div className="ml-[35px] md:ml-12">

@@ -134,11 +134,11 @@ export default function TSAPage() {
 
             <section className="relative top-0 w-full max-h-[50%] md:max-h-[93%] lg:max-h-[93%] py-0 font-size overflow-hidden">
                 <div className="h-[50%] md:h-[92%]">
-                    {/* <SimpleSlider
+                    <SimpleSlider
                         url={tsaData.urlImageBanner}
                         imgInfo={tsaData.bannerImageInfo}
-                    /> */}
-                    <div className="overflow-hidden flex flex-grow min-h-full">
+                    />
+                    {/* <div className="overflow-hidden flex flex-grow min-h-full">
                         <Slider {...settings}>
                             {tsaData.bannerImageInfo?.map((item, index) => (
                                 <div
@@ -182,7 +182,7 @@ export default function TSAPage() {
                                 </div>
                             ))}
                         </Slider>
-                    </div>
+                    </div> */}
 
 
 
