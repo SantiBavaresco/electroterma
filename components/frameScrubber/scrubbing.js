@@ -43,7 +43,7 @@ console.log(currentFrame);
 const preloadImages = () => {
     let j = 0;
 
-        for (let i = 1; i < frameCount; i+=4) {
+        for (let i = 1; i < frameCount; i+=1) {
             const img = new Image();
             img.src = currentFrame(i);
             imgArray.push(img);
