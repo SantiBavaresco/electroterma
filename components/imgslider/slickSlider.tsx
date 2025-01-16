@@ -66,7 +66,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         speed: 10000,
         autoplaySpeed: 0,
         adaptiveHeight: true,
-        // variableWidth: true,c
+        variableWidth: true,
         cssEase: "linear",
     };
 
