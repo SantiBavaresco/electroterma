@@ -43,34 +43,6 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         variableWidth: true,
         // height: 800,
         // width: 900,
-
-        // centerMode: true,
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //             infinite: true,
-        //             dots: true,
-        //         },
-        //     },
-        //     {
-        //         breakpoint: 600,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //             initialSlide: 1,
-        //         },
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //         },
-        //     },
-        // ],
     };
     // const wii = "500px";
     const settings = {
@@ -94,7 +66,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         speed: 10000,
         autoplaySpeed: 0,
         adaptiveHeight: true,
-        variableWidth: true,
+        // variableWidth: true,c
         cssEase: "linear",
     };
 
