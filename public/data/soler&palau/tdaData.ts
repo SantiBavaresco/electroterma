@@ -412,12 +412,12 @@ export const tdaData = {
     },
 
     urltdaImageDemo: "../img/solerpalau/tda/imgDemo/",
-    demoImageNames: ["1", "2", "3", "1", "2", "3"],
+    demoImageNames: ["1", "2", "3"],
 
     urlImageBanner: "../img/solerpalau/tda/imgbanner/",
     bannerImageInfo: [
         {
-            imgName:"5",
+            imgName:"1",
             imgLable:[
                 {   
                     textLable:"Componente de",
@@ -430,7 +430,7 @@ export const tdaData = {
             ],
         },
         {
-            imgName:"5",
+            imgName:"2",
             imgLable:[
                 {   
                     textLable:"Es ideal para",
@@ -451,7 +451,7 @@ export const tdaData = {
             ],
         },
         {
-            imgName:"5",
+            imgName:"3",
             imgLable:[
                 {   
                     textLable:"Es ideal para",
