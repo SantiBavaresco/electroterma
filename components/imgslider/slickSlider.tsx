@@ -48,7 +48,9 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
     const settings = {
         // dots: true,
         className:
-            "center variable-width  aspect[16/9] object-cover w-[100%] h-[90%] flex flex-nowrap overflow-hidden ",
+            "center variable-width  ",
+            // "center variable-width  aspect[16/9] object-cover w-[100%] h-[90%] flex flex-nowrap overflow-hidden ",
+
         // centerMode: true,
         // display: "flex",
         // flexDirection: "row",
