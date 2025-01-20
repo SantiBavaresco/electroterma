@@ -57,7 +57,7 @@ export default function RootLayout({
     // const pathname = usePathname()
 
     return (
-        <html lang="en" suppressHydrationWarning style={{scrollbarColor: "#EF771C #ffedd5", }}>
+        <html lang="en" suppressHydrationWarning style={{scrollbarColor: "#EF771C #ffedd5", backgroundColor:"white" }}>
             <head />
             <body
                 id="home" accessKey="home"

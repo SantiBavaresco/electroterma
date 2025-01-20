@@ -51,6 +51,10 @@ module.exports = {
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
       },
+      screens: {
+        // Add a custom screen size for dark mode preference
+        'dark-mode': { raw: '(prefers-color-scheme: light)' },
+      },
       
     },
     colors: {

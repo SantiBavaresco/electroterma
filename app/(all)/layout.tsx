@@ -33,10 +33,11 @@ export const metadata: Metadata = {
         template: `%s - ${siteConfig.name}`,
     },
     description: siteConfig.description,
-    // themeColor: [
-    //     { media: "(prefers-color-scheme: light)", color: "white" },
-    //     { media: "(prefers-color-scheme: dark)", color: "black" },
-    // ],
+    
+        // themeColor: [
+        //     { media: "(prefers-color-scheme: light)", color: "white" },
+        //     { media: "(prefers-color-scheme: dark)", color: "white" },
+        // ],
     icons: {
         icon: "/electroterma-logo.png",
         shortcut: "/electroterma-logo.ico",
@@ -61,7 +62,7 @@ export default function RootLayout({
     // const ga= GoogleAnalytics(measurementId);
 
     return (
-        <html lang="es" suppressHydrationWarning style={{scrollbarColor: "#EF771C #ffedd5", }}>
+        <html lang="es" suppressHydrationWarning style={{scrollbarColor: "#EF771C #ffedd5",     }}>
             <head>
     {/*                 
                     <script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`}></script>
@@ -73,11 +74,13 @@ export default function RootLayout({
                         gtag('config', 'G-X8EBB5PW7Y');`}
                     </script> */}
             </head> 
+            <meta name="theme-color" content="white" />
             <body   
                 id="home" accessKey="home"
                 className={clsx(
                     "min-h-screen bg-background font-lexend   ",
-                    fontSans.variable
+                    fontSans.variable,
+                    "light-mode"
                 )}
             >
             {/* <GoogleAnalytics gaId='G-X8EBB5PW7Y' /> */}
