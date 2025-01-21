@@ -62,7 +62,7 @@ export default function RootLayout({
     // const ga= GoogleAnalytics(measurementId);
 
     return (
-        <html lang="es" suppressHydrationWarning style={{scrollbarColor: "#EF771C #ffedd5",     }}>
+        <html lang="es" suppressHydrationWarning style={{scrollbarColor: "#EF771C #ffedd5",   backgroundColor:"white"  }}>
             <head>
     {/*                 
                     <script async src={`https://www.googletagmanager.com/gtag/js?id=G-X8EBB5PW7Y`}></script>
@@ -88,7 +88,7 @@ export default function RootLayout({
             
 
                 <Providers
-                    themeProps={{ attribute: "class", defaultTheme: "light" }}
+                    themeProps={{ attribute: "class", defaultTheme: "light", }}
                 >
                     {/* <SpeedInsights/> <Analytics/> */}
                     <GoogleAnalytics gaId="G-YVFJLBCL2C" />

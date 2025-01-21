@@ -33,8 +33,8 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         // speed: 500,
         autoplay: true,
         // autoplaySpeed: 2000,
-        speed: 10000,
-        autoplaySpeed: 0,
+        speed: 5000,
+        autoplaySpeed: 1,
         // pauseOnHover: true,
 
         slidesToShow: 2,
@@ -65,11 +65,12 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 10000,
-        autoplaySpeed: 0,
+        speed: 7500,
+        autoplaySpeed: -1,
         adaptiveHeight: true,
         variableWidth: true,
         cssEase: "linear",
+        
     };
 
     const settingss = {
