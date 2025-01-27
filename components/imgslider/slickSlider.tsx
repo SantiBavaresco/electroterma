@@ -33,11 +33,11 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         // speed: 500,
         autoplay: true,
         // autoplaySpeed: 2000,
-        speed: 5000,
-        autoplaySpeed: 1,
+        speed: 10000,
+        autoplaySpeed: 0,
         // pauseOnHover: true,
 
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         adaptiveHeight: true,
         variableWidth: true,
@@ -62,15 +62,14 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
         // width: 1200,
         // adaptiveHeight: true,
         // lazyLoad: true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 7500,
-        autoplaySpeed: -1,
+        speed: 10000,
+        autoplaySpeed: 0,
         adaptiveHeight: true,
         variableWidth: true,
         cssEase: "linear",
-        
     };
 
     const settingss = {
@@ -96,7 +95,7 @@ const SimpleSlider: React.FC<Props> = ({ url, width, imgInfo }) => {
     }
 
     return (
-        <div className="overflow-hidden flex flex-grow min-h-full">
+        <div className="overflow-hidden flex flex-grow min-h-full pointer-events-none">
             <Slider {...settings}>
                 {imgInfo?.map((item, index) => (
                     <div

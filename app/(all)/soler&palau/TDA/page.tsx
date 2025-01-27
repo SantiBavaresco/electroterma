@@ -58,6 +58,7 @@ import { TiendaButton } from "@/components/custonButtons/tienda";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AutoSlidingCarousel from "@/components/imgslider/AutoSlidingCarousel";
 
 export default function TDAPage() {
 
@@ -129,6 +130,8 @@ export default function TDAPage() {
                         url={tdaData.urlImageBanner}
                         imgInfo={tdaData.bannerImageInfo}
                     />
+                    {/* <AutoSlidingCarousel/> */}
+
                     {/* <div className="overflow-hidden flex flex-grow min-h-full">
                         <Slider {...settings}>
                             {tdaData.bannerImageInfo?.map((item, index) => (
