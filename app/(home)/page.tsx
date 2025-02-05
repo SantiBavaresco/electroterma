@@ -626,7 +626,6 @@ export default function Home() {
                     
             </section>
 
-
             {/* ------------- Botonera ------------- */}
 
             <section className="w-full 2xl:w-2/3 mx-auto 2xl:mx-[3%] 2xl:-translate-x-10 lg:mb-10 lg:mt-10 font-nunito flex flex-col items-center lg:flex-row justify-center md:justify-around
@@ -666,10 +665,7 @@ export default function Home() {
             </section>
 
 
-          
 
-
-          
         </main>
         // 	<div className={'h-[5000px]'}>
         // 		<VideoScrollPlayer/>
