@@ -517,14 +517,14 @@ export default function Home() {
             }*/}
 
             {/* ------------- Diferenciales mobile ------------- */}
-                <section className=" md:hidden mx-2 w-full h-full  mr-auto  overflow-hidden">
+                {/* <section className=" md:hidden mx-2 w-full h-full  mr-auto  overflow-hidden">
                         <Image  
                             classNames={{ wrapper: "pl-auto <-10 min-w-full h-full"}}
                             alt="Imagen Inicio"
                             src={`../../img/home/diferencialesMobile.png`}
                             width={"95%"}
                         />
-                    </section>
+                    </section> */}
 
             {/* ------------- Foto Grupal ------------- */}
             <section className="-mt-4 lg:-mt-14 mx-0 w-full mr-auto  overflow-hidden">
