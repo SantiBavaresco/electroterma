@@ -33,7 +33,7 @@ import { Diferencial15Anio } from "@/components/diferenciales/diferencial15Anios
 import { DiferencialUnicosEnElMercado } from "@/components/diferenciales/diferencialUnicosEnElMercado";
 import { DiferencialAltaConfiabilidad } from "@/components/diferenciales/diferencialAltaConfiabilidad";
 import { DiferencialElementosOpcionales } from "@/components/diferenciales/diferencialElementosOpcionales";
-import Loading from "./loaging";
+// import Loading from "./loaging";
 
 
 
@@ -46,18 +46,18 @@ interface ItemsNavbar {
     img: string;
     href: string;
 }
-interface LazySectionProps {
-    children: React.ReactNode;
-  }
+// interface LazySectionProps {
+//     children: React.ReactNode;
+//   }
   
-  const LazySection: React.FC<LazySectionProps> = ({ children }) => {
-    const Section = lazy(() => Promise.resolve({ default: () => children }));
-    return (
-      <Suspense fallback={<Spinner color="warning" size="lg" className="w-full"/>}>
-        <Section />
-      </Suspense>
-    );
-  };
+//   const LazySection: React.FC<LazySectionProps> = ({ children }) => {
+//     const Section = lazy(() => Promise.resolve({ default: () => children }));
+//     return (
+//       <Suspense fallback={<Spinner color="warning" size="lg" className="w-full"/>}>
+//         <Section />
+//       </Suspense>
+//     );
+//   };
 
 export default function CalefactorElectricoPage() {
 
