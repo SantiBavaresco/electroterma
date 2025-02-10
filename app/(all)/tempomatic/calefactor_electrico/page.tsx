@@ -19,9 +19,9 @@ import { SolerPalauSVG } from "@/public/svg/solerPalauSVG";
 import CardDisplaySypHome from "@/components/navbar/cardDisplaySypHome";
 import { AsesoramietoButton } from "@/components/custonButtons/asesoramiento";
 import { TiendaButton } from "@/components/custonButtons/tienda";
-import { useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { EscribinosButton } from "@/components/custonButtons/escribinos";
-import { Divider } from "@nextui-org/react";
+import { Divider, Spinner } from "@nextui-org/react";
 import { VinietaNaranjaSVG } from "@/public/svg/vinietaNaranja";
 import { DiferencialConVentiladorSyP } from "@/components/diferenciales/diferencialConVentiladorSyP";
 import { DiferencialSerpentinaReforzada } from "@/components/diferenciales/diferencialSerpentinaReforzada";
@@ -33,6 +33,7 @@ import { Diferencial15Anio } from "@/components/diferenciales/diferencial15Anios
 import { DiferencialUnicosEnElMercado } from "@/components/diferenciales/diferencialUnicosEnElMercado";
 import { DiferencialAltaConfiabilidad } from "@/components/diferenciales/diferencialAltaConfiabilidad";
 import { DiferencialElementosOpcionales } from "@/components/diferenciales/diferencialElementosOpcionales";
+import Loading from "./loaging";
 
 
 
@@ -45,6 +46,18 @@ interface ItemsNavbar {
     img: string;
     href: string;
 }
+interface LazySectionProps {
+    children: React.ReactNode;
+  }
+  
+  const LazySection: React.FC<LazySectionProps> = ({ children }) => {
+    const Section = lazy(() => Promise.resolve({ default: () => children }));
+    return (
+      <Suspense fallback={<Spinner color="warning" size="lg" className="w-full"/>}>
+        <Section />
+      </Suspense>
+    );
+  };
 
 export default function CalefactorElectricoPage() {
 
@@ -78,12 +91,17 @@ export default function CalefactorElectricoPage() {
         window.open(mailtoLink, '_blank');
     };
 
+    const Banner = lazy(() => import('./banner')); 
+
     return (
         <main className="flex flex-col h-full items-center justify-center gap-4 pb-4 md:pb-10 
          overflow-hidden">
 
-            {/* ------------- Banner------------- */}
-            <section className="w-full px-[0%] mt-4">
+           
+                {/* ------------- Banner------------- */}
+                <section className="w-full px-[0%] mt-4">
+
+
                 <Image
                     alt="Home banner 1"
                     className="rounded-[44-px]"
@@ -91,9 +109,12 @@ export default function CalefactorElectricoPage() {
                     src="../img/tempomatic/calefactor_electrico/calefactor_electrico-Banner.webp"
                     width="100%"
                 />
-            </section>
-            {/* ------------- Tempomatic logo ------------- */}
-            <section className="w-1/2    lg:w-1/3 px-5 lg:px-[5.6%] mt-4 mr-auto">
+
+
+                </section>
+
+                {/* ------------- Tempomatic logo ------------- */}
+                <section className="w-1/2    lg:w-1/3 px-5 lg:px-[5.6%] mt-4 mr-auto">
                 <Image
                     alt="Home banner 1"
                     className=""
@@ -101,15 +122,16 @@ export default function CalefactorElectricoPage() {
                     src="../img/tempomatic/calefactor_electrico/tempomatic-Logo.jpg"
                     width="100%"
                 />
-            </section>  
 
+                </section>  
+        
             {BigScreen ?
             <>
             {/* ------------- WEB----------- */}
 
             <section className="w-full px-[3%] mt-[4vw] mr-auto flex flex-col lg:flex-row">
             {/* ------------- Unidad Manejadora de aire ------------- */}
-                
+
                 <div className="flex w-full lg:w-[60%]">
                     <div className="flex w-[3%] mr-[1.5%]">
                         <VinietaNaranjaSVG css="mt-[60%] h-[30px] w-[25px] md:h-[50px] md:h-[30px] lg:h-[45px] lg:w-[35px]"/>
@@ -135,8 +157,6 @@ export default function CalefactorElectricoPage() {
                             width="100%"
                         />
                     </div>
-                    
-                
             </section>
 
             <section className="w-full px-[6%] -mt-10 flex">

@@ -537,7 +537,7 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
                
             </NavbarContent>
 
-            <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="full" isDismissable={false}>
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="full" isDismissable={false} scrollBehavior="inside">
                 <ModalContent className="bg-white bg-opacity-75 backdrop-blur-xl">
                 {(onClose) => (
                     <>
