@@ -443,7 +443,7 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
     return (
         <NextUINavbar
             maxWidth="full"
-            className={`h-[52px] md:h-[64px] px- pt-[10px] lg:pt-0 lg:px-10  flex justify-center items-center font-nunito ${css}`}
+            className={`h-[42px] md:h-[64px] px- pt-[10px] lg:pt-0 lg:px-10  flex justify-center items-center font-nunito ${css}`}
             position="sticky"
             disableScrollHandler
             height={BigScreen ? "42px" : "42px"}
@@ -487,10 +487,10 @@ export const NavbarHome: React.FC<Props> = ({ css, ...props }) => {
 {/* ------------------------------------ MENU MOBILE ------------------------------------ */}
 
             <NavbarContent  className=" md:hidden font-nunito basis-1 w-screen h-full pl-4" justify="end">
-            <div className="w-[150px] h-[100%] min-w-32 flex items-center justify-center bg-[#EF771C]" onClick={onOpen}>
+            <div className="w-[150px] h-[80%] min-w-32 flex items-center justify-center bg-[#EF771C]" onClick={onOpen}>
                             <svg
-                                width="25"
-                                height="25"
+                                width={BigScreen ? "25" : "20"}
+                                height={BigScreen ? "25" : "20"}
                                 viewBox="0 0 40 37"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"

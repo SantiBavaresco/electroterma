@@ -307,7 +307,7 @@ export default function DTIPage() {
 							<h1 className="w-mx px-1">Contactá</h1>
 							<h1>a un vendedor</h1><br/>
 
-							<AsesoramietoButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"}
+							<AsesoramietoButton size={BigScreen ? 42 : 14} screen={BigScreen ? "xl" : "md"}
                             link={"https://wa.me/5492236356756?text=Hola.%20visité%20tu%20página%20web%20y%20me%20gustaría%20más%20información%20sobre%20Ductos%20Textiles."}
                             // Hola,%20visite%20tu%20pagina%20web%20y%20me%20gustaria%20mas%20informacion
                             />
@@ -323,10 +323,11 @@ export default function DTIPage() {
 						</div>
                         <Divider orientation="vertical" className="bg-[#EDEDED]" /> */}
 						<div>
-							<h1 className="w-max px-0.5">Escribinos a través</h1>
-							<h1>de nuestro mail</h1><br/>
-
-                            <EscribinosButton size={BigScreen ? 42 : 15} screen={BigScreen ? "xl" : "xs"} />
+                            <>
+							<h1 className="w- px-0.5">Escribinos a través</h1>
+							<h1 className="pr-auto">de nuestro mail</h1><br/>
+                            </>
+                            <EscribinosButton size={BigScreen ? 42 : 14} screen={BigScreen ? "xl" : "md"} />
 						</div>
 
 					</div>

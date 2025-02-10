@@ -488,7 +488,7 @@ export default function UnidadManejadoraDeAirePage() {
                             />
                         </div>
                     </section>
-                <section className="w-full px-[5%] -mt-10 ">
+                <section className="w-full px-[5%] -mt-8 ">
                 {/* -------------PARRAFO CON BOTON ------------- */}
 
                     <p className="w-full font-lexend text-[#4C4B4B] text-[4.3vw] leading-non">

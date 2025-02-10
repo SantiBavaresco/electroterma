@@ -172,7 +172,7 @@ export default function CalefactorElectricoPage() {
             </section> 
 
             <section className="w-full px-[3%] -mt-10 flex
-            bg-[url('/svg/ondasTempomaticItems.svg')] bg-fill  bg-[center_top_vw] md:bg-[center_top_0vw] lg:bg-[center_top_6vw] bg-no-repeat
+            bg-[url('/svg/ondasTempomaticItems.svg')] bg-fill  bg-[center_top_10vw] md:bg-[center_top_0vw] lg:bg-[center_top_6vw] bg-no-repeat
             ">
             {/* -------------IMG con diferenciales ------------- */}
 
@@ -491,20 +491,20 @@ export default function CalefactorElectricoPage() {
                         
                 
                 </section>
-                <section className="w-full px-[3%] -mt-4 flex
-                    bg-[url('/svg/ondasTempomaticItemsMobile.svg')] bg-contain lg:bg-fill  bg-[center_bottom_20vw] md:bg-[center_top_0vw] lg:bg-[center_top_6vw] bg-no-repeat
+                <section className="w-full px-[3%] -mt-2 flex
+                    bg-[url('/svg/ondasTempomaticItemsMobile.svg')] bg-contain lg:bg-fill  bg-[center_bottom_8vw] md:bg-[center_top_0vw] lg:bg-[center_top_6vw] bg-no-repeat
                     ">
                         
-                        <div className="w-1/2 ml-[0vw] mr-6">
+                        <div className="w-1/2 ml-[2vw] mr-6">
                         <Image
                                 alt="Home banner 1"
                                 className=""
                                 radius="none"
                                 src="../img/tempomatic/calefactor_electrico/calefactor_electrico_01-mobile.webp"
-                                width="100%"
+                                width="90%"
                             />
                         </div>
-                        <p className="w-1/2 text-[4.7vw] text-[#4C4B4B] font-lexend-bold my-auto">
+                        <p className="w-1/2 text-[4.7vw] text-[#4C4B4B] font-lexend-bold mt-2   mb-auto">
                             Solución a las necesidades de calefacción por aire caliente de <span className="text-[#FF7800]">tipo eléctricas</span>.
                         
                         </p>
