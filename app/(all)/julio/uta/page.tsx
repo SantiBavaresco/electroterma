@@ -87,7 +87,7 @@ export default function Uta() {
             {/* ------------- Segmento 2 | Diseño Modular ------------- */}
                 {/* ------------- Titulo e Img ------------- */}            
                 <section className=" mt-10 h-[120%] lg:h-full flex flex-col justify-center items-center gap-[2vw text-center">
-                    <div className="px-[5%] lg:px-[20%]">
+                    <div className="px-[5%] lg:px-[2%]">
                     <Reveal duration={0.8} delay={0.3}> 
                         <>
                             <h3 className="text-[4.6vw] lg:text-[32px]">Diseñor Modular </h3>
@@ -179,15 +179,14 @@ export default function Uta() {
 
             {/* ------------- Segmento 4 | Control inteligente Zila ------------- */}
                 {/* ------------- Titulo e Img ------------- */}           
-                
                 <section className=" mt-10 h-[120%] lg:h-full flex flex-col justify-center items-center gap-[2vw text-center">
-                    <div className="px-[5%] lg:px-[20%]">
+                    <div className="px-[5%] lg:px-[2%]">
                     <Reveal duration={0.8} delay={0.3}> 
                         <>
                             <h3 className="text-[4.6vw] lg:text-[32px]">Control inteligente Zila </h3>
                             <h1 className="text-[12vw] lg:text-[80px] h-[100%] lg:h-[250px] font-bold leading-none ">
-                                Cada aire que toma,<br/>
-                                lo estarás observando.
+                            Cada aire que toma,<br/>
+                            lo estarás observando.
                             </h1> 
                         </>
 
@@ -207,6 +206,7 @@ export default function Uta() {
 
                     </Reveal> */}
                 </section>
+                
 
 
                 {/* ------------- ARTICULO 2 COL ------------- */}    
