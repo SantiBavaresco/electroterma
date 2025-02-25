@@ -247,7 +247,7 @@ export default function Uta() {
                 
             {/* ------------- Segmento 5 | Hospitales y Quirófanos ------------- */}
              {/* ------------- BANNER 1 ------------- */} 
-            <section className=" bg-[url('/img/uta/utaBanner1.jpg')] w-[2000px] bg-
+            <section className=" bg-[url('/img/uta/Segmento6_Hospitales_y_Quirofanos_v1.jpg')] w-[2000px] bg-
             bg-[center_top_0 bg-no-repeat h-[1080px] lg:h-[1440px] rounded-3xl">
                     <div className="px-[5%] lg:ml-[22%] lg:mr-[15%] pb-[35%] lg:pb-[15%] flex flex-col justify-end h-full text-[4.2vw] lg:text-[24px] text-white ">
                     <Reveal duration={0.5} delay={0.5}>
