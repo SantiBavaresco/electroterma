@@ -254,7 +254,8 @@ export default function GeneradoDeAireCalientePage() {
 
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] mt-10 ">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
+            <h1 className="text-[#FF7800] md:text-3xl lg:text-4xl 2xl:text-5xl leading-non font-nunito-bolder">MEDIDAS</h1>
+
 
                 <table className="table-auto font-nunito text-[1.4vw] w-4/5">
                         <thead >
@@ -381,13 +382,13 @@ export default function GeneradoDeAireCalientePage() {
             
             {/* -------------CARACTERÍSTICAS ------------- */}
             <section className="w-full px-[6%] mt-10 ">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CARACTERÍSTICAS</h1>
+            <h1 className=" text-[#FF7800] md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder ">CARACTERÍSTICAS</h1>
                 {/* <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1> */}
 
-                    <table className="table-auto font-nunito text-[1.5vw] w-full">  
+                    <table className="table-auto font-nunito text-[1.3vw] w-4/5">  
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
-                                <th className="p-2 text-left px-[1.7vw] w-[20vw] text-[1.5vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">CARACTERÍSTICAS/MODELOS</th>
+                                <th className="p-2 text-left px-[1.7vw] w-[20vw] text-[1.3vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">CARACTERÍSTICAS/MODELOS</th>
                                 <th className="p-2 w-[6.3vw] border-r-2 rounded-b-[1.7vw] border-white">TEO 040 </th>
                                 <th className="p-2 w-[6.3vw] border-r-2 rounded-b-[1.7vw] border-white">TEO 050 </th>
                                 <th className="p-2 w-[6.3vw] border-r-2 rounded-b-[1.7vw] border-white">TEO 060 </th>
@@ -400,7 +401,7 @@ export default function GeneradoDeAireCalientePage() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
+                            <tr className="bg-[#e7e7e7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Capacidad (KCAL/H)</td>
                                 <td>40.000</td>
                                 <td>50.000</td>
@@ -416,7 +417,7 @@ export default function GeneradoDeAireCalientePage() {
                             
                             </tr>
                                                         
-                            <tr className="bg-[#f7f7f7] text-[1.48vw] text-center">
+                            <tr className="bg-[#f7f7f7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Potencia del quemado (KCAL/H)</td>
                                 <td>50.000</td>
                                 <td>70.000</td>
@@ -431,7 +432,7 @@ export default function GeneradoDeAireCalientePage() {
                             
                             </tr>
                             
-                            <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
+                            <tr className="bg-[#e7e7e7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Consumo de gas natural (M3/H)</td>
                                 <td>5,4</td>
                                 <td>7,5</td>
@@ -444,7 +445,7 @@ export default function GeneradoDeAireCalientePage() {
 
 
                             </tr>
-                            <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
+                            <tr className="bg-[#f7f7f7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Caudal de aire (M3/H)</td>
                                 <td>3.600</td>
                                 <td>5.400</td>
@@ -457,7 +458,7 @@ export default function GeneradoDeAireCalientePage() {
                             
                             </tr>
 
-                            <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
+                            <tr className="bg-[#e7e7e7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Contrapresión (MMCA)</td>
                                 <td>25</td>
                                 <td>25</td>
@@ -470,7 +471,7 @@ export default function GeneradoDeAireCalientePage() {
 
                             </tr>
 
-                            <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
+                            <tr className="bg-[#f7f7f7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Potencia motor (HP)</td>
                                 <td>1</td>
                                 <td>1,5</td>
@@ -482,7 +483,7 @@ export default function GeneradoDeAireCalientePage() {
                                 <td>5,5</td>
                             </tr>
 
-                            <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
+                            <tr className="bg-[#e7e7e7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Potencia consumida (HP)</td>
                                 <td>0,8</td>
                                 <td>1,35</td>
@@ -494,7 +495,7 @@ export default function GeneradoDeAireCalientePage() {
                                 <td>4</td>
                             </tr>
                             
-                            <tr className="bg-[#f7f7f7] text-[1.5vw] text-center">
+                            <tr className="bg-[#f7f7f7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Conexión de gas (PULG)</td>
                                 <td>1/2</td>
                                 <td>3/4</td>
@@ -506,7 +507,7 @@ export default function GeneradoDeAireCalientePage() {
                                 <td>1</td>
                             </tr>
 
-                            <tr className="bg-[#e7e7e7] text-[1.5vw] text-center">
+                            <tr className="bg-[#e7e7e7] text-[1.1vw] text-center">
                                 <td className="p-2 pl-[1.7vw]  text-left">Peso aprox. sin quemador (kg)</td>
                                 <td>145</td>
                                 <td>225</td>

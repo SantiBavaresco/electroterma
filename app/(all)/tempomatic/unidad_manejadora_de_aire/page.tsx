@@ -218,9 +218,9 @@ export default function UnidadManejadoraDeAirePage() {
 
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] -mt- ">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
+            <h1 className="text-[#FF7800] md:text-3xl lg:text-4xl 2xl:text-5xl leading-non font-nunito-bolder">MEDIDAS</h1>
 
-                    <table className="table-auto font-nunito text-[1.7vw] w-4/5">
+                    <table className="table-auto font-nunito text-[1.4vw] w-4/5">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
                                 <th className="p-2 text-left pl-[1.7vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">MODELO/MEDIDA</th>
@@ -332,16 +332,18 @@ export default function UnidadManejadoraDeAirePage() {
                             </tr>
                         </tbody>
                     </table>
+                    <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
                
             </section>
 
             
             {/* -------------CARACTERÍSTICAS ------------- */}
-            <section className="w-full px-[6%] mt-16 ">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw] ">CARACTERÍSTICAS</h1>
+            <section className="w-full px-[6%] mt-10 ">
+            <h1 className=" text-[#FF7800] md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder ">CARACTERÍSTICAS</h1>
+
                 {/* <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1> */}
 
-                    <table className="table-auto mt-4 font-nunito text-[1.5vw] w-4/5">
+                    <table className="table-auto mt-4 font-nunito text-[1.4vw] w-4/5">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
                                 <th className="p-2 text-left px-[1.7vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">CARACTERISTICAS/MODELOS</th>
@@ -377,7 +379,7 @@ export default function UnidadManejadoraDeAirePage() {
                                 
                             </tr>
                             <tr className="bg-[#f7f7f7] text-center">
-                                <td className="p-2 pl-[1.7vw] text-left">Caudal (MMCA)</td>
+                                <td className="p-2 pl-[1.7vw] text-left">Caudal (M3/h)</td>
                                 <td>4200</td>
                                 <td>5400</td>
                                 <td>6600</td>
@@ -410,10 +412,10 @@ export default function UnidadManejadoraDeAirePage() {
                                 <td className="p-2 pl-[1.7vw] text-left">Conexión serpentina (BSP)</td>
                                 <td>1</td>
                                 <td>1</td>
-                                <td>11/4</td>
-                                <td>11/4</td>
-                                <td>11/2</td>
-                                <td>11/2</td>
+                                <td>1 1/4</td>
+                                <td>1 1/4</td>
+                                <td>1 1/2</td>
+                                <td>1 1/2</td>
                                
                             </tr>
                             <tr className="bg-[#f7f7f7] text-center">
@@ -428,7 +430,6 @@ export default function UnidadManejadoraDeAirePage() {
                             </tr>
                         </tbody>
                     </table>
-                    <h1 className="font-nunito text-[#FF7800] text-[1.7vw] text-right w-4/5">MEDIDAS EN MILÍMETROS</h1>
 
             </section>
 

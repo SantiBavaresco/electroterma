@@ -241,12 +241,12 @@ export default function CalderaParaCalefaccionPage() {
 
             {/* -------------MEDIDAS ------------- */}
             <section className="w-full px-[6%] mt-10 ">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">MEDIDAS</h1>
+            <h1 className="text-[#FF7800] md:text-3xl lg:text-4xl 2xl:text-5xl leading-non font-nunito-bolder">MEDIDAS</h1>
 
-                <table className="table-auto font-nunito text-[1.4vw] w-full">
+                <table className="table-auto font-nunito text-[1.4vw] w-[90%]">
                         <thead >
                             <tr className="bg-[#FF7800] text-white ">
-                                <th className="p-2 text-left px-[1.7vw] w-[20vw] text-[1.5vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">MODELO/MEDIDA</th>
+                                <th className="p-2 text-left px-[1.7vw] w-[15vw] text-[1.5vw] pr-auto border-r-2 rounded-b-[1.7vw] border-white">MODELO/MEDIDA</th>
                                 <th className="p-2 w-[4.5vw] border-r-2 rounded-b-[1.7vw] border-white">&Oslash; A</th>
                                 <th className="p-2 w-[4.5vw] border-r-2 rounded-b-[1.7vw] border-white">B</th>
                                 <th className="p-2 w-[4.5vw] border-r-2 rounded-b-[1.7vw] border-white">C</th>
@@ -360,7 +360,8 @@ export default function CalderaParaCalefaccionPage() {
             
             {/* -------------CARACTERÍSTICAS ------------- */}
             <section className="w-3/4 px-[6%] mt-10 mr-auto">
-                <h1 className="font-nunito text-[#FF7800] text-[3.3vw]">CARACTERÍSTICAS</h1>
+            <h1 className=" text-[#FF7800] md:text-3xl lg:text-4xl 2xl:text-5xl leading-none font-nunito-bolder ">CARACTERÍSTICAS</h1>
+
                 {/* <h1 className="font-nunito text-[#FF7800] text-[2.3vw] text-right">TOMA DE AIRE INTECCIÓN DE AIRE</h1> */}
 
                     <table className="table-auto font-nunito text-[1.5vw] w-full">  
