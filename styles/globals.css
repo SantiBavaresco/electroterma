@@ -8,6 +8,11 @@
   }
 
   @font-face {
+    font-family: "neuropol";
+    src: url("../public/typographie/neuropol/Neuropol-Bold.ttf") format('truetype');
+  }
+
+  @font-face {
     font-family: "lexend";
     src: url("../public/typographie/lexend/Lexend-Regular.ttf") format('truetype');
   }

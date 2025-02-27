@@ -11,6 +11,7 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
     './public/typographie/lexend/*.tff',
     './public/typographie/nunito/*.tff',
+    './public/typographie/neuropol/*.tff',
 
   ],
   theme: {
@@ -49,6 +50,7 @@ module.exports = {
         "nunito-bold": "nunito-bold",
         "nunito-bolder": "nunito-bolder",
         burtons: "burtons",
+        neuropol: "neuropol",
         poppins: ["Poppins", "sans-serif"],
       },
       screens: {

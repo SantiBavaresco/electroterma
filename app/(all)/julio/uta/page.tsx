@@ -68,7 +68,7 @@ export default function Uta() {
                         estándares internacionales, asegurando que cada ambiente, ya sea <br/>
                         sanitario o industrial, cumpla con los requisitos más exigentes en todo<br/>
                         momento. Con tecnología avanzada, eficiencia energética y monitoreo<br/>
-                        remoto, la UTA fabricada por Tempomatic ofrece soluciones HVAC que<br/>
+                        remoto, la <span className="font-bold">UTA</span> fabricada por Tempomatic ofrece soluciones HVAC que<br/>
                         superan expectativas, brindando seguridad, personalización <br/>
                         y rendimiento sin igual.
                         </p>
@@ -119,7 +119,7 @@ export default function Uta() {
                     <article className="w-full flex flex-col lg:flex-row gap-[4vw] lg:gap-[2vw] text-[4.2vw] lg:text-[26px] leading-tight">
                         <Reveal duration={1.2} delay={0.3}>
                             <p className="pb-4 lg:pl-[15%] w text-midgray">
-                            Sus módulos compactos permiten una instalación sencilla y adaptable, perfecta para cualquier tipo de proyecto, desde hospitales y 
+                            <span className="font-bold">Sus módulos compactos permiten una instalación sencilla y adaptable</span>, perfecta para cualquier tipo de proyecto, desde hospitales y 
                             quirófanos que requieren aire completamente esterilizado, hasta laboratorios farmacéuticos, bioterios, industrias y hoteles. 
                             Fabricada con materiales de alta calidad que garantizan <span className="text-[#EF771C]">durabilidad y resistencia.</span> Su capacidad de personalización la convierte en una 
                             herramienta imprescindible en cualquier instalación.
@@ -213,11 +213,12 @@ export default function Uta() {
                 <section className="lg:-mt-10 mx-10 lg:w-[1080px] h-[70vh] lg:h-[600px] flex flex-col justify-center items-center gap-[10px] first-letter ">
                     <article className="w-full flex flex-col lg:flex-row gap-[4vw] lg:gap-[2vw] text-[4.2vw] lg:text-[26px] leading-tight">
                         <Reveal duration={1.2} delay={0.3}>
-                            <p className="pb-4 lg:pl-[15%] w text-midgray">
-                            Sus módulos compactos permiten una instalación sencilla y adaptable, perfecta para cualquier tipo de proyecto, desde hospitales y 
-                            quirófanos que requieren aire completamente esterilizado, hasta laboratorios farmacéuticos, bioterios, industrias y hoteles. 
-                            Fabricada con materiales de alta calidad que garantizan <span className="text-[#EF771C]">durabilidad y resistencia.</span> Su capacidad de personalización la convierte en una 
-                            herramienta imprescindible en cualquier instalación.
+                            <p className="pb-16 lg:pl-[15%] w text-midgray">
+                            <span className="font-bold">Gestión avanzada y monitoreo en tiempo real</span>. Gracias a su avanzada tecnología <span className="font-bold">Zila</span> de control inteligente, 
+                            la <span className="font-bold">UTA</span> ofrece una experiencia de gestión de aire integral y personalizada. Permite monitorear en tiempo real la 
+                            calidad del aire, ajustar la temperatura y los flujos de aire según las necesidades específicas del entorno, 
+                            garantizando un ambiente saludable y confortable. 
+                            Su compatibilidad con sistemas de monitoreo remoto ofrece un control total y flexible desde cualquier lugar.
                             </p>
                         </Reveal>
                         <div className="lg:w-min-1/3  space-y-[10px] mt-[10px] lg:mt-0 lg:space-y-[vw]">
@@ -252,15 +253,14 @@ export default function Uta() {
                     <div className="px-[5%] lg:ml-[22%] lg:mr-[15%] pb-[35%] lg:pb-[15%] flex flex-col justify-end h-full text-[4.2vw] lg:text-[24px] text-white ">
                     <Reveal duration={0.5} delay={0.5}>
                         <>
-                        <h1 className="text-[10vw] lg:text-[48px] leading-none font-lexend-bold text-[#EF771C]">UTA</h1>
-                        <h3 className="text-[#EF771C] mb-[1vw]">Hospitales y Quirófanos</h3>
-                        <div className="lg:w-3/5 space-y-[8vw] lg:space-y-[2vw]">
-                            <h1 className="text-[12vw] lg:text-[80px] font-bold leading-none"> Cambia el aire, <br/> cambia la vida.</h1>
-                            <p className="">
-                            En los hospitales, la calidad del aire es fundamental para prevenir infecciones y mantener el bienestar de los pacientes y el personal. 
-                            La <span className="font-bold text-mustard">UTA</span> cumple con estrictas normativas internacionales y asegura un control avanzado de la temperatura y la pureza del aire en áreas sensibles 
-                            como salas de recuperación, UCI y áreas comunes. Los quirófanos requieren un ambiente controlado con aire estéril para evitar cualquier riesgo de contaminación. 
-                            La <span className="font-bold text-mustard">UTA</span>, con su sistema de filtración avanzada y control de temperatura preciso, asegura condiciones óptimas para cirugías seguras y efectivas.
+                        {/* <h1 className="text-[10vw] lg:text-[48px] leading-none font-lexend-bold text-[#EF771C]">UTA</h1> */}
+                        <h3 className="text-[#EF771C] mb-[1vw] ">Hospitales y Quirófanos</h3>
+                        <div className=" space-y-[8vw] lg:space-y-[2vw]">
+                            <h1 className="text-[12vw] w-full lg:text-[64px] font-neuropol leading-none"> Cambia el aire, <br/> cambia la vida.</h1>
+                            <p className="lg:w-3/5 font-lexend">
+                                <span className="font-bold">En los hospitales, la calidad del aire es fundamental</span> para prevenir infecciones y mantener el bienestar de los pacientes y el personal. 
+                                La <span className="font-bold text-mustard">UTA</span>  cumple con estrictas normativas internacionales y asegura un control avanzado de la temperatura y la pureza del aire en áreas sensibles como salas de recuperación, UCI y áreas comunes. Los quirófanos requieren un ambiente controlado con aire estéril para evitar cualquier riesgo de contaminación. 
+                                La <span className="font-bold text-mustard">UTA</span>, con su sistema de filtración avanzada y control de temperatura preciso, asegura condiciones óptimas para cirugías seguras y efectivas.
                             </p>
                         </div>
                         </>
@@ -275,7 +275,7 @@ export default function Uta() {
                         <Reveal duration={0.5} delay={0.5}>
                             <>
                             {/* <h2 className="text-[#EF771C] mb-[1vw]">Carrera</h2> */}
-                            <h1 className="py-10 w-4/5 text-[6vw] lg:text-[26px] font-bold leading-none"> Descubre más de tu compañero perfecto.</h1>
+                            <h1 className="py-10 my-16 w-4/5 text-[6vw] lg:text-[26px] font-bold leading-none"> Descubre cómo la calidad del aire puede salvar vidas.</h1>
                             </>
                         </Reveal>
                     </div>
