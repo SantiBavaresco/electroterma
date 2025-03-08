@@ -55,7 +55,7 @@ export default function Uta() {
                 bg-gradient-to-b from-[#eeeeee] to-50% to-white
                 ">
                     <Reveal duration={0.8} delay={0.2}>
-                        <h1 className="pb-4  text-[10vw] lg:text-[80px]  font-bold lg:h- leading-none text-center">
+                        <h1 className="pb-4  text-[12vw] lg:text-[64px] font-neuropol lg:h- leading-none text-center">
                             Respira tranquilo. <br/>
                             Controla el aire.
                         </h1>
@@ -86,12 +86,12 @@ export default function Uta() {
 
             {/* ------------- Segmento 2 | Diseño Modular ------------- */}
                 {/* ------------- Titulo e Img ------------- */}            
-                <section className=" mt-10 h-[120%] lg:h-full flex flex-col justify-center items-center gap-[2vw text-center">
-                    <div className="px-[5%] lg:px-[2%]">
+                <section className=" pt-10 h-[120%] lg:h-full flex flex-col justify-center items-center gap-[2vw text-center bg-[#e8e8e8]">
+                    <div className="px-[5%] lg:px-[2%] bg-[#e8e8e8]">
                     <Reveal duration={0.8} delay={0.3}> 
                         <>
                             <h3 className="text-[4.6vw] lg:text-[32px]">Diseñor Modular </h3>
-                            <h1 className="text-[12vw] lg:text-[80px] h-[100%] lg:h-[250px] font-bold leading-none ">
+                            <h1 className="text-[12vw] lg:text-[64px] font-neuropol h-[100%] lg:h-[250px] leading-none ">
                                 Robusta y adaptable <br/>
                                 a cualquier entorno.
                             </h1> 
@@ -100,14 +100,25 @@ export default function Uta() {
                     </Reveal>
                     </div>
                     <Reveal duration={1.2} delay={0.3}> 
-                        <Image
+                        <section className=" px-[%] lg:h-[100%] lg:w-[1920px] h-full  lg:-mt-[350px] bg-[#e8e8e8]"> 
+
+                            <video
+                                className="mx-auto"
+                                muted autoPlay controls={false}
+                                src="../img/uta/Diseño_Modular_V2.mp4"
+                                width="1920px"
+                                // height="100%"
+                            />
+                            {/* <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4" width="100%"/> */}
+                        </section> 
+                        {/* <Image
                                     alt="product"
                                     key="img1"
                                     className="h-full pb-16 lg:-mt-10"
                                     radius="none"
                                     src="../../img/uta/uta1.png"
                                     width="1920px"
-                                />
+                                /> */}
                     </Reveal>
                     {/* <Reveal duration={0.8} delay={0.2}> 
 
@@ -184,7 +195,7 @@ export default function Uta() {
                     <Reveal duration={0.8} delay={0.3}> 
                         <>
                             <h3 className="text-[4.6vw] lg:text-[32px]">Control inteligente Zila </h3>
-                            <h1 className="text-[12vw] lg:text-[80px] h-[100%] lg:h-[250px] font-bold leading-none ">
+                            <h1 className="text-[12vw] lg:text-[64px] font-neuropol h-[100%] lg:h-[250px]  leading-none ">
                             Cada aire que toma,<br/>
                             lo estarás observando.
                             </h1> 
@@ -193,14 +204,25 @@ export default function Uta() {
                     </Reveal>
                     </div>
                     <Reveal duration={1.2} delay={0.3}> 
-                        <Image
+                        <section className=" px-[%] lg:h-[100%] lg:w-[1920px] h-full  lg:-mt-[200px] bg-[#eeeeee]"> 
+
+                            <video
+                                className="mx-auto"
+                                muted autoPlay controls={false}
+                                src="../img/uta/Zila_Panel_de_control_V2.mp4"
+                                width="1920px"
+                                // height="100%"
+                            />
+                            {/* <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4" width="100%"/> */}
+                        </section> 
+                        {/* <Image
                                     alt="product"
                                     key="img1"
                                     className="h-full pb-16 lg:-mt-10"
                                     radius="none"
                                     src="../../img/uta/uta1.png"
                                     width="1920px"
-                                />
+                                /> */}
                     </Reveal>
                     {/* <Reveal duration={0.8} delay={0.2}> 
 
@@ -250,14 +272,14 @@ export default function Uta() {
              {/* ------------- BANNER 1 ------------- */} 
             <section className=" bg-[url('/img/uta/Segmento6_Hospitales_y_Quirofanos_v1.jpg')] w-[2000px] bg-
             bg-[center_top_0 bg-no-repeat h-[1080px] lg:h-[1440px] rounded-3xl">
-                    <div className="px-[5%] lg:ml-[22%] lg:mr-[15%] pb-[35%] lg:pb-[15%] flex flex-col justify-end h-full text-[4.2vw] lg:text-[24px] text-white ">
+                    <div className="px-[5%] lg:ml-[22%] lg:mr-[15%] pb-[35%] lg:pb-[5.5%] flex flex-col justify-end h-full text-[4.2vw] lg:text-[24px] text-white ">
                     <Reveal duration={0.5} delay={0.5}>
                         <>
                         {/* <h1 className="text-[10vw] lg:text-[48px] leading-none font-lexend-bold text-[#EF771C]">UTA</h1> */}
                         <h3 className="text-[#EF771C] mb-[1vw] ">Hospitales y Quirófanos</h3>
                         <div className=" space-y-[8vw] lg:space-y-[2vw]">
                             <h1 className="text-[12vw] w-full lg:text-[64px] font-neuropol leading-none"> Cambia el aire, <br/> cambia la vida.</h1>
-                            <p className="lg:w-3/5 font-lexend">
+                            <p className="lg:w-3/5 h-full font-lexend">
                                 <span className="font-bold">En los hospitales, la calidad del aire es fundamental</span> para prevenir infecciones y mantener el bienestar de los pacientes y el personal. 
                                 La <span className="font-bold text-mustard">UTA</span>  cumple con estrictas normativas internacionales y asegura un control avanzado de la temperatura y la pureza del aire en áreas sensibles como salas de recuperación, UCI y áreas comunes. Los quirófanos requieren un ambiente controlado con aire estéril para evitar cualquier riesgo de contaminación. 
                                 La <span className="font-bold text-mustard">UTA</span>, con su sistema de filtración avanzada y control de temperatura preciso, asegura condiciones óptimas para cirugías seguras y efectivas.
