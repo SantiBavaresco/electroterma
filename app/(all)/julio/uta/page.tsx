@@ -46,7 +46,6 @@ export default function Uta() {
                         muted autoPlay controls={false}
                         src="../img/uta/UTA_presentacion_v1.mp4"
                         width="1920px"
-                        
                         // height="100%"
                     />
                 {/* <VideoAutoPlayer url="../img/solerpalau/habitat/video/habitatPresentacion.mp4" width="100%"/> */}
