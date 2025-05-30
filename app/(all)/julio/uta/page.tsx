@@ -30,7 +30,7 @@ export default function Uta() {
             {/* ------------- VIDEO INTRO ------------- */}      
                 <section className="bg-[#eeeeee] w-full  flex items-center justify-center lg:py-10 ">
                     <div className=" text-center  leading-none">
-                        <Reveal duration={0.8} delay={1.6}>
+                        <Reveal duration={0.8} delay={2.5}>
                             <>
                             <h1 className="text-[10vw] lg:text-[80px] font-lexend-bold text-[#EF771C]">UTA</h1>
                             <h2 className="text-[3vw] lg:text-[20px] lg:pb-10 ">UNIDAD DE TRATAMIENTO DE AIRE </h2>
